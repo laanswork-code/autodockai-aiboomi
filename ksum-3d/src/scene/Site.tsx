@@ -26,10 +26,10 @@ export function Site() {
   return (
     <group>
       <mesh geometry={geo.plot} receiveShadow>
-        <meshStandardMaterial map={lawnTexture()} color="#b9c4a6" roughness={1} />
+        <meshStandardMaterial map={lawnTexture()} color="#a9b98a" roughness={1} />
       </mesh>
       <mesh geometry={geo.across} receiveShadow>
-        <meshStandardMaterial map={lawnTexture()} color="#c9cbb0" roughness={1} />
+        <meshStandardMaterial map={lawnTexture()} color="#a9b98a" roughness={1} />
       </mesh>
       <mesh geometry={geo.lawn} receiveShadow>
         <meshStandardMaterial map={lawnTexture()} roughness={1} />

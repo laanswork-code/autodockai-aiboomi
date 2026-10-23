@@ -13,6 +13,8 @@ function Lighting() {
   return (
     <>
       <Sky sunPosition={SUN} turbidity={6} rayleigh={1.4} mieCoefficient={0.004} />
+      {/* humid coastal haze: the ground fades into the sky at the horizon */}
+      <fog attach="fog" args={['#cfdbe2', 350, 1600]} />
       <hemisphereLight args={['#dfe9f2', '#7c7a6c', 0.65]} />
       <directionalLight
         position={SUN}
