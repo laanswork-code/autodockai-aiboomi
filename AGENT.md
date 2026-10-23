@@ -4,6 +4,27 @@ description: Behavioral guidelines to reduce common LLM coding mistakes. Use whe
 license: MIT
 ---
 
+# Workflow: Superpowers
+
+Every request in this repo goes through the Superpowers skills in
+`.claude/skills/` (vendored from https://github.com/obra/superpowers, see
+`.claude/skills/VENDORED.md`).
+
+- At the start of every conversation, read and follow
+  `.claude/skills/using-superpowers/SKILL.md`. Claude Code loads these skills
+  automatically; other agents should open the `SKILL.md` files directly.
+- Before acting on any request, check whether a skill applies. If one might,
+  load it and follow it exactly.
+- Think, plan, then do:
+  1. Think: `brainstorming` to clarify the goal and agree on a design.
+  2. Plan: `writing-plans` to turn the design into small, verifiable steps.
+  3. Do: `executing-plans` or `subagent-driven-development`, with
+     `test-driven-development` for code and `systematic-debugging` for bugs.
+  4. Verify: `verification-before-completion` before claiming anything is done.
+- When a request needs a capability no local skill covers, use
+  `.claude/skills/find-skills/SKILL.md` to look for one.
+- The Karpathy guidelines below still apply on top of these skills.
+
 # Karpathy Guidelines
 
 Behavioral guidelines to reduce common LLM coding mistakes, derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls.
