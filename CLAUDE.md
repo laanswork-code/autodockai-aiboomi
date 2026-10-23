@@ -7,14 +7,17 @@ license: MIT
 # Workflow: Superpowers
 
 Every request in this repo goes through the Superpowers skills
-(https://github.com/obra/superpowers).
+(https://github.com/obra/superpowers), whatever agent you are.
 
-- Claude Code: the plugin is enabled in `.claude/settings.json`
-  (`superpowers@claude-plugins-official`). Accept the install prompt when you
-  first open the repo. Other agents: install Superpowers for your harness as
-  described in the upstream README.
+- Where the skills live:
+  - Claude Code: the plugin enabled in `.claude/settings.json`
+    (`superpowers@claude-plugins-official`). Accept the install prompt when
+    you first open the repo.
+  - Codex and any other agent: `.agents/skills/`. Codex loads this folder
+    automatically. If your agent does not, open `.agents/skills/<name>/SKILL.md`
+    yourself when a skill applies.
 - At the start of every conversation, load and follow the `using-superpowers`
-  skill.
+  skill. It has notes for each harness under its `references/` folder.
 - Before acting on any request, check whether a skill applies. If one might,
   load it and follow it exactly.
 - Think, plan, then do:
@@ -23,8 +26,8 @@ Every request in this repo goes through the Superpowers skills
   3. Do: `executing-plans` or `subagent-driven-development`, with
      `test-driven-development` for code and `systematic-debugging` for bugs.
   4. Verify: `verification-before-completion` before claiming anything is done.
-- When a request needs a capability no local skill covers, use
-  `.claude/skills/find-skills/SKILL.md` to look for one.
+- When a request needs a capability no local skill covers, use the
+  `find-skills` skill to look for one.
 - The Karpathy guidelines below still apply on top of these skills.
 
 # Karpathy Guidelines
