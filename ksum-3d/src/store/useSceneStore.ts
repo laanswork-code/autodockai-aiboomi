@@ -2,7 +2,8 @@ import { create } from 'zustand'
 import type { ViewName } from '../config/site'
 
 export type Mode = 'today' | 'autodock'
-export interface TowerSize { w: number; d: number; h: number }
+/** Tower frame size in metres; `front` is the door face's distance from the tower origin. */
+export interface TowerSize { w: number; d: number; h: number; front: number }
 
 interface SceneState {
   mode: Mode

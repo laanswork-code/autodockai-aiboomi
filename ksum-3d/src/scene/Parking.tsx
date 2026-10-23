@@ -1,7 +1,7 @@
 import { Html } from '@react-three/drei'
 import { useMemo } from 'react'
 import {
-  FACADE, STRIP, STRIP_T_EAST, TODAY_BAYS, TOWER_CAPACITY, TOWER_FALLBACK, bayTheta, towerTheta,
+  FACADE, ROAD, STRIP, STRIP_T_EAST, TODAY_BAYS, TOWER_CAPACITY, TOWER_FALLBACK, bayTheta, towerTheta,
 } from '../config/site'
 import { arcPoint, arcRibbon, yawInward, yawOutward } from '../lib/geo'
 import { spaceStats } from '../lib/stats'
@@ -49,7 +49,8 @@ function Towers({ mode }: { mode: Mode }) {
   const size = useSceneStore((s) => s.towerSize) ?? TOWER_FALLBACK
   const placed = ([0, 1] as const).map((k) => {
     const t = towerTheta(k, size.w)
-    const [x, z] = arcPoint(FACADE, t, STRIP[1] - size.d / 2)
+    // door face flush with the curb on the road edge
+    const [x, z] = arcPoint(FACADE, t, ROAD.offset - ROAD.width / 2 - 0.25 - size.front)
     return { k, t, x, z }
   })
   const freedT0 = towerTheta(1, size.w) - (size.w / 2 + 0.8) / (FACADE.r + 6.75)

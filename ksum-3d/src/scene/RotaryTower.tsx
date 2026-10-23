@@ -2,6 +2,7 @@ import { useGLTF, useTexture } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import { useEffect, useMemo, useRef } from 'react'
 import * as THREE from 'three'
+import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js'
 import { useSceneStore, type TowerSize } from '../store/useSceneStore'
 import { CARS, makeCar, type CarKind } from './carModels'
 
@@ -9,11 +10,13 @@ const TOWER_URL = '/models/rotary.glb'
 const TEX = ['/models/tower-atlas.webp', '/models/tower-board.jpg']
 const PALLET = /^cheban\d+$/i
 /**
- * Scale is calibrated from the model itself: a pallet is sized to 5.4 m, enough
- * for the 4.8 m BYD Seal. (The Kozhikode demo's factor assumed a different
- * loader's units.) Material tuning matches that demo.
+ * Scale is calibrated from the model itself. The pallet's flat deck is about
+ * 70% of its overall length (ramps and hanger arms take the rest), so a 6.2 m
+ * pallet gives a ~4.4 m deck plus ramps that carry the 4.8 m BYD Seal without
+ * overhang. (The Kozhikode demo's factor assumed a different loader's units.)
+ * Material tuning matches that demo.
  */
-const PALLET_LEN = 5.4
+const PALLET_LEN = 6.2
 const TUNE: Record<string, [number, number]> = {
   zhuti: [0.52, 0.34], yshuang: [0.55, 0.14], ysyin: [0.36, 0.46], ysbai: [0.6, 0.06],
   yshei: [0.58, 0.2], jingzi3: [0.24, 0.5], dingpengjiazi: [0.38, 0.44],
@@ -21,10 +24,63 @@ const TUNE: Record<string, [number, number]> = {
 const HIDDEN = new Set(['typeMesh1', 'a10xianshiping_3'])
 const SPEED = 0.55 // m/s along the chain
 
-interface Prepared { template: THREE.Group; size: TowerSize }
+/** Pallets per tower. The model has 12; the chain loop is stretched to fit 20. */
+export const PALLETS = 20
+
+interface Part { geo: THREE.BufferGeometry; mat: THREE.Material }
+interface Prepared {
+  frame: Part[]
+  pallet: Part[]
+  /** Deck height relative to a pallet's centre. */
+  deck: number
+  pitch: number
+  pointAt: (s: number, out: THREE.Vector3) => THREE.Vector3
+  size: TowerSize
+}
 const prepared = new WeakMap<THREE.Object3D, Prepared>()
 
-/** One-time setup of the cached glTF: textures, material tuning, grounding, size. */
+/** Plain float attributes (the model uses quantized ones), so geometry can be baked and stretched. */
+function toFloat(src: THREE.BufferGeometry) {
+  const g = new THREE.BufferGeometry()
+  for (const name of ['position', 'normal', 'uv']) {
+    const a = src.getAttribute(name) as THREE.BufferAttribute | undefined
+    if (!a) continue
+    const out = new Float32Array(a.count * a.itemSize)
+    for (let i = 0; i < a.count; i++) {
+      out[i * a.itemSize] = a.getX(i)
+      if (a.itemSize > 1) out[i * a.itemSize + 1] = a.getY(i)
+      if (a.itemSize > 2) out[i * a.itemSize + 2] = a.getZ(i)
+    }
+    g.setAttribute(name, new THREE.BufferAttribute(out, a.itemSize))
+  }
+  if (src.index) g.setIndex(Array.from(src.index.array))
+  return g
+}
+
+/** Merge baked geometries that share a material and attribute layout. */
+function mergeByMaterial(list: { geo: THREE.BufferGeometry; mat: THREE.Material }[]): Part[] {
+  const groups = new Map<string, Part & { geos: THREE.BufferGeometry[] }>()
+  for (const { geo, mat } of list) {
+    const key = `${mat.uuid}|${Object.keys(geo.attributes).sort().join(',')}|${geo.index ? 1 : 0}`
+    const g = groups.get(key) ?? { geo, mat, geos: [] }
+    g.geos.push(geo)
+    groups.set(key, g)
+  }
+  return [...groups.values()].flatMap((g) => {
+    const geo = mergeGeometries(g.geos)
+    return geo ? [{ geo, mat: g.mat }] : []
+  })
+}
+
+const visibleChain = (o: THREE.Object3D) => { for (let p: THREE.Object3D | null = o; p; p = p.parent) if (!p.visible) return false; return true }
+const underPallet = (o: THREE.Object3D) => { for (let p: THREE.Object3D | null = o; p; p = p.parent) if (PALLET.test(p.name)) return p; return null }
+
+/**
+ * One-time setup of the cached glTF: textures and material tuning, scale and
+ * grading, then the frame is baked into tower space with its straight runs
+ * stretched so the chain loop carries PALLETS pallets at the original pitch
+ * (the same approach as the AutoDock Kozhikode Beach demo).
+ */
 function prepare(scene: THREE.Object3D, materials: Record<string, THREE.Material>, atlas: THREE.Texture, board: THREE.Texture): Prepared {
   const hit = prepared.get(scene)
   if (hit) return hit
@@ -37,27 +93,24 @@ function prepare(scene: THREE.Object3D, materials: Record<string, THREE.Material
   }
 
   const raw = scene.clone(true)
-  raw.traverse((o) => {
-    if (HIDDEN.has(o.name)) o.visible = false
-    if ((o as THREE.Mesh).isMesh) { o.castShadow = true; o.receiveShadow = true }
-  })
-  const pallet = raw.getObjectByProperty('name', 'cheban01') ?? raw
+  raw.traverse((o) => { if (HIDDEN.has(o.name)) o.visible = false })
+  const first = raw.getObjectByProperty('name', 'cheban01') ?? raw
   raw.updateMatrixWorld(true)
-  const ps = new THREE.Box3().setFromObject(pallet).getSize(new THREE.Vector3())
+  const ps = new THREE.Box3().setFromObject(first).getSize(new THREE.Vector3())
   raw.scale.multiplyScalar(PALLET_LEN / Math.max(ps.x, ps.z))
   const inner = new THREE.Group()
   inner.add(raw)
   inner.rotation.y = Math.PI // door toward +z
-  const template = new THREE.Group()
-  template.add(inner)
-  template.updateMatrixWorld(true)
+  const root = new THREE.Group()
+  root.add(inner)
+  root.updateMatrixWorld(true)
 
   // Grade = the most common low mesh base, so a pit or footing below ground doesn't lift the tower.
-  const bb = new THREE.Box3().setFromObject(template)
+  const bb = new THREE.Box3().setFromObject(root)
   const c = bb.getCenter(new THREE.Vector3())
   const mins: number[] = []
-  template.traverse((o) => {
-    if (!(o as THREE.Mesh).isMesh || !o.visible) return
+  root.traverse((o) => {
+    if (!(o as THREE.Mesh).isMesh || !visibleChain(o)) return
     const b = new THREE.Box3().setFromObject(o)
     if (Number.isFinite(b.min.y)) mins.push(Math.round(b.min.y * 50) / 50)
   })
@@ -69,75 +122,100 @@ function prepare(scene: THREE.Object3D, materials: Record<string, THREE.Material
   for (const [v, n] of counts) if (n > best || (n === best && v < grade)) { best = n; grade = v }
   if (grade - bb.min.y > 1.5) grade = bb.min.y
   inner.position.set(-c.x, -grade, -c.z)
-  template.updateMatrixWorld(true)
+  root.updateMatrixWorld(true)
 
-  const frame = new THREE.Box3()
-  template.traverse((o) => {
-    if (!(o as THREE.Mesh).isMesh || !o.visible) return
-    for (let p: THREE.Object3D | null = o; p; p = p.parent) if (PALLET.test(p.name)) return
-    frame.union(new THREE.Box3().setFromObject(o))
-  })
-  const s = frame.getSize(new THREE.Vector3())
-  const result = { template, size: { w: s.x, d: s.z, h: frame.max.y } }
-  prepared.set(scene, result)
-  return result
-}
-
-interface Pallet { node: THREE.Object3D; s: number; c: THREE.Vector3; home: THREE.Vector3; toLocal: THREE.Matrix3 }
-
-/** Chain loop through the pallet centres: two straight runs joined by semicircles. */
-function fitLoop(centers: THREE.Vector3[]) {
-  const xs = centers.map((c) => c.x)
-  const ys = centers.map((c) => c.y)
+  // The original loop through the 12 pallet centres, and its stretch to PALLETS.
+  const recs: { node: THREE.Object3D; c: THREE.Vector3 }[] = []
+  root.traverse((o) => { if (PALLET.test(o.name)) recs.push({ node: o, c: new THREE.Box3().setFromObject(o).getCenter(new THREE.Vector3()) }) })
+  const xs = recs.map((r) => r.c.x)
+  const ys = recs.map((r) => r.c.y)
   const cx = (Math.max(...xs) + Math.min(...xs)) / 2
   const R = (Math.max(...xs) - Math.min(...xs)) / 2
-  const z = centers.reduce((a, c) => a + c.z, 0) / centers.length
+  const z = recs.reduce((a, r) => a + r.c.z, 0) / recs.length
   const yBot = Math.min(...ys) + R
   const yTop = Math.max(...ys) - R
   const H = yTop - yBot
+  const L = 2 * Math.PI * R + 2 * H
+  const pitch = L / recs.length
+  const dH = (PALLETS * pitch - L) / 2
+  const kS = (H + dH) / H
+  const yMap = (y: number) => (y <= yBot ? y : y >= yTop ? y + dH : yBot + (y - yBot) * kS)
+
+  const H2 = H + dH
   const Q = (Math.PI / 2) * R
   const HALF = Math.PI * R
-  const L = 2 * Math.PI * R + 2 * H
+  const L2 = PALLETS * pitch
   const pointAt = (s: number, out: THREE.Vector3) => {
-    let m = ((s % L) + L) % L
+    let m = ((s % L2) + L2) % L2
     if (m < Q) { const a = m / R; return out.set(cx + R * Math.sin(a), yBot - R * Math.cos(a), z) }
     m -= Q
-    if (m < H) return out.set(cx + R, yBot + m, z)
-    m -= H
-    if (m < HALF) { const a = m / R; return out.set(cx + R * Math.cos(a), yTop + R * Math.sin(a), z) }
+    if (m < H2) return out.set(cx + R, yBot + m, z)
+    m -= H2
+    if (m < HALF) { const a = m / R; return out.set(cx + R * Math.cos(a), yTop + dH + R * Math.sin(a), z) }
     m -= HALF
-    if (m < H) return out.set(cx - R, yTop - m, z)
-    m -= H
+    if (m < H2) return out.set(cx - R, yTop + dH - m, z)
+    m -= H2
     const a = m / R
     return out.set(cx - R * Math.cos(a), yBot - R * Math.sin(a), z)
   }
-  return { pointAt, L }
-}
 
-/** Nearest loop position to a point, by sampling. */
-function project(pointAt: (s: number, o: THREE.Vector3) => THREE.Vector3, L: number, p: THREE.Vector3) {
-  const v = new THREE.Vector3()
-  let best = 0
-  let bd = Infinity
-  for (let s = 0; s < L; s += L / 720) {
-    const d = pointAt(s, v).distanceToSquared(p)
-    if (d < bd) { bd = d; best = s }
-  }
-  return best
-}
+  // Frame: bake into tower space; long members stretch, small parts and signage ride rigidly.
+  const frameList: { geo: THREE.BufferGeometry; mat: THREE.Material }[] = []
+  root.traverse((o) => {
+    const mesh = o as THREE.Mesh
+    if (!mesh.isMesh || Array.isArray(mesh.material) || !visibleChain(mesh) || underPallet(mesh)) return
+    const g = toFloat(mesh.geometry).applyMatrix4(mesh.matrixWorld)
+    g.computeBoundingBox()
+    const b = g.boundingBox!
+    if (b.max.y - b.min.y < 1.6 || /blinn35|blinn36/.test(mesh.material.name)) {
+      const cy = (b.min.y + b.max.y) / 2
+      g.translate(0, yMap(cy) - cy, 0)
+    } else {
+      const P = g.attributes.position
+      const N = g.attributes.normal
+      const n = new THREE.Vector3()
+      for (let i = 0; i < P.count; i++) {
+        const y = P.getY(i)
+        P.setY(i, yMap(y))
+        if (N && y > yBot && y < yTop) { n.set(N.getX(i), N.getY(i) / kS, N.getZ(i)).normalize(); N.setXYZ(i, n.x, n.y, n.z) }
+      }
+    }
+    frameList.push({ geo: g, mat: mesh.material })
+  })
 
-/** Deck height on a pallet: lowest up-facing surface under the wheel lines. */
-function deckHeight(node: THREE.Object3D, c: THREE.Vector3) {
+  // Pallet template: the ground pallet, centred on its own origin.
+  const bottom = recs.reduce((a, r) => (r.c.y < a.c.y ? r : a))
+  const palletList: { geo: THREE.BufferGeometry; mat: THREE.Material }[] = []
+  bottom.node.traverse((o) => {
+    const mesh = o as THREE.Mesh
+    if (!mesh.isMesh || Array.isArray(mesh.material) || !visibleChain(mesh)) return
+    palletList.push({ geo: toFloat(mesh.geometry).applyMatrix4(mesh.matrixWorld).translate(-bottom.c.x, -bottom.c.y, -bottom.c.z), mat: mesh.material })
+  })
+  const frame = mergeByMaterial(frameList)
+  const pallet = mergeByMaterial(palletList)
+
+  // Deck: lowest up-facing pallet surface under the wheel lines.
+  const probe = new THREE.Group()
+  for (const p of pallet) probe.add(new THREE.Mesh(p.geo, p.mat))
+  probe.updateMatrixWorld(true)
   const rc = new THREE.Raycaster()
   rc.far = 3
   let deck = Infinity
   for (const dz of [-1.3, 1.3]) for (const dx of [-0.75, 0.75]) {
-    rc.set(new THREE.Vector3(c.x + dx, c.y + 1.2, c.z + dz), new THREE.Vector3(0, -1, 0))
-    for (const h of rc.intersectObject(node, true)) {
-      if (h.face && h.face.normal.y > 0.7 && h.point.y > c.y - 1.8 && h.point.y < deck) deck = h.point.y
-    }
+    rc.set(new THREE.Vector3(dx, 1.2, dz), new THREE.Vector3(0, -1, 0))
+    for (const h of rc.intersectObject(probe, true)) if (h.face && h.face.normal.y > 0.7 && h.point.y > -1.8 && h.point.y < deck) deck = h.point.y
   }
-  return Number.isFinite(deck) ? deck : c.y - 0.6
+
+  const fb = new THREE.Box3()
+  for (const p of frame) { p.geo.computeBoundingBox(); fb.union(p.geo.boundingBox!) }
+  const sz = fb.getSize(new THREE.Vector3())
+  const result: Prepared = {
+    frame, pallet, pitch, pointAt,
+    deck: Number.isFinite(deck) ? deck : -0.6,
+    size: { w: sz.x, d: sz.z, h: fb.max.y, front: fb.max.z },
+  }
+  prepared.set(scene, result)
+  return result
 }
 
 export interface TowerLoad { kind: CarKind; color: string }
@@ -154,58 +232,39 @@ export function RotaryTower({ load, reportSize, ...props }: RotaryTowerProps) {
   const [atlas, board] = useTexture(TEX)
   const seal = useGLTF(CARS.seal.url).scene
   const atto = useGLTF(CARS.atto.url).scene
-  const { template, size } = prepare(scene, materials, atlas, board)
+  const tower = prepare(scene, materials, atlas, board)
   const setTowerSize = useSceneStore((s) => s.setTowerSize)
 
-  useEffect(() => { if (reportSize) setTowerSize(size) }, [reportSize, size, setTowerSize])
+  useEffect(() => { if (reportSize) setTowerSize(tower.size) }, [reportSize, tower.size, setTowerSize])
 
-  const rig = useMemo(() => {
-    const obj = template.clone(true)
-    obj.updateMatrixWorld(true)
-    const nodes: THREE.Object3D[] = []
-    obj.traverse((o) => { if (PALLET.test(o.name)) nodes.push(o) })
-    const centers = nodes.map((n) => new THREE.Box3().setFromObject(n).getCenter(new THREE.Vector3()))
-    const { pointAt, L } = fitLoop(centers)
-    const pallets: Pallet[] = nodes.map((node, i) => ({
-      node,
-      c: centers[i],
-      s: project(pointAt, L, centers[i]),
-      home: node.position.clone(),
-      toLocal: new THREE.Matrix3().setFromMatrix4(node.parent!.matrixWorld.clone().invert()),
-    }))
-    // Ground pallet first, then around the loop.
-    pallets.sort((a, b) => a.c.y - b.c.y)
-    const ground = pallets[0].s
-    pallets.sort((a, b) => ((a.s - ground + L) % L) - ((b.s - ground + L) % L))
+  // Cars for the loaded pallets, built once per load.
+  const cars = useMemo(
+    () => load.map((spec) => (spec ? makeCar(spec.kind === 'seal' ? seal : atto, spec.kind, spec.color) : null)),
+    [load, seal, atto],
+  )
 
-    // Cars ride as children of their pallet, placed in tower space then converted.
-    pallets.forEach((p, i) => {
-      const spec = load[i]
-      if (!spec) return
-      const car = makeCar(spec.kind === 'seal' ? seal : atto, spec.kind, spec.color)
-      const deck = deckHeight(p.node, p.c)
-      const world = new THREE.Matrix4().makeTranslation(p.c.x, deck, p.c.z)
-      car.applyMatrix4(p.node.matrixWorld.clone().invert().multiply(world))
-      p.node.add(car)
-    })
-    return { obj, pallets, pointAt }
-  }, [template, load, seal, atto])
-
-  const spinning = useSceneStore((s) => s.spinning)
+  const pallets = useRef<(THREE.Group | null)[]>([])
   const offset = useRef(0)
+  const spinning = useSceneStore((s) => s.spinning)
   const tmp = useMemo(() => new THREE.Vector3(), [])
   useFrame((_, dt) => {
-    if (!spinning) return
-    offset.current += Math.min(dt, 0.05) * SPEED
-    for (const p of rig.pallets) {
-      rig.pointAt(p.s + offset.current, tmp).sub(p.c).applyMatrix3(p.toLocal)
-      p.node.position.copy(p.home).add(tmp)
-    }
+    if (spinning) offset.current += Math.min(dt, 0.05) * SPEED
+    pallets.current.forEach((g, i) => { if (g) g.position.copy(tower.pointAt(i * tower.pitch + offset.current, tmp)) })
   })
 
   return (
     <group {...props}>
-      <primitive object={rig.obj} />
+      {tower.frame.map((p) => (
+        <mesh key={p.geo.uuid} geometry={p.geo} material={p.mat} castShadow receiveShadow />
+      ))}
+      {Array.from({ length: PALLETS }, (_, i) => (
+        <group key={i} ref={(g) => { pallets.current[i] = g }} position={tower.pointAt(i * tower.pitch, new THREE.Vector3()).toArray()}>
+          {tower.pallet.map((p) => (
+            <mesh key={p.geo.uuid} geometry={p.geo} material={p.mat} castShadow receiveShadow />
+          ))}
+          {cars[i] && <primitive object={cars[i]} position={[0, tower.deck, 0]} />}
+        </group>
+      ))}
     </group>
   )
 }

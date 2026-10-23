@@ -17,25 +17,84 @@ export const FACADE = circleFrom3([-46.7, 18.4 + S], [5.1, 32.2 + S], [64.1, 8.0
 export const FACADE_T_WEST = thetaAtX(FACADE, -46.7)
 export const FACADE_T_EAST = thetaAtX(FACADE, 64.1)
 
-/** West and back edges of the OSM footprint, after the shift, continuing from the arc's west end. */
-const BACK: XZ[] = [[-67.4, -3.6 + S], [-73.1, -27.4 + S], [12.2, -26.6 + S], [47.5, -24.4 + S], [65.2, -22.9 + S]]
+/*
+ * Footprint traced from the Google Maps outline: the curved front ends at a
+ * vertical recess (the "division" in the photos); west of it two angled blocks
+ * form a sawtooth whose teeth point south-west, the west edge runs diagonally
+ * to the north-west corner, and the back edge steps down a third of the way
+ * from the east. Teeth are capped so they stay clear of the parking strip.
+ */
+const at = (x: number, offset: number) => arcPoint(FACADE, thetaAtX(FACADE, x), offset)
+const DEPTH = 22
+/** Where the curve ends; from here the front runs straight into the first notch, as on the map. */
+export const DIVISION_T = thetaAtX(FACADE, -20)
+const NOTCH1 = at(-29.2, -4)
+const TOOTH1 = at(-33.6, 0.2)
+const NOTCH2 = at(-48.2, -5)
+const TOOTH2 = at(-56.2, 5.5)
+const NOTCH1_BACK = at(-29.2, -4 - DEPTH)
+const NOTCH2_BACK = at(-48.2, -5 - DEPTH)
+const NW_CORNER: XZ = [-72.3, -25.7]
 
-/** Main curved mass: the arc from east to west, then the back edges. */
-export function mainFootprint(steps = 48): XZ[] {
-  const pts: XZ[] = []
-  for (let i = 0; i <= steps; i++) {
-    const t = FACADE_T_EAST + ((FACADE_T_WEST - FACADE_T_EAST) * i) / steps
-    pts.push(arcPoint(FACADE, t))
-  }
-  return [...pts, ...BACK]
+/** Back edge, west to east, with the step at x = 24. */
+const BACK: XZ[] = [[-38, -24.8], [24.1, -19.9], [24.8, -12.9], [64.9, -10.4]]
+
+/** Points along the arc at a radial offset, from t0 to t1 inclusive. */
+export function arcPoints(t0: number, t1: number, offset = 0, steps = 16): XZ[] {
+  return Array.from({ length: steps + 1 }, (_, i) => arcPoint(FACADE, t0 + ((t1 - t0) * i) / steps, offset))
 }
 
-export const MAIN_HEIGHT = 22
-/** The taller stepped wing at the west end (left in the photos). */
-export const WEST_WING: XZ[] = [[-73.1, -35.4], [-50, -35.4], [-43, 4], [-46.7, 10.4], [-67.4, -11.6]]
-export const WEST_WING_HEIGHT = 27
+/*
+ * The entrance recess: a full-height cut in the curved mass, glazed at the
+ * back. Its east edge is flush with the east pylon; its west edge is a splayed
+ * return wall. West of the pylons the recess only opens above a solid ledge.
+ */
+export const RECESS_DEPTH = 9
+export const RECESS_T_EAST = thetaAtX(FACADE, 26)
+export const RECESS_T_WEST = thetaAtX(FACADE, -18)
+/** Where the splayed west return wall meets the back glazing. */
+export const RECESS_T_WEST_BACK = thetaAtX(FACADE, -12)
+export const LEDGE_HEIGHT = 8
 
-/** Glazed atrium with the louvered canopy, centred on the entrance. */
+/** Main curved mass: the arc from the east end to the division with the entrance recess cut out, then the vertical recess and the back edge. */
+export function mainFootprint(): XZ[] {
+  return [
+    ...arcPoints(FACADE_T_EAST, RECESS_T_EAST, 0, 24),
+    ...arcPoints(RECESS_T_EAST, RECESS_T_WEST_BACK, -RECESS_DEPTH),
+    ...arcPoints(RECESS_T_WEST, DIVISION_T, 0),
+    NOTCH1, ...BACK,
+  ]
+}
+
+/** Solid ledge under the west part of the recess, from the splayed wall to the west pylon. */
+export function ledgeFootprint(): XZ[] {
+  return [
+    ...arcPoints(ATRIUM_T1, RECESS_T_WEST, 0, 8),
+    ...arcPoints(RECESS_T_WEST_BACK, ATRIUM_T1, -RECESS_DEPTH, 8),
+  ]
+}
+
+/** Taller than the 20-pallet towers (about 25 m), as on site. */
+export const MAIN_HEIGHT = 30
+
+export interface Block { bottom: XZ[]; top: XZ[]; height: number }
+const inset = (p: XZ, dx: number, dz: number): XZ => [p[0] + dx, p[1] + dz]
+
+/** Middle block: the first tooth, leaning back slightly at its corner. */
+export const MIDDLE_BLOCK: Block = {
+  bottom: [NOTCH1, TOOTH1, NOTCH2, NOTCH2_BACK, NOTCH1_BACK],
+  top: [NOTCH1, at(-33.6, -0.6), NOTCH2, NOTCH2_BACK, NOTCH1_BACK],
+  height: 33,
+}
+
+/** West block: the second tooth and the diagonal west edge, which is battered (leans in). */
+export const WEST_BLOCK: Block = {
+  bottom: [NOTCH2, TOOTH2, NW_CORNER, [-38, -24.8], NOTCH2_BACK],
+  top: [NOTCH2, inset(TOOTH2, 0.8, -0.8), inset(NW_CORNER, 2.6, 0), [-38, -24.8], NOTCH2_BACK],
+  height: 36,
+}
+
+/** Outer edges of the two pylons that flank the full-height glazing and the entrance. */
 export const ATRIUM_T0 = thetaAtX(FACADE, 26)
 export const ATRIUM_T1 = thetaAtX(FACADE, -4)
 
@@ -57,10 +116,10 @@ export const STRIP_AREA = BAY_COUNT * BAY_W * (STRIP[1] - STRIP[0])
 export const TODAY_BAYS = [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 14]
 
 /** Two AutoDock rotary towers at the west end of the strip, doors facing the road. */
-export const TOWER_CAPACITY = 12
-export const TOWER_GAP = 1.2
+export const TOWER_CAPACITY = 20
+export const TOWER_GAP = 0.6
 /** Fallback footprint until the model has been measured. */
-export const TOWER_FALLBACK = { w: 6.2, d: 7.5, h: 16 }
+export const TOWER_FALLBACK = { w: 6.0, d: 7.8, h: 20, front: 3.9 }
 export const towerTheta = (k: 0 | 1, towerW: number) =>
   STRIP_T_WEST - (0.4 + towerW / 2 + k * (towerW + TOWER_GAP)) / BAY_R
 
@@ -71,10 +130,14 @@ export const BOARD: Rect = { x0: -330, x1: 330, z0: -270, z1: 250 }
 const towerMid = arcPoint(FACADE, STRIP_T_WEST - 7 / BAY_R, STRIP[1])
 const streetEye = arcPoint(FACADE, STRIP_T_WEST - 40 / BAY_R, ROAD.offset + ROAD.width / 2 + 6)
 const towersEye = arcPoint(FACADE, STRIP_T_WEST - 30 / BAY_R, 48)
+const atriumMid = (ATRIUM_T0 + ATRIUM_T1) / 2
+const entranceEye = arcPoint(FACADE, atriumMid + 6 / FACADE.r, 42)
+const entranceAt = arcPoint(FACADE, atriumMid, -3)
 export const VIEWS = {
   overview: { pos: [-115, 85, 165], target: [-12, 4, 12] },
   street: { pos: [streetEye[0], 1.7, streetEye[1]], target: [towerMid[0], 6.5, towerMid[1]] },
   towers: { pos: [towersEye[0], 24, towersEye[1]], target: [towerMid[0], 6, towerMid[1]] },
+  entrance: { pos: [entranceEye[0], 30, entranceEye[1]], target: [entranceAt[0], 8, entranceAt[1]] },
   plan: { pos: [0, 330, 0.01], target: [0, 0, 0] },
 } as const
 export type ViewName = keyof typeof VIEWS

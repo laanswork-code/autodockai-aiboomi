@@ -6,7 +6,7 @@ const MODES: { id: Mode; label: string }[] = [
   { id: 'today', label: 'Today' },
   { id: 'autodock', label: 'With AutoDock' },
 ]
-const VIEW_LABELS: Record<ViewName, string> = { overview: 'Overview', street: 'Street', towers: 'Towers', plan: 'Plan' }
+const VIEW_LABELS: Record<ViewName, string> = { overview: 'Overview', street: 'Street', towers: 'Towers', entrance: 'Entrance', plan: 'Plan' }
 const fmt = (n: number) => Math.round(n).toLocaleString('en-IN')
 
 function ModeSwitch() {

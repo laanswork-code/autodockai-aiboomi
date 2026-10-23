@@ -57,57 +57,96 @@ export const asphaltTexture = () => canvasTexture('asphalt', [256, 256], [4, 4],
 })
 
 /**
- * Brown granite cladding with the pale horizontal bands seen on the facade.
- * 8 m × 8 m tile: 1.6 m panels, a band every 4 m.
+ * Grey-brown granite with thin panel joints and the thick pale bands seen on
+ * the photos. The bands break and step up in places rather than running
+ * straight. 16 m x 8 m tile, a band row every 4 m.
  */
-export const claddingTexture = () => canvasTexture('cladding', [512, 512], [8, 8], (g, w, h, rnd) => {
-  g.fillStyle = '#5d4f45'
+export const claddingTexture = () => canvasTexture('cladding', [1024, 512], [16, 8], (g, w, h, rnd) => {
+  const px = w / 16
+  g.fillStyle = '#584e47'
   g.fillRect(0, 0, w, h)
-  const p = w / 5
-  for (let y = 0; y < 5; y++) {
-    for (let x = 0; x < 5; x++) {
-      const k = 0.85 + rnd() * 0.25
-      g.fillStyle = `rgb(${Math.round(98 * k)},${Math.round(84 * k)},${Math.round(74 * k)})`
-      g.fillRect(x * p + 1, y * p + 1, p - 2, p - 2)
+  for (let y = 0; y < 8; y++) {
+    for (let x = 0; x < 16; x++) {
+      const k = 0.88 + rnd() * 0.2
+      g.fillStyle = `rgb(${Math.round(92 * k)},${Math.round(82 * k)},${Math.round(75 * k)})`
+      g.fillRect(x * px + 1, y * px + 1, px - 2, px - 2)
     }
   }
-  speckle(g, w, h, rnd, 9000, ['rgba(30,24,20,.35)', 'rgba(160,140,120,.25)'])
-  g.fillStyle = '#9b9a95'
-  for (const y of [0.0, 0.5]) g.fillRect(0, y * h, w, h * 0.022)
-  // rain streaks
-  for (let i = 0; i < 40; i++) {
-    g.fillStyle = `rgba(30,26,22,${0.05 + rnd() * 0.12})`
-    g.fillRect(rnd() * w, 0, 2 + rnd() * 6, h)
+  speckle(g, w, h, rnd, 26000, ['rgba(28,24,22,.4)', 'rgba(170,155,140,.28)', 'rgba(120,108,98,.3)'])
+  // broken bands: segments of varying length, some stepped up by 0.6 m
+  for (const row of [0, 4]) {
+    let x = 0
+    while (x < 16) {
+      const len = 2 + rnd() * 5
+      const step = rnd() < 0.3 ? 0.6 : 0
+      g.fillStyle = '#9a9b98'
+      g.fillRect(x * px, (8 - row - 0.35 - step) * px, Math.min(len, 16 - x) * px, 0.35 * px)
+      x += len + (rnd() < 0.35 ? 0.6 + rnd() * 1.2 : 0)
+    }
+  }
+  for (let i = 0; i < 60; i++) {
+    g.fillStyle = `rgba(30,26,22,${0.04 + rnd() * 0.1})`
+    g.fillRect(rnd() * w, 0, 2 + rnd() * 5, h)
   }
 })
 
-/** The west wing: same cladding with windows, a few of them lit. 6 m × 3.4 m tile. */
-export const wingTexture = () => canvasTexture('wing', [384, 256], [6, 3.4], (g, w, h, rnd) => {
-  g.fillStyle = '#54473e'
+/**
+ * The west blocks: same granite, a pale band per floor, and small windows in
+ * grey frames, alone or in pairs, a few lit. 12 m x 6.8 m tile (two bays, two floors).
+ */
+export const wingTexture = () => canvasTexture('wing', [768, 436], [12, 6.8], (g, w, h, rnd) => {
+  const px = w / 12
+  g.fillStyle = '#544a43'
   g.fillRect(0, 0, w, h)
-  speckle(g, w, h, rnd, 4000, ['rgba(30,24,20,.35)', 'rgba(150,130,110,.2)'])
-  g.fillStyle = '#8f8e89'
-  g.fillRect(0, h * 0.94, w, h * 0.06)
-  // one narrow window per bay, a few of them lit
-  g.fillStyle = rnd() < 0.25 ? '#f2d9a0' : '#2e3438'
-  g.fillRect(w * 0.44, h * 0.38, w * 0.12, h * 0.3)
-  g.strokeStyle = '#9b9a95'
-  g.lineWidth = 3
-  g.strokeRect(w * 0.44, h * 0.38, w * 0.12, h * 0.3)
+  speckle(g, w, h, rnd, 16000, ['rgba(28,24,22,.4)', 'rgba(160,145,130,.25)'])
+  for (let f = 0; f < 2; f++) {
+    const base = h - f * 3.4 * px
+    g.fillStyle = '#9a9b98'
+    g.fillRect(0, base - 0.3 * px, w, 0.3 * px)
+    for (let b = 0; b < 2; b++) {
+      const cx = (b * 6 + 1.5 + rnd() * 3) * px
+      const pair = rnd() < 0.6
+      const n = pair ? 2 : 1
+      const frameW = (pair ? 1.7 : 0.9) * px
+      const top = base - 2.5 * px
+      g.fillStyle = '#8f908d'
+      g.fillRect(cx - 0.1 * px, top - 0.1 * px, frameW + 0.2 * px, 1.0 * px)
+      for (let k = 0; k < n; k++) {
+        g.fillStyle = rnd() < 0.3 ? '#f4d79a' : '#262a2e'
+        g.fillRect(cx + k * 0.85 * px, top, 0.7 * px, 0.8 * px)
+      }
+    }
+  }
 })
 
-/** Blue curtain-wall glazing with mullions. 1.5 m × 1.2 m tile. */
+/** Speckled grey-brown granite of the entrance pylons, 1.5 m panels with fine joints. 3 m tile. */
+export const pylonTexture = () => canvasTexture('pylon', [512, 512], [3, 3], (g, w, h, rnd) => {
+  g.fillStyle = '#7b7064'
+  g.fillRect(0, 0, w, h)
+  const p = w / 2
+  for (let y = 0; y < 2; y++) {
+    for (let x = 0; x < 2; x++) {
+      const k = 0.92 + rnd() * 0.14
+      g.fillStyle = `rgb(${Math.round(132 * k)},${Math.round(121 * k)},${Math.round(106 * k)})`
+      g.fillRect(x * p + 2, y * p + 2, p - 4, p - 4)
+    }
+  }
+  speckle(g, w, h, rnd, 30000, ['rgba(40,34,28,.45)', 'rgba(200,188,170,.35)', 'rgba(90,80,70,.4)'], 2)
+})
+
+/** Dark reflective curtain-wall glazing with thin mullions. 1.5 m x 1.2 m tile. */
 export const glazingTexture = () => canvasTexture('glazing', [256, 256], [1.5, 1.2], (g, w, h, rnd) => {
   const grd = g.createLinearGradient(0, 0, w, h)
-  grd.addColorStop(0, '#5f86a6')
-  grd.addColorStop(1, '#3d5f7c')
+  grd.addColorStop(0, '#3b5468')
+  grd.addColorStop(0.5, '#22323f')
+  grd.addColorStop(1, '#2f4658')
   g.fillStyle = grd
   g.fillRect(0, 0, w, h)
-  g.fillStyle = `rgba(255,255,255,${0.04 + rnd() * 0.06})`
-  g.fillRect(0, 0, w, h * 0.5)
-  g.fillStyle = '#2a3036'
-  g.fillRect(0, 0, w, 6)
-  g.fillRect(0, 0, 6, h)
+  g.fillStyle = `rgba(200,220,235,${0.05 + rnd() * 0.08})`
+  g.fillRect(0, 0, w, h * 0.35)
+  g.fillStyle = '#15191c'
+  g.fillRect(0, 0, w, 4)
+  g.fillRect(0, 0, 4, h)
 })
 
 /** Mown lawn. 3 m tile. */

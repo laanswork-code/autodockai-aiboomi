@@ -6,6 +6,7 @@ import {
 } from '../config/site'
 import { arcPoint, arcRibbon, rng, yawOutward } from '../lib/geo'
 import { asphaltTexture, lawnTexture, paverTexture } from '../lib/textures'
+import { FONT } from '../config/font'
 
 const ROAD_T0 = FACADE_T_EAST - 0.35
 const ROAD_T1 = FACADE_T_WEST + 0.3
@@ -49,6 +50,8 @@ export function Site() {
       <LaneDashes />
       <KsumLetters />
       <Palms />
+      <LawnShrubs />
+      <LampPosts />
       <Trees />
       <TwoWheelers />
     </group>
@@ -116,7 +119,7 @@ function KsumLetters() {
           <meshStandardMaterial color="#3d8fd6" roughness={0.4} />
         </mesh>
       ))}
-      <Text position={[0.6, 0.62, 0]} fontSize={1.05} color="#f2f2ef" anchorX="center" anchorY="middle" outlineWidth={0.01} outlineColor="#c8c8c4">
+      <Text font={FONT} position={[0.6, 0.62, 0]} fontSize={1.05} color="#f2f2ef" anchorX="center" anchorY="middle" outlineWidth={0.01} outlineColor="#c8c8c4">
         KSUM
       </Text>
     </group>
@@ -126,7 +129,8 @@ function KsumLetters() {
 /** Coconut-style palms on the front lawn. */
 function Palms() {
   const spots = useMemo(() => {
-    const ts = [bayTheta(1.5), bayTheta(6.5), bayTheta(12.5), ATRIUM_T0 + 3 / FACADE.r, FACADE_T_EAST + 0.06]
+    // none in front of the signed east pylon, as in the photos
+    const ts = [bayTheta(1.5), bayTheta(6.5), bayTheta(12.5), FACADE_T_EAST + 0.06]
     return ts.map((t, i) => ({ t, p: arcPoint(FACADE, t, 2.4), h: 7 + (i % 3) * 1.2 }))
   }, [])
   return (
@@ -226,6 +230,57 @@ function TwoWheelers() {
       <boxGeometry args={[0.35, 1.0, 1.8]} />
       <meshStandardMaterial roughness={0.5} />
     </instancedMesh>
+  )
+}
+
+/** Frangipani bushes on the front lawn, as in the photos. */
+function LawnShrubs() {
+  const ref = useRef<THREE.InstancedMesh>(null)
+  const spots = useMemo(() => {
+    const rnd = rng(11)
+    return [bayTheta(0.5), bayTheta(4), bayTheta(8.5), bayTheta(13), bayTheta(14.5)].map((t) => ({
+      p: arcPoint(FACADE, t + (rnd() - 0.5) * 0.01, 2.2), s: 1.1 + rnd() * 0.5,
+    }))
+  }, [])
+  useLayoutEffect(() => {
+    const o = new THREE.Object3D()
+    spots.forEach(({ p, s }, i) => {
+      o.position.set(p[0], s * 0.8, p[1])
+      o.scale.set(s * 1.3, s, s * 1.3)
+      o.updateMatrix()
+      ref.current!.setMatrixAt(i, o.matrix)
+    })
+    ref.current!.instanceMatrix.needsUpdate = true
+  }, [spots])
+  return (
+    <instancedMesh ref={ref} args={[undefined, undefined, spots.length]} castShadow>
+      <icosahedronGeometry args={[1, 1]} />
+      <meshStandardMaterial color="#48683a" roughness={0.9} flatShading />
+    </instancedMesh>
+  )
+}
+
+/** Tall slim lamp posts along the lawn. */
+function LampPosts() {
+  const ts = [bayTheta(2.5), bayTheta(7.5), bayTheta(12), ATRIUM_T0 - 0.02]
+  return (
+    <group>
+      {ts.map((t) => {
+        const [x, z] = arcPoint(FACADE, t, 3.6)
+        return (
+          <group key={t} position={[x, 0, z]}>
+            <mesh position={[0, 3, 0]} castShadow>
+              <cylinderGeometry args={[0.05, 0.07, 6, 8]} />
+              <meshStandardMaterial color="#2b2d30" roughness={0.5} metalness={0.4} />
+            </mesh>
+            <mesh position={[0, 6.05, 0]}>
+              <cylinderGeometry args={[0.3, 0.3, 0.1, 16]} />
+              <meshStandardMaterial color="#2b2d30" emissive="#fff3d6" emissiveIntensity={0.4} />
+            </mesh>
+          </group>
+        )
+      })}
+    </group>
   )
 }
 

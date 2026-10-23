@@ -121,6 +121,63 @@ export function extrudeFootprint(pts: readonly XZ[], height: number, base = 0): 
   return g
 }
 
+/**
+ * Prism between a bottom and a top outline with the same vertex count, so faces
+ * can lean (battered walls). Groups: 0 = caps, 1 = walls. Wall UVs are metres
+ * (u along the perimeter, v up), matching the cladding textures.
+ */
+export function prism(bottom: readonly XZ[], top: readonly XZ[], height: number, base = 0): THREE.BufferGeometry {
+  const area = bottom.reduce((a, [x, z], i) => {
+    const [x2, z2] = bottom[(i + 1) % bottom.length]
+    return a + x * z2 - x2 * z
+  }, 0)
+  const y0 = base
+  const y1 = base + height
+  const pos: number[] = []
+  const uv: number[] = []
+  const tri = (a: number[], b: number[], c: number[], ua: number[], ub: number[], uc: number[]) => {
+    pos.push(...a, ...b, ...c)
+    uv.push(...ua, ...ub, ...uc)
+  }
+  // caps: triangulate, then wind each triangle to face up (top) or down (bottom)
+  const capTris = THREE.ShapeUtils.triangulateShape(bottom.map(([x, z]) => new THREE.Vector2(x, z)), [])
+  const up = new THREE.Vector3()
+  for (const [y, ring, wantUp] of [[y1, top, true], [y0, bottom, false]] as const) {
+    for (const [i, j, k] of capTris) {
+      const a = [ring[i][0], y, ring[i][1]]
+      const b = [ring[j][0], y, ring[j][1]]
+      const c = [ring[k][0], y, ring[k][1]]
+      up.set(b[0] - a[0], 0, b[2] - a[2]).cross(new THREE.Vector3(c[0] - a[0], 0, c[2] - a[2]))
+      const flip = (up.y > 0) !== wantUp
+      const uvs = [a, b, c].map((p) => [p[0], p[2]])
+      if (flip) tri(a, c, b, uvs[0], uvs[2], uvs[1])
+      else tri(a, b, c, uvs[0], uvs[1], uvs[2])
+    }
+  }
+  const capCount = pos.length / 3
+  let u = 0
+  for (let i = 0; i < bottom.length; i++) {
+    const j = (i + 1) % bottom.length
+    const bi = [bottom[i][0], y0, bottom[i][1]]
+    const bj = [bottom[j][0], y0, bottom[j][1]]
+    const ti = [top[i][0], y1, top[i][1]]
+    const tj = [top[j][0], y1, top[j][1]]
+    const len = Math.hypot(bottom[j][0] - bottom[i][0], bottom[j][1] - bottom[i][1])
+    const [ubi, ubj, uti, utj] = [[u, y0], [u + len, y0], [u, y1], [u + len, y1]]
+    // positive area in (x, z): outward is to the right of the edge
+    if (area > 0) { tri(bi, tj, bj, ubi, utj, ubj); tri(bi, ti, tj, ubi, uti, utj) }
+    else { tri(bi, bj, tj, ubi, ubj, utj); tri(bi, tj, ti, ubi, utj, uti) }
+    u += len
+  }
+  const g = new THREE.BufferGeometry()
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3))
+  g.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2))
+  g.computeVertexNormals()
+  g.addGroup(0, capCount, 0)
+  g.addGroup(capCount, pos.length / 3 - capCount, 1)
+  return g
+}
+
 export interface Rect { x0: number; x1: number; z0: number; z1: number }
 export const inRect = (r: Rect, [x, z]: XZ) => x >= r.x0 && x <= r.x1 && z >= r.z0 && z <= r.z1
 
