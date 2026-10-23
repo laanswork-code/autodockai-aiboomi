@@ -115,13 +115,20 @@ export const STRIP_AREA = BAY_COUNT * BAY_W * (STRIP[1] - STRIP[0])
 /** Bays occupied today (two empty, as on the day the photos were taken). */
 export const TODAY_BAYS = [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 14]
 
-/** Two AutoDock rotary towers at the west end of the strip, doors facing the road. */
+/**
+ * Two AutoDock rotary towers at the west end of the strip, doors facing the
+ * road. Each one stands on two parking bays: bays 0-1 and 2-3.
+ */
 export const TOWER_CAPACITY = 20
-export const TOWER_GAP = 0.6
-/** Fallback footprint until the model has been measured. */
-export const TOWER_FALLBACK = { w: 6.0, d: 7.8, h: 20, front: 3.9 }
-export const towerTheta = (k: 0 | 1, towerW: number) =>
-  STRIP_T_WEST - (0.4 + towerW / 2 + k * (towerW + TOWER_GAP)) / BAY_R
+export const BAYS_PER_TOWER = 2
+export const towerTheta = (k: 0 | 1) => bayTheta(k * BAYS_PER_TOWER + (BAYS_PER_TOWER - 1) / 2)
+/** First bay boundary east of the towers: the surface bays from here to the entrance stay in use. */
+export const TOWERS_T_EAST = bayTheta(2 * BAYS_PER_TOWER - 0.5)
+/** Surface bays left east of the towers, and the ones occupied today that keep their cars. */
+export const KEPT_BAY_COUNT = BAY_COUNT - 2 * BAYS_PER_TOWER
+export const KEPT_BAYS = TODAY_BAYS.filter((b) => b >= 2 * BAYS_PER_TOWER)
+/** Fallback size until the model has been measured. */
+export const TOWER_FALLBACK = { w: 5.0, d: 5.4, h: 25, front: 2.7 }
 
 /** Model board: context buildings and roads are clipped to this rectangle. */
 export const BOARD: Rect = { x0: -330, x1: 330, z0: -270, z1: 250 }

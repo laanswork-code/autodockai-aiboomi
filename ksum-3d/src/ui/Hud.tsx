@@ -46,8 +46,7 @@ function SpinToggle() {
 /** Today vs AutoDock, computed from the strip and the measured tower footprint. */
 function Stats() {
   const mode = useSceneStore((s) => s.mode)
-  const size = useSceneStore((s) => s.towerSize)
-  const st = spaceStats(size)
+  const st = spaceStats()
   return (
     <div className="stats">
       <div className={`stat ${mode === 'today' ? 'is-on' : ''}`}>
@@ -57,12 +56,12 @@ function Stats() {
       </div>
       <div className={`stat ${mode === 'autodock' ? 'is-on' : ''}`}>
         <span className="stat__k">2 AutoDock towers</span>
-        <b>{st.autodock.cars} cars</b>
-        <span>{fmt(st.autodock.area)} m² · {st.autodock.perCar.toFixed(1)} m² per car</span>
+        <b>{st.autodock.cars + st.keptBays} cars</b>
+        <span>{st.autodock.cars} on {fmt(st.autodock.area)} m² · {st.autodock.perCar.toFixed(1)} m² per car, plus {st.keptBays} surface bays</span>
       </div>
       <div className="stat stat--big">
         <b>{st.densityGain.toFixed(1)}×</b>
-        <span>cars per m² of ground, and {fmt(st.freed)} m² of the strip freed</span>
+        <span>cars per m² of ground in the towers, with the other {st.keptBays} surface bays still in use</span>
       </div>
     </div>
   )

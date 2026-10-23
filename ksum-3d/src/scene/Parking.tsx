@@ -1,9 +1,8 @@
 import { Html } from '@react-three/drei'
-import { useMemo } from 'react'
 import {
-  FACADE, ROAD, STRIP, STRIP_T_EAST, TODAY_BAYS, TOWER_CAPACITY, TOWER_FALLBACK, bayTheta, towerTheta,
+  FACADE, KEPT_BAYS, STRIP, STRIP_T_EAST, TODAY_BAYS, TOWERS_T_EAST, TOWER_CAPACITY, TOWER_FALLBACK, bayTheta, towerTheta,
 } from '../config/site'
-import { arcPoint, arcRibbon, yawInward, yawOutward } from '../lib/geo'
+import { arcPoint, yawInward, yawOutward } from '../lib/geo'
 import { spaceStats } from '../lib/stats'
 import { useSceneStore, type Mode } from '../store/useSceneStore'
 import { Car } from './Car'
@@ -14,8 +13,11 @@ import { RotaryTower, type TowerLoad } from './RotaryTower'
 const COLORS = ['#f2f2f0', '#1b1c1f', '#a9adb2', '#f2f2f0', '#2a3f6a', '#6b6e73', '#f2f2f0', '#7a1e22']
 const KINDS: CarKind[] = ['atto', 'seal']
 const fleet = TODAY_BAYS.map((bay, i) => ({ bay, kind: KINDS[i % 2], color: COLORS[i % COLORS.length] }))
+type Parked = (typeof fleet)[number]
+/** With AutoDock the cars east of the towers stay where they are. */
+const keptFleet = fleet.filter(({ bay }) => KEPT_BAYS.includes(bay))
 
-/** The same cars, moved into the towers (7 + 6), leaving empty pallets to show spare capacity. */
+/** Tower loads, 7 + 6 cars, leaving empty pallets to show spare capacity. */
 const towerLoads: [(TowerLoad | null)[], (TowerLoad | null)[]] = [[], []]
 for (let p = 0; p < TOWER_CAPACITY; p++) {
   for (const k of [0, 1] as const) {
@@ -32,44 +34,49 @@ function TodayCars({ mode }: { mode: Mode }) {
     <group>
       {mode === 'today' && (
         <Html position={[lx, 3.2, lz]} center zIndexRange={[10, 0]}>
-          <div className="tag">Surface parking today · {fleet.length} cars on {Math.round(spaceStats(null).today.area)} m²</div>
+          <div className="tag">Surface parking today · {fleet.length} cars on {Math.round(spaceStats().today.area)} m²</div>
         </Html>
       )}
-      {fleet.map(({ bay, kind, color }) => {
-        const t = bayTheta(bay)
-        const [x, z] = arcPoint(FACADE, t, (STRIP[0] + STRIP[1]) / 2)
-        return <Car key={bay} kind={kind} color={color} position={[x, 0.08, z]} rotation={[0, yawInward(t), 0]} />
-      })}
+      <SurfaceCars cars={fleet} />
     </group>
   )
 }
 
-/** With AutoDock: two rotary towers at the west end, doors on the road, the rest freed. */
+/** Cars nose-in on their bays of the paver strip. */
+function SurfaceCars({ cars }: { cars: Parked[] }) {
+  return (
+    <>
+      {cars.map(({ bay, kind, color }) => {
+        const t = bayTheta(bay)
+        const [x, z] = arcPoint(FACADE, t, (STRIP[0] + STRIP[1]) / 2)
+        return <Car key={bay} kind={kind} color={color} position={[x, 0.08, z]} rotation={[0, yawInward(t), 0]} />
+      })}
+    </>
+  )
+}
+
+/** With AutoDock: two rotary towers on the four west bays, doors on the road, cars still parked on the rest. */
 function Towers({ mode }: { mode: Mode }) {
   const size = useSceneStore((s) => s.towerSize) ?? TOWER_FALLBACK
+  // each tower centred on its two bays, door face at the strip's road edge
   const placed = ([0, 1] as const).map((k) => {
-    const t = towerTheta(k, size.w)
-    // door face flush with the curb on the road edge
-    const [x, z] = arcPoint(FACADE, t, ROAD.offset - ROAD.width / 2 - 0.25 - size.front)
+    const t = towerTheta(k)
+    const [x, z] = arcPoint(FACADE, t, STRIP[1] - 0.1 - size.front)
     return { k, t, x, z }
   })
-  const freedT0 = towerTheta(1, size.w) - (size.w / 2 + 0.8) / (FACADE.r + 6.75)
-  const freed = useMemo(() => arcRibbon(FACADE, STRIP_T_EAST, freedT0, STRIP[0], STRIP[1], 0.1), [freedT0])
-  const stats = spaceStats(size)
-  const [lx, lz] = arcPoint(FACADE, (STRIP_T_EAST + freedT0) / 2, (STRIP[0] + STRIP[1]) / 2)
+  const stats = spaceStats()
+  const [lx, lz] = arcPoint(FACADE, (STRIP_T_EAST + TOWERS_T_EAST) / 2, (STRIP[0] + STRIP[1]) / 2)
   return (
     <group>
       {placed.map(({ k, t, x, z }) => (
         <RotaryTower key={k} load={towerLoads[k]} reportSize={k === 0} position={[x, 0.08, z]} rotation={[0, yawOutward(t), 0]} />
       ))}
-      <mesh geometry={freed}>
-        <meshStandardMaterial color="#58c27d" transparent opacity={0.45} depthWrite={false} />
-      </mesh>
+      <SurfaceCars cars={keptFleet} />
       {/* Html ignores the parent's visibility, so labels mount only in this mode */}
       {mode === 'autodock' && (
         <>
-          <Html position={[lx, 1.2, lz]} center zIndexRange={[10, 0]}>
-            <div className="tag tag--freed">Freed ground · {Math.round(stats.freed)} m²</div>
+          <Html position={[lx, 3.2, lz]} center zIndexRange={[10, 0]}>
+            <div className="tag">Surface parking kept · {stats.keptBays} bays</div>
           </Html>
           <Html position={[placed[0].x, size.h + 2, placed[0].z]} center zIndexRange={[10, 0]}>
             <div className="tag tag--tower">2 AutoDock towers · room for {stats.autodock.cars} cars</div>

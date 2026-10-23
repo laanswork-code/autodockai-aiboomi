@@ -45,7 +45,6 @@ button:focus-visible { outline: 3px solid var(--mark); outline-offset: 2px; }
 .credit { margin-left: auto; font-size: 11px; color: #4a4e55; background: var(--paper); padding: 4px 8px; border-radius: 6px; }
 
 .tag { font: 600 13px system-ui, sans-serif; white-space: nowrap; background: rgba(22, 24, 27, .82); color: #fff; padding: 6px 10px; border-radius: 6px; pointer-events: none; }
-.tag--freed { background: rgba(47, 158, 91, .92); }
 .tag--tower { background: rgba(23, 71, 166, .92); }
 
 @media (max-width: 760px) {
