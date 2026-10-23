@@ -1,3 +1,9 @@
+# AutoDock market-intelligence research — 2026-10-23
+
+The initial US robotaxi-depot SerpApi run and curated evidence corpus are documented in [the executive summary](reports/executive-summary.md). Raw responses are in `data/raw/2026-10-23/` (Git-ignored); normalized source, finding, prospect, city, competitor, risk, and assumption files are in `data/normalized/`; focused reports are in `reports/`. See [the search-run notes](notes/search-strategy.md) for query coverage, status, and limits.
+
+This corpus was collected with a one-run script; the spec's reusable Python collector and report CLI are not implemented yet. The `npm run collect` command below belongs to the separate India parking-pain project. It uses different queries and `SERPAPI_KEY`, so it does not refresh this US market-intelligence corpus.
+
 # Parking pain research
 
 Evidence for the "user problem" part of the pitch: real complaints about the

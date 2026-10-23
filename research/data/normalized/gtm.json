@@ -1,0 +1,25 @@
+{
+  "as_of_date": "2026-10-23",
+  "evidence_status": "first-pass research; no outreach sent",
+  "first_customer_hypothesis": {
+    "profile": "AV fleet-management or fleet-charging operator with an existing multi-vehicle depot and a customer willing to share operational data",
+    "initial_interview_target": "Lyft / Flexdrive Nashville operations",
+    "rationale": "A public 80,000-square-foot AV depot and a named Waymo relationship provide a concrete workflow baseline. This is an interview lead, not a commitment or pilot offer.",
+    "source_ids": ["OPS-01", "OPS-02"]
+  },
+  "pilot_hypothesis": {
+    "stage_1": "Shadow-mode analysis of anonymized arrivals, parking positions, charging, maintenance, and release-to-service events at an existing depot.",
+    "stage_2": "Simulate alternative parking and charging schedules; compare retrieval time, usable capacity, queueing, labor touchpoints, charger conflicts, and exceptions.",
+    "stage_3": "Only after a customer sponsor, site study, safety review, interface approval, and economic case, scope a reversible physical pilot.",
+    "success_measures": ["P50/P95 arrival-to-ready time", "vehicle retrieval P50/P95", "parking/staging capacity", "charger queue and utilization", "labor hours per vehicle", "uptime and exception recovery", "energy cost per ready vehicle"],
+    "status": "proposal only; no site, data, customer, or MOU confirmed"
+  },
+  "outreach_sequence": [
+    {"sequence": 1, "target": "Lyft / Flexdrive", "reason": "New Nashville AV depot with published charging, maintenance, and staffing scope.", "channel": "Official Lyft/Flexdrive business contact route; not sent", "source_ids": ["OPS-01", "OPS-02"]},
+    {"sequence": 2, "target": "Terawatt Infrastructure", "reason": "Markets charging sites specifically for autonomous and rideshare fleets; potential channel or substitute.", "channel": "Official autonomous/rideshare fleet solutions contact route; not sent", "source_ids": ["INFRA-01", "INFRA-04"]},
+    {"sequence": 3, "target": "Avis Budget Group", "reason": "Publicly named Waymo fleet infrastructure and depot-operations partner.", "channel": "Official corporate contact route; not sent", "source_ids": ["OPS-03"]},
+    {"sequence": 4, "target": "Waymo", "reason": "Multi-city operator with disclosed fleet-services partners; ask about depot metrics and third-party site integration.", "channel": "Official company contact route; not sent", "source_ids": ["OPS-01", "OPS-03", "OPS-04"]}
+  ],
+  "mou_status": "unknown; no counterparty engagement or agreement is evidenced",
+  "open_terms": ["site and equipment ownership", "data access and retention", "vehicle permissions", "safety and certification responsibilities", "insurance and indemnity", "capex and operating costs", "pilot duration", "success criteria", "termination and removal", "confidentiality and publication"]
+}

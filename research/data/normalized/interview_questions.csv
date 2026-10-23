@@ -1,0 +1,21 @@
+question_id,stakeholder,question,decision_it_informs,source_ids,status
+Q-01,Robotaxi operator,"How many vehicles are in each operating market today, and what is the monthly fleet growth plan?","Addressable vehicle count and urgency.","OPS-04;OPS-11",unanswered
+Q-02,Robotaxi operator,"Where do vehicles park between trips, charge, clean, inspect, and receive maintenance today?","Depot footprint and workflow map.","OPS-01;OPS-02",unanswered
+Q-03,Robotaxi operator,"How many facilities serve the fleet, and which are owned, leased, or managed by partners?","TAM/SAM site denominator and buyer ownership.","OPS-01;OPS-03",unanswered
+Q-04,Depot operator,"What are the arrival, departure, queue, and peak retrieval distributions by hour and weekday?","Required throughput and storage buffer.",OPS-01,unanswered
+Q-05,Depot operator,"What is the median and 95th-percentile time from depot arrival to ready-for-service release?","Value and baseline readiness metric.",OPS-01,unanswered
+Q-06,Depot operator,"How much floor area and how many parking/staging positions are available, and what is the constrained resource?","Density case and candidate pilot scope.",OPS-01,unanswered
+Q-07,Charging operator,"What are the charger count, charger power, connector types, utilization, fault rate, and queue time?","Charger design and reliability baseline.","OPS-01;ECON-02",unanswered
+Q-08,Charging operator,"What vehicle energy use and state-of-charge thresholds trigger depot return or charging?","Charging model and dispatch constraints.","ECON-02;ECON-03",unanswered
+Q-09,Utility/site owner,"What is the existing service capacity, peak demand, upgrade scope, tariff, and expected interconnection timeline?","Site feasibility and energy economics.","GRID-01;ECON-03",unanswered
+Q-10,Depot operations,"How many labor hours per vehicle are spent on charging, cleaning, inspection, repositioning, and service handoff?","Labor savings and operational impact.",OPS-01,unanswered
+Q-11,Robotaxi operator,"What are deadhead miles, off-service hours, charging downtime, and vehicle utilization by market?","Problem size and productivity effect.",OPS-04,unanswered
+Q-12,Robotaxi operator,"Which dispatch, telematics, vehicle-state, charger, and work-order APIs can an approved vendor use?","Technical integration feasibility.","AD-02;ECON-03",unanswered
+Q-13,Vehicle/OEM engineer,"What vehicle geometry, clearance, weight, charge-port, wheelbase, and emergency egress constraints govern mechanical storage?","Vehicle compatibility and safety case.","AD-02;ECON-02",unanswered
+Q-14,Operator safety team,"What fail-safe mode, manual bypass, emergency retrieval, fire isolation, and service recovery times are required?","Safety case and operating envelope.","REG-06;REG-03;REG-04;AD-02",unanswered
+Q-15,Real-estate owner,"What parcel, zoning, lease, environmental, access, and expansion options are actually available for fleet use?","City and site selection.","REG-05;INFRA-03",unanswered
+Q-16,Local authority/fire marshal,"Which adopted building/fire code, conditional-use review, fire apparatus access, and emergency procedures apply to the site?","Permitting and life-safety design.","REG-05;REG-06",unanswered
+Q-17,Procurement/legal,"Who owns capex, uptime, vehicle damage liability, software data, insurance, warranties, and operating permits?","Buyer map and MOU structure.","OPS-01;OPS-03;AD-03",unanswered
+Q-18,AV partner/fleet manager,"What commitments and restrictions in the operator agreement govern site design, vehicle movement, data, and third-party equipment?","Identify actual buyer and integration authority.","OPS-01;OPS-03",unanswered
+Q-19,Automated-parking supplier,"What independently measured capacity, throughput, retrieval distribution, uptime, service burden, certification, and installed price can be shared?","Competitive benchmark and economic model.","COMP-01;COMP-02;COMP-03;COMP-04",unanswered
+Q-20,Potential first customer,"Would a shadow-mode simulation using an existing depot's anonymized event logs be useful, and what measurable threshold would justify a physical pilot?","Test purchase intent and pilot gate.","OPS-01;AD-03",unanswered
