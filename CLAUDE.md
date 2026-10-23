@@ -6,13 +6,15 @@ license: MIT
 
 # Workflow: Superpowers
 
-Every request in this repo goes through the Superpowers skills in
-`.claude/skills/` (vendored from https://github.com/obra/superpowers, see
-`.claude/skills/VENDORED.md`).
+Every request in this repo goes through the Superpowers skills
+(https://github.com/obra/superpowers).
 
-- At the start of every conversation, read and follow
-  `.claude/skills/using-superpowers/SKILL.md`. Claude Code loads these skills
-  automatically; other agents should open the `SKILL.md` files directly.
+- Claude Code: the plugin is enabled in `.claude/settings.json`
+  (`superpowers@claude-plugins-official`). Accept the install prompt when you
+  first open the repo. Other agents: install Superpowers for your harness as
+  described in the upstream README.
+- At the start of every conversation, load and follow the `using-superpowers`
+  skill.
 - Before acting on any request, check whether a skill applies. If one might,
   load it and follow it exactly.
 - Think, plan, then do:
