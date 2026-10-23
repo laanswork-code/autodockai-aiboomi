@@ -12,6 +12,12 @@
       "sourceType": "github",
       "skillPath": ".claude/skills/react-three-fiber/SKILL.md",
       "computedHash": "d672dfba48620140185d451bc9b6841833eed4306277776efab2e2a82c7b8fbf"
+    },
+    "readme-optimization": {
+      "source": "samber/developer-relations-skills",
+      "sourceType": "github",
+      "skillPath": "skills/readme-optimization/SKILL.md",
+      "computedHash": "54ded40867bcaefb69740e25a476cc3ec368268589c9072a1503385f6fdcffdc"
     }
   }
 }
