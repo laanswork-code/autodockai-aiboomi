@@ -65,6 +65,9 @@ npm run dev                       # app on http://localhost:5173, proxies /api t
 ```
 
 Open the app, choose **With AutoDock**, then **Rush hour** in the control room.
+Two more pages: **`/dashboard`** monitors the decision layer live (Jev decisions, cost, latency,
+confidence, escalations, the simulated comparison) and **`/problems`** lists the 474 parking
+problems from the research, linked to the originals.
 
 > [!TIP]
 > No TypeSafe key? The app still runs: every decision falls back to the rules

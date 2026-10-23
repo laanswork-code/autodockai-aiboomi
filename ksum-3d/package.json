@@ -11,7 +11,8 @@
     "site": "node scripts/build-site.mjs",
     "server": "node --env-file=../.env server/index.ts",
     "sim": "node --env-file=../.env sim/run.ts",
-    "test": "node --test \"server/**/*.test.ts\" \"sim/**/*.test.ts\" \"src/control/eventBus.test.ts\""
+    "test": "node --test \"server/**/*.test.ts\" \"sim/**/*.test.ts\" \"src/control/eventBus.test.ts\"",
+    "problems": "node scripts/sync-problems.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.9",

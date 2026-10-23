@@ -37,6 +37,8 @@ square metre, with about 92 m² of the strip freed.
 - `src/config/site.ts`: site geometry (facade arc, strip, bays, tower slots, camera presets)
 - `src/scene/`: `Context` (OSM board), `Site` (ground, road, trees), `KtizBuilding`, `Parking`, `RotaryTower`, `Car`, `EnergyFlows` (roof solar, grid transformer and live power lines)
 - `src/ui/Hud.tsx`: overlay controls and stats
+- `src/Root.tsx`, `src/route.ts`, `src/Nav.tsx`: three routes, each lazy loaded: `/` digital twin, `/dashboard` live monitor (polls `/api/health` and `/api/audit`), `/problems` research list (`npm run problems` refreshes `src/data/problems.json` from `../research`)
+- `src/pages/`: dashboard and problems pages
 - `scripts/build-site.mjs`: OSM to local metres
 - `src/control/`: decision contract (`types.ts`), rules policy (`baseline.ts`), event bus (`eventBus.ts`), pipeline wiring (`pipeline.ts`, `api.ts`, `orchestrator.ts`), control room, Jev cost counter (`CostCounter.tsx`), review queue, simulated comparison card
 - `src/phone/`: driver phone mockup

@@ -4,6 +4,7 @@ import { SimCard } from '../control/SimCard'
 import { spaceStats } from '../lib/stats'
 import { useSceneStore, type Mode } from '../store/useSceneStore'
 import { DriverPhone } from './DriverPhone'
+import { NavLinks } from '../Nav.tsx'
 
 const MODES: { id: Mode; label: string }[] = [
   { id: 'today', label: 'Today' },
@@ -80,7 +81,10 @@ export function Hud() {
           <h1>KINFRA Hi-Tech Park, Kalamassery</h1>
           <p className="sub">Live digital twin of the Kerala Startup Mission building (KTIZ), with two rotary towers on today's parking strip.</p>
         </div>
-        <ModeSwitch />
+        <div className="hud-top__right">
+          <NavLinks />
+          <ModeSwitch />
+        </div>
       </header>
       {mode === 'autodock' && <ControlRoom />}
       <aside className="hud-side">
