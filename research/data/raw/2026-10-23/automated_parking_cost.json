@@ -1,0 +1,473 @@
+{
+  "query": {
+    "query_id": "automated_parking_cost",
+    "engine": "google",
+    "q": "automated mechanical parking system installed cost per space United States",
+    "gl": "us",
+    "hl": "en",
+    "num": 10
+  },
+  "retrieved_at": "2026-10-23T17:11:42.313146+00:00",
+  "status": "success",
+  "response": {
+    "search_metadata": {
+      "id": "6adb954de49cad38b70f0600",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/YX632ehWvZSJ37twAJl2SXWP-q65yMm1VjKbnWtzD7Q/6adb954de49cad38b70f0600.json",
+      "markdown_endpoint": "https://serpapi.com/searches/YX632ehWvZSJ37twAJl2SXWP-q65yMm1VjKbnWtzD7Q/6adb954de49cad38b70f0600.md",
+      "pixel_position_endpoint": "https://serpapi.com/searches/YX632ehWvZSJ37twAJl2SXWP-q65yMm1VjKbnWtzD7Q/6adb954de49cad38b70f0600.json_with_pixel_position",
+      "created_at": "2026-10-23 17:11:41 UTC",
+      "processed_at": "2026-10-23 17:11:41 UTC",
+      "google_url": "https://www.google.com/search?q=automated+mechanical+parking+system+installed+cost+per+space+United+States&oq=automated+mechanical+parking+system+installed+cost+per+space+United+States&hl=en&gl=us&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/YX632ehWvZSJ37twAJl2SXWP-q65yMm1VjKbnWtzD7Q/6adb954de49cad38b70f0600.html",
+      "total_time_taken": 0.5
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "automated mechanical parking system installed cost per space United States",
+      "google_domain": "google.com",
+      "hl": "en",
+      "gl": "us",
+      "device": "desktop"
+    },
+    "search_information": {
+      "query_displayed": "automated mechanical parking system installed cost per space United States",
+      "total_results": 6310000000,
+      "time_taken_displayed": 0.34,
+      "organic_results_state": "Results for exact spelling"
+    },
+    "related_questions": [
+      {
+        "question": "What is NASA's newest project?",
+        "type": "featured_snippet",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1N6UTRXbU5aWW0xaFowOWFVMUkzUzI1RlMwTktMVTlQUXpCalMyeDNWbE5wVVdFd1VWVlpObFJ6YWpBNFduVlhNelJ1ZUZVeFRYb3RZM0Z1VVRaS1ltbFBiRTAxV1RKWWJsUk5VRmxYY21SaGVUUXhaVVZXUm5ORGR4SVhWRnBZWW1GemFYcEtjblpZTlU1dlVHOUxaV0ZyUVVrYUlrRkVjM0k1WmxSak5HZzNZbFZUVlRKa1dsVmpPR1o2YkMwM05FZGlXa3R1TlZFIiwiZmN2IjoiMyIsImVpIjoiVFpYYmFzaXpKcnZYNU5vUG9LZWFrQUkiLCJxYyI6ImN4WExzUkdBTUFoQVVXc3JTMHRHY0FON3QtQ1FVMDVDY29FVUZpN2xoTWI2dno5dTJDSW5ETjRoTVoxb1FxaFFzRjVpQl9qdHdRbkVQRkMxRzhvZVVMaUNGeVNHWnZLZnZRYjdORHp2dkt3ZiIsInF1ZXN0aW9uIjoiV2hhdCBpcyBOQVNBJ3MgbmV3ZXN0IHByb2plY3Q/IiwibGsiOiJHaEJ1WVhOaElHNWxkeUJ3Y205cVpXTjAiLCJicyI6ImMzMk9NUXZDTUJCR2NiMnBPR21vNVRiM0lqaUdiazR1RHM0aFBZbmE1a0t2RXZydlRTb2Q2X3J1NDcyREUxUjNaMFo4Q2w2YlczTVU5QlJKUmd3RHY4aU91dDZxd2hzeG1TOFFOQnd1SExFM2ZzSkFIRHJDeU1NYmt5aGJkRjJwMHEwTXNnek9zSjhGSC11d1pSS1VZQ3loWlVsRnBYWnU1WmpMeTc4XzJpZmFUYW5VRXZKakxzY19nMkx6QlEiLCJpZCI6ImZjX1RaWGJhc2l6SnJ2WDVOb1BvS2Vha0FJXzMifQ==",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1N6UTRXbU5aWW0xaFowOWFVMUkzUzI1RlMwTktMVTlQUXpCalMyeDNWbE5wVVdFd1VWVlpObFJ6YWpBNFduVlhNelJ1ZUZVeFRYb3RZM0Z1VVRaS1ltbFBiRTAxV1RKWWJsUk5VRmxYY21SaGVUUXhaVVZXUm5ORGR4SVhWRnBZWW1GemFYcEtjblpZTlU1dlVHOUxaV0ZyUVVrYUlrRkVjM0k1WmxSak5HZzNZbFZUVlRKa1dsVmpPR1o2YkMwM05FZGlXa3R1TlZFIiwiZmN2IjoiMyIsImVpIjoiVFpYYmFzaXpKcnZYNU5vUG9LZWFrQUkiLCJxYyI6ImN4WExzUkdBTUFoQVVXc3JTMHRHY0FON3QtQ1FVMDVDY29FVUZpN2xoTWI2dno5dTJDSW5ETjRoTVoxb1FxaFFzRjVpQl9qdHdRbkVQRkMxRzhvZVVMaUNGeVNHWnZLZnZRYjdORHp2dkt3ZiIsInF1ZXN0aW9uIjoiV2hhdCBpcyBOQVNBJ3MgbmV3ZXN0IHByb2plY3Q%2FIiwibGsiOiJHaEJ1WVhOaElHNWxkeUJ3Y205cVpXTjAiLCJicyI6ImMzMk9NUXZDTUJCR2NiMnBPR21vNVRiM0lqaUdiazR1RHM0aFBZbmE1a0t2RXZydlRTb2Q2X3J1NDcyREUxUjNaMFo4Q2w2YlczTVU5QlJKUmd3RHY4aU91dDZxd2hzeG1TOFFOQnd1SExFM2ZzSkFIRHJDeU1NYmt5aGJkRjJwMHEwTXNnek9zSjhGSC11d1pSS1VZQ3loWlVsRnBYWnU1WmpMeTc4XzJpZmFUYW5VRXZKakxzY19nMkx6QlEiLCJpZCI6ImZjX1RaWGJhc2l6SnJ2WDVOb1BvS2Vha0FJXzMifQ%3D%3D"
+      },
+      {
+        "question": "How many people work at NASA?",
+        "type": "featured_snippet",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1N6UTRXbU5aWW0xaFowOWFVMUkzUzI1RlMwTktMVTlQUXpCalMyeDNWbE5wVVdFd1VWVlpObFJ6YWpBNFduVlhNelJ1ZUZVeFRYb3RZM0Z1VVRaS1ltbFBiRTAxV1RKWWJsUk5VRmxYY21SaGVUUXhaVVZXUm5ORGR4SVhWRnBZWW1GemFYcEtjblpZTlU1dlVHOUxaV0ZyUVVrYUlrRkVjM0k1WmxSak5HZzNZbFZUVlRKa1dsVmpPR1o2YkMwM05FZGlXa3R1TlZFIiwiZmN2IjoiMyIsImVpIjoiVFpYYmFzaXpKcnZYNU5vUG9LZWFrQUkiLCJxYyI6ImN4WExzUkdBTUFoQVVXc3JTMHRHY0FON3QtQ1FVMDVDY29FVUZpN2xoTWI2dno5dTJDSW5ETjRoTVoxb1FxaFFzRjVpQl9qdHdRbkVQRkMxRzhvZVVMaUNGeVNHWnZLZnZRYjdORHp2dkt3ZiIsInF1ZXN0aW9uIjoiSG93IG1hbnkgcGVvcGxlIHdvcmsgYXQgTkFTQT8iLCJsayI6IkdoeG9iM2NnYldGdWVTQndaVzl3YkdVZ2QyOXlheUJoZENCdVlYTmgiLCJicyI6ImMzMk9NUXZDTUJCR2NiMnBPR21vNVRiM0lqaUdiazR1RHM0aFBZbmE1a0t2RXZydlRTb2Q2X3J1NDcyREUxUjNaMFo4Q2w2YlczTVU5QlJKUmd3RHY4aU91dDZxd2hzeG1TOFFOQnd1SExFM2ZzSkFIRHJDeU1NYmt5aGJkRjJwMHEwTXNnek9zSjhGSC11d1pSS1VZQ3loWlVsRnBYWnU1WmpMeTc4XzJpZmFUYW5VRXZKakxzY19nMkx6QlEiLCJpZCI6ImZjX1RaWGJhc2l6SnJ2WDVOb1BvS2Vha0FJXzMifQ==",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1N6UTRXbU5aWW0xaFowOWFVMUkzUzI1RlMwTktMVTlQUXpCalMyeDNWbE5wVVdFd1VWVlpObFJ6YWpBNFduVlhNelJ1ZUZVeFRYb3RZM0Z1VVRaS1ltbFBiRTAxV1RKWWJsUk5VRmxYY21SaGVUUXhaVVZXUm5ORGR4SVhWRnBZWW1GemFYcEtjblpZTlU1dlVHOUxaV0ZyUVVrYUlrRkVjM0k1WmxSak5HZzNZbFZUVlRKa1dsVmpPR1o2YkMwM05FZGlXa3R1TlZFIiwiZmN2IjoiMyIsImVpIjoiVFpYYmFzaXpKcnZYNU5vUG9LZWFrQUkiLCJxYyI6ImN4WExzUkdBTUFoQVVXc3JTMHRHY0FON3QtQ1FVMDVDY29FVUZpN2xoTWI2dno5dTJDSW5ETjRoTVoxb1FxaFFzRjVpQl9qdHdRbkVQRkMxRzhvZVVMaUNGeVNHWnZLZnZRYjdORHp2dkt3ZiIsInF1ZXN0aW9uIjoiSG93IG1hbnkgcGVvcGxlIHdvcmsgYXQgTkFTQT8iLCJsayI6IkdoeG9iM2NnYldGdWVTQndaVzl3YkdVZ2QyOXlheUJoZENCdVlYTmgiLCJicyI6ImMzMk9NUXZDTUJCR2NiMnBPR21vNVRiM0lqaUdiazR1RHM0aFBZbmE1a0t2RXZydlRTb2Q2X3J1NDcyREUxUjNaMFo4Q2w2YlczTVU5QlJKUmd3RHY4aU91dDZxd2hzeG1TOFFOQnd1SExFM2ZzSkFIRHJDeU1NYmt5aGJkRjJwMHEwTXNnek9zSjhGSC11d1pSS1VZQ3loWlVsRnBYWnU1WmpMeTc4XzJpZmFUYW5VRXZKakxzY19nMkx6QlEiLCJpZCI6ImZjX1RaWGJhc2l6SnJ2WDVOb1BvS2Vha0FJXzMifQ%3D%3D"
+      },
+      {
+        "question": "How much does space cost?",
+        "type": "featured_snippet",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1N6UTRXbU5aWW0xaFowOWFVMUkzUzI1RlMwTktMVTlQUXpCalMyeDNWbE5wVVdFd1VWVlpObFJ6YWpBNFduVlhNelJ1ZUZVeFRYb3RZM0Z1VVRaS1ltbFBiRTAxV1RKWWJsUk5VRmxYY21SaGVUUXhaVVZXUm5ORGR4SVhWRnBZWW1GemFYcEtjblpZTlU1dlVHOUxaV0ZyUVVrYUlrRkVjM0k1WmxSak5HZzNZbFZUVlRKa1dsVmpPR1o2YkMwM05FZGlXa3R1TlZFIiwiZmN2IjoiMyIsImVpIjoiVFpYYmFzaXpKcnZYNU5vUG9LZWFrQUkiLCJxYyI6ImN4WExzUkdBTUFoQVVXc3JTMHRHY0FON3QtQ1FVMDVDY29FVUZpN2xoTWI2dno5dTJDSW5ETjRoTVoxb1FxaFFzRjVpQl9qdHdRbkVQRkMxRzhvZVVMaUNGeVNHWnZLZnZRYjdORHp2dkt3ZiIsInF1ZXN0aW9uIjoiSG93IG11Y2ggZG9lcyBzcGFjZSBjb3N0PyIsImxrIjoiR2hob2IzY2diWFZqYUNCa2IyVnpJSE53WVdObElHTnZjM1EiLCJicyI6ImMzMk9NUXZDTUJCR2NiMnBPR21vNVRiM0lqaUdiazR1RHM0aFBZbmE1a0t2RXZydlRTb2Q2X3J1NDcyREUxUjNaMFo4Q2w2YlczTVU5QlJKUmd3RHY4aU91dDZxd2hzeG1TOFFOQnd1SExFM2ZzSkFIRHJDeU1NYmt5aGJkRjJwMHEwTXNnek9zSjhGSC11d1pSS1VZQ3loWlVsRnBYWnU1WmpMeTc4XzJpZmFUYW5VRXZKakxzY19nMkx6QlEiLCJpZCI6ImZjX1RaWGJhc2l6SnJ2WDVOb1BvS2Vha0FJXzMifQ==",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1N6UTRXbU5aWW0xaFowOWFVMUkzUzI1RlMwTktMVTlQUXpCalMyeDNWbE5wVVdFd1VWVlpObFJ6YWpBNFduVlhNelJ1ZUZVeFRYb3RZM0Z1VVRaS1ltbFBiRTAxV1RKWWJsUk5VRmxYY21SaGVUUXhaVVZXUm5ORGR4SVhWRnBZWW1GemFYcEtjblpZTlU1dlVHOUxaV0ZyUVVrYUlrRkVjM0k1WmxSak5HZzNZbFZUVlRKa1dsVmpPR1o2YkMwM05FZGlXa3R1TlZFIiwiZmN2IjoiMyIsImVpIjoiVFpYYmFzaXpKcnZYNU5vUG9LZWFrQUkiLCJxYyI6ImN4WExzUkdBTUFoQVVXc3JTMHRHY0FON3QtQ1FVMDVDY29FVUZpN2xoTWI2dno5dTJDSW5ETjRoTVoxb1FxaFFzRjVpQl9qdHdRbkVQRkMxRzhvZVVMaUNGeVNHWnZLZnZRYjdORHp2dkt3ZiIsInF1ZXN0aW9uIjoiSG93IG11Y2ggZG9lcyBzcGFjZSBjb3N0PyIsImxrIjoiR2hob2IzY2diWFZqYUNCa2IyVnpJSE53WVdObElHTnZjM1EiLCJicyI6ImMzMk9NUXZDTUJCR2NiMnBPR21vNVRiM0lqaUdiazR1RHM0aFBZbmE1a0t2RXZydlRTb2Q2X3J1NDcyREUxUjNaMFo4Q2w2YlczTVU5QlJKUmd3RHY4aU91dDZxd2hzeG1TOFFOQnd1SExFM2ZzSkFIRHJDeU1NYmt5aGJkRjJwMHEwTXNnek9zSjhGSC11d1pSS1VZQ3loWlVsRnBYWnU1WmpMeTc4XzJpZmFUYW5VRXZKakxzY19nMkx6QlEiLCJpZCI6ImZjX1RaWGJhc2l6SnJ2WDVOb1BvS2Vha0FJXzMifQ%3D%3D"
+      },
+      {
+        "question": "What is space mostly made of?",
+        "type": "featured_snippet",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1N6UTRXbU5aWW0xaFowOWFVMUkzUzI1RlMwTktMVTlQUXpCalMyeDNWbE5wVVdFd1VWVlpObFJ6YWpBNFduVlhNelJ1ZUZVeFRYb3RZM0Z1VVRaS1ltbFBiRTAxV1RKWWJsUk5VRmxYY21SaGVUUXhaVVZXUm5ORGR4SVhWRnBZWW1GemFYcEtjblpZTlU1dlVHOUxaV0ZyUVVrYUlrRkVjM0k1WmxSak5HZzNZbFZUVlRKa1dsVmpPR1o2YkMwM05FZGlXa3R1TlZFIiwiZmN2IjoiMyIsImVpIjoiVFpYYmFzaXpKcnZYNU5vUG9LZWFrQUkiLCJxYyI6ImN4WExzUkdBTUFoQVVXc3JTMHRHY0FON3QtQ1FVMDVDY29FVUZpN2xoTWI2dno5dTJDSW5ETjRoTVoxb1FxaFFzRjVpQl9qdHdRbkVQRkMxRzhvZVVMaUNGeVNHWnZLZnZRYjdORHp2dkt3ZiIsInF1ZXN0aW9uIjoiV2hhdCBpcyBzcGFjZSBtb3N0bHkgbWFkZSBvZj8iLCJsayI6IkdoeDNhR0YwSUdseklITndZV05sSUcxdmMzUnNlU0J0WVdSbElHOW0iLCJicyI6ImMzMk9NUXZDTUJCR2NiMnBPR21vNVRiM0lqaUdiazR1RHM0aFBZbmE1a0t2RXZydlRTb2Q2X3J1NDcyREUxUjNaMFo4Q2w2YlczTVU5QlJKUmd3RHY4aU91dDZxd2hzeG1TOFFOQnd1SExFM2ZzSkFIRHJDeU1NYmt5aGJkRjJwMHEwTXNnek9zSjhGSC11d1pSS1VZQ3loWlVsRnBYWnU1WmpMeTc4XzJpZmFUYW5VRXZKakxzY19nMkx6QlEiLCJpZCI6ImZjX1RaWGJhc2l6SnJ2WDVOb1BvS2Vha0FJXzMifQ==",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSS1N6UTRXbU5aWW0xaFowOWFVMUkzUzI1RlMwTktMVTlQUXpCalMyeDNWbE5wVVdFd1VWVlpObFJ6YWpBNFduVlhNelJ1ZUZVeFRYb3RZM0Z1VVRaS1ltbFBiRTAxV1RKWWJsUk5VRmxYY21SaGVUUXhaVVZXUm5ORGR4SVhWRnBZWW1GemFYcEtjblpZTlU1dlVHOUxaV0ZyUVVrYUlrRkVjM0k1WmxSak5HZzNZbFZUVlRKa1dsVmpPR1o2YkMwM05FZGlXa3R1TlZFIiwiZmN2IjoiMyIsImVpIjoiVFpYYmFzaXpKcnZYNU5vUG9LZWFrQUkiLCJxYyI6ImN4WExzUkdBTUFoQVVXc3JTMHRHY0FON3QtQ1FVMDVDY29FVUZpN2xoTWI2dno5dTJDSW5ETjRoTVoxb1FxaFFzRjVpQl9qdHdRbkVQRkMxRzhvZVVMaUNGeVNHWnZLZnZRYjdORHp2dkt3ZiIsInF1ZXN0aW9uIjoiV2hhdCBpcyBzcGFjZSBtb3N0bHkgbWFkZSBvZj8iLCJsayI6IkdoeDNhR0YwSUdseklITndZV05sSUcxdmMzUnNlU0J0WVdSbElHOW0iLCJicyI6ImMzMk9NUXZDTUJCR2NiMnBPR21vNVRiM0lqaUdiazR1RHM0aFBZbmE1a0t2RXZydlRTb2Q2X3J1NDcyREUxUjNaMFo4Q2w2YlczTVU5QlJKUmd3RHY4aU91dDZxd2hzeG1TOFFOQnd1SExFM2ZzSkFIRHJDeU1NYmt5aGJkRjJwMHEwTXNnek9zSjhGSC11d1pSS1VZQ3loWlVsRnBYWnU1WmpMeTc4XzJpZmFUYW5VRXZKakxzY19nMkx6QlEiLCJpZCI6ImZjX1RaWGJhc2l6SnJ2WDVOb1BvS2Vha0FJXzMifQ%3D%3D"
+      }
+    ],
+    "ai_overview": {
+      "page_token": "E4r7pniczVXtcrI4FL6BvY3lj62CH7XtDPNO-NCi1BotVvvHQcBABUIJSvHf3ste1V7NBlDBVu27787s7PlBEs7Jk5PkPHn--NN1_NVfv9XtKArIfa0Wx3EVYYxcq2pgr6aTxDdqS-yS0LB_ELwODcsxecMOsWcxtstbPoNcfk2YZMM3GIPwLGM5_PPrdKETZ9sLN9PWAA9x39JXQGEyOH5OfdYbXe3jjdTmNfpZ_d6Q6KBKqpZffdPkd6gsRvELqtbZeqP6VNM9GgD-e5MF0E1bBCAQz4eJ4JK3bAoAggzAqvxL2DkKe8yWRPST-Trn81PkrIUAZh0aLl0_WrMF7eI8RPgmH1gM1ANsngBQqFP-bkufDGVfvB9eXv6MO11T3EPRLZVcyonwvcHZMbImISEu76DoKXmqh-Wzpbp5vwWE5hCID2KxizPWgeDhEYnQ-SYus0lzXFz7ArB08ZqJaF2ztUVIG67mGLaRdUKSlrv4fMdiOVFnY-CK62R6t1ZfOkpsbzfo_cPt3IKasaBxLtZNy5zbc_ZHNubqXIu9a7RvrzKeGeRANFImGnkVtni5FexntqpWBW7PMvHoyj8dN-yfPP-0TEVQXNgXPzq-5wKkU3YcKlZUQHcEPgH2JQhiUGKDRFkZgymAZYwddEbHryw7JFR0EBB3o1FOBVgA7EwWVkAuHUoJKq2vLzYuJaLsEOJ9Xvsa7RaZlCiYzhBhnvourc_vHs1sBpxOioxpKrGgZfnE9NqK4xJ1sVcgH3KHgkjfjN1_GR3tRiozXdZQOo0WoQhFEPSEEcpfpB0ohDkGnQyV47dPOP1iIKABcpm_F63_c2FwT6ZP3DjilPvxJnW9_ps-NlTsT1Tn9aZ9M-1J2ig-zSHsLf6BWhn_S5bttQznWnaBZQn4KZYpQLysZRnuXsvEnZadZ1kvZ9kpLWvmIUf7-8IyRR4VLNtpWfeclv0Ky4TLLDsc2ReWUTB75yuzTLnAskzLSizTVOdIy4TTWnZg2S9qWf9faFlGOytvjoVt_YbOClxnMudMWI8HHNcYXcea4Dda3mRu3rY66FuBW3rRvaeb7tXcMe-Fei9KzKs5_YHvLZN55_V1hD09ssyKZxm27juG7lYCPVw5PqqQhESWV3F8EumuS2MMTKJKYIUVEuiGVdF8J505jigAYTw3xDyrN9mNhHt60noORtdTKXwYB0HwYE-lyXCrbe3H2bDO-VBwZ-tg6TeTxu12-IEU_XUgLzePkqw-Q_MpnK202TsE63nn9kk0LKluqzM8UeuxNXeWq8hlvWWXcxN1OvtIhpbfsSR0vTKvyUDYvgT2kx6pTqfxZKCb4UDJEiM8Xhha4rBc8CozdP_E4jnGCw2eVl4TgQEELwDoqVr1KA37QBi901al17bAAoAPMwBTnkvp28AQQ59bZMMvjTZbZy220Wq32-ZNk_FQlAT8HcsQP-S5vwFKJHsg",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=E4r7pniczVXtcrI4FL6BvY3lj62CH7XtDPNO-NCi1BotVvvHQcBABUIJSvHf3ste1V7NBlDBVu27787s7PlBEs7Jk5PkPHn--NN1_NVfv9XtKArIfa0Wx3EVYYxcq2pgr6aTxDdqS-yS0LB_ELwODcsxecMOsWcxtstbPoNcfk2YZMM3GIPwLGM5_PPrdKETZ9sLN9PWAA9x39JXQGEyOH5OfdYbXe3jjdTmNfpZ_d6Q6KBKqpZffdPkd6gsRvELqtbZeqP6VNM9GgD-e5MF0E1bBCAQz4eJ4JK3bAoAggzAqvxL2DkKe8yWRPST-Trn81PkrIUAZh0aLl0_WrMF7eI8RPgmH1gM1ANsngBQqFP-bkufDGVfvB9eXv6MO11T3EPRLZVcyonwvcHZMbImISEu76DoKXmqh-Wzpbp5vwWE5hCID2KxizPWgeDhEYnQ-SYus0lzXFz7ArB08ZqJaF2ztUVIG67mGLaRdUKSlrv4fMdiOVFnY-CK62R6t1ZfOkpsbzfo_cPt3IKasaBxLtZNy5zbc_ZHNubqXIu9a7RvrzKeGeRANFImGnkVtni5FexntqpWBW7PMvHoyj8dN-yfPP-0TEVQXNgXPzq-5wKkU3YcKlZUQHcEPgH2JQhiUGKDRFkZgymAZYwddEbHryw7JFR0EBB3o1FOBVgA7EwWVkAuHUoJKq2vLzYuJaLsEOJ9Xvsa7RaZlCiYzhBhnvourc_vHs1sBpxOioxpKrGgZfnE9NqK4xJ1sVcgH3KHgkjfjN1_GR3tRiozXdZQOo0WoQhFEPSEEcpfpB0ohDkGnQyV47dPOP1iIKABcpm_F63_c2FwT6ZP3DjilPvxJnW9_ps-NlTsT1Tn9aZ9M-1J2ig-zSHsLf6BWhn_S5bttQznWnaBZQn4KZYpQLysZRnuXsvEnZadZ1kvZ9kpLWvmIUf7-8IyRR4VLNtpWfeclv0Ky4TLLDsc2ReWUTB75yuzTLnAskzLSizTVOdIy4TTWnZg2S9qWf9faFlGOytvjoVt_YbOClxnMudMWI8HHNcYXcea4Dda3mRu3rY66FuBW3rRvaeb7tXcMe-Fei9KzKs5_YHvLZN55_V1hD09ssyKZxm27juG7lYCPVw5PqqQhESWV3F8EumuS2MMTKJKYIUVEuiGVdF8J505jigAYTw3xDyrN9mNhHt60noORtdTKXwYB0HwYE-lyXCrbe3H2bDO-VBwZ-tg6TeTxu12-IEU_XUgLzePkqw-Q_MpnK202TsE63nn9kk0LKluqzM8UeuxNXeWq8hlvWWXcxN1OvtIhpbfsSR0vTKvyUDYvgT2kx6pTqfxZKCb4UDJEiM8Xhha4rBc8CozdP_E4jnGCw2eVl4TgQEELwDoqVr1KA37QBi901al17bAAoAPMwBTnkvp28AQQ59bZMMvjTZbZy220Wq32-ZNk_FQlAT8HcsQP-S5vwFKJHsg"
+    },
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "Space.com: NASA, Space Exploration and Astronomy News",
+        "link": "https://www.space.com/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESUQHrOzAVEgJcXVriAQqkaRdf6pc-XPCet35vS2JbylZ-T62cWSUZ6p1G-l8tFYIEc2IxP_2Tbfa5osYloGIqeeSbQZDSv-5oOm2yYxawvzVSew&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQFnoECBoQAQ&uoh=1",
+        "displayed_link": "https://www.space.com",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAArUlEQVR4Ab3MIQiDQACF4derHYQ1u2W9w8qSbR0Ma6tGq8m8ftFkB_ulK4LFZLl48HbqBHfnxfnVH36c4RIjoB5pTc0NnqvmRqVwGO44TdAyUnFWOnEi2cHKB0o4aD2wKJOj2CFgpGXEHUcqfnUv-CQ3poCnMtwI-PJWc5XhSFovvUVAT1Lhl2qwevtRkLqAFWtvW3ExyJ6zHHuZ4Y6Cowk3K6oVZ_KJgCTC_30Ao2m5x0qFcx0AAAAASUVORK5CYII.png",
+        "snippet": "Get the latest space exploration, innovation and astronomy news. Space.com celebrates humanity's ongoing expansion across the final frontier.",
+        "snippet_highlighted_words": [
+          "space",
+          "Space"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Get the latest space exploration, innovation and astronomy news. Space.com celebrates humanity's ongoing expansion across the final frontier.",
+            "source_info_link": "https://www.space.com/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAArUlEQVR4Ab3MIQiDQACF4derHYQ1u2W9w8qSbR0Ma6tGq8m8ftFkB_ulK4LFZLl48HbqBHfnxfnVH36c4RIjoB5pTc0NnqvmRqVwGO44TdAyUnFWOnEi2cHKB0o4aD2wKJOj2CFgpGXEHUcqfnUv-CQ3poCnMtwI-PJWc5XhSFovvUVAT1Lhl2qwevtRkLqAFWtvW3ExyJ6zHHuZ4Y6Cowk3K6oVZ_KJgCTC_30Ao2m5x0qFcx0AAAAASUVORK5CYII.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CnwvZ290bz91cmw9Q0FFU1VRSHJPekFWM3BaZ0pWVVRZQ213VWNPR21wdy1yejVjYjdIS1lUeXlENTNhZEo5RkVHUElvWU80MEt1RDlZM1N5TEZiNjVQbDNMNUZVdm1Lc05Oc1hQZEh2cVVMbkl4U182VDFfakd4SGRPQ1dREgQaAggAGu4DEgIIARoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJAyAMIABAAGAAgACoxCglhdXRvbWF0ZWQV8N63QBoEYXV0bxoJYXV0b21hdGljGg5pdjtwO2F1dG9tYXRlZDJ8L2dvdG8_dXJsPUNBRVNVUUhyT3pBVjNwWmdKVlVUWUNtd1VjT0dtcHctcno1Y2I3SEtZVHl5RDUzYWRKOUZFR1BJb1lPNDBLdUQ5WTNTeUxGYjY1UGwzTDVGVXZtS3NOTnNYUGRIdnFVTG5JeFNfNlQxX2pHeEhkT0NXUTpDPGI-U3BhY2U8L2I-LmNvbTogTkFTQSwgPGI-U3BhY2U8L2I-IEV4cGxvcmF0aW9uIGFuZCBBc3Ryb25vbXkgTmV3c0KfAUdldCB0aGUgbGF0ZXN0IDxiPnNwYWNlPC9iPiBleHBsb3JhdGlvbiwgaW5ub3ZhdGlvbiBhbmQgYXN0cm9ub215IG5ld3MuIDxiPlNwYWNlPC9iPi5jb20gY2VsZWJyYXRlcyBodW1hbml0eSYjMzk7cyBvbmdvaW5nIGV4cGFuc2lvbiBhY3Jvc3MgdGhlIGZpbmFsIGZyb250aWVyLlIGb2YgdGhlUgJhblIBYVICYnlSAm9mUgZpbiB0aGVSA2ZvclICdXMiAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CnwvZ290bz91cmw9Q0FFU1VRSHJPekFWM3BaZ0pWVVRZQ213VWNPR21wdy1yejVjYjdIS1lUeXlENTNhZEo5RkVHUElvWU80MEt1RDlZM1N5TEZiNjVQbDNMNUZVdm1Lc05Oc1hQZEh2cVVMbkl4U182VDFfakd4SGRPQ1dREgQaAggAGu4DEgIIARoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJAyAMIABAAGAAgACoxCglhdXRvbWF0ZWQV8N63QBoEYXV0bxoJYXV0b21hdGljGg5pdjtwO2F1dG9tYXRlZDJ8L2dvdG8_dXJsPUNBRVNVUUhyT3pBVjNwWmdKVlVUWUNtd1VjT0dtcHctcno1Y2I3SEtZVHl5RDUzYWRKOUZFR1BJb1lPNDBLdUQ5WTNTeUxGYjY1UGwzTDVGVXZtS3NOTnNYUGRIdnFVTG5JeFNfNlQxX2pHeEhkT0NXUTpDPGI-U3BhY2U8L2I-LmNvbTogTkFTQSwgPGI-U3BhY2U8L2I-IEV4cGxvcmF0aW9uIGFuZCBBc3Ryb25vbXkgTmV3c0KfAUdldCB0aGUgbGF0ZXN0IDxiPnNwYWNlPC9iPiBleHBsb3JhdGlvbiwgaW5ub3ZhdGlvbiBhbmQgYXN0cm9ub215IG5ld3MuIDxiPlNwYWNlPC9iPi5jb20gY2VsZWJyYXRlcyBodW1hbml0eSYjMzk7cyBvbmdvaW5nIGV4cGFuc2lvbiBhY3Jvc3MgdGhlIGZpbmFsIGZyb250aWVyLlIGb2YgdGhlUgJhblIBYVICYnlSAm9mUgZpbiB0aGVSA2ZvclICdXMiAhABSABYAGgA",
+        "source": "Space"
+      },
+      {
+        "position": 2,
+        "title": "Outer space",
+        "link": "https://en.wikipedia.org/wiki/Outer_space",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESZAHrOzAVMsSCsgMbSKVXB1piVVUfUiAcxt40TbUHCxK0o0KVOG5umakyM-bNko-YwiI6G_8psoZ_vja4dRswPAmDcSE0nJ7EYF7k_oJdeZC4yWt-928GBUGj-0uskG09Ce3fP5Y&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQFnoECB4QAQ&uoh=1",
+        "displayed_link": "https://en.wikipedia.org › wiki › Outer_space",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAAnklEQVR4AeTNIQiDQABG4b-u17X1aF6PK3YEO9iMJqPVau82y4FgMezS0oVLhqsHtrcqeqzDXv3CEz_6L4yTtZM3dnHmPTtjzXZAXKYVo4agkU2GI2Lloc6JDez1-flswMu1EQZ3xlE7lK8eKDkjtwE-crBMV-wesKmCiisGGepZIfQJpMj9SNb2MYWrChjVkULuCyCfRvsdmBieyQQAsoDk_9ryhFMAAAAASUVORK5CYII.png",
+        "snippet": "An important factor in the total expense is the high cost of placing mass into Earth orbit: $10,000–$32,000 per kg, according to a 2006 estimate",
+        "snippet_highlighted_words": [
+          "An",
+          "in the",
+          "expense",
+          "cost of",
+          "per",
+          "a"
+        ],
+        "sitelinks": {
+          "inline": [
+            {
+              "title": "Formation and state",
+              "link": "https://en.wikipedia.org/wiki/Outer_space#Formation_and_state"
+            },
+            {
+              "title": "Human access",
+              "link": "https://en.wikipedia.org/wiki/Outer_space#Human_access"
+            },
+            {
+              "title": "Regions",
+              "link": "https://en.wikipedia.org/wiki/Outer_space#Regions"
+            },
+            {
+              "title": "History",
+              "link": "https://en.wikipedia.org/wiki/Outer_space#History"
+            }
+          ]
+        },
+        "about_this_result": {
+          "source": {
+            "description": "An important factor in the total expense is the high cost of placing mass into Earth orbit: $10,000–$32,000 per kg, according to a 2006 estimate",
+            "source_info_link": "https://en.wikipedia.org/wiki/Outer_space",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAAnklEQVR4AeTNIQiDQABG4b-u17X1aF6PK3YEO9iMJqPVau82y4FgMezS0oVLhqsHtrcqeqzDXv3CEz_6L4yTtZM3dnHmPTtjzXZAXKYVo4agkU2GI2Lloc6JDez1-flswMu1EQZ3xlE7lK8eKDkjtwE-crBMV-wesKmCiisGGepZIfQJpMj9SNb2MYWrChjVkULuCyCfRvsdmBieyQQAsoDk_9ryhFMAAAAASUVORK5CYII.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CpUBL2dvdG8_dXJsPUNBRVNaQUhyT3pBVkNoS3FlRHY2dUFiRWdZU29adUphSkZwemFzQ3FKaXUzU21QVTBUVVRJbEVMT1VLTS1vWTBTYmV1MXdjOHJYR2Rub3BBVzlCVzdLNl9WRnhJaVBTQmxuaEdKV2hSZTRZbENfZkpwR2hfT3o2dU9UNTFKTVA4cUhzTmhWTURRMFESBBoCCAAagAQSAggBGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkDaAwgAEAAYACAAKjEKCWF1dG9tYXRlZBUOt6NAGgRhdXRvGglhdXRvbWF0aWMaDml2O3A7YXV0b21hdGVkMpUBL2dvdG8_dXJsPUNBRVNaQUhyT3pBVkNoS3FlRHY2dUFiRWdZU29adUphSkZwemFzQ3FKaXUzU21QVTBUVVRJbEVMT1VLTS1vWTBTYmV1MXdjOHJYR2Rub3BBVzlCVzdLNl9WRnhJaVBTQmxuaEdKV2hSZTRZbENfZkpwR2hfT3o2dU9UNTFKTVA4cUhzTmhWTURRMFE6Hk91dGVyIDxiPnNwYWNlPC9iPiAtIFdpa2lwZWRpYUK8ATxiPkFuPC9iPiBpbXBvcnRhbnQgZmFjdG9yIDxiPmluIHRoZTwvYj4gdG90YWwgPGI-ZXhwZW5zZTwvYj4gaXMgdGhlIGhpZ2ggPGI-Y29zdCBvZjwvYj4gcGxhY2luZyBtYXNzIGludG8gRWFydGggb3JiaXQ6ICQxMCwwMDDigJMkMzIsMDAwIDxiPnBlcjwvYj4ga2csIGFjY29yZGluZyB0byA8Yj5hPC9iPiAyMDA2IGVzdGltYXRlUgZvZiB0aGVSAmFuUgFhUgJieVIGaW4gdGhlUgJvZlIDZm9yUgJ1cyICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CpUBL2dvdG8_dXJsPUNBRVNaQUhyT3pBVkNoS3FlRHY2dUFiRWdZU29adUphSkZwemFzQ3FKaXUzU21QVTBUVVRJbEVMT1VLTS1vWTBTYmV1MXdjOHJYR2Rub3BBVzlCVzdLNl9WRnhJaVBTQmxuaEdKV2hSZTRZbENfZkpwR2hfT3o2dU9UNTFKTVA4cUhzTmhWTURRMFESBBoCCAAagAQSAggBGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkDaAwgAEAAYACAAKjEKCWF1dG9tYXRlZBUOt6NAGgRhdXRvGglhdXRvbWF0aWMaDml2O3A7YXV0b21hdGVkMpUBL2dvdG8_dXJsPUNBRVNaQUhyT3pBVkNoS3FlRHY2dUFiRWdZU29adUphSkZwemFzQ3FKaXUzU21QVTBUVVRJbEVMT1VLTS1vWTBTYmV1MXdjOHJYR2Rub3BBVzlCVzdLNl9WRnhJaVBTQmxuaEdKV2hSZTRZbENfZkpwR2hfT3o2dU9UNTFKTVA4cUhzTmhWTURRMFE6Hk91dGVyIDxiPnNwYWNlPC9iPiAtIFdpa2lwZWRpYUK8ATxiPkFuPC9iPiBpbXBvcnRhbnQgZmFjdG9yIDxiPmluIHRoZTwvYj4gdG90YWwgPGI-ZXhwZW5zZTwvYj4gaXMgdGhlIGhpZ2ggPGI-Y29zdCBvZjwvYj4gcGxhY2luZyBtYXNzIGludG8gRWFydGggb3JiaXQ6ICQxMCwwMDDigJMkMzIsMDAwIDxiPnBlcjwvYj4ga2csIGFjY29yZGluZyB0byA8Yj5hPC9iPiAyMDA2IGVzdGltYXRlUgZvZiB0aGVSAmFuUgFhUgJieVIGaW4gdGhlUgJvZlIDZm9yUgJ1cyICEAFIAFgAaAA",
+        "source": "Wikipedia"
+      },
+      {
+        "position": 3,
+        "title": "/r/space: news, articles and discussion",
+        "link": "https://www.reddit.com/r/space/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESWgHrOzAVgGYyqPCfU7djsnIv-9_3g2xEQJVczW1AO_zwAT2p51I39F3z4MNqzeYnEh_0B7yjju6uTbX-3exsseqi4Tqb8j86R0YykwKqhMk206PnOPno-pmlAQ&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQFnoECCAQAQ&uoh=1",
+        "displayed_link": "28M+ followers",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAqFBMVEVHcEz_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_PAD_____RQD_PAD_QAD_MQDS4Of_RAD_NwD6-vv4_v_K2N_z-fra5uzm7_H72NLq9vkCCAvweWDol4r_hm3-mYX9YTj-cFDW7PP45uP4qJjbUTNBR0rRtbD_wLO-MgW1vsHfzc_gFQDUqKf_WAb_UgAxODwAHilxLR1scnTHa13kHQCLRbHLAAAADHRSTlMA_kAZ4YjF7WQ0GH3klhKFAAABhUlEQVQokW2T53aDMAyFoSGQpMfyJmaEnb1X-_5vVttkkDT3BxJ8xyBdCce5a9j3A9cN_P7QedcggIeCwQvqeU8EhIA3erKvDgJa1ZTD10cmVghNxYOOugzWY4RQiQF6Fna_tz5fNigMDfRsnd1z5zleNs0Yc52bmh89ECzWF4FpllkGge5dB0wpxrQqV_vlqqyoMPf68dDp6-KLJCmLKbppWpRJUlCAvuODmKEPmgnwnYCTTwwhwgPHJXVocrlv3xtO98rGmriOyyFVEqE5zaR9-Fv96KtKgbu6E5w3UsrdAScGJvSwU6Fscqx78XW1M6XC-RHsSQnHeajUTFfrm1ZIlaZKJbItRCZKpWlFTCvGBMriOFWbxeJ0Wiw2YRrHEbUmGPtIFkVxHE-sdBI1GbH2WeNFzsYsYtfJ5KoDY7m4GW9HJrKxFosiZmJmmNcukBkBJvnWnGHRNifGdbitkakJOBZQF0UNoh3YfYm-bwPlRIu3-TvryOvd1_kf6iz1C3z9Hf4AClYvY_ay9KgAAAAASUVORK5CYII.png",
+        "snippet": "Each location offers opportunities to study questions regarding moon geology, space weather and radiation hazards, according to the report.",
+        "snippet_highlighted_words": [
+          "space"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Each location offers opportunities to study questions regarding moon geology, space weather and radiation hazards, according to the report.",
+            "source_info_link": "https://www.reddit.com/r/space/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAqFBMVEVHcEz_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_PAD_____RQD_PAD_QAD_MQDS4Of_RAD_NwD6-vv4_v_K2N_z-fra5uzm7_H72NLq9vkCCAvweWDol4r_hm3-mYX9YTj-cFDW7PP45uP4qJjbUTNBR0rRtbD_wLO-MgW1vsHfzc_gFQDUqKf_WAb_UgAxODwAHilxLR1scnTHa13kHQCLRbHLAAAADHRSTlMA_kAZ4YjF7WQ0GH3klhKFAAABhUlEQVQokW2T53aDMAyFoSGQpMfyJmaEnb1X-_5vVttkkDT3BxJ8xyBdCce5a9j3A9cN_P7QedcggIeCwQvqeU8EhIA3erKvDgJa1ZTD10cmVghNxYOOugzWY4RQiQF6Fna_tz5fNigMDfRsnd1z5zleNs0Yc52bmh89ECzWF4FpllkGge5dB0wpxrQqV_vlqqyoMPf68dDp6-KLJCmLKbppWpRJUlCAvuODmKEPmgnwnYCTTwwhwgPHJXVocrlv3xtO98rGmriOyyFVEqE5zaR9-Fv96KtKgbu6E5w3UsrdAScGJvSwU6Fscqx78XW1M6XC-RHsSQnHeajUTFfrm1ZIlaZKJbItRCZKpWlFTCvGBMriOFWbxeJ0Wiw2YRrHEbUmGPtIFkVxHE-sdBI1GbH2WeNFzsYsYtfJ5KoDY7m4GW9HJrKxFosiZmJmmNcukBkBJvnWnGHRNifGdbitkakJOBZQF0UNoh3YfYm-bwPlRIu3-TvryOvd1_kf6iz1C3z9Hf4AClYvY_ay9KgAAAAASUVORK5CYII.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CogBL2dvdG8_dXJsPUNBRVNXZ0hyT3pBVjQ5N0RMdUJzd1lpakVVTUFLYlVMRVpDYUlkNDBCWGVNNDNndW4zVmF0ZVdFbjUybDlOM0h0NVhUelpMTnczNDFBX3R3c3FxXy05V0w0M2xJOEx5aHhpLURxUzVtR3VTc1UzRnVLbFVZSms2c2lGRVkxdxIEGgIIABriAxICCAEaACIAKgAyBggDEgJ1czoAQgQIARAASgBaAHIAegCCQLwDCAAQABgAIAAqMQoJYXV0b21hdGVkFTALm0AaBGF1dG8aCWF1dG9tYXRpYxoOaXY7cDthdXRvbWF0ZWQyiAEvZ290bz91cmw9Q0FFU1dnSHJPekFWNDk3REx1QnN3WWlqRVVNQUtiVUxFWkNhSWQ0MEJYZU00M2d1bjNWYXRlV0VuNTJsOU4zSHQ1WFR6WkxOdzM0MUFfdHdzcXFfLTlXTDQzbEk4THloeGktRHFTNW1HdVNzVTNGdUtsVVlKazZzaUZFWTF3Ojcvci88Yj5zcGFjZTwvYj46IG5ld3MsIGFydGljbGVzIGFuZCBkaXNjdXNzaW9uIC0gUmVkZGl0QpIBRWFjaCBsb2NhdGlvbiBvZmZlcnMgb3Bwb3J0dW5pdGllcyB0byBzdHVkeSBxdWVzdGlvbnMgcmVnYXJkaW5nIG1vb24gZ2VvbG9neSwgPGI-c3BhY2U8L2I-IHdlYXRoZXIgYW5kIHJhZGlhdGlvbiBoYXphcmRzLCBhY2NvcmRpbmcgdG8gdGhlIHJlcG9ydC5SAnVzUgJvZlICYW5SAWFSAmJ5UgZpbiB0aGVSBm9mIHRoZVIDZm9yIgIQAUgAWABoAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CogBL2dvdG8_dXJsPUNBRVNXZ0hyT3pBVjQ5N0RMdUJzd1lpakVVTUFLYlVMRVpDYUlkNDBCWGVNNDNndW4zVmF0ZVdFbjUybDlOM0h0NVhUelpMTnczNDFBX3R3c3FxXy05V0w0M2xJOEx5aHhpLURxUzVtR3VTc1UzRnVLbFVZSms2c2lGRVkxdxIEGgIIABriAxICCAEaACIAKgAyBggDEgJ1czoAQgQIARAASgBaAHIAegCCQLwDCAAQABgAIAAqMQoJYXV0b21hdGVkFTALm0AaBGF1dG8aCWF1dG9tYXRpYxoOaXY7cDthdXRvbWF0ZWQyiAEvZ290bz91cmw9Q0FFU1dnSHJPekFWNDk3REx1QnN3WWlqRVVNQUtiVUxFWkNhSWQ0MEJYZU00M2d1bjNWYXRlV0VuNTJsOU4zSHQ1WFR6WkxOdzM0MUFfdHdzcXFfLTlXTDQzbEk4THloeGktRHFTNW1HdVNzVTNGdUtsVVlKazZzaUZFWTF3Ojcvci88Yj5zcGFjZTwvYj46IG5ld3MsIGFydGljbGVzIGFuZCBkaXNjdXNzaW9uIC0gUmVkZGl0QpIBRWFjaCBsb2NhdGlvbiBvZmZlcnMgb3Bwb3J0dW5pdGllcyB0byBzdHVkeSBxdWVzdGlvbnMgcmVnYXJkaW5nIG1vb24gZ2VvbG9neSwgPGI-c3BhY2U8L2I-IHdlYXRoZXIgYW5kIHJhZGlhdGlvbiBoYXphcmRzLCBhY2NvcmRpbmcgdG8gdGhlIHJlcG9ydC5SAnVzUgJvZlICYW5SAWFSAmJ5UgZpbiB0aGVSBm9mIHRoZVIDZm9yIgIQAUgAWABoAA",
+        "source": "Reddit · r/space"
+      },
+      {
+        "position": 4,
+        "title": "SpaceX",
+        "link": "https://www.spacex.com/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESUgHrOzAVb1FbRyi9yZXUN2W3YRdd_NVw9tqEvcEVe0RqSljHtPzJwJksOx3GD75LIQaSWLvVIVVA5qXaj-pAekKDiMps7tssxOfhPYZdlz-r8Bs&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQFnoECCEQAQ&uoh=1",
+        "displayed_link": "https://www.spacex.com",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAA10lEQVR4Ad2QIQiEQBBFfweDxXrNds1qsJoslu1mk71tEOxBMG41W8yb7WzcaBeEvRkXRLy7zt1LH97O_mHwO6TK4AvVsjkHhPXEdNEpgrgjs-uUc7c6QhdeRUVPatUlPJVma2VMWSh6us01ThLFdq2QK0thkSGuSOuMTHrDb4YMN0SbimXjbhHgnYHV3uMDpXGEzVKZ40Yodx5b0Fhnm9up_LYK2fH1EF-X0YdrAzx6y3EWp6t8XRP4ozrCSHjq9ZgT50G4fhufR984E9Nlx3qaiS7GH_ECeAedlKpi2RoAAAAASUVORK5CYII.png",
+        "snippet": "SpaceX designs, manufactures and launches advanced rockets and spacecraft. a fully reusable transportation system designed to carry both crew and cargo to ...",
+        "snippet_highlighted_words": [
+          "a",
+          "system"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "SpaceX designs, manufactures and launches advanced rockets and spacecraft. a fully reusable transportation system designed to carry both crew and cargo to ...",
+            "source_info_link": "https://www.spacex.com/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAA10lEQVR4Ad2QIQiEQBBFfweDxXrNds1qsJoslu1mk71tEOxBMG41W8yb7WzcaBeEvRkXRLy7zt1LH97O_mHwO6TK4AvVsjkHhPXEdNEpgrgjs-uUc7c6QhdeRUVPatUlPJVma2VMWSh6us01ThLFdq2QK0thkSGuSOuMTHrDb4YMN0SbimXjbhHgnYHV3uMDpXGEzVKZ40Yodx5b0Fhnm9up_LYK2fH1EF-X0YdrAzx6y3EWp6t8XRP4ozrCSHjq9ZgT50G4fhufR984E9Nlx3qaiS7GH_ECeAedlKpi2RoAAAAASUVORK5CYII.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=Cn0vZ290bz91cmw9Q0FFU1VnSHJPekFWYzlGNUZvbXNKbXl6ZmxsYUVhclFtVDFxbkMzLTNhUm01YURfd1FVLWY3cnN6cDg3cWRwb0h2akh6b2pzbldnUlljVXVVVnVFeVBQSzdfZjdJVkNQMnkxNWMwUk9NQWJmankzeS1lQRIEGgIIABrEAxICCAEaACIAKgAyBggDEgJ1czoAQgQIARAASgBaAHIAegCCQJ4DCAAQABgAIAAqMQoJYXV0b21hdGVkFReH7z8aBGF1dG8aCWF1dG9tYXRpYxoOaXY7cDthdXRvbWF0ZWQyfS9nb3RvP3VybD1DQUVTVWdIck96QVZjOUY1Rm9tc0pteXpmbGxhRWFyUW1UMXFuQzMtM2FSbTVhRF93UVUtZjdyc3pwODdxZHBvSHZqSHpvanNuV2dSWWNVdVVWdUV5UFBLN19mN0lWQ1AyeTE1YzBST01BYmZqeTN5LWVBOgZTcGFjZVhCsQFTcGFjZVggZGVzaWducywgbWFudWZhY3R1cmVzIGFuZCBsYXVuY2hlcyBhZHZhbmNlZCByb2NrZXRzIGFuZCBzcGFjZWNyYWZ0LiA8Yj5hPC9iPiBmdWxseSByZXVzYWJsZSB0cmFuc3BvcnRhdGlvbiA8Yj5zeXN0ZW08L2I-IGRlc2lnbmVkIHRvIGNhcnJ5IGJvdGggY3JldyBhbmQgY2FyZ28gdG8mbmJzcDsuLi5SAnVzUgNmb3JSAmFuUgFhUgJieVICb2ZSBmluIHRoZVIGb2YgdGhlIgIQAUgAWABoAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=Cn0vZ290bz91cmw9Q0FFU1VnSHJPekFWYzlGNUZvbXNKbXl6ZmxsYUVhclFtVDFxbkMzLTNhUm01YURfd1FVLWY3cnN6cDg3cWRwb0h2akh6b2pzbldnUlljVXVVVnVFeVBQSzdfZjdJVkNQMnkxNWMwUk9NQWJmankzeS1lQRIEGgIIABrEAxICCAEaACIAKgAyBggDEgJ1czoAQgQIARAASgBaAHIAegCCQJ4DCAAQABgAIAAqMQoJYXV0b21hdGVkFReH7z8aBGF1dG8aCWF1dG9tYXRpYxoOaXY7cDthdXRvbWF0ZWQyfS9nb3RvP3VybD1DQUVTVWdIck96QVZjOUY1Rm9tc0pteXpmbGxhRWFyUW1UMXFuQzMtM2FSbTVhRF93UVUtZjdyc3pwODdxZHBvSHZqSHpvanNuV2dSWWNVdVVWdUV5UFBLN19mN0lWQ1AyeTE1YzBST01BYmZqeTN5LWVBOgZTcGFjZVhCsQFTcGFjZVggZGVzaWducywgbWFudWZhY3R1cmVzIGFuZCBsYXVuY2hlcyBhZHZhbmNlZCByb2NrZXRzIGFuZCBzcGFjZWNyYWZ0LiA8Yj5hPC9iPiBmdWxseSByZXVzYWJsZSB0cmFuc3BvcnRhdGlvbiA8Yj5zeXN0ZW08L2I-IGRlc2lnbmVkIHRvIGNhcnJ5IGJvdGggY3JldyBhbmQgY2FyZ28gdG8mbmJzcDsuLi5SAnVzUgNmb3JSAmFuUgFhUgJieVICb2ZSBmluIHRoZVIGb2YgdGhlIgIQAUgAWABoAA",
+        "source": "SpaceX"
+      },
+      {
+        "position": 5,
+        "title": "Club Space | Electronic Music Marathons in Downtown Miami",
+        "link": "https://www.clubspace.com/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESVQHrOzAV1G11ue7LreZJN7V_HKkSnPxYt4N4XhMF_EsivfcliG-Y4uzE0VW7KDFNbf2m4mSuWTSsL-j6kDRNu8ld-HQ_RqPqREq8tdLXerebR0MhzgM&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQFnoECBwQAQ&uoh=1",
+        "displayed_link": "https://www.clubspace.com",
+        "favicon": "https://serpapi.com/images/i/_9j_4AAQSkZJRgABAQAAAQABAAD_2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys_RD84QzQ5OjcBCgoKDQwNGhAPGjclHRstKys1NTc3NTc3Ky0tNy0uLS0rNSsrKzY1LSstNy0tNzU3LisrNy0rKysrNSsrKystLf_AABEIABwAHAMBIgACEQEDEQH_xAAaAAEBAAIDAAAAAAAAAAAAAAAHCAUGAgME_8QALhAAAQMCBAMFCQAAAAAAAAAAAQIDBAURAAYSIUFRYQcTMTKRFSIjUnGhsdHw_8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC_8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERQSH_2gAMAwEAAhEDEQA_ACCgUSXXp6YkMC9tS1q8qE8z-sM9J7G8utxF-050hx8ISdRcDYJI-W23qceXsSgstZYkSe4716XKLfug3ISBZJPAbqN-R9drrZqCX3GokSbITbQpSGlBKbje2oWVbbffj1xpJEoVZv7NPZsZyZQZapjTSStxhwe-Ei91JIA1AW5cD44OcUe4uZCiOXpshpxyyiEtAqKr-YeA335YBc1Q26fmWpxGdPdtSVpQEiwAvsLdPDBzB0ROwvOUSjvyKFVHUssS3A7HdUbJDtgClR6gJt1HXDLOkU8FWtKSpNzYjif4YkHGTi5grMRkMx6nLQ0BpCA6bAcgOGCcEKRq-baLlykvzpBspKfhNA2U8rgkD8nhiY58t2fOkzZBBekOqdcI8NSiSfuccZMqRLd72U-485a2txZUbfU46cRug__Z.jpeg",
+        "snippet": "Club Space is Miami's landmark electronic music club. Marathon parties on the open air Terrace, from night through sunrise. 34 NE 11th St, Downtown Miami.",
+        "snippet_highlighted_words": [
+          "Space"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Club Space is Miami's landmark electronic music club. Marathon parties on the open air Terrace, from night through sunrise. 34 NE 11th St, Downtown Miami.",
+            "source_info_link": "https://www.clubspace.com/",
+            "icon": "https://serpapi.com/images/i/_9j_4AAQSkZJRgABAQAAAQABAAD_2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys_RD84QzQ5OjcBCgoKDQwNGhAPGjclHRstKys1NTc3NTc3Ky0tNy0uLS0rNSsrKzY1LSstNy0tNzU3LisrNy0rKysrNSsrKystLf_AABEIABwAHAMBIgACEQEDEQH_xAAaAAEBAAIDAAAAAAAAAAAAAAAHCAUGAgME_8QALhAAAQMCBAMFCQAAAAAAAAAAAQIDBAURAAYSIUFRYQcTMTKRFSIjUnGhsdHw_8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC_8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERQSH_2gAMAwEAAhEDEQA_ACCgUSXXp6YkMC9tS1q8qE8z-sM9J7G8utxF-050hx8ISdRcDYJI-W23qceXsSgstZYkSe4716XKLfug3ISBZJPAbqN-R9drrZqCX3GokSbITbQpSGlBKbje2oWVbbffj1xpJEoVZv7NPZsZyZQZapjTSStxhwe-Ei91JIA1AW5cD44OcUe4uZCiOXpshpxyyiEtAqKr-YeA335YBc1Q26fmWpxGdPdtSVpQEiwAvsLdPDBzB0ROwvOUSjvyKFVHUssS3A7HdUbJDtgClR6gJt1HXDLOkU8FWtKSpNzYjif4YkHGTi5grMRkMx6nLQ0BpCA6bAcgOGCcEKRq-baLlykvzpBspKfhNA2U8rgkD8nhiY58t2fOkzZBBekOqdcI8NSiSfuccZMqRLd72U-485a2txZUbfU46cRug__Z.jpeg"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CoEBL2dvdG8_dXJsPUNBRVNWUUhyT3pBVklrR2ZpRnprbGUxQTF6VldTd2wxYVVuLVB6Q1BCWFlqVUNNamxseW16NmJyMEVfX29sc0VocmpBaWJPNFZFODF6b1FDZnZrTGRLMmhlTk8wM2tXMXRSbnFTelA0NFI3Ykxid1JiTmJFVWVZEgQaAggAGvcDEgIIARoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJA0QMIABAAGAAgACoxCglhdXRvbWF0ZWQVZkC1QBoEYXV0bxoJYXV0b21hdGljGg5pdjtwO2F1dG9tYXRlZDKBAS9nb3RvP3VybD1DQUVTVlFIck96QVZJa0dmaUZ6a2xlMUExelZXU3dsMWFVbi1QekNQQlhZalVDTWpsbHltejZicjBFX19vbHNFaHJqQWliTzRWRTgxem9RQ2Z2a0xkSzJoZU5PMDNrVzF0Um5xU3pQNDRSN2JMYndSYk5iRVVlWTpAQ2x1YiA8Yj5TcGFjZTwvYj4gfCBFbGVjdHJvbmljIE11c2ljIE1hcmF0aG9ucyBpbiBEb3dudG93biBNaWFtaUKlAUNsdWIgPGI-U3BhY2U8L2I-IGlzIE1pYW1pJiMzOTtzIGxhbmRtYXJrIGVsZWN0cm9uaWMgbXVzaWMgY2x1Yi4gTWFyYXRob24gcGFydGllcyBvbiB0aGUgb3BlbiBhaXIgVGVycmFjZSwgZnJvbSBuaWdodCB0aHJvdWdoIHN1bnJpc2UuIDM0IE5FIDExdGggU3QsIERvd250b3duIE1pYW1pLlIGb2YgdGhlUgJieVIBYVICYW5SAm9mUgZpbiB0aGVSA2ZvclICdXMiAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CoEBL2dvdG8_dXJsPUNBRVNWUUhyT3pBVklrR2ZpRnprbGUxQTF6VldTd2wxYVVuLVB6Q1BCWFlqVUNNamxseW16NmJyMEVfX29sc0VocmpBaWJPNFZFODF6b1FDZnZrTGRLMmhlTk8wM2tXMXRSbnFTelA0NFI3Ykxid1JiTmJFVWVZEgQaAggAGvcDEgIIARoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJA0QMIABAAGAAgACoxCglhdXRvbWF0ZWQVZkC1QBoEYXV0bxoJYXV0b21hdGljGg5pdjtwO2F1dG9tYXRlZDKBAS9nb3RvP3VybD1DQUVTVlFIck96QVZJa0dmaUZ6a2xlMUExelZXU3dsMWFVbi1QekNQQlhZalVDTWpsbHltejZicjBFX19vbHNFaHJqQWliTzRWRTgxem9RQ2Z2a0xkSzJoZU5PMDNrVzF0Um5xU3pQNDRSN2JMYndSYk5iRVVlWTpAQ2x1YiA8Yj5TcGFjZTwvYj4gfCBFbGVjdHJvbmljIE11c2ljIE1hcmF0aG9ucyBpbiBEb3dudG93biBNaWFtaUKlAUNsdWIgPGI-U3BhY2U8L2I-IGlzIE1pYW1pJiMzOTtzIGxhbmRtYXJrIGVsZWN0cm9uaWMgbXVzaWMgY2x1Yi4gTWFyYXRob24gcGFydGllcyBvbiB0aGUgb3BlbiBhaXIgVGVycmFjZSwgZnJvbSBuaWdodCB0aHJvdWdoIHN1bnJpc2UuIDM0IE5FIDExdGggU3QsIERvd250b3duIE1pYW1pLlIGb2YgdGhlUgJieVIBYVICYW5SAm9mUgZpbiB0aGVSA2ZvclICdXMiAhABSABYAGgA",
+        "source": "Club Space Miami"
+      },
+      {
+        "position": 6,
+        "title": "The SPACE of Developer Productivity - ACM Queue",
+        "link": "https://queue.acm.org/detail.cfm?id=3454124",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESZgHrOzAVTrdx3nm293K7NMJ9c5UNdvQunuGibrsYqh-uyFRoLqt8OPmmS64f30olvWip0fkiWzmITEJ0AnLG88gy4hJf7dkghzPsUQgGA5ncI6xdl58WwcsoN8HW6RV7UalKg7eyRg&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQFnoECBsQAQ&uoh=1",
+        "displayed_link": "https://queue.acm.org › detail",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAARVBMVEVHcExavmZ5yoM9tk05tUpBt1FNu1tLulk9tk1IuVZDuFI5tUr___8rsj8ztEWf1qWi2Khkwm_S7NUQriu64b56yYNWvWNhNZRNAAAAC3RSTlMALA7ptalEyOdkuzN_uroAAACBSURBVCiR5dNZDoAgDARQXHCDFtTi_Y-qVqNppFzA-X0pIUwx5kpn2ye2MyKjE6kEDhJtCfsvIgCggrgRUQJl0p-ZMYc4-yWRj6DhGnzQMf4E1UfY-G3z6IAK6I46tWO5be1CPBuVyng0UfqW3dybhdcSSZxKq1lJrAWaenzz_IYd9zkUMfY-VIcAAAAASUVORK5CYII.png",
+        "snippet": "No information is available for this page.",
+        "about_this_result": {
+          "source": {
+            "source_info_link": "https://queue.acm.org/detail.cfm?id=3454124",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAARVBMVEVHcExavmZ5yoM9tk05tUpBt1FNu1tLulk9tk1IuVZDuFI5tUr___8rsj8ztEWf1qWi2Khkwm_S7NUQriu64b56yYNWvWNhNZRNAAAAC3RSTlMALA7ptalEyOdkuzN_uroAAACBSURBVCiR5dNZDoAgDARQXHCDFtTi_Y-qVqNppFzA-X0pIUwx5kpn2ye2MyKjE6kEDhJtCfsvIgCggrgRUQJl0p-ZMYc4-yWRj6DhGnzQMf4E1UfY-G3z6IAK6I46tWO5be1CPBuVyng0UfqW3dybhdcSSZxKq1lJrAWaenzz_IYd9zkUMfY-VIcAAAAASUVORK5CYII.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CpgBL2dvdG8_dXJsPUNBRVNaZ0hyT3pBVml2blhCQjB0U0xsMXJ0N0k3R1JBNURLZ0dsMHFVNHNMYkNEV2VHcjNuZUF4c2kxd3RLek40bS1nUTQ3dDdxVnVzSU56N3MwUFF0a001V21LNHREbkYtcHdyUnhMV1FSZFZ0SDJmV0dwMFZ1RWlBMXhJZU9vRTVpb3VuVWlFd181eFESBBoCCAAa3AISAggBGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkC2AggAEAAYACAAKjEKCWF1dG9tYXRlZBUAAAAAGgRhdXRvGglhdXRvbWF0aWMaDml2O3A7YXV0b21hdGVkMpgBL2dvdG8_dXJsPUNBRVNaZ0hyT3pBVml2blhCQjB0U0xsMXJ0N0k3R1JBNURLZ0dsMHFVNHNMYkNEV2VHcjNuZUF4c2kxd3RLek40bS1nUTQ3dDdxVnVzSU56N3MwUFF0a001V21LNHREbkYtcHdyUnhMV1FSZFZ0SDJmV0dwMFZ1RWlBMXhJZU9vRTVpb3VuVWlFd181eFE6NlRoZSA8Yj5TUEFDRSBvZjwvYj4gRGV2ZWxvcGVyIFByb2R1Y3Rpdml0eSAtIEFDTSBRdWV1ZVICdXNSBm9mIHRoZVICYW5SAWFSAmJ5UgJvZlIGaW4gdGhlUgNmb3IiAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CpgBL2dvdG8_dXJsPUNBRVNaZ0hyT3pBVml2blhCQjB0U0xsMXJ0N0k3R1JBNURLZ0dsMHFVNHNMYkNEV2VHcjNuZUF4c2kxd3RLek40bS1nUTQ3dDdxVnVzSU56N3MwUFF0a001V21LNHREbkYtcHdyUnhMV1FSZFZ0SDJmV0dwMFZ1RWlBMXhJZU9vRTVpb3VuVWlFd181eFESBBoCCAAa3AISAggBGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkC2AggAEAAYACAAKjEKCWF1dG9tYXRlZBUAAAAAGgRhdXRvGglhdXRvbWF0aWMaDml2O3A7YXV0b21hdGVkMpgBL2dvdG8_dXJsPUNBRVNaZ0hyT3pBVml2blhCQjB0U0xsMXJ0N0k3R1JBNURLZ0dsMHFVNHNMYkNEV2VHcjNuZUF4c2kxd3RLek40bS1nUTQ3dDdxVnVzSU56N3MwUFF0a001V21LNHREbkYtcHdyUnhMV1FSZFZ0SDJmV0dwMFZ1RWlBMXhJZU9vRTVpb3VuVWlFd181eFE6NlRoZSA8Yj5TUEFDRSBvZjwvYj4gRGV2ZWxvcGVyIFByb2R1Y3Rpdml0eSAtIEFDTSBRdWV1ZVICdXNSBm9mIHRoZVICYW5SAWFSAmJ5UgJvZlIGaW4gdGhlUgNmb3IiAhABSABYAGgA",
+        "source": "ACM Queue"
+      },
+      {
+        "position": 7,
+        "title": "SPACE | Evanston, IL",
+        "link": "https://evanstonspace.com/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESVQHrOzAV8mel7MrmB9xsXJcGP3iv-uT_B5hdN57NwayjXyBLegin1eHC1BM1M_UfZdw-pjJZbms7pJR7WWWJ4RDI7Sc7CY1wtZxrtM_hVyElUlmj2rA&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQFnoECB0QAQ&uoh=1",
+        "displayed_link": "https://evanstonspace.com",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAMFBMVEVHcEwTEhIcGRoAAAAhHh8iHyAgHR4hHh8cGRoaGBkeGxwgHR4gHR4fHR0eHB0hHh8I0AOTAAAAEHRSTlMAGScH5P-99FM-Y8yqkHbYt4HNmgAAAI1JREFUeAFjGFZASMCYWZmBCYgUGBgVGRhEQsNKU0M7QkNnlIYu3hp6gOHqgdOhMa6hUU9Lo1PjY-ZHMTwN2Vf6QDRyrWtoAe_V6JQYBr6U0NAHoqGxrSCBmLu3GI5fdgVpidgaCtQSNu0f1ND1oc8rwIZuBllbuliZQZDZgEkZZC0IhD5Ac9oqhSEZogAxOjEO3bDEdgAAAABJRU5ErkJggg.png",
+        "snippet": "Enter SPACE through our lobby, one door south of the Union Pizzeria entrance. CONTACT US. (847) 492-8860 info@evanstonspace.com",
+        "snippet_highlighted_words": [
+          "SPACE",
+          "of",
+          "US"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Enter SPACE through our lobby, one door south of the Union Pizzeria entrance. CONTACT US. (847) 492-8860 info@evanstonspace.com",
+            "source_info_link": "https://evanstonspace.com/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAMFBMVEVHcEwTEhIcGRoAAAAhHh8iHyAgHR4hHh8cGRoaGBkeGxwgHR4gHR4fHR0eHB0hHh8I0AOTAAAAEHRSTlMAGScH5P-99FM-Y8yqkHbYt4HNmgAAAI1JREFUeAFjGFZASMCYWZmBCYgUGBgVGRhEQsNKU0M7QkNnlIYu3hp6gOHqgdOhMa6hUU9Lo1PjY-ZHMTwN2Vf6QDRyrWtoAe_V6JQYBr6U0NAHoqGxrSCBmLu3GI5fdgVpidgaCtQSNu0f1ND1oc8rwIZuBllbuliZQZDZgEkZZC0IhD5Ac9oqhSEZogAxOjEO3bDEdgAAAABJRU5ErkJggg.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CoEBL2dvdG8_dXJsPUNBRVNWUUhyT3pBVk1DRThkSW1JZXdwc3pYWDR5MHpIRHNLS25uN0IxVDJtaGxKamtkUEFNeXRtV1hCdmZjdzVfUkE0SEV4MzZIaWZweVpQaFJ6MVJsUXhpNTQ2S1k1NEJFZVZvNGZvWG9XQXEzelFOWmx2YW1zEgQaAggAGsEDEgIIARoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAmwMIABAAGAAgACoxCglhdXRvbWF0ZWQVPADIQBoEYXV0bxoJYXV0b21hdGljGg5pdjtwO2F1dG9tYXRlZDKBAS9nb3RvP3VybD1DQUVTVlFIck96QVZNQ0U4ZEltSWV3cHN6WFg0eTB6SERzS0tubjdCMVQybWhsSmprZFBBTXl0bVdYQnZmY3c1X1JBNEhFeDM2SGlmcHlaUGhSejFSbFF4aTU0NktZNTRCRWVWbzRmb1hvV0FxM3pRTlpsdmFtczobPGI-U1BBQ0U8L2I-IHwgRXZhbnN0b24sIElMQpQBRW50ZXIgPGI-U1BBQ0U8L2I-IHRocm91Z2ggb3VyIGxvYmJ5LCBvbmUgZG9vciBzb3V0aCA8Yj5vZjwvYj4gdGhlIFVuaW9uIFBpenplcmlhIGVudHJhbmNlLiBDT05UQUNUIDxiPlVTPC9iPi4gKDg0NykgNDkyLTg4NjAgaW5mb0BldmFuc3RvbnNwYWNlLmNvbVICb2ZSAmFuUgFhUgJieVIGb2YgdGhlUgZpbiB0aGVSA2ZvclICdXMiAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CoEBL2dvdG8_dXJsPUNBRVNWUUhyT3pBVk1DRThkSW1JZXdwc3pYWDR5MHpIRHNLS25uN0IxVDJtaGxKamtkUEFNeXRtV1hCdmZjdzVfUkE0SEV4MzZIaWZweVpQaFJ6MVJsUXhpNTQ2S1k1NEJFZVZvNGZvWG9XQXEzelFOWmx2YW1zEgQaAggAGsEDEgIIARoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAmwMIABAAGAAgACoxCglhdXRvbWF0ZWQVPADIQBoEYXV0bxoJYXV0b21hdGljGg5pdjtwO2F1dG9tYXRlZDKBAS9nb3RvP3VybD1DQUVTVlFIck96QVZNQ0U4ZEltSWV3cHN6WFg0eTB6SERzS0tubjdCMVQybWhsSmprZFBBTXl0bVdYQnZmY3c1X1JBNEhFeDM2SGlmcHlaUGhSejFSbFF4aTU0NktZNTRCRWVWbzRmb1hvV0FxM3pRTlpsdmFtczobPGI-U1BBQ0U8L2I-IHwgRXZhbnN0b24sIElMQpQBRW50ZXIgPGI-U1BBQ0U8L2I-IHRocm91Z2ggb3VyIGxvYmJ5LCBvbmUgZG9vciBzb3V0aCA8Yj5vZjwvYj4gdGhlIFVuaW9uIFBpenplcmlhIGVudHJhbmNlLiBDT05UQUNUIDxiPlVTPC9iPi4gKDg0NykgNDkyLTg4NjAgaW5mb0BldmFuc3RvbnNwYWNlLmNvbVICb2ZSAmFuUgFhUgJieVIGb2YgdGhlUgZpbiB0aGVSA2ZvclICdXMiAhABSABYAGgA",
+        "source": "SPACE | Evanston, IL",
+        "read_more_link": "https://evanstonspace.com/#:~:text=Enter%20SPACE%20through%20our%20lobby%2C,info%40evanstonspace.com"
+      },
+      {
+        "position": 8,
+        "title": "Why NASA's new Roman Space Telescope is a huge deal",
+        "link": "https://www.youtube.com/watch?v=nUlUa2zJXh4",
+        "displayed_link": "1.9M+ views · 1 month ago",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6hGd2r-e2XZiV5bqCYfEbFrgPq52pvmM6xLIMGLYgjkRv-9HKWly23w&s",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAhUlEQVR4AWNwL_ChCFPHgP8MxqxA7ArEKVBcCcUNIAznI-RdQXrABgAZpv8ZjP6Tg0F6QQbsosCAXSADHmGVVPIC0jKEDHgAMuAbmgRE445D___feYzXIJBeBigH04BVW_9DAcgwqEGYaik2gGIvUByIlEbjDooTEiwps5GRlNmolpkowgBVP9wMSzSKGAAAAABJRU5ErkJggg.png",
+        "snippet": "The Nancy Grace Roman Space Telescope is NASA's incredible new flagship space telescope that will help humanity unlock even more knowledge ...",
+        "duration": "12:49",
+        "key_moments": [
+          {
+            "time": "00:00",
+            "title": "Intro",
+            "link": "https://www.youtube.com/watch?v=nUlUa2zJXh4&t=0"
+          },
+          {
+            "time": "01:38",
+            "title": "Physical Size",
+            "link": "https://www.youtube.com/watch?v=nUlUa2zJXh4&t=98"
+          },
+          {
+            "time": "02:38",
+            "title": "VS Hubble",
+            "link": "https://www.youtube.com/watch?v=nUlUa2zJXh4&t=158"
+          },
+          {
+            "time": "04:43",
+            "title": "VS Webb",
+            "link": "https://www.youtube.com/watch?v=nUlUa2zJXh4&t=283"
+          },
+          {
+            "time": "05:48",
+            "title": "Data",
+            "link": "https://www.youtube.com/watch?v=nUlUa2zJXh4&t=348"
+          },
+          {
+            "time": "06:45",
+            "title": "Coronagraph",
+            "link": "https://www.youtube.com/watch?v=nUlUa2zJXh4&t=405"
+          },
+          {
+            "time": "08:03",
+            "title": "Refueling",
+            "link": "https://www.youtube.com/watch?v=nUlUa2zJXh4&t=483"
+          },
+          {
+            "time": "09:06",
+            "title": "Where It's Going",
+            "link": "https://www.youtube.com/watch?v=nUlUa2zJXh4&t=546"
+          },
+          {
+            "time": "09:38",
+            "title": "How It'll Get There",
+            "link": "https://www.youtube.com/watch?v=nUlUa2zJXh4&t=578"
+          },
+          {
+            "time": "10:10",
+            "title": "Budget / Schedule",
+            "link": "https://www.youtube.com/watch?v=nUlUa2zJXh4&t=610"
+          },
+          {
+            "time": "11:00",
+            "title": "Summary / Outro",
+            "link": "https://www.youtube.com/watch?v=nUlUa2zJXh4&t=660"
+          }
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "The Nancy Grace Roman Space Telescope is NASA's incredible new flagship space telescope that will help humanity unlock even more knowledge ...",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAhUlEQVR4AWNwL_ChCFPHgP8MxqxA7ArEKVBcCcUNIAznI-RdQXrABgAZpv8ZjP6Tg0F6QQbsosCAXSADHmGVVPIC0jKEDHgAMuAbmgRE445D___feYzXIJBeBigH04BVW_9DAcgwqEGYaik2gGIvUByIlEbjDooTEiwps5GRlNmolpkowgBVP9wMSzSKGAAAAABJRU5ErkJggg.png"
+          }
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CpgBL2dvdG8_dXJsPUNBRVNaZ0hyT3pBVlF4aGFoTjNMYlBCZV9qbGhmbXplWjhIVzhPZEZFbUpGb3FxRERkeU42QjkzLTN3bUVIY2EzNjFULXBQN0ZvcUNVaDVjazNDcnVaTnF3VnVjNHg3bDV2TjkzaldocXd5cElZY05tMHJvTkxPVXdmMVVqQnVVQTNpUTA5RklKVEdGU1ESIQoVCgQIMEgCCgQISEgCCgIIPwoDCIABEgQKAghaGgIIABoWEgAaACIAKgAyADoAQgBKAFoAcgB6ACICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CpgBL2dvdG8_dXJsPUNBRVNaZ0hyT3pBVlF4aGFoTjNMYlBCZV9qbGhmbXplWjhIVzhPZEZFbUpGb3FxRERkeU42QjkzLTN3bUVIY2EzNjFULXBQN0ZvcUNVaDVjazNDcnVaTnF3VnVjNHg3bDV2TjkzaldocXd5cElZY05tMHJvTkxPVXdmMVVqQnVVQTNpUTA5RklKVEdGU1ESIQoVCgQIMEgCCgQISEgCCgIIPwoDCIABEgQKAghaGgIIABoWEgAaACIAKgAyADoAQgBKAFoAcgB6ACICEAFIAFgAaAA",
+        "video_link": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQhBfU80cWH7svTazynEs06IYHWj4nOw_ksKA",
+        "source": "YouTube · Everyday Astronaut"
+      },
+      {
+        "position": 9,
+        "title": "What is \"Negative Space\"? - The Negative Space",
+        "link": "https://www.thenegativespace.life/what-is-negative-space/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESdAHrOzAVHlIH1WolAtDQpX66P9V7O-8bPSkLI6H5_i0F2COHFHVNlcjygexuAaXj5QHx4nbk_Auq0f5G9YV2Wsnt3-9DJBLePTaYAeDkK2O15dG7JB9Z6MtMVUrXZPXOyCUAu-NQUNoWfVjlpZcofxr5Em8c&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQFnoECB8QAQ&uoh=1",
+        "displayed_link": "https://www.thenegativespace.life › what-is-negative-sp...",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEVHcExbW1tkZGRaWlpVVVVaWlpjY2NaWlpUVFRfX15oaGhvb29eXl1YWFhbW1tRUVFfX19XV1dPT09LS0tnZ2deXl4s2mCQAAAAFnRSTlMAJnJlj3tZr5mXhwyhxIejS9a00xk8ZK95fQAAAW5JREFUeAF9zwcC5SAIBcAXBQULEhLvf9Tt9be5weDBkfBZJnyUORd8wFW0tY43-pjSKtfa8ZqkJDYaZ8VLZG0MGzRGanihlKU6vUxSK45HqR9mxKu4ZqZ14DFzHvCRVOJSSpLRz4cft448L8lCMRmwUfDXPZiSOjxoLQnGXd3cOn65Z5qq-XTcy305-skzzVLxS60p1FLVA-C4cddTeVg7FT-INrLTqGm74YE-WrNxjtRawzfiVStzCZE9gI5VNM2SEnHsDECO4GU71yIewN2lCM2yeVBswTfDiOOqPGwdyIJtQrKuYUbxM7IuoshyxQGQApum8SJeCz_1SMHBlwN1e7tRrhw8v79_6czs4ThmrWrD4VFWrht_7UUdPs-Vpc3pAJPhP9fGUVMaMzSVcQMX_ncDyxprScQjK1DwiPdSme6TbHnGCyNPCRGlmgMvhZPZMiuB1-55Egtdc-ONbiIh48B7hTPhIw98dj8GvwKe2RLKHZYcSAAAAABJRU5ErkJggg.png",
+        "snippet": "Negative space is the space around and between the subject of an image. Negative spaces are actual shapes that share edges with the positive shape. The mission ...",
+        "snippet_highlighted_words": [
+          "space",
+          "space",
+          "of an",
+          "spaces"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Negative space is the space around and between the subject of an image. Negative spaces are actual shapes that share edges with the positive shape. The mission ...",
+            "source_info_link": "https://www.thenegativespace.life/what-is-negative-space/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEVHcExbW1tkZGRaWlpVVVVaWlpjY2NaWlpUVFRfX15oaGhvb29eXl1YWFhbW1tRUVFfX19XV1dPT09LS0tnZ2deXl4s2mCQAAAAFnRSTlMAJnJlj3tZr5mXhwyhxIejS9a00xk8ZK95fQAAAW5JREFUeAF9zwcC5SAIBcAXBQULEhLvf9Tt9be5weDBkfBZJnyUORd8wFW0tY43-pjSKtfa8ZqkJDYaZ8VLZG0MGzRGanihlKU6vUxSK45HqR9mxKu4ZqZ14DFzHvCRVOJSSpLRz4cft448L8lCMRmwUfDXPZiSOjxoLQnGXd3cOn65Z5qq-XTcy305-skzzVLxS60p1FLVA-C4cddTeVg7FT-INrLTqGm74YE-WrNxjtRawzfiVStzCZE9gI5VNM2SEnHsDECO4GU71yIewN2lCM2yeVBswTfDiOOqPGwdyIJtQrKuYUbxM7IuoshyxQGQApum8SJeCz_1SMHBlwN1e7tRrhw8v79_6czs4ThmrWrD4VFWrht_7UUdPs-Vpc3pAJPhP9fGUVMaMzSVcQMX_ncDyxprScQjK1DwiPdSme6TbHnGCyNPCRGlmgMvhZPZMiuB1-55Egtdc-ONbiIh48B7hTPhIw98dj8GvwKe2RLKHZYcSAAAAABJRU5ErkJggg.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CqoBL2dvdG8_dXJsPUNBRVNkQUhyT3pBVjd6YVNnTFhsaThibTQ1RC1jbFZCQ1JGMEdqaldEemlQbV91WDd2UU5hZUNuU00ycWZSSURjMWRFVTQ5LS10VkZkVmNMMVZxemxrQVhsUzc2NGN4N1N1QnB4Nk1WSkcta29nV0lUOUZLS1BZdXByRDdrU2RNY05iamwzTDUyQTMzc2dmeEg1aVpMR0JiMTM1VWxvTFASBBoCCAAaxQQSAggAGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkCfBAgAEAAYACAAKjEKCWF1dG9tYXRlZBVaHLdAGgRhdXRvGglhdXRvbWF0aWMaDml2O3A7YXV0b21hdGVkMqoBL2dvdG8_dXJsPUNBRVNkQUhyT3pBVjd6YVNnTFhsaThibTQ1RC1jbFZCQ1JGMEdqaldEemlQbV91WDd2UU5hZUNuU00ycWZSSURjMWRFVTQ5LS10VkZkVmNMMVZxemxrQVhsUzc2NGN4N1N1QnB4Nk1WSkcta29nV0lUOUZLS1BZdXByRDdrU2RNY05iamwzTDUyQTMzc2dmeEg1aVpMR0JiMTM1VWxvTFA6RldoYXQgaXMgJnF1b3Q7TmVnYXRpdmUgPGI-U3BhY2U8L2I-JnF1b3Q7PyAtIFRoZSBOZWdhdGl2ZSA8Yj5TcGFjZTwvYj5CxAFOZWdhdGl2ZSA8Yj5zcGFjZTwvYj4gaXMgdGhlIDxiPnNwYWNlPC9iPiBhcm91bmQgYW5kIGJldHdlZW4gdGhlIHN1YmplY3QgPGI-b2YgYW48L2I-IGltYWdlLiBOZWdhdGl2ZSA8Yj5zcGFjZXM8L2I-IGFyZSBhY3R1YWwgc2hhcGVzIHRoYXQgc2hhcmUgZWRnZXMgd2l0aCB0aGUgcG9zaXRpdmUgc2hhcGUuIFRoZSBtaXNzaW9uJm5ic3A7Li4uUgNmb3JSAmJ5UgFhUgJhblIGb2YgdGhlUgJvZlIGaW4gdGhlUgJ1cyICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CqoBL2dvdG8_dXJsPUNBRVNkQUhyT3pBVjd6YVNnTFhsaThibTQ1RC1jbFZCQ1JGMEdqaldEemlQbV91WDd2UU5hZUNuU00ycWZSSURjMWRFVTQ5LS10VkZkVmNMMVZxemxrQVhsUzc2NGN4N1N1QnB4Nk1WSkcta29nV0lUOUZLS1BZdXByRDdrU2RNY05iamwzTDUyQTMzc2dmeEg1aVpMR0JiMTM1VWxvTFASBBoCCAAaxQQSAggAGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkCfBAgAEAAYACAAKjEKCWF1dG9tYXRlZBVaHLdAGgRhdXRvGglhdXRvbWF0aWMaDml2O3A7YXV0b21hdGVkMqoBL2dvdG8_dXJsPUNBRVNkQUhyT3pBVjd6YVNnTFhsaThibTQ1RC1jbFZCQ1JGMEdqaldEemlQbV91WDd2UU5hZUNuU00ycWZSSURjMWRFVTQ5LS10VkZkVmNMMVZxemxrQVhsUzc2NGN4N1N1QnB4Nk1WSkcta29nV0lUOUZLS1BZdXByRDdrU2RNY05iamwzTDUyQTMzc2dmeEg1aVpMR0JiMTM1VWxvTFA6RldoYXQgaXMgJnF1b3Q7TmVnYXRpdmUgPGI-U3BhY2U8L2I-JnF1b3Q7PyAtIFRoZSBOZWdhdGl2ZSA8Yj5TcGFjZTwvYj5CxAFOZWdhdGl2ZSA8Yj5zcGFjZTwvYj4gaXMgdGhlIDxiPnNwYWNlPC9iPiBhcm91bmQgYW5kIGJldHdlZW4gdGhlIHN1YmplY3QgPGI-b2YgYW48L2I-IGltYWdlLiBOZWdhdGl2ZSA8Yj5zcGFjZXM8L2I-IGFyZSBhY3R1YWwgc2hhcGVzIHRoYXQgc2hhcmUgZWRnZXMgd2l0aCB0aGUgcG9zaXRpdmUgc2hhcGUuIFRoZSBtaXNzaW9uJm5ic3A7Li4uUgNmb3JSAmJ5UgFhUgJhblIGb2YgdGhlUgJvZlIGaW4gdGhlUgJ1cyICEAFIAFgAaAA",
+        "source": "thenegativespace.life"
+      }
+    ],
+    "related_searches": [
+      {
+        "block_position": 1,
+        "query": "Space copy",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&hl=en&gl=us&sxsrf=APpeQnv_lKs2O5FRuX911efh9n31yPL35Q:1792775501638&q=Space+copy&sa=X&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQ1QJ6BAhAEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Space+copy"
+      },
+      {
+        "block_position": 1,
+        "query": "Deep space news",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&hl=en&gl=us&sxsrf=APpeQnv_lKs2O5FRuX911efh9n31yPL35Q:1792775501638&q=Deep+space+news&sa=X&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQ1QJ6BAhFEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Deep+space+news"
+      },
+      {
+        "block_position": 1,
+        "query": "Space News today NASA",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&hl=en&gl=us&sxsrf=APpeQnv_lKs2O5FRuX911efh9n31yPL35Q:1792775501638&q=Space+News+today+NASA&sa=X&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQ1QJ6BAhEEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Space+News+today+NASA"
+      },
+      {
+        "block_position": 1,
+        "query": "Outer space",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&hl=en&gl=us&sxsrf=APpeQnv_lKs2O5FRuX911efh9n31yPL35Q:1792775501638&q=Outer+space&sa=X&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQ1QJ6BAhBEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Outer+space"
+      },
+      {
+        "block_position": 1,
+        "query": "What is space in physics",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&hl=en&gl=us&sxsrf=APpeQnv_lKs2O5FRuX911efh9n31yPL35Q:1792775501638&q=What+is+space+in+physics&sa=X&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQ1QJ6BAg-EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=What+is+space+in+physics"
+      },
+      {
+        "block_position": 1,
+        "query": "What is the temperature in space hot or cold",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&hl=en&gl=us&sxsrf=APpeQnv_lKs2O5FRuX911efh9n31yPL35Q:1792775501638&q=What+is+the+temperature+in+space+hot+or+cold&sa=X&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQ1QJ6BAg_EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=What+is+the+temperature+in+space+hot+or+cold"
+      },
+      {
+        "block_position": 1,
+        "query": "What temperature is space around Earth",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&hl=en&gl=us&sxsrf=APpeQnv_lKs2O5FRuX911efh9n31yPL35Q:1792775501638&q=What+temperature+is+space+around+Earth&sa=X&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQ1QJ6BAhDEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=What+temperature+is+space+around+Earth"
+      },
+      {
+        "block_position": 1,
+        "query": "How does space look like right now",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&hl=en&gl=us&sxsrf=APpeQnv_lKs2O5FRuX911efh9n31yPL35Q:1792775501638&q=How+does+space+look+like+right+now&sa=X&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQ1QJ6BAhCEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=How+does+space+look+like+right+now"
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "next": "https://www.google.com/search?q=automated+mechanical+parking+system+installed+cost+per+space+United+States&sca_esv=fc7020e035777d64&hl=en&gl=us&sxsrf=APpeQnv_lKs2O5FRuX911efh9n31yPL35Q:1792775501638&ei=TZXbasizJrvX5NoPoKeakAI&start=10&sa=N&sstk=AS6-VmIpJgmNNhu65JDTVNZHSe2w2GomfvHB7QcOvHjQ5Z0aGJez1dcI91b5_i6wQ-1b8IkYL2BWAAPCOaXtm_it11wxvYkGvb-W4Q&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQ8NMDegQINxAM",
+      "other_pages": {
+        "2": "https://www.google.com/search?q=automated+mechanical+parking+system+installed+cost+per+space+United+States&sca_esv=fc7020e035777d64&hl=en&gl=us&sxsrf=APpeQnv_lKs2O5FRuX911efh9n31yPL35Q:1792775501638&ei=TZXbasizJrvX5NoPoKeakAI&start=10&sa=N&sstk=AS6-VmIpJgmNNhu65JDTVNZHSe2w2GomfvHB7QcOvHjQ5Z0aGJez1dcI91b5_i6wQ-1b8IkYL2BWAAPCOaXtm_it11wxvYkGvb-W4Q&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQ8tMDegQINxAE",
+        "3": "https://www.google.com/search?q=automated+mechanical+parking+system+installed+cost+per+space+United+States&sca_esv=fc7020e035777d64&hl=en&gl=us&sxsrf=APpeQnv_lKs2O5FRuX911efh9n31yPL35Q:1792775501638&ei=TZXbasizJrvX5NoPoKeakAI&start=20&sa=N&sstk=AS6-VmIpJgmNNhu65JDTVNZHSe2w2GomfvHB7QcOvHjQ5Z0aGJez1dcI91b5_i6wQ-1b8IkYL2BWAAPCOaXtm_it11wxvYkGvb-W4Q&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQ8tMDegQINxAG",
+        "4": "https://www.google.com/search?q=automated+mechanical+parking+system+installed+cost+per+space+United+States&sca_esv=fc7020e035777d64&hl=en&gl=us&sxsrf=APpeQnv_lKs2O5FRuX911efh9n31yPL35Q:1792775501638&ei=TZXbasizJrvX5NoPoKeakAI&start=30&sa=N&sstk=AS6-VmIpJgmNNhu65JDTVNZHSe2w2GomfvHB7QcOvHjQ5Z0aGJez1dcI91b5_i6wQ-1b8IkYL2BWAAPCOaXtm_it11wxvYkGvb-W4Q&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQ8tMDegQINxAI",
+        "5": "https://www.google.com/search?q=automated+mechanical+parking+system+installed+cost+per+space+United+States&sca_esv=fc7020e035777d64&hl=en&gl=us&sxsrf=APpeQnv_lKs2O5FRuX911efh9n31yPL35Q:1792775501638&ei=TZXbasizJrvX5NoPoKeakAI&start=40&sa=N&sstk=AS6-VmIpJgmNNhu65JDTVNZHSe2w2GomfvHB7QcOvHjQ5Z0aGJez1dcI91b5_i6wQ-1b8IkYL2BWAAPCOaXtm_it11wxvYkGvb-W4Q&ved=2ahUKEwiIjr-X0dCXAxW7K1kFHaCTBiIQ8tMDegQINxAK"
+      }
+    },
+    "serpapi_pagination": {
+      "current": 1,
+      "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=automated+mechanical+parking+system+installed+cost+per+space+United+States&start=10",
+      "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=automated+mechanical+parking+system+installed+cost+per+space+United+States&start=10",
+      "other_pages": {
+        "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=automated+mechanical+parking+system+installed+cost+per+space+United+States&start=10",
+        "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=automated+mechanical+parking+system+installed+cost+per+space+United+States&start=20",
+        "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=automated+mechanical+parking+system+installed+cost+per+space+United+States&start=30",
+        "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=automated+mechanical+parking+system+installed+cost+per+space+United+States&start=40"
+      }
+    }
+  }
+}

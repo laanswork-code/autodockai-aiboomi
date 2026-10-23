@@ -1,0 +1,353 @@
+{
+  "query": {
+    "query_id": "california_permits",
+    "engine": "google_news",
+    "q": "California CPUC DMV robotaxi permits Waymo San Francisco Los Angeles 2026",
+    "gl": "us",
+    "hl": "en",
+    "num": 10
+  },
+  "retrieved_at": "2026-10-23T17:11:54.533133+00:00",
+  "status": "success",
+  "response": {
+    "search_metadata": {
+      "id": "6adb9559b917c77691cca67f",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/dY2eFo8RqjuOWui2vsGeaI6w4Y9XWv0hx47UmVjkVDA/6adb9559b917c77691cca67f.json",
+      "markdown_endpoint": "https://serpapi.com/searches/dY2eFo8RqjuOWui2vsGeaI6w4Y9XWv0hx47UmVjkVDA/6adb9559b917c77691cca67f.md",
+      "created_at": "2026-10-23 17:11:53 UTC",
+      "processed_at": "2026-10-23 17:11:53 UTC",
+      "google_news_url": "https://news.google.com/search?q=California+CPUC+DMV+robotaxi+permits+Waymo+San+Francisco+Los+Angeles+2026&hl=en&gl=US",
+      "raw_html_file": "https://serpapi.com/searches/dY2eFo8RqjuOWui2vsGeaI6w4Y9XWv0hx47UmVjkVDA/6adb9559b917c77691cca67f.html",
+      "total_time_taken": 0.58
+    },
+    "search_parameters": {
+      "engine": "google_news",
+      "gl": "us",
+      "hl": "en",
+      "q": "California CPUC DMV robotaxi permits Waymo San Francisco Los Angeles 2026"
+    },
+    "news_results": [
+      {
+        "position": 1,
+        "title": "Waymo approved to start rides in Sacramento, San Diego and expand in Los Angeles, Bay Area",
+        "source": {
+          "name": "CBS News",
+          "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.cbsnews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Brandon Downs"
+          ]
+        },
+        "link": "https://www.cbsnews.com/sacramento/news/waymo-approved-sacramento-san-diego-expand-los-angeles-bay-area/",
+        "thumbnail": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/08/14/c93eedb1-da26-4187-a1cc-f4b2acdff716/thumbnail/1200x630/fdbb6844989fe42e0ec1070716955ac9/gettyimages-2286668548.jpg",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDRRVWxUVG0xd1YwbEJkWEJoVFJDUkF4ajhCU2dLTWdhQkVKUm9JUWM",
+        "date": "08/14/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-08-14T07:00:00Z"
+      },
+      {
+        "position": 2,
+        "title": "Waymo announces big California service expansion across Bay Area, Los Angeles and more",
+        "source": {
+          "name": "ABC7 Bay Area",
+          "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://abc7news.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://abc7news.com/post/waymo-announces-big-california-service-expansion-bay-area-los-angeles-more/19679378/",
+        "thumbnail": "https://cdn.abcotvs.com/dip/images/18193411_112225-ap-waymo-img.jpg",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNVBSell6VjNoR2IzUkJjM0pXVFJDZkF4ampCU2dLTWdrVk1vb3BJYVpNTkFF",
+        "date": "08/14/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-08-14T07:00:00Z"
+      },
+      {
+        "position": 3,
+        "title": "Tesla touts California robotaxis but does nothing to get permits",
+        "source": {
+          "name": "Reuters",
+          "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Chris Kirkham"
+          ]
+        },
+        "link": "https://www.reuters.com/business/autos-transportation/musk-touts-california-robotaxis-tesla-does-nothing-get-permits-2026-02-26/",
+        "thumbnail": "https://www.reuters.com/resizer/v2/ANU77PGCLZJP7OHXJVDP3NYUMM.jpg?auth=c8905090bf9c1a2e00102c6642898bfd23c61e541b54771147fadb3bd6a86c9f&width=1080&quality=80",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iMkNnNTVRWFZaTmpOTWJWOVFSR1k1VFJERUF4aW1CU2dLTWdzQm9Jb0F2S1FMTFhya1BR",
+        "date": "02/26/2026, 08:00 AM, +0000 UTC",
+        "iso_date": "2026-02-26T08:00:00Z"
+      },
+      {
+        "position": 4,
+        "title": "California Approves Waymo's Biggest Robotaxi Expansion Across 18 Counties",
+        "source": {
+          "name": "Startup Fortune",
+          "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://startupfortune.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://startupfortune.com/california-approves-waymos-biggest-robotaxi-expansion-across-18-counties/",
+        "thumbnail": "https://startupfortune.com/wp-content/uploads/2026/08/sf-18649-1786872736926.jpg",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUJaVEp4UmpORU9HVTBTMmhvVFJDZEF4am5CU2dLTWdZQkFJaE5zUVE",
+        "date": "08/16/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-08-16T07:00:00Z"
+      },
+      {
+        "position": 5,
+        "title": "Nuro secures California driverless permit for Lucid Gravity Uber robotaxis",
+        "source": {
+          "name": "Electrek",
+          "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://electrek.co&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Fred Lambert"
+          ]
+        },
+        "link": "https://electrek.co/2026/05/08/nuro-california-driverless-permit-lucid-gravity-uber-robotaxi/",
+        "thumbnail": "https://electrek.co/wp-content/uploads/sites/3/2026/05/Lucid-Nuro-Uber-robotaxi.jpeg?quality=82&strip=all&w=1600",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNXJhQzFMVVRSVVZsSmZlbUZrVFJDREF4aVpCaWdLTWdhTmtKRHNOQVk",
+        "date": "05/08/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-05-08T07:00:00Z"
+      },
+      {
+        "position": 6,
+        "title": "Waymo’s robotaxis are spreading across California — here’s where they’re headed",
+        "source": {
+          "name": "New York Post",
+          "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://nypost.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Marina Peña"
+          ]
+        },
+        "link": "https://nypost.com/2026/08/14/business/waymo-gets-green-light-for-major-california-robotaxi-expansion/",
+        "thumbnail": "https://nypost.com/wp-content/uploads/sites/2/2026/08/newspress-collage-bu5q6qcs4-1786751469098.jpg?quality=75&strip=all&1786737168&w=1024",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNW5NMU5HY25FdFpUWjFSa053VFJDM0FSaVRBaWdCTWdrQkFJb2hsMmxGVXdF",
+        "date": "08/14/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-08-14T07:00:00Z"
+      },
+      {
+        "position": 7,
+        "title": "Waymo to expand service into Wine Country in one of California’s largest robotaxi rollouts",
+        "source": {
+          "name": "San Francisco Chronicle",
+          "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.sfchronicle.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Aidin Vaziri"
+          ]
+        },
+        "link": "https://www.sfchronicle.com/tech/article/california-waymo-robotaxi-expansion-21201623.php",
+        "thumbnail": "https://s.hdnux.com/photos/01/55/25/25/28661084/5/ratio3x2_1920.jpg",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNVdVMkZCWVZGMVpISnRXbmgwVFJERUF4aW1CU2dLTWdB",
+        "date": "11/21/2025, 08:00 AM, +0000 UTC",
+        "iso_date": "2025-11-21T08:00:00Z"
+      },
+      {
+        "position": 8,
+        "title": "California DMV expands permitted areas for Waymo robotaxis",
+        "source": {
+          "name": "CBS News",
+          "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.cbsnews.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://www.cbsnews.com/losangeles/news/california-new-areas-for-waymo-robotaxis/",
+        "thumbnail": "https://assets1.cbsnewsstatic.com/hub/i/r/2025/11/21/9038d849-ada7-4beb-89ca-ec2042ec77d6/thumbnail/640x360/a962c2e12013b63cb40bc72460d98f23/new-waymo-operating-areas.png",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNHdjRFJwV25KNGRUTk9lVkpUVFJEb0FoaUFCU2dLTWdtSkFvYm9uV05zeWdF",
+        "date": "11/21/2025, 08:00 AM, +0000 UTC",
+        "iso_date": "2025-11-21T08:00:00Z"
+      },
+      {
+        "position": 9,
+        "title": "California DMV pulls permits for Cruise’s driverless cars over safety concerns",
+        "source": {
+          "name": "Los Angeles Times",
+          "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.latimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Grace Toohey"
+          ]
+        },
+        "link": "https://www.latimes.com/california/story/2023-10-24/cruises-driverless-permits-suspended-in-california-over-safety-concerns",
+        "thumbnail": "https://ca-times.brightspotcdn.com/dims4/default/60e436d/2147483647/strip/true/crop/3556x2370+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fca%2F96%2Fe104d3e5401ea9198b3089d6d7b1%2Fcruise-robotaxis-09649.jpg",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUtMWEJvVmt0WFQycGZSblIzVFJERUF4aW1CU2dLTWdhQmtZNU5RUVU",
+        "date": "10/24/2023, 07:00 AM, +0000 UTC",
+        "iso_date": "2023-10-24T07:00:00Z"
+      },
+      {
+        "position": 10,
+        "title": "What We Can Learn From Waymo’s California AV Data",
+        "source": {
+          "name": "EE Times",
+          "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.eetimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "E. Juliussen"
+          ]
+        },
+        "link": "https://www.eetimes.com/what-we-can-learn-from-waymos-california-av-data/",
+        "thumbnail": "https://www.eetimes.com/wp-content/uploads/AdobeStock_865522524_Editorial_Use_Only.jpeg?fit=640%2C427",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUNMVlkxTUhkMldrTlliRGxzVFJDckF4aUFCU2dLTWdhSnNZNUt2UVU",
+        "date": "11/19/2025, 08:00 AM, +0000 UTC",
+        "iso_date": "2025-11-19T08:00:00Z"
+      },
+      {
+        "position": 11,
+        "title": "Tesla bid to rival Waymo clears key hurdle",
+        "source": {
+          "name": "San Francisco Examiner",
+          "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.sfexaminer.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Greg Wong"
+          ]
+        },
+        "link": "https://www.sfexaminer.com/news/transit/tesla-secures-key-california-permit-in-robotaxi-pursuit/article_51bc8138-0456-11f0-a1bb-13081be490ca.html",
+        "thumbnail": "https://bloximages.chicago2.vip.townnews.com/sfexaminer.com/content/tncms/assets/v3/editorial/d/bf/dbf6dad2-0457-11f0-8c92-2f7a19ea96a5/67da0dcf6013b.image.jpg?resize=400%2C267",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNDRRVE5HYjJ4VWJVMVFXbEYyVFJDTEFoaVFBeWdLTWdB",
+        "date": "03/19/2025, 07:00 AM, +0000 UTC",
+        "iso_date": "2025-03-19T07:00:00Z"
+      },
+      {
+        "position": 12,
+        "title": "Waymo Marin County Odds Hit 59% as CPUC Clears Robotaxi Expansion",
+        "source": {
+          "name": "tech-insider.org",
+          "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://tech-insider.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://tech-insider.org/waymo-marin-county-expansion-odds-manifold-2026/",
+        "thumbnail": "https://tech-insider.org/wp-content/uploads/2026/09/587e7281-75c1-4048-bba6-5f896e29452c.webp",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDJTSEp0U25CaVdEVnFVbDkyVFJDaUF4amRCU2dLTWdZUms1QlB0UVk",
+        "date": "09/02/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-09-02T07:00:00Z"
+      },
+      {
+        "position": 13,
+        "title": "Robotaxi pushback grows in Los Angeles as Cruise loses permits",
+        "source": {
+          "name": "TechCrunch",
+          "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://techcrunch.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Harri Weber"
+          ]
+        },
+        "link": "https://techcrunch.com/2023/10/24/robotaxi-pushback-grows-in-los-angeles-as-cruise-loses-permits/",
+        "thumbnail": "https://techcrunch.com/wp-content/uploads/2023/10/GettyImages-1247366993.jpg",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNHRlRTEzYkRWS1VtNXhNMGRsVFJDU0F4ajZCU2dLTWdZRllveEtPUVk",
+        "date": "10/24/2023, 07:00 AM, +0000 UTC",
+        "iso_date": "2023-10-24T07:00:00Z"
+      },
+      {
+        "position": 14,
+        "title": "Opposition forms against Waymo’s robotaxis in San Diego",
+        "source": {
+          "name": "San Diego Union-Tribune",
+          "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.sandiegouniontribune.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Rob Nikolewski"
+          ]
+        },
+        "link": "https://www.sandiegouniontribune.com/2025/11/20/transit-committee-san-diego-city-councilmember-say-no-way-to-waymos-robotaxis/",
+        "thumbnail": "https://www.sandiegouniontribune.com/wp-content/uploads/2025/11/IMG_8677.jpeg",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVdSREp1ZGs1NFNsVmZXamxRVFJEZUF4aUJCU2dLTWdZQmNvNUpPUVU",
+        "date": "11/20/2025, 08:00 AM, +0000 UTC",
+        "iso_date": "2025-11-20T08:00:00Z"
+      },
+      {
+        "position": 15,
+        "title": "Waymo Wins California Approval to Expand Robotaxi Service to 18 Counties",
+        "source": {
+          "name": "BigGo Finance",
+          "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://finance.biggo.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://finance.biggo.com/news/b03d1f1f-68b9-4561-b75e-300932b74ee2",
+        "thumbnail": "https://img.biggo.com/0j6kbydO3_7SpACmaRrGm17-H_9SLWVZAX9wb9v2uEo/fit/1720/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA4L2IwM2QxZjFmLTY4YjktNDU2MS1iNzVlLTMwMDkzMmI3NGVlMl8xNzg2ODE4MjcwX2RlZmF1bHQuanBn.webp",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNUVWVEF6VWtGZlEyRTFXbVpZVFJDZkF4ampCU2dLTWdrQmdJcXR1YVVXS3dJ",
+        "date": "08/15/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-08-15T07:00:00Z"
+      },
+      {
+        "position": 16,
+        "title": "Massive expansion of driverless robotaxis approved for San Francisco despite public safety concerns",
+        "source": {
+          "name": "Los Angeles Times",
+          "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://www.latimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Russ Mitchell"
+          ]
+        },
+        "link": "https://www.latimes.com/business/story/2023-08-10/cpuc-vote-on-robotaxi",
+        "thumbnail": "https://ca-times.brightspotcdn.com/dims4/default/90b711b/2147483647/strip/true/crop/3124x1935+0+0/resize/1200x743!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F97%2F99%2F9f57614f4c9fba5ed3c8aee2df33%2Frobotaxi-expansion-04423.jpg",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWZjRjlrVHpNNFNqVnVSemN6VFJDMEF4akFCU2dLTWdZUmNJd0p0UVk",
+        "date": "08/10/2023, 07:00 AM, +0000 UTC",
+        "iso_date": "2023-08-10T07:00:00Z"
+      },
+      {
+        "position": 17,
+        "title": "Waymo can now charge for fully driverless services in San Francisco",
+        "source": {
+          "name": "TechCrunch",
+          "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://techcrunch.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Rebecca Bellan"
+          ]
+        },
+        "link": "https://techcrunch.com/2022/11/09/waymo-can-now-charge-for-fully-driverless-services-in-san-francisco/",
+        "thumbnail": "https://techcrunch.com/wp-content/uploads/2022/05/IPACE_3.jpeg",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU1XVWxGYzFGNkxXOXBMVWMwVFJERUF4aW1CU2dLTWdhUklKYXRIUWc",
+        "date": "11/09/2022, 08:00 AM, +0000 UTC",
+        "iso_date": "2022-11-09T08:00:00Z"
+      },
+      {
+        "position": 18,
+        "title": "Waymo to test driverless rides with employees in Los Angeles",
+        "source": {
+          "name": "TechCrunch",
+          "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://techcrunch.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Rebecca Bellan"
+          ]
+        },
+        "link": "https://techcrunch.com/2023/02/27/waymo-to-test-driverless-rides-with-employees-in-los-angeles/",
+        "thumbnail": "https://techcrunch.com/wp-content/uploads/2023/02/Waymo_LA_1.jpg",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNTFVV2h3YlV0SGNHdEpjbWR6VFJERUF4aW1CU2dLTWdZQllJclR3QVE",
+        "date": "02/27/2023, 08:00 AM, +0000 UTC",
+        "iso_date": "2023-02-27T08:00:00Z"
+      }
+    ],
+    "menu_links": [
+      {
+        "title": "U.S.",
+        "topic_token": "CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTjNjd0VnSmxiaWdBUAE",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTjNjd0VnSmxiaWdBUAE"
+      },
+      {
+        "title": "World",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Your local news",
+        "topic_token": "CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE"
+      },
+      {
+        "title": "Business",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Technology",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Entertainment",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNREpxYW5RU0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNREpxYW5RU0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Sports",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp1ZEdvU0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp1ZEdvU0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Science",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp0Y1RjU0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp0Y1RjU0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Health",
+        "topic_token": "CAAqIQgKIhtDQkFTRGdvSUwyMHZNR3QwTlRFU0FtVnVLQUFQAQ",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqIQgKIhtDQkFTRGdvSUwyMHZNR3QwTlRFU0FtVnVLQUFQAQ"
+      }
+    ]
+  }
+}

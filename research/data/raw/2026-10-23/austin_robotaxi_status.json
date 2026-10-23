@@ -1,0 +1,284 @@
+{
+  "query": {
+    "query_id": "austin_robotaxi_status",
+    "engine": "google_news",
+    "q": "Austin robotaxi autonomous vehicle permit service 2026 Waymo Tesla",
+    "gl": "us",
+    "hl": "en",
+    "num": 10
+  },
+  "retrieved_at": "2026-10-23T17:12:12.018677+00:00",
+  "status": "success",
+  "response": {
+    "search_metadata": {
+      "id": "6adb95656d1a18e5e4e0fee9",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/cLxZ-FPgvYI2oHwdp3qr_e8b8hq_5u5WbxVEmkfUALQ/6adb95656d1a18e5e4e0fee9.json",
+      "markdown_endpoint": "https://serpapi.com/searches/cLxZ-FPgvYI2oHwdp3qr_e8b8hq_5u5WbxVEmkfUALQ/6adb95656d1a18e5e4e0fee9.md",
+      "created_at": "2026-10-23 17:12:05 UTC",
+      "processed_at": "2026-10-23 17:12:05 UTC",
+      "google_news_url": "https://news.google.com/search?q=Austin+robotaxi+autonomous+vehicle+permit+service+2026+Waymo+Tesla&hl=en&gl=US",
+      "raw_html_file": "https://serpapi.com/searches/cLxZ-FPgvYI2oHwdp3qr_e8b8hq_5u5WbxVEmkfUALQ/6adb95656d1a18e5e4e0fee9.html",
+      "total_time_taken": 6.4
+    },
+    "search_parameters": {
+      "engine": "google_news",
+      "gl": "us",
+      "hl": "en",
+      "q": "Austin robotaxi autonomous vehicle permit service 2026 Waymo Tesla"
+    },
+    "news_results": [
+      {
+        "position": 1,
+        "title": "Tesla, Uber, and Waymo all get the OK to operate thousands of robotaxis in Nevada",
+        "source": {
+          "name": "TechCrunch",
+          "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://techcrunch.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Kirsten Korosec"
+          ]
+        },
+        "link": "https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/",
+        "thumbnail": "https://techcrunch.com/wp-content/uploads/2025/06/GettyImages-2220872848.jpg?w=1024",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW5hWFpZUjA0eWRsWmxabU5sVFJERUF4aW1CU2dLTWdZQmtZN1RRQVU",
+        "date": "08/20/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-08-20T07:00:00Z"
+      },
+      {
+        "position": 2,
+        "title": "Tesla touts California robotaxis but does nothing to get permits",
+        "source": {
+          "name": "Reuters",
+          "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.reuters.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Chris Kirkham"
+          ]
+        },
+        "link": "https://www.reuters.com/business/autos-transportation/musk-touts-california-robotaxis-tesla-does-nothing-get-permits-2026-02-26/",
+        "thumbnail": "https://www.reuters.com/resizer/v2/ANU77PGCLZJP7OHXJVDP3NYUMM.jpg?auth=c8905090bf9c1a2e00102c6642898bfd23c61e541b54771147fadb3bd6a86c9f&width=1080&quality=80",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iMkNnNTVRWFZaTmpOTWJWOVFSR1k1VFJERUF4aW1CU2dLTWdzQm9Jb0F2S1FMTFhya1BR",
+        "date": "02/26/2026, 08:00 AM, +0000 UTC",
+        "iso_date": "2026-02-26T08:00:00Z"
+      },
+      {
+        "position": 3,
+        "title": "Robotaxi Statistics 2026: Trips, Fleets, Revenue and Safety Data",
+        "source": {
+          "name": "SQ Magazine",
+          "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://sqmagazine.co.uk&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://sqmagazine.co.uk/robotaxi-statistics/",
+        "thumbnail": "https://sqmagazine.co.uk/wp-content/uploads/2026/05/robotaxi-statistics-480x270.jpg",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNXJTWFJwZVRad09FdFdhSGRhVFJDT0FoamdBeWdLTWdtUllvb1NQU1JhS2dJ",
+        "date": "07/23/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-07-23T07:00:00Z"
+      },
+      {
+        "position": 4,
+        "title": "Tesla Robotaxi Dallas Houston Launch: 573 Vehicles, 12% Stock Surge [2026]",
+        "source": {
+          "name": "tech-insider.org",
+          "icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://tech-insider.org&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://tech-insider.org/tesla-robotaxi-dallas-houston-unsupervised-launch-2026/",
+        "thumbnail": "https://tech-insider.org/wp-content/uploads/2026/04/tesla-robotaxi-dallas-houston-unsupervised-launch-2026-1-768x439.webp",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNDFlRFUxTUdWcmNWQkVWa3N3VFJDakF4amRCU2dLTWdZQlVJaFBTUVE",
+        "date": "04/19/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-04-19T07:00:00Z"
+      },
+      {
+        "position": 5,
+        "title": "California regulator confirms Tesla is ‘not operating an autonomous vehicle service’",
+        "source": {
+          "name": "Electrek",
+          "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://electrek.co&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Fred Lambert"
+          ]
+        },
+        "link": "https://electrek.co/2026/03/25/california-regulator-confirms-tesla-not-operating-autonomous-vehicle-service/",
+        "thumbnail": "https://electrek.co/wp-content/uploads/sites/3/2025/10/Tesla-Robotaxi-hero.png?w=1600",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU5lalF4YVVGQ09FOVVXUzFmVFJEX0FoaWhCaWdLTWdZQklvYXRtUVk",
+        "date": "03/25/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-03-25T07:00:00Z"
+      },
+      {
+        "position": 6,
+        "title": "What Is the Tesla Cybercab? Vehicle Specs, Business Model and Autonomous Strategy",
+        "source": {
+          "name": "Built In",
+          "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://builtin.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Jeff Rumage"
+          ]
+        },
+        "link": "https://builtin.com/articles/tesla-cybercab",
+        "thumbnail": "https://cdn.builtin.com/cdn-cgi/image/f=auto,fit=cover,w=480,h=300,q=90/sites/www.builtin.com/files/2026-09/what-is-tesla-cybercab.jpg",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNW5aVTlQWjI4MmMxcE1WR3RsVFJDc0FoamdBeWdLTWdrRk1Zd3JwZVU5YUFJ",
+        "date": "09/09/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-09-09T07:00:00Z"
+      },
+      {
+        "position": 7,
+        "title": "Waymo accelerates robotaxi expansion with launches in Denver, San Diego, and Tampa",
+        "source": {
+          "name": "TechCrunch",
+          "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://techcrunch.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Kirsten Korosec"
+          ]
+        },
+        "link": "https://techcrunch.com/2026/09/01/waymo-accelerates-robotaxi-expansion-with-launches-in-denver-san-diego-and-tampa/",
+        "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/05/waymo-zeekr-robotaxi.jpg?w=1024",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWlNR0pLVGtWNVluTmpXbUZNVFJEZ0F4aUFCU2dLTWdZQm9ZWk95UVE",
+        "date": "09/01/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-09-01T07:00:00Z"
+      },
+      {
+        "position": 8,
+        "title": "Robotaxis in 2025: Waymo plots global expansion as Zoox, Tesla roll to the starting line",
+        "source": {
+          "name": "CNBC",
+          "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.cnbc.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Lora Kolodny",
+            "Annie Palmer",
+            "Jennifer Elias"
+          ]
+        },
+        "link": "https://www.cnbc.com/2025/12/16/waymo-amazon-zoox-tesla-robotaxi-expansion.html",
+        "thumbnail": "https://image.cnbcfm.com/api/v1/image/108242463-1765901821884-gettyimages-2026886743-_smj7548_3klkbchd.jpeg?v=1770052081&w=1600&h=900",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNW1iMFZWVkU0MlFXcEtielV4VFJDZkF4ampCU2dLTWdZQlFJb0NGd28",
+        "date": "12/16/2025, 08:00 AM, +0000 UTC",
+        "iso_date": "2025-12-16T08:00:00Z"
+      },
+      {
+        "position": 9,
+        "title": "Tesla ‘Robotaxis’ are not crashing because they are not running",
+        "source": {
+          "name": "Electrek",
+          "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://electrek.co&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Fred Lambert"
+          ]
+        },
+        "link": "https://electrek.co/2026/06/16/tesla-robotaxi-clean-crash-record-barely-running/",
+        "thumbnail": "https://electrek.co/wp-content/uploads/sites/3/2026/06/Tesla-Robotaxi-fleet-shrinking-hero.jpeg?quality=82&strip=all&w=1600",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNWtOM3BsUWtobmF6bElkMnMwVFJDSEF4aVFCaWdLTWdZUlFJb1NTUVE",
+        "date": "06/16/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-06-16T07:00:00Z"
+      },
+      {
+        "position": 10,
+        "title": "Tesla admits it still needs drivers and remote operators — then argues that's better than Waymo",
+        "source": {
+          "name": "Electrek",
+          "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://electrek.co&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Fred Lambert"
+          ]
+        },
+        "link": "https://electrek.co/2026/02/19/tesla-admits-needs-drivers-and-remote-operators-argues-better-than-waymo/",
+        "thumbnail": "https://electrek.co/wp-content/uploads/sites/3/2025/10/Tesla-Robotaxi-hero.png?w=1600",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU5lalF4YVVGQ09FOVVXUzFmVFJEX0FoaWhCaWdLTWdZQklvYXRtUVk",
+        "date": "02/19/2026, 08:00 AM, +0000 UTC",
+        "iso_date": "2026-02-19T08:00:00Z"
+      },
+      {
+        "position": 11,
+        "title": "Tesla expands unsupervised ‘Robotaxi’ area in Austin with only a handful of cars",
+        "source": {
+          "name": "Electrek",
+          "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://electrek.co&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Fred Lambert"
+          ]
+        },
+        "link": "https://electrek.co/2026/03/31/tesla-expands-unsupervised-robotaxi-service-area-still-only-handful-vehicles/",
+        "thumbnail": "https://electrek.co/wp-content/uploads/sites/3/2025/10/Tesla-Robotaxi-hero.png?w=1600",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU5lalF4YVVGQ09FOVVXUzFmVFJEX0FoaWhCaWdLTWdZQklvYXRtUVk",
+        "date": "03/31/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-03-31T07:00:00Z"
+      },
+      {
+        "position": 12,
+        "title": "Waymo to launch robotaxi service in Washington, D.C., in 2026",
+        "source": {
+          "name": "TechCrunch",
+          "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://techcrunch.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Rebecca Bellan"
+          ]
+        },
+        "link": "https://techcrunch.com/2025/03/25/waymo-to-launch-robotaxi-service-in-washington-d-c-in-2026/",
+        "thumbnail": "https://techcrunch.com/wp-content/uploads/2025/03/GettyImages-2206294608.jpg?w=1024",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNU1aMVJYZDBwT1JrUnBNV3R5VFJERUF4aW5CU2dLTWdZSlFKQW5yUVk",
+        "date": "03/25/2025, 07:00 AM, +0000 UTC",
+        "iso_date": "2025-03-25T07:00:00Z"
+      },
+      {
+        "position": 13,
+        "title": "Tesla is (still) trying to deceive investors into thinking it has SF robotaxis",
+        "source": {
+          "name": "Electrek",
+          "icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://electrek.co&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Jameson Dow"
+          ]
+        },
+        "link": "https://electrek.co/2026/01/28/tesla-is-still-trying-to-deceive-investors-into-thinking-it-has-sf-robotaxis/",
+        "thumbnail": "https://electrek.co/wp-content/uploads/sites/3/2025/06/tesla-robotaxi-hero.jpg?quality=82&strip=all&w=1600",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVFRbVp1V0hoWlZFeEdOMmRDVFJDSEF4aVBCaWdLTWdhTmdaUXJ0UWM",
+        "date": "01/28/2026, 08:00 AM, +0000 UTC",
+        "iso_date": "2026-01-28T08:00:00Z"
+      }
+    ],
+    "menu_links": [
+      {
+        "title": "U.S.",
+        "topic_token": "CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTjNjd0VnSmxiaWdBUAE",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTjNjd0VnSmxiaWdBUAE"
+      },
+      {
+        "title": "World",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Your local news",
+        "topic_token": "CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE"
+      },
+      {
+        "title": "Business",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Technology",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Entertainment",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNREpxYW5RU0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNREpxYW5RU0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Sports",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp1ZEdvU0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp1ZEdvU0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Science",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp0Y1RjU0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp0Y1RjU0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Health",
+        "topic_token": "CAAqIQgKIhtDQkFTRGdvSUwyMHZNR3QwTlRFU0FtVnVLQUFQAQ",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqIQgKIhtDQkFTRGdvSUwyMHZNR3QwTlRFU0FtVnVLQUFQAQ"
+      }
+    ]
+  }
+}

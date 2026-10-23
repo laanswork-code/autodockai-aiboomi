@@ -1,0 +1,195 @@
+{
+  "query": {
+    "query_id": "dmv_deployment_list",
+    "engine": "google",
+    "q": "site:dmv.ca.gov autonomous vehicle deployment permit list driverless 2026",
+    "gl": "us",
+    "hl": "en",
+    "num": 10
+  },
+  "retrieved_at": "2026-10-23T17:11:56.015666+00:00",
+  "status": "success",
+  "response": {
+    "search_metadata": {
+      "id": "6adb955b2106d4571a8629a2",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/vAlqgn883Toip_0eBIajmtg-Gmwhl5Lj0kjChhvwa2Q/6adb955b2106d4571a8629a2.json",
+      "markdown_endpoint": "https://serpapi.com/searches/vAlqgn883Toip_0eBIajmtg-Gmwhl5Lj0kjChhvwa2Q/6adb955b2106d4571a8629a2.md",
+      "pixel_position_endpoint": "https://serpapi.com/searches/vAlqgn883Toip_0eBIajmtg-Gmwhl5Lj0kjChhvwa2Q/6adb955b2106d4571a8629a2.json_with_pixel_position",
+      "created_at": "2026-10-23 17:11:55 UTC",
+      "processed_at": "2026-10-23 17:11:55 UTC",
+      "google_url": "https://www.google.com/search?q=site%3Admv.ca.gov+autonomous+vehicle+deployment+permit+list+driverless+2026&oq=site%3Admv.ca.gov+autonomous+vehicle+deployment+permit+list+driverless+2026&hl=en&gl=us&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/vAlqgn883Toip_0eBIajmtg-Gmwhl5Lj0kjChhvwa2Q/6adb955b2106d4571a8629a2.html",
+      "total_time_taken": 0.34
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "site:dmv.ca.gov autonomous vehicle deployment permit list driverless 2026",
+      "google_domain": "google.com",
+      "hl": "en",
+      "gl": "us",
+      "device": "desktop"
+    },
+    "search_information": {
+      "query_displayed": "site:dmv.ca.gov autonomous vehicle deployment permit list driverless 2026",
+      "total_results": 5,
+      "time_taken_displayed": 0.17,
+      "organic_results_state": "Results for exact spelling"
+    },
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "Autonomous Vehicle Permit Holders",
+        "link": "https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/autonomous-vehicle-testing-permit-holders/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESsQEB6zswFT1LY_oeIP5Hgzk3PKO_n0VbobAOAcIW6ZM_GKcdSslZiBsCLVpHOUZXdp5LPkPlTSt5UcuNFIMliTq4E7_Zz66p2aEW-61ump6LLshqz7-Q0MMZdiho1COcP61C8PRs_eZqTsbGDW2hrfRu01D3mobfPfKhBl9oCPsKJdFfr17ZEoac0FDh10WRAAKDyCRlrzq3LQt8F-u-rG0aCwEnlsM2gFE-zwSGsVe-wmU&ved=2ahUKEwjYnpSe0dCXAxWg5MkDHQh9OZYQFnoECBoQAQ&uoh=1",
+        "displayed_link": "https://www.dmv.ca.gov › ... › Autonomous Vehicles",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAARVBMVEVHcEwEVosGXpQIYpwMaqQQdrUEXJkejcstr_UzvP8CUIwHY50dl9kDWI4DXJgABT0Ja6kMh9pxh3y_qlb_ziT-yS7_yS4AjSCeAAAAEHRSTlMANIjD7v9j____H93_QrEHecww3gAAARpJREFUeAFUUgcWwyAITRSUbFy9_1EL8lLtz2SP7_LD6jwggneryRMCRNo6KEJYZuzHuU04j33YLiSNwOO-D9QMhNewiXf0Kqvko4ivdRcbgQlmBhKrZT5oo-NZJjxd1ftERjDbsIIotWdIaZQfbaQEMrt8_DtRCO8MXkLWxenbLEcuJR9m1xinLoyKyKW2WgvHLrIm1JK2tlw_gpptjb0oW2SkUwLbp9VyUrRIVuOtNW4uFln41h5uNUraw3h50wZbjab16tFxlyoot0m9ITd24HUUP7bgxhJUIbjmJUhRZNPsKJrd_BgTaCN8ki3-6e3b4unk8E8ZaIczZTPZ3soPsudj4rTD-ZjMBwyY4TtYAsOXNAknarzZAQBgVxOWLNNsUgAAAABJRU5ErkJggg.png",
+        "snippet": "As of October 21, 2026, DMV has issued Autonomous Vehicle Testing Permits (with a driver) to the following entities: AIMOTIVE INC. AUDI OF AMERICA; AURORA ...",
+        "snippet_highlighted_words": [
+          "2026",
+          "Autonomous Vehicle",
+          "Permits"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "As of October 21, 2026, DMV has issued Autonomous Vehicle Testing Permits (with a driver) to the following entities: AIMOTIVE INC. AUDI OF AMERICA; AURORA ...",
+            "source_info_link": "https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/autonomous-vehicle-testing-permit-holders/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAARVBMVEVHcEwEVosGXpQIYpwMaqQQdrUEXJkejcstr_UzvP8CUIwHY50dl9kDWI4DXJgABT0Ja6kMh9pxh3y_qlb_ziT-yS7_yS4AjSCeAAAAEHRSTlMANIjD7v9j____H93_QrEHecww3gAAARpJREFUeAFUUgcWwyAITRSUbFy9_1EL8lLtz2SP7_LD6jwggneryRMCRNo6KEJYZuzHuU04j33YLiSNwOO-D9QMhNewiXf0Kqvko4ivdRcbgQlmBhKrZT5oo-NZJjxd1ftERjDbsIIotWdIaZQfbaQEMrt8_DtRCO8MXkLWxenbLEcuJR9m1xinLoyKyKW2WgvHLrIm1JK2tlw_gpptjb0oW2SkUwLbp9VyUrRIVuOtNW4uFln41h5uNUraw3h50wZbjab16tFxlyoot0m9ITd24HUUP7bgxhJUIbjmJUhRZNPsKJrd_BgTaCN8ki3-6e3b4unk8E8ZaIczZTPZ3soPsudj4rTD-ZjMBwyY4TtYAsOXNAknarzZAQBgVxOWLNNsUgAAAABJRU5ErkJggg.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=Cv0BL2dvdG8_dXJsPUNBRVNzUUVCNnpzd0ZiaGkxQkhOLTRVOUo0Q2lvSUM0cW9DMHBlMUlkWDl3bkZiS2U5WWpnRzhEdmVmeFhvRXUzRXRqdzVRai01QWxYVllsY2lua01PbnhkNnZ6a09jSkdXU29wbElUWjdzd3ZaRmhneHVqTEVCMjlRSE9XRzRxZWRGVHB1aWN2c0VwVzViMjlpYlZpNGpYcXBQWHdHTUtmLU1BaUpnbWFLMDJDcmhlZW05MXZDQmV5WTRUTW5rMWdJQi03VnRhVENzUXMzQmkzd2NnQURsQVkxWmktaHlPT1JoR09pWEh2QTNDa3NQc1h5SRIEGgIIABr5BxICCAEaACIAKgAyBggBEgJ1czoAQgQIARAASgBaDggBEgpkbXYuY2EuZ292cgB6AIJAxQcIABAAGAAgACp1CgphdXRvbm9tb3VzFWnskEAaCWF1dG9tYXRlZBoOZHJpdmVybGVzcyBjYXIaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGhFhdXRvbm9tb3VzdmVoaWNsZRoPaXY7cDthdXRvbm9tb3VzKmsKB3ZlaGljbGUVi1GgQBoDY2FyGgRjYXJzGg5kcml2ZXJsZXNzIGNhchoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaCHZlaGljbGVzGhFhdXRvbm9tb3VzdmVoaWNsZSo3CgpkZXBsb3ltZW50FRSvKj8aBmRlcGxveRoLZGVwbG95bWVudHMaD2l2O3A7ZGVwbG95bWVudCo4CgZwZXJtaXQVfC1uQBoHbGljZW5zZRoHcGVybWl0cxoKcGVybWl0dGluZxoLaXY7cDtwZXJtaXQqJAoEbGlzdBUAAAAAGgdsaXN0aW5nGgVsaXN0cxoHaG9sZGVycyowCgpkcml2ZXJsZXNzFbGhtzwaDHNlbGYgZHJpdmluZxoPaXY7cDtkcml2ZXJsZXNzKhYKBDIwMjYVQMg_PRoJaXY7bjsyMDI2Mv0BL2dvdG8_dXJsPUNBRVNzUUVCNnpzd0ZiaGkxQkhOLTRVOUo0Q2lvSUM0cW9DMHBlMUlkWDl3bkZiS2U5WWpnRzhEdmVmeFhvRXUzRXRqdzVRai01QWxYVllsY2lua01PbnhkNnZ6a09jSkdXU29wbElUWjdzd3ZaRmhneHVqTEVCMjlRSE9XRzRxZWRGVHB1aWN2c0VwVzViMjlpYlZpNGpYcXBQWHdHTUtmLU1BaUpnbWFLMDJDcmhlZW05MXZDQmV5WTRUTW5rMWdJQi03VnRhVENzUXMzQmkzd2NnQURsQVkxWmktaHlPT1JoR09pWEh2QTNDa3NQc1h5STo5PGI-QXV0b25vbW91cyBWZWhpY2xlIFBlcm1pdDwvYj4gSG9sZGVycyAtIENhbGlmb3JuaWEgRE1WQrgBQXMgb2YgT2N0b2JlciAyMSwgPGI-MjAyNjwvYj4sIERNViBoYXMgaXNzdWVkIDxiPkF1dG9ub21vdXMgVmVoaWNsZTwvYj4gVGVzdGluZyA8Yj5QZXJtaXRzPC9iPiAod2l0aCBhIGRyaXZlcikgdG8gdGhlIGZvbGxvd2luZyBlbnRpdGllczogQUlNT1RJVkUgSU5DLiBBVURJIE9GIEFNRVJJQ0E7IEFVUk9SQSZuYnNwOy4uLiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=Cv0BL2dvdG8_dXJsPUNBRVNzUUVCNnpzd0ZiaGkxQkhOLTRVOUo0Q2lvSUM0cW9DMHBlMUlkWDl3bkZiS2U5WWpnRzhEdmVmeFhvRXUzRXRqdzVRai01QWxYVllsY2lua01PbnhkNnZ6a09jSkdXU29wbElUWjdzd3ZaRmhneHVqTEVCMjlRSE9XRzRxZWRGVHB1aWN2c0VwVzViMjlpYlZpNGpYcXBQWHdHTUtmLU1BaUpnbWFLMDJDcmhlZW05MXZDQmV5WTRUTW5rMWdJQi03VnRhVENzUXMzQmkzd2NnQURsQVkxWmktaHlPT1JoR09pWEh2QTNDa3NQc1h5SRIEGgIIABr5BxICCAEaACIAKgAyBggBEgJ1czoAQgQIARAASgBaDggBEgpkbXYuY2EuZ292cgB6AIJAxQcIABAAGAAgACp1CgphdXRvbm9tb3VzFWnskEAaCWF1dG9tYXRlZBoOZHJpdmVybGVzcyBjYXIaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGhFhdXRvbm9tb3VzdmVoaWNsZRoPaXY7cDthdXRvbm9tb3VzKmsKB3ZlaGljbGUVi1GgQBoDY2FyGgRjYXJzGg5kcml2ZXJsZXNzIGNhchoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaCHZlaGljbGVzGhFhdXRvbm9tb3VzdmVoaWNsZSo3CgpkZXBsb3ltZW50FRSvKj8aBmRlcGxveRoLZGVwbG95bWVudHMaD2l2O3A7ZGVwbG95bWVudCo4CgZwZXJtaXQVfC1uQBoHbGljZW5zZRoHcGVybWl0cxoKcGVybWl0dGluZxoLaXY7cDtwZXJtaXQqJAoEbGlzdBUAAAAAGgdsaXN0aW5nGgVsaXN0cxoHaG9sZGVycyowCgpkcml2ZXJsZXNzFbGhtzwaDHNlbGYgZHJpdmluZxoPaXY7cDtkcml2ZXJsZXNzKhYKBDIwMjYVQMg_PRoJaXY7bjsyMDI2Mv0BL2dvdG8_dXJsPUNBRVNzUUVCNnpzd0ZiaGkxQkhOLTRVOUo0Q2lvSUM0cW9DMHBlMUlkWDl3bkZiS2U5WWpnRzhEdmVmeFhvRXUzRXRqdzVRai01QWxYVllsY2lua01PbnhkNnZ6a09jSkdXU29wbElUWjdzd3ZaRmhneHVqTEVCMjlRSE9XRzRxZWRGVHB1aWN2c0VwVzViMjlpYlZpNGpYcXBQWHdHTUtmLU1BaUpnbWFLMDJDcmhlZW05MXZDQmV5WTRUTW5rMWdJQi03VnRhVENzUXMzQmkzd2NnQURsQVkxWmktaHlPT1JoR09pWEh2QTNDa3NQc1h5STo5PGI-QXV0b25vbW91cyBWZWhpY2xlIFBlcm1pdDwvYj4gSG9sZGVycyAtIENhbGlmb3JuaWEgRE1WQrgBQXMgb2YgT2N0b2JlciAyMSwgPGI-MjAyNjwvYj4sIERNViBoYXMgaXNzdWVkIDxiPkF1dG9ub21vdXMgVmVoaWNsZTwvYj4gVGVzdGluZyA8Yj5QZXJtaXRzPC9iPiAod2l0aCBhIGRyaXZlcikgdG8gdGhlIGZvbGxvd2luZyBlbnRpdGllczogQUlNT1RJVkUgSU5DLiBBVURJIE9GIEFNRVJJQ0E7IEFVUk9SQSZuYnNwOy4uLiICEAFIAFgAaAA",
+        "source": "California DMV (.gov)",
+        "read_more_link": "https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/autonomous-vehicle-testing-permit-holders/#:~:text=Permit%20Holders%20(Driverless%20Testing)"
+      },
+      {
+        "position": 2,
+        "title": "Autonomous Vehicles - California DMV",
+        "link": "https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAEShwEB6zswFchNG7NyheLTeafFvlDSKjdTBA59vXIfb-6MeYM7KEmPjnsyrGLrhd0vYHJP5N4lz4OHCM-ydd4lY4oLGlZV-iGgp25LXOaUDz18rkWfEjWaDzOcH1waN7f1trGpVMwmTf_jRLcTX9l7VkWocXWF9svsvDBTfZb02URm2uTZ4gqTvyI&ved=2ahUKEwjYnpSe0dCXAxWg5MkDHQh9OZYQFnoECB0QAQ&uoh=1",
+        "displayed_link": "https://www.dmv.ca.gov › vehicle-industry-services › a...",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAARVBMVEVHcEwEVosGXpQIYpwMaqQQdrUEXJkejcstr_UzvP8CUIwHY50dl9kDWI4DXJgABT0Ja6kMh9pxh3y_qlb_ziT-yS7_yS4AjSCeAAAAEHRSTlMANIjD7v9j____H93_QrEHecww3gAAARpJREFUeAFUUgcWwyAITRSUbFy9_1EL8lLtz2SP7_LD6jwggneryRMCRNo6KEJYZuzHuU04j33YLiSNwOO-D9QMhNewiXf0Kqvko4ivdRcbgQlmBhKrZT5oo-NZJjxd1ftERjDbsIIotWdIaZQfbaQEMrt8_DtRCO8MXkLWxenbLEcuJR9m1xinLoyKyKW2WgvHLrIm1JK2tlw_gpptjb0oW2SkUwLbp9VyUrRIVuOtNW4uFln41h5uNUraw3h50wZbjab16tFxlyoot0m9ITd24HUUP7bgxhJUIbjmJUhRZNPsKJrd_BgTaCN8ki3-6e3b4unk8E8ZaIczZTPZ3soPsudj4rTD-ZjMBwyY4TtYAsOXNAknarzZAQBgVxOWLNNsUgAAAABJRU5ErkJggg.png",
+        "snippet": "The California DMV authorizes manufacturers to test and deploy autonomous vehicles under three permit categories: testing with a safety driver, driverless ...",
+        "snippet_highlighted_words": [
+          "deploy autonomous vehicles",
+          "permit",
+          "driverless"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "The California DMV authorizes manufacturers to test and deploy autonomous vehicles under three permit categories: testing with a safety driver, driverless ...",
+            "source_info_link": "https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAARVBMVEVHcEwEVosGXpQIYpwMaqQQdrUEXJkejcstr_UzvP8CUIwHY50dl9kDWI4DXJgABT0Ja6kMh9pxh3y_qlb_ziT-yS7_yS4AjSCeAAAAEHRSTlMANIjD7v9j____H93_QrEHecww3gAAARpJREFUeAFUUgcWwyAITRSUbFy9_1EL8lLtz2SP7_LD6jwggneryRMCRNo6KEJYZuzHuU04j33YLiSNwOO-D9QMhNewiXf0Kqvko4ivdRcbgQlmBhKrZT5oo-NZJjxd1ftERjDbsIIotWdIaZQfbaQEMrt8_DtRCO8MXkLWxenbLEcuJR9m1xinLoyKyKW2WgvHLrIm1JK2tlw_gpptjb0oW2SkUwLbp9VyUrRIVuOtNW4uFln41h5uNUraw3h50wZbjab16tFxlyoot0m9ITd24HUUP7bgxhJUIbjmJUhRZNPsKJrd_BgTaCN8ki3-6e3b4unk8E8ZaIczZTPZ3soPsudj4rTD-ZjMBwyY4TtYAsOXNAknarzZAQBgVxOWLNNsUgAAAABJRU5ErkJggg.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CsUBL2dvdG8_dXJsPUNBRVNod0VCNnpzd0ZSVUlLZW1LSk90djctbGUxblFhdnJNLTRMb2RydzlhRmFTTjgwanlkd2t1ZHpaZlRvOEpxWlRTdjZuSVBWX3hycG1DVndtYkhQM19VZ2Q2R3J4ZGJiMUJvMkp0aXRfMHZIWXAwMlpJbXRvRVRXX29MdDNaMlp1cjRlcl9sQ3Fxc0JJYTQ4V3hTYnNGWV9fY3NpUHNQTzJxSFktZXRkeWJ5MVZ0RFlneUtscEsxaXMSBBoCCAAaswcSAggBGgAiACoAMgYIARICdXM6AEIECAEQAEoAWg4IARIKZG12LmNhLmdvdnIAegCCQP8GCAAQABgAIAAqdQoKYXV0b25vbW91cxVjQ7FAGglhdXRvbWF0ZWQaDmRyaXZlcmxlc3MgY2FyGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoRYXV0b25vbW91c3ZlaGljbGUaD2l2O3A7YXV0b25vbW91cyprCgd2ZWhpY2xlFagfeEAaA2NhchoEY2FycxoOZHJpdmVybGVzcyBjYXIaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGgh2ZWhpY2xlcxoRYXV0b25vbW91c3ZlaGljbGUqNwoKZGVwbG95bWVudBUJsKw_GgZkZXBsb3kaC2RlcGxveW1lbnRzGg9pdjtwO2RlcGxveW1lbnQqOAoGcGVybWl0FWGW_j8aB2xpY2Vuc2UaB3Blcm1pdHMaCnBlcm1pdHRpbmcaC2l2O3A7cGVybWl0KiQKBGxpc3QVAAAAABoHbGlzdGluZxoFbGlzdHMaB2hvbGRlcnMqMAoKZHJpdmVybGVzcxVdFQw_GgxzZWxmIGRyaXZpbmcaD2l2O3A7ZHJpdmVybGVzcyoWCgQyMDI2FQ7JFz4aCWl2O247MjAyNjLFAS9nb3RvP3VybD1DQUVTaHdFQjZ6c3dGUlVJS2VtS0pPdHY3LWxlMW5RYXZyTS00TG9kcnc5YUZhU044MGp5ZHdrdWR6WmZUbzhKcVpUU3Y2bklQVl94cnBtQ1Z3bWJIUDNfVWdkNkdyeGRiYjFCbzJKdGl0XzB2SFlwMDJaSW10b0VUV19vTHQzWjJadXI0ZXJfbENxcXNCSWE0OFd4U2JzRllfX2NzaVBzUE8ycUhZLWV0ZHlieTFWdERZZ3lLbHBLMWlzOis8Yj5BdXRvbm9tb3VzIFZlaGljbGVzPC9iPiAtIENhbGlmb3JuaWEgRE1WQrgBVGhlIENhbGlmb3JuaWEgRE1WIGF1dGhvcml6ZXMgbWFudWZhY3R1cmVycyB0byB0ZXN0IGFuZCA8Yj5kZXBsb3kgYXV0b25vbW91cyB2ZWhpY2xlczwvYj4gdW5kZXIgdGhyZWUgPGI-cGVybWl0PC9iPiBjYXRlZ29yaWVzOiB0ZXN0aW5nIHdpdGggYSBzYWZldHkgZHJpdmVyLCA8Yj5kcml2ZXJsZXNzPC9iPiZuYnNwOy4uLiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CsUBL2dvdG8_dXJsPUNBRVNod0VCNnpzd0ZSVUlLZW1LSk90djctbGUxblFhdnJNLTRMb2RydzlhRmFTTjgwanlkd2t1ZHpaZlRvOEpxWlRTdjZuSVBWX3hycG1DVndtYkhQM19VZ2Q2R3J4ZGJiMUJvMkp0aXRfMHZIWXAwMlpJbXRvRVRXX29MdDNaMlp1cjRlcl9sQ3Fxc0JJYTQ4V3hTYnNGWV9fY3NpUHNQTzJxSFktZXRkeWJ5MVZ0RFlneUtscEsxaXMSBBoCCAAaswcSAggBGgAiACoAMgYIARICdXM6AEIECAEQAEoAWg4IARIKZG12LmNhLmdvdnIAegCCQP8GCAAQABgAIAAqdQoKYXV0b25vbW91cxVjQ7FAGglhdXRvbWF0ZWQaDmRyaXZlcmxlc3MgY2FyGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoRYXV0b25vbW91c3ZlaGljbGUaD2l2O3A7YXV0b25vbW91cyprCgd2ZWhpY2xlFagfeEAaA2NhchoEY2FycxoOZHJpdmVybGVzcyBjYXIaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGgh2ZWhpY2xlcxoRYXV0b25vbW91c3ZlaGljbGUqNwoKZGVwbG95bWVudBUJsKw_GgZkZXBsb3kaC2RlcGxveW1lbnRzGg9pdjtwO2RlcGxveW1lbnQqOAoGcGVybWl0FWGW_j8aB2xpY2Vuc2UaB3Blcm1pdHMaCnBlcm1pdHRpbmcaC2l2O3A7cGVybWl0KiQKBGxpc3QVAAAAABoHbGlzdGluZxoFbGlzdHMaB2hvbGRlcnMqMAoKZHJpdmVybGVzcxVdFQw_GgxzZWxmIGRyaXZpbmcaD2l2O3A7ZHJpdmVybGVzcyoWCgQyMDI2FQ7JFz4aCWl2O247MjAyNjLFAS9nb3RvP3VybD1DQUVTaHdFQjZ6c3dGUlVJS2VtS0pPdHY3LWxlMW5RYXZyTS00TG9kcnc5YUZhU044MGp5ZHdrdWR6WmZUbzhKcVpUU3Y2bklQVl94cnBtQ1Z3bWJIUDNfVWdkNkdyeGRiYjFCbzJKdGl0XzB2SFlwMDJaSW10b0VUV19vTHQzWjJadXI0ZXJfbENxcXNCSWE0OFd4U2JzRllfX2NzaVBzUE8ycUhZLWV0ZHlieTFWdERZZ3lLbHBLMWlzOis8Yj5BdXRvbm9tb3VzIFZlaGljbGVzPC9iPiAtIENhbGlmb3JuaWEgRE1WQrgBVGhlIENhbGlmb3JuaWEgRE1WIGF1dGhvcml6ZXMgbWFudWZhY3R1cmVycyB0byB0ZXN0IGFuZCA8Yj5kZXBsb3kgYXV0b25vbW91cyB2ZWhpY2xlczwvYj4gdW5kZXIgdGhyZWUgPGI-cGVybWl0PC9iPiBjYXRlZ29yaWVzOiB0ZXN0aW5nIHdpdGggYSBzYWZldHkgZHJpdmVyLCA8Yj5kcml2ZXJsZXNzPC9iPiZuYnNwOy4uLiICEAFIAFgAaAA",
+        "source": "California DMV (.gov)",
+        "read_more_link": "https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/#:~:text=The%20California%20DMV%20authorizes%20manufacturers,driver%2C%20driverless%20testing%2C%20and%20deployment."
+      },
+      {
+        "position": 3,
+        "title": "California DMV Releases Updated Autonomous Vehicle ...",
+        "link": "https://www.dmv.ca.gov/portal/news-and-media/california-dmv-releases-updated-autonomous-vehicle-regulations/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESpwEB6zswFZcdns4PBZFgvyDR8lx_lQcFAklbetYWFnZ47rE-xSSbK7EGpM7uUZuhmybghMWz0cyHHiIVrsV5r_R_aDN1sHT8FXTisWo9sZYYfcnouL4S5TYIQjkWv4Y4wkK2BXFTD2n1IbIPIupDtzDUNcZ84XrmxKITjfQ6POaS1Q4Rd58-n6Csa2hUaVNSild5yoILEuPbBhe1jVxIpcVIh7LIJcHgYA&ved=2ahUKEwjYnpSe0dCXAxWg5MkDHQh9OZYQFnoECCsQAQ&uoh=1",
+        "displayed_link": "https://www.dmv.ca.gov › portal › news-and-media › c...",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAARVBMVEVHcEwEVosGXpQIYpwMaqQQdrUEXJkejcstr_UzvP8CUIwHY50dl9kDWI4DXJgABT0Ja6kMh9pxh3y_qlb_ziT-yS7_yS4AjSCeAAAAEHRSTlMANIjD7v9j____H93_QrEHecww3gAAARpJREFUeAFUUgcWwyAITRSUbFy9_1EL8lLtz2SP7_LD6jwggneryRMCRNo6KEJYZuzHuU04j33YLiSNwOO-D9QMhNewiXf0Kqvko4ivdRcbgQlmBhKrZT5oo-NZJjxd1ftERjDbsIIotWdIaZQfbaQEMrt8_DtRCO8MXkLWxenbLEcuJR9m1xinLoyKyKW2WgvHLrIm1JK2tlw_gpptjb0oW2SkUwLbp9VyUrRIVuOtNW4uFln41h5uNUraw3h50wZbjab16tFxlyoot0m9ITd24HUUP7bgxhJUIbjmJUhRZNPsKJrd_BgTaCN8ki3-6e3b4unk8E8ZaIczZTPZ3soPsudj4rTD-ZjMBwyY4TtYAsOXNAknarzZAQBgVxOWLNNsUgAAAABJRU5ErkJggg.png",
+        "date": "Apr 25, 2025",
+        "snippet": "Subsequent phases require obtaining a Driverless Testing Permit and a Deployment Permit after completion of the required test miles … 2026 ...",
+        "snippet_highlighted_words": [
+          "Driverless",
+          "Permit",
+          "Deployment Permit",
+          "2026"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Subsequent phases require obtaining a Driverless Testing Permit and a Deployment Permit after completion of the required test miles … 2026 ...",
+            "source_info_link": "https://www.dmv.ca.gov/portal/news-and-media/california-dmv-releases-updated-autonomous-vehicle-regulations/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAARVBMVEVHcEwEVosGXpQIYpwMaqQQdrUEXJkejcstr_UzvP8CUIwHY50dl9kDWI4DXJgABT0Ja6kMh9pxh3y_qlb_ziT-yS7_yS4AjSCeAAAAEHRSTlMANIjD7v9j____H93_QrEHecww3gAAARpJREFUeAFUUgcWwyAITRSUbFy9_1EL8lLtz2SP7_LD6jwggneryRMCRNo6KEJYZuzHuU04j33YLiSNwOO-D9QMhNewiXf0Kqvko4ivdRcbgQlmBhKrZT5oo-NZJjxd1ftERjDbsIIotWdIaZQfbaQEMrt8_DtRCO8MXkLWxenbLEcuJR9m1xinLoyKyKW2WgvHLrIm1JK2tlw_gpptjb0oW2SkUwLbp9VyUrRIVuOtNW4uFln41h5uNUraw3h50wZbjab16tFxlyoot0m9ITd24HUUP7bgxhJUIbjmJUhRZNPsKJrd_BgTaCN8ki3-6e3b4unk8E8ZaIczZTPZ3soPsudj4rTD-ZjMBwyY4TtYAsOXNAknarzZAQBgVxOWLNNsUgAAAABJRU5ErkJggg.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CvABL2dvdG8_dXJsPUNBRVNwd0VCNnpzd0Zmek5Odm8tcGhHQnZ0ZGxfZHhLNXdOblZGSDFMd1F1cm5BM1hZMDZFd2Fvd1kxbVhuTHVuLV9HaU10Z21yT21TbURaeTFLT005UUxTd094VjQ3Z3A4T2ZrNW5VbmVXUE5ZQjBiVThzTXFHU2drb3N4ODdfMTg4YWQ4clI3MVFUSEdQV3dJcVF1VWNpYjVMQmt1Tk0zdFBCRGpCYVloTVlHbW50ZzdMOXRqY0JWckRWV1JZOEVndWVSa1lZUktTb0pQWnl2TzduVUVpN3ZyS19PVTY1Z0NRS1ZBEgQaAggAGukHEgIIABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoOCAESCmRtdi5jYS5nb3ZyAHoAgkC1BwgAEAAYACAAKnUKCmF1dG9ub21vdXMVjEtnQBoJYXV0b21hdGVkGg5kcml2ZXJsZXNzIGNhchoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaEWF1dG9ub21vdXN2ZWhpY2xlGg9pdjtwO2F1dG9ub21vdXMqawoHdmVoaWNsZRXtyIJAGgNjYXIaBGNhcnMaDmRyaXZlcmxlc3MgY2FyGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoIdmVoaWNsZXMaEWF1dG9ub21vdXN2ZWhpY2xlKjcKCmRlcGxveW1lbnQVIkWsPxoGZGVwbG95GgtkZXBsb3ltZW50cxoPaXY7cDtkZXBsb3ltZW50KjgKBnBlcm1pdBXYcpQ_GgdsaWNlbnNlGgdwZXJtaXRzGgpwZXJtaXR0aW5nGgtpdjtwO3Blcm1pdCokCgRsaXN0FQAAAAAaB2xpc3RpbmcaBWxpc3RzGgdob2xkZXJzKjAKCmRyaXZlcmxlc3MVw-YxPhoMc2VsZiBkcml2aW5nGg9pdjtwO2RyaXZlcmxlc3MqFgoEMjAyNhUY4Hw8GglpdjtuOzIwMjYy8AEvZ290bz91cmw9Q0FFU3B3RUI2enN3RmZ6Tk52by1waEdCdnRkbF9keEs1d05uVkZIMUx3UXVybkEzWFkwNkV3YW93WTFtWG5MdW4tX0dpTXRnbXJPbVNtRFp5MUtPTTlRTFN3T3hWNDdncDhPZms1blVuZVdQTllCMGJVOHNNcUdTZ2tvc3g4N18xODhhZDhyUjcxUVRIR1BXd0lxUXVVY2liNUxCa3VOTTN0UEJEakJhWWhNWUdtbnRnN0w5dGpjQlZyRFZXUlk4RWd1ZVJrWVlSS1NvSlBaeXZPN25VRWk3dnJLX09VNjVnQ1FLVkE6PUNhbGlmb3JuaWEgRE1WIFJlbGVhc2VzIFVwZGF0ZWQgPGI-QXV0b25vbW91cyBWZWhpY2xlPC9iPiAuLi5CsQFTdWJzZXF1ZW50IHBoYXNlcyByZXF1aXJlIG9idGFpbmluZyBhIDxiPkRyaXZlcmxlc3M8L2I-IFRlc3RpbmcgPGI-UGVybWl0PC9iPiBhbmQgYSA8Yj5EZXBsb3ltZW50IFBlcm1pdDwvYj4gYWZ0ZXIgY29tcGxldGlvbiBvZiB0aGUgcmVxdWlyZWQgdGVzdCBtaWxlcyDigKYgPGI-MjAyNjwvYj4mbmJzcDsuLi4iAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CvABL2dvdG8_dXJsPUNBRVNwd0VCNnpzd0Zmek5Odm8tcGhHQnZ0ZGxfZHhLNXdOblZGSDFMd1F1cm5BM1hZMDZFd2Fvd1kxbVhuTHVuLV9HaU10Z21yT21TbURaeTFLT005UUxTd094VjQ3Z3A4T2ZrNW5VbmVXUE5ZQjBiVThzTXFHU2drb3N4ODdfMTg4YWQ4clI3MVFUSEdQV3dJcVF1VWNpYjVMQmt1Tk0zdFBCRGpCYVloTVlHbW50ZzdMOXRqY0JWckRWV1JZOEVndWVSa1lZUktTb0pQWnl2TzduVUVpN3ZyS19PVTY1Z0NRS1ZBEgQaAggAGukHEgIIABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoOCAESCmRtdi5jYS5nb3ZyAHoAgkC1BwgAEAAYACAAKnUKCmF1dG9ub21vdXMVjEtnQBoJYXV0b21hdGVkGg5kcml2ZXJsZXNzIGNhchoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaEWF1dG9ub21vdXN2ZWhpY2xlGg9pdjtwO2F1dG9ub21vdXMqawoHdmVoaWNsZRXtyIJAGgNjYXIaBGNhcnMaDmRyaXZlcmxlc3MgY2FyGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoIdmVoaWNsZXMaEWF1dG9ub21vdXN2ZWhpY2xlKjcKCmRlcGxveW1lbnQVIkWsPxoGZGVwbG95GgtkZXBsb3ltZW50cxoPaXY7cDtkZXBsb3ltZW50KjgKBnBlcm1pdBXYcpQ_GgdsaWNlbnNlGgdwZXJtaXRzGgpwZXJtaXR0aW5nGgtpdjtwO3Blcm1pdCokCgRsaXN0FQAAAAAaB2xpc3RpbmcaBWxpc3RzGgdob2xkZXJzKjAKCmRyaXZlcmxlc3MVw-YxPhoMc2VsZiBkcml2aW5nGg9pdjtwO2RyaXZlcmxlc3MqFgoEMjAyNhUY4Hw8GglpdjtuOzIwMjYy8AEvZ290bz91cmw9Q0FFU3B3RUI2enN3RmZ6Tk52by1waEdCdnRkbF9keEs1d05uVkZIMUx3UXVybkEzWFkwNkV3YW93WTFtWG5MdW4tX0dpTXRnbXJPbVNtRFp5MUtPTTlRTFN3T3hWNDdncDhPZms1blVuZVdQTllCMGJVOHNNcUdTZ2tvc3g4N18xODhhZDhyUjcxUVRIR1BXd0lxUXVVY2liNUxCa3VOTTN0UEJEakJhWWhNWUdtbnRnN0w5dGpjQlZyRFZXUlk4RWd1ZVJrWVlSS1NvSlBaeXZPN25VRWk3dnJLX09VNjVnQ1FLVkE6PUNhbGlmb3JuaWEgRE1WIFJlbGVhc2VzIFVwZGF0ZWQgPGI-QXV0b25vbW91cyBWZWhpY2xlPC9iPiAuLi5CsQFTdWJzZXF1ZW50IHBoYXNlcyByZXF1aXJlIG9idGFpbmluZyBhIDxiPkRyaXZlcmxlc3M8L2I-IFRlc3RpbmcgPGI-UGVybWl0PC9iPiBhbmQgYSA8Yj5EZXBsb3ltZW50IFBlcm1pdDwvYj4gYWZ0ZXIgY29tcGxldGlvbiBvZiB0aGUgcmVxdWlyZWQgdGVzdCBtaWxlcyDigKYgPGI-MjAyNjwvYj4mbmJzcDsuLi4iAhABSABYAGgA",
+        "source": "California DMV (.gov)"
+      },
+      {
+        "position": 4,
+        "title": "Waymo Approved Areas of Operation for Driverless Testing ...",
+        "link": "https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/autonomous-vehicle-testing-permit-holders/waymo-approved-areas-of-operation-for-driverless-testing-and-deployment/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAES-gEB6zswFadDX0DHR9R_9XqfzzOzZDliP792Ef8HIKwaaXuBuJMpGR0x92cFHJagE9E5GSSY-I8JAeb_OSbh-SE2-LfRENM811_10NiotIQ0UCT190w-eQKI3egMnVwEc9b348hjiVR7rOCFYrpqIVVL25k8pP4ZVe1Nu5AX9-aHO0T7l8rr2UtBlPohC6dT7eHOhniCufTkxQmfz6EuUDb6-zuubRIHZsVIoXyOu3z4jPFFHIvawbAlX6kXTgBrEyEKX67JUAQlDEM0h9gjYc7HnBzbxtJT920hoV9d1fjGs6DtR2WUu1K0XOgbspYBvgBP6-ueCxukC8ij&ved=2ahUKEwjYnpSe0dCXAxWg5MkDHQh9OZYQFnoECCUQAQ&uoh=1",
+        "displayed_link": "https://www.dmv.ca.gov › portal › autonomous-vehicles",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAARVBMVEVHcEwEVosGXpQIYpwMaqQQdrUEXJkejcstr_UzvP8CUIwHY50dl9kDWI4DXJgABT0Ja6kMh9pxh3y_qlb_ziT-yS7_yS4AjSCeAAAAEHRSTlMANIjD7v9j____H93_QrEHecww3gAAARpJREFUeAFUUgcWwyAITRSUbFy9_1EL8lLtz2SP7_LD6jwggneryRMCRNo6KEJYZuzHuU04j33YLiSNwOO-D9QMhNewiXf0Kqvko4ivdRcbgQlmBhKrZT5oo-NZJjxd1ftERjDbsIIotWdIaZQfbaQEMrt8_DtRCO8MXkLWxenbLEcuJR9m1xinLoyKyKW2WgvHLrIm1JK2tlw_gpptjb0oW2SkUwLbp9VyUrRIVuOtNW4uFln41h5uNUraw3h50wZbjab16tFxlyoot0m9ITd24HUUP7bgxhJUIbjmJUhRZNPsKJrd_BgTaCN8ki3-6e3b4unk8E8ZaIczZTPZ3soPsudj4rTD-ZjMBwyY4TtYAsOXNAknarzZAQBgVxOWLNNsUgAAAABJRU5ErkJggg.png",
+        "snippet": "Waymo Approved Areas of Operation for Driverless Testing and Deployment Vehicle Platforms: Jaguar I-Pace and Zeekr Ojai Hours of Operations: All times of day ...",
+        "snippet_highlighted_words": [
+          "Waymo Approved Areas of Operation for Driverless Testing and Deployment Vehicle Platforms"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Waymo Approved Areas of Operation for Driverless Testing and Deployment Vehicle Platforms: Jaguar I-Pace and Zeekr Ojai Hours of Operations: All times of day ...",
+            "source_info_link": "https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/autonomous-vehicle-testing-permit-holders/waymo-approved-areas-of-operation-for-driverless-testing-and-deployment/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAARVBMVEVHcEwEVosGXpQIYpwMaqQQdrUEXJkejcstr_UzvP8CUIwHY50dl9kDWI4DXJgABT0Ja6kMh9pxh3y_qlb_ziT-yS7_yS4AjSCeAAAAEHRSTlMANIjD7v9j____H93_QrEHecww3gAAARpJREFUeAFUUgcWwyAITRSUbFy9_1EL8lLtz2SP7_LD6jwggneryRMCRNo6KEJYZuzHuU04j33YLiSNwOO-D9QMhNewiXf0Kqvko4ivdRcbgQlmBhKrZT5oo-NZJjxd1ftERjDbsIIotWdIaZQfbaQEMrt8_DtRCO8MXkLWxenbLEcuJR9m1xinLoyKyKW2WgvHLrIm1JK2tlw_gpptjb0oW2SkUwLbp9VyUrRIVuOtNW4uFln41h5uNUraw3h50wZbjab16tFxlyoot0m9ITd24HUUP7bgxhJUIbjmJUhRZNPsKJrd_BgTaCN8ki3-6e3b4unk8E8ZaIczZTPZ3soPsudj4rTD-ZjMBwyY4TtYAsOXNAknarzZAQBgVxOWLNNsUgAAAABJRU5ErkJggg.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=Ct4CL2dvdG8_dXJsPUNBRVMtZ0VCNnpzd0ZmWm9MVHY2dnpjNWpmdXpWVy1kVjdELVFqMUFZc2VnVVNMZllXWUtReElwSEgzOWk5cG9HOUQ1Um12RjFrTHlxTm92WEY5NnNPS2h5Q0RFYlR5OEpUQlFFZmY3Zmp2TjM5OTZWMElPenRWQU1MZ01nZXpPOF9ZekJIRktPNWlhaDdNZ0JpUG5MQkl3MU5JX21qZGREdzItMGFiWTN6QjNzUHBDZjFVWEZ1ZWt1VGF4VEdBOGZ3bVdjZXRSSjBoZnVDbi1IbmpEbEVyM0w0TEg0SXRxdm5tVy1lU3hQRENVSXUzQ3NuanFDbkN2ekpwUXd3OFFlRS1jWXFNVlVRVXlmajVhcEJSdUd6bkpxdVpKUjhvS2ZwaWQ5LTh6NDRheWZXTHltY2s1bGlzRlFtRUFvcEREQ3I5b09SamZVS2xLZXI1Q3lXNG0SBBoCCAAa2QgSAggBGgAiACoAMgYIARICdXM6AEIECAEQAEoAWg4IARIKZG12LmNhLmdvdnIAegCCQKUICAAQABgAIAAqdQoKYXV0b25vbW91cxUTTQFAGglhdXRvbWF0ZWQaDmRyaXZlcmxlc3MgY2FyGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoRYXV0b25vbW91c3ZlaGljbGUaD2l2O3A7YXV0b25vbW91cyprCgd2ZWhpY2xlFY5HXkAaA2NhchoEY2FycxoOZHJpdmVybGVzcyBjYXIaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGgh2ZWhpY2xlcxoRYXV0b25vbW91c3ZlaGljbGUqNwoKZGVwbG95bWVudBWoZE9AGgZkZXBsb3kaC2RlcGxveW1lbnRzGg9pdjtwO2RlcGxveW1lbnQqOAoGcGVybWl0FaZkgj8aB2xpY2Vuc2UaB3Blcm1pdHMaCnBlcm1pdHRpbmcaC2l2O3A7cGVybWl0KiQKBGxpc3QVAAAAABoHbGlzdGluZxoFbGlzdHMaB2hvbGRlcnMqMAoKZHJpdmVybGVzcxW-Y0lAGgxzZWxmIGRyaXZpbmcaD2l2O3A7ZHJpdmVybGVzcyoWCgQyMDI2FeWOkjwaCWl2O247MjAyNjLeAi9nb3RvP3VybD1DQUVTLWdFQjZ6c3dGZlpvTFR2NnZ6YzVqZnV6VlctZFY3RC1RajFBWXNlZ1VTTGZZV1lLUXhJcEhIMzlpOXBvRzlENVJtdkYxa0x5cU5vdlhGOTZzT0toeUNERWJUeThKVEJRRWZmN2Zqdk4zOTk2VjBJT3p0VkFNTGdNZ2V6TzhfWXpCSEZLTzVpYWg3TWdCaVBuTEJJdzFOSV9tamRkRHcyLTBhYlkzekIzc1BwQ2YxVVhGdWVrdVRheFRHQThmd21XY2V0UkowaGZ1Q24tSG5qRGxFcjNMNExINEl0cXZubVctZVN4UERDVUl1M0NzbmpxQ25DdnpKcFF3dzhRZUUtY1lxTVZVUVV5Zmo1YXBCUnVHem5KcXVaSlI4b0tmcGlkOS04ejQ0YXlmV0x5bWNrNWxpc0ZRbUVBb3BERENyOW9PUmpmVUtsS2VyNUN5VzRtOkNXYXltbyBBcHByb3ZlZCBBcmVhcyBvZiBPcGVyYXRpb24gZm9yIDxiPkRyaXZlcmxlc3M8L2I-IFRlc3RpbmcgLi4uQq0BPGI-V2F5bW8gQXBwcm92ZWQgQXJlYXMgb2YgT3BlcmF0aW9uIGZvciBEcml2ZXJsZXNzIFRlc3RpbmcgYW5kIERlcGxveW1lbnQgVmVoaWNsZSBQbGF0Zm9ybXM8L2I-OiBKYWd1YXIgSS1QYWNlIGFuZCBaZWVrciBPamFpIEhvdXJzIG9mIE9wZXJhdGlvbnM6IEFsbCB0aW1lcyBvZiBkYXkmbmJzcDsuLi4iAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=Ct4CL2dvdG8_dXJsPUNBRVMtZ0VCNnpzd0ZmWm9MVHY2dnpjNWpmdXpWVy1kVjdELVFqMUFZc2VnVVNMZllXWUtReElwSEgzOWk5cG9HOUQ1Um12RjFrTHlxTm92WEY5NnNPS2h5Q0RFYlR5OEpUQlFFZmY3Zmp2TjM5OTZWMElPenRWQU1MZ01nZXpPOF9ZekJIRktPNWlhaDdNZ0JpUG5MQkl3MU5JX21qZGREdzItMGFiWTN6QjNzUHBDZjFVWEZ1ZWt1VGF4VEdBOGZ3bVdjZXRSSjBoZnVDbi1IbmpEbEVyM0w0TEg0SXRxdm5tVy1lU3hQRENVSXUzQ3NuanFDbkN2ekpwUXd3OFFlRS1jWXFNVlVRVXlmajVhcEJSdUd6bkpxdVpKUjhvS2ZwaWQ5LTh6NDRheWZXTHltY2s1bGlzRlFtRUFvcEREQ3I5b09SamZVS2xLZXI1Q3lXNG0SBBoCCAAa2QgSAggBGgAiACoAMgYIARICdXM6AEIECAEQAEoAWg4IARIKZG12LmNhLmdvdnIAegCCQKUICAAQABgAIAAqdQoKYXV0b25vbW91cxUTTQFAGglhdXRvbWF0ZWQaDmRyaXZlcmxlc3MgY2FyGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoRYXV0b25vbW91c3ZlaGljbGUaD2l2O3A7YXV0b25vbW91cyprCgd2ZWhpY2xlFY5HXkAaA2NhchoEY2FycxoOZHJpdmVybGVzcyBjYXIaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGgh2ZWhpY2xlcxoRYXV0b25vbW91c3ZlaGljbGUqNwoKZGVwbG95bWVudBWoZE9AGgZkZXBsb3kaC2RlcGxveW1lbnRzGg9pdjtwO2RlcGxveW1lbnQqOAoGcGVybWl0FaZkgj8aB2xpY2Vuc2UaB3Blcm1pdHMaCnBlcm1pdHRpbmcaC2l2O3A7cGVybWl0KiQKBGxpc3QVAAAAABoHbGlzdGluZxoFbGlzdHMaB2hvbGRlcnMqMAoKZHJpdmVybGVzcxW-Y0lAGgxzZWxmIGRyaXZpbmcaD2l2O3A7ZHJpdmVybGVzcyoWCgQyMDI2FeWOkjwaCWl2O247MjAyNjLeAi9nb3RvP3VybD1DQUVTLWdFQjZ6c3dGZlpvTFR2NnZ6YzVqZnV6VlctZFY3RC1RajFBWXNlZ1VTTGZZV1lLUXhJcEhIMzlpOXBvRzlENVJtdkYxa0x5cU5vdlhGOTZzT0toeUNERWJUeThKVEJRRWZmN2Zqdk4zOTk2VjBJT3p0VkFNTGdNZ2V6TzhfWXpCSEZLTzVpYWg3TWdCaVBuTEJJdzFOSV9tamRkRHcyLTBhYlkzekIzc1BwQ2YxVVhGdWVrdVRheFRHQThmd21XY2V0UkowaGZ1Q24tSG5qRGxFcjNMNExINEl0cXZubVctZVN4UERDVUl1M0NzbmpxQ25DdnpKcFF3dzhRZUUtY1lxTVZVUVV5Zmo1YXBCUnVHem5KcXVaSlI4b0tmcGlkOS04ejQ0YXlmV0x5bWNrNWxpc0ZRbUVBb3BERENyOW9PUmpmVUtsS2VyNUN5VzRtOkNXYXltbyBBcHByb3ZlZCBBcmVhcyBvZiBPcGVyYXRpb24gZm9yIDxiPkRyaXZlcmxlc3M8L2I-IFRlc3RpbmcgLi4uQq0BPGI-V2F5bW8gQXBwcm92ZWQgQXJlYXMgb2YgT3BlcmF0aW9uIGZvciBEcml2ZXJsZXNzIFRlc3RpbmcgYW5kIERlcGxveW1lbnQgVmVoaWNsZSBQbGF0Zm9ybXM8L2I-OiBKYWd1YXIgSS1QYWNlIGFuZCBaZWVrciBPamFpIEhvdXJzIG9mIE9wZXJhdGlvbnM6IEFsbCB0aW1lcyBvZiBkYXkmbmJzcDsuLi4iAhABSABYAGgA",
+        "source": "California DMV (.gov)"
+      },
+      {
+        "position": 5,
+        "title": "News Releases - California DMV - CA.gov",
+        "link": "https://www.dmv.ca.gov/portal/news-and-media/news-releases/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESdgHrOzAV9a0n16AoBrMm0WmYaiYQU2fm2Nefg1KxB8A2mYHMkifVocwuThuPojHtEYc6g-GOcJ7RhcxHi1am2TkLZRfLmZxf2nXizy6hyJkitDcfeMj15apIQ0s43B2GU_jUSz30cReJ9B_s-jJ-3klQsmmU2D8&ved=2ahUKEwjYnpSe0dCXAxWg5MkDHQh9OZYQFnoECCYQAQ&uoh=1",
+        "displayed_link": "https://www.dmv.ca.gov › portal › news-and-media › n...",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAARVBMVEVHcEwEVosGXpQIYpwMaqQQdrUEXJkejcstr_UzvP8CUIwHY50dl9kDWI4DXJgABT0Ja6kMh9pxh3y_qlb_ziT-yS7_yS4AjSCeAAAAEHRSTlMANIjD7v9j____H93_QrEHecww3gAAARpJREFUeAFUUgcWwyAITRSUbFy9_1EL8lLtz2SP7_LD6jwggneryRMCRNo6KEJYZuzHuU04j33YLiSNwOO-D9QMhNewiXf0Kqvko4ivdRcbgQlmBhKrZT5oo-NZJjxd1ftERjDbsIIotWdIaZQfbaQEMrt8_DtRCO8MXkLWxenbLEcuJR9m1xinLoyKyKW2WgvHLrIm1JK2tlw_gpptjb0oW2SkUwLbp9VyUrRIVuOtNW4uFln41h5uNUraw3h50wZbjab16tFxlyoot0m9ITd24HUUP7bgxhJUIbjmJUhRZNPsKJrd_BgTaCN8ki3-6e3b4unk8E8ZaIczZTPZ3soPsudj4rTD-ZjMBwyY4TtYAsOXNAknarzZAQBgVxOWLNNsUgAAAABJRU5ErkJggg.png",
+        "snippet": "Under the updated regulations, AV manufacturers may now apply for permits to test and deploy heavy-duty autonomous vehicle technology on California roadways.",
+        "snippet_highlighted_words": [
+          "permits",
+          "deploy",
+          "autonomous vehicle"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Under the updated regulations, AV manufacturers may now apply for permits to test and deploy heavy-duty autonomous vehicle technology on California roadways.",
+            "source_info_link": "https://www.dmv.ca.gov/portal/news-and-media/news-releases/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAARVBMVEVHcEwEVosGXpQIYpwMaqQQdrUEXJkejcstr_UzvP8CUIwHY50dl9kDWI4DXJgABT0Ja6kMh9pxh3y_qlb_ziT-yS7_yS4AjSCeAAAAEHRSTlMANIjD7v9j____H93_QrEHecww3gAAARpJREFUeAFUUgcWwyAITRSUbFy9_1EL8lLtz2SP7_LD6jwggneryRMCRNo6KEJYZuzHuU04j33YLiSNwOO-D9QMhNewiXf0Kqvko4ivdRcbgQlmBhKrZT5oo-NZJjxd1ftERjDbsIIotWdIaZQfbaQEMrt8_DtRCO8MXkLWxenbLEcuJR9m1xinLoyKyKW2WgvHLrIm1JK2tlw_gpptjb0oW2SkUwLbp9VyUrRIVuOtNW4uFln41h5uNUraw3h50wZbjab16tFxlyoot0m9ITd24HUUP7bgxhJUIbjmJUhRZNPsKJrd_BgTaCN8ki3-6e3b4unk8E8ZaIczZTPZ3soPsudj4rTD-ZjMBwyY4TtYAsOXNAknarzZAQBgVxOWLNNsUgAAAABJRU5ErkJggg.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=Cq0BL2dvdG8_dXJsPUNBRVNkZ0hyT3pBVnl6YkY1WXlteWlyS3ZmdC14V1h6ZTlmczAyTjA3OU0yQzVqSEZ1V05ZSFIzRERDZW9YOUVaVHJTbHh6Ujc3cE4wRnp0REtMdDNHSVdqX2dRbWcyc1dOVXd2RjNLZExHVUVFODkwU3hqMFhWY0lYTXo0N1o3TFRFVWlKaVJZTVp0VzVVZ2FnODc4Z0tPd3E1bHhaMEhSSzQSBBoCCAAakQcSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWg4IARIKZG12LmNhLmdvdnIAegCCQN0GCAAQABgAIAAqdQoKYXV0b25vbW91cxX_OAc_GglhdXRvbWF0ZWQaDmRyaXZlcmxlc3MgY2FyGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoRYXV0b25vbW91c3ZlaGljbGUaD2l2O3A7YXV0b25vbW91cyprCgd2ZWhpY2xlFf4vBUAaA2NhchoEY2FycxoOZHJpdmVybGVzcyBjYXIaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGgh2ZWhpY2xlcxoRYXV0b25vbW91c3ZlaGljbGUqNwoKZGVwbG95bWVudBVJ2yQ9GgZkZXBsb3kaC2RlcGxveW1lbnRzGg9pdjtwO2RlcGxveW1lbnQqOAoGcGVybWl0FZFupz0aB2xpY2Vuc2UaB3Blcm1pdHMaCnBlcm1pdHRpbmcaC2l2O3A7cGVybWl0KiQKBGxpc3QVAAAAABoHbGlzdGluZxoFbGlzdHMaB2hvbGRlcnMqMAoKZHJpdmVybGVzcxWOl3E6GgxzZWxmIGRyaXZpbmcaD2l2O3A7ZHJpdmVybGVzcyoWCgQyMDI2FY7Imj4aCWl2O247MjAyNjKtAS9nb3RvP3VybD1DQUVTZGdIck96QVZ5emJGNVl5bXlpckt2ZnQteFdYemU5ZnMwMk4wNzlNMkM1akhGdVdOWUhSM0REQ2VvWDlFWlRyU2x4elI3N3BOMEZ6dERLTHQzR0lXal9nUW1nMnNXTlV3dkYzS2RMR1VFRTg5MFN4ajBYVmNJWE16NDdaN0xURVVpSmlSWU1adFc1VWdhZzg3OGdLT3dxNWx4WjBIUks0OidOZXdzIFJlbGVhc2VzIC0gQ2FsaWZvcm5pYSBETVYgLSBDQS5nb3ZCsgFVbmRlciB0aGUgdXBkYXRlZCByZWd1bGF0aW9ucywgQVYgbWFudWZhY3R1cmVycyBtYXkgbm93IGFwcGx5IGZvciA8Yj5wZXJtaXRzPC9iPiB0byB0ZXN0IGFuZCA8Yj5kZXBsb3k8L2I-IGhlYXZ5LWR1dHkgPGI-YXV0b25vbW91cyB2ZWhpY2xlPC9iPiB0ZWNobm9sb2d5IG9uIENhbGlmb3JuaWEgcm9hZHdheXMuIgIQAUgAWABoAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=Cq0BL2dvdG8_dXJsPUNBRVNkZ0hyT3pBVnl6YkY1WXlteWlyS3ZmdC14V1h6ZTlmczAyTjA3OU0yQzVqSEZ1V05ZSFIzRERDZW9YOUVaVHJTbHh6Ujc3cE4wRnp0REtMdDNHSVdqX2dRbWcyc1dOVXd2RjNLZExHVUVFODkwU3hqMFhWY0lYTXo0N1o3TFRFVWlKaVJZTVp0VzVVZ2FnODc4Z0tPd3E1bHhaMEhSSzQSBBoCCAAakQcSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWg4IARIKZG12LmNhLmdvdnIAegCCQN0GCAAQABgAIAAqdQoKYXV0b25vbW91cxX_OAc_GglhdXRvbWF0ZWQaDmRyaXZlcmxlc3MgY2FyGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoRYXV0b25vbW91c3ZlaGljbGUaD2l2O3A7YXV0b25vbW91cyprCgd2ZWhpY2xlFf4vBUAaA2NhchoEY2FycxoOZHJpdmVybGVzcyBjYXIaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGgh2ZWhpY2xlcxoRYXV0b25vbW91c3ZlaGljbGUqNwoKZGVwbG95bWVudBVJ2yQ9GgZkZXBsb3kaC2RlcGxveW1lbnRzGg9pdjtwO2RlcGxveW1lbnQqOAoGcGVybWl0FZFupz0aB2xpY2Vuc2UaB3Blcm1pdHMaCnBlcm1pdHRpbmcaC2l2O3A7cGVybWl0KiQKBGxpc3QVAAAAABoHbGlzdGluZxoFbGlzdHMaB2hvbGRlcnMqMAoKZHJpdmVybGVzcxWOl3E6GgxzZWxmIGRyaXZpbmcaD2l2O3A7ZHJpdmVybGVzcyoWCgQyMDI2FY7Imj4aCWl2O247MjAyNjKtAS9nb3RvP3VybD1DQUVTZGdIck96QVZ5emJGNVl5bXlpckt2ZnQteFdYemU5ZnMwMk4wNzlNMkM1akhGdVdOWUhSM0REQ2VvWDlFWlRyU2x4elI3N3BOMEZ6dERLTHQzR0lXal9nUW1nMnNXTlV3dkYzS2RMR1VFRTg5MFN4ajBYVmNJWE16NDdaN0xURVVpSmlSWU1adFc1VWdhZzg3OGdLT3dxNWx4WjBIUks0OidOZXdzIFJlbGVhc2VzIC0gQ2FsaWZvcm5pYSBETVYgLSBDQS5nb3ZCsgFVbmRlciB0aGUgdXBkYXRlZCByZWd1bGF0aW9ucywgQVYgbWFudWZhY3R1cmVycyBtYXkgbm93IGFwcGx5IGZvciA8Yj5wZXJtaXRzPC9iPiB0byB0ZXN0IGFuZCA8Yj5kZXBsb3k8L2I-IGhlYXZ5LWR1dHkgPGI-YXV0b25vbW91cyB2ZWhpY2xlPC9iPiB0ZWNobm9sb2d5IG9uIENhbGlmb3JuaWEgcm9hZHdheXMuIgIQAUgAWABoAA",
+        "source": "California DMV (.gov)",
+        "read_more_link": "https://www.dmv.ca.gov/portal/news-and-media/news-releases/#:~:text=Under%20the%20updated%20regulations%2C%20AV,vehicle%20technology%20on%20California%20roadways."
+      }
+    ]
+  }
+}

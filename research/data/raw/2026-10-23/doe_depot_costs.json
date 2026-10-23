@@ -1,0 +1,354 @@
+{
+  "query": {
+    "query_id": "doe_depot_costs",
+    "engine": "google",
+    "q": "site:energy.gov fleet depot charging installation cost electric vehicles",
+    "gl": "us",
+    "hl": "en",
+    "num": 10
+  },
+  "retrieved_at": "2026-10-23T17:11:16.315838+00:00",
+  "status": "success",
+  "response": {
+    "search_metadata": {
+      "id": "6adb95330d9c522f3d5f8222",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/zlwNhWeGTDt8b089DqR-RRn3faD2r1deo46iXzIqXC0/6adb95330d9c522f3d5f8222.json",
+      "markdown_endpoint": "https://serpapi.com/searches/zlwNhWeGTDt8b089DqR-RRn3faD2r1deo46iXzIqXC0/6adb95330d9c522f3d5f8222.md",
+      "pixel_position_endpoint": "https://serpapi.com/searches/zlwNhWeGTDt8b089DqR-RRn3faD2r1deo46iXzIqXC0/6adb95330d9c522f3d5f8222.json_with_pixel_position",
+      "created_at": "2026-10-23 17:11:15 UTC",
+      "processed_at": "2026-10-23 17:11:15 UTC",
+      "google_url": "https://www.google.com/search?q=site%3Aenergy.gov+fleet+depot+charging+installation+cost+electric+vehicles&oq=site%3Aenergy.gov+fleet+depot+charging+installation+cost+electric+vehicles&hl=en&gl=us&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/zlwNhWeGTDt8b089DqR-RRn3faD2r1deo46iXzIqXC0/6adb95330d9c522f3d5f8222.html",
+      "total_time_taken": 0.47
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "site:energy.gov fleet depot charging installation cost electric vehicles",
+      "google_domain": "google.com",
+      "hl": "en",
+      "gl": "us",
+      "device": "desktop"
+    },
+    "search_information": {
+      "query_displayed": "site:energy.gov fleet depot charging installation cost electric vehicles",
+      "total_results": 73,
+      "time_taken_displayed": 0.15,
+      "organic_results_state": "Results for exact spelling"
+    },
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "How do businesses decide when a fleet depot is ready for ...",
+        "link": "https://www.reddit.com/r/EvDrivers/comments/1usu09i/how_do_businesses_decide_when_a_fleet_depot_is/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESngEB6zswFU_pdlkqlwxsoFqcjXqXAtWae0VSHuoq4nvklYnOKR1nL3-yK-mrIfY2RYuk2_G85Pdtd-iXQfJBbyplqSpcp64DYDBZ09-U3VieKs4Tn34B-zga1jJicd79C9hYSo22N1-okixOO-qgjIyIuWgZiKeR1bHjRQFNjyiT9XblOlcJZQ9U2wuyt5S4Ey0QAyMVWInejkwze1Q-NA&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQFnoECBwQAQ&uoh=1",
+        "displayed_link": "4 comments · 3 months ago",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAqFBMVEVHcEz_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_PAD_____RQD_PAD_QAD_MQDS4Of_RAD_NwD6-vv4_v_K2N_z-fra5uzm7_H72NLq9vkCCAvweWDol4r_hm3-mYX9YTj-cFDW7PP45uP4qJjbUTNBR0rRtbD_wLO-MgW1vsHfzc_gFQDUqKf_WAb_UgAxODwAHilxLR1scnTHa13kHQCLRbHLAAAADHRSTlMA_kAZ4YjF7WQ0GH3klhKFAAABhUlEQVQokW2T53aDMAyFoSGQpMfyJmaEnb1X-_5vVttkkDT3BxJ8xyBdCce5a9j3A9cN_P7QedcggIeCwQvqeU8EhIA3erKvDgJa1ZTD10cmVghNxYOOugzWY4RQiQF6Fna_tz5fNigMDfRsnd1z5zleNs0Yc52bmh89ECzWF4FpllkGge5dB0wpxrQqV_vlqqyoMPf68dDp6-KLJCmLKbppWpRJUlCAvuODmKEPmgnwnYCTTwwhwgPHJXVocrlv3xtO98rGmriOyyFVEqE5zaR9-Fv96KtKgbu6E5w3UsrdAScGJvSwU6Fscqx78XW1M6XC-RHsSQnHeajUTFfrm1ZIlaZKJbItRCZKpWlFTCvGBMriOFWbxeJ0Wiw2YRrHEbUmGPtIFkVxHE-sdBI1GbH2WeNFzsYsYtfJ5KoDY7m4GW9HJrKxFosiZmJmmNcukBkBJvnWnGHRNifGdbitkakJOBZQF0UNoh3YfYm-bwPlRIu3-TvryOvd1_kf6iz1C3z9Hf4AClYvY_ay9KgAAAAASUVORK5CYII.png",
+        "snippet": "One thing I've been curious about is what actually triggers a business to start planning EV charging at a fleet depot. It can't simply be \"we've bought ...",
+        "about_this_result": {
+          "source": {
+            "description": "One thing I've been curious about is what actually triggers a business to start planning EV charging at a fleet depot.",
+            "source_info_link": "https://www.reddit.com/r/EvDrivers/comments/1usu09i/how_do_businesses_decide_when_a_fleet_depot_is/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAqFBMVEVHcEz_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_PAD_____RQD_PAD_QAD_MQDS4Of_RAD_NwD6-vv4_v_K2N_z-fra5uzm7_H72NLq9vkCCAvweWDol4r_hm3-mYX9YTj-cFDW7PP45uP4qJjbUTNBR0rRtbD_wLO-MgW1vsHfzc_gFQDUqKf_WAb_UgAxODwAHilxLR1scnTHa13kHQCLRbHLAAAADHRSTlMA_kAZ4YjF7WQ0GH3klhKFAAABhUlEQVQokW2T53aDMAyFoSGQpMfyJmaEnb1X-_5vVttkkDT3BxJ8xyBdCce5a9j3A9cN_P7QedcggIeCwQvqeU8EhIA3erKvDgJa1ZTD10cmVghNxYOOugzWY4RQiQF6Fna_tz5fNigMDfRsnd1z5zleNs0Yc52bmh89ECzWF4FpllkGge5dB0wpxrQqV_vlqqyoMPf68dDp6-KLJCmLKbppWpRJUlCAvuODmKEPmgnwnYCTTwwhwgPHJXVocrlv3xtO98rGmriOyyFVEqE5zaR9-Fv96KtKgbu6E5w3UsrdAScGJvSwU6Fscqx78XW1M6XC-RHsSQnHeajUTFfrm1ZIlaZKJbItRCZKpWlFTCvGBMriOFWbxeJ0Wiw2YRrHEbUmGPtIFkVxHE-sdBI1GbH2WeNFzsYsYtfJ5KoDY7m4GW9HJrKxFosiZmJmmNcukBkBJvnWnGHRNifGdbitkakJOBZQF0UNoh3YfYm-bwPlRIu3-TvryOvd1_kf6iz1C3z9Hf4AClYvY_ay9KgAAAAASUVORK5CYII.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CuABL2dvdG8_dXJsPUNBRVNtd0VCNnpzd0ZTRTdjYjJfWTBXSEQyLWZzZ3hZVXhhMHdjOURuSmM3aEdFTjZsR3h2b212NlBjMHF5NjhWQ0pweERvVHVIU3ZfYTJVYTNRZnp3WVI2ckZTMDJpRXpjUXpPMVNqUmtBdk9jaGxTdkZ0Z2dFR212NVQxZ3doTHh4SXN1czhicjdrUHdWZ1BrUUIzLTNMNGZMaEFtSTlVOUZVRlpWYWhmdGZnTE52SmtUN3UzS29RQVdiQTFrLWJrUVNHREFzbzhFX0VzSXBVUGpVVncSBBoCCAAa9wYSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJA0wYIABAAGAAgACoYCgVmbGVldBUki7hAGgppdjtwO2ZsZWV0KiMKBWRlcG90FQj9nkAaCXdhcmVob3VzZRoKaXY7cDtkZXBvdCoeCghjaGFyZ2luZxVKXIBAGg1pdjtwO2NoYXJnaW5nKkYKDGluc3RhbGxhdGlvbhX3Gzo8GgdpbnN0YWxsGg1pbnN0YWxsYXRpb25zGgdyZXBsYWNlGhBpbnN0YWxsYXRpb25jb3N0KmAKBGNvc3QVD2zCPhoGY2hhcmdlGgZjb3N0bHkaBWNvc3RzGgVwcmljZRoGcHJpY2VzGgdwcmljaW5nGgRyYXRlGgVyYXRlcxoFdXNhZ2UaEGluc3RhbGxhdGlvbmNvc3QqQwoIZWxlY3RyaWMV8Hs5QBoLZWxlY3RyaWNhbHMaCmVsZWN0cm9uaWMaAmV2GgNldnMaEGVsZWN0cmljdmVoaWNsZXMqPgoIdmVoaWNsZXMVuqUOQBoDY2FyGgRjYXJzGgJldhoDZXZzGgd2ZWhpY2xlGhBlbGVjdHJpY3ZlaGljbGVzMuABL2dvdG8_dXJsPUNBRVNtd0VCNnpzd0ZTRTdjYjJfWTBXSEQyLWZzZ3hZVXhhMHdjOURuSmM3aEdFTjZsR3h2b212NlBjMHF5NjhWQ0pweERvVHVIU3ZfYTJVYTNRZnp3WVI2ckZTMDJpRXpjUXpPMVNqUmtBdk9jaGxTdkZ0Z2dFR212NVQxZ3doTHh4SXN1czhicjdrUHdWZ1BrUUIzLTNMNGZMaEFtSTlVOUZVRlpWYWhmdGZnTE52SmtUN3UzS29RQVdiQTFrLWJrUVNHREFzbzhFX0VzSXBVUGpVVnc6TUhvdyBkbyBidXNpbmVzc2VzIGRlY2lkZSB3aGVuIGEgPGI-ZmxlZXQgZGVwb3Q8L2I-IGlzIHJlYWR5IGZvciA8Yj5FVjwvYj4gLi4uQogBT25lIHRoaW5nIEkmIzM5O3ZlIGJlZW4gY3VyaW91cyBhYm91dCBpcyB3aGF0IGFjdHVhbGx5IHRyaWdnZXJzIGEgYnVzaW5lc3MgdG8gc3RhcnQgcGxhbm5pbmcgPGI-RVYgY2hhcmdpbmc8L2I-IGF0IGEgPGI-ZmxlZXQgZGVwb3Q8L2I-LiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CuABL2dvdG8_dXJsPUNBRVNtd0VCNnpzd0ZTRTdjYjJfWTBXSEQyLWZzZ3hZVXhhMHdjOURuSmM3aEdFTjZsR3h2b212NlBjMHF5NjhWQ0pweERvVHVIU3ZfYTJVYTNRZnp3WVI2ckZTMDJpRXpjUXpPMVNqUmtBdk9jaGxTdkZ0Z2dFR212NVQxZ3doTHh4SXN1czhicjdrUHdWZ1BrUUIzLTNMNGZMaEFtSTlVOUZVRlpWYWhmdGZnTE52SmtUN3UzS29RQVdiQTFrLWJrUVNHREFzbzhFX0VzSXBVUGpVVncSBBoCCAAa9wYSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJA0wYIABAAGAAgACoYCgVmbGVldBUki7hAGgppdjtwO2ZsZWV0KiMKBWRlcG90FQj9nkAaCXdhcmVob3VzZRoKaXY7cDtkZXBvdCoeCghjaGFyZ2luZxVKXIBAGg1pdjtwO2NoYXJnaW5nKkYKDGluc3RhbGxhdGlvbhX3Gzo8GgdpbnN0YWxsGg1pbnN0YWxsYXRpb25zGgdyZXBsYWNlGhBpbnN0YWxsYXRpb25jb3N0KmAKBGNvc3QVD2zCPhoGY2hhcmdlGgZjb3N0bHkaBWNvc3RzGgVwcmljZRoGcHJpY2VzGgdwcmljaW5nGgRyYXRlGgVyYXRlcxoFdXNhZ2UaEGluc3RhbGxhdGlvbmNvc3QqQwoIZWxlY3RyaWMV8Hs5QBoLZWxlY3RyaWNhbHMaCmVsZWN0cm9uaWMaAmV2GgNldnMaEGVsZWN0cmljdmVoaWNsZXMqPgoIdmVoaWNsZXMVuqUOQBoDY2FyGgRjYXJzGgJldhoDZXZzGgd2ZWhpY2xlGhBlbGVjdHJpY3ZlaGljbGVzMuABL2dvdG8_dXJsPUNBRVNtd0VCNnpzd0ZTRTdjYjJfWTBXSEQyLWZzZ3hZVXhhMHdjOURuSmM3aEdFTjZsR3h2b212NlBjMHF5NjhWQ0pweERvVHVIU3ZfYTJVYTNRZnp3WVI2ckZTMDJpRXpjUXpPMVNqUmtBdk9jaGxTdkZ0Z2dFR212NVQxZ3doTHh4SXN1czhicjdrUHdWZ1BrUUIzLTNMNGZMaEFtSTlVOUZVRlpWYWhmdGZnTE52SmtUN3UzS29RQVdiQTFrLWJrUVNHREFzbzhFX0VzSXBVUGpVVnc6TUhvdyBkbyBidXNpbmVzc2VzIGRlY2lkZSB3aGVuIGEgPGI-ZmxlZXQgZGVwb3Q8L2I-IGlzIHJlYWR5IGZvciA8Yj5FVjwvYj4gLi4uQogBT25lIHRoaW5nIEkmIzM5O3ZlIGJlZW4gY3VyaW91cyBhYm91dCBpcyB3aGF0IGFjdHVhbGx5IHRyaWdnZXJzIGEgYnVzaW5lc3MgdG8gc3RhcnQgcGxhbm5pbmcgPGI-RVYgY2hhcmdpbmc8L2I-IGF0IGEgPGI-ZmxlZXQgZGVwb3Q8L2I-LiICEAFIAFgAaAA",
+        "source": "Reddit · r/EvDrivers"
+      },
+      {
+        "position": 2,
+        "title": "EV Fleet Depot Charging Setup in India: A 2026 Guide",
+        "link": "https://ev.care/blog/ev-fleet-depot-charging-setup-india",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAEScwHrOzAV4PcsZ41CZYZHVDfozlwkAaC-c4A3MYEYlLeiOHktFWazZmKhtlp7E5QLR8eHEGnUqoxO-FaGhFE3-pn_UhE-7aHAydAkCGjgwxIJkFmCm2j619rGiYL0rGz38H4Yrfm7-EBklA4nTFn141x-efs&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQFnoECBkQAQ&uoh=1",
+        "displayed_link": "https://ev.care › Blog",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAV1BMVEX___-459Fdzp4WwoMAwH_7_vw2xo0AvHYAv3wpxIiH2LSE2LN11KoAvHTa8ufp9_EAvHVt0qaO2rie38FWzJvH7Nvt-fN91q-z5c5EyJKW3L3P7-Bl0KK3vKppAAAA0ElEQVR4AYWTVxLDIAxEF5DRpvee-18zzQWPRsTvl8eo40OISRxSDPjSZKW4UHMDIFOqMANB5Q8aEGl_kTLACJvfbL5YjowE875aA5utFIzAHUxaRlg1APasCnrAh2NdSPhCqQnbEz6ctzWBR3w5rUi6wmrTCpfF4kJH0DkGTuoIxMB55YTQaxFmTg68YWBJr4o8_-SGL2Hll0lSTQJFKGFKAp6wLAn4wt0kYAW9lgR84WESsMK2uVAMSFLgU8WQEDk2xMA4fTiTpzd9vBPn_wZzARG9mEJaywAAAABJRU5ErkJggg.png",
+        "date": "Jun 2, 2026",
+        "snippet": "Rs 15,000 to Rs 60,000 per ・ 30 kW DC fast charger: roughly Rs 4 to 6 lakh per unit. 60 kW DC fast charger: roughly Rs 8 to 12 lakh per unit ...",
+        "snippet_highlighted_words": [
+          "Rs 15,000 to Rs 60,000 per"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Rs 15,000 to Rs 60,000 per ・ 30 kW DC fast charger: roughly Rs 4 to 6 lakh per unit. 60 kW DC fast charger: roughly Rs 8 to 12 lakh per unit ...",
+            "source_info_link": "https://ev.care/blog/ev-fleet-depot-charging-setup-india",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAV1BMVEX___-459Fdzp4WwoMAwH_7_vw2xo0AvHYAv3wpxIiH2LSE2LN11KoAvHTa8ufp9_EAvHVt0qaO2rie38FWzJvH7Nvt-fN91q-z5c5EyJKW3L3P7-Bl0KK3vKppAAAA0ElEQVR4AYWTVxLDIAxEF5DRpvee-18zzQWPRsTvl8eo40OISRxSDPjSZKW4UHMDIFOqMANB5Q8aEGl_kTLACJvfbL5YjowE875aA5utFIzAHUxaRlg1APasCnrAh2NdSPhCqQnbEz6ctzWBR3w5rUi6wmrTCpfF4kJH0DkGTuoIxMB55YTQaxFmTg68YWBJr4o8_-SGL2Hll0lSTQJFKGFKAp6wLAn4wt0kYAW9lgR84WESsMK2uVAMSFLgU8WQEDk2xMA4fTiTpzd9vBPn_wZzARG9mEJaywAAAABJRU5ErkJggg.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CqUBL2dvdG8_dXJsPUNBRVNjQUhyT3pBVjk1YXZUcVRqdVV2aUVqZnZwbVpfdGMtQzhFb1pPQW1odU5tUUJzLXdnVnlzZHBnOXJoUkpGbWVkbDlYWHRFMUNtTkp1OUFlc3FpVTQ0V1hQdVQ4UDZWenFNckVkRjFDekppeUVNZmpzTUhvbDAtVThBbFJlSjlRaG1CZXN5U2tKcFY1TEhQSm5NV05ETTdZEgQaAggAGsAGEgAaACIAKgAyBggCEgJ1czoAQgQIARAASgBaAHIAegCCQJwGCAAQABgAIAAqGAoFZmxlZXQVTHPUQBoKaXY7cDtmbGVldCojCgVkZXBvdBVSYMlAGgl3YXJlaG91c2UaCml2O3A7ZGVwb3QqHgoIY2hhcmdpbmcV6SncQBoNaXY7cDtjaGFyZ2luZypGCgxpbnN0YWxsYXRpb24Vq8y6PRoHaW5zdGFsbBoNaW5zdGFsbGF0aW9ucxoHcmVwbGFjZRoQaW5zdGFsbGF0aW9uY29zdCpgCgRjb3N0FRoI-D8aBmNoYXJnZRoGY29zdGx5GgVjb3N0cxoFcHJpY2UaBnByaWNlcxoHcHJpY2luZxoEcmF0ZRoFcmF0ZXMaBXVzYWdlGhBpbnN0YWxsYXRpb25jb3N0KkMKCGVsZWN0cmljFZzFmj8aC2VsZWN0cmljYWxzGgplbGVjdHJvbmljGgJldhoDZXZzGhBlbGVjdHJpY3ZlaGljbGVzKj4KCHZlaGljbGVzFa_Q_T8aA2NhchoEY2FycxoCZXYaA2V2cxoHdmVoaWNsZRoQZWxlY3RyaWN2ZWhpY2xlczKlAS9nb3RvP3VybD1DQUVTY0FIck96QVY5NWF2VHFUanVVdmlFamZ2cG1aX3RjLUM4RW9aT0FtaHVObVFCcy13Z1Z5c2RwZzlyaFJKRm1lZGw5WFh0RTFDbU5KdTlBZXNxaVU0NFdYUHVUOFA2VnpxTXJFZEYxQ3pKaXlFTWZqc01Ib2wwLVU4QWxSZUo5UWhtQmVzeVNrSnBWNUxIUEpuTVdORE03WTo7PGI-RVYgRmxlZXQgRGVwb3QgQ2hhcmdpbmc8L2I-IFNldHVwIGluIEluZGlhOiBBIDIwMjYgR3VpZGVCngE8Yj5ScyAxNSwwMDAgdG8gUnMgNjAsMDAwIHBlcjwvYj4g44O7IDMwIGtXIERDIGZhc3QgY2hhcmdlcjogcm91Z2hseSBScyA0IHRvIDYgbGFraCBwZXIgdW5pdC4gNjAga1cgREMgZmFzdCBjaGFyZ2VyOiByb3VnaGx5IFJzIDggdG8gMTIgbGFraCBwZXIgdW5pdCZuYnNwOy4uLiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CqUBL2dvdG8_dXJsPUNBRVNjQUhyT3pBVjk1YXZUcVRqdVV2aUVqZnZwbVpfdGMtQzhFb1pPQW1odU5tUUJzLXdnVnlzZHBnOXJoUkpGbWVkbDlYWHRFMUNtTkp1OUFlc3FpVTQ0V1hQdVQ4UDZWenFNckVkRjFDekppeUVNZmpzTUhvbDAtVThBbFJlSjlRaG1CZXN5U2tKcFY1TEhQSm5NV05ETTdZEgQaAggAGsAGEgAaACIAKgAyBggCEgJ1czoAQgQIARAASgBaAHIAegCCQJwGCAAQABgAIAAqGAoFZmxlZXQVTHPUQBoKaXY7cDtmbGVldCojCgVkZXBvdBVSYMlAGgl3YXJlaG91c2UaCml2O3A7ZGVwb3QqHgoIY2hhcmdpbmcV6SncQBoNaXY7cDtjaGFyZ2luZypGCgxpbnN0YWxsYXRpb24Vq8y6PRoHaW5zdGFsbBoNaW5zdGFsbGF0aW9ucxoHcmVwbGFjZRoQaW5zdGFsbGF0aW9uY29zdCpgCgRjb3N0FRoI-D8aBmNoYXJnZRoGY29zdGx5GgVjb3N0cxoFcHJpY2UaBnByaWNlcxoHcHJpY2luZxoEcmF0ZRoFcmF0ZXMaBXVzYWdlGhBpbnN0YWxsYXRpb25jb3N0KkMKCGVsZWN0cmljFZzFmj8aC2VsZWN0cmljYWxzGgplbGVjdHJvbmljGgJldhoDZXZzGhBlbGVjdHJpY3ZlaGljbGVzKj4KCHZlaGljbGVzFa_Q_T8aA2NhchoEY2FycxoCZXYaA2V2cxoHdmVoaWNsZRoQZWxlY3RyaWN2ZWhpY2xlczKlAS9nb3RvP3VybD1DQUVTY0FIck96QVY5NWF2VHFUanVVdmlFamZ2cG1aX3RjLUM4RW9aT0FtaHVObVFCcy13Z1Z5c2RwZzlyaFJKRm1lZGw5WFh0RTFDbU5KdTlBZXNxaVU0NFdYUHVUOFA2VnpxTXJFZEYxQ3pKaXlFTWZqc01Ib2wwLVU4QWxSZUo5UWhtQmVzeVNrSnBWNUxIUEpuTVdORE03WTo7PGI-RVYgRmxlZXQgRGVwb3QgQ2hhcmdpbmc8L2I-IFNldHVwIGluIEluZGlhOiBBIDIwMjYgR3VpZGVCngE8Yj5ScyAxNSwwMDAgdG8gUnMgNjAsMDAwIHBlcjwvYj4g44O7IDMwIGtXIERDIGZhc3QgY2hhcmdlcjogcm91Z2hseSBScyA0IHRvIDYgbGFraCBwZXIgdW5pdC4gNjAga1cgREMgZmFzdCBjaGFyZ2VyOiByb3VnaGx5IFJzIDggdG8gMTIgbGFraCBwZXIgdW5pdCZuYnNwOy4uLiICEAFIAFgAaAA",
+        "source": "ev.care"
+      },
+      {
+        "position": 3,
+        "title": "EV Charging for Fleets: Top 3 Approaches - Blog",
+        "link": "https://solusgrp.com/blog/post/ev-charging-for-fleets-top-3-approaches.html?srsltid=AYCX9vKmeKVQ3M6R4vrdm3dYYNK4nq_GjNAOJ3x7Rul65c6Fwe17apXD",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESyAEB6zswFSwHB6bTyIrlE5LYEh0DiLdurGpP16EmB3WRAsYTE1MIR1ahcr_QMrA-ZR7oTH9GLN1JYoNZfbGaMo4WSPVMD89nyhNDe1Z3sgDVGHgba4SA-lmtVaFlTBew_X8aUL4w4c4Gi_rD026IORMX7Cf8VhuwRUTabgoC1CYtF9sNIwurPWutwMZipAI2l2nUGQBsbOsEMPWqpwR4OXrhvz8YpDQu7a8yUcMI72o8Yfb6zUGKueBV7PGM1mEhNyhxooaGhGKqDQ&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQFnoECCAQAQ&uoh=1",
+        "displayed_link": "https://solusgrp.com › blog › post › ev-charging-for-fleet...",
+        "favicon": "https://serpapi.com/searches/6adb95330d9c522f3d5f8222/images/iiCYsoGZyAOSl9IkdL64d5vBiqsP0_ACTufXGSeEwbg.png",
+        "date": "Jan 30, 2024",
+        "snippet": "The good news is that it's often possible to add Level 2 EV chargers to your existing fleet depot, sparing the considerable cost of a new ...",
+        "snippet_highlighted_words": [
+          "EV",
+          "fleet depot",
+          "cost"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "The good news is that it's often possible to add Level 2 EV chargers to your existing fleet depot, sparing the considerable cost of a new ...",
+            "source_info_link": "https://solusgrp.com/blog/post/ev-charging-for-fleets-top-3-approaches.html?srsltid=AYCX9vKmeKVQ3M6R4vrdm3dYYNK4nq_GjNAOJ3x7Rul65c6Fwe17apXD",
+            "icon": "https://serpapi.com/searches/6adb95330d9c522f3d5f8222/images/iiCYsoGZyAOSl9IkdL64d70NUHKcCyKd5UQiTXj-2pb1xD4Fjmp8vv4UZFGbKSxG.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CpgCL2dvdG8_dXJsPUNBRVN4UUVCNnpzd0ZhWUgySFFRcUVNZnF2bFI4aW01S1UySEtYS1lvU2VUd2VzWWh2NHkzNlJHbTFhNnhubHVSNTR3QXMzaUxnOHAyMHkweEJjOWNyMHRUVmFaOG5peEwwR29RWTRLaGFsUlU3NlY1Rm1raGw0QW1COFlxQm05T2hVRXVoaWdSZHRMd19oV1pRcUppQllacWJoMjJYeE5YOEcyVk5QdEFHRm1rb0dYN0ZoZElreXNYamx3OFFqalZDQUxYZnNkX1IxQTctZkZBa1ZWUk05aE1xUWVfR0lYZnNaUXlIckIzMVB1UVp6Z3dGSHlVaE0tampUTm9nZm13WWkxSE9qUkxIdkVJQRIEGgIIABrxBhIAGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkDNBggAEAAYACAAKhgKBWZsZWV0FdrZNEAaCml2O3A7ZmxlZXQqIwoFZGVwb3QVJ5WMPxoJd2FyZWhvdXNlGgppdjtwO2RlcG90Kh4KCGNoYXJnaW5nFQr1ukAaDWl2O3A7Y2hhcmdpbmcqRgoMaW5zdGFsbGF0aW9uFQAAAAAaB2luc3RhbGwaDWluc3RhbGxhdGlvbnMaB3JlcGxhY2UaEGluc3RhbGxhdGlvbmNvc3QqYAoEY29zdBXpsy8_GgZjaGFyZ2UaBmNvc3RseRoFY29zdHMaBXByaWNlGgZwcmljZXMaB3ByaWNpbmcaBHJhdGUaBXJhdGVzGgV1c2FnZRoQaW5zdGFsbGF0aW9uY29zdCpDCghlbGVjdHJpYxVBzZ8_GgtlbGVjdHJpY2FscxoKZWxlY3Ryb25pYxoCZXYaA2V2cxoQZWxlY3RyaWN2ZWhpY2xlcyo-Cgh2ZWhpY2xlcxV-4r0_GgNjYXIaBGNhcnMaAmV2GgNldnMaB3ZlaGljbGUaEGVsZWN0cmljdmVoaWNsZXMywAEvZ290bz91cmw9Q0FFU2d3RUI2enN3RlRyaHhfMjBzM0lxZEUybWlKZ0pna1Rob1MzYnpBdXlFcUtXS0xaYVhCTlRnVzA3LXY3cnZkNWZQVHhsRlY5ZXZhS3ZBRHhINmpXVmZZdnUtaExqbEh1dWNvNXhna3FkNmhnUjJNRXo4WXdIbXhzNjV6NTg2cmZoYUczdnhRbGRISmFKR0NFUy15MTBoOENVWlRHQlN6UzA5dEdRTTd3eUxnYjE3UU5RVGc6RDxiPkVWIENoYXJnaW5nPC9iPiBmb3IgRmxlZXRzOiBUb3AgMyBBcHByb2FjaGVzIC0gQmxvZyAtIFNvbHVzIEdyb3VwQqsBVGhlIGdvb2QgbmV3cyBpcyB0aGF0IGl0JiMzOTtzIG9mdGVuIHBvc3NpYmxlIHRvIGFkZCBMZXZlbCAyIDxiPkVWPC9iPiBjaGFyZ2VycyB0byB5b3VyIGV4aXN0aW5nIDxiPmZsZWV0IGRlcG90PC9iPiwgc3BhcmluZyB0aGUgY29uc2lkZXJhYmxlIDxiPmNvc3Q8L2I-IG9mIGEgbmV3Jm5ic3A7Li4uIgIQAUgAWABoAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CpgCL2dvdG8_dXJsPUNBRVN4UUVCNnpzd0ZhWUgySFFRcUVNZnF2bFI4aW01S1UySEtYS1lvU2VUd2VzWWh2NHkzNlJHbTFhNnhubHVSNTR3QXMzaUxnOHAyMHkweEJjOWNyMHRUVmFaOG5peEwwR29RWTRLaGFsUlU3NlY1Rm1raGw0QW1COFlxQm05T2hVRXVoaWdSZHRMd19oV1pRcUppQllacWJoMjJYeE5YOEcyVk5QdEFHRm1rb0dYN0ZoZElreXNYamx3OFFqalZDQUxYZnNkX1IxQTctZkZBa1ZWUk05aE1xUWVfR0lYZnNaUXlIckIzMVB1UVp6Z3dGSHlVaE0tampUTm9nZm13WWkxSE9qUkxIdkVJQRIEGgIIABrxBhIAGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkDNBggAEAAYACAAKhgKBWZsZWV0FdrZNEAaCml2O3A7ZmxlZXQqIwoFZGVwb3QVJ5WMPxoJd2FyZWhvdXNlGgppdjtwO2RlcG90Kh4KCGNoYXJnaW5nFQr1ukAaDWl2O3A7Y2hhcmdpbmcqRgoMaW5zdGFsbGF0aW9uFQAAAAAaB2luc3RhbGwaDWluc3RhbGxhdGlvbnMaB3JlcGxhY2UaEGluc3RhbGxhdGlvbmNvc3QqYAoEY29zdBXpsy8_GgZjaGFyZ2UaBmNvc3RseRoFY29zdHMaBXByaWNlGgZwcmljZXMaB3ByaWNpbmcaBHJhdGUaBXJhdGVzGgV1c2FnZRoQaW5zdGFsbGF0aW9uY29zdCpDCghlbGVjdHJpYxVBzZ8_GgtlbGVjdHJpY2FscxoKZWxlY3Ryb25pYxoCZXYaA2V2cxoQZWxlY3RyaWN2ZWhpY2xlcyo-Cgh2ZWhpY2xlcxV-4r0_GgNjYXIaBGNhcnMaAmV2GgNldnMaB3ZlaGljbGUaEGVsZWN0cmljdmVoaWNsZXMywAEvZ290bz91cmw9Q0FFU2d3RUI2enN3RlRyaHhfMjBzM0lxZEUybWlKZ0pna1Rob1MzYnpBdXlFcUtXS0xaYVhCTlRnVzA3LXY3cnZkNWZQVHhsRlY5ZXZhS3ZBRHhINmpXVmZZdnUtaExqbEh1dWNvNXhna3FkNmhnUjJNRXo4WXdIbXhzNjV6NTg2cmZoYUczdnhRbGRISmFKR0NFUy15MTBoOENVWlRHQlN6UzA5dEdRTTd3eUxnYjE3UU5RVGc6RDxiPkVWIENoYXJnaW5nPC9iPiBmb3IgRmxlZXRzOiBUb3AgMyBBcHByb2FjaGVzIC0gQmxvZyAtIFNvbHVzIEdyb3VwQqsBVGhlIGdvb2QgbmV3cyBpcyB0aGF0IGl0JiMzOTtzIG9mdGVuIHBvc3NpYmxlIHRvIGFkZCBMZXZlbCAyIDxiPkVWPC9iPiBjaGFyZ2VycyB0byB5b3VyIGV4aXN0aW5nIDxiPmZsZWV0IGRlcG90PC9iPiwgc3BhcmluZyB0aGUgY29uc2lkZXJhYmxlIDxiPmNvc3Q8L2I-IG9mIGEgbmV3Jm5ic3A7Li4uIgIQAUgAWABoAA",
+        "source": "solusgrp.com",
+        "read_more_link": "https://solusgrp.com/blog/post/ev-charging-for-fleets-top-3-approaches.html?srsltid=AYCX9vKmeKVQ3M6R4vrdm3dYYNK4nq_GjNAOJ3x7Rul65c6Fwe17apXD#:~:text=The%20good%20news%20is%20that,considerable%20cost%20of%20a%20new"
+      },
+      {
+        "position": 4,
+        "title": "What are the costs and benefits of installing electric vehicle ...",
+        "link": "https://www.facebook.com/groups/IEVOA/posts/2518130531761553/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESeAHrOzAV5YbjDR37krkP53CC1N6jPMcZ3oEwwFCvi8gZkoxtbHufZaGokoR5AQEiah_NmTqxLLkUQfmjW6c5dN_PMSUwiX2yjIjHoV4UTLc8Xg5NyER5rhyJc2-7DoZu433g-PYqCihyAqQAASvfQ3wLxlkSzOY12Q&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQFnoECCgQAQ&uoh=1",
+        "displayed_link": "10+ comments · 6 years ago",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png",
+        "snippet": "I work at a coffee bar half-way between the fast chargers at Moneygall and the Nissan dealership (inside the gates) in Limerick. How would I ...",
+        "about_this_result": {
+          "source": {
+            "description": "In general, site owners can expect to pay around $4,600 to $6,900 per port (not including any probably more cost effective than you think. A 50 ...",
+            "source_info_link": "https://www.facebook.com/groups/IEVOA/posts/2518130531761553/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CqwBL2dvdG8_dXJsPUNBRVNkUUhyT3pBVmNsNVJLTDA0QjlfT3NhMi1NQXRCMXFfWmREZ193ZXV0dktIS1lsaC1pTWJmWlFrLW5XWEJpQXpVNTdjT3JvUXpTRVRfVkQ5TWNHNzlVbHQxUVlzaHhWVkloQmVDTlVTaG81UVVSUWp3Qy1CQWpocHBBbWFHakhYTDN5UFJlQktlWW1WQ3J1T21SbUNITFpxQXd2RFZUQRIEGgIIABrdBhIAGgAiACoAMgYIAhICdXM6AEIECAEQAEoAWgByAHoAgkC5BggAEAAYACAAKhgKBWZsZWV0FQAAAAAaCml2O3A7ZmxlZXQqIwoFZGVwb3QVAAAAABoJd2FyZWhvdXNlGgppdjtwO2RlcG90Kh4KCGNoYXJnaW5nFWZJT0AaDWl2O3A7Y2hhcmdpbmcqRgoMaW5zdGFsbGF0aW9uFZdiwj8aB2luc3RhbGwaDWluc3RhbGxhdGlvbnMaB3JlcGxhY2UaEGluc3RhbGxhdGlvbmNvc3QqYAoEY29zdBUmITdAGgZjaGFyZ2UaBmNvc3RseRoFY29zdHMaBXByaWNlGgZwcmljZXMaB3ByaWNpbmcaBHJhdGUaBXJhdGVzGgV1c2FnZRoQaW5zdGFsbGF0aW9uY29zdCpDCghlbGVjdHJpYxUpq6hAGgtlbGVjdHJpY2FscxoKZWxlY3Ryb25pYxoCZXYaA2V2cxoQZWxlY3RyaWN2ZWhpY2xlcyo-Cgh2ZWhpY2xlcxU0aZY_GgNjYXIaBGNhcnMaAmV2GgNldnMaB3ZlaGljbGUaEGVsZWN0cmljdmVoaWNsZXMyrAEvZ290bz91cmw9Q0FFU2RRSHJPekFWY2w1UktMMDRCOV9Pc2EyLU1BdEIxcV9aZERnX3dldXR2S0hLWWxoLWlNYmZaUWstbldYQmlBelU1N2NPcm9RelNFVF9WRDlNY0c3OVVsdDFRWXNoeFZWSWhCZUNOVVNobzVRVVJRandDLUJBamhwcEFtYUdqSFhMM3lQUmVCS2VZbVZDcnVPbVJtQ0hMWnFBd3ZEVlRBOlBXaGF0IGFyZSB0aGUgPGI-Y29zdHM8L2I-IGFuZCBiZW5lZml0cyBvZiBpbnN0YWxsaW5nIDxiPmVsZWN0cmljIHZlaGljbGU8L2I-IC4uLkKfAUluIGdlbmVyYWwsIHNpdGUgb3duZXJzIGNhbiBleHBlY3QgdG8gcGF5IDxiPmFyb3VuZCAkNCw2MDAgdG8gJDYsOTAwIHBlciBwb3J0PC9iPiAobm90IGluY2x1ZGluZyBhbnkgcHJvYmFibHkgbW9yZSBjb3N0IGVmZmVjdGl2ZSB0aGFuIHlvdSB0aGluay4gQSA1MCZuYnNwOy4uLiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CqwBL2dvdG8_dXJsPUNBRVNkUUhyT3pBVmNsNVJLTDA0QjlfT3NhMi1NQXRCMXFfWmREZ193ZXV0dktIS1lsaC1pTWJmWlFrLW5XWEJpQXpVNTdjT3JvUXpTRVRfVkQ5TWNHNzlVbHQxUVlzaHhWVkloQmVDTlVTaG81UVVSUWp3Qy1CQWpocHBBbWFHakhYTDN5UFJlQktlWW1WQ3J1T21SbUNITFpxQXd2RFZUQRIEGgIIABrdBhIAGgAiACoAMgYIAhICdXM6AEIECAEQAEoAWgByAHoAgkC5BggAEAAYACAAKhgKBWZsZWV0FQAAAAAaCml2O3A7ZmxlZXQqIwoFZGVwb3QVAAAAABoJd2FyZWhvdXNlGgppdjtwO2RlcG90Kh4KCGNoYXJnaW5nFWZJT0AaDWl2O3A7Y2hhcmdpbmcqRgoMaW5zdGFsbGF0aW9uFZdiwj8aB2luc3RhbGwaDWluc3RhbGxhdGlvbnMaB3JlcGxhY2UaEGluc3RhbGxhdGlvbmNvc3QqYAoEY29zdBUmITdAGgZjaGFyZ2UaBmNvc3RseRoFY29zdHMaBXByaWNlGgZwcmljZXMaB3ByaWNpbmcaBHJhdGUaBXJhdGVzGgV1c2FnZRoQaW5zdGFsbGF0aW9uY29zdCpDCghlbGVjdHJpYxUpq6hAGgtlbGVjdHJpY2FscxoKZWxlY3Ryb25pYxoCZXYaA2V2cxoQZWxlY3RyaWN2ZWhpY2xlcyo-Cgh2ZWhpY2xlcxU0aZY_GgNjYXIaBGNhcnMaAmV2GgNldnMaB3ZlaGljbGUaEGVsZWN0cmljdmVoaWNsZXMyrAEvZ290bz91cmw9Q0FFU2RRSHJPekFWY2w1UktMMDRCOV9Pc2EyLU1BdEIxcV9aZERnX3dldXR2S0hLWWxoLWlNYmZaUWstbldYQmlBelU1N2NPcm9RelNFVF9WRDlNY0c3OVVsdDFRWXNoeFZWSWhCZUNOVVNobzVRVVJRandDLUJBamhwcEFtYUdqSFhMM3lQUmVCS2VZbVZDcnVPbVJtQ0hMWnFBd3ZEVlRBOlBXaGF0IGFyZSB0aGUgPGI-Y29zdHM8L2I-IGFuZCBiZW5lZml0cyBvZiBpbnN0YWxsaW5nIDxiPmVsZWN0cmljIHZlaGljbGU8L2I-IC4uLkKfAUluIGdlbmVyYWwsIHNpdGUgb3duZXJzIGNhbiBleHBlY3QgdG8gcGF5IDxiPmFyb3VuZCAkNCw2MDAgdG8gJDYsOTAwIHBlciBwb3J0PC9iPiAobm90IGluY2x1ZGluZyBhbnkgcHJvYmFibHkgbW9yZSBjb3N0IGVmZmVjdGl2ZSB0aGFuIHlvdSB0aGluay4gQSA1MCZuYnNwOy4uLiICEAFIAFgAaAA",
+        "source": "Facebook · Irish EV Association"
+      },
+      {
+        "position": 5,
+        "title": "EV Charging for Commercial Fleet: Costs, Setup, and ...",
+        "link": "https://www.facebook.com/fb-answers/ev-charging-for-commercial-fleet/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESgAEB6zswFXUioKNsfQhCPZHRWSmmxm4DynYEzRMny8S_96mDWtekyM_CenYdx4978NNSSSptsv8CC6C0di8W5cJTZK7tarjrl54_EVsYCzhZHEmmbEeb4d5u_OfgEr1ESkesQ49wikA1MdRwEAhEKhBvekZJvmJHa-mYuGbYjtW0vQ&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQFnoECCIQAQ&uoh=1",
+        "displayed_link": "https://www.facebook.com › fb-answers › ev-charging-f...",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png",
+        "snippet": "Charging Hardware and Installation Options · Price: $550 each OBO ($900 for both) retail price goes for $1,000/ · We're proud to have recently completed a ...",
+        "snippet_highlighted_words": [
+          "550 each OBO"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Charging Hardware and Installation Options · Price: $550 each OBO ($900 for both) retail price goes for $1,000/ · We're proud to have recently completed a ...",
+            "source_info_link": "https://www.facebook.com/fb-answers/ev-charging-for-commercial-fleet/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CrYBL2dvdG8_dXJsPUNBRVNmUUhyT3pBVkFscjcyV0FpX3hnNG43SmRlZVJzeTFaMmRhVTRyS21fYmlHMXJnY3lDU3VpR3FvSnhPdU1xdFhxSENnV1VEWklUWGUxNTl4MjNIT0xyaDY2b1RlcldvTWlMT01xekJTTGhpTHcyREQ2Z0dHWXF0Q0NyN0FGWVkxRDdsMVpObmhBb2tGbUxFcEVLRDBEdUpzaGdvbld6S1lmMXhnWFU2SEkSBBoCCAAahgcSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJA4gYIABAAGAAgACoYCgVmbGVldBW27pxAGgppdjtwO2ZsZWV0KiMKBWRlcG90FQAAAAAaCXdhcmVob3VzZRoKaXY7cDtkZXBvdCoeCghjaGFyZ2luZxXXX9dAGg1pdjtwO2NoYXJnaW5nKkYKDGluc3RhbGxhdGlvbhVRFZc_GgdpbnN0YWxsGg1pbnN0YWxsYXRpb25zGgdyZXBsYWNlGhBpbnN0YWxsYXRpb25jb3N0KmAKBGNvc3QVsdCYPxoGY2hhcmdlGgZjb3N0bHkaBWNvc3RzGgVwcmljZRoGcHJpY2VzGgdwcmljaW5nGgRyYXRlGgVyYXRlcxoFdXNhZ2UaEGluc3RhbGxhdGlvbmNvc3QqQwoIZWxlY3RyaWMV1rdQQBoLZWxlY3RyaWNhbHMaCmVsZWN0cm9uaWMaAmV2GgNldnMaEGVsZWN0cmljdmVoaWNsZXMqPgoIdmVoaWNsZXMV5bEFQBoDY2FyGgRjYXJzGgJldhoDZXZzGgd2ZWhpY2xlGhBlbGVjdHJpY3ZlaGljbGVzMrYBL2dvdG8_dXJsPUNBRVNmUUhyT3pBVkFscjcyV0FpX3hnNG43SmRlZVJzeTFaMmRhVTRyS21fYmlHMXJnY3lDU3VpR3FvSnhPdU1xdFhxSENnV1VEWklUWGUxNTl4MjNIT0xyaDY2b1RlcldvTWlMT01xekJTTGhpTHcyREQ2Z0dHWXF0Q0NyN0FGWVkxRDdsMVpObmhBb2tGbUxFcEVLRDBEdUpzaGdvbld6S1lmMXhnWFU2SEk6UjxiPkVWIENoYXJnaW5nPC9iPiBmb3IgQ29tbWVyY2lhbCA8Yj5GbGVldDwvYj46IDxiPkNvc3RzPC9iPiwgU2V0dXAsIGFuZCBTb2x1dGlvbnNCvAFDaGFyZ2luZyBIYXJkd2FyZSBhbmQgSW5zdGFsbGF0aW9uIE9wdGlvbnMgJm1pZGRvdDsgUHJpY2U6ICQ8Yj41NTAgZWFjaCBPQk88L2I-ICgkOTAwIGZvciBib3RoKSByZXRhaWwgcHJpY2UgZ29lcyBmb3IgJDEsMDAwLyAmbWlkZG90OyBXZSYjMzk7cmUgcHJvdWQgdG8gaGF2ZSByZWNlbnRseSBjb21wbGV0ZWQgYSZuYnNwOy4uLiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CrYBL2dvdG8_dXJsPUNBRVNmUUhyT3pBVkFscjcyV0FpX3hnNG43SmRlZVJzeTFaMmRhVTRyS21fYmlHMXJnY3lDU3VpR3FvSnhPdU1xdFhxSENnV1VEWklUWGUxNTl4MjNIT0xyaDY2b1RlcldvTWlMT01xekJTTGhpTHcyREQ2Z0dHWXF0Q0NyN0FGWVkxRDdsMVpObmhBb2tGbUxFcEVLRDBEdUpzaGdvbld6S1lmMXhnWFU2SEkSBBoCCAAahgcSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJA4gYIABAAGAAgACoYCgVmbGVldBW27pxAGgppdjtwO2ZsZWV0KiMKBWRlcG90FQAAAAAaCXdhcmVob3VzZRoKaXY7cDtkZXBvdCoeCghjaGFyZ2luZxXXX9dAGg1pdjtwO2NoYXJnaW5nKkYKDGluc3RhbGxhdGlvbhVRFZc_GgdpbnN0YWxsGg1pbnN0YWxsYXRpb25zGgdyZXBsYWNlGhBpbnN0YWxsYXRpb25jb3N0KmAKBGNvc3QVsdCYPxoGY2hhcmdlGgZjb3N0bHkaBWNvc3RzGgVwcmljZRoGcHJpY2VzGgdwcmljaW5nGgRyYXRlGgVyYXRlcxoFdXNhZ2UaEGluc3RhbGxhdGlvbmNvc3QqQwoIZWxlY3RyaWMV1rdQQBoLZWxlY3RyaWNhbHMaCmVsZWN0cm9uaWMaAmV2GgNldnMaEGVsZWN0cmljdmVoaWNsZXMqPgoIdmVoaWNsZXMV5bEFQBoDY2FyGgRjYXJzGgJldhoDZXZzGgd2ZWhpY2xlGhBlbGVjdHJpY3ZlaGljbGVzMrYBL2dvdG8_dXJsPUNBRVNmUUhyT3pBVkFscjcyV0FpX3hnNG43SmRlZVJzeTFaMmRhVTRyS21fYmlHMXJnY3lDU3VpR3FvSnhPdU1xdFhxSENnV1VEWklUWGUxNTl4MjNIT0xyaDY2b1RlcldvTWlMT01xekJTTGhpTHcyREQ2Z0dHWXF0Q0NyN0FGWVkxRDdsMVpObmhBb2tGbUxFcEVLRDBEdUpzaGdvbld6S1lmMXhnWFU2SEk6UjxiPkVWIENoYXJnaW5nPC9iPiBmb3IgQ29tbWVyY2lhbCA8Yj5GbGVldDwvYj46IDxiPkNvc3RzPC9iPiwgU2V0dXAsIGFuZCBTb2x1dGlvbnNCvAFDaGFyZ2luZyBIYXJkd2FyZSBhbmQgSW5zdGFsbGF0aW9uIE9wdGlvbnMgJm1pZGRvdDsgUHJpY2U6ICQ8Yj41NTAgZWFjaCBPQk88L2I-ICgkOTAwIGZvciBib3RoKSByZXRhaWwgcHJpY2UgZ29lcyBmb3IgJDEsMDAwLyAmbWlkZG90OyBXZSYjMzk7cmUgcHJvdWQgdG8gaGF2ZSByZWNlbnRseSBjb21wbGV0ZWQgYSZuYnNwOy4uLiICEAFIAFgAaAA",
+        "source": "Facebook",
+        "read_more_link": "https://www.facebook.com/fb-answers/ev-charging-for-commercial-fleet/#:~:text=Charging%20Hardware%20and%20Installation%20Options&text=Delta%20Trailers&text=Chargedev"
+      },
+      {
+        "position": 6,
+        "title": "Fleet Electric Vehicle Infrastructure Costs",
+        "link": "https://driveelectricmn.org/wp-content/uploads/2025/09/Fleet-Electric-Vehicle-Infrastructure.pdf",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESmwEB6zswFStFwXKZ1PhN5gi2oHO85e2G-lBY0Iv4MZ4CpO6e2dG7elrhkm1cvPQ39tH9IZfslHMDQsS8r9sY7fSeNULpsCNooFJqd0hxhwgK_SkJ1U7tLodHesItDtxn1tRKJl6eMAQsy7N38XT-PgPoUvC9Q3eoA3zp3ZwNPY_fHV0R-saib7qbRRF0I10SiTK5yMiFg940Aq-Wew&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQFnoECCMQAQ&uoh=1",
+        "displayed_link": "https://driveelectricmn.org › uploads › 2025/09 › F...",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAATlBMVEVHcEwAU5AAYpgAZ5sSeKU_jLFKkbUAap2gw9Xo8fX___-OzuBZmbrS4-x4qsQQe6e0z97z-fsAapwAbp83jrMigaqMt84AcqEAdKIAYJfvnsixAAAAFXRSTlMAElKe2Pj_J____wj____9_____z4W4UQ5AAABtklEQVR4AWRT68LrIAhrZ3XK0V7gqOv7v-hHcPfxi1FIQmTTK-aLW3wIfnGXefqNq_MxkUWK3n23_HO5EJW45rxGZNl9fJ-3nY51Y0Ewb-tB-_IG8r8maiz9do8u3Cht1-d8PSjz7SPOoB3znX9LVOXzu6wQu4wGt1NgZrl1NhHIKiF2Z_tlKi3upXEue2wx7rv0QBYZJK6M3bP4aGlsKvdAdhSnCgMV5GdXCkOurBoaskZ-ni6RrBywJCcg8CPbKF4ml8oJiB1lG0zyWOMsyU1eJ2wnIPQnGFSUM9KiDatskJQxyACLI7NJPwUd4P3Bwc0EjwYvmYI2ZJGMMlv5wSEpMRqM4saHlaHBOBhZEwHFAkqOg0PW5Idg_bZ1gUhdU_vDKHNpMMBkJdafycGoTQeS7dGp3sFYGboZNQeIkGbltXCvtkeg2iFhxmMdrL6QOddkLOKjErM91jRnajzKmbTTwGJqOLs8Pw4GG-F5-WE3wRwcDGI5qA6716fd5azPk7OjDeeuCBtezHzNQX89D_-qHU2tAIMGa2t8nv3AWHZKOsaCANjnHwdK_4Yr6yEMwZF5CWZ_ACnyLiOjCeoLAAAAAElFTkSuQmCC.png",
+        "snippet": "It can cost at least $1,000 to purchase and install a Level 2 EV charger and at least $30,000 for a direct current fast charger (DCFC).1. The most common ...",
+        "snippet_highlighted_words": [
+          "at least $1,000 to purchase and install a Level 2 EV charger"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "It can cost at least $1,000 to purchase and install a Level 2 EV charger and at least $30,000 for a direct current fast charger (DCFC).1. The most common ...",
+            "source_info_link": "https://driveelectricmn.org/wp-content/uploads/2025/09/Fleet-Electric-Vehicle-Infrastructure.pdf",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAATlBMVEVHcEwAU5AAYpgAZ5sSeKU_jLFKkbUAap2gw9Xo8fX___-OzuBZmbrS4-x4qsQQe6e0z97z-fsAapwAbp83jrMigaqMt84AcqEAdKIAYJfvnsixAAAAFXRSTlMAElKe2Pj_J____wj____9_____z4W4UQ5AAABtklEQVR4AWRT68LrIAhrZ3XK0V7gqOv7v-hHcPfxi1FIQmTTK-aLW3wIfnGXefqNq_MxkUWK3n23_HO5EJW45rxGZNl9fJ-3nY51Y0Ewb-tB-_IG8r8maiz9do8u3Cht1-d8PSjz7SPOoB3znX9LVOXzu6wQu4wGt1NgZrl1NhHIKiF2Z_tlKi3upXEue2wx7rv0QBYZJK6M3bP4aGlsKvdAdhSnCgMV5GdXCkOurBoaskZ-ni6RrBywJCcg8CPbKF4ml8oJiB1lG0zyWOMsyU1eJ2wnIPQnGFSUM9KiDatskJQxyACLI7NJPwUd4P3Bwc0EjwYvmYI2ZJGMMlv5wSEpMRqM4saHlaHBOBhZEwHFAkqOg0PW5Idg_bZ1gUhdU_vDKHNpMMBkJdafycGoTQeS7dGp3sFYGboZNQeIkGbltXCvtkeg2iFhxmMdrL6QOddkLOKjErM91jRnajzKmbTTwGJqOLs8Pw4GG-F5-WE3wRwcDGI5qA6716fd5azPk7OjDeeuCBtezHzNQX89D_-qHU2tAIMGa2t8nv3AWHZKOsaCANjnHwdK_4Yr6yEMwZF5CWZ_ACnyLiOjCeoLAAAAAElFTkSuQmCC.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CtwBL2dvdG8_dXJsPUNBRVNtQUVCNnpzd0ZiYjBvSWNkY09xX1BXSkRjSUpFUG9HRmx2eEo5MFV6dzNfM2NUYnk1V0p0OXczMklSeERveG1yRHZ3b3pFSjRuT2JxZTJYMGlVSlVDWm5PQU1FUnVvbVU5MExQYzBmSkN5VFVqYnRtSVpMOWt3YVM4N0pBTjFJNl9lcEh5M1pBdlBSbVVScGh0RVZjUE1JeUwtMlU1TU55Vkktc1dBcElmSWtjUUM2ZzE1YUEyd09wMDNjaUZ4ZnR4WnNZVS1IdU5wV3EzdxIEGgIIABqABxIAGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkDcBggAEAAYACAAKhgKBWZsZWV0FS5LcEAaCml2O3A7ZmxlZXQqIwoFZGVwb3QVAAAAABoJd2FyZWhvdXNlGgppdjtwO2RlcG90Kh4KCGNoYXJnaW5nFTDPZEAaDWl2O3A7Y2hhcmdpbmcqRgoMaW5zdGFsbGF0aW9uFTr-Sz8aB2luc3RhbGwaDWluc3RhbGxhdGlvbnMaB3JlcGxhY2UaEGluc3RhbGxhdGlvbmNvc3QqYAoEY29zdBU_USRAGgZjaGFyZ2UaBmNvc3RseRoFY29zdHMaBXByaWNlGgZwcmljZXMaB3ByaWNpbmcaBHJhdGUaBXJhdGVzGgV1c2FnZRoQaW5zdGFsbGF0aW9uY29zdCpDCghlbGVjdHJpYxW6rsRAGgtlbGVjdHJpY2FscxoKZWxlY3Ryb25pYxoCZXYaA2V2cxoQZWxlY3RyaWN2ZWhpY2xlcyo-Cgh2ZWhpY2xlcxUGY74_GgNjYXIaBGNhcnMaAmV2GgNldnMaB3ZlaGljbGUaEGVsZWN0cmljdmVoaWNsZXMy3AEvZ290bz91cmw9Q0FFU21BRUI2enN3RmJiMG9JY2RjT3FfUFdKRGNJSkVQb0dGbHZ4SjkwVXp3M18zY1RieTVXSnQ5dzMySVJ4RG94bXJEdndvekVKNG5PYnFlMlgwaVVKVUNabk9BTUVSdW9tVTkwTFBjMGZKQ3lUVWpidG1JWkw5a3dhUzg3SkFOMUk2X2VwSHkzWkF2UFJtVVJwaHRFVmNQTUl5TC0yVTVNTnlWSS1zV0FwSWZJa2NRQzZnMTVhQTJ3T3AwM2NpRnhmdHhac1lVLUh1TnBXcTN3Ojk8Yj5GbGVldCBFbGVjdHJpYyBWZWhpY2xlPC9iPiBJbmZyYXN0cnVjdHVyZSA8Yj5Db3N0czwvYj5CqQFJdCBjYW4gY29zdCA8Yj5hdCBsZWFzdCAkMSwwMDAgdG8gcHVyY2hhc2UgYW5kIGluc3RhbGwgYSBMZXZlbCAyIEVWIGNoYXJnZXI8L2I-IGFuZCBhdCBsZWFzdCAkMzAsMDAwIGZvciBhIGRpcmVjdCBjdXJyZW50IGZhc3QgY2hhcmdlciAoRENGQykuMS4gVGhlIG1vc3QgY29tbW9uJm5ic3A7Li4uIgIQAUgAWABoAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CtwBL2dvdG8_dXJsPUNBRVNtQUVCNnpzd0ZiYjBvSWNkY09xX1BXSkRjSUpFUG9HRmx2eEo5MFV6dzNfM2NUYnk1V0p0OXczMklSeERveG1yRHZ3b3pFSjRuT2JxZTJYMGlVSlVDWm5PQU1FUnVvbVU5MExQYzBmSkN5VFVqYnRtSVpMOWt3YVM4N0pBTjFJNl9lcEh5M1pBdlBSbVVScGh0RVZjUE1JeUwtMlU1TU55Vkktc1dBcElmSWtjUUM2ZzE1YUEyd09wMDNjaUZ4ZnR4WnNZVS1IdU5wV3EzdxIEGgIIABqABxIAGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkDcBggAEAAYACAAKhgKBWZsZWV0FS5LcEAaCml2O3A7ZmxlZXQqIwoFZGVwb3QVAAAAABoJd2FyZWhvdXNlGgppdjtwO2RlcG90Kh4KCGNoYXJnaW5nFTDPZEAaDWl2O3A7Y2hhcmdpbmcqRgoMaW5zdGFsbGF0aW9uFTr-Sz8aB2luc3RhbGwaDWluc3RhbGxhdGlvbnMaB3JlcGxhY2UaEGluc3RhbGxhdGlvbmNvc3QqYAoEY29zdBU_USRAGgZjaGFyZ2UaBmNvc3RseRoFY29zdHMaBXByaWNlGgZwcmljZXMaB3ByaWNpbmcaBHJhdGUaBXJhdGVzGgV1c2FnZRoQaW5zdGFsbGF0aW9uY29zdCpDCghlbGVjdHJpYxW6rsRAGgtlbGVjdHJpY2FscxoKZWxlY3Ryb25pYxoCZXYaA2V2cxoQZWxlY3RyaWN2ZWhpY2xlcyo-Cgh2ZWhpY2xlcxUGY74_GgNjYXIaBGNhcnMaAmV2GgNldnMaB3ZlaGljbGUaEGVsZWN0cmljdmVoaWNsZXMy3AEvZ290bz91cmw9Q0FFU21BRUI2enN3RmJiMG9JY2RjT3FfUFdKRGNJSkVQb0dGbHZ4SjkwVXp3M18zY1RieTVXSnQ5dzMySVJ4RG94bXJEdndvekVKNG5PYnFlMlgwaVVKVUNabk9BTUVSdW9tVTkwTFBjMGZKQ3lUVWpidG1JWkw5a3dhUzg3SkFOMUk2X2VwSHkzWkF2UFJtVVJwaHRFVmNQTUl5TC0yVTVNTnlWSS1zV0FwSWZJa2NRQzZnMTVhQTJ3T3AwM2NpRnhmdHhac1lVLUh1TnBXcTN3Ojk8Yj5GbGVldCBFbGVjdHJpYyBWZWhpY2xlPC9iPiBJbmZyYXN0cnVjdHVyZSA8Yj5Db3N0czwvYj5CqQFJdCBjYW4gY29zdCA8Yj5hdCBsZWFzdCAkMSwwMDAgdG8gcHVyY2hhc2UgYW5kIGluc3RhbGwgYSBMZXZlbCAyIEVWIGNoYXJnZXI8L2I-IGFuZCBhdCBsZWFzdCAkMzAsMDAwIGZvciBhIGRpcmVjdCBjdXJyZW50IGZhc3QgY2hhcmdlciAoRENGQykuMS4gVGhlIG1vc3QgY29tbW9uJm5ic3A7Li4uIgIQAUgAWABoAA",
+        "source": "Drive Electric Minnesota"
+      },
+      {
+        "position": 7,
+        "title": "Understanding the Costs of EV Charger Installation in ...",
+        "link": "https://www.government-fleet.com/articles/understanding-the-costs-of-ev-charger-installation-in-the-public-sector",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESrAEB6zswFUjZ2S67PMMqMbltBlaj-4P-EmpCKkyV_10c9d8VxWnFXlaU7EP1faW1sbYw4w6j6GVM4V4EVsA3pZNPCBJSOJ0hklIMv-W8_-T9w3T0I4iHrVNbkUNmJDWD5YPJnFZpdHGsT_SqB3eJmWRxOzHx8Thym7csyfedYQo7rlfpnfjG2I4yBHohMZZlpKMa7tCrc9tWqmc-IHVRL4xWgxAlV3popw74a9MY&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQFnoECCUQAQ&uoh=1",
+        "displayed_link": "https://www.government-fleet.com › articles › understan...",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAASFBMVEV3ERN3ERN5CwV7AQBrJTZMSnI2W44iZZ4Maah3ERReN1MHb68WbKlolsAAZaa4zN8AX6Px9vk9fbL___-Ssc_d5_AecKtKhbcudtT3AAAACnRSTlPZ___________ZD4A1KAAAASpJREFUeAFtkweShDAMBL2OOiwEOP7_p-ckNnZlN54qDbIQj4FU2lgH4KzRSs6zv-XU5jwi7Dug925T83RIqZtq0HEQNrzTkqXaPA7O6zpxsqkpJTsIMQbAgd9kl1Ivh5BiTIQL3aVyuDhzjJlz0amHuEMRSmwUwDtYPC9SS33NdUpoX6gBUCh3makAUKN4LQyk-JMERlikcH2rKxBa4RDhPD7dcQKiE3OIj-g0BxI4bX2JvirhlGsSoMwuE6xZhEUuneVdvhVm3azxps6b3rQSuB6GS_Ka6zvzOO6fcPlOreJn6ft57qN8Lv6h3ErNhRCp5JXrVN8E7XvqLGXW1XN9_9lzhahF4qJFE6_JsDUQ3lConhes2bmazOtqNmRfavYvS_32HBDfnsM_sk4j_m0IvKQAAAAASUVORK5CYII.png",
+        "date": "Aug 14, 2024",
+        "snippet": "The average cost of a Level 2 charger, which is frequently seen in public areas, is between $500 and $2,500. DC fast chargers can run you ...",
+        "snippet_highlighted_words": [
+          "between $500 and $2,500"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "The average cost of a Level 2 charger, which is frequently seen in public areas, is between $500 and $2,500. DC fast chargers can run you ...",
+            "source_info_link": "https://www.government-fleet.com/articles/understanding-the-costs-of-ev-charger-installation-in-the-public-sector",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAASFBMVEV3ERN3ERN5CwV7AQBrJTZMSnI2W44iZZ4Maah3ERReN1MHb68WbKlolsAAZaa4zN8AX6Px9vk9fbL___-Ssc_d5_AecKtKhbcudtT3AAAACnRSTlPZ___________ZD4A1KAAAASpJREFUeAFtkweShDAMBL2OOiwEOP7_p-ckNnZlN54qDbIQj4FU2lgH4KzRSs6zv-XU5jwi7Dug925T83RIqZtq0HEQNrzTkqXaPA7O6zpxsqkpJTsIMQbAgd9kl1Ivh5BiTIQL3aVyuDhzjJlz0amHuEMRSmwUwDtYPC9SS33NdUpoX6gBUCh3makAUKN4LQyk-JMERlikcH2rKxBa4RDhPD7dcQKiE3OIj-g0BxI4bX2JvirhlGsSoMwuE6xZhEUuneVdvhVm3azxps6b3rQSuB6GS_Ka6zvzOO6fcPlOreJn6ft57qN8Lv6h3ErNhRCp5JXrVN8E7XvqLGXW1XN9_9lzhahF4qJFE6_JsDUQ3lConhes2bmazOtqNmRfavYvS_32HBDfnsM_sk4j_m0IvKQAAAAASUVORK5CYII.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CvIBL2dvdG8_dXJsPUNBRVNxUUVCNnpzd0ZlWFpUOGV3M0g5MU5TMU1fanJoUGhac25NTVphMXJSMF9CdzhxSDZBR2c1X1Nfc1RtLS16RHBxTVdRSURxM1k5WndldmNRc2Y5aGxIZUE4M3Rwc1FCSmlLTF9sTE9QMU1HYnQwWUVabzNyTmZNOG8taUZSZXZ4QkF5b2U5LTZPLWFLV0JCYzM3THN2WUJUUGhLTFRqU3pUTDlpS0ppQVpUSHlNT1FPRnFOSXhUVHBlelZVd19LdGd2czJaYWdaS0lxNnhuQXNjT2ltVkJTRlBFallwZnBEWTlhczMSBBoCCAAanwcSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJA-wYIABAAGAAgACoYCgVmbGVldBVJG3tAGgppdjtwO2ZsZWV0KiMKBWRlcG90FQAAAAAaCXdhcmVob3VzZRoKaXY7cDtkZXBvdCoeCghjaGFyZ2luZxUFnBhAGg1pdjtwO2NoYXJnaW5nKkYKDGluc3RhbGxhdGlvbhWOzq5AGgdpbnN0YWxsGg1pbnN0YWxsYXRpb25zGgdyZXBsYWNlGhBpbnN0YWxsYXRpb25jb3N0KmAKBGNvc3QVcUw9QBoGY2hhcmdlGgZjb3N0bHkaBWNvc3RzGgVwcmljZRoGcHJpY2VzGgdwcmljaW5nGgRyYXRlGgVyYXRlcxoFdXNhZ2UaEGluc3RhbGxhdGlvbmNvc3QqQwoIZWxlY3RyaWMVFsEAQBoLZWxlY3RyaWNhbHMaCmVsZWN0cm9uaWMaAmV2GgNldnMaEGVsZWN0cmljdmVoaWNsZXMqPgoIdmVoaWNsZXMVg1uXPxoDY2FyGgRjYXJzGgJldhoDZXZzGgd2ZWhpY2xlGhBlbGVjdHJpY3ZlaGljbGVzMvIBL2dvdG8_dXJsPUNBRVNxUUVCNnpzd0ZlWFpUOGV3M0g5MU5TMU1fanJoUGhac25NTVphMXJSMF9CdzhxSDZBR2c1X1Nfc1RtLS16RHBxTVdRSURxM1k5WndldmNRc2Y5aGxIZUE4M3Rwc1FCSmlLTF9sTE9QMU1HYnQwWUVabzNyTmZNOG8taUZSZXZ4QkF5b2U5LTZPLWFLV0JCYzM3THN2WUJUUGhLTFRqU3pUTDlpS0ppQVpUSHlNT1FPRnFOSXhUVHBlelZVd19LdGd2czJaYWdaS0lxNnhuQXNjT2ltVkJTRlBFallwZnBEWTlhczM6UlVuZGVyc3RhbmRpbmcgdGhlIDxiPkNvc3RzPC9iPiBvZiA8Yj5FVjwvYj4gQ2hhcmdlciA8Yj5JbnN0YWxsYXRpb248L2I-IGluIHRoZSAuLi5CmQFUaGUgYXZlcmFnZSBjb3N0IG9mIGEgTGV2ZWwgMiBjaGFyZ2VyLCB3aGljaCBpcyBmcmVxdWVudGx5IHNlZW4gaW4gcHVibGljIGFyZWFzLCBpcyA8Yj5iZXR3ZWVuICQ1MDAgYW5kICQyLDUwMDwvYj4uIERDIGZhc3QgY2hhcmdlcnMgY2FuIHJ1biB5b3UmbmJzcDsuLi4iAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CvIBL2dvdG8_dXJsPUNBRVNxUUVCNnpzd0ZlWFpUOGV3M0g5MU5TMU1fanJoUGhac25NTVphMXJSMF9CdzhxSDZBR2c1X1Nfc1RtLS16RHBxTVdRSURxM1k5WndldmNRc2Y5aGxIZUE4M3Rwc1FCSmlLTF9sTE9QMU1HYnQwWUVabzNyTmZNOG8taUZSZXZ4QkF5b2U5LTZPLWFLV0JCYzM3THN2WUJUUGhLTFRqU3pUTDlpS0ppQVpUSHlNT1FPRnFOSXhUVHBlelZVd19LdGd2czJaYWdaS0lxNnhuQXNjT2ltVkJTRlBFallwZnBEWTlhczMSBBoCCAAanwcSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJA-wYIABAAGAAgACoYCgVmbGVldBVJG3tAGgppdjtwO2ZsZWV0KiMKBWRlcG90FQAAAAAaCXdhcmVob3VzZRoKaXY7cDtkZXBvdCoeCghjaGFyZ2luZxUFnBhAGg1pdjtwO2NoYXJnaW5nKkYKDGluc3RhbGxhdGlvbhWOzq5AGgdpbnN0YWxsGg1pbnN0YWxsYXRpb25zGgdyZXBsYWNlGhBpbnN0YWxsYXRpb25jb3N0KmAKBGNvc3QVcUw9QBoGY2hhcmdlGgZjb3N0bHkaBWNvc3RzGgVwcmljZRoGcHJpY2VzGgdwcmljaW5nGgRyYXRlGgVyYXRlcxoFdXNhZ2UaEGluc3RhbGxhdGlvbmNvc3QqQwoIZWxlY3RyaWMVFsEAQBoLZWxlY3RyaWNhbHMaCmVsZWN0cm9uaWMaAmV2GgNldnMaEGVsZWN0cmljdmVoaWNsZXMqPgoIdmVoaWNsZXMVg1uXPxoDY2FyGgRjYXJzGgJldhoDZXZzGgd2ZWhpY2xlGhBlbGVjdHJpY3ZlaGljbGVzMvIBL2dvdG8_dXJsPUNBRVNxUUVCNnpzd0ZlWFpUOGV3M0g5MU5TMU1fanJoUGhac25NTVphMXJSMF9CdzhxSDZBR2c1X1Nfc1RtLS16RHBxTVdRSURxM1k5WndldmNRc2Y5aGxIZUE4M3Rwc1FCSmlLTF9sTE9QMU1HYnQwWUVabzNyTmZNOG8taUZSZXZ4QkF5b2U5LTZPLWFLV0JCYzM3THN2WUJUUGhLTFRqU3pUTDlpS0ppQVpUSHlNT1FPRnFOSXhUVHBlelZVd19LdGd2czJaYWdaS0lxNnhuQXNjT2ltVkJTRlBFallwZnBEWTlhczM6UlVuZGVyc3RhbmRpbmcgdGhlIDxiPkNvc3RzPC9iPiBvZiA8Yj5FVjwvYj4gQ2hhcmdlciA8Yj5JbnN0YWxsYXRpb248L2I-IGluIHRoZSAuLi5CmQFUaGUgYXZlcmFnZSBjb3N0IG9mIGEgTGV2ZWwgMiBjaGFyZ2VyLCB3aGljaCBpcyBmcmVxdWVudGx5IHNlZW4gaW4gcHVibGljIGFyZWFzLCBpcyA8Yj5iZXR3ZWVuICQ1MDAgYW5kICQyLDUwMDwvYj4uIERDIGZhc3QgY2hhcmdlcnMgY2FuIHJ1biB5b3UmbmJzcDsuLi4iAhABSABYAGgA",
+        "source": "Government Fleet",
+        "read_more_link": "https://www.government-fleet.com/articles/understanding-the-costs-of-ev-charger-installation-in-the-public-sector#:~:text=The%20average%20cost%20of%20a,anywhere%20from%20%2410%2C000%20to%20%2440%2C000."
+      },
+      {
+        "position": 8,
+        "title": "Fleet & Depot EV Charging UK: Costs, Power & Grants (2026)",
+        "link": "https://commercialevcharger.co.uk/fleet-depot-ev-charging/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESdQHrOzAVFggRe1pdEuiQsbsEz_7L0ElMGXqS7jHAtWx6fWZje0pTF8YS5aABnkx0f29nMrMd31cR6ZBzfO__F_YW_o8dqJkfYsInrTYSEFLflnM8TLtlYbbJ-Y6ODmc-BSV-y7HL4O73Sx3GZ5c35x7Y8S1sVQ&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQFnoECCoQAQ&uoh=1",
+        "displayed_link": "https://commercialevcharger.co.uk › fleet-depot-ev-chargi...",
+        "favicon": "https://serpapi.com/searches/6adb95330d9c522f3d5f8222/images/iiCYsoGZyAOSl9IkdL64d-n457M8IJ4jUBi3HDe9wWk.png",
+        "date": "Aug 31, 2026",
+        "snippet": "£170m multi-year programme … 70% of chargepoint and civil costs up to £1 million. Fleet charging costs can move from tens of thousands to ...",
+        "snippet_highlighted_words": [
+          "costs",
+          "Fleet charging costs"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "£170m multi-year programme … 70% of chargepoint and civil costs up to £1 million. Fleet charging costs can move from tens of thousands to ...",
+            "source_info_link": "https://commercialevcharger.co.uk/fleet-depot-ev-charging/",
+            "icon": "https://serpapi.com/searches/6adb95330d9c522f3d5f8222/images/iiCYsoGZyAOSl9IkdL64dwup3NKRVU0Y-EXhor4RNoRzaSyKHc1hlRBiXC9LBThX.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CqgBL2dvdG8_dXJsPUNBRVNjZ0hyT3pBVm5ES2Mza3dmTlRLb0Vsa2c3MHhLU0NKWm92anlaYjZFTVk2TlRqSTR4T1dsb0hzYUNjc1ZYcTVObmI3amVodzVobXBNdDg1dkQwVHI5VXRtWTYxVHh3VFE1QXNIQ0NnM1g2TjdVbTNtQTZBS2ZnTHdYTjFUeTJzUmw0S29qZ19Ha2hPYkVFYzIyNEJncDFIMkZBEgQaAggAGuUGEgAaACIAKgAyBggCEgJ1czoAQgQIARAASgBaAHIAegCCQMEGCAAQABgAIAAqGAoFZmxlZXQVGmTnQBoKaXY7cDtmbGVldCojCgVkZXBvdBVdmvdAGgl3YXJlaG91c2UaCml2O3A7ZGVwb3QqHgoIY2hhcmdpbmcVHTEHQRoNaXY7cDtjaGFyZ2luZypGCgxpbnN0YWxsYXRpb24VAAAAABoHaW5zdGFsbBoNaW5zdGFsbGF0aW9ucxoHcmVwbGFjZRoQaW5zdGFsbGF0aW9uY29zdCpgCgRjb3N0FRxyGEAaBmNoYXJnZRoGY29zdGx5GgVjb3N0cxoFcHJpY2UaBnByaWNlcxoHcHJpY2luZxoEcmF0ZRoFcmF0ZXMaBXVzYWdlGhBpbnN0YWxsYXRpb25jb3N0KkMKCGVsZWN0cmljFbzEAEAaC2VsZWN0cmljYWxzGgplbGVjdHJvbmljGgJldhoDZXZzGhBlbGVjdHJpY3ZlaGljbGVzKj4KCHZlaGljbGVzFdEXM0AaA2NhchoEY2FycxoCZXYaA2V2cxoHdmVoaWNsZRoQZWxlY3RyaWN2ZWhpY2xlczKoAS9nb3RvP3VybD1DQUVTY2dIck96QVZuREtjM2t3Zk5US29FbGtnNzB4S1NDSlpvdmp5WmI2RU1ZNk5Uakk0eE9XbG9Ic2FDY3NWWHE1Tm5iN2plaHc1aG1wTXQ4NXZEMFRyOVV0bVk2MVR4d1RRNUFzSENDZzNYNk43VW0zbUE2QUtmZ0x3WE4xVHkyc1JsNEtvamdfR2toT2JFRWMyMjRCZ3AxSDJGQTpXPGI-RmxlZXQ8L2I-ICZhbXA7IDxiPkRlcG90IEVWIENoYXJnaW5nPC9iPiBVSzogPGI-Q29zdHM8L2I-LCBQb3dlciAmYW1wOyBHcmFudHMgKDIwMjYpQqQBwqMxNzBtIG11bHRpLXllYXIgcHJvZ3JhbW1lIOKApiA3MCUgb2YgY2hhcmdlcG9pbnQgYW5kIGNpdmlsIDxiPmNvc3RzPC9iPiB1cCB0byDCozEgbWlsbGlvbi4gPGI-RmxlZXQgY2hhcmdpbmcgY29zdHM8L2I-IGNhbiBtb3ZlIGZyb20gdGVucyBvZiB0aG91c2FuZHMgdG8mbmJzcDsuLi4iAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CqgBL2dvdG8_dXJsPUNBRVNjZ0hyT3pBVm5ES2Mza3dmTlRLb0Vsa2c3MHhLU0NKWm92anlaYjZFTVk2TlRqSTR4T1dsb0hzYUNjc1ZYcTVObmI3amVodzVobXBNdDg1dkQwVHI5VXRtWTYxVHh3VFE1QXNIQ0NnM1g2TjdVbTNtQTZBS2ZnTHdYTjFUeTJzUmw0S29qZ19Ha2hPYkVFYzIyNEJncDFIMkZBEgQaAggAGuUGEgAaACIAKgAyBggCEgJ1czoAQgQIARAASgBaAHIAegCCQMEGCAAQABgAIAAqGAoFZmxlZXQVGmTnQBoKaXY7cDtmbGVldCojCgVkZXBvdBVdmvdAGgl3YXJlaG91c2UaCml2O3A7ZGVwb3QqHgoIY2hhcmdpbmcVHTEHQRoNaXY7cDtjaGFyZ2luZypGCgxpbnN0YWxsYXRpb24VAAAAABoHaW5zdGFsbBoNaW5zdGFsbGF0aW9ucxoHcmVwbGFjZRoQaW5zdGFsbGF0aW9uY29zdCpgCgRjb3N0FRxyGEAaBmNoYXJnZRoGY29zdGx5GgVjb3N0cxoFcHJpY2UaBnByaWNlcxoHcHJpY2luZxoEcmF0ZRoFcmF0ZXMaBXVzYWdlGhBpbnN0YWxsYXRpb25jb3N0KkMKCGVsZWN0cmljFbzEAEAaC2VsZWN0cmljYWxzGgplbGVjdHJvbmljGgJldhoDZXZzGhBlbGVjdHJpY3ZlaGljbGVzKj4KCHZlaGljbGVzFdEXM0AaA2NhchoEY2FycxoCZXYaA2V2cxoHdmVoaWNsZRoQZWxlY3RyaWN2ZWhpY2xlczKoAS9nb3RvP3VybD1DQUVTY2dIck96QVZuREtjM2t3Zk5US29FbGtnNzB4S1NDSlpvdmp5WmI2RU1ZNk5Uakk0eE9XbG9Ic2FDY3NWWHE1Tm5iN2plaHc1aG1wTXQ4NXZEMFRyOVV0bVk2MVR4d1RRNUFzSENDZzNYNk43VW0zbUE2QUtmZ0x3WE4xVHkyc1JsNEtvamdfR2toT2JFRWMyMjRCZ3AxSDJGQTpXPGI-RmxlZXQ8L2I-ICZhbXA7IDxiPkRlcG90IEVWIENoYXJnaW5nPC9iPiBVSzogPGI-Q29zdHM8L2I-LCBQb3dlciAmYW1wOyBHcmFudHMgKDIwMjYpQqQBwqMxNzBtIG11bHRpLXllYXIgcHJvZ3JhbW1lIOKApiA3MCUgb2YgY2hhcmdlcG9pbnQgYW5kIGNpdmlsIDxiPmNvc3RzPC9iPiB1cCB0byDCozEgbWlsbGlvbi4gPGI-RmxlZXQgY2hhcmdpbmcgY29zdHM8L2I-IGNhbiBtb3ZlIGZyb20gdGVucyBvZiB0aG91c2FuZHMgdG8mbmJzcDsuLi4iAhABSABYAGgA",
+        "source": "commercialevcharger.co.uk"
+      },
+      {
+        "position": 9,
+        "title": "Commercial EV Fleet Charging: How to Design a Reliable ...",
+        "link": "https://www.anariev.com/commercial-ev-fleet-charging-how-to-design-a-reliable-depot-charging-system/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESnwEB6zswFRcQeCMC_IcuHOPbBQrtxNmrOCMyq3n8sDnXp6DuXrZHyNdM4nvE1ULRkygHmvPVUIk0N5Im6-w-FpdDUJNVztCFBw13wEozapFlRmOj-b1EiZ__mKPxJtQdAKujHH161xfp4hgZE8JlMeWsCY-eEirNOUclmdf559APfX_8-MYj3Eag6DOW02yh3VAJskPmKHYFRZmjgdox6f8&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQFnoECCQQAQ&uoh=1",
+        "displayed_link": "https://www.anariev.com › commercial-ev-fleet-chargin...",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAllBMVEX____7_f6zzPcAcfIAb_Crx_bW5Po2hfANdvIugfHP3_mGr_QAa_FGi_JalvN1pvIXePKmw_dOj_Lm8Prx9_zf6vq60PhxovRjm_P09PSamJiQjo2wr67Fw8OGg4LNzMy5uLe1sKrn5-cjGhd_fHsAAACjoaBVUE8UAAAcEAxRTEspIB5oZGNfW1rQz8-CgH9HQUA6MzKtTz_GAAAAzElEQVR4AcTJtwHEIBAEwBN2Ed7Tf6VfwB-xJh363PPcT0iliWesApR7ufMBiAkImcmIIquQBZbJhhL6CLdEm5RwSSk0LcVmlOHZlgIck9M2mpmOM8QZtdc66GLsw9y_-dBden_FiYUBhDAQBIcuIO4JDv0X924d_MnqWw1CKo0yFqxxBpTw4V3GJHJJVTXtRjXlYV5cta9OV5Ayg12nDbJIULdXuc1Q9gZbXRTkpH5KTD5KyrCdQ8s6pwKH5T1DGIYAXYDQ3fSd-M9cAQHKEMbqiLe6AAAAAElFTkSuQmCC.png",
+        "date": "7 days ago",
+        "snippet": "Can I install depot chargers without paying for massive utility grid upgrades? Yes, through a combination of smart load management and ...",
+        "snippet_highlighted_words": [
+          "install depot"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Can I install depot chargers without paying for massive utility grid upgrades? Yes, through a combination of smart load management and ...",
+            "source_info_link": "https://www.anariev.com/commercial-ev-fleet-charging-how-to-design-a-reliable-depot-charging-system/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAllBMVEX____7_f6zzPcAcfIAb_Crx_bW5Po2hfANdvIugfHP3_mGr_QAa_FGi_JalvN1pvIXePKmw_dOj_Lm8Prx9_zf6vq60PhxovRjm_P09PSamJiQjo2wr67Fw8OGg4LNzMy5uLe1sKrn5-cjGhd_fHsAAACjoaBVUE8UAAAcEAxRTEspIB5oZGNfW1rQz8-CgH9HQUA6MzKtTz_GAAAAzElEQVR4AcTJtwHEIBAEwBN2Ed7Tf6VfwB-xJh363PPcT0iliWesApR7ufMBiAkImcmIIquQBZbJhhL6CLdEm5RwSSk0LcVmlOHZlgIck9M2mpmOM8QZtdc66GLsw9y_-dBden_FiYUBhDAQBIcuIO4JDv0X924d_MnqWw1CKo0yFqxxBpTw4V3GJHJJVTXtRjXlYV5cta9OV5Ayg12nDbJIULdXuc1Q9gZbXRTkpH5KTD5KyrCdQ8s6pwKH5T1DGIYAXYDQ3fSd-M9cAQHKEMbqiLe6AAAAAElFTkSuQmCC.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CuEBL2dvdG8_dXJsPUNBRVNuQUVCNnpzd0ZXdlB4UEN6S2tGU2ZyblJjTXVUWDQ2aG1iRVpxcGk3RXBqVGpmX0JXdklpaThmNER2VHFHblZtbmw0bVNjWld6OVVvRW9jUFQxYnZJU3hUUlVHbDM5dVdOQTU5R1p4ekl5RjFSYlc0VnhfSFZzZ09xZDRDc3h0alFJSjVyVHR5aWFEeHktRmNpTnEzdTgyblc2UC1Qb2RhTkRYOTBqTnpFUWJaYUpYNC1kUE00ZEtMaVlOblZZSktMSDFhbWRPX09OR3RldEt0eS1ZEgQaAggAGvwGEgAaACICCAEqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJA1gYIABAAGAAgACoYCgVmbGVldBXXS7ZAGgppdjtwO2ZsZWV0KiMKBWRlcG90FXDgxkAaCXdhcmVob3VzZRoKaXY7cDtkZXBvdCoeCghjaGFyZ2luZxX-sPtAGg1pdjtwO2NoYXJnaW5nKkYKDGluc3RhbGxhdGlvbhUAAAAAGgdpbnN0YWxsGg1pbnN0YWxsYXRpb25zGgdyZXBsYWNlGhBpbnN0YWxsYXRpb25jb3N0KmAKBGNvc3QV6xpgPxoGY2hhcmdlGgZjb3N0bHkaBWNvc3RzGgVwcmljZRoGcHJpY2VzGgdwcmljaW5nGgRyYXRlGgVyYXRlcxoFdXNhZ2UaEGluc3RhbGxhdGlvbmNvc3QqQwoIZWxlY3RyaWMVVz_GPxoLZWxlY3RyaWNhbHMaCmVsZWN0cm9uaWMaAmV2GgNldnMaEGVsZWN0cmljdmVoaWNsZXMqPgoIdmVoaWNsZXMVYr4IQBoDY2FyGgRjYXJzGgJldhoDZXZzGgd2ZWhpY2xlGhBlbGVjdHJpY3ZlaGljbGVzMuEBL2dvdG8_dXJsPUNBRVNuQUVCNnpzd0ZXdlB4UEN6S2tGU2ZyblJjTXVUWDQ2aG1iRVpxcGk3RXBqVGpmX0JXdklpaThmNER2VHFHblZtbmw0bVNjWld6OVVvRW9jUFQxYnZJU3hUUlVHbDM5dVdOQTU5R1p4ekl5RjFSYlc0VnhfSFZzZ09xZDRDc3h0alFJSjVyVHR5aWFEeHktRmNpTnEzdTgyblc2UC1Qb2RhTkRYOTBqTnpFUWJaYUpYNC1kUE00ZEtMaVlOblZZSktMSDFhbWRPX09OR3RldEt0eS1ZOkFDb21tZXJjaWFsIDxiPkVWIEZsZWV0IENoYXJnaW5nPC9iPjogSG93IHRvIERlc2lnbiBhIFJlbGlhYmxlIC4uLkKWAUNhbiBJIDxiPmluc3RhbGwgZGVwb3Q8L2I-IGNoYXJnZXJzIHdpdGhvdXQgcGF5aW5nIGZvciBtYXNzaXZlIHV0aWxpdHkgZ3JpZCB1cGdyYWRlcz8gWWVzLCB0aHJvdWdoIGEgY29tYmluYXRpb24gb2Ygc21hcnQgbG9hZCBtYW5hZ2VtZW50IGFuZCZuYnNwOy4uLiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CuEBL2dvdG8_dXJsPUNBRVNuQUVCNnpzd0ZXdlB4UEN6S2tGU2ZyblJjTXVUWDQ2aG1iRVpxcGk3RXBqVGpmX0JXdklpaThmNER2VHFHblZtbmw0bVNjWld6OVVvRW9jUFQxYnZJU3hUUlVHbDM5dVdOQTU5R1p4ekl5RjFSYlc0VnhfSFZzZ09xZDRDc3h0alFJSjVyVHR5aWFEeHktRmNpTnEzdTgyblc2UC1Qb2RhTkRYOTBqTnpFUWJaYUpYNC1kUE00ZEtMaVlOblZZSktMSDFhbWRPX09OR3RldEt0eS1ZEgQaAggAGvwGEgAaACICCAEqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJA1gYIABAAGAAgACoYCgVmbGVldBXXS7ZAGgppdjtwO2ZsZWV0KiMKBWRlcG90FXDgxkAaCXdhcmVob3VzZRoKaXY7cDtkZXBvdCoeCghjaGFyZ2luZxX-sPtAGg1pdjtwO2NoYXJnaW5nKkYKDGluc3RhbGxhdGlvbhUAAAAAGgdpbnN0YWxsGg1pbnN0YWxsYXRpb25zGgdyZXBsYWNlGhBpbnN0YWxsYXRpb25jb3N0KmAKBGNvc3QV6xpgPxoGY2hhcmdlGgZjb3N0bHkaBWNvc3RzGgVwcmljZRoGcHJpY2VzGgdwcmljaW5nGgRyYXRlGgVyYXRlcxoFdXNhZ2UaEGluc3RhbGxhdGlvbmNvc3QqQwoIZWxlY3RyaWMVVz_GPxoLZWxlY3RyaWNhbHMaCmVsZWN0cm9uaWMaAmV2GgNldnMaEGVsZWN0cmljdmVoaWNsZXMqPgoIdmVoaWNsZXMVYr4IQBoDY2FyGgRjYXJzGgJldhoDZXZzGgd2ZWhpY2xlGhBlbGVjdHJpY3ZlaGljbGVzMuEBL2dvdG8_dXJsPUNBRVNuQUVCNnpzd0ZXdlB4UEN6S2tGU2ZyblJjTXVUWDQ2aG1iRVpxcGk3RXBqVGpmX0JXdklpaThmNER2VHFHblZtbmw0bVNjWld6OVVvRW9jUFQxYnZJU3hUUlVHbDM5dVdOQTU5R1p4ekl5RjFSYlc0VnhfSFZzZ09xZDRDc3h0alFJSjVyVHR5aWFEeHktRmNpTnEzdTgyblc2UC1Qb2RhTkRYOTBqTnpFUWJaYUpYNC1kUE00ZEtMaVlOblZZSktMSDFhbWRPX09OR3RldEt0eS1ZOkFDb21tZXJjaWFsIDxiPkVWIEZsZWV0IENoYXJnaW5nPC9iPjogSG93IHRvIERlc2lnbiBhIFJlbGlhYmxlIC4uLkKWAUNhbiBJIDxiPmluc3RhbGwgZGVwb3Q8L2I-IGNoYXJnZXJzIHdpdGhvdXQgcGF5aW5nIGZvciBtYXNzaXZlIHV0aWxpdHkgZ3JpZCB1cGdyYWRlcz8gWWVzLCB0aHJvdWdoIGEgY29tYmluYXRpb24gb2Ygc21hcnQgbG9hZCBtYW5hZ2VtZW50IGFuZCZuYnNwOy4uLiICEAFIAFgAaAA",
+        "source": "anariev.com",
+        "read_more_link": "https://www.anariev.com/commercial-ev-fleet-charging-how-to-design-a-reliable-depot-charging-system/#:~:text=Can%20I%20install%20depot%20chargers,load%20management%20and%20supplemental%20hardware."
+      },
+      {
+        "position": 10,
+        "title": "Fleet Depot Charging Costs per kWh | ElectronsX",
+        "link": "https://electronsx.com/ev-charging-cost-fleet-depot.html",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAEScwHrOzAVNjsGrR9I8IY1LN4S2ab-lqHswJ2KXZ5xnhhgRSjleiWqsmP9xfQOSGGaMRzgofnhZgXVQ8qnlBgetihqt1a8kptnf6-hA_oKgf8hZQgWQdL8asVmkwKF5WWdc6YBjVLtlymx3VrXcW90kbdMdDk&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQFnoECCEQAQ&uoh=1",
+        "displayed_link": "https://electronsx.com › Fleets › Fleet Charging",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAM1BMVEVHcEzZdwbZdwbZdwbZdwXZdwbbfB724dTYcQDXagDps47____cgzD57eXvyK7jnmjchje1lCiHAAAABnRSTlMAJa7s_1icX8SjAAAAmUlEQVR4AX3T0Q6AIAiFYTRKkLLe_2mjGwyc_rff1lkbAkDKGw5tOYG246QdIOG0BBldB_YyhL1Cv11wxKUw9hxSlTmeMke-5shNPiRtQLpFu-oXDSjWHZGLWWP0SNXsUvP4iIUYkFrRbDB-ljUbNOwdNujRfvTACTY36JGLGwzoBz2egqF-JlR10LX9DuwJhnl5msujXj6HF_BLD7i72sF2AAAAAElFTkSuQmCC.png",
+        "snippet": "Optimized all-in depot cost: approximately 0.07 to 0.11 per kWh when demand charges are well managed and charging is shifted off-peak. Typical all-in depot cost ...",
+        "snippet_highlighted_words": [
+          "depot cost",
+          "charging",
+          "depot cost"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Optimized all-in depot cost: approximately 0.07 to 0.11 per kWh when demand charges are well managed and charging is shifted off-peak. Typical all-in depot cost ...",
+            "source_info_link": "https://electronsx.com/ev-charging-cost-fleet-depot.html",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAM1BMVEVHcEzZdwbZdwbZdwbZdwXZdwbbfB724dTYcQDXagDps47____cgzD57eXvyK7jnmjchje1lCiHAAAABnRSTlMAJa7s_1icX8SjAAAAmUlEQVR4AX3T0Q6AIAiFYTRKkLLe_2mjGwyc_rff1lkbAkDKGw5tOYG246QdIOG0BBldB_YyhL1Cv11wxKUw9hxSlTmeMke-5shNPiRtQLpFu-oXDSjWHZGLWWP0SNXsUvP4iIUYkFrRbDB-ljUbNOwdNujRfvTACTY36JGLGwzoBz2egqF-JlR10LX9DuwJhnl5msujXj6HF_BLD7i72sF2AAAAAElFTkSuQmCC.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CqUBL2dvdG8_dXJsPUNBRVNjQUhyT3pBVl85SkY2MXhVNmJobjlOU2FRekFqNmFsd3U1dFdFQ3dvUUpqTmNNX09kQlBfcG9oZnNJcjJpb0s4eDBmNzV3d3lQUTdlTVFZUDQwY3FoakRPbjBaNnpkN0ttaVROMVZLSUtOLU5Lb1g2T1dTSGRBaUpuaDBPZm03bTFxcTFPQmYyZ2NmcndsTEUzeklBVXhzEgQaAggAGtsGEgAaACIAKgAyBggBEgJ1czoAQgQIARAASgBaAHIAegCCQLcGCAAQABgAIAAqGAoFZmxlZXQVlPStQBoKaXY7cDtmbGVldCojCgVkZXBvdBW5RtxAGgl3YXJlaG91c2UaCml2O3A7ZGVwb3QqHgoIY2hhcmdpbmcVlLLkQBoNaXY7cDtjaGFyZ2luZypGCgxpbnN0YWxsYXRpb24VAAAAABoHaW5zdGFsbBoNaW5zdGFsbGF0aW9ucxoHcmVwbGFjZRoQaW5zdGFsbGF0aW9uY29zdCpgCgRjb3N0FdRNnkAaBmNoYXJnZRoGY29zdGx5GgVjb3N0cxoFcHJpY2UaBnByaWNlcxoHcHJpY2luZxoEcmF0ZRoFcmF0ZXMaBXVzYWdlGhBpbnN0YWxsYXRpb25jb3N0KkMKCGVsZWN0cmljFU-QM0AaC2VsZWN0cmljYWxzGgplbGVjdHJvbmljGgJldhoDZXZzGhBlbGVjdHJpY3ZlaGljbGVzKj4KCHZlaGljbGVzFff9WT8aA2NhchoEY2FycxoCZXYaA2V2cxoHdmVoaWNsZRoQZWxlY3RyaWN2ZWhpY2xlczKlAS9nb3RvP3VybD1DQUVTY0FIck96QVZfOUpGNjF4VTZiaG45TlNhUXpBajZhbHd1NXRXRUN3b1FKak5jTV9PZEJQX3BvaGZzSXIyaW9LOHgwZjc1d3d5UFE3ZU1RWVA0MGNxaGpET24wWjZ6ZDdLbWlUTjFWS0lLTi1OS29YNk9XU0hkQWlKbmgwT2ZtN20xcXExT0JmMmdjZnJ3bExFM3pJQVV4czo2PGI-RmxlZXQgRGVwb3QgQ2hhcmdpbmcgQ29zdHM8L2I-IHBlciBrV2ggfCBFbGVjdHJvbnNYQr4BT3B0aW1pemVkIGFsbC1pbiA8Yj5kZXBvdCBjb3N0PC9iPjogYXBwcm94aW1hdGVseSAwLjA3IHRvIDAuMTEgcGVyIGtXaCB3aGVuIGRlbWFuZCBjaGFyZ2VzIGFyZSB3ZWxsIG1hbmFnZWQgYW5kIDxiPmNoYXJnaW5nPC9iPiBpcyBzaGlmdGVkIG9mZi1wZWFrLiBUeXBpY2FsIGFsbC1pbiA8Yj5kZXBvdCBjb3N0PC9iPiZuYnNwOy4uLiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CqUBL2dvdG8_dXJsPUNBRVNjQUhyT3pBVl85SkY2MXhVNmJobjlOU2FRekFqNmFsd3U1dFdFQ3dvUUpqTmNNX09kQlBfcG9oZnNJcjJpb0s4eDBmNzV3d3lQUTdlTVFZUDQwY3FoakRPbjBaNnpkN0ttaVROMVZLSUtOLU5Lb1g2T1dTSGRBaUpuaDBPZm03bTFxcTFPQmYyZ2NmcndsTEUzeklBVXhzEgQaAggAGtsGEgAaACIAKgAyBggBEgJ1czoAQgQIARAASgBaAHIAegCCQLcGCAAQABgAIAAqGAoFZmxlZXQVlPStQBoKaXY7cDtmbGVldCojCgVkZXBvdBW5RtxAGgl3YXJlaG91c2UaCml2O3A7ZGVwb3QqHgoIY2hhcmdpbmcVlLLkQBoNaXY7cDtjaGFyZ2luZypGCgxpbnN0YWxsYXRpb24VAAAAABoHaW5zdGFsbBoNaW5zdGFsbGF0aW9ucxoHcmVwbGFjZRoQaW5zdGFsbGF0aW9uY29zdCpgCgRjb3N0FdRNnkAaBmNoYXJnZRoGY29zdGx5GgVjb3N0cxoFcHJpY2UaBnByaWNlcxoHcHJpY2luZxoEcmF0ZRoFcmF0ZXMaBXVzYWdlGhBpbnN0YWxsYXRpb25jb3N0KkMKCGVsZWN0cmljFU-QM0AaC2VsZWN0cmljYWxzGgplbGVjdHJvbmljGgJldhoDZXZzGhBlbGVjdHJpY3ZlaGljbGVzKj4KCHZlaGljbGVzFff9WT8aA2NhchoEY2FycxoCZXYaA2V2cxoHdmVoaWNsZRoQZWxlY3RyaWN2ZWhpY2xlczKlAS9nb3RvP3VybD1DQUVTY0FIck96QVZfOUpGNjF4VTZiaG45TlNhUXpBajZhbHd1NXRXRUN3b1FKak5jTV9PZEJQX3BvaGZzSXIyaW9LOHgwZjc1d3d5UFE3ZU1RWVA0MGNxaGpET24wWjZ6ZDdLbWlUTjFWS0lLTi1OS29YNk9XU0hkQWlKbmgwT2ZtN20xcXExT0JmMmdjZnJ3bExFM3pJQVV4czo2PGI-RmxlZXQgRGVwb3QgQ2hhcmdpbmcgQ29zdHM8L2I-IHBlciBrV2ggfCBFbGVjdHJvbnNYQr4BT3B0aW1pemVkIGFsbC1pbiA8Yj5kZXBvdCBjb3N0PC9iPjogYXBwcm94aW1hdGVseSAwLjA3IHRvIDAuMTEgcGVyIGtXaCB3aGVuIGRlbWFuZCBjaGFyZ2VzIGFyZSB3ZWxsIG1hbmFnZWQgYW5kIDxiPmNoYXJnaW5nPC9iPiBpcyBzaGlmdGVkIG9mZi1wZWFrLiBUeXBpY2FsIGFsbC1pbiA8Yj5kZXBvdCBjb3N0PC9iPiZuYnNwOy4uLiICEAFIAFgAaAA",
+        "source": "electronsx.com",
+        "read_more_link": "https://electronsx.com/ev-charging-cost-fleet-depot.html#:~:text=Optimized%20all%2Din%20depot%20cost%3A%20approximately,fleets%20with%20basic%20time%2Dof%2Duse%20discipline."
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "next": "https://www.google.com/search?q=site:energy.gov+fleet+depot+charging+installation+cost+electric+vehicles&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuJMsbRe8ElRc0uxdbAwRTVqWDrgQ:1792775475719&ei=M5XbaqO5K_LTp84P3vW9UA&start=10&sa=N&sstk=AS6-VmIVOH1TlR5c5pRfiqu2CVjkZqrGyvNeNF3KvWFrLi_9CEn41_u8lYtzLzYe06WNJ_ok86Rbzt_2He7kZ5DvAxqK5GRdblJsUQ&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQ8NMDegQIHxAO",
+      "other_pages": {
+        "2": "https://www.google.com/search?q=site:energy.gov+fleet+depot+charging+installation+cost+electric+vehicles&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuJMsbRe8ElRc0uxdbAwRTVqWDrgQ:1792775475719&ei=M5XbaqO5K_LTp84P3vW9UA&start=10&sa=N&sstk=AS6-VmIVOH1TlR5c5pRfiqu2CVjkZqrGyvNeNF3KvWFrLi_9CEn41_u8lYtzLzYe06WNJ_ok86Rbzt_2He7kZ5DvAxqK5GRdblJsUQ&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQ8tMDegQIHxAE",
+        "3": "https://www.google.com/search?q=site:energy.gov+fleet+depot+charging+installation+cost+electric+vehicles&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuJMsbRe8ElRc0uxdbAwRTVqWDrgQ:1792775475719&ei=M5XbaqO5K_LTp84P3vW9UA&start=20&sa=N&sstk=AS6-VmIVOH1TlR5c5pRfiqu2CVjkZqrGyvNeNF3KvWFrLi_9CEn41_u8lYtzLzYe06WNJ_ok86Rbzt_2He7kZ5DvAxqK5GRdblJsUQ&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQ8tMDegQIHxAG",
+        "4": "https://www.google.com/search?q=site:energy.gov+fleet+depot+charging+installation+cost+electric+vehicles&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuJMsbRe8ElRc0uxdbAwRTVqWDrgQ:1792775475719&ei=M5XbaqO5K_LTp84P3vW9UA&start=30&sa=N&sstk=AS6-VmIVOH1TlR5c5pRfiqu2CVjkZqrGyvNeNF3KvWFrLi_9CEn41_u8lYtzLzYe06WNJ_ok86Rbzt_2He7kZ5DvAxqK5GRdblJsUQ&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQ8tMDegQIHxAI",
+        "5": "https://www.google.com/search?q=site:energy.gov+fleet+depot+charging+installation+cost+electric+vehicles&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuJMsbRe8ElRc0uxdbAwRTVqWDrgQ:1792775475719&ei=M5XbaqO5K_LTp84P3vW9UA&start=40&sa=N&sstk=AS6-VmIVOH1TlR5c5pRfiqu2CVjkZqrGyvNeNF3KvWFrLi_9CEn41_u8lYtzLzYe06WNJ_ok86Rbzt_2He7kZ5DvAxqK5GRdblJsUQ&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQ8tMDegQIHxAK",
+        "6": "https://www.google.com/search?q=site:energy.gov+fleet+depot+charging+installation+cost+electric+vehicles&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuJMsbRe8ElRc0uxdbAwRTVqWDrgQ:1792775475719&ei=M5XbaqO5K_LTp84P3vW9UA&start=50&sa=N&sstk=AS6-VmIVOH1TlR5c5pRfiqu2CVjkZqrGyvNeNF3KvWFrLi_9CEn41_u8lYtzLzYe06WNJ_ok86Rbzt_2He7kZ5DvAxqK5GRdblJsUQ&ved=2ahUKEwjjnpGL0dCXAxXy6ckDHd56DwoQ8tMDegQIHxAM"
+      }
+    },
+    "serpapi_pagination": {
+      "current": 1,
+      "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aenergy.gov+fleet+depot+charging+installation+cost+electric+vehicles&start=10",
+      "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aenergy.gov+fleet+depot+charging+installation+cost+electric+vehicles&start=10",
+      "other_pages": {
+        "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aenergy.gov+fleet+depot+charging+installation+cost+electric+vehicles&start=10",
+        "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aenergy.gov+fleet+depot+charging+installation+cost+electric+vehicles&start=20",
+        "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aenergy.gov+fleet+depot+charging+installation+cost+electric+vehicles&start=30",
+        "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aenergy.gov+fleet+depot+charging+installation+cost+electric+vehicles&start=40",
+        "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aenergy.gov+fleet+depot+charging+installation+cost+electric+vehicles&start=50"
+      }
+    }
+  }
+}

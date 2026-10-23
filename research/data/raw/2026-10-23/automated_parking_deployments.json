@@ -1,0 +1,358 @@
+{
+  "query": {
+    "query_id": "automated_parking_deployments",
+    "engine": "google",
+    "q": "automated parking system US deployment project ParkPlus WOHR robotic parking",
+    "gl": "us",
+    "hl": "en",
+    "num": 10
+  },
+  "retrieved_at": "2026-10-23T17:11:45.898204+00:00",
+  "status": "success",
+  "response": {
+    "search_metadata": {
+      "id": "6adb9551de20eedd77cf082c",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/bsbpz_llhQPGivfQff5Yc4L0oGdKi4FZUHCgPBkITBg/6adb9551de20eedd77cf082c.json",
+      "markdown_endpoint": "https://serpapi.com/searches/bsbpz_llhQPGivfQff5Yc4L0oGdKi4FZUHCgPBkITBg/6adb9551de20eedd77cf082c.md",
+      "pixel_position_endpoint": "https://serpapi.com/searches/bsbpz_llhQPGivfQff5Yc4L0oGdKi4FZUHCgPBkITBg/6adb9551de20eedd77cf082c.json_with_pixel_position",
+      "created_at": "2026-10-23 17:11:45 UTC",
+      "processed_at": "2026-10-23 17:11:45 UTC",
+      "google_url": "https://www.google.com/search?q=automated+parking+system+US+deployment+project+ParkPlus+WOHR+robotic+parking&oq=automated+parking+system+US+deployment+project+ParkPlus+WOHR+robotic+parking&hl=en&gl=us&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/bsbpz_llhQPGivfQff5Yc4L0oGdKi4FZUHCgPBkITBg/6adb9551de20eedd77cf082c.html",
+      "total_time_taken": 0.45
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "automated parking system US deployment project ParkPlus WOHR robotic parking",
+      "google_domain": "google.com",
+      "hl": "en",
+      "gl": "us",
+      "device": "desktop"
+    },
+    "search_information": {
+      "query_displayed": "automated parking system US deployment project ParkPlus WOHR robotic parking",
+      "total_results": 709000,
+      "time_taken_displayed": 0.3,
+      "organic_results_state": "Results for exact spelling"
+    },
+    "inline_videos": [
+      {
+        "position": 1,
+        "title": "Fully Automated Tower Parking System by Wohr",
+        "link": "https://www.youtube.com/watch?v=wKF0k2BJF9E",
+        "thumbnail": "https://serpapi.com/searches/6adb9551de20eedd77cf082c/images/GPSW3oZJpEOvzCHrFv1Gj_g5-f-i3IvBR1_9CuxlYto.jpeg",
+        "channel": "Wohr Parking Systems Pvt Ltd.",
+        "duration": "4:00",
+        "platform": "YouTube",
+        "date": "Oct 3, 2025",
+        "short_clip": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcRTOO5KSk7M8yJOK3p1-L2hHHs4lWf8yOut1A"
+      },
+      {
+        "position": 2,
+        "title": "WÖHR COMBIPARKER 560 – How much resources does a ...",
+        "link": "https://www.youtube.com/watch?v=heP_O_8vqks",
+        "thumbnail": "https://serpapi.com/searches/6adb9551de20eedd77cf082c/images/UPmiv_IcCcMuWa8Tq1RygqBchBiS6IJ3Dj_UcBd1nNQ.jpeg",
+        "channel": "WÖHR Autoparksysteme GmbH",
+        "duration": "3:05",
+        "platform": "YouTube",
+        "date": "Feb 4, 2026"
+      },
+      {
+        "position": 3,
+        "title": "Wohr Double Row Parking System Combilift 543/552.",
+        "link": "https://www.youtube.com/watch?v=SKu-IuN8xfQ",
+        "thumbnail": "https://serpapi.com/searches/6adb9551de20eedd77cf082c/images/A903h5tqM3_7AF9MnRtPqsDCrFqi6b2MVu7Jz_AzuH0.jpeg",
+        "channel": "Wohr Parking Systems Pvt Ltd.",
+        "duration": "3:31",
+        "platform": "YouTube",
+        "date": "Mar 6, 2023"
+      }
+    ],
+    "ai_overview": {
+      "page_token": "dfeaBniczVXLcuI4FP2B-YwZb0jAvCFVri5ZONg8kohHQrKh_BCyAVsGGRx61_8yXzVfM7KxwYRAenoWM3dhSb5XR_dKOjo__lw63uKv3363g8Bnd4VCGIZ5QilZ4rxJ3YLOdp5ZmNElW5v2N7KUNkywlxL2hN1WKgsmk0QBO9L4bWLom_ZMmWJafaBP4UoVS4AI8XRpaugMzzn6-5wVpgX-WfxRbvFBnuWxl5-PlRXSjEH4QvIlsVTOPxZ0lweA_8Bk0I4aAhCAl6MguObNmsYhFQAW2V9y4jhaP16S8E_su78Ip2hK3CKAlH26oHXbx68G79K0guv5oOOgd4DdJwA07lS-KumDkfhL0-H15S-4ozVhCsVLyri0T8JTQ6-nyOMWkcNsBWe1HJaPl2rv-1UgV54AVOGxigt2j4DaJxA5X8TF9lwZHo_dACJfvGARfq_FgrHmTbHgmLYZd9Ysuu5w1BRpuzIZ2dv2BHpKs4798cozZw_ifWOAX1HBNHjckuoWtqb2VPwWj4ulYlVsluuNm5hnJjsQjWWJxt7k73T2XbZHYr6Xl4spy-DJNn3YbtT9dP-jawrB8cDO_OT0nI8g91lHemMh1EB7AD4AdlsIhCDDhhZnZQgmAGUxEuiYjucsOyR07BAAk9FgTwV0BEhMkRdAyWxKBiq6X2c2zCSiJQhhmld6R9vHTDIUjGZAtE89SevjuwejCc59hEx5KqE8jvMJ-bGlZQ0J1GHniHzIHcmQvxnJf4WcVNPKskMZk2gav4QQQeB3ZET2L1ICitAeg09G2unbJ3_-YhAwBuw6f69a9-fCUEqmD9zIckrdmCVvMnz3_Vs1KO9Ws8VL74m81gzfJp9ziLrGP1Ar8__JskTL6F7LrrBsB36KZRqA17Usxk21DCZadpllnT3LPtOyyj7kpL4zlmnK4MiyRMval7TsV1gmX2fZYcvOWMbB7MSXZZl2hWWxlmVYNu45J1p2zrJ4cw4s-0Ut6_4LLYtph_fNqbBt5uSywKml8srYDTe1EZwPVm_DZts0WmZYK1tfC9zMDe5c3VreTB3rTi51gp11M-U_6B22hJWkbwLq6gG2cr6-XjgeybEdC7CbGw9zFvaXdOdiL8j5azrHZpB74kFPyw3LvTyqg9yaGjRwzHSq4C7XVBL1KtkUrUG17-PyuMO27lu3I_d7U1xsPFhDbzhzQmLVy-IDnA5r7NkljQV4rm1uS1vijHCV1kQ60Z8HG_mNKWhQ71lw9d5djWRd33rL2UudPevVR5sCrC56bmmswveG26a2s-1osv-uhnStB93JrdpSW_Xual3rojgxJnmtvq3DNibNhsB3gGGpKLhrU-J3r0LAAwIvAOiRXnU4EbtAHqx42-MHZ1AZIPUVoIjpreh1EJipTzHbSjOzLpZELJar9XrdqlUElwQ7X2qKAvPWUvFvjUxz4g",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=dfeaBniczVXLcuI4FP2B-YwZb0jAvCFVri5ZONg8kohHQrKh_BCyAVsGGRx61_8yXzVfM7KxwYRAenoWM3dhSb5XR_dKOjo__lw63uKv3363g8Bnd4VCGIZ5QilZ4rxJ3YLOdp5ZmNElW5v2N7KUNkywlxL2hN1WKgsmk0QBO9L4bWLom_ZMmWJafaBP4UoVS4AI8XRpaugMzzn6-5wVpgX-WfxRbvFBnuWxl5-PlRXSjEH4QvIlsVTOPxZ0lweA_8Bk0I4aAhCAl6MguObNmsYhFQAW2V9y4jhaP16S8E_su78Ip2hK3CKAlH26oHXbx68G79K0guv5oOOgd4DdJwA07lS-KumDkfhL0-H15S-4ozVhCsVLyri0T8JTQ6-nyOMWkcNsBWe1HJaPl2rv-1UgV54AVOGxigt2j4DaJxA5X8TF9lwZHo_dACJfvGARfq_FgrHmTbHgmLYZd9Ysuu5w1BRpuzIZ2dv2BHpKs4798cozZw_ifWOAX1HBNHjckuoWtqb2VPwWj4ulYlVsluuNm5hnJjsQjWWJxt7k73T2XbZHYr6Xl4spy-DJNn3YbtT9dP-jawrB8cDO_OT0nI8g91lHemMh1EB7AD4AdlsIhCDDhhZnZQgmAGUxEuiYjucsOyR07BAAk9FgTwV0BEhMkRdAyWxKBiq6X2c2zCSiJQhhmld6R9vHTDIUjGZAtE89SevjuwejCc59hEx5KqE8jvMJ-bGlZQ0J1GHniHzIHcmQvxnJf4WcVNPKskMZk2gav4QQQeB3ZET2L1ICitAeg09G2unbJ3_-YhAwBuw6f69a9-fCUEqmD9zIckrdmCVvMnz3_Vs1KO9Ws8VL74m81gzfJp9ziLrGP1Ar8__JskTL6F7LrrBsB36KZRqA17Usxk21DCZadpllnT3LPtOyyj7kpL4zlmnK4MiyRMval7TsV1gmX2fZYcvOWMbB7MSXZZl2hWWxlmVYNu45J1p2zrJ4cw4s-0Ut6_4LLYtph_fNqbBt5uSywKml8srYDTe1EZwPVm_DZts0WmZYK1tfC9zMDe5c3VreTB3rTi51gp11M-U_6B22hJWkbwLq6gG2cr6-XjgeybEdC7CbGw9zFvaXdOdiL8j5azrHZpB74kFPyw3LvTyqg9yaGjRwzHSq4C7XVBL1KtkUrUG17-PyuMO27lu3I_d7U1xsPFhDbzhzQmLVy-IDnA5r7NkljQV4rm1uS1vijHCV1kQ60Z8HG_mNKWhQ71lw9d5djWRd33rL2UudPevVR5sCrC56bmmswveG26a2s-1osv-uhnStB93JrdpSW_Xual3rojgxJnmtvq3DNibNhsB3gGGpKLhrU-J3r0LAAwIvAOiRXnU4EbtAHqx42-MHZ1AZIPUVoIjpreh1EJipTzHbSjOzLpZELJar9XrdqlUElwQ7X2qKAvPWUvFvjUxz4g"
+    },
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "WÖHR Autoparksysteme GmbH: Home",
+        "link": "https://woehr.de/en/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESTwHrOzAVWy7_djTVkTGabT0pOPDYb5EqgFISHzdCCJM6c-FS94L9GVqBH2u7o09kvBqfIPCJEYlzqNCHJMhu2zq3zbzzeO8dlmfT47RY5J0&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQFnoECCwQAQ&uoh=1",
+        "displayed_link": "https://woehr.de › ...",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAP1BMVEX70CD70CD70CD_1SH_1yH_1CCReBJCNwgVEQIAAAAvJwa4mBf_2SH90iDatRvmvh11YQ7IphliUQyliRVRQwoT7pWAAAAAAnRSTlM28EIyrlEAAAEOSURBVHgBjJAJEsMgCABTEA0qIrH_f2ux991u7qzj7LAsO_jA7rM7WvjCXxLDGXqRBDGt7Ky51Ecp2DgqHGlrD3KTAs24Xf5Q6BlqQJIppXHaDOFKHZy3WDS4pBHrrBAhR2S2qY2e2SXG4Yr8RynFrKFrIcLaCy0wFwfzrfokZSCYUDHxWsQaWT0iBH8tlzgScBl9OV7zSTnaXEozqCRrcAdB3FZO3XDWjrkNYTiCx9wq6tvLImYCgqXvU85pv7UAE6lxnGpJuVtT1daMRz1ZVXAZQNkqyRGCtIXj9PyY4-NcAlypkX16De7HdwPVRkycZI4vIjwgJOTBm3nQB2iUzxKI4DDyUx_eRI03OwAAlVIP_0DxHBAAAAAASUVORK5CYII.png",
+        "snippet": "Our projects with mechanical, semi-automatic and fully-automatic parking systems are unique and located in the most beautiful cities in the world, wherever ...",
+        "snippet_highlighted_words": [
+          "automatic parking systems"
+        ],
+        "sitelinks": {
+          "expanded": [
+            {
+              "title": "Platforms",
+              "link": "https://woehr.de/en/platforms.html",
+              "snippet": "The parking platforms help to create parking spaces in the ..."
+            },
+            {
+              "title": "PARKLIFT 450",
+              "link": "https://woehr.de/en/product/parklift-450.html",
+              "snippet": "Mechanically-driven car parking system · Clear ceiling height ..."
+            }
+          ]
+        },
+        "about_this_result": {
+          "source": {
+            "description": "Our projects with mechanical, semi-automatic and fully-automatic parking systems are unique and located in the most beautiful cities in the world, wherever ...",
+            "source_info_link": "https://woehr.de/en/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAP1BMVEX70CD70CD70CD_1SH_1yH_1CCReBJCNwgVEQIAAAAvJwa4mBf_2SH90iDatRvmvh11YQ7IphliUQyliRVRQwoT7pWAAAAAAnRSTlM28EIyrlEAAAEOSURBVHgBjJAJEsMgCABTEA0qIrH_f2ux991u7qzj7LAsO_jA7rM7WvjCXxLDGXqRBDGt7Ky51Ecp2DgqHGlrD3KTAs24Xf5Q6BlqQJIppXHaDOFKHZy3WDS4pBHrrBAhR2S2qY2e2SXG4Yr8RynFrKFrIcLaCy0wFwfzrfokZSCYUDHxWsQaWT0iBH8tlzgScBl9OV7zSTnaXEozqCRrcAdB3FZO3XDWjrkNYTiCx9wq6tvLImYCgqXvU85pv7UAE6lxnGpJuVtT1daMRz1ZVXAZQNkqyRGCtIXj9PyY4-NcAlypkX16De7HdwPVRkycZI4vIjwgJOTBm3nQB2iUzxKI4DDyUx_eRI03OwAAlVIP_0DxHBAAAAAASUVORK5CYII.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CnkvZ290bz91cmw9Q0FFU1R3SHJPekFWUmRsOF96eGw3cEtKVzhkUWtyZ25DLXJZSnNIMW1HNTE2aWNhVC1mQjJUcVYycTVpRHpKRVlwRjg1TEdMcFVIc2xCTmxsTVZQWWVOLU9BS0Q2Sk5vVGFaWWg4WC1lLTdjVmY0EggKABIAGgIIABrWAxICCAEaACIAKgAyBggCEgJ1czoAQgQIARAASgBaDAgBEgh3b2Voci5kZXIAegCCQKQDCAAQABgAIAAqSAoJYXV0b21hdGVkFchM8UAaBGF1dG8aCWF1dG9tYXRpYxoDY2FyGhBhdXRvbWF0ZWRwYXJraW5nGg5pdjtwO2F1dG9tYXRlZDJ5L2dvdG8_dXJsPUNBRVNUd0hyT3pBVlJkbDhfenhsN3BLSlc4ZFFrcmduQy1yWUpzSDFtRzUxNmljYVQtZkIyVHFWMnE1aUR6SkVZcEY4NUxHTHBVSHNsQk5sbE1WUFllTi1PQUtENkpOb1RhWlloOFgtZS03Y1ZmNDonPGI-V8OWSFI8L2I-IEF1dG9wYXJrc3lzdGVtZSBHbWJIOiBIb21lQqsBT3VyIHByb2plY3RzIHdpdGggbWVjaGFuaWNhbCwgc2VtaS1hdXRvbWF0aWMgYW5kIGZ1bGx5LTxiPmF1dG9tYXRpYyBwYXJraW5nIHN5c3RlbXM8L2I-IGFyZSB1bmlxdWUgYW5kIGxvY2F0ZWQgaW4gdGhlIG1vc3QgYmVhdXRpZnVsIGNpdGllcyBpbiB0aGUgd29ybGQsIHdoZXJldmVyJm5ic3A7Li4uIgIQAUgAWABoAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CnkvZ290bz91cmw9Q0FFU1R3SHJPekFWUmRsOF96eGw3cEtKVzhkUWtyZ25DLXJZSnNIMW1HNTE2aWNhVC1mQjJUcVYycTVpRHpKRVlwRjg1TEdMcFVIc2xCTmxsTVZQWWVOLU9BS0Q2Sk5vVGFaWWg4WC1lLTdjVmY0EggKABIAGgIIABrWAxICCAEaACIAKgAyBggCEgJ1czoAQgQIARAASgBaDAgBEgh3b2Voci5kZXIAegCCQKQDCAAQABgAIAAqSAoJYXV0b21hdGVkFchM8UAaBGF1dG8aCWF1dG9tYXRpYxoDY2FyGhBhdXRvbWF0ZWRwYXJraW5nGg5pdjtwO2F1dG9tYXRlZDJ5L2dvdG8_dXJsPUNBRVNUd0hyT3pBVlJkbDhfenhsN3BLSlc4ZFFrcmduQy1yWUpzSDFtRzUxNmljYVQtZkIyVHFWMnE1aUR6SkVZcEY4NUxHTHBVSHNsQk5sbE1WUFllTi1PQUtENkpOb1RhWlloOFgtZS03Y1ZmNDonPGI-V8OWSFI8L2I-IEF1dG9wYXJrc3lzdGVtZSBHbWJIOiBIb21lQqsBT3VyIHByb2plY3RzIHdpdGggbWVjaGFuaWNhbCwgc2VtaS1hdXRvbWF0aWMgYW5kIGZ1bGx5LTxiPmF1dG9tYXRpYyBwYXJraW5nIHN5c3RlbXM8L2I-IGFyZSB1bmlxdWUgYW5kIGxvY2F0ZWQgaW4gdGhlIG1vc3QgYmVhdXRpZnVsIGNpdGllcyBpbiB0aGUgd29ybGQsIHdoZXJldmVyJm5ic3A7Li4uIgIQAUgAWABoAA",
+        "source": "WÖHR Autoparksysteme GmbH"
+      },
+      {
+        "position": 2,
+        "title": "Wohr Law, PLLC - Denton County Lawyer - Criminal & Family ...",
+        "link": "https://wohrlaw.com/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESTwHrOzAVri9oJ0Yn6YAo47-Hnmd6to8a9ykgStDM4B7LBgr7IppzLXE72iMa4-W_lVLXYnn8pui5ge91w8NsJ6WCd-bTAtXD7YLOvg2ezRA&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQFnoECCAQAQ&uoh=1",
+        "displayed_link": "https://wohrlaw.com",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAKlBMVEUAAAAAAAAAAACrjlu7nGWxk17BoWlzXz1CNyOIcUmdg1QsJBhYSjAZFA3eGxx3AAAAAnRSTlPrMZrH5yUAAAEFSURBVDiNvZPrsoMgDIRtMDcC7_-63cRjTx1t_VfGGST5WNZlXB4LfRnLY_naB3HTB_ELYNQcdqxb1DQAqHg2e9PYu6HcEnLWPIJFGAwzd53ZbSIyMaFQHkzWdRVuGCh1yWXrjALbZtJRWXv0RLQWPD1x378iFYIMe6DJWBhFKr4-c0AVK-fGqnjv6bnx-M-hYZfSTNkJhUljU3sBkcaoym5AKdF4T9JlFd-Ezf8OO0Z9sGa7wzdg82laW_sWwfGyOiRcIg_XtHK6zSkVV6rnM08AaSU-vCJXOgMZBgKdabDTFYBLywjSp10CCIPLLjtdAyS105g-AXGYLoCr8Qvg9ue9-_2fqC0MzgFzpuMAAAAASUVORK5CYII.png",
+        "snippet": "Wohr Law, PLLC is proud to serve as your Denton County lawyer. Get the representation you deserver with the team at Wohr Law in Denton, TX.",
+        "snippet_highlighted_words": [
+          "Wohr",
+          "Wohr"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Wohr Law, PLLC is proud to serve as your Denton County lawyer. Get the representation you deserver with the team at Wohr Law in Denton, TX.",
+            "source_info_link": "https://wohrlaw.com/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAKlBMVEUAAAAAAAAAAACrjlu7nGWxk17BoWlzXz1CNyOIcUmdg1QsJBhYSjAZFA3eGxx3AAAAAnRSTlPrMZrH5yUAAAEFSURBVDiNvZPrsoMgDIRtMDcC7_-63cRjTx1t_VfGGST5WNZlXB4LfRnLY_naB3HTB_ELYNQcdqxb1DQAqHg2e9PYu6HcEnLWPIJFGAwzd53ZbSIyMaFQHkzWdRVuGCh1yWXrjALbZtJRWXv0RLQWPD1x378iFYIMe6DJWBhFKr4-c0AVK-fGqnjv6bnx-M-hYZfSTNkJhUljU3sBkcaoym5AKdF4T9JlFd-Ezf8OO0Z9sGa7wzdg82laW_sWwfGyOiRcIg_XtHK6zSkVV6rnM08AaSU-vCJXOgMZBgKdabDTFYBLywjSp10CCIPLLjtdAyS105g-AXGYLoCr8Qvg9ue9-_2fqC0MzgFzpuMAAAAASUVORK5CYII.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CnkvZ290bz91cmw9Q0FFU1R3SHJPekFWMXJwWWpUOVFtdDRiSTdoSnFYMVhmM2RrLWFOaTJNRFNqeVVyV1I0ZVFwWHlVejdXUjdRNU96Rk1oTWM0dG1KeE5BN0wxckJodFNyMWR6VkM2Y3FoUmFob2pxajgzNXBJVFJNEgQaAggAGtkDEgIIABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAswMIABAAGAAgACpICglhdXRvbWF0ZWQVLbysQBoEYXV0bxoJYXV0b21hdGljGgNjYXIaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkMnkvZ290bz91cmw9Q0FFU1R3SHJPekFWMXJwWWpUOVFtdDRiSTdoSnFYMVhmM2RrLWFOaTJNRFNqeVVyV1I0ZVFwWHlVejdXUjdRNU96Rk1oTWM0dG1KeE5BN0wxckJodFNyMWR6VkM2Y3FoUmFob2pxajgzNXBJVFJNOkg8Yj5Xb2hyPC9iPiBMYXcsIFBMTEMgLSBEZW50b24gQ291bnR5IExhd3llciAtIENyaW1pbmFsICZhbXA7IEZhbWlseSAuLi5CmQE8Yj5Xb2hyPC9iPiBMYXcsIFBMTEMgaXMgcHJvdWQgdG8gc2VydmUgYXMgeW91ciBEZW50b24gQ291bnR5IGxhd3llci4gR2V0IHRoZSByZXByZXNlbnRhdGlvbiB5b3UgZGVzZXJ2ZXIgd2l0aCB0aGUgdGVhbSBhdCA8Yj5Xb2hyPC9iPiBMYXcgaW4gRGVudG9uLCBUWC4iAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CnkvZ290bz91cmw9Q0FFU1R3SHJPekFWMXJwWWpUOVFtdDRiSTdoSnFYMVhmM2RrLWFOaTJNRFNqeVVyV1I0ZVFwWHlVejdXUjdRNU96Rk1oTWM0dG1KeE5BN0wxckJodFNyMWR6VkM2Y3FoUmFob2pxajgzNXBJVFJNEgQaAggAGtkDEgIIABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAswMIABAAGAAgACpICglhdXRvbWF0ZWQVLbysQBoEYXV0bxoJYXV0b21hdGljGgNjYXIaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkMnkvZ290bz91cmw9Q0FFU1R3SHJPekFWMXJwWWpUOVFtdDRiSTdoSnFYMVhmM2RrLWFOaTJNRFNqeVVyV1I0ZVFwWHlVejdXUjdRNU96Rk1oTWM0dG1KeE5BN0wxckJodFNyMWR6VkM2Y3FoUmFob2pxajgzNXBJVFJNOkg8Yj5Xb2hyPC9iPiBMYXcsIFBMTEMgLSBEZW50b24gQ291bnR5IExhd3llciAtIENyaW1pbmFsICZhbXA7IEZhbWlseSAuLi5CmQE8Yj5Xb2hyPC9iPiBMYXcsIFBMTEMgaXMgcHJvdWQgdG8gc2VydmUgYXMgeW91ciBEZW50b24gQ291bnR5IGxhd3llci4gR2V0IHRoZSByZXByZXNlbnRhdGlvbiB5b3UgZGVzZXJ2ZXIgd2l0aCB0aGUgdGVhbSBhdCA8Yj5Xb2hyPC9iPiBMYXcgaW4gRGVudG9uLCBUWC4iAhABSABYAGgA",
+        "source": "Wohr Law, PLLC"
+      },
+      {
+        "position": 3,
+        "title": "Obituary information for Charles Wohr",
+        "link": "https://www.robertacciofuneralhome.com/obituaries/Charles-Wohr?obId=47207457",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAEShwEB6zswFbOI2usUV94OTc9TJOaKLSdUjEyBh1mfw3sEf6WlC82wnY4-QK70wlkI_ZgatII8q27DuX7F0VtDxc5Ne1RtFUWfqfLSZNU73XjaFjkosWx0t8TBPRKYpOjFWR1rvn8x-ktV2ss8YQSuTjC_54WLe_WbLVnDU0vwd3XnzW5Yfl8pgbc&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQFnoECCIQAQ&uoh=1",
+        "displayed_link": "https://www.robertacciofuneralhome.com › obituaries",
+        "date": "Feb 6, 2026",
+        "snippet": "Charles William Wohr passed away peacefully on the 6th day of February 2026, at the age of 95, in East Moriches, NY due to natural causes.",
+        "snippet_highlighted_words": [
+          "Wohr"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Charles William Wohr passed away peacefully on the 6th day of February 2026, at the age of 95, in East Moriches, NY due to natural causes.",
+            "source_info_link": "https://www.robertacciofuneralhome.com/obituaries/Charles-Wohr?obId=47207457"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CsUBL2dvdG8_dXJsPUNBRVNod0VCNnpzd0ZidGVhODdlUzlXY2NfNkE5b2pSNHpwYVllWVFPXzdhWnZ0UER5MkJqN21JMWQwU05sbUZVTXhZcDV2WGNUZmhDV1kzTnljNGdSZ0RfdzlsNDdFcE9pT0JfSzViQVhCWGhfUk5lTmF4NjFXZERicVM0YjB4UVJBT0pZT0JuVlBMTHAtZlAzOUJNNWhXU3I1Mk5vYnR3TDFwOWZoRXctTHFwRlMtNzZNSW92bGpwa2sSBBoCCAAaggQSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkDcAwgAEAAYACAAKkgKCWF1dG9tYXRlZBXWZLlAGgRhdXRvGglhdXRvbWF0aWMaA2NhchoQYXV0b21hdGVkcGFya2luZxoOaXY7cDthdXRvbWF0ZWQyxQEvZ290bz91cmw9Q0FFU2h3RUI2enN3RmJ0ZWE4N2VTOVdjY182QTlvalI0enBhWWVZUU9fN2FadnRQRHkyQmo3bUkxZDBTTmxtRlVNeFlwNXZYY1RmaENXWTNOeWM0Z1JnRF93OWw0N0VwT2lPQl9LNWJBWEJYaF9STmVOYXg2MVdkRGJxUzRiMHhRUkFPSllPQm5WUExMcC1mUDM5Qk01aFdTcjUyTm9idHdMMXA5ZmhFdy1McXBGUy03Nk1Jb3ZsanBrazosT2JpdHVhcnkgaW5mb3JtYXRpb24gZm9yIENoYXJsZXMgPGI-V29ocjwvYj5CkQFDaGFybGVzIFdpbGxpYW0gPGI-V29ocjwvYj4gcGFzc2VkIGF3YXkgcGVhY2VmdWxseSBvbiB0aGUgNnRoIGRheSBvZiBGZWJydWFyeSAyMDI2LCBhdCB0aGUgYWdlIG9mIDk1LCBpbiBFYXN0IE1vcmljaGVzLCBOWSBkdWUgdG8gbmF0dXJhbCBjYXVzZXMuIgIQAUgAWABoAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CsUBL2dvdG8_dXJsPUNBRVNod0VCNnpzd0ZidGVhODdlUzlXY2NfNkE5b2pSNHpwYVllWVFPXzdhWnZ0UER5MkJqN21JMWQwU05sbUZVTXhZcDV2WGNUZmhDV1kzTnljNGdSZ0RfdzlsNDdFcE9pT0JfSzViQVhCWGhfUk5lTmF4NjFXZERicVM0YjB4UVJBT0pZT0JuVlBMTHAtZlAzOUJNNWhXU3I1Mk5vYnR3TDFwOWZoRXctTHFwRlMtNzZNSW92bGpwa2sSBBoCCAAaggQSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkDcAwgAEAAYACAAKkgKCWF1dG9tYXRlZBXWZLlAGgRhdXRvGglhdXRvbWF0aWMaA2NhchoQYXV0b21hdGVkcGFya2luZxoOaXY7cDthdXRvbWF0ZWQyxQEvZ290bz91cmw9Q0FFU2h3RUI2enN3RmJ0ZWE4N2VTOVdjY182QTlvalI0enBhWWVZUU9fN2FadnRQRHkyQmo3bUkxZDBTTmxtRlVNeFlwNXZYY1RmaENXWTNOeWM0Z1JnRF93OWw0N0VwT2lPQl9LNWJBWEJYaF9STmVOYXg2MVdkRGJxUzRiMHhRUkFPSllPQm5WUExMcC1mUDM5Qk01aFdTcjUyTm9idHdMMXA5ZmhFdy1McXBGUy03Nk1Jb3ZsanBrazosT2JpdHVhcnkgaW5mb3JtYXRpb24gZm9yIENoYXJsZXMgPGI-V29ocjwvYj5CkQFDaGFybGVzIFdpbGxpYW0gPGI-V29ocjwvYj4gcGFzc2VkIGF3YXkgcGVhY2VmdWxseSBvbiB0aGUgNnRoIGRheSBvZiBGZWJydWFyeSAyMDI2LCBhdCB0aGUgYWdlIG9mIDk1LCBpbiBFYXN0IE1vcmljaGVzLCBOWSBkdWUgdG8gbmF0dXJhbCBjYXVzZXMuIgIQAUgAWABoAA",
+        "source": "Robertaccio Funeral Home",
+        "read_more_link": "https://www.robertacciofuneralhome.com/obituaries/Charles-Wohr?obId=47207457#:~:text=Charles%20William%20Wohr%20passed%20away,NY%20due%20to%20natural%20causes."
+      },
+      {
+        "position": 4,
+        "title": "James Wohr - Senior Editor",
+        "link": "https://www.linkedin.com/in/james-wohr-a42597123",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESawHrOzAVHfLNF92xur6AoPlyyjjoJS7RYH2CJuxhq7BfaQHXa8zQmgNC6aDRGfxHRrd2bAzGJOlpjwRjfbX1ldFSttPpo-jgP0FqvPQVMBqjNjsKhUrNgSy5b5FtxTl6mKsusCMGq8wzPPKB&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQFnoECCcQAQ&uoh=1",
+        "displayed_link": "270+ followers",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAm0lEQVR4AWP4__8_RRhMyLfs3sNQvOk_KRikB24ATNB2yhEQJtoQuAEwzVAAYtPVAMJe4Cjf8l-0bsd_RkIGQAGc_ej9t_-TDt_7_-vPXzD_6Yfv_-2nHSXWAAT49P33_z9__4HZl559JM2Aqm3XwXyXGcfA_H___pFmgFj9DjCfp3IrTIgkA5ADbbAbQA6mKDPp9x7YBTOAIgwAVba5DGceMlQAAAAASUVORK5CYII.png",
+        "snippet": "I am a self-starting, ambitious copy editor and fact-checker with a wide range of experience across multiple industries, including marketing, online content ...",
+        "about_this_result": {
+          "source": {
+            "description": "I am a self-starting, ambitious copy editor and fact-checker with a wide range of experience across multiple industries, including marketing, online content ...",
+            "source_info_link": "https://www.linkedin.com/in/james-wohr-a42597123",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAm0lEQVR4AWP4__8_RRhMyLfs3sNQvOk_KRikB24ATNB2yhEQJtoQuAEwzVAAYtPVAMJe4Cjf8l-0bsd_RkIGQAGc_ej9t_-TDt_7_-vPXzD_6Yfv_-2nHSXWAAT49P33_z9__4HZl559JM2Aqm3XwXyXGcfA_H___pFmgFj9DjCfp3IrTIgkA5ADbbAbQA6mKDPp9x7YBTOAIgwAVba5DGceMlQAAAAASUVORK5CYII.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=Cp4BL2dvdG8_dXJsPUNBRVNhd0hyT3pBVjV5R0x4cHVta0NpV0ZYYkY3eXh0Z0x0VXJwYmlvMGhwUmFOMUxWd19OZTVmTVJaNlN3OEx6TEpvSVVYTjR0QnFnOUlIWHZidXI1NUl0TWl2ZXBONWNaQmRNX1oyWl9YT3BYb0dPeDNTWVFXdmNsSkFuUG1kVk1sUUFwUkFOY2hSRmlmQzZkNFoSBBoCCAAa7QMSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJAyQMIABAAGAAgACpICglhdXRvbWF0ZWQV0yKOQBoEYXV0bxoJYXV0b21hdGljGgNjYXIaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkMp4BL2dvdG8_dXJsPUNBRVNhd0hyT3pBVjV5R0x4cHVta0NpV0ZYYkY3eXh0Z0x0VXJwYmlvMGhwUmFOMUxWd19OZTVmTVJaNlN3OEx6TEpvSVVYTjR0QnFnOUlIWHZidXI1NUl0TWl2ZXBONWNaQmRNX1oyWl9YT3BYb0dPeDNTWVFXdmNsSkFuUG1kVk1sUUFwUkFOY2hSRmlmQzZkNFo6LEphbWVzIDxiPldvaHI8L2I-IC0gU2VuaW9yIEVkaXRvciB8IExpbmtlZEluQqUBSSBhbSBhIHNlbGYtc3RhcnRpbmcsIGFtYml0aW91cyBjb3B5IGVkaXRvciBhbmQgZmFjdC1jaGVja2VyIHdpdGggYSB3aWRlIHJhbmdlIG9mIGV4cGVyaWVuY2UgYWNyb3NzIG11bHRpcGxlIGluZHVzdHJpZXMsIGluY2x1ZGluZyBtYXJrZXRpbmcsIG9ubGluZSBjb250ZW50Jm5ic3A7Li4uIgIQAUgAWABoAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=Cp4BL2dvdG8_dXJsPUNBRVNhd0hyT3pBVjV5R0x4cHVta0NpV0ZYYkY3eXh0Z0x0VXJwYmlvMGhwUmFOMUxWd19OZTVmTVJaNlN3OEx6TEpvSVVYTjR0QnFnOUlIWHZidXI1NUl0TWl2ZXBONWNaQmRNX1oyWl9YT3BYb0dPeDNTWVFXdmNsSkFuUG1kVk1sUUFwUkFOY2hSRmlmQzZkNFoSBBoCCAAa7QMSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJAyQMIABAAGAAgACpICglhdXRvbWF0ZWQV0yKOQBoEYXV0bxoJYXV0b21hdGljGgNjYXIaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkMp4BL2dvdG8_dXJsPUNBRVNhd0hyT3pBVjV5R0x4cHVta0NpV0ZYYkY3eXh0Z0x0VXJwYmlvMGhwUmFOMUxWd19OZTVmTVJaNlN3OEx6TEpvSVVYTjR0QnFnOUlIWHZidXI1NUl0TWl2ZXBONWNaQmRNX1oyWl9YT3BYb0dPeDNTWVFXdmNsSkFuUG1kVk1sUUFwUkFOY2hSRmlmQzZkNFo6LEphbWVzIDxiPldvaHI8L2I-IC0gU2VuaW9yIEVkaXRvciB8IExpbmtlZEluQqUBSSBhbSBhIHNlbGYtc3RhcnRpbmcsIGFtYml0aW91cyBjb3B5IGVkaXRvciBhbmQgZmFjdC1jaGVja2VyIHdpdGggYSB3aWRlIHJhbmdlIG9mIGV4cGVyaWVuY2UgYWNyb3NzIG11bHRpcGxlIGluZHVzdHJpZXMsIGluY2x1ZGluZyBtYXJrZXRpbmcsIG9ubGluZSBjb250ZW50Jm5ic3A7Li4uIgIQAUgAWABoAA",
+        "source": "LinkedIn · James Wohr",
+        "read_more_link": "https://www.linkedin.com/in/james-wohr-a42597123#:~:text=I%20am%20a%20self%2Dstarting%2C%20ambitious,magazines%2C%20textbooks)%2C%20and%20medical%20editing."
+      },
+      {
+        "position": 5,
+        "title": "Megan Wohr - Staff Directory",
+        "link": "https://www.dentoncounty.gov/m/directory/employee?eid=952",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESdAHrOzAVEU4oZ_wz9yK_2LP_rlC2yO6r78P2c9gcAYWLP4uUTqZlhxbSts_t12UgfyxmisP2tFbA6pVrR0VRzAG6Ecp9cxPA5aJiSKloGfZRr5lAIAA8qMWAFD72n3ePjL-E22s-ltQrmrX6P7ECRtC5xFQ2&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQFnoECB0QAQ&uoh=1",
+        "displayed_link": "https://www.dentoncounty.gov › directory › employee",
+        "favicon": "https://serpapi.com/searches/6adb9551de20eedd77cf082c/images/qc4-sunLKEkW5qWMExXHd_5ox48Dnbi1E8qEHrhv244.png",
+        "snippet": "Megan Wohr. Felony Prosecutor II. DVU - 211th Judicial District Court · Contact Megan Wohr · 940-349-2756 · Back to Directory · Agendas & Minutes · Elections.",
+        "snippet_highlighted_words": [
+          "Wohr",
+          "Wohr"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Megan Wohr. Felony Prosecutor II. DVU - 211th Judicial District Court · Contact Megan Wohr · 940-349-2756 · Back to Directory · Agendas & Minutes · Elections.",
+            "source_info_link": "https://www.dentoncounty.gov/m/directory/employee?eid=952",
+            "icon": "https://serpapi.com/searches/6adb9551de20eedd77cf082c/images/qc4-sunLKEkW5qWMExXHd2He3kglILceg5CMjcJoS3nCmn-ivb7W8HIsb-qeamvI.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CqoBL2dvdG8_dXJsPUNBRVNkQUhyT3pBVjI3NWNJQUgybmdxdTFUOHoyc1FQY0x6UG0xeHNSWG5IeXUwMV9qMkg0T3gtM1AxSVpKd3owMGVwV2dtYXNPd1RYRmpBd1VTZzRWeWVQWGpBMkNvZHJxUHBjTkF4a1RxMXBBUlFnZm1kR24xTF9GRGc4Nl80ZDVkU3VtQ1lZZklmV081NEV2NVFuTnpTQUNjdWl4dUMSBBoCCAAargQSABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAigQIABAAGAAgACpICglhdXRvbWF0ZWQV5pVwQBoEYXV0bxoJYXV0b21hdGljGgNjYXIaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkMqoBL2dvdG8_dXJsPUNBRVNkQUhyT3pBVjI3NWNJQUgybmdxdTFUOHoyc1FQY0x6UG0xeHNSWG5IeXUwMV9qMkg0T3gtM1AxSVpKd3owMGVwV2dtYXNPd1RYRmpBd1VTZzRWeWVQWGpBMkNvZHJxUHBjTkF4a1RxMXBBUlFnZm1kR24xTF9GRGc4Nl80ZDVkU3VtQ1lZZklmV081NEV2NVFuTnpTQUNjdWl4dUM6M01lZ2FuIDxiPldvaHI8L2I-IC0gU3RhZmYgRGlyZWN0b3J5IC0gRGVudG9uIENvdW50eULTAU1lZ2FuIDxiPldvaHI8L2I-LiBGZWxvbnkgUHJvc2VjdXRvciBJSS4gRFZVIC0gMjExdGggSnVkaWNpYWwgRGlzdHJpY3QgQ291cnQgJm1pZGRvdDsgQ29udGFjdCBNZWdhbiA8Yj5Xb2hyPC9iPiAmbWlkZG90OyA5NDAtMzQ5LTI3NTYgJm1pZGRvdDsgQmFjayB0byBEaXJlY3RvcnkgJm1pZGRvdDsgQWdlbmRhcyAmYW1wOyBNaW51dGVzICZtaWRkb3Q7IEVsZWN0aW9ucy4iAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CqoBL2dvdG8_dXJsPUNBRVNkQUhyT3pBVjI3NWNJQUgybmdxdTFUOHoyc1FQY0x6UG0xeHNSWG5IeXUwMV9qMkg0T3gtM1AxSVpKd3owMGVwV2dtYXNPd1RYRmpBd1VTZzRWeWVQWGpBMkNvZHJxUHBjTkF4a1RxMXBBUlFnZm1kR24xTF9GRGc4Nl80ZDVkU3VtQ1lZZklmV081NEV2NVFuTnpTQUNjdWl4dUMSBBoCCAAargQSABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAigQIABAAGAAgACpICglhdXRvbWF0ZWQV5pVwQBoEYXV0bxoJYXV0b21hdGljGgNjYXIaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkMqoBL2dvdG8_dXJsPUNBRVNkQUhyT3pBVjI3NWNJQUgybmdxdTFUOHoyc1FQY0x6UG0xeHNSWG5IeXUwMV9qMkg0T3gtM1AxSVpKd3owMGVwV2dtYXNPd1RYRmpBd1VTZzRWeWVQWGpBMkNvZHJxUHBjTkF4a1RxMXBBUlFnZm1kR24xTF9GRGc4Nl80ZDVkU3VtQ1lZZklmV081NEV2NVFuTnpTQUNjdWl4dUM6M01lZ2FuIDxiPldvaHI8L2I-IC0gU3RhZmYgRGlyZWN0b3J5IC0gRGVudG9uIENvdW50eULTAU1lZ2FuIDxiPldvaHI8L2I-LiBGZWxvbnkgUHJvc2VjdXRvciBJSS4gRFZVIC0gMjExdGggSnVkaWNpYWwgRGlzdHJpY3QgQ291cnQgJm1pZGRvdDsgQ29udGFjdCBNZWdhbiA8Yj5Xb2hyPC9iPiAmbWlkZG90OyA5NDAtMzQ5LTI3NTYgJm1pZGRvdDsgQmFjayB0byBEaXJlY3RvcnkgJm1pZGRvdDsgQWdlbmRhcyAmYW1wOyBNaW51dGVzICZtaWRkb3Q7IEVsZWN0aW9ucy4iAhABSABYAGgA",
+        "source": "Denton County (.gov)",
+        "read_more_link": "https://www.dentoncounty.gov/m/directory/employee?eid=952#:~:text=Megan%20Wohr,Elections"
+      },
+      {
+        "position": 6,
+        "title": "Alexander Wöhr (@lx_competition)",
+        "link": "https://www.instagram.com/lx_competition/?hl=en",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESagHrOzAVxsortEM2gOBbiGOKRGpP5qJorU9tC1AzL3L7FXI3e1C33L-7HNmAw8g3MSPKERR2ki-tlIg3puA43PlQkZoQsCY89YFeHhGKal8n9E6QcHE_RJPcjgeQeHbuGiUQomZR9KoNIb4&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQFnoECCUQAQ&uoh=1",
+        "displayed_link": "1K+ followers",
+        "favicon": "https://serpapi.com/searches/6adb9551de20eedd77cf082c/images/qc4-sunLKEkW5qWMExXHdz_xlFlMJpdlyrff-x2lHts.png",
+        "snippet": "25+ years Tuning as a passion ~ 20+ years KW-Suspension collaboration ~ 15+ years Automotive Engineer for Ferrari ~ Specialist for Ferrari F360/F430.",
+        "about_this_result": {
+          "source": {
+            "description": "25+ years Tuning as a passion ~ 20+ years KW-Suspension collaboration ~ 15+ years Automotive Engineer for Ferrari ~ Specialist for Ferrari F360/F430.",
+            "source_info_link": "https://www.instagram.com/lx_competition/?hl=en",
+            "icon": "https://serpapi.com/searches/6adb9551de20eedd77cf082c/images/qc4-sunLKEkW5qWMExXHd5JQ0nlLfFKNKETKlrno94jAGguwyiGGS7xhR29dBJzm.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=Cp0BL2dvdG8_dXJsPUNBRVNhZ0hyT3pBVnk4cE5JYm9UdzF2UEN0Znk5Y29kb2hPSGk2TUlSTjNubkdOaS0zaks3VmlsaGxlc0NGNkxzQm9Rb2d1c3ZFQ0puN1hyTnRDbWNSNkRCOGZ4Yk0xVUI0cmtfNWRRX1hjTVJkdXRkdWYxUC1vMTNrT0JDYWNCeElRT3U0eEZlUlBJdkhVeFpnNBIEGgIIABrkAxIAGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkDAAwgAEAAYACAAKkgKCWF1dG9tYXRlZBW8fy5AGgRhdXRvGglhdXRvbWF0aWMaA2NhchoQYXV0b21hdGVkcGFya2luZxoOaXY7cDthdXRvbWF0ZWQynQEvZ290bz91cmw9Q0FFU2FnSHJPekFWeThwTklib1R3MXZQQ3RmeTljb2RvaE9IaTZNSVJOM25uR05pLTNqSzdWaWxobGVzQ0Y2THNCb1FvZ3VzdkVDSm43WHJOdENtY1I2REI4ZnhiTTFVQjRya181ZFFfWGNNUmR1dGR1ZjFQLW8xM2tPQkNhY0J4SVFPdTR4RmVSUEl2SFV4Wmc0OjRBbGV4YW5kZXIgPGI-V8O2aHI8L2I-IChAbHhfY29tcGV0aXRpb24pIC0gSW5zdGFncmFtQpUBMjUrIHllYXJzIFR1bmluZyBhcyBhIHBhc3Npb24gfiAyMCsgeWVhcnMgS1ctU3VzcGVuc2lvbiBjb2xsYWJvcmF0aW9uIH4gMTUrIHllYXJzIEF1dG9tb3RpdmUgRW5naW5lZXIgZm9yIEZlcnJhcmkgfiBTcGVjaWFsaXN0IGZvciBGZXJyYXJpIEYzNjAvRjQzMC4iAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=Cp0BL2dvdG8_dXJsPUNBRVNhZ0hyT3pBVnk4cE5JYm9UdzF2UEN0Znk5Y29kb2hPSGk2TUlSTjNubkdOaS0zaks3VmlsaGxlc0NGNkxzQm9Rb2d1c3ZFQ0puN1hyTnRDbWNSNkRCOGZ4Yk0xVUI0cmtfNWRRX1hjTVJkdXRkdWYxUC1vMTNrT0JDYWNCeElRT3U0eEZlUlBJdkhVeFpnNBIEGgIIABrkAxIAGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkDAAwgAEAAYACAAKkgKCWF1dG9tYXRlZBW8fy5AGgRhdXRvGglhdXRvbWF0aWMaA2NhchoQYXV0b21hdGVkcGFya2luZxoOaXY7cDthdXRvbWF0ZWQynQEvZ290bz91cmw9Q0FFU2FnSHJPekFWeThwTklib1R3MXZQQ3RmeTljb2RvaE9IaTZNSVJOM25uR05pLTNqSzdWaWxobGVzQ0Y2THNCb1FvZ3VzdkVDSm43WHJOdENtY1I2REI4ZnhiTTFVQjRya181ZFFfWGNNUmR1dGR1ZjFQLW8xM2tPQkNhY0J4SVFPdTR4RmVSUEl2SFV4Wmc0OjRBbGV4YW5kZXIgPGI-V8O2aHI8L2I-IChAbHhfY29tcGV0aXRpb24pIC0gSW5zdGFncmFtQpUBMjUrIHllYXJzIFR1bmluZyBhcyBhIHBhc3Npb24gfiAyMCsgeWVhcnMgS1ctU3VzcGVuc2lvbiBjb2xsYWJvcmF0aW9uIH4gMTUrIHllYXJzIEF1dG9tb3RpdmUgRW5naW5lZXIgZm9yIEZlcnJhcmkgfiBTcGVjaWFsaXN0IGZvciBGZXJyYXJpIEYzNjAvRjQzMC4iAhABSABYAGgA",
+        "source": "Instagram · lx_competition",
+        "read_more_link": "https://www.instagram.com/lx_competition/?hl=en#:~:text=~%2025%2B%20years%20Tuning%20as,~%20Specialist%20for%20Ferrari%20F360%2FF430"
+      },
+      {
+        "position": 7,
+        "title": "Joyce A. Wohr Obituary May 21, 2021",
+        "link": "https://www.wjsmithandson.com/obituary/joyce-wohr",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESbAHrOzAVt6OijmF-V4FGmQDFu1-vRPJdbv8UCZEWIV0pbK7Y2qcQlFj84adFe6K7tY7ac8ybnWBLqi7XMv_nFqZyhFY-FHWXJAp5XVhsvvJvmvLT0S9-_E-iJKW8DWQuJuOnwR0Fi075RfknSw&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQFnoECB8QAQ&uoh=1",
+        "displayed_link": "https://www.wjsmithandson.com › obituary › joyce-wohr",
+        "date": "May 21, 2021",
+        "snippet": "Adoring Wife, Sister, Mother, Grandmother, and Great Grandmother- Joyce A. Wohr gained her wings early am on May 21, 2021 at her home.",
+        "snippet_highlighted_words": [
+          "Wohr"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Adoring Wife, Sister, Mother, Grandmother, and Great Grandmother- Joyce A. Wohr gained her wings early am on May 21, 2021 at her home.",
+            "source_info_link": "https://www.wjsmithandson.com/obituary/joyce-wohr"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CqABL2dvdG8_dXJsPUNBRVNiQUhyT3pBVnAwUFFlMTJiem01SlUwZXoySmZZa3dqVXJMUjhJNWZRc25JYTdNRU5QZVNYbUNsd2VhNTJGeU94Ty1lTkZBMFVoR3VmNVRIbU1ocEUzUnFnd2I4c1NVbDlIWFgwTUIwZHBGS3p1dktabk03bUFaZ0lwdDY3RFg4R0l1VzN3TnV1amtiMC1NTTZvdxIEGgIIABrVAxIAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkCxAwgAEAAYACAAKkgKCWF1dG9tYXRlZBVClJNAGgRhdXRvGglhdXRvbWF0aWMaA2NhchoQYXV0b21hdGVkcGFya2luZxoOaXY7cDthdXRvbWF0ZWQyoAEvZ290bz91cmw9Q0FFU2JBSHJPekFWcDBQUWUxMmJ6bTVKVTBlejJKZllrd2pVckxSOEk1ZlFzbklhN01FTlBlU1htQ2x3ZWE1MkZ5T3hPLWVORkEwVWhHdWY1VEhtTWhwRTNScWd3YjhzU1VsOUhYWDBNQjBkcEZLenV2S1puTTdtQVpnSXB0NjdEWDhHSXVXM3dOdXVqa2IwLU1NNm93OipKb3ljZSBBLiA8Yj5Xb2hyPC9iPiBPYml0dWFyeSBNYXkgMjEsIDIwMjFCjQFBZG9yaW5nIFdpZmUsIFNpc3RlciwgTW90aGVyLCBHcmFuZG1vdGhlciwgYW5kIEdyZWF0IEdyYW5kbW90aGVyLSBKb3ljZSBBLiA8Yj5Xb2hyPC9iPiBnYWluZWQgaGVyIHdpbmdzIGVhcmx5IGFtIG9uIE1heSAyMSwgMjAyMSBhdCBoZXIgaG9tZS4iAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CqABL2dvdG8_dXJsPUNBRVNiQUhyT3pBVnAwUFFlMTJiem01SlUwZXoySmZZa3dqVXJMUjhJNWZRc25JYTdNRU5QZVNYbUNsd2VhNTJGeU94Ty1lTkZBMFVoR3VmNVRIbU1ocEUzUnFnd2I4c1NVbDlIWFgwTUIwZHBGS3p1dktabk03bUFaZ0lwdDY3RFg4R0l1VzN3TnV1amtiMC1NTTZvdxIEGgIIABrVAxIAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkCxAwgAEAAYACAAKkgKCWF1dG9tYXRlZBVClJNAGgRhdXRvGglhdXRvbWF0aWMaA2NhchoQYXV0b21hdGVkcGFya2luZxoOaXY7cDthdXRvbWF0ZWQyoAEvZ290bz91cmw9Q0FFU2JBSHJPekFWcDBQUWUxMmJ6bTVKVTBlejJKZllrd2pVckxSOEk1ZlFzbklhN01FTlBlU1htQ2x3ZWE1MkZ5T3hPLWVORkEwVWhHdWY1VEhtTWhwRTNScWd3YjhzU1VsOUhYWDBNQjBkcEZLenV2S1puTTdtQVpnSXB0NjdEWDhHSXVXM3dOdXVqa2IwLU1NNm93OipKb3ljZSBBLiA8Yj5Xb2hyPC9iPiBPYml0dWFyeSBNYXkgMjEsIDIwMjFCjQFBZG9yaW5nIFdpZmUsIFNpc3RlciwgTW90aGVyLCBHcmFuZG1vdGhlciwgYW5kIEdyZWF0IEdyYW5kbW90aGVyLSBKb3ljZSBBLiA8Yj5Xb2hyPC9iPiBnYWluZWQgaGVyIHdpbmdzIGVhcmx5IGFtIG9uIE1heSAyMSwgMjAyMSBhdCBoZXIgaG9tZS4iAhABSABYAGgA",
+        "source": "W.J. Smith & Son Funeral Home"
+      }
+    ],
+    "related_searches": [
+      {
+        "block_position": 1,
+        "query": "Wohr meaning",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnurTE3Xaj1SUVlcFMFY0zjC6vQGpw:1792775505323&q=Wohr+meaning&sa=X&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQ1QJ6BAgZEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Wohr+meaning"
+      },
+      {
+        "block_position": 1,
+        "query": "Klaus parking system",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnurTE3Xaj1SUVlcFMFY0zjC6vQGpw:1792775505323&q=Klaus+parking+system&sa=X&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQ1QJ6BAgmEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Klaus+parking+system"
+      },
+      {
+        "block_position": 1,
+        "query": "WÖHR parking platform",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnurTE3Xaj1SUVlcFMFY0zjC6vQGpw:1792775505323&q=W%C3%96HR+parking+platform&sa=X&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQ1QJ6BAgjEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=W%C3%96HR+parking+platform"
+      },
+      {
+        "block_position": 1,
+        "query": "Wohr Parklift 411",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnurTE3Xaj1SUVlcFMFY0zjC6vQGpw:1792775505323&q=Wohr+Parklift+411&sa=X&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQ1QJ6BAghEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Wohr+Parklift+411"
+      },
+      {
+        "block_position": 1,
+        "query": "Automatic car parking garage companies in usa",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnurTE3Xaj1SUVlcFMFY0zjC6vQGpw:1792775505323&q=Automatic+car+parking+garage+companies+in+usa&sa=X&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQ1QJ6BAgeEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Automatic+car+parking+garage+companies+in+usa"
+      },
+      {
+        "block_position": 1,
+        "query": "Automated parking garage",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnurTE3Xaj1SUVlcFMFY0zjC6vQGpw:1792775505323&q=Automated+parking+garage&sa=X&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQ1QJ6BAgcEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Automated+parking+garage"
+      },
+      {
+        "block_position": 1,
+        "query": "Wohr law",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnurTE3Xaj1SUVlcFMFY0zjC6vQGpw:1792775505323&q=Wohr+law&sa=X&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQ1QJ6BAgbEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Wohr+law"
+      },
+      {
+        "block_position": 1,
+        "query": "Vertical parking system",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnurTE3Xaj1SUVlcFMFY0zjC6vQGpw:1792775505323&q=Vertical+parking+system&sa=X&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQ1QJ6BAgaEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Vertical+parking+system"
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "next": "https://www.google.com/search?q=automated+parking+system+US+deployment+project+ParkPlus+WOHR+robotic+parking&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnurTE3Xaj1SUVlcFMFY0zjC6vQGpw:1792775505323&ei=UZXbauGfE_eo5NoPwqH02Ag&start=10&sa=N&sstk=AS6-VmLytlw7kZrKd6t-uEZ4B5A-IOLykeJH1yM7q3O-MlbN4DsXlGHKfY2AePg-R-SW9Jt8mXjLqsFUwYOehYRvPgPpULeqm9JBAQ&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQ8NMDegQILRAM",
+      "other_pages": {
+        "2": "https://www.google.com/search?q=automated+parking+system+US+deployment+project+ParkPlus+WOHR+robotic+parking&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnurTE3Xaj1SUVlcFMFY0zjC6vQGpw:1792775505323&ei=UZXbauGfE_eo5NoPwqH02Ag&start=10&sa=N&sstk=AS6-VmLytlw7kZrKd6t-uEZ4B5A-IOLykeJH1yM7q3O-MlbN4DsXlGHKfY2AePg-R-SW9Jt8mXjLqsFUwYOehYRvPgPpULeqm9JBAQ&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQ8tMDegQILRAE",
+        "3": "https://www.google.com/search?q=automated+parking+system+US+deployment+project+ParkPlus+WOHR+robotic+parking&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnurTE3Xaj1SUVlcFMFY0zjC6vQGpw:1792775505323&ei=UZXbauGfE_eo5NoPwqH02Ag&start=20&sa=N&sstk=AS6-VmLytlw7kZrKd6t-uEZ4B5A-IOLykeJH1yM7q3O-MlbN4DsXlGHKfY2AePg-R-SW9Jt8mXjLqsFUwYOehYRvPgPpULeqm9JBAQ&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQ8tMDegQILRAG",
+        "4": "https://www.google.com/search?q=automated+parking+system+US+deployment+project+ParkPlus+WOHR+robotic+parking&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnurTE3Xaj1SUVlcFMFY0zjC6vQGpw:1792775505323&ei=UZXbauGfE_eo5NoPwqH02Ag&start=30&sa=N&sstk=AS6-VmLytlw7kZrKd6t-uEZ4B5A-IOLykeJH1yM7q3O-MlbN4DsXlGHKfY2AePg-R-SW9Jt8mXjLqsFUwYOehYRvPgPpULeqm9JBAQ&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQ8tMDegQILRAI",
+        "5": "https://www.google.com/search?q=automated+parking+system+US+deployment+project+ParkPlus+WOHR+robotic+parking&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnurTE3Xaj1SUVlcFMFY0zjC6vQGpw:1792775505323&ei=UZXbauGfE_eo5NoPwqH02Ag&start=40&sa=N&sstk=AS6-VmLytlw7kZrKd6t-uEZ4B5A-IOLykeJH1yM7q3O-MlbN4DsXlGHKfY2AePg-R-SW9Jt8mXjLqsFUwYOehYRvPgPpULeqm9JBAQ&ved=2ahUKEwihjKCZ0dCXAxV3FFkFHcIQHYsQ8tMDegQILRAK"
+      }
+    },
+    "serpapi_pagination": {
+      "current": 1,
+      "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=automated+parking+system+US+deployment+project+ParkPlus+WOHR+robotic+parking&start=10",
+      "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=automated+parking+system+US+deployment+project+ParkPlus+WOHR+robotic+parking&start=10",
+      "other_pages": {
+        "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=automated+parking+system+US+deployment+project+ParkPlus+WOHR+robotic+parking&start=10",
+        "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=automated+parking+system+US+deployment+project+ParkPlus+WOHR+robotic+parking&start=20",
+        "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=automated+parking+system+US+deployment+project+ParkPlus+WOHR+robotic+parking&start=30",
+        "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=automated+parking+system+US+deployment+project+ParkPlus+WOHR+robotic+parking&start=40"
+      }
+    }
+  }
+}

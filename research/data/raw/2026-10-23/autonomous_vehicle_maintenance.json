@@ -1,0 +1,455 @@
+{
+  "query": {
+    "query_id": "autonomous_vehicle_maintenance",
+    "engine": "google",
+    "q": "autonomous vehicle fleet maintenance charging depot facility Waymo",
+    "gl": "us",
+    "hl": "en",
+    "num": 10
+  },
+  "retrieved_at": "2026-10-23T17:11:03.927844+00:00",
+  "status": "success",
+  "response": {
+    "search_metadata": {
+      "id": "6adb950e4a99b78fa0b1f49c",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/1z4adPi5bsAxLuMdDTPXgZFGtUFqRYlH0601oZAMCqI/6adb950e4a99b78fa0b1f49c.json",
+      "markdown_endpoint": "https://serpapi.com/searches/1z4adPi5bsAxLuMdDTPXgZFGtUFqRYlH0601oZAMCqI/6adb950e4a99b78fa0b1f49c.md",
+      "pixel_position_endpoint": "https://serpapi.com/searches/1z4adPi5bsAxLuMdDTPXgZFGtUFqRYlH0601oZAMCqI/6adb950e4a99b78fa0b1f49c.json_with_pixel_position",
+      "created_at": "2026-10-23 17:10:38 UTC",
+      "processed_at": "2026-10-23 17:10:38 UTC",
+      "google_url": "https://www.google.com/search?q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&oq=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&hl=en&gl=us&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/1z4adPi5bsAxLuMdDTPXgZFGtUFqRYlH0601oZAMCqI/6adb950e4a99b78fa0b1f49c.html",
+      "total_time_taken": 25.29
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "autonomous vehicle fleet maintenance charging depot facility Waymo",
+      "google_domain": "google.com",
+      "hl": "en",
+      "gl": "us",
+      "device": "desktop"
+    },
+    "search_information": {
+      "query_displayed": "autonomous vehicle fleet maintenance charging depot facility Waymo",
+      "total_results": 110,
+      "time_taken_displayed": 0.35,
+      "organic_results_state": "Results for exact spelling"
+    },
+    "related_questions": [
+      {
+        "question": "Can a cop pull over a Waymo car?",
+        "type": "featured_snippet",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTE1qUktia0ZGTkZGUk1WUTNhVkJTWmtWd1JrSjZaQzFwUnkxUlVXTlBSM0JsYXpWTmRrOVZhM1ZaVTFwc2NubFFPRjlFWDFKNVgxb3dNa1pJTjBwUFEzUTVNSHAzWW1wTVZIaFZTbVJmV2xGU2NFUTFjbHBrZUhoaFFSSVhTbkJZWW1Gd1dFWk1TbVZwYzJWTlVEVm1hamhwUVc4YUlrRkVjM0k1WmxNd09EZFFVemRYVEVwSmRWRmtRa3BXVEVOUGNIcEhlVTFRZEVFIiwiZmN2IjoiMyIsImVpIjoiSnBYYmFwWEZMSmVpc2VNUDVmajhpQW8iLCJxYyI6IkNrSmhkWFJ2Ym05dGIzVnpJSFpsYUdsamJHVWdabXhsWlhRZ2JXRnBiblJsYm1GdVkyVWdZMmhoY21kcGJtY2daR1Z3YjNRZ1ptRmphV3hwZEhrZ2QyRjViVzhRQUgxUklTWV8iLCJxdWVzdGlvbiI6IkNhbiBhIGNvcCBwdWxsIG92ZXIgYSBXYXltbyBjYXI/IiwibGsiOiJHaDlqWVc0Z1lTQmpiM0FnY0hWc2JDQnZkbVZ5SUdFZ2QyRjViVzhnWTJGeSIsImJzIjoiYzIzT3NRNENJUXdHNExoMk10SFRoTVdldTRPOEFJTWFmUVBtQnNoaGdnY0JsUGoybnRFVGg5dmF2OS1mRkU2QUItcVJVUG1BNGU0Yy1vZUp3eTdwZWZPb0tBcmVzbzJhTkdVMHNJZVZ0TVBvRFBXcGRwUGdhOWFVZXZrMUV1eGdLUzFsdkk3LWFJTFBnamRzVWI3NVItdDNEbWRvTDc2ZzlpYjlmNGVkeWFnc3hjNW93YmNNYlVWbENzMW5MdyIsImlkIjoiZmNfSnBYYmFwWEZMSmVpc2VNUDVmajhpQW9fNCJ9",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTE1qUktia0ZGTkZGUk1WUTNhVkJTWmtWd1JrSjZaQzFwUnkxUlVXTlBSM0JsYXpWTmRrOVZhM1ZaVTFwc2NubFFPRjlFWDFKNVgxb3dNa1pJTjBwUFEzUTVNSHAzWW1wTVZIaFZTbVJmV2xGU2NFUTFjbHBrZUhoaFFSSVhTbkJZWW1Gd1dFWk1TbVZwYzJWTlVEVm1hamhwUVc4YUlrRkVjM0k1WmxNd09EZFFVemRYVEVwSmRWRmtRa3BXVEVOUGNIcEhlVTFRZEVFIiwiZmN2IjoiMyIsImVpIjoiSnBYYmFwWEZMSmVpc2VNUDVmajhpQW8iLCJxYyI6IkNrSmhkWFJ2Ym05dGIzVnpJSFpsYUdsamJHVWdabXhsWlhRZ2JXRnBiblJsYm1GdVkyVWdZMmhoY21kcGJtY2daR1Z3YjNRZ1ptRmphV3hwZEhrZ2QyRjViVzhRQUgxUklTWV8iLCJxdWVzdGlvbiI6IkNhbiBhIGNvcCBwdWxsIG92ZXIgYSBXYXltbyBjYXI%2FIiwibGsiOiJHaDlqWVc0Z1lTQmpiM0FnY0hWc2JDQnZkbVZ5SUdFZ2QyRjViVzhnWTJGeSIsImJzIjoiYzIzT3NRNENJUXdHNExoMk10SFRoTVdldTRPOEFJTWFmUVBtQnNoaGdnY0JsUGoybnRFVGg5dmF2OS1mRkU2QUItcVJVUG1BNGU0Yy1vZUp3eTdwZWZPb0tBcmVzbzJhTkdVMHNJZVZ0TVBvRFBXcGRwUGdhOWFVZXZrMUV1eGdLUzFsdkk3LWFJTFBnamRzVWI3NVItdDNEbWRvTDc2ZzlpYjlmNGVkeWFnc3hjNW93YmNNYlVWbENzMW5MdyIsImlkIjoiZmNfSnBYYmFwWEZMSmVpc2VNUDVmajhpQW9fNCJ9"
+      },
+      {
+        "question": "Who cleans Waymo cars?",
+        "type": "featured_snippet",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTE1qUktia0ZGTkZGUk1WUTNhVkJTWmtWd1JrSjZaQzFwUnkxUlVXTlBSM0JsYXpWTmRrOVZhM1ZaVTFwc2NubFFPRjlFWDFKNVgxb3dNa1pJTjBwUFEzUTVNSHAzWW1wTVZIaFZTbVJmV2xGU2NFUTFjbHBrZUhoaFFSSVhTbkJZWW1Gd1dFWk1TbVZwYzJWTlVEVm1hamhwUVc4YUlrRkVjM0k1WmxNd09EZFFVemRYVEVwSmRWRmtRa3BXVEVOUGNIcEhlVTFRZEVFIiwiZmN2IjoiMyIsImVpIjoiSnBYYmFwWEZMSmVpc2VNUDVmajhpQW8iLCJxYyI6IkNrSmhkWFJ2Ym05dGIzVnpJSFpsYUdsamJHVWdabXhsWlhRZ2JXRnBiblJsYm1GdVkyVWdZMmhoY21kcGJtY2daR1Z3YjNRZ1ptRmphV3hwZEhrZ2QyRjViVzhRQUgxUklTWV8iLCJxdWVzdGlvbiI6IldobyBjbGVhbnMgV2F5bW8gY2Fycz8iLCJsayI6IkdoVjNhRzhnWTJ4bFlXNXpJSGRoZVcxdklHTmhjbk0iLCJicyI6ImMyM09zUTRDSVF3RzRMaDJNdEhUaE1XZXU0TzhBSU1hZlFQbUJzaGhnZ2NCbFBqMm50RVRoOXZhdjktZkZFNkFCLXFSVVBtQTRlNGMtb2VKd3k3cGVmT29LQXJlc28yYU5HVTBzSWVWdE1Qb0RQV3BkcFBnYTlhVWV2azFFdXhnS1MxbHZJNy1hSUxQZ2pkc1ViNzVSLXQzRG1kb0w3Nmc5aWI5ZjRlZHlhZ3N4YzVvd2JjTWJVVmxDczFuTHciLCJpZCI6ImZjX0pwWGJhcFhGTEplaXNlTVA1Zmo4aUFvXzQifQ==",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTE1qUktia0ZGTkZGUk1WUTNhVkJTWmtWd1JrSjZaQzFwUnkxUlVXTlBSM0JsYXpWTmRrOVZhM1ZaVTFwc2NubFFPRjlFWDFKNVgxb3dNa1pJTjBwUFEzUTVNSHAzWW1wTVZIaFZTbVJmV2xGU2NFUTFjbHBrZUhoaFFSSVhTbkJZWW1Gd1dFWk1TbVZwYzJWTlVEVm1hamhwUVc4YUlrRkVjM0k1WmxNd09EZFFVemRYVEVwSmRWRmtRa3BXVEVOUGNIcEhlVTFRZEVFIiwiZmN2IjoiMyIsImVpIjoiSnBYYmFwWEZMSmVpc2VNUDVmajhpQW8iLCJxYyI6IkNrSmhkWFJ2Ym05dGIzVnpJSFpsYUdsamJHVWdabXhsWlhRZ2JXRnBiblJsYm1GdVkyVWdZMmhoY21kcGJtY2daR1Z3YjNRZ1ptRmphV3hwZEhrZ2QyRjViVzhRQUgxUklTWV8iLCJxdWVzdGlvbiI6IldobyBjbGVhbnMgV2F5bW8gY2Fycz8iLCJsayI6IkdoVjNhRzhnWTJ4bFlXNXpJSGRoZVcxdklHTmhjbk0iLCJicyI6ImMyM09zUTRDSVF3RzRMaDJNdEhUaE1XZXU0TzhBSU1hZlFQbUJzaGhnZ2NCbFBqMm50RVRoOXZhdjktZkZFNkFCLXFSVVBtQTRlNGMtb2VKd3k3cGVmT29LQXJlc28yYU5HVTBzSWVWdE1Qb0RQV3BkcFBnYTlhVWV2azFFdXhnS1MxbHZJNy1hSUxQZ2pkc1ViNzVSLXQzRG1kb0w3Nmc5aWI5ZjRlZHlhZ3N4YzVvd2JjTWJVVmxDczFuTHciLCJpZCI6ImZjX0pwWGJhcFhGTEplaXNlTVA1Zmo4aUFvXzQifQ%3D%3D"
+      },
+      {
+        "question": "What is Waymo Depot?",
+        "type": "featured_snippet",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTE1qUktia0ZGTkZGUk1WUTNhVkJTWmtWd1JrSjZaQzFwUnkxUlVXTlBSM0JsYXpWTmRrOVZhM1ZaVTFwc2NubFFPRjlFWDFKNVgxb3dNa1pJTjBwUFEzUTVNSHAzWW1wTVZIaFZTbVJmV2xGU2NFUTFjbHBrZUhoaFFSSVhTbkJZWW1Gd1dFWk1TbVZwYzJWTlVEVm1hamhwUVc4YUlrRkVjM0k1WmxNd09EZFFVemRYVEVwSmRWRmtRa3BXVEVOUGNIcEhlVTFRZEVFIiwiZmN2IjoiMyIsImVpIjoiSnBYYmFwWEZMSmVpc2VNUDVmajhpQW8iLCJxYyI6IkNrSmhkWFJ2Ym05dGIzVnpJSFpsYUdsamJHVWdabXhsWlhRZ2JXRnBiblJsYm1GdVkyVWdZMmhoY21kcGJtY2daR1Z3YjNRZ1ptRmphV3hwZEhrZ2QyRjViVzhRQUgxUklTWV8iLCJxdWVzdGlvbiI6IldoYXQgaXMgV2F5bW8gRGVwb3Q/IiwibGsiOiJHaE4zYUdGMElHbHpJSGRoZVcxdklHUmxjRzkwIiwiYnMiOiJjMjNPc1E0Q0lRd0c0TGgyTXRIVGhNV2V1NE84QUlNYWZRUG1Cc2hoZ2djQmxQajJudEVUaDl2YXY5LWZGRTZBQi1xUlVQbUE0ZTRjLW9lSnd5N3BlZk9vS0FyZXNvMmFOR1Uwc0llVnRNUG9EUFdwZHBQZ2E5YVVldmsxRXV4Z0tTMWx2STctYUlMUGdqZHNVYjc1Ui10M0RtZG9MNzZnOWliOWY0ZWR5YWdzeGM1b3diY01iVVZsQ3Mxbkx3IiwiaWQiOiJmY19KcFhiYXBYRkxKZWlzZU1QNWZqOGlBb180In0=",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTE1qUktia0ZGTkZGUk1WUTNhVkJTWmtWd1JrSjZaQzFwUnkxUlVXTlBSM0JsYXpWTmRrOVZhM1ZaVTFwc2NubFFPRjlFWDFKNVgxb3dNa1pJTjBwUFEzUTVNSHAzWW1wTVZIaFZTbVJmV2xGU2NFUTFjbHBrZUhoaFFSSVhTbkJZWW1Gd1dFWk1TbVZwYzJWTlVEVm1hamhwUVc4YUlrRkVjM0k1WmxNd09EZFFVemRYVEVwSmRWRmtRa3BXVEVOUGNIcEhlVTFRZEVFIiwiZmN2IjoiMyIsImVpIjoiSnBYYmFwWEZMSmVpc2VNUDVmajhpQW8iLCJxYyI6IkNrSmhkWFJ2Ym05dGIzVnpJSFpsYUdsamJHVWdabXhsWlhRZ2JXRnBiblJsYm1GdVkyVWdZMmhoY21kcGJtY2daR1Z3YjNRZ1ptRmphV3hwZEhrZ2QyRjViVzhRQUgxUklTWV8iLCJxdWVzdGlvbiI6IldoYXQgaXMgV2F5bW8gRGVwb3Q%2FIiwibGsiOiJHaE4zYUdGMElHbHpJSGRoZVcxdklHUmxjRzkwIiwiYnMiOiJjMjNPc1E0Q0lRd0c0TGgyTXRIVGhNV2V1NE84QUlNYWZRUG1Cc2hoZ2djQmxQajJudEVUaDl2YXY5LWZGRTZBQi1xUlVQbUE0ZTRjLW9lSnd5N3BlZk9vS0FyZXNvMmFOR1Uwc0llVnRNUG9EUFdwZHBQZ2E5YVVldmsxRXV4Z0tTMWx2STctYUlMUGdqZHNVYjc1Ui10M0RtZG9MNzZnOWliOWY0ZWR5YWdzeGM1b3diY01iVVZsQ3Mxbkx3IiwiaWQiOiJmY19KcFhiYXBYRkxKZWlzZU1QNWZqOGlBb180In0%3D"
+      },
+      {
+        "question": "How does a Waymo car get charged?",
+        "type": "featured_snippet",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTE1qUktia0ZGTkZGUk1WUTNhVkJTWmtWd1JrSjZaQzFwUnkxUlVXTlBSM0JsYXpWTmRrOVZhM1ZaVTFwc2NubFFPRjlFWDFKNVgxb3dNa1pJTjBwUFEzUTVNSHAzWW1wTVZIaFZTbVJmV2xGU2NFUTFjbHBrZUhoaFFSSVhTbkJZWW1Gd1dFWk1TbVZwYzJWTlVEVm1hamhwUVc4YUlrRkVjM0k1WmxNd09EZFFVemRYVEVwSmRWRmtRa3BXVEVOUGNIcEhlVTFRZEVFIiwiZmN2IjoiMyIsImVpIjoiSnBYYmFwWEZMSmVpc2VNUDVmajhpQW8iLCJxYyI6IkNrSmhkWFJ2Ym05dGIzVnpJSFpsYUdsamJHVWdabXhsWlhRZ2JXRnBiblJsYm1GdVkyVWdZMmhoY21kcGJtY2daR1Z3YjNRZ1ptRmphV3hwZEhrZ2QyRjViVzhRQUgxUklTWV8iLCJxdWVzdGlvbiI6IkhvdyBkb2VzIGEgV2F5bW8gY2FyIGdldCBjaGFyZ2VkPyIsImxrIjoiR2lCb2IzY2daRzlsY3lCaElIZGhlVzF2SUdOaGNpQm5aWFFnWTJoaGNtZGxaQSIsImJzIjoiYzIzT3NRNENJUXdHNExoMk10SFRoTVdldTRPOEFJTWFmUVBtQnNoaGdnY0JsUGoybnRFVGg5dmF2OS1mRkU2QUItcVJVUG1BNGU0Yy1vZUp3eTdwZWZPb0tBcmVzbzJhTkdVMHNJZVZ0TVBvRFBXcGRwUGdhOWFVZXZrMUV1eGdLUzFsdkk3LWFJTFBnamRzVWI3NVItdDNEbWRvTDc2ZzlpYjlmNGVkeWFnc3hjNW93YmNNYlVWbENzMW5MdyIsImlkIjoiZmNfSnBYYmFwWEZMSmVpc2VNUDVmajhpQW9fNCJ9",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJTbWxVTkhSTE1qUktia0ZGTkZGUk1WUTNhVkJTWmtWd1JrSjZaQzFwUnkxUlVXTlBSM0JsYXpWTmRrOVZhM1ZaVTFwc2NubFFPRjlFWDFKNVgxb3dNa1pJTjBwUFEzUTVNSHAzWW1wTVZIaFZTbVJmV2xGU2NFUTFjbHBrZUhoaFFSSVhTbkJZWW1Gd1dFWk1TbVZwYzJWTlVEVm1hamhwUVc4YUlrRkVjM0k1WmxNd09EZFFVemRYVEVwSmRWRmtRa3BXVEVOUGNIcEhlVTFRZEVFIiwiZmN2IjoiMyIsImVpIjoiSnBYYmFwWEZMSmVpc2VNUDVmajhpQW8iLCJxYyI6IkNrSmhkWFJ2Ym05dGIzVnpJSFpsYUdsamJHVWdabXhsWlhRZ2JXRnBiblJsYm1GdVkyVWdZMmhoY21kcGJtY2daR1Z3YjNRZ1ptRmphV3hwZEhrZ2QyRjViVzhRQUgxUklTWV8iLCJxdWVzdGlvbiI6IkhvdyBkb2VzIGEgV2F5bW8gY2FyIGdldCBjaGFyZ2VkPyIsImxrIjoiR2lCb2IzY2daRzlsY3lCaElIZGhlVzF2SUdOaGNpQm5aWFFnWTJoaGNtZGxaQSIsImJzIjoiYzIzT3NRNENJUXdHNExoMk10SFRoTVdldTRPOEFJTWFmUVBtQnNoaGdnY0JsUGoybnRFVGg5dmF2OS1mRkU2QUItcVJVUG1BNGU0Yy1vZUp3eTdwZWZPb0tBcmVzbzJhTkdVMHNJZVZ0TVBvRFBXcGRwUGdhOWFVZXZrMUV1eGdLUzFsdkk3LWFJTFBnamRzVWI3NVItdDNEbWRvTDc2ZzlpYjlmNGVkeWFnc3hjNW93YmNNYlVWbENzMW5MdyIsImlkIjoiZmNfSnBYYmFwWEZMSmVpc2VNUDVmajhpQW9fNCJ9"
+      }
+    ],
+    "ai_overview": {
+      "page_token": "tUCo1niczVXbkqo4FP2B-Y3hxT6Ct1a7ijqVILZ4a-m2vb1QGGJAgdiAIuft_Mt81XzNBPCCtjp9zsvMrtKQnX1LslfWz79sy139_UfBDIK1_8TzYRjmCaXExnlEHV73IxfxC2r7HjK_-3TjIWwZIjI96mCO2OLG50xbxC4XbcUSh3xR4LAltteTub6eNLttbPm4N6gsljULUC4JJ2pz3cdLlm239HmNZ3-rP0sNNsn7eezml-HODiztva-jfFEolvIvvO4wA_BfCFWAwoY3IN01I6D5tXgy-1kArDIqdR8anlTT_UwGUuwgxQmuihIbkniZKGkdTAa1aS0UAGiox-puS5LgKM3UlKRDOy5B_eRyX8i-sM-7umN-WVQ6vO-n8NzoZkVK7zwKAdIgPPc4fZE0z2H7aUqaThBQaq0yhPB2rkOMNWlYKmQN8q-iyqPBMd4z9Fhq3iCssQV-7rGhwFvIRMmH58f9Lg3rAm01qfwoey_Lb7BT2-wMK3ojUX1NsWwRHs2ZnU11AxuaqQn8OnYXvifqQrFQEeqlau0hwRvyj4Dzs4Bzi-v5ymiZ5SjMd_OwcEBb5mhA0mdnW-lcKPbHAdNzvNFvb-SiG46HK8Nssvji0nViAbhSL_JLRGAXdLICIAS9KegyBGQSy5mva2hLBJ59yPuOY92vHNeymRX2Bin0ND_bZ-PzrtXUW85WJIHyIeWhWxunTGdgZDNHBdmXJ8yuJnqzGfvReNKc7EtugYxTH8oEqErGJc1lJshP9JJ6th1oZZN0mEJiCISQ2cork6rgFaSnEzsryuEaJPMTWK6_HSyaKoX3X6W78sWnVj3A6hIlGXQ9YxtCaUt3H5Fc6y1XE4BXPzZb2vbM8DqMqDP_BeJC_1OgHWiNpB1xG2gG-BLQElq7DjR4_MvS2nsSl5CbQIMx0K7T2gEFpyI-A02Ss0Db09ryFq39OtCSou8A7VDbNaC9XweaegtoCa2dAe3tgtbkq7R2Atpv0lrzt2ktwR1Oh3OO2yzJTa5rmpXX_vhbd-RWSrPxIGrD4Tboo-lmWgdf5bqFEzw5umE_aJbxBIvtIDIeNKagT9jgPkR9E1CXOnTj57bYtJCNcwsb4yDn6JYbYFd3Ec4hU_eI5ZKcgdc0yC10ZNlWEOXGeuRQzrE9Kgp6ZV2WCjvVanQV7fl5YvY6Mx12y-My7G_dqG2taLU4VYfLYESG3YnWWQWV-gbNkV95WSuvvoa2raI-mNd2Lw0ctT5QSV3N2oupOZv1OmBaQtNJtTDVh2q7ulWRUW28O505Nkf9H2_fRqPOJihpj3bPkXV7XHeFpChfHBqPZAPNma4pnOMhkTVCmYC-CsYA6ACGoM1ejg6Arx9s7LLemlPWC60pUBl7qQ3K7pHzka5hfysuUFUoClgoVarVqvFY5hwSRGuxXOB81xML_wCL73vA",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=tUCo1niczVXbkqo4FP2B-Y3hxT6Ct1a7ijqVILZ4a-m2vb1QGGJAgdiAIuft_Mt81XzNBPCCtjp9zsvMrtKQnX1LslfWz79sy139_UfBDIK1_8TzYRjmCaXExnlEHV73IxfxC2r7HjK_-3TjIWwZIjI96mCO2OLG50xbxC4XbcUSh3xR4LAltteTub6eNLttbPm4N6gsljULUC4JJ2pz3cdLlm239HmNZ3-rP0sNNsn7eezml-HODiztva-jfFEolvIvvO4wA_BfCFWAwoY3IN01I6D5tXgy-1kArDIqdR8anlTT_UwGUuwgxQmuihIbkniZKGkdTAa1aS0UAGiox-puS5LgKM3UlKRDOy5B_eRyX8i-sM-7umN-WVQ6vO-n8NzoZkVK7zwKAdIgPPc4fZE0z2H7aUqaThBQaq0yhPB2rkOMNWlYKmQN8q-iyqPBMd4z9Fhq3iCssQV-7rGhwFvIRMmH58f9Lg3rAm01qfwoey_Lb7BT2-wMK3ojUX1NsWwRHs2ZnU11AxuaqQn8OnYXvifqQrFQEeqlau0hwRvyj4Dzs4Bzi-v5ymiZ5SjMd_OwcEBb5mhA0mdnW-lcKPbHAdNzvNFvb-SiG46HK8Nssvji0nViAbhSL_JLRGAXdLICIAS9KegyBGQSy5mva2hLBJ59yPuOY92vHNeymRX2Bin0ND_bZ-PzrtXUW85WJIHyIeWhWxunTGdgZDNHBdmXJ8yuJnqzGfvReNKc7EtugYxTH8oEqErGJc1lJshP9JJ6th1oZZN0mEJiCISQ2cork6rgFaSnEzsryuEaJPMTWK6_HSyaKoX3X6W78sWnVj3A6hIlGXQ9YxtCaUt3H5Fc6y1XE4BXPzZb2vbM8DqMqDP_BeJC_1OgHWiNpB1xG2gG-BLQElq7DjR4_MvS2nsSl5CbQIMx0K7T2gEFpyI-A02Ss0Db09ryFq39OtCSou8A7VDbNaC9XweaegtoCa2dAe3tgtbkq7R2Atpv0lrzt2ktwR1Oh3OO2yzJTa5rmpXX_vhbd-RWSrPxIGrD4Tboo-lmWgdf5bqFEzw5umE_aJbxBIvtIDIeNKagT9jgPkR9E1CXOnTj57bYtJCNcwsb4yDn6JYbYFd3Ec4hU_eI5ZKcgdc0yC10ZNlWEOXGeuRQzrE9Kgp6ZV2WCjvVanQV7fl5YvY6Mx12y-My7G_dqG2taLU4VYfLYESG3YnWWQWV-gbNkV95WSuvvoa2raI-mNd2Lw0ctT5QSV3N2oupOZv1OmBaQtNJtTDVh2q7ulWRUW28O505Nkf9H2_fRqPOJihpj3bPkXV7XHeFpChfHBqPZAPNma4pnOMhkTVCmYC-CsYA6ACGoM1ejg6Arx9s7LLemlPWC60pUBl7qQ3K7pHzka5hfysuUFUoClgoVarVqvFY5hwSRGuxXOB81xML_wCL73vA"
+    },
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "Flexdrive by Lyft's Era of AV Fleet Management in Nashville",
+        "link": "https://www.lyft.com/blog/posts/flexdrive-lyft-av-fleet-nashville",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESfAHrOzAVr-jhFLClVMQRK3lOdwHdSyF2P7iVe9Rt4tGG9eQwiVoNNQLtSbmOOPLolekhFKb8vU6P8HDtEGlqNfUCxRVf-lPXGraGbW6UarbanZMHgcmLDJgR3TOGCkk_zKg9vkCtVomtsTtlQl0tCtuo-uXCkUX_g7KYLz4&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQFnoECCEQAQ&uoh=1",
+        "displayed_link": "https://www.lyft.com › blog › posts › flexdrive-lyft-av-fle...",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAKlBMVEVHcEz_AL__AL__AL__AL__AL__AL__AL__AL__AL__AL__AL__AL__AL9ClPaYAAAADnRSTlMA8_-bQq9T5IrXJxJzhXP-mQoAAACzSURBVHgBvM-BBsJQFIfxo6vEAheI0D6YIdJ9gSAARi-QJggwQUAKGGAkAWOAoEcIQIAA62Wa3dQ1EOjD4fyAv_wnzVhsM1YEIgk7-yuICR1YNkETFi54cFMWnsZcD2YN8wLfVFBCrkmBGPhA-QtcFKHnQq4I5A3UtwfTClLoW_DAl4wIsCATkAfDPWgLbZAum54eZNy3p1ykONczpAML-dY6JiAuAKMmRC6oxH8thLYRBwCkpUDo42KB-gAAAABJRU5ErkJggg.png",
+        "date": "Apr 15, 2026",
+        "snippet": "80,000-square-foot depot purpose-built to service, charge and maintain Waymo's autonomous vehicles at scale.",
+        "snippet_highlighted_words": [
+          "80,000-square-foot depot"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "80,000-square-foot depot purpose-built to service, charge and maintain Waymo's autonomous vehicles at scale.",
+            "source_info_link": "https://www.lyft.com/blog/posts/flexdrive-lyft-av-fleet-nashville",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAKlBMVEVHcEz_AL__AL__AL__AL__AL__AL__AL__AL__AL__AL__AL__AL__AL9ClPaYAAAADnRSTlMA8_-bQq9T5IrXJxJzhXP-mQoAAACzSURBVHgBvM-BBsJQFIfxo6vEAheI0D6YIdJ9gSAARi-QJggwQUAKGGAkAWOAoEcIQIAA62Wa3dQ1EOjD4fyAv_wnzVhsM1YEIgk7-yuICR1YNkETFi54cFMWnsZcD2YN8wLfVFBCrkmBGPhA-QtcFKHnQq4I5A3UtwfTClLoW_DAl4wIsCATkAfDPWgLbZAum54eZNy3p1ykONczpAML-dY6JiAuAKMmRC6oxH8thLYRBwCkpUDo42KB-gAAAABJRU5ErkJggg.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CrUBL2dvdG8_dXJsPUNBRVNmQUhyT3pBVnl4LTQ4VE1FeHFCTWdPaHNjQUx1U2Q5VVJLYnUxQVhQX2VPQ2FKSC02cWZobC1tZzNkQUVQam5GNVUxMmFQb1pYVlVoeEdtUFZLWnViaVpYYk1VRjNNQllzMG1lOFl0SV8xa1JITk9uNm1UV3BDbXREbmQwQ3NjM09hRlhNV1ZfSkdIM0ZpbEc4SmZLRndQeHBmTUl0N0ZmOEZKLUgxYxIEGgIIABrfBxICCAAaACIAKgAyBggDEgJ1czoAQgQIARAASgBaAHIAegCCQLkHCAAQABgAIAAqdQoKYXV0b25vbW91cxVpbW1AGglhdXRvbWF0ZWQaDmRyaXZlcmxlc3MgY2FyGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoRYXV0b25vbW91c3ZlaGljbGUaD2l2O3A7YXV0b25vbW91cyqIAQoHdmVoaWNsZRVBSyJAGgphdXRvbW9iaWxlGgNjYXIaDmRyaXZlcmxlc3MgY2FyGgdkcml2aW5nGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoIdmVoaWNsZXMaEWF1dG9ub21vdXN2ZWhpY2xlGgx2ZWhpY2xlZmxlZXQqOAoFZmxlZXQVOJPOQBoMdmVoaWNsZWZsZWV0GhBmbGVldG1haW50ZW5hbmNlGgppdjtwO2ZsZWV0KksKC21haW50ZW5hbmNlFaoF6D8aCm1hbmFnZW1lbnQaBnJlcGFpchoHc2VydmljZRoIc2VydmljZXMaEGZsZWV0bWFpbnRlbmFuY2UqHgoIY2hhcmdpbmcVADPKPxoNaXY7cDtjaGFyZ2luZyoyCgVkZXBvdBVw_ME_GgRkZXBvGgl3YXJlaG91c2UaCml2O3A7ZGVwb3QaB3N0YXRpb24qPwoIZmFjaWxpdHkVQslFQBoGY2VudGVyGgZjZW50cmUaCmZhY2lsaXRpZXMaC2luc3RpdHV0aW9uGgVwbGFudCoYCgV3YXltbxWPTDtAGgppdjtwO3dheW1vMrUBL2dvdG8_dXJsPUNBRVNmQUhyT3pBVnl4LTQ4VE1FeHFCTWdPaHNjQUx1U2Q5VVJLYnUxQVhQX2VPQ2FKSC02cWZobC1tZzNkQUVQam5GNVUxMmFQb1pYVlVoeEdtUFZLWnViaVpYYk1VRjNNQllzMG1lOFl0SV8xa1JITk9uNm1UV3BDbXREbmQwQ3NjM09hRlhNV1ZfSkdIM0ZpbEc4SmZLRndQeHBmTUl0N0ZmOEZKLUgxYzpGRmxleGRyaXZlIGJ5IEx5ZnQmIzM5O3MgRXJhIG9mIEFWIDxiPkZsZWV0IE1hbmFnZW1lbnQ8L2I-IGluIE5hc2h2aWxsZUJ3PGI-ODAsMDAwLXNxdWFyZS1mb290IGRlcG90PC9iPiBwdXJwb3NlLWJ1aWx0IHRvIHNlcnZpY2UsIGNoYXJnZSBhbmQgbWFpbnRhaW4gV2F5bW8mIzM5O3MgYXV0b25vbW91cyB2ZWhpY2xlcyBhdCBzY2FsZS4iAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CrUBL2dvdG8_dXJsPUNBRVNmQUhyT3pBVnl4LTQ4VE1FeHFCTWdPaHNjQUx1U2Q5VVJLYnUxQVhQX2VPQ2FKSC02cWZobC1tZzNkQUVQam5GNVUxMmFQb1pYVlVoeEdtUFZLWnViaVpYYk1VRjNNQllzMG1lOFl0SV8xa1JITk9uNm1UV3BDbXREbmQwQ3NjM09hRlhNV1ZfSkdIM0ZpbEc4SmZLRndQeHBmTUl0N0ZmOEZKLUgxYxIEGgIIABrfBxICCAAaACIAKgAyBggDEgJ1czoAQgQIARAASgBaAHIAegCCQLkHCAAQABgAIAAqdQoKYXV0b25vbW91cxVpbW1AGglhdXRvbWF0ZWQaDmRyaXZlcmxlc3MgY2FyGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoRYXV0b25vbW91c3ZlaGljbGUaD2l2O3A7YXV0b25vbW91cyqIAQoHdmVoaWNsZRVBSyJAGgphdXRvbW9iaWxlGgNjYXIaDmRyaXZlcmxlc3MgY2FyGgdkcml2aW5nGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoIdmVoaWNsZXMaEWF1dG9ub21vdXN2ZWhpY2xlGgx2ZWhpY2xlZmxlZXQqOAoFZmxlZXQVOJPOQBoMdmVoaWNsZWZsZWV0GhBmbGVldG1haW50ZW5hbmNlGgppdjtwO2ZsZWV0KksKC21haW50ZW5hbmNlFaoF6D8aCm1hbmFnZW1lbnQaBnJlcGFpchoHc2VydmljZRoIc2VydmljZXMaEGZsZWV0bWFpbnRlbmFuY2UqHgoIY2hhcmdpbmcVADPKPxoNaXY7cDtjaGFyZ2luZyoyCgVkZXBvdBVw_ME_GgRkZXBvGgl3YXJlaG91c2UaCml2O3A7ZGVwb3QaB3N0YXRpb24qPwoIZmFjaWxpdHkVQslFQBoGY2VudGVyGgZjZW50cmUaCmZhY2lsaXRpZXMaC2luc3RpdHV0aW9uGgVwbGFudCoYCgV3YXltbxWPTDtAGgppdjtwO3dheW1vMrUBL2dvdG8_dXJsPUNBRVNmQUhyT3pBVnl4LTQ4VE1FeHFCTWdPaHNjQUx1U2Q5VVJLYnUxQVhQX2VPQ2FKSC02cWZobC1tZzNkQUVQam5GNVUxMmFQb1pYVlVoeEdtUFZLWnViaVpYYk1VRjNNQllzMG1lOFl0SV8xa1JITk9uNm1UV3BDbXREbmQwQ3NjM09hRlhNV1ZfSkdIM0ZpbEc4SmZLRndQeHBmTUl0N0ZmOEZKLUgxYzpGRmxleGRyaXZlIGJ5IEx5ZnQmIzM5O3MgRXJhIG9mIEFWIDxiPkZsZWV0IE1hbmFnZW1lbnQ8L2I-IGluIE5hc2h2aWxsZUJ3PGI-ODAsMDAwLXNxdWFyZS1mb290IGRlcG90PC9iPiBwdXJwb3NlLWJ1aWx0IHRvIHNlcnZpY2UsIGNoYXJnZSBhbmQgbWFpbnRhaW4gV2F5bW8mIzM5O3MgYXV0b25vbW91cyB2ZWhpY2xlcyBhdCBzY2FsZS4iAhABSABYAGgA",
+        "source": "Lyft"
+      },
+      {
+        "position": 2,
+        "title": "Flexdrive, Lyft's arm, launches a Nashville depot for ...",
+        "link": "https://www.facebook.com/businessinsider/posts/flexdrive-lyfts-arm-launches-a-nashville-depot-for-waymos-self-driving-cars-enha/1468922738439339/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESzQEB6zswFR59C7ml13Xwm8n_ciC1TFUX9F4OV29sejXlt0YR-VjKrFsOq-dGtJVRro2qYekomTLsP0712A2Dut_G5Ca9bDfTye-x1-yG_pGgreNB9amEiw_Wwb30zY3b-82BMampsNVeE42aFm5wAcQfOpDsmCyTxQfZfaVZBx9nBwT83PecagZ20FrGUkxagHkgJ1NdfgWlIK3bYqJZjvohG7nL6AydVpbDF2MZSYZpB0jsOld3bzOt1o9k-9EgPGFQL3zR7_QQB_Td3X70&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQFnoECCAQAQ&uoh=1",
+        "displayed_link": "20+ reactions · 3 weeks ago",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png",
+        "snippet": "Lyft will manage fleet operations, including vehicle maintenance, charging, and depot logistics, through its subsidiary Flexdrive.",
+        "snippet_highlighted_words": [
+          "fleet",
+          "vehicle maintenance",
+          "charging",
+          "depot"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Lyft will manage fleet operations, including vehicle maintenance, charging, and depot logistics, through its subsidiary Flexdrive.",
+            "source_info_link": "https://www.facebook.com/businessinsider/posts/flexdrive-lyfts-arm-launches-a-nashville-depot-for-waymos-self-driving-cars-enha/1468922738439339/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CqICL2dvdG8_dXJsPUNBRVN6UUVCNnpzd0ZVeHdreFF2MmZnRzM4NExVZHNfUk5PTUhhYVpqTlVRdkVOaW83T2FUQ21hYXY0czh2ejBmclNpUkE4YzdRcnM3ejgtWC03NTZ2RFI1S0hmbmNQYlMxdUhVdlduT0cwRG8zS0dpb09yTjVkOUFsOTN0OVdrcTM3TFJ6bjY0eVNCSXhQbnJSbzB4SklWLVFEWXNibGoxc0RjZENNLWVVWDRfMVFjRmVkV3BvR184Smk1UVJEdkNKU2xMbk1BNk9ObHFSZkpnbU12amhvczlvWUp5b3Y2aVBWZzEtVjNYeUlJX3g2NXp5MkRUTXc4RFNlekF5ZzdnUUpEYVNqWGdNU3REaHZfWEVXbGNFZW4SBBoCCAAagwkSABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJA3wgIABAAGAAgACp1CgphdXRvbm9tb3VzFaY9KEAaCWF1dG9tYXRlZBoOZHJpdmVybGVzcyBjYXIaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGhFhdXRvbm9tb3VzdmVoaWNsZRoPaXY7cDthdXRvbm9tb3VzKogBCgd2ZWhpY2xlFTKm_T8aCmF1dG9tb2JpbGUaA2NhchoOZHJpdmVybGVzcyBjYXIaB2RyaXZpbmcaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGgh2ZWhpY2xlcxoRYXV0b25vbW91c3ZlaGljbGUaDHZlaGljbGVmbGVldCo4CgVmbGVldBX1zhFAGgx2ZWhpY2xlZmxlZXQaEGZsZWV0bWFpbnRlbmFuY2UaCml2O3A7ZmxlZXQqSwoLbWFpbnRlbmFuY2UVWOoqQBoKbWFuYWdlbWVudBoGcmVwYWlyGgdzZXJ2aWNlGghzZXJ2aWNlcxoQZmxlZXRtYWludGVuYW5jZSoeCghjaGFyZ2luZxULVfY_Gg1pdjtwO2NoYXJnaW5nKjIKBWRlcG90FbyOjkAaBGRlcG8aCXdhcmVob3VzZRoKaXY7cDtkZXBvdBoHc3RhdGlvbio_CghmYWNpbGl0eRUmbMo_GgZjZW50ZXIaBmNlbnRyZRoKZmFjaWxpdGllcxoLaW5zdGl0dXRpb24aBXBsYW50KhgKBXdheW1vFUZO00AaCml2O3A7d2F5bW8yogIvZ290bz91cmw9Q0FFU3pRRUI2enN3RlV4d2t4UXYyZmdHMzg0TFVkc19STk9NSGFhWmpOVVF2RU5pbzdPYVRDbWFhdjRzOHZ6MGZyU2lSQThjN1Fyczd6OC1YLTc1NnZEUjVLSGZuY1BiUzF1SFV2V25PRzBEbzNLR2lvT3JONWQ5QWw5M3Q5V2txMzdMUnpuNjR5U0JJeFBuclJvMHhKSVYtUURZc2JsajFzRGNkQ00tZVVYNF8xUWNGZWRXcG9HXzhKaTVRUkR2Q0pTbExuTUE2T05scVJmSmdtTXZqaG9zOW9ZSnlvdjZpUFZnMS1WM1h5SUlfeDY1enkyRFRNdzhEU2V6QXlnN2dRSkRhU2pYZ01TdERodl9YRVdsY0VlbjpXRmxleGRyaXZlLCBMeWZ0JiMzOTtzIGFybSwgbGF1bmNoZXMgYSBOYXNodmlsbGUgPGI-ZGVwb3Q8L2I-IGZvciA8Yj5XYXltbyYjMzk7czwvYj4gLi4uQp4BTHlmdCB3aWxsIG1hbmFnZSA8Yj5mbGVldDwvYj4gb3BlcmF0aW9ucywgaW5jbHVkaW5nIDxiPnZlaGljbGUgbWFpbnRlbmFuY2U8L2I-LCA8Yj5jaGFyZ2luZzwvYj4sIGFuZCA8Yj5kZXBvdDwvYj4gbG9naXN0aWNzLCB0aHJvdWdoIGl0cyBzdWJzaWRpYXJ5IEZsZXhkcml2ZS4iAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CqICL2dvdG8_dXJsPUNBRVN6UUVCNnpzd0ZVeHdreFF2MmZnRzM4NExVZHNfUk5PTUhhYVpqTlVRdkVOaW83T2FUQ21hYXY0czh2ejBmclNpUkE4YzdRcnM3ejgtWC03NTZ2RFI1S0hmbmNQYlMxdUhVdlduT0cwRG8zS0dpb09yTjVkOUFsOTN0OVdrcTM3TFJ6bjY0eVNCSXhQbnJSbzB4SklWLVFEWXNibGoxc0RjZENNLWVVWDRfMVFjRmVkV3BvR184Smk1UVJEdkNKU2xMbk1BNk9ObHFSZkpnbU12amhvczlvWUp5b3Y2aVBWZzEtVjNYeUlJX3g2NXp5MkRUTXc4RFNlekF5ZzdnUUpEYVNqWGdNU3REaHZfWEVXbGNFZW4SBBoCCAAagwkSABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJA3wgIABAAGAAgACp1CgphdXRvbm9tb3VzFaY9KEAaCWF1dG9tYXRlZBoOZHJpdmVybGVzcyBjYXIaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGhFhdXRvbm9tb3VzdmVoaWNsZRoPaXY7cDthdXRvbm9tb3VzKogBCgd2ZWhpY2xlFTKm_T8aCmF1dG9tb2JpbGUaA2NhchoOZHJpdmVybGVzcyBjYXIaB2RyaXZpbmcaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGgh2ZWhpY2xlcxoRYXV0b25vbW91c3ZlaGljbGUaDHZlaGljbGVmbGVldCo4CgVmbGVldBX1zhFAGgx2ZWhpY2xlZmxlZXQaEGZsZWV0bWFpbnRlbmFuY2UaCml2O3A7ZmxlZXQqSwoLbWFpbnRlbmFuY2UVWOoqQBoKbWFuYWdlbWVudBoGcmVwYWlyGgdzZXJ2aWNlGghzZXJ2aWNlcxoQZmxlZXRtYWludGVuYW5jZSoeCghjaGFyZ2luZxULVfY_Gg1pdjtwO2NoYXJnaW5nKjIKBWRlcG90FbyOjkAaBGRlcG8aCXdhcmVob3VzZRoKaXY7cDtkZXBvdBoHc3RhdGlvbio_CghmYWNpbGl0eRUmbMo_GgZjZW50ZXIaBmNlbnRyZRoKZmFjaWxpdGllcxoLaW5zdGl0dXRpb24aBXBsYW50KhgKBXdheW1vFUZO00AaCml2O3A7d2F5bW8yogIvZ290bz91cmw9Q0FFU3pRRUI2enN3RlV4d2t4UXYyZmdHMzg0TFVkc19STk9NSGFhWmpOVVF2RU5pbzdPYVRDbWFhdjRzOHZ6MGZyU2lSQThjN1Fyczd6OC1YLTc1NnZEUjVLSGZuY1BiUzF1SFV2V25PRzBEbzNLR2lvT3JONWQ5QWw5M3Q5V2txMzdMUnpuNjR5U0JJeFBuclJvMHhKSVYtUURZc2JsajFzRGNkQ00tZVVYNF8xUWNGZWRXcG9HXzhKaTVRUkR2Q0pTbExuTUE2T05scVJmSmdtTXZqaG9zOW9ZSnlvdjZpUFZnMS1WM1h5SUlfeDY1enkyRFRNdzhEU2V6QXlnN2dRSkRhU2pYZ01TdERodl9YRVdsY0VlbjpXRmxleGRyaXZlLCBMeWZ0JiMzOTtzIGFybSwgbGF1bmNoZXMgYSBOYXNodmlsbGUgPGI-ZGVwb3Q8L2I-IGZvciA8Yj5XYXltbyYjMzk7czwvYj4gLi4uQp4BTHlmdCB3aWxsIG1hbmFnZSA8Yj5mbGVldDwvYj4gb3BlcmF0aW9ucywgaW5jbHVkaW5nIDxiPnZlaGljbGUgbWFpbnRlbmFuY2U8L2I-LCA8Yj5jaGFyZ2luZzwvYj4sIGFuZCA8Yj5kZXBvdDwvYj4gbG9naXN0aWNzLCB0aHJvdWdoIGl0cyBzdWJzaWRpYXJ5IEZsZXhkcml2ZS4iAhABSABYAGgA",
+        "source": "Facebook · Business Insider"
+      },
+      {
+        "position": 3,
+        "title": "Scaling our fleet through U.S. manufacturing",
+        "link": "https://waymo.com/blog/2025/05/scaling-our-fleet-through-us-manufacturing",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAEShAEB6zswFSMSdK34WTzs8O0yp_fH2MufUKo2ws2Q_MoW4xz2uddHcoWhhstBw4Vzln6wXbXDr_LmFwK5D_k--68IIWK6n7NbzFvMTiFFZCFshKYftubYY9r-CVhflothVWX6tFDb9ZAmlzQtAkEGJx2jGD72ciHka-ORRCUps386ZeE1me0&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQFnoECB4QAQ&uoh=1",
+        "displayed_link": "https://waymo.com › blog › 2025/05 › scaling-our-fleet...",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAllBMVEVHcEz____________________________________________6-_________________________________8A6JwA55Tk_PIA7ZcAcf-J8cgEd_7w_vhx770ArNUAav8_7ajQ3f8B6ptemP_B-OHX-uyr9dbr7v9b77MAv8ZPy9Ggwv-RsP90yuEA2qHH_d47fv8AifLhsJvdAAAAFHRSTlMAvPs6iXMXoQnj0a_3xWtJX5MrU9jjuRwAAAEhSURBVCiRbZLZgoIwDEUriywOmyaFgoiAis4-__9z0w0U6H1oIKcp6SWEjPJTLwqC0Iu3ZKl9BFyWWCC058yDmTYvyH-DhazpbN9aMq6RBgYGlmKOiQHsBNuaGcB-3ei8ZREv9VW-l6UMeX0RgRCbr0eKVDJKa9ELIs15PBBXQeQ1w6mQ2U8sJHRIJkvk3p51iGcYmr_Hl-pX9YOI97ZhovSnZ1UjLYs0vFEsTqz6vSN2rGIful1twZnXsqbNKXYPVo02pOrhKkp7gBqxqFqVcyeD-IHfg2y8e9cpe7L9SGmpvi6voUyQF1W-zAJAJpw3_U0hX8DEzGLjAIG-pNZmzcLnhGVLtnsdTXs-f4fFVKfhSIJ4NfJ8QhPXcdzEf2b-Ac3PMW3ESxbsAAAAAElFTkSuQmCC.png",
+        "date": "May 5, 2025",
+        "snippet": "The Waymo Driver integration plant will build thousands of Jaguar I-PACEs equipped with our fully autonomous technology, which we design and ...",
+        "snippet_highlighted_words": [
+          "Waymo",
+          "plant",
+          "autonomous"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "The Waymo Driver integration plant will build thousands of Jaguar I-PACEs equipped with our fully autonomous technology, which we design and ...",
+            "source_info_link": "https://waymo.com/blog/2025/05/scaling-our-fleet-through-us-manufacturing",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAllBMVEVHcEz____________________________________________6-_________________________________8A6JwA55Tk_PIA7ZcAcf-J8cgEd_7w_vhx770ArNUAav8_7ajQ3f8B6ptemP_B-OHX-uyr9dbr7v9b77MAv8ZPy9Ggwv-RsP90yuEA2qHH_d47fv8AifLhsJvdAAAAFHRSTlMAvPs6iXMXoQnj0a_3xWtJX5MrU9jjuRwAAAEhSURBVCiRbZLZgoIwDEUriywOmyaFgoiAis4-__9z0w0U6H1oIKcp6SWEjPJTLwqC0Iu3ZKl9BFyWWCC058yDmTYvyH-DhazpbN9aMq6RBgYGlmKOiQHsBNuaGcB-3ei8ZREv9VW-l6UMeX0RgRCbr0eKVDJKa9ELIs15PBBXQeQ1w6mQ2U8sJHRIJkvk3p51iGcYmr_Hl-pX9YOI97ZhovSnZ1UjLYs0vFEsTqz6vSN2rGIful1twZnXsqbNKXYPVo02pOrhKkp7gBqxqFqVcyeD-IHfg2y8e9cpe7L9SGmpvi6voUyQF1W-zAJAJpw3_U0hX8DEzGLjAIG-pNZmzcLnhGVLtnsdTXs-f4fFVKfhSIJ4NfJ8QhPXcdzEf2b-Ac3PMW3ESxbsAAAAAElFTkSuQmCC.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CsEBL2dvdG8_dXJsPUNBRVNoQUVCNnpzd0ZZbkwwTkd1Qng5MFFobnZpcmRhU1BMYmZKczUxSjNGTlZRSm5TZ21oX0NNeWFtQ3YtRXM1eGNpekJ6VWYzcVR3dl9hVENfMzVzYTdFdGx1ZF9iZ1dGSEEwS0NwdVRSSHA3M3FIWno4YTZyY0hlZDhqOTJLWXBnZHU2MmY3ZFhBaW94djhqUW1jRURMMXlXYTFUSXdWRkQtYlVCeTMxU0lDUUR2NUpHSi14RRIEGgIIABqoCBICCAEaACIAKgAyBggDEgJ1czoAQgQIARAASgBaDQgBEgl3YXltby5jb21yAHoAgkD1BwgAEAAYACAAKnUKCmF1dG9ub21vdXMVJ0keQBoJYXV0b21hdGVkGg5kcml2ZXJsZXNzIGNhchoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaEWF1dG9ub21vdXN2ZWhpY2xlGg9pdjtwO2F1dG9ub21vdXMqiAEKB3ZlaGljbGUVMvjiPxoKYXV0b21vYmlsZRoDY2FyGg5kcml2ZXJsZXNzIGNhchoHZHJpdmluZxoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaCHZlaGljbGVzGhFhdXRvbm9tb3VzdmVoaWNsZRoMdmVoaWNsZWZsZWV0KjgKBWZsZWV0FZKKhUAaDHZlaGljbGVmbGVldBoQZmxlZXRtYWludGVuYW5jZRoKaXY7cDtmbGVldCpLCgttYWludGVuYW5jZRUAAAAAGgptYW5hZ2VtZW50GgZyZXBhaXIaB3NlcnZpY2UaCHNlcnZpY2VzGhBmbGVldG1haW50ZW5hbmNlKh4KCGNoYXJnaW5nFQAAAAAaDWl2O3A7Y2hhcmdpbmcqMgoFZGVwb3QVo0bfPRoEZGVwbxoJd2FyZWhvdXNlGgppdjtwO2RlcG90GgdzdGF0aW9uKj8KCGZhY2lsaXR5FQniwD8aBmNlbnRlchoGY2VudHJlGgpmYWNpbGl0aWVzGgtpbnN0aXR1dGlvbhoFcGxhbnQqGAoFd2F5bW8VL2j0QBoKaXY7cDt3YXltbzLBAS9nb3RvP3VybD1DQUVTaEFFQjZ6c3dGWW5MME5HdUJ4OTBRaG52aXJkYVNQTGJmSnM1MUozRk5WUUpuU2dtaF9DTXlhbUN2LUVzNXhjaXpCelVmM3FUd3ZfYVRDXzM1c2E3RXRsdWRfYmdXRkhBMEtDcHVUUkhwNzNxSFp6OGE2cmNIZWQ4ajkyS1lwZ2R1NjJmN2RYQWlveHY4alFtY0VETDF5V2ExVEl3VkZELWJVQnkzMVNJQ1FEdjVKR0oteEU6QlNjYWxpbmcgb3VyIDxiPmZsZWV0PC9iPiB0aHJvdWdoIFUuUy4gbWFudWZhY3R1cmluZyAtIDxiPldheW1vPC9iPkKqAVRoZSA8Yj5XYXltbzwvYj4gRHJpdmVyIGludGVncmF0aW9uIDxiPnBsYW50PC9iPiB3aWxsIGJ1aWxkIHRob3VzYW5kcyBvZiBKYWd1YXIgSS1QQUNFcyBlcXVpcHBlZCB3aXRoIG91ciBmdWxseSA8Yj5hdXRvbm9tb3VzPC9iPiB0ZWNobm9sb2d5LCB3aGljaCB3ZSBkZXNpZ24gYW5kJm5ic3A7Li4uIgIQAUgAWABoAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CsEBL2dvdG8_dXJsPUNBRVNoQUVCNnpzd0ZZbkwwTkd1Qng5MFFobnZpcmRhU1BMYmZKczUxSjNGTlZRSm5TZ21oX0NNeWFtQ3YtRXM1eGNpekJ6VWYzcVR3dl9hVENfMzVzYTdFdGx1ZF9iZ1dGSEEwS0NwdVRSSHA3M3FIWno4YTZyY0hlZDhqOTJLWXBnZHU2MmY3ZFhBaW94djhqUW1jRURMMXlXYTFUSXdWRkQtYlVCeTMxU0lDUUR2NUpHSi14RRIEGgIIABqoCBICCAEaACIAKgAyBggDEgJ1czoAQgQIARAASgBaDQgBEgl3YXltby5jb21yAHoAgkD1BwgAEAAYACAAKnUKCmF1dG9ub21vdXMVJ0keQBoJYXV0b21hdGVkGg5kcml2ZXJsZXNzIGNhchoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaEWF1dG9ub21vdXN2ZWhpY2xlGg9pdjtwO2F1dG9ub21vdXMqiAEKB3ZlaGljbGUVMvjiPxoKYXV0b21vYmlsZRoDY2FyGg5kcml2ZXJsZXNzIGNhchoHZHJpdmluZxoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaCHZlaGljbGVzGhFhdXRvbm9tb3VzdmVoaWNsZRoMdmVoaWNsZWZsZWV0KjgKBWZsZWV0FZKKhUAaDHZlaGljbGVmbGVldBoQZmxlZXRtYWludGVuYW5jZRoKaXY7cDtmbGVldCpLCgttYWludGVuYW5jZRUAAAAAGgptYW5hZ2VtZW50GgZyZXBhaXIaB3NlcnZpY2UaCHNlcnZpY2VzGhBmbGVldG1haW50ZW5hbmNlKh4KCGNoYXJnaW5nFQAAAAAaDWl2O3A7Y2hhcmdpbmcqMgoFZGVwb3QVo0bfPRoEZGVwbxoJd2FyZWhvdXNlGgppdjtwO2RlcG90GgdzdGF0aW9uKj8KCGZhY2lsaXR5FQniwD8aBmNlbnRlchoGY2VudHJlGgpmYWNpbGl0aWVzGgtpbnN0aXR1dGlvbhoFcGxhbnQqGAoFd2F5bW8VL2j0QBoKaXY7cDt3YXltbzLBAS9nb3RvP3VybD1DQUVTaEFFQjZ6c3dGWW5MME5HdUJ4OTBRaG52aXJkYVNQTGJmSnM1MUozRk5WUUpuU2dtaF9DTXlhbUN2LUVzNXhjaXpCelVmM3FUd3ZfYVRDXzM1c2E3RXRsdWRfYmdXRkhBMEtDcHVUUkhwNzNxSFp6OGE2cmNIZWQ4ajkyS1lwZ2R1NjJmN2RYQWlveHY4alFtY0VETDF5V2ExVEl3VkZELWJVQnkzMVNJQ1FEdjVKR0oteEU6QlNjYWxpbmcgb3VyIDxiPmZsZWV0PC9iPiB0aHJvdWdoIFUuUy4gbWFudWZhY3R1cmluZyAtIDxiPldheW1vPC9iPkKqAVRoZSA8Yj5XYXltbzwvYj4gRHJpdmVyIGludGVncmF0aW9uIDxiPnBsYW50PC9iPiB3aWxsIGJ1aWxkIHRob3VzYW5kcyBvZiBKYWd1YXIgSS1QQUNFcyBlcXVpcHBlZCB3aXRoIG91ciBmdWxseSA8Yj5hdXRvbm9tb3VzPC9iPiB0ZWNobm9sb2d5LCB3aGljaCB3ZSBkZXNpZ24gYW5kJm5ic3A7Li4uIgIQAUgAWABoAA",
+        "source": "Waymo",
+        "read_more_link": "https://waymo.com/blog/2025/05/scaling-our-fleet-through-us-manufacturing#:~:text=The%20Waymo%20Driver%20integration%20plant,technology%2C%20which%20we%20design%20and"
+      },
+      {
+        "position": 4,
+        "title": "Who Maintains Waymo's Fleet? Inside the AV Fleet Operations ...",
+        "link": "https://avfleettech.com/who-maintains-waymo-fleet/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESbQHrOzAVrRnJRB8f-1p3xw2xZnibb6QZ4ynYdgUcFYexloYIuYSJaWw8GOCf0ucl9cpjSoDF1MTRSNbX8xx91AoNey_ouj3JBIKGgmGkgGLCcwCFhMI0vNLK7nCakiJrkjaM2MucxKJDrus7pjY&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQFnoECB0QAQ&uoh=1",
+        "displayed_link": "https://avfleettech.com › Blog",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAclBMVEVHcEwbYU8bYE4bX04icFsbYE8dY1EnfmUdZVIeaFUicVsjdF4fa1chblkLaVECZUyLr6Ogu7N1opRWjXz___-yycLr8vAqgGchc1za5eIJblXK2tUjd18ne2MlemInfWUqhmspg2kqhGkpgmgqhGkrhWqtqknBAAAAI3RSTlMAfraVHv__PP__47b__________________________-O_oCC08t0AAADQSURBVHgBhcsFDsJQEEVR3Pnuhu9_i3SGhtR76r15i3nLVcd680_bAeuxhlYYdyP2MDwM28F0NRKPJ4jHYdupiMvzZdgvXmuEXq6EXC_VAzUjYZwQJsiFS6yXZqRKSaoNlco2lg5dpfKcCkWZog41YtCee-qUjJE0YkLER60CMczwkFAjOhWjEkRHJV03OqECNToIpephxlhAkswlIZxlIpUfjBncSso51ReyGG8j7lV8jLQC8WlHPKq4eY3YL2D6HgRDqJ8B0ND-ee947BdzvgQwL-ggOKlQAAAAAElFTkSuQmCC.png",
+        "date": "Apr 2, 2026",
+        "snippet": "What Avomo does for Waymo: vehicle maintenance and repairs, charging infrastructure management, vehicle cleaning and interior preparation, depot ...",
+        "snippet_highlighted_words": [
+          "vehicle maintenance and repairs, charging infrastructure management"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "What Avomo does for Waymo: vehicle maintenance and repairs, charging infrastructure management, vehicle cleaning and interior preparation, depot ...",
+            "source_info_link": "https://avfleettech.com/who-maintains-waymo-fleet/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAclBMVEVHcEwbYU8bYE4bX04icFsbYE8dY1EnfmUdZVIeaFUicVsjdF4fa1chblkLaVECZUyLr6Ogu7N1opRWjXz___-yycLr8vAqgGchc1za5eIJblXK2tUjd18ne2MlemInfWUqhmspg2kqhGkpgmgqhGkrhWqtqknBAAAAI3RSTlMAfraVHv__PP__47b__________________________-O_oCC08t0AAADQSURBVHgBhcsFDsJQEEVR3Pnuhu9_i3SGhtR76r15i3nLVcd680_bAeuxhlYYdyP2MDwM28F0NRKPJ4jHYdupiMvzZdgvXmuEXq6EXC_VAzUjYZwQJsiFS6yXZqRKSaoNlco2lg5dpfKcCkWZog41YtCee-qUjJE0YkLER60CMczwkFAjOhWjEkRHJV03OqECNToIpephxlhAkswlIZxlIpUfjBncSso51ReyGG8j7lV8jLQC8WlHPKq4eY3YL2D6HgRDqJ8B0ND-ee947BdzvgQwL-ggOKlQAAAAAElFTkSuQmCC.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CqEBL2dvdG8_dXJsPUNBRVNiUUhyT3pBVm9uVW1QaEZDdWU1M2loekNPRHZYVU5SNW5yNjVGaVZrSks1a1k0eGR5V3VrQldNbjJsdmVpR1lDdHA0ZnBwWWVVdkNZYTJTdUlnUmpqVGU2bUF1NXJQM09XNkpPWWhoZDNNNnltaldXWV9WckZ6Ulowc2t5WFdieFpFc0JnNEFUVTVMRE9ENlVLS0USBBoCCAAagAgSAggAGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkDaBwgAEAAYACAAKnUKCmF1dG9ub21vdXMVIlpUQBoJYXV0b21hdGVkGg5kcml2ZXJsZXNzIGNhchoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaEWF1dG9ub21vdXN2ZWhpY2xlGg9pdjtwO2F1dG9ub21vdXMqiAEKB3ZlaGljbGUV78VYQBoKYXV0b21vYmlsZRoDY2FyGg5kcml2ZXJsZXNzIGNhchoHZHJpdmluZxoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaCHZlaGljbGVzGhFhdXRvbm9tb3VzdmVoaWNsZRoMdmVoaWNsZWZsZWV0KjgKBWZsZWV0FQyA3kAaDHZlaGljbGVmbGVldBoQZmxlZXRtYWludGVuYW5jZRoKaXY7cDtmbGVldCpLCgttYWludGVuYW5jZRXsoxtAGgptYW5hZ2VtZW50GgZyZXBhaXIaB3NlcnZpY2UaCHNlcnZpY2VzGhBmbGVldG1haW50ZW5hbmNlKh4KCGNoYXJnaW5nFd-j2T8aDWl2O3A7Y2hhcmdpbmcqMgoFZGVwb3QVpSy9PxoEZGVwbxoJd2FyZWhvdXNlGgppdjtwO2RlcG90GgdzdGF0aW9uKj8KCGZhY2lsaXR5FQAAAAAaBmNlbnRlchoGY2VudHJlGgpmYWNpbGl0aWVzGgtpbnN0aXR1dGlvbhoFcGxhbnQqGAoFd2F5bW8Vh_nLQBoKaXY7cDt3YXltbzKhAS9nb3RvP3VybD1DQUVTYlFIck96QVZvblVtUGhGQ3VlNTNpaHpDT0R2WFVOUjVucjY1RmlWa0pLNWtZNHhkeVd1a0JXTW4ybHZlaUdZQ3RwNGZwcFllVXZDWWEyU3VJZ1JqalRlNm1BdTVyUDNPVzZKT1loaGQzTTZ5bWpXV1lfVnJGelJaMHNreVhXYnhaRXNCZzRBVFU1TERPRDZVS0tFOlFXaG8gTWFpbnRhaW5zIDxiPldheW1vJiMzOTtzIEZsZWV0PC9iPj8gSW5zaWRlIHRoZSBBViA8Yj5GbGVldDwvYj4gT3BlcmF0aW9ucyAuLi5CoAFXaGF0IEF2b21vIGRvZXMgZm9yIFdheW1vOiA8Yj52ZWhpY2xlIG1haW50ZW5hbmNlIGFuZCByZXBhaXJzLCBjaGFyZ2luZyBpbmZyYXN0cnVjdHVyZSBtYW5hZ2VtZW50PC9iPiwgdmVoaWNsZSBjbGVhbmluZyBhbmQgaW50ZXJpb3IgcHJlcGFyYXRpb24sIGRlcG90Jm5ic3A7Li4uIgIQAUgAWABoAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CqEBL2dvdG8_dXJsPUNBRVNiUUhyT3pBVm9uVW1QaEZDdWU1M2loekNPRHZYVU5SNW5yNjVGaVZrSks1a1k0eGR5V3VrQldNbjJsdmVpR1lDdHA0ZnBwWWVVdkNZYTJTdUlnUmpqVGU2bUF1NXJQM09XNkpPWWhoZDNNNnltaldXWV9WckZ6Ulowc2t5WFdieFpFc0JnNEFUVTVMRE9ENlVLS0USBBoCCAAagAgSAggAGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkDaBwgAEAAYACAAKnUKCmF1dG9ub21vdXMVIlpUQBoJYXV0b21hdGVkGg5kcml2ZXJsZXNzIGNhchoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaEWF1dG9ub21vdXN2ZWhpY2xlGg9pdjtwO2F1dG9ub21vdXMqiAEKB3ZlaGljbGUV78VYQBoKYXV0b21vYmlsZRoDY2FyGg5kcml2ZXJsZXNzIGNhchoHZHJpdmluZxoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaCHZlaGljbGVzGhFhdXRvbm9tb3VzdmVoaWNsZRoMdmVoaWNsZWZsZWV0KjgKBWZsZWV0FQyA3kAaDHZlaGljbGVmbGVldBoQZmxlZXRtYWludGVuYW5jZRoKaXY7cDtmbGVldCpLCgttYWludGVuYW5jZRXsoxtAGgptYW5hZ2VtZW50GgZyZXBhaXIaB3NlcnZpY2UaCHNlcnZpY2VzGhBmbGVldG1haW50ZW5hbmNlKh4KCGNoYXJnaW5nFd-j2T8aDWl2O3A7Y2hhcmdpbmcqMgoFZGVwb3QVpSy9PxoEZGVwbxoJd2FyZWhvdXNlGgppdjtwO2RlcG90GgdzdGF0aW9uKj8KCGZhY2lsaXR5FQAAAAAaBmNlbnRlchoGY2VudHJlGgpmYWNpbGl0aWVzGgtpbnN0aXR1dGlvbhoFcGxhbnQqGAoFd2F5bW8Vh_nLQBoKaXY7cDt3YXltbzKhAS9nb3RvP3VybD1DQUVTYlFIck96QVZvblVtUGhGQ3VlNTNpaHpDT0R2WFVOUjVucjY1RmlWa0pLNWtZNHhkeVd1a0JXTW4ybHZlaUdZQ3RwNGZwcFllVXZDWWEyU3VJZ1JqalRlNm1BdTVyUDNPVzZKT1loaGQzTTZ5bWpXV1lfVnJGelJaMHNreVhXYnhaRXNCZzRBVFU1TERPRDZVS0tFOlFXaG8gTWFpbnRhaW5zIDxiPldheW1vJiMzOTtzIEZsZWV0PC9iPj8gSW5zaWRlIHRoZSBBViA8Yj5GbGVldDwvYj4gT3BlcmF0aW9ucyAuLi5CoAFXaGF0IEF2b21vIGRvZXMgZm9yIFdheW1vOiA8Yj52ZWhpY2xlIG1haW50ZW5hbmNlIGFuZCByZXBhaXJzLCBjaGFyZ2luZyBpbmZyYXN0cnVjdHVyZSBtYW5hZ2VtZW50PC9iPiwgdmVoaWNsZSBjbGVhbmluZyBhbmQgaW50ZXJpb3IgcHJlcGFyYXRpb24sIGRlcG90Jm5ic3A7Li4uIgIQAUgAWABoAA",
+        "source": "avfleettech.com",
+        "read_more_link": "https://avfleettech.com/who-maintains-waymo-fleet/#:~:text=What%20Avomo%20does%20for%20Waymo%3A,assurance%2C%20and%20fleet%20readiness%20monitoring."
+      },
+      {
+        "position": 5,
+        "title": "Behind the Scenes at Waymo Driverless Taxi Depot",
+        "link": "https://www.youtube.com/watch?v=3QZ3e7mWD9E",
+        "displayed_link": "533K+ views · 2 years ago",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsYkyJkbsPYHt1Y_Hqd_4iO-wtHuGWf2VuSBFBIqcKlDRUPI-Ys8QQUA&s",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAhUlEQVR4AWNwL_ChCFPHgP8MxqxA7ArEKVBcCcUNIAznI-RdQXrABgAZpv8ZjP6Tg0F6QQbsosCAXSADHmGVVPIC0jKEDHgAMuAbmgRE445D___feYzXIJBeBigH04BVW_9DAcgwqEGYaik2gGIvUByIlEbjDooTEiwps5GRlNmolpkowgBVP9wMSzSKGAAAAABJRU5ErkJggg.png",
+        "snippet": "This video shows Waymo's depot operations, which is a combination of autonomous driving/parking plus manual charging/cleaning.",
+        "duration": "15:47",
+        "key_moments": [
+          {
+            "time": "00:00",
+            "title": "Introduction: Why do depots matter?",
+            "link": "https://www.youtube.com/watch?v=3QZ3e7mWD9E&t=0"
+          },
+          {
+            "time": "00:33",
+            "title": "14th Street Depot",
+            "link": "https://www.youtube.com/watch?v=3QZ3e7mWD9E&t=33"
+          },
+          {
+            "time": "02:29",
+            "title": "Hailing out of the depot",
+            "link": "https://www.youtube.com/watch?v=3QZ3e7mWD9E&t=149"
+          },
+          {
+            "time": "03:56",
+            "title": "Waymo Roadside Assistance",
+            "link": "https://www.youtube.com/watch?v=3QZ3e7mWD9E&t=236"
+          },
+          {
+            "time": "04:40",
+            "title": "Harrison Street Depot",
+            "link": "https://www.youtube.com/watch?v=3QZ3e7mWD9E&t=280"
+          },
+          {
+            "time": "05:49",
+            "title": "Toland Street Depot",
+            "link": "https://www.youtube.com/watch?v=3QZ3e7mWD9E&t=349"
+          },
+          {
+            "time": "08:57",
+            "title": "Auto parking",
+            "link": "https://www.youtube.com/watch?v=3QZ3e7mWD9E&t=537"
+          },
+          {
+            "time": "14:36",
+            "title": "Bonus clips",
+            "link": "https://www.youtube.com/watch?v=3QZ3e7mWD9E&t=876"
+          },
+          {
+            "time": "15:10",
+            "title": "Conclusion",
+            "link": "https://www.youtube.com/watch?v=3QZ3e7mWD9E&t=910"
+          }
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "This video shows Waymo's depot operations, which is a combination of autonomous driving/parking plus manual charging/cleaning.",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAhUlEQVR4AWNwL_ChCFPHgP8MxqxA7ArEKVBcCcUNIAznI-RdQXrABgAZpv8ZjP6Tg0F6QQbsosCAXSADHmGVVPIC0jKEDHgAMuAbmgRE445D___feYzXIJBeBigH04BVW_9DAcgwqEGYaik2gGIvUByIlEbjDooTEiwps5GRlNmolpkowgBVP9wMSzSKGAAAAABJRU5ErkJggg.png"
+          }
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CpgBL2dvdG8_dXJsPUNBRVNaZ0hyT3pBVmYwTDdGUFl0ZEFQNUJCUVRRNmhlQzctLUdmeWxtRnZYMmRKUW9kY1lNQ0JCV09DQk5ZNWZ6OXFmWmVEUDA5WGZ3UVZGS3l2VkpYSEE3TXRsSGFfNEhRcWVEQXhpLWljSVptdmJWSG9JY2VPOUZqcEFUN3c3MEFfNHRvUDdsNWZkREESFgoQCgQIMEgCCgQISEgCCgIIPxoCCAAaFhIAGgAiACoAMgA6AEIASgBaAHIAegAiAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CpgBL2dvdG8_dXJsPUNBRVNaZ0hyT3pBVmYwTDdGUFl0ZEFQNUJCUVRRNmhlQzctLUdmeWxtRnZYMmRKUW9kY1lNQ0JCV09DQk5ZNWZ6OXFmWmVEUDA5WGZ3UVZGS3l2VkpYSEE3TXRsSGFfNEhRcWVEQXhpLWljSVptdmJWSG9JY2VPOUZqcEFUN3c3MEFfNHRvUDdsNWZkREESFgoQCgQIMEgCCgQISEgCCgIIPxoCCAAaFhIAGgAiACoAMgA6AEIASgBaAHIAegAiAhABSABYAGgA",
+        "source": "YouTube · Kevin Chen"
+      },
+      {
+        "position": 6,
+        "title": "Why Charging Depot Location Is the Most Underrated ...",
+        "link": "https://www.terawattinfrastructure.com/blog/why-charging-depot-location-is-the-most-underrated-lever-in-av-fleet-economics",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAEStQEB6zswFfH3AKceZx1eon_MCxFdnbetLuN_oDem-zSbWZYcCJQuWj7RDuL_LQ5yVdi6ngqxaEIZw9S64r75koNQQJAKQDwG35_wHbQ8pZf1u_1xOM29X5HpFn2VhFIjM6eSpIV_NJiKhdVpn5IEhkS5ilJVQKcRvNHVGIB7wDUfj4SX2ObfWwOa3lpzB0GfXCLwkY-aP3UKTM0rQH_arnznze86wL1lEUlpPY1T64E6TP85LW2-&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQFnoECBwQAQ&uoh=1",
+        "displayed_link": "https://www.terawattinfrastructure.com › blog › why-ch...",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd-UAAAAxElEQVR4AWJwL_ABYyDoAuI7QPwNiP9TCX-DmtkFtwfQbhlYAAwDUXSr2yHDZIyMkTmyTSYoEAiQejSoclSbr-jnE4Tn7n7kDtjGhcXeYM3KhsiwKFkGhDVnJjEsDjp_AxhCGE9VSrkP7L1ffJJzxwd6dqo3s_UzjDEOVGvVhIZWoZyzBthag0drFwCdMEneIfNjdpjzauCs8g_Ne0Az04aGNiLaKgESFERCJcApyX_I_FJKT6sb-hVDv0Sp10T5Iqxe9Xd_Jsk16hdz7gAAAABJRU5ErkJggg.png",
+        "snippet": "For AV fleet operators, non-revenue miles add up fast. Terawatt breaks down how purpose-built charging depot locations help AV fleets cut cost per mile, ...",
+        "snippet_highlighted_words": [
+          "fleet",
+          "charging depot"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "For AV fleet operators, non-revenue miles add up fast. Terawatt breaks down how purpose-built charging depot locations help AV fleets cut cost per mile, ...",
+            "source_info_link": "https://www.terawattinfrastructure.com/blog/why-charging-depot-location-is-the-most-underrated-lever-in-av-fleet-economics",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd-UAAAAxElEQVR4AWJwL_ABYyDoAuI7QPwNiP9TCX-DmtkFtwfQbhlYAAwDUXSr2yHDZIyMkTmyTSYoEAiQejSoclSbr-jnE4Tn7n7kDtjGhcXeYM3KhsiwKFkGhDVnJjEsDjp_AxhCGE9VSrkP7L1ffJJzxwd6dqo3s_UzjDEOVGvVhIZWoZyzBthag0drFwCdMEneIfNjdpjzauCs8g_Ne0Az04aGNiLaKgESFERCJcApyX_I_FJKT6sb-hVDv0Sp10T5Iqxe9Xd_Jsk16hdz7gAAAABJRU5ErkJggg.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CoICL2dvdG8_dXJsPUNBRVN0UUVCNnpzd0ZiOXRFaTBKWTRsaXZKaDU2cHRmQWQ1Tk1XSzVpSUtRVlh6M1FJT0NmVnJjbDR4UWV6ZVZwZTVRWlNzZ2JkejlJMVFneEFHREZFQVFmNl9vdnd5ZXVHV3ZuMVhhaHhvM2xfSTgtRmZ6eGxrU1hrM2VCODZsTmd1X1RYM0sxS0FNVmRKd1RyS3JEeUpGS0hXZ1IxNFduQ0xLU1F3Yy02TElGbkVsck8wUnZVNW5ScnVYQ1I0dTIzd25Ed2JCWWRPLXhtVE16dUF1cWt3NjlWdHhRcDVNVXJWUTZ4eW9lMVh4N1p2aDB5ZlNFbUhjEgQaAggAGuUIEgIIABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJAvwgIABAAGAAgACp1CgphdXRvbm9tb3VzFbLoxD8aCWF1dG9tYXRlZBoOZHJpdmVybGVzcyBjYXIaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGhFhdXRvbm9tb3VzdmVoaWNsZRoPaXY7cDthdXRvbm9tb3VzKogBCgd2ZWhpY2xlFTpQ6j8aCmF1dG9tb2JpbGUaA2NhchoOZHJpdmVybGVzcyBjYXIaB2RyaXZpbmcaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGgh2ZWhpY2xlcxoRYXV0b25vbW91c3ZlaGljbGUaDHZlaGljbGVmbGVldCo4CgVmbGVldBUcNJNAGgx2ZWhpY2xlZmxlZXQaEGZsZWV0bWFpbnRlbmFuY2UaCml2O3A7ZmxlZXQqSwoLbWFpbnRlbmFuY2UVNg0zPxoKbWFuYWdlbWVudBoGcmVwYWlyGgdzZXJ2aWNlGghzZXJ2aWNlcxoQZmxlZXRtYWludGVuYW5jZSoeCghjaGFyZ2luZxWLSqZAGg1pdjtwO2NoYXJnaW5nKjIKBWRlcG90Ff4QXEAaBGRlcG8aCXdhcmVob3VzZRoKaXY7cDtkZXBvdBoHc3RhdGlvbio_CghmYWNpbGl0eRUAAAAAGgZjZW50ZXIaBmNlbnRyZRoKZmFjaWxpdGllcxoLaW5zdGl0dXRpb24aBXBsYW50KhgKBXdheW1vFTv7CD8aCml2O3A7d2F5bW8yggIvZ290bz91cmw9Q0FFU3RRRUI2enN3RmI5dEVpMEpZNGxpdkpoNTZwdGZBZDVOTVdLNWlJS1FWWHozUUlPQ2ZWcmNsNHhRZXplVnBlNVFaU3NnYmR6OUkxUWd4QUdERkVBUWY2X292d3lldUdXdm4xWGFoeG8zbF9JOC1GZnp4bGtTWGszZUI4NmxOZ3VfVFgzSzFLQU1WZEp3VHJLckR5SkZLSFdnUjE0V25DTEtTUXdjLTZMSUZuRWxyTzBSdlU1blJydVhDUjR1MjN3bkR3YkJZZE8teG1UTXp1QXVxa3c2OVZ0eFFwNU1VclZRNnh5b2UxWHg3WnZoMHlmU0VtSGM6RldoeSA8Yj5DaGFyZ2luZyBEZXBvdDwvYj4gTG9jYXRpb24gSXMgdGhlIE1vc3QgVW5kZXJyYXRlZCBMZXZlciBpbiAuLi5CrwFGb3IgQVYgPGI-ZmxlZXQ8L2I-IG9wZXJhdG9ycywgbm9uLXJldmVudWUgbWlsZXMgYWRkIHVwIGZhc3QuIFRlcmF3YXR0IGJyZWFrcyBkb3duIGhvdyBwdXJwb3NlLWJ1aWx0IDxiPmNoYXJnaW5nIGRlcG90PC9iPiBsb2NhdGlvbnMgaGVscCBBViBmbGVldHMgY3V0IGNvc3QgcGVyIG1pbGUsJm5ic3A7Li4uIgIQAUgAWABoAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CoICL2dvdG8_dXJsPUNBRVN0UUVCNnpzd0ZiOXRFaTBKWTRsaXZKaDU2cHRmQWQ1Tk1XSzVpSUtRVlh6M1FJT0NmVnJjbDR4UWV6ZVZwZTVRWlNzZ2JkejlJMVFneEFHREZFQVFmNl9vdnd5ZXVHV3ZuMVhhaHhvM2xfSTgtRmZ6eGxrU1hrM2VCODZsTmd1X1RYM0sxS0FNVmRKd1RyS3JEeUpGS0hXZ1IxNFduQ0xLU1F3Yy02TElGbkVsck8wUnZVNW5ScnVYQ1I0dTIzd25Ed2JCWWRPLXhtVE16dUF1cWt3NjlWdHhRcDVNVXJWUTZ4eW9lMVh4N1p2aDB5ZlNFbUhjEgQaAggAGuUIEgIIABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJAvwgIABAAGAAgACp1CgphdXRvbm9tb3VzFbLoxD8aCWF1dG9tYXRlZBoOZHJpdmVybGVzcyBjYXIaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGhFhdXRvbm9tb3VzdmVoaWNsZRoPaXY7cDthdXRvbm9tb3VzKogBCgd2ZWhpY2xlFTpQ6j8aCmF1dG9tb2JpbGUaA2NhchoOZHJpdmVybGVzcyBjYXIaB2RyaXZpbmcaEHNlbGYgZHJpdmluZyBjYXIaEXNlbGYgZHJpdmluZyBjYXJzGgh2ZWhpY2xlcxoRYXV0b25vbW91c3ZlaGljbGUaDHZlaGljbGVmbGVldCo4CgVmbGVldBUcNJNAGgx2ZWhpY2xlZmxlZXQaEGZsZWV0bWFpbnRlbmFuY2UaCml2O3A7ZmxlZXQqSwoLbWFpbnRlbmFuY2UVNg0zPxoKbWFuYWdlbWVudBoGcmVwYWlyGgdzZXJ2aWNlGghzZXJ2aWNlcxoQZmxlZXRtYWludGVuYW5jZSoeCghjaGFyZ2luZxWLSqZAGg1pdjtwO2NoYXJnaW5nKjIKBWRlcG90Ff4QXEAaBGRlcG8aCXdhcmVob3VzZRoKaXY7cDtkZXBvdBoHc3RhdGlvbio_CghmYWNpbGl0eRUAAAAAGgZjZW50ZXIaBmNlbnRyZRoKZmFjaWxpdGllcxoLaW5zdGl0dXRpb24aBXBsYW50KhgKBXdheW1vFTv7CD8aCml2O3A7d2F5bW8yggIvZ290bz91cmw9Q0FFU3RRRUI2enN3RmI5dEVpMEpZNGxpdkpoNTZwdGZBZDVOTVdLNWlJS1FWWHozUUlPQ2ZWcmNsNHhRZXplVnBlNVFaU3NnYmR6OUkxUWd4QUdERkVBUWY2X292d3lldUdXdm4xWGFoeG8zbF9JOC1GZnp4bGtTWGszZUI4NmxOZ3VfVFgzSzFLQU1WZEp3VHJLckR5SkZLSFdnUjE0V25DTEtTUXdjLTZMSUZuRWxyTzBSdlU1blJydVhDUjR1MjN3bkR3YkJZZE8teG1UTXp1QXVxa3c2OVZ0eFFwNU1VclZRNnh5b2UxWHg3WnZoMHlmU0VtSGM6RldoeSA8Yj5DaGFyZ2luZyBEZXBvdDwvYj4gTG9jYXRpb24gSXMgdGhlIE1vc3QgVW5kZXJyYXRlZCBMZXZlciBpbiAuLi5CrwFGb3IgQVYgPGI-ZmxlZXQ8L2I-IG9wZXJhdG9ycywgbm9uLXJldmVudWUgbWlsZXMgYWRkIHVwIGZhc3QuIFRlcmF3YXR0IGJyZWFrcyBkb3duIGhvdyBwdXJwb3NlLWJ1aWx0IDxiPmNoYXJnaW5nIGRlcG90PC9iPiBsb2NhdGlvbnMgaGVscCBBViBmbGVldHMgY3V0IGNvc3QgcGVyIG1pbGUsJm5ic3A7Li4uIgIQAUgAWABoAA",
+        "source": "Terawatt Infrastructure"
+      },
+      {
+        "position": 7,
+        "title": "Waymo - Self-Driving Cars - Autonomous Vehicles - Ride-Hail",
+        "link": "https://waymo.com/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESTQHrOzAVPv7wanipH9EaOjole48BSDgpbgbNtr_OH9OP_jm9U_TGx0M76v2I2f7qkC5hM_qRDJAL-ibJ5j4tZB3ZD9OXOie7HMOHWO9P&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQFnoECEsQAQ&uoh=1",
+        "displayed_link": "https://waymo.com",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAllBMVEVHcEz____________________________________________6-_________________________________8A6JwA55Tk_PIA7ZcAcf-J8cgEd_7w_vhx770ArNUAav8_7ajQ3f8B6ptemP_B-OHX-uyr9dbr7v9b77MAv8ZPy9Ggwv-RsP90yuEA2qHH_d47fv8AifLhsJvdAAAAFHRSTlMAvPs6iXMXoQnj0a_3xWtJX5MrU9jjuRwAAAEhSURBVCiRbZLZgoIwDEUriywOmyaFgoiAis4-__9z0w0U6H1oIKcp6SWEjPJTLwqC0Iu3ZKl9BFyWWCC058yDmTYvyH-DhazpbN9aMq6RBgYGlmKOiQHsBNuaGcB-3ei8ZREv9VW-l6UMeX0RgRCbr0eKVDJKa9ELIs15PBBXQeQ1w6mQ2U8sJHRIJkvk3p51iGcYmr_Hl-pX9YOI97ZhovSnZ1UjLYs0vFEsTqz6vSN2rGIful1twZnXsqbNKXYPVo02pOrhKkp7gBqxqFqVcyeD-IHfg2y8e9cpe7L9SGmpvi6voUyQF1W-zAJAJpw3_U0hX8DEzGLjAIG-pNZmzcLnhGVLtnsdTXs-f4fFVKfhSIJ4NfJ8QhPXcdzEf2b-Ac3PMW3ESxbsAAAAAElFTkSuQmCC.png",
+        "snippet": "Waymo—formerly the Google self-driving car project—makes it safe and easy for people & things to get around with autonomous vehicles. Take a ride now.",
+        "snippet_highlighted_words": [
+          "Waymo"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Waymo—formerly the Google self-driving car project—makes it safe and easy for people & things to get around with autonomous vehicles. Take a ride now.",
+            "source_info_link": "https://waymo.com/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAllBMVEVHcEz____________________________________________6-_________________________________8A6JwA55Tk_PIA7ZcAcf-J8cgEd_7w_vhx770ArNUAav8_7ajQ3f8B6ptemP_B-OHX-uyr9dbr7v9b77MAv8ZPy9Ggwv-RsP90yuEA2qHH_d47fv8AifLhsJvdAAAAFHRSTlMAvPs6iXMXoQnj0a_3xWtJX5MrU9jjuRwAAAEhSURBVCiRbZLZgoIwDEUriywOmyaFgoiAis4-__9z0w0U6H1oIKcp6SWEjPJTLwqC0Iu3ZKl9BFyWWCC058yDmTYvyH-DhazpbN9aMq6RBgYGlmKOiQHsBNuaGcB-3ei8ZREv9VW-l6UMeX0RgRCbr0eKVDJKa9ELIs15PBBXQeQ1w6mQ2U8sJHRIJkvk3p51iGcYmr_Hl-pX9YOI97ZhovSnZ1UjLYs0vFEsTqz6vSN2rGIful1twZnXsqbNKXYPVo02pOrhKkp7gBqxqFqVcyeD-IHfg2y8e9cpe7L9SGmpvi6voUyQF1W-zAJAJpw3_U0hX8DEzGLjAIG-pNZmzcLnhGVLtnsdTXs-f4fFVKfhSIJ4NfJ8QhPXcdzEf2b-Ac3PMW3ESxbsAAAAAElFTkSuQmCC.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CnYvZ290bz91cmw9Q0FFU1RRSHJPekFWR2Y4b2s5NmFOTzhvWXBSX3BmeF9DUWxMNFNqRFR1QldxV3FIa0s5MmhKREdnVG1nMmdlaDViWXZPMkt5OE5neFBpbzE3VVViMUNZRDJWNXZlN0FVdkk3TG4zQklfMkh2EgQaAggAGuUHEgIIARoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoNCAESCXdheW1vLmNvbXIAegCCQLIHCAAQABgAIAAqdQoKYXV0b25vbW91cxVH3FFAGglhdXRvbWF0ZWQaDmRyaXZlcmxlc3MgY2FyGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoRYXV0b25vbW91c3ZlaGljbGUaD2l2O3A7YXV0b25vbW91cyqIAQoHdmVoaWNsZRWUjoc_GgphdXRvbW9iaWxlGgNjYXIaDmRyaXZlcmxlc3MgY2FyGgdkcml2aW5nGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoIdmVoaWNsZXMaEWF1dG9ub21vdXN2ZWhpY2xlGgx2ZWhpY2xlZmxlZXQqOAoFZmxlZXQVAAAAABoMdmVoaWNsZWZsZWV0GhBmbGVldG1haW50ZW5hbmNlGgppdjtwO2ZsZWV0KksKC21haW50ZW5hbmNlFQAAAAAaCm1hbmFnZW1lbnQaBnJlcGFpchoHc2VydmljZRoIc2VydmljZXMaEGZsZWV0bWFpbnRlbmFuY2UqHgoIY2hhcmdpbmcVAAAAABoNaXY7cDtjaGFyZ2luZyoyCgVkZXBvdBUAAAAAGgRkZXBvGgl3YXJlaG91c2UaCml2O3A7ZGVwb3QaB3N0YXRpb24qPwoIZmFjaWxpdHkVAAAAABoGY2VudGVyGgZjZW50cmUaCmZhY2lsaXRpZXMaC2luc3RpdHV0aW9uGgVwbGFudCoYCgV3YXltbxXMIQdBGgppdjtwO3dheW1vMnYvZ290bz91cmw9Q0FFU1RRSHJPekFWR2Y4b2s5NmFOTzhvWXBSX3BmeF9DUWxMNFNqRFR1QldxV3FIa0s5MmhKREdnVG1nMmdlaDViWXZPMkt5OE5neFBpbzE3VVViMUNZRDJWNXZlN0FVdkk3TG4zQklfMkh2OlA8Yj5XYXltbzwvYj4gLSA8Yj5TZWxmLURyaXZpbmcgQ2FyczwvYj4gLSA8Yj5BdXRvbm9tb3VzIFZlaGljbGVzPC9iPiAtIFJpZGUtSGFpbEKlATxiPldheW1vPC9iPuKAlGZvcm1lcmx5IHRoZSBHb29nbGUgc2VsZi1kcml2aW5nIGNhciBwcm9qZWN04oCUbWFrZXMgaXQgc2FmZSBhbmQgZWFzeSBmb3IgcGVvcGxlICZhbXA7IHRoaW5ncyB0byBnZXQgYXJvdW5kIHdpdGggYXV0b25vbW91cyB2ZWhpY2xlcy4gVGFrZSBhIHJpZGUgbm93LiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CnYvZ290bz91cmw9Q0FFU1RRSHJPekFWR2Y4b2s5NmFOTzhvWXBSX3BmeF9DUWxMNFNqRFR1QldxV3FIa0s5MmhKREdnVG1nMmdlaDViWXZPMkt5OE5neFBpbzE3VVViMUNZRDJWNXZlN0FVdkk3TG4zQklfMkh2EgQaAggAGuUHEgIIARoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoNCAESCXdheW1vLmNvbXIAegCCQLIHCAAQABgAIAAqdQoKYXV0b25vbW91cxVH3FFAGglhdXRvbWF0ZWQaDmRyaXZlcmxlc3MgY2FyGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoRYXV0b25vbW91c3ZlaGljbGUaD2l2O3A7YXV0b25vbW91cyqIAQoHdmVoaWNsZRWUjoc_GgphdXRvbW9iaWxlGgNjYXIaDmRyaXZlcmxlc3MgY2FyGgdkcml2aW5nGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoIdmVoaWNsZXMaEWF1dG9ub21vdXN2ZWhpY2xlGgx2ZWhpY2xlZmxlZXQqOAoFZmxlZXQVAAAAABoMdmVoaWNsZWZsZWV0GhBmbGVldG1haW50ZW5hbmNlGgppdjtwO2ZsZWV0KksKC21haW50ZW5hbmNlFQAAAAAaCm1hbmFnZW1lbnQaBnJlcGFpchoHc2VydmljZRoIc2VydmljZXMaEGZsZWV0bWFpbnRlbmFuY2UqHgoIY2hhcmdpbmcVAAAAABoNaXY7cDtjaGFyZ2luZyoyCgVkZXBvdBUAAAAAGgRkZXBvGgl3YXJlaG91c2UaCml2O3A7ZGVwb3QaB3N0YXRpb24qPwoIZmFjaWxpdHkVAAAAABoGY2VudGVyGgZjZW50cmUaCmZhY2lsaXRpZXMaC2luc3RpdHV0aW9uGgVwbGFudCoYCgV3YXltbxXMIQdBGgppdjtwO3dheW1vMnYvZ290bz91cmw9Q0FFU1RRSHJPekFWR2Y4b2s5NmFOTzhvWXBSX3BmeF9DUWxMNFNqRFR1QldxV3FIa0s5MmhKREdnVG1nMmdlaDViWXZPMkt5OE5neFBpbzE3VVViMUNZRDJWNXZlN0FVdkk3TG4zQklfMkh2OlA8Yj5XYXltbzwvYj4gLSA8Yj5TZWxmLURyaXZpbmcgQ2FyczwvYj4gLSA8Yj5BdXRvbm9tb3VzIFZlaGljbGVzPC9iPiAtIFJpZGUtSGFpbEKlATxiPldheW1vPC9iPuKAlGZvcm1lcmx5IHRoZSBHb29nbGUgc2VsZi1kcml2aW5nIGNhciBwcm9qZWN04oCUbWFrZXMgaXQgc2FmZSBhbmQgZWFzeSBmb3IgcGVvcGxlICZhbXA7IHRoaW5ncyB0byBnZXQgYXJvdW5kIHdpdGggYXV0b25vbW91cyB2ZWhpY2xlcy4gVGFrZSBhIHJpZGUgbm93LiICEAFIAFgAaAA",
+        "source": "Waymo"
+      },
+      {
+        "position": 8,
+        "title": "Real estate is one of the hardest open problems in scaled self ...",
+        "link": "https://kevinchen.co/blog/real-estate-hard-open-problem-in-autonomous-driving/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESiQEB6zswFTYT9omQ8q4iOmqPJOcK7DULe_tR4CoQFe0jAB7PybMrlsWYqOBt1i0SXEc6gdNc3bAblZe10Gf51xfN7NrIGA5sj6pYLtJ6IpJeXtVIUm-rAxkicsszrlBZp7scr2A9ZXqPpVqbK46V486k8NH3FyCA9WfrygeSq4ZgJIpjH6oIfkxugw&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQFnoECCMQAQ&uoh=1",
+        "displayed_link": "https://kevinchen.co › blog › real-estate-hard-open-proble...",
+        "date": "Sep 3, 2024",
+        "snippet": "An EV fleet also lowers vehicle maintenance costs. Waymo and Cruise each have locations with DC fast charging capability. This approach avoids ...",
+        "snippet_highlighted_words": [
+          "Waymo and Cruise each have locations with DC fast charging capability"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "An EV fleet also lowers vehicle maintenance costs. Waymo and Cruise each have locations with DC fast charging capability. This approach avoids ...",
+            "source_info_link": "https://kevinchen.co/blog/real-estate-hard-open-problem-in-autonomous-driving/"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CsgBL2dvdG8_dXJsPUNBRVNpUUVCNnpzd0ZZMl9OdF8tTVRFcVQ1c0xjM0tKZ3Rfb3NmdldCSGtLb2NHaFYwdlpJWGY5RzRWVjZoNE1JQUVPUEFMZkhBWjJuMTJ5Q3lIMXp2ZF9iUUI2bHlkX0dlaWFfWGdFT1NMVEZiWXZvS01WMkVpeUdrRHkzRVlPOHI1YXlmMTdyeTltTFhKU2RUc0pfYVhHdlZJZS1OSnplZWYtV1p3QWUtMlJzbkZUWlpuSUJsX044X0dYYkESBBoCCAAalggSAggAGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkDwBwgAEAAYACAAKnUKCmF1dG9ub21vdXMVk9J8QBoJYXV0b21hdGVkGg5kcml2ZXJsZXNzIGNhchoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaEWF1dG9ub21vdXN2ZWhpY2xlGg9pdjtwO2F1dG9ub21vdXMqiAEKB3ZlaGljbGUV2TkCQBoKYXV0b21vYmlsZRoDY2FyGg5kcml2ZXJsZXNzIGNhchoHZHJpdmluZxoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaCHZlaGljbGVzGhFhdXRvbm9tb3VzdmVoaWNsZRoMdmVoaWNsZWZsZWV0KjgKBWZsZWV0FfvKzj8aDHZlaGljbGVmbGVldBoQZmxlZXRtYWludGVuYW5jZRoKaXY7cDtmbGVldCpLCgttYWludGVuYW5jZRWQQyw_GgptYW5hZ2VtZW50GgZyZXBhaXIaB3NlcnZpY2UaCHNlcnZpY2VzGhBmbGVldG1haW50ZW5hbmNlKh4KCGNoYXJnaW5nFUS3QUAaDWl2O3A7Y2hhcmdpbmcqMgoFZGVwb3QV2CcVQBoEZGVwbxoJd2FyZWhvdXNlGgppdjtwO2RlcG90GgdzdGF0aW9uKj8KCGZhY2lsaXR5FQAAAAAaBmNlbnRlchoGY2VudHJlGgpmYWNpbGl0aWVzGgtpbnN0aXR1dGlvbhoFcGxhbnQqGAoFd2F5bW8VNXFHQBoKaXY7cDt3YXltbzLIAS9nb3RvP3VybD1DQUVTaVFFQjZ6c3dGWTJfTnRfLU1URXFUNXNMYzNLSmd0X29zZnZXQkhrS29jR2hWMHZaSVhmOUc0VlY2aDRNSUFFT1BBTGZIQVoybjEyeUN5SDF6dmRfYlFCNmx5ZF9HZWlhX1hnRU9TTFRGYll2b0tNVjJFaXlHa0R5M0VZTzhyNWF5ZjE3cnk5bUxYSlNkVHNKX2FYR3ZWSWUtTkp6ZWVmLVdad0FlLTJSc25GVFpabklCbF9OOF9HWGJBOkJSZWFsIGVzdGF0ZSBpcyBvbmUgb2YgdGhlIGhhcmRlc3Qgb3BlbiBwcm9ibGVtcyBpbiBzY2FsZWQgc2VsZiAuLi5CngFBbiBFViBmbGVldCBhbHNvIGxvd2VycyB2ZWhpY2xlIG1haW50ZW5hbmNlIGNvc3RzLiA8Yj5XYXltbyBhbmQgQ3J1aXNlIGVhY2ggaGF2ZSBsb2NhdGlvbnMgd2l0aCBEQyBmYXN0IGNoYXJnaW5nIGNhcGFiaWxpdHk8L2I-LiBUaGlzIGFwcHJvYWNoIGF2b2lkcyZuYnNwOy4uLiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CsgBL2dvdG8_dXJsPUNBRVNpUUVCNnpzd0ZZMl9OdF8tTVRFcVQ1c0xjM0tKZ3Rfb3NmdldCSGtLb2NHaFYwdlpJWGY5RzRWVjZoNE1JQUVPUEFMZkhBWjJuMTJ5Q3lIMXp2ZF9iUUI2bHlkX0dlaWFfWGdFT1NMVEZiWXZvS01WMkVpeUdrRHkzRVlPOHI1YXlmMTdyeTltTFhKU2RUc0pfYVhHdlZJZS1OSnplZWYtV1p3QWUtMlJzbkZUWlpuSUJsX044X0dYYkESBBoCCAAalggSAggAGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkDwBwgAEAAYACAAKnUKCmF1dG9ub21vdXMVk9J8QBoJYXV0b21hdGVkGg5kcml2ZXJsZXNzIGNhchoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaEWF1dG9ub21vdXN2ZWhpY2xlGg9pdjtwO2F1dG9ub21vdXMqiAEKB3ZlaGljbGUV2TkCQBoKYXV0b21vYmlsZRoDY2FyGg5kcml2ZXJsZXNzIGNhchoHZHJpdmluZxoQc2VsZiBkcml2aW5nIGNhchoRc2VsZiBkcml2aW5nIGNhcnMaCHZlaGljbGVzGhFhdXRvbm9tb3VzdmVoaWNsZRoMdmVoaWNsZWZsZWV0KjgKBWZsZWV0FfvKzj8aDHZlaGljbGVmbGVldBoQZmxlZXRtYWludGVuYW5jZRoKaXY7cDtmbGVldCpLCgttYWludGVuYW5jZRWQQyw_GgptYW5hZ2VtZW50GgZyZXBhaXIaB3NlcnZpY2UaCHNlcnZpY2VzGhBmbGVldG1haW50ZW5hbmNlKh4KCGNoYXJnaW5nFUS3QUAaDWl2O3A7Y2hhcmdpbmcqMgoFZGVwb3QV2CcVQBoEZGVwbxoJd2FyZWhvdXNlGgppdjtwO2RlcG90GgdzdGF0aW9uKj8KCGZhY2lsaXR5FQAAAAAaBmNlbnRlchoGY2VudHJlGgpmYWNpbGl0aWVzGgtpbnN0aXR1dGlvbhoFcGxhbnQqGAoFd2F5bW8VNXFHQBoKaXY7cDt3YXltbzLIAS9nb3RvP3VybD1DQUVTaVFFQjZ6c3dGWTJfTnRfLU1URXFUNXNMYzNLSmd0X29zZnZXQkhrS29jR2hWMHZaSVhmOUc0VlY2aDRNSUFFT1BBTGZIQVoybjEyeUN5SDF6dmRfYlFCNmx5ZF9HZWlhX1hnRU9TTFRGYll2b0tNVjJFaXlHa0R5M0VZTzhyNWF5ZjE3cnk5bUxYSlNkVHNKX2FYR3ZWSWUtTkp6ZWVmLVdad0FlLTJSc25GVFpabklCbF9OOF9HWGJBOkJSZWFsIGVzdGF0ZSBpcyBvbmUgb2YgdGhlIGhhcmRlc3Qgb3BlbiBwcm9ibGVtcyBpbiBzY2FsZWQgc2VsZiAuLi5CngFBbiBFViBmbGVldCBhbHNvIGxvd2VycyB2ZWhpY2xlIG1haW50ZW5hbmNlIGNvc3RzLiA8Yj5XYXltbyBhbmQgQ3J1aXNlIGVhY2ggaGF2ZSBsb2NhdGlvbnMgd2l0aCBEQyBmYXN0IGNoYXJnaW5nIGNhcGFiaWxpdHk8L2I-LiBUaGlzIGFwcHJvYWNoIGF2b2lkcyZuYnNwOy4uLiICEAFIAFgAaAA",
+        "source": "kevinchen.co"
+      },
+      {
+        "position": 9,
+        "title": "Waymo is preparing for autonomous charging",
+        "link": "https://www.reddit.com/r/waymo/comments/1ujumey/waymo_is_preparing_for_autonomous_charging/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESlgEB6zswFe4wd_AF39oMFOTWPNWUd7vv2RIz2lP3JGCsv9qNEck7MVpFKVh7e7QqxPiOEBJb6eU6wz8B6Wmf1yuoQdjedyi4N-pF_66c8AFZWzcOkKpd5Bs6EdO9aJPnji2LnDkCP8Zi6ZTDSOt9tguZEi0OGHjlW7zclmQm3lUnr2Hh0IgQMx2sXIlCagV1iq26VfCFbI4&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQFnoECB8QAQ&uoh=1",
+        "displayed_link": "10+ comments · 3 months ago",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAqFBMVEVHcEz_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_PAD_____RQD_PAD_QAD_MQDS4Of_RAD_NwD6-vv4_v_K2N_z-fra5uzm7_H72NLq9vkCCAvweWDol4r_hm3-mYX9YTj-cFDW7PP45uP4qJjbUTNBR0rRtbD_wLO-MgW1vsHfzc_gFQDUqKf_WAb_UgAxODwAHilxLR1scnTHa13kHQCLRbHLAAAADHRSTlMA_kAZ4YjF7WQ0GH3klhKFAAABhUlEQVQokW2T53aDMAyFoSGQpMfyJmaEnb1X-_5vVttkkDT3BxJ8xyBdCce5a9j3A9cN_P7QedcggIeCwQvqeU8EhIA3erKvDgJa1ZTD10cmVghNxYOOugzWY4RQiQF6Fna_tz5fNigMDfRsnd1z5zleNs0Yc52bmh89ECzWF4FpllkGge5dB0wpxrQqV_vlqqyoMPf68dDp6-KLJCmLKbppWpRJUlCAvuODmKEPmgnwnYCTTwwhwgPHJXVocrlv3xtO98rGmriOyyFVEqE5zaR9-Fv96KtKgbu6E5w3UsrdAScGJvSwU6Fscqx78XW1M6XC-RHsSQnHeajUTFfrm1ZIlaZKJbItRCZKpWlFTCvGBMriOFWbxeJ0Wiw2YRrHEbUmGPtIFkVxHE-sdBI1GbH2WeNFzsYsYtfJ5KoDY7m4GW9HJrKxFosiZmJmmNcukBkBJvnWnGHRNifGdbitkakJOBZQF0UNoh3YfYm-bwPlRIu3-TvryOvd1_kf6iz1C3z9Hf4AClYvY_ay9KgAAAAASUVORK5CYII.png",
+        "snippet": "Lead the smart buildings design and implementation of automated test scripts and standardized workflows for EV charging features, from initial ...",
+        "snippet_highlighted_words": [
+          "automated",
+          "charging"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Lead the smart buildings design and implementation of automated test scripts and standardized workflows for EV charging features, from initial ...",
+            "source_info_link": "https://www.reddit.com/r/waymo/comments/1ujumey/waymo_is_preparing_for_autonomous_charging/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAqFBMVEVHcEz_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_PAD_____RQD_PAD_QAD_MQDS4Of_RAD_NwD6-vv4_v_K2N_z-fra5uzm7_H72NLq9vkCCAvweWDol4r_hm3-mYX9YTj-cFDW7PP45uP4qJjbUTNBR0rRtbD_wLO-MgW1vsHfzc_gFQDUqKf_WAb_UgAxODwAHilxLR1scnTHa13kHQCLRbHLAAAADHRSTlMA_kAZ4YjF7WQ0GH3klhKFAAABhUlEQVQokW2T53aDMAyFoSGQpMfyJmaEnb1X-_5vVttkkDT3BxJ8xyBdCce5a9j3A9cN_P7QedcggIeCwQvqeU8EhIA3erKvDgJa1ZTD10cmVghNxYOOugzWY4RQiQF6Fna_tz5fNigMDfRsnd1z5zleNs0Yc52bmh89ECzWF4FpllkGge5dB0wpxrQqV_vlqqyoMPf68dDp6-KLJCmLKbppWpRJUlCAvuODmKEPmgnwnYCTTwwhwgPHJXVocrlv3xtO98rGmriOyyFVEqE5zaR9-Fv96KtKgbu6E5w3UsrdAScGJvSwU6Fscqx78XW1M6XC-RHsSQnHeajUTFfrm1ZIlaZKJbItRCZKpWlFTCvGBMriOFWbxeJ0Wiw2YRrHEbUmGPtIFkVxHE-sdBI1GbH2WeNFzsYsYtfJ5KoDY7m4GW9HJrKxFosiZmJmmNcukBkBJvnWnGHRNifGdbitkakJOBZQF0UNoh3YfYm-bwPlRIu3-TvryOvd1_kf6iz1C3z9Hf4AClYvY_ay9KgAAAAASUVORK5CYII.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CtkBL2dvdG8_dXJsPUNBRVNsZ0VCNnpzd0ZiTVJwSGlUZU4xb095dE9CNDlGQlhielZOZWlBcm94QzJ4N0VQekpKUnVBNGt2UUdvOTNmcUc5Nm9JSUtGVTV3RGREVlVJX2hraGZMUkNxNml1bHJNZ0lUMDNud25SbWFFODZreGF4VUxDeTd5YzdzTUJCbEJZTHBjV1lwZk52d1B6dURUcDdYY2tHcnJKT1QyTDBhWlQtZkpsYXJzRld2MU9RY2xVOGVDeTd0cVJma0swZHVHazNPZDVXWWFUYmZURRIEGgIIABqtCBICCAAaACIAKgAyBggDEgJ1czoAQgQIARAASgBaAHIAegCCQIcICAAQABgAIAAqdQoKYXV0b25vbW91cxUiSXZAGglhdXRvbWF0ZWQaDmRyaXZlcmxlc3MgY2FyGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoRYXV0b25vbW91c3ZlaGljbGUaD2l2O3A7YXV0b25vbW91cyqIAQoHdmVoaWNsZRUU96M_GgphdXRvbW9iaWxlGgNjYXIaDmRyaXZlcmxlc3MgY2FyGgdkcml2aW5nGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoIdmVoaWNsZXMaEWF1dG9ub21vdXN2ZWhpY2xlGgx2ZWhpY2xlZmxlZXQqOAoFZmxlZXQVcwnEPxoMdmVoaWNsZWZsZWV0GhBmbGVldG1haW50ZW5hbmNlGgppdjtwO2ZsZWV0KksKC21haW50ZW5hbmNlFQAAAAAaCm1hbmFnZW1lbnQaBnJlcGFpchoHc2VydmljZRoIc2VydmljZXMaEGZsZWV0bWFpbnRlbmFuY2UqHgoIY2hhcmdpbmcVglCZQBoNaXY7cDtjaGFyZ2luZyoyCgVkZXBvdBUAAAAAGgRkZXBvGgl3YXJlaG91c2UaCml2O3A7ZGVwb3QaB3N0YXRpb24qPwoIZmFjaWxpdHkVAAAAABoGY2VudGVyGgZjZW50cmUaCmZhY2lsaXRpZXMaC2luc3RpdHV0aW9uGgVwbGFudCoYCgV3YXltbxWgls5AGgppdjtwO3dheW1vMtkBL2dvdG8_dXJsPUNBRVNsZ0VCNnpzd0ZiTVJwSGlUZU4xb095dE9CNDlGQlhielZOZWlBcm94QzJ4N0VQekpKUnVBNGt2UUdvOTNmcUc5Nm9JSUtGVTV3RGREVlVJX2hraGZMUkNxNml1bHJNZ0lUMDNud25SbWFFODZreGF4VUxDeTd5YzdzTUJCbEJZTHBjV1lwZk52d1B6dURUcDdYY2tHcnJKT1QyTDBhWlQtZkpsYXJzRld2MU9RY2xVOGVDeTd0cVJma0swZHVHazNPZDVXWWFUYmZURTpBPGI-V2F5bW88L2I-IGlzIHByZXBhcmluZyBmb3IgPGI-YXV0b25vbW91cyBjaGFyZ2luZzwvYj4gLSBSZWRkaXRCpQFMZWFkIHRoZSBzbWFydCBidWlsZGluZ3MgZGVzaWduIGFuZCBpbXBsZW1lbnRhdGlvbiBvZiA8Yj5hdXRvbWF0ZWQ8L2I-IHRlc3Qgc2NyaXB0cyBhbmQgc3RhbmRhcmRpemVkIHdvcmtmbG93cyBmb3IgRVYgPGI-Y2hhcmdpbmc8L2I-IGZlYXR1cmVzLCBmcm9tIGluaXRpYWwmbmJzcDsuLi4iAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CtkBL2dvdG8_dXJsPUNBRVNsZ0VCNnpzd0ZiTVJwSGlUZU4xb095dE9CNDlGQlhielZOZWlBcm94QzJ4N0VQekpKUnVBNGt2UUdvOTNmcUc5Nm9JSUtGVTV3RGREVlVJX2hraGZMUkNxNml1bHJNZ0lUMDNud25SbWFFODZreGF4VUxDeTd5YzdzTUJCbEJZTHBjV1lwZk52d1B6dURUcDdYY2tHcnJKT1QyTDBhWlQtZkpsYXJzRld2MU9RY2xVOGVDeTd0cVJma0swZHVHazNPZDVXWWFUYmZURRIEGgIIABqtCBICCAAaACIAKgAyBggDEgJ1czoAQgQIARAASgBaAHIAegCCQIcICAAQABgAIAAqdQoKYXV0b25vbW91cxUiSXZAGglhdXRvbWF0ZWQaDmRyaXZlcmxlc3MgY2FyGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoRYXV0b25vbW91c3ZlaGljbGUaD2l2O3A7YXV0b25vbW91cyqIAQoHdmVoaWNsZRUU96M_GgphdXRvbW9iaWxlGgNjYXIaDmRyaXZlcmxlc3MgY2FyGgdkcml2aW5nGhBzZWxmIGRyaXZpbmcgY2FyGhFzZWxmIGRyaXZpbmcgY2FycxoIdmVoaWNsZXMaEWF1dG9ub21vdXN2ZWhpY2xlGgx2ZWhpY2xlZmxlZXQqOAoFZmxlZXQVcwnEPxoMdmVoaWNsZWZsZWV0GhBmbGVldG1haW50ZW5hbmNlGgppdjtwO2ZsZWV0KksKC21haW50ZW5hbmNlFQAAAAAaCm1hbmFnZW1lbnQaBnJlcGFpchoHc2VydmljZRoIc2VydmljZXMaEGZsZWV0bWFpbnRlbmFuY2UqHgoIY2hhcmdpbmcVglCZQBoNaXY7cDtjaGFyZ2luZyoyCgVkZXBvdBUAAAAAGgRkZXBvGgl3YXJlaG91c2UaCml2O3A7ZGVwb3QaB3N0YXRpb24qPwoIZmFjaWxpdHkVAAAAABoGY2VudGVyGgZjZW50cmUaCmZhY2lsaXRpZXMaC2luc3RpdHV0aW9uGgVwbGFudCoYCgV3YXltbxWgls5AGgppdjtwO3dheW1vMtkBL2dvdG8_dXJsPUNBRVNsZ0VCNnpzd0ZiTVJwSGlUZU4xb095dE9CNDlGQlhielZOZWlBcm94QzJ4N0VQekpKUnVBNGt2UUdvOTNmcUc5Nm9JSUtGVTV3RGREVlVJX2hraGZMUkNxNml1bHJNZ0lUMDNud25SbWFFODZreGF4VUxDeTd5YzdzTUJCbEJZTHBjV1lwZk52d1B6dURUcDdYY2tHcnJKT1QyTDBhWlQtZkpsYXJzRld2MU9RY2xVOGVDeTd0cVJma0swZHVHazNPZDVXWWFUYmZURTpBPGI-V2F5bW88L2I-IGlzIHByZXBhcmluZyBmb3IgPGI-YXV0b25vbW91cyBjaGFyZ2luZzwvYj4gLSBSZWRkaXRCpQFMZWFkIHRoZSBzbWFydCBidWlsZGluZ3MgZGVzaWduIGFuZCBpbXBsZW1lbnRhdGlvbiBvZiA8Yj5hdXRvbWF0ZWQ8L2I-IHRlc3Qgc2NyaXB0cyBhbmQgc3RhbmRhcmRpemVkIHdvcmtmbG93cyBmb3IgRVYgPGI-Y2hhcmdpbmc8L2I-IGZlYXR1cmVzLCBmcm9tIGluaXRpYWwmbmJzcDsuLi4iAhABSABYAGgA",
+        "source": "Reddit · r/waymo",
+        "read_more_link": "https://www.reddit.com/r/waymo/comments/1ujumey/waymo_is_preparing_for_autonomous_charging/#:~:text=Lead%20the%20smart%20buildings%20design,energization%20and%20final%20customer%20activation."
+      }
+    ],
+    "related_searches": [
+      {
+        "block_position": 1,
+        "query": "Autonomous vehicle fleet maintenance charging depot facility waymo jobs",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&q=Autonomous+vehicle+fleet+maintenance+charging+depot+facility+waymo+jobs&sa=X&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ1QJ6BAg8EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Autonomous+vehicle+fleet+maintenance+charging+depot+facility+waymo+jobs"
+      },
+      {
+        "block_position": 1,
+        "query": "Waymo fleet size San Francisco",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&q=Waymo+fleet+size+San+Francisco&sa=X&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ1QJ6BAhAEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Waymo+fleet+size+San+Francisco"
+      },
+      {
+        "block_position": 1,
+        "query": "Waymo fleet size 2026",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&q=Waymo+fleet+size+2026&sa=X&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ1QJ6BAhCEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Waymo+fleet+size+2026"
+      },
+      {
+        "block_position": 1,
+        "query": "Who builds Waymo cars",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&q=Who+builds+Waymo+cars&sa=X&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ1QJ6BAg_EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Who+builds+Waymo+cars"
+      },
+      {
+        "block_position": 1,
+        "query": "How many Waymo cars are there in LA",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&q=How+many+Waymo+cars+are+there+in+LA&sa=X&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ1QJ6BAg-EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=How+many+Waymo+cars+are+there+in+LA"
+      },
+      {
+        "block_position": 1,
+        "query": "Lyft Nashville Waymo",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&q=Lyft+Nashville+Waymo&sa=X&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ1QJ6BAg6EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Lyft+Nashville+Waymo"
+      },
+      {
+        "block_position": 1,
+        "query": "How many cars does Waymo have in Phoenix",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&q=How+many+cars+does+Waymo+have+in+Phoenix&sa=X&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ1QJ6BAg7EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=How+many+cars+does+Waymo+have+in+Phoenix"
+      },
+      {
+        "block_position": 1,
+        "query": "How many Waymo cars are there in Austin",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&q=How+many+Waymo+cars+are+there+in+Austin&sa=X&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ1QJ6BAg9EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=How+many+Waymo+cars+are+there+in+Austin"
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "next": "https://www.google.com/search?q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&ei=JpXbapXFLJeiseMP5fj8iAo&start=10&sa=N&sstk=AS6-VmK553SteFJU07ylv_h1IqkEqj0QFv625R4aDnHRgft__uwv7JzYdoTFoYcueqJJ6e272QwJw0O8cnaDB6s3Ew1n4trU4g4aNQ&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ8NMDegQINBAW",
+      "other_pages": {
+        "2": "https://www.google.com/search?q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&ei=JpXbapXFLJeiseMP5fj8iAo&start=10&sa=N&sstk=AS6-VmK553SteFJU07ylv_h1IqkEqj0QFv625R4aDnHRgft__uwv7JzYdoTFoYcueqJJ6e272QwJw0O8cnaDB6s3Ew1n4trU4g4aNQ&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ8tMDegQINBAE",
+        "3": "https://www.google.com/search?q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&ei=JpXbapXFLJeiseMP5fj8iAo&start=20&sa=N&sstk=AS6-VmK553SteFJU07ylv_h1IqkEqj0QFv625R4aDnHRgft__uwv7JzYdoTFoYcueqJJ6e272QwJw0O8cnaDB6s3Ew1n4trU4g4aNQ&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ8tMDegQINBAG",
+        "4": "https://www.google.com/search?q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&ei=JpXbapXFLJeiseMP5fj8iAo&start=30&sa=N&sstk=AS6-VmK553SteFJU07ylv_h1IqkEqj0QFv625R4aDnHRgft__uwv7JzYdoTFoYcueqJJ6e272QwJw0O8cnaDB6s3Ew1n4trU4g4aNQ&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ8tMDegQINBAI",
+        "5": "https://www.google.com/search?q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&ei=JpXbapXFLJeiseMP5fj8iAo&start=40&sa=N&sstk=AS6-VmK553SteFJU07ylv_h1IqkEqj0QFv625R4aDnHRgft__uwv7JzYdoTFoYcueqJJ6e272QwJw0O8cnaDB6s3Ew1n4trU4g4aNQ&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ8tMDegQINBAK",
+        "6": "https://www.google.com/search?q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&ei=JpXbapXFLJeiseMP5fj8iAo&start=50&sa=N&sstk=AS6-VmK553SteFJU07ylv_h1IqkEqj0QFv625R4aDnHRgft__uwv7JzYdoTFoYcueqJJ6e272QwJw0O8cnaDB6s3Ew1n4trU4g4aNQ&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ8tMDegQINBAM",
+        "7": "https://www.google.com/search?q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&ei=JpXbapXFLJeiseMP5fj8iAo&start=60&sa=N&sstk=AS6-VmK553SteFJU07ylv_h1IqkEqj0QFv625R4aDnHRgft__uwv7JzYdoTFoYcueqJJ6e272QwJw0O8cnaDB6s3Ew1n4trU4g4aNQ&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ8tMDegQINBAO",
+        "8": "https://www.google.com/search?q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&ei=JpXbapXFLJeiseMP5fj8iAo&start=70&sa=N&sstk=AS6-VmK553SteFJU07ylv_h1IqkEqj0QFv625R4aDnHRgft__uwv7JzYdoTFoYcueqJJ6e272QwJw0O8cnaDB6s3Ew1n4trU4g4aNQ&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ8tMDegQINBAQ",
+        "9": "https://www.google.com/search?q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&ei=JpXbapXFLJeiseMP5fj8iAo&start=80&sa=N&sstk=AS6-VmK553SteFJU07ylv_h1IqkEqj0QFv625R4aDnHRgft__uwv7JzYdoTFoYcueqJJ6e272QwJw0O8cnaDB6s3Ew1n4trU4g4aNQ&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ8tMDegQINBAS",
+        "10": "https://www.google.com/search?q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnuLieKyMpBjYh17sH3vrMD8vsDhpQ:1792775462740&ei=JpXbapXFLJeiseMP5fj8iAo&start=90&sa=N&sstk=AS6-VmK553SteFJU07ylv_h1IqkEqj0QFv625R4aDnHRgft__uwv7JzYdoTFoYcueqJJ6e272QwJw0O8cnaDB6s3Ew1n4trU4g4aNQ&ved=2ahUKEwiV8PiE0dCXAxUXUWwGHWU8H6EQ8tMDegQINBAU"
+      }
+    },
+    "serpapi_pagination": {
+      "current": 1,
+      "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&start=10",
+      "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&start=10",
+      "other_pages": {
+        "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&start=10",
+        "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&start=20",
+        "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&start=30",
+        "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&start=40",
+        "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&start=50",
+        "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&start=60",
+        "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&start=70",
+        "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&start=80",
+        "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=autonomous+vehicle+fleet+maintenance+charging+depot+facility+Waymo&start=90"
+      }
+    }
+  }
+}

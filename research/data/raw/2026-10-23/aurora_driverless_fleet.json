@@ -1,0 +1,177 @@
+{
+  "query": {
+    "query_id": "aurora_driverless_fleet",
+    "engine": "google_news",
+    "q": "Aurora driverless fleet operations depots 2025 2026 official",
+    "gl": "us",
+    "hl": "en",
+    "num": 10
+  },
+  "retrieved_at": "2026-10-23T17:10:23.940318+00:00",
+  "status": "success",
+  "response": {
+    "search_metadata": {
+      "id": "6adb94fed3dd15198d2808e5",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/AnlvfRgja-7L0OBSPER2c43PNuKG1rLu836UYOGp1WA/6adb94fed3dd15198d2808e5.json",
+      "markdown_endpoint": "https://serpapi.com/searches/AnlvfRgja-7L0OBSPER2c43PNuKG1rLu836UYOGp1WA/6adb94fed3dd15198d2808e5.md",
+      "created_at": "2026-10-23 17:10:22 UTC",
+      "processed_at": "2026-10-23 17:10:22 UTC",
+      "google_news_url": "https://news.google.com/search?q=Aurora+driverless+fleet+operations+depots+2025+2026+official&hl=en&gl=US",
+      "raw_html_file": "https://serpapi.com/searches/AnlvfRgja-7L0OBSPER2c43PNuKG1rLu836UYOGp1WA/6adb94fed3dd15198d2808e5.html",
+      "total_time_taken": 1.31
+    },
+    "search_parameters": {
+      "engine": "google_news",
+      "gl": "us",
+      "hl": "en",
+      "q": "Aurora driverless fleet operations depots 2025 2026 official"
+    },
+    "news_results": [
+      {
+        "position": 1,
+        "title": "Top Autonomous Vehicle Stocks for 2027: The Robotaxi Factory Race",
+        "source": {
+          "name": "Exoswan Insights",
+          "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://exoswan.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://exoswan.com/autonomous-vehicle-stocks",
+        "thumbnail": "https://exoswan.com/assets/features/autonomous-vehicle-stocks-original-article.webp",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iL0NnNURhVEJtZEdsSlJHOXJUMVV5VFJDb0FSaXNBaWdCTWdrQmtJeTBOQ2FwVUFF",
+        "date": "10/04/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-10-04T07:00:00Z"
+      },
+      {
+        "position": 2,
+        "title": "A bold road: Saudi Arabia bets on driverless trucks",
+        "source": {
+          "name": "Al Majalla",
+          "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://en.majalla.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Al Majalla"
+          ]
+        },
+        "link": "https://en.majalla.com/node/332904/business-economy/bold-road-saudi-arabia-bets-driverless-trucks",
+        "thumbnail": "https://static.majalla.com/styles/1200xauto/public/2026-09/218254.jpeg?VersionId=F5gl.IgEJ3qSCZH.dpYpuk9PZF8vUfkS",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNUtaRFV6ZURGQ1FqUmZSR2R4VFJEZ0F4aUFCU2dLTWdhQmtveFB1UVk",
+        "date": "09/04/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-09-04T07:00:00Z"
+      },
+      {
+        "position": 3,
+        "title": "Uber is building an autonomous vehicle empire, and here’s every company it’s using to do it",
+        "source": {
+          "name": "TechCrunch",
+          "icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://techcrunch.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+          "authors": [
+            "Kirsten Korosec"
+          ]
+        },
+        "link": "https://techcrunch.com/2026/08/01/ubers-autonomous-vehicle-deal-tracker/",
+        "thumbnail": "https://techcrunch.com/wp-content/uploads/2026/07/uber-getty.jpg?w=1024",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVNVRW80ZDBsaVRDMUlkRWhuVFJERUF4aW5CU2dLTWdZQlFvejFQQVk",
+        "date": "08/01/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-08-01T07:00:00Z"
+      },
+      {
+        "position": 4,
+        "title": "Texas going big with autonomous infrastructure?",
+        "source": {
+          "name": "Land Line Media",
+          "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://landline.media&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://landline.media/texas-going-big-with-autonomous-infrastructure/",
+        "thumbnail": "https://i0.wp.com/landline.media/wp-content/uploads/2026/02/02-11-26-AV-truck-bridge-pic.jpg?fit=800%2C600&ssl=1",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iMkNnNTBiR2d0VVRONGMwMVhWMFZGVFJEZ0F4aUFCU2dLTWdzQkVJd0puaWZRRFZxUlZB",
+        "date": "02/11/2026, 08:00 AM, +0000 UTC",
+        "iso_date": "2026-02-11T08:00:00Z"
+      },
+      {
+        "position": 5,
+        "title": "Aurora to help haul frac sand 'around the clock' using autonomous trucks on public roads in Permian Basin",
+        "source": {
+          "name": "CDLLife",
+          "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://cdllife.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://cdllife.com/2025/aurora-to-help-haul-frac-sand-around-the-clock-using-autonomous-trucks-on-public-roads-in-permian-basin/",
+        "thumbnail": "https://cdllife.com/wp-content/uploads/2025/12/Aurora-Detmar-2-696x522.jpg",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iK0NnNVljV1pCVURCa2FWZGpUMEpQVFJEZ0F4aUFCU2dLTWdZQjBveEpSUVU",
+        "date": "12/31/2025, 08:00 AM, +0000 UTC",
+        "iso_date": "2025-12-31T08:00:00Z"
+      },
+      {
+        "position": 6,
+        "title": "Heavy-Duty Autonomous Vehicle Market Size, Forecast 2035",
+        "source": {
+          "name": "Global Market Insights Inc.",
+          "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.gminsights.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://www.gminsights.com/industry-analysis/heavy-duty-autonomous-vehicle-market",
+        "thumbnail": "https://cdn.gminsights.com/cdn-cgi/image/fit=scale-down,format=webp,quality=60,width=1200/image/rd/automotive/us-heavy-duty-autonomous-vehicle-market-size-2023--2035-usd-billion.webp?t=1787302083418",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNTBiMmRvYmxSZlNFOXhUMVJqVFJDaUFSaTNBaWdCTWdB",
+        "date": "03/05/2025, 09:34 AM, +0000 UTC",
+        "iso_date": "2025-03-05T09:34:32Z"
+      },
+      {
+        "position": 7,
+        "title": "Pony.ai Debuts Gen-4 Autonomous Truck on Robotaxi Architecture at IAA 2026 Show",
+        "source": {
+          "name": "Tech Times",
+          "icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.techtimes.com&client=NEWS_360&size=96&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+        },
+        "link": "https://www.techtimes.com/articles/327481/20260914/ponyai-debuts-gen-4-autonomous-truck-robotaxi-architecture-iaa-2026-show.htm",
+        "thumbnail": "https://d.techtimes.com/en/full/475509/ponyai-gen-4-autonomous-trucks.png?w=836&f=91e6605c6acd904d2e9a8ebbc19a6adf",
+        "thumbnail_small": "https://news.google.com/api/attachments/CC8iI0NnNTRXa0ZEY2pBMlRVSldUMDQwVFJERUF4aW5CU2dLTWdB",
+        "date": "09/14/2026, 07:00 AM, +0000 UTC",
+        "iso_date": "2026-09-14T07:00:00Z"
+      }
+    ],
+    "menu_links": [
+      {
+        "title": "U.S.",
+        "topic_token": "CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTjNjd0VnSmxiaWdBUAE",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTjNjd0VnSmxiaWdBUAE"
+      },
+      {
+        "title": "World",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Your local news",
+        "topic_token": "CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqHAgKIhZDQklTQ2pvSWJHOWpZV3hmZGpJb0FBUAE"
+      },
+      {
+        "title": "Business",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Technology",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Entertainment",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNREpxYW5RU0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNREpxYW5RU0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Sports",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp1ZEdvU0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp1ZEdvU0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Science",
+        "topic_token": "CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp0Y1RjU0FtVnVHZ0pWVXlnQVAB",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp0Y1RjU0FtVnVHZ0pWVXlnQVAB"
+      },
+      {
+        "title": "Health",
+        "topic_token": "CAAqIQgKIhtDQkFTRGdvSUwyMHZNR3QwTlRFU0FtVnVLQUFQAQ",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_news&gl=us&topic_token=CAAqIQgKIhtDQkFTRGdvSUwyMHZNR3QwTlRFU0FtVnVLQUFQAQ"
+      }
+    ]
+  }
+}

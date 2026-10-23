@@ -1,0 +1,384 @@
+{
+  "query": {
+    "query_id": "accessibility_fire_codes",
+    "engine": "google",
+    "q": "site:iccsafe.org automated parking accessibility fire protection code",
+    "gl": "us",
+    "hl": "en",
+    "num": 10
+  },
+  "retrieved_at": "2026-10-23T17:12:26.744287+00:00",
+  "status": "success",
+  "response": {
+    "search_metadata": {
+      "id": "6adb9579739fd7618dcc1986",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/APPh0GK2f6CczVt8TOBkwjJaSBAjNklgCOktBsZ8ujQ/6adb9579739fd7618dcc1986.json",
+      "markdown_endpoint": "https://serpapi.com/searches/APPh0GK2f6CczVt8TOBkwjJaSBAjNklgCOktBsZ8ujQ/6adb9579739fd7618dcc1986.md",
+      "pixel_position_endpoint": "https://serpapi.com/searches/APPh0GK2f6CczVt8TOBkwjJaSBAjNklgCOktBsZ8ujQ/6adb9579739fd7618dcc1986.json_with_pixel_position",
+      "created_at": "2026-10-23 17:12:25 UTC",
+      "processed_at": "2026-10-23 17:12:25 UTC",
+      "google_url": "https://www.google.com/search?q=site%3Aiccsafe.org+automated+parking+accessibility+fire+protection+code&oq=site%3Aiccsafe.org+automated+parking+accessibility+fire+protection+code&hl=en&gl=us&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/APPh0GK2f6CczVt8TOBkwjJaSBAjNklgCOktBsZ8ujQ/6adb9579739fd7618dcc1986.html",
+      "total_time_taken": 0.62
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "site:iccsafe.org automated parking accessibility fire protection code",
+      "google_domain": "google.com",
+      "hl": "en",
+      "gl": "us",
+      "device": "desktop"
+    },
+    "search_information": {
+      "query_displayed": "site:iccsafe.org automated parking accessibility fire protection code",
+      "total_results": 7860,
+      "time_taken_displayed": 0.23,
+      "organic_results_state": "Results for exact spelling"
+    },
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "2021 St Charles County Fire Code - 903.2.10.2 Mechanical ...",
+        "link": "https://codes.iccsafe.org/s/MOSTCCFC2021P2/chapter-9-fire-protection-and-life-safety-systems/MOSTCCFC2021P2-Pt03-Ch09-Sec903.2.10.2",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESvwEB6zswFRrS9ESyp3DVpkLxZ-_bcS6R9xO0_pt6Umwn4-SuLn1Zrtr0bUut2uyO3RkJ3oU0F9EJ-wPsBXdB-_Z6SlqilWrY88qs8cPbGfnJpFPdmxUj3J0ymvyDW5m7BH4EQ_w_RqL_oH-DxJ7zq_jnpdhQwgCgEBgpeKi3GVgaehOx7bx1Zaa3qOSoGN3LXn90Y55n-IS7s5cxT88SXlG4V5I_OedKgsdXLTxoNiuDjZkT4DJms573iHF1UGVh_g&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQFnoECBoQAQ&uoh=1",
+        "displayed_link": "https://codes.iccsafe.org › chapter-9-fire-protection-and-l...",
+        "favicon": "https://serpapi.com/searches/6adb9579739fd7618dcc1986/images/CuuWhLUHCZ_WZ_xdzCCKtmhelS49P31apESL8g2SjPc.png",
+        "snippet": "Code 903.2.10.2 Mechanical-access enclosed parking garages. An approvedautomatic sprinkler system shall be provided throughout buildings used for the storage ...",
+        "snippet_highlighted_words": [
+          "Code 903.2.10.2 Mechanical-access enclosed parking garages"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Code 903.2.10.2 Mechanical-access enclosed parking garages. An approvedautomatic sprinkler system shall be provided throughout buildings used for the storage ...",
+            "source_info_link": "https://codes.iccsafe.org/s/MOSTCCFC2021P2/chapter-9-fire-protection-and-life-safety-systems/MOSTCCFC2021P2-Pt03-Ch09-Sec903.2.10.2",
+            "icon": "https://serpapi.com/searches/6adb9579739fd7618dcc1986/images/CuuWhLUHCZ_WZ_xdzCCKth_dWgRwzoDI-mIptP2aWHt3uEJwkeOrKKqTgn3J6EFu.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CpACL2dvdG8_dXJsPUNBRVN2d0VCNnpzd0ZSLVhKWU5ULUxWSlhEUUg3aGlZNVp1XzhHYmtaSWpGTkZVV2RxS1YtMHoyME45U1ZqLUVNLV9YQVc0Y1otWjVObHV2QWNwMzBJTlhqZnc4RW1fR2pJVWFWSmVRQ2dxQm81dDNFSUY4cE1DMlZMVVNOb0pZQWluSlYyWldPeUFuWFJEcWRIUW04UmpIVFhFcnhyMUxSY1R2X2dtUC1xazk4YXY0Qm5HTnQ2V29sS0ZvbGlzWlFfak8xUlBPVVhaNmNFa0owX3BiaXpPTTVNVndBYktVZ2VNay1JanR4Mjc0WS1CZGcwb1hOcFAwV3ZsTUpDWEZBVmhuSFESBBoCCAAarQcSABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAiQcIABAAGAAgACpYCglhdXRvbWF0ZWQVAAAAABoEYXV0bxoJYXV0b21hdGljGgptZWNoYW5pY2FsGgdyb2JvdGljGhBhdXRvbWF0ZWRwYXJraW5nGg5pdjtwO2F1dG9tYXRlZCogCgdwYXJraW5nFUxksEAaEGF1dG9tYXRlZHBhcmtpbmcqNAoNYWNjZXNzaWJpbGl0eRWVbDo8GgZhY2Nlc3MaCmFjY2Vzc2libGUaCmRpc2FiaWxpdHkqIgoEZmlyZRW6U9tAGgVmaXJlcxoOZmlyZXByb3RlY3Rpb24qhQEKCnByb3RlY3Rpb24VAAAAPxoFYWxhcm0aB2NvbnRyb2waCmRlcGFydG1lbnQaCnByZXZlbnRpb24aBnNhZmV0eRoHc2VydmljZRoIc2VydmljZXMaCXNwcmlua2xlchoLc3VwcHJlc3Npb24aB3N5c3RlbXMaDmZpcmVwcm90ZWN0aW9uKhIKBGNvZGUVKm78QBoFY29kZXMykAIvZ290bz91cmw9Q0FFU3Z3RUI2enN3RlItWEpZTlQtTFZKWERRSDdoaVk1WnVfOEdia1pJakZORlVXZHFLVi0wejIwTjlTVmotRU0tX1hBVzRjWi1aNU5sdXZBY3AzMElOWGpmdzhFbV9HaklVYVZKZVFDZ3FCbzV0M0VJRjhwTUMyVkxVU05vSllBaW5KVjJaV095QW5YUkRxZEhRbThSakhUWEVyeHIxTFJjVHZfZ21QLXFrOThhdjRCbkdOdDZXb2xLRm9saXNaUV9qTzFSUE9VWFo2Y0VrSjBfcGJpek9NNU1Wd0FiS1VnZU1rLUlqdHgyNzRZLUJkZzBvWE5wUDBXdmxNSkNYRkFWaG5IUTpKMjAyMSBTdCBDaGFybGVzIENvdW50eSA8Yj5GaXJlIENvZGU8L2I-IC0gOTAzLjIuMTAuMiA8Yj5NZWNoYW5pY2FsPC9iPiAuLi5CrQE8Yj5Db2RlIDkwMy4yLjEwLjIgTWVjaGFuaWNhbC1hY2Nlc3MgZW5jbG9zZWQgcGFya2luZyBnYXJhZ2VzPC9iPi4gQW4gYXBwcm92ZWRhdXRvbWF0aWMgc3ByaW5rbGVyIHN5c3RlbSBzaGFsbCBiZSBwcm92aWRlZCB0aHJvdWdob3V0IGJ1aWxkaW5ncyB1c2VkIGZvciB0aGUgc3RvcmFnZSZuYnNwOy4uLiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CpACL2dvdG8_dXJsPUNBRVN2d0VCNnpzd0ZSLVhKWU5ULUxWSlhEUUg3aGlZNVp1XzhHYmtaSWpGTkZVV2RxS1YtMHoyME45U1ZqLUVNLV9YQVc0Y1otWjVObHV2QWNwMzBJTlhqZnc4RW1fR2pJVWFWSmVRQ2dxQm81dDNFSUY4cE1DMlZMVVNOb0pZQWluSlYyWldPeUFuWFJEcWRIUW04UmpIVFhFcnhyMUxSY1R2X2dtUC1xazk4YXY0Qm5HTnQ2V29sS0ZvbGlzWlFfak8xUlBPVVhaNmNFa0owX3BiaXpPTTVNVndBYktVZ2VNay1JanR4Mjc0WS1CZGcwb1hOcFAwV3ZsTUpDWEZBVmhuSFESBBoCCAAarQcSABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAiQcIABAAGAAgACpYCglhdXRvbWF0ZWQVAAAAABoEYXV0bxoJYXV0b21hdGljGgptZWNoYW5pY2FsGgdyb2JvdGljGhBhdXRvbWF0ZWRwYXJraW5nGg5pdjtwO2F1dG9tYXRlZCogCgdwYXJraW5nFUxksEAaEGF1dG9tYXRlZHBhcmtpbmcqNAoNYWNjZXNzaWJpbGl0eRWVbDo8GgZhY2Nlc3MaCmFjY2Vzc2libGUaCmRpc2FiaWxpdHkqIgoEZmlyZRW6U9tAGgVmaXJlcxoOZmlyZXByb3RlY3Rpb24qhQEKCnByb3RlY3Rpb24VAAAAPxoFYWxhcm0aB2NvbnRyb2waCmRlcGFydG1lbnQaCnByZXZlbnRpb24aBnNhZmV0eRoHc2VydmljZRoIc2VydmljZXMaCXNwcmlua2xlchoLc3VwcHJlc3Npb24aB3N5c3RlbXMaDmZpcmVwcm90ZWN0aW9uKhIKBGNvZGUVKm78QBoFY29kZXMykAIvZ290bz91cmw9Q0FFU3Z3RUI2enN3RlItWEpZTlQtTFZKWERRSDdoaVk1WnVfOEdia1pJakZORlVXZHFLVi0wejIwTjlTVmotRU0tX1hBVzRjWi1aNU5sdXZBY3AzMElOWGpmdzhFbV9HaklVYVZKZVFDZ3FCbzV0M0VJRjhwTUMyVkxVU05vSllBaW5KVjJaV095QW5YUkRxZEhRbThSakhUWEVyeHIxTFJjVHZfZ21QLXFrOThhdjRCbkdOdDZXb2xLRm9saXNaUV9qTzFSUE9VWFo2Y0VrSjBfcGJpek9NNU1Wd0FiS1VnZU1rLUlqdHgyNzRZLUJkZzBvWE5wUDBXdmxNSkNYRkFWaG5IUTpKMjAyMSBTdCBDaGFybGVzIENvdW50eSA8Yj5GaXJlIENvZGU8L2I-IC0gOTAzLjIuMTAuMiA8Yj5NZWNoYW5pY2FsPC9iPiAuLi5CrQE8Yj5Db2RlIDkwMy4yLjEwLjIgTWVjaGFuaWNhbC1hY2Nlc3MgZW5jbG9zZWQgcGFya2luZyBnYXJhZ2VzPC9iPi4gQW4gYXBwcm92ZWRhdXRvbWF0aWMgc3ByaW5rbGVyIHN5c3RlbSBzaGFsbCBiZSBwcm92aWRlZCB0aHJvdWdob3V0IGJ1aWxkaW5ncyB1c2VkIGZvciB0aGUgc3RvcmFnZSZuYnNwOy4uLiICEAFIAFgAaAA",
+        "source": "ICC Digital Codes"
+      },
+      {
+        "position": 2,
+        "title": "CHAPTER 5 FIRE SERVICE FEATURES - ICC Digital Codes",
+        "link": "https://codes.iccsafe.org/content/NCFC2024V1.0/chapter-5-fire-service-features",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESiQEB6zswFR--IJSCejljQb4T1DgcZdzGD8Yo4v1k7b5qxgde3_TymBYDRlTiBuVVlS2We6Mi6gY6wke47I5Qs4QPf-8tjhuC-yrJt5qrLCrwOdcxFNHE948nYk8BnVvyXGIq0o7mqau5K9f9Y3EPB-qHBTNQ2NPAWCDoDdr1jIfsv3_EEJFn5bG08Q&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQFnoECBsQAQ&uoh=1",
+        "displayed_link": "https://codes.iccsafe.org › content › chapter-5-fire-servic...",
+        "favicon": "https://serpapi.com/searches/6adb9579739fd7618dcc1986/images/CuuWhLUHCZ_WZ_xdzCCKtk9L4podA6UtdESZYnKbzwg.png",
+        "snippet": "Fire apparatus access roads shall have an unobstructed width of not less than 20 feet (6096 mm), exclusive of shoulders, except for approved security gates in ...",
+        "snippet_highlighted_words": [
+          "Fire",
+          "access"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Fire apparatus access roads shall have an unobstructed width of not less than 20 feet (6096 mm), exclusive of shoulders, except for approved security gates in ...",
+            "source_info_link": "https://codes.iccsafe.org/content/NCFC2024V1.0/chapter-5-fire-service-features",
+            "icon": "https://serpapi.com/searches/6adb9579739fd7618dcc1986/images/CuuWhLUHCZ_WZ_xdzCCKtrJjFDcNEGjeH0Hy7nMgu79s5Pz3XbhHkyj1y9IL_Ze5.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CsgBL2dvdG8_dXJsPUNBRVNpUUVCNnpzd0ZSNzJhNFlKQnpzaVA4VlhLVWJCd3V0blJLeGFVS0RNSVo1Q3hiMmFNbV9rdzc2T0RiTkxhcWxoZ1JuWi1ySGQ0S2RCOF9KdnJYWFRZUWxYT0VKQ0Q0QWkxWmRwU2NzRnFHNGo1TXlFOWtZaVgza1QyeTZ5WnFNVTY1UlgzOE9PRTg1NlpDUkR3NGRobHRNQ1JTVVBlcllpMDE3dVAydFFKdGt3M2NOQzJ5NXhMXzNIQWcSBBoCCAAa3wYSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkC5BggAEAAYACAAKlgKCWF1dG9tYXRlZBUAAAAAGgRhdXRvGglhdXRvbWF0aWMaCm1lY2hhbmljYWwaB3JvYm90aWMaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkKiAKB3BhcmtpbmcV95cwPRoQYXV0b21hdGVkcGFya2luZyo0Cg1hY2Nlc3NpYmlsaXR5FUWk0zoaBmFjY2VzcxoKYWNjZXNzaWJsZRoKZGlzYWJpbGl0eSoiCgRmaXJlFZY2v0AaBWZpcmVzGg5maXJlcHJvdGVjdGlvbiqFAQoKcHJvdGVjdGlvbhUkSrw_GgVhbGFybRoHY29udHJvbBoKZGVwYXJ0bWVudBoKcHJldmVudGlvbhoGc2FmZXR5GgdzZXJ2aWNlGghzZXJ2aWNlcxoJc3ByaW5rbGVyGgtzdXBwcmVzc2lvbhoHc3lzdGVtcxoOZmlyZXByb3RlY3Rpb24qEgoEY29kZRXgGZZAGgVjb2RlczLIAS9nb3RvP3VybD1DQUVTaVFFQjZ6c3dGUjcyYTRZSkJ6c2lQOFZYS1ViQnd1dG5SS3hhVUtETUlaNUN4YjJhTW1fa3c3Nk9EYk5MYXFsaGdSblotckhkNEtkQjhfSnZyWFhUWVFsWE9FSkNENEFpMVpkcFNjc0ZxRzRqNU15RTlrWWlYM2tUMnk2eVpxTVU2NVJYMzhPT0U4NTZaQ1JEdzRkaGx0TUNSU1VQZXJZaTAxN3VQMnRRSnRrdzNjTkMyeTV4TF8zSEFnOjpDSEFQVEVSIDUgPGI-RklSRSBTRVJWSUNFPC9iPiBGRUFUVVJFUyAtIElDQyBEaWdpdGFsIENvZGVzQrUBPGI-RmlyZTwvYj4gYXBwYXJhdHVzIDxiPmFjY2VzczwvYj4gcm9hZHMgc2hhbGwgaGF2ZSBhbiB1bm9ic3RydWN0ZWQgd2lkdGggb2Ygbm90IGxlc3MgdGhhbiAyMCBmZWV0ICg2MDk2IG1tKSwgZXhjbHVzaXZlIG9mIHNob3VsZGVycywgZXhjZXB0IGZvciBhcHByb3ZlZCBzZWN1cml0eSBnYXRlcyBpbiZuYnNwOy4uLiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CsgBL2dvdG8_dXJsPUNBRVNpUUVCNnpzd0ZSNzJhNFlKQnpzaVA4VlhLVWJCd3V0blJLeGFVS0RNSVo1Q3hiMmFNbV9rdzc2T0RiTkxhcWxoZ1JuWi1ySGQ0S2RCOF9KdnJYWFRZUWxYT0VKQ0Q0QWkxWmRwU2NzRnFHNGo1TXlFOWtZaVgza1QyeTZ5WnFNVTY1UlgzOE9PRTg1NlpDUkR3NGRobHRNQ1JTVVBlcllpMDE3dVAydFFKdGt3M2NOQzJ5NXhMXzNIQWcSBBoCCAAa3wYSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkC5BggAEAAYACAAKlgKCWF1dG9tYXRlZBUAAAAAGgRhdXRvGglhdXRvbWF0aWMaCm1lY2hhbmljYWwaB3JvYm90aWMaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkKiAKB3BhcmtpbmcV95cwPRoQYXV0b21hdGVkcGFya2luZyo0Cg1hY2Nlc3NpYmlsaXR5FUWk0zoaBmFjY2VzcxoKYWNjZXNzaWJsZRoKZGlzYWJpbGl0eSoiCgRmaXJlFZY2v0AaBWZpcmVzGg5maXJlcHJvdGVjdGlvbiqFAQoKcHJvdGVjdGlvbhUkSrw_GgVhbGFybRoHY29udHJvbBoKZGVwYXJ0bWVudBoKcHJldmVudGlvbhoGc2FmZXR5GgdzZXJ2aWNlGghzZXJ2aWNlcxoJc3ByaW5rbGVyGgtzdXBwcmVzc2lvbhoHc3lzdGVtcxoOZmlyZXByb3RlY3Rpb24qEgoEY29kZRXgGZZAGgVjb2RlczLIAS9nb3RvP3VybD1DQUVTaVFFQjZ6c3dGUjcyYTRZSkJ6c2lQOFZYS1ViQnd1dG5SS3hhVUtETUlaNUN4YjJhTW1fa3c3Nk9EYk5MYXFsaGdSblotckhkNEtkQjhfSnZyWFhUWVFsWE9FSkNENEFpMVpkcFNjc0ZxRzRqNU15RTlrWWlYM2tUMnk2eVpxTVU2NVJYMzhPT0U4NTZaQ1JEdzRkaGx0TUNSU1VQZXJZaTAxN3VQMnRRSnRrdzNjTkMyeTV4TF8zSEFnOjpDSEFQVEVSIDUgPGI-RklSRSBTRVJWSUNFPC9iPiBGRUFUVVJFUyAtIElDQyBEaWdpdGFsIENvZGVzQrUBPGI-RmlyZTwvYj4gYXBwYXJhdHVzIDxiPmFjY2VzczwvYj4gcm9hZHMgc2hhbGwgaGF2ZSBhbiB1bm9ic3RydWN0ZWQgd2lkdGggb2Ygbm90IGxlc3MgdGhhbiAyMCBmZWV0ICg2MDk2IG1tKSwgZXhjbHVzaXZlIG9mIHNob3VsZGVycywgZXhjZXB0IGZvciBhcHByb3ZlZCBzZWN1cml0eSBnYXRlcyBpbiZuYnNwOy4uLiICEAFIAFgAaAA",
+        "source": "ICC Digital Codes",
+        "read_more_link": "https://codes.iccsafe.org/content/NCFC2024V1.0/chapter-5-fire-service-features#:~:text=Fire%20apparatus%20access%20roads%20shall,in%20accordance%20with%20Section%20503.6"
+      },
+      {
+        "position": 3,
+        "title": "2021 International Fire Code (IFC)",
+        "link": "https://codes.iccsafe.org/content/IFC2021p1",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESZgHrOzAVzcPPqN6UnMaLAO2XIQGos2gGZZeDT6byf5nmY5EyB9m6FF3JNshne4h7ipEgykHyNd1ag6qBF9aehNxjppz2ZZdW6RXjS8BGH3GmWiaT0c-DVbz-GtoCcghIgwRJBxaXcQ&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQFnoECCcQAQ&uoh=1",
+        "displayed_link": "https://codes.iccsafe.org › content",
+        "favicon": "https://serpapi.com/searches/6adb9579739fd7618dcc1986/images/CuuWhLUHCZ_WZ_xdzCCKtrnEwew9j_dPC6hF7_tpE7s.png",
+        "snippet": "An automatic sprinkler system is now required for open parking garages exceeding a certain fire area threshold.",
+        "snippet_highlighted_words": [
+          "automatic sprinkler",
+          "parking",
+          "fire"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "An automatic sprinkler system is now required for open parking garages exceeding a certain fire area threshold.",
+            "source_info_link": "https://codes.iccsafe.org/content/IFC2021p1",
+            "icon": "https://serpapi.com/searches/6adb9579739fd7618dcc1986/images/CuuWhLUHCZ_WZ_xdzCCKtqrKQQ4cWNLtVLZ-mdZ-lL_JW9GKCed3qNT6i3_gy3TD.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CpgBL2dvdG8_dXJsPUNBRVNaZ0hyT3pBVlVPaGUwMTNGcS1hblVRbFhyVzVSaUUwOG03TURmQkxsSU9rclZDUDFmc3ZPcF8xNWFndVJmb2RQbUpEd09jbDBhLWRhbWtiSEVhVHpwakVXXy1OQ1BFLVRaWTB0Rm1lMU9ENEMzb2ZyOGNHTThZeng5VUcxYkljWUV4eHN1Vjl0TncSBBoCCAAa7QUSAggBGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkDHBQgAEAAYACAAKlgKCWF1dG9tYXRlZBUAAAAAGgRhdXRvGglhdXRvbWF0aWMaCm1lY2hhbmljYWwaB3JvYm90aWMaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkKiAKB3BhcmtpbmcVltFKPhoQYXV0b21hdGVkcGFya2luZyo0Cg1hY2Nlc3NpYmlsaXR5FZp7GDsaBmFjY2VzcxoKYWNjZXNzaWJsZRoKZGlzYWJpbGl0eSoiCgRmaXJlFWAst0AaBWZpcmVzGg5maXJlcHJvdGVjdGlvbiqFAQoKcHJvdGVjdGlvbhUAAAAAGgVhbGFybRoHY29udHJvbBoKZGVwYXJ0bWVudBoKcHJldmVudGlvbhoGc2FmZXR5GgdzZXJ2aWNlGghzZXJ2aWNlcxoJc3ByaW5rbGVyGgtzdXBwcmVzc2lvbhoHc3lzdGVtcxoOZmlyZXByb3RlY3Rpb24qEgoEY29kZRUvfYNAGgVjb2RlczKYAS9nb3RvP3VybD1DQUVTWmdIck96QVZVT2hlMDEzRnEtYW5VUWxYclc1UmlFMDhtN01EZkJMbElPa3JWQ1AxZnN2T3BfMTVhZ3VSZm9kUG1KRHdPY2wwYS1kYW1rYkhFYVR6cGpFV18tTkNQRS1UWlkwdEZtZTFPRDRDM29mcjhjR004WXp4OVVHMWJJY1lFeHhzdVY5dE53OikyMDIxIEludGVybmF0aW9uYWwgPGI-RmlyZSBDb2RlPC9iPiAoSUZDKUKEAUFuIDxiPmF1dG9tYXRpYyBzcHJpbmtsZXI8L2I-IHN5c3RlbSBpcyBub3cgcmVxdWlyZWQgZm9yIG9wZW4gPGI-cGFya2luZzwvYj4gZ2FyYWdlcyBleGNlZWRpbmcgYSBjZXJ0YWluIDxiPmZpcmU8L2I-IGFyZWEgdGhyZXNob2xkLiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CpgBL2dvdG8_dXJsPUNBRVNaZ0hyT3pBVlVPaGUwMTNGcS1hblVRbFhyVzVSaUUwOG03TURmQkxsSU9rclZDUDFmc3ZPcF8xNWFndVJmb2RQbUpEd09jbDBhLWRhbWtiSEVhVHpwakVXXy1OQ1BFLVRaWTB0Rm1lMU9ENEMzb2ZyOGNHTThZeng5VUcxYkljWUV4eHN1Vjl0TncSBBoCCAAa7QUSAggBGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkDHBQgAEAAYACAAKlgKCWF1dG9tYXRlZBUAAAAAGgRhdXRvGglhdXRvbWF0aWMaCm1lY2hhbmljYWwaB3JvYm90aWMaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkKiAKB3BhcmtpbmcVltFKPhoQYXV0b21hdGVkcGFya2luZyo0Cg1hY2Nlc3NpYmlsaXR5FZp7GDsaBmFjY2VzcxoKYWNjZXNzaWJsZRoKZGlzYWJpbGl0eSoiCgRmaXJlFWAst0AaBWZpcmVzGg5maXJlcHJvdGVjdGlvbiqFAQoKcHJvdGVjdGlvbhUAAAAAGgVhbGFybRoHY29udHJvbBoKZGVwYXJ0bWVudBoKcHJldmVudGlvbhoGc2FmZXR5GgdzZXJ2aWNlGghzZXJ2aWNlcxoJc3ByaW5rbGVyGgtzdXBwcmVzc2lvbhoHc3lzdGVtcxoOZmlyZXByb3RlY3Rpb24qEgoEY29kZRUvfYNAGgVjb2RlczKYAS9nb3RvP3VybD1DQUVTWmdIck96QVZVT2hlMDEzRnEtYW5VUWxYclc1UmlFMDhtN01EZkJMbElPa3JWQ1AxZnN2T3BfMTVhZ3VSZm9kUG1KRHdPY2wwYS1kYW1rYkhFYVR6cGpFV18tTkNQRS1UWlkwdEZtZTFPRDRDM29mcjhjR004WXp4OVVHMWJJY1lFeHhzdVY5dE53OikyMDIxIEludGVybmF0aW9uYWwgPGI-RmlyZSBDb2RlPC9iPiAoSUZDKUKEAUFuIDxiPmF1dG9tYXRpYyBzcHJpbmtsZXI8L2I-IHN5c3RlbSBpcyBub3cgcmVxdWlyZWQgZm9yIG9wZW4gPGI-cGFya2luZzwvYj4gZ2FyYWdlcyBleGNlZWRpbmcgYSBjZXJ0YWluIDxiPmZpcmU8L2I-IGFyZWEgdGhyZXNob2xkLiICEAFIAFgAaAA",
+        "source": "ICC Digital Codes"
+      },
+      {
+        "position": 4,
+        "title": "CHAPTER 5 FIRE SERVICE FEATURES - ICC Digital Codes",
+        "link": "https://codes.iccsafe.org/content/IFC2024V2.1/chapter-5-fire-service-features",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESiAEB6zswFeY8559omZYD-YdMYVkITScjZtKHeletHaObnbxNuWiOrI8PMV4r8SdiRJ5meHfz6Nz9852YgZJhsthb4DuIbSb-ad4h-bdgygkHHKNRrrngw_whtTQjnMHMKYd8KDQp8HMO84NIqkzo1UKJTWIBmbULLjj6jpyaowImrPFPPs3HiOk5&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQFnoECCUQAQ&uoh=1",
+        "displayed_link": "https://codes.iccsafe.org › content › chapter-5-fire-servic...",
+        "favicon": "https://serpapi.com/searches/6adb9579739fd7618dcc1986/images/CuuWhLUHCZ_WZ_xdzCCKtnXCC87xO2bRqkObPuvRL_A.png",
+        "snippet": "Fire apparatus access roads shall have an unobstructed width of not less than 20 feet (6096 mm), exclusive of shoulders, except for approved security gates in ...",
+        "snippet_highlighted_words": [
+          "Fire",
+          "access"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Fire apparatus access roads shall have an unobstructed width of not less than 20 feet (6096 mm), exclusive of shoulders, except for approved security gates in ...",
+            "source_info_link": "https://codes.iccsafe.org/content/IFC2024V2.1/chapter-5-fire-service-features",
+            "icon": "https://serpapi.com/searches/6adb9579739fd7618dcc1986/images/CuuWhLUHCZ_WZ_xdzCCKtklkLWsOQ7bBFzaYs2nvWHLJx92PE7yWR2DpVOrLyJoG.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CsYBL2dvdG8_dXJsPUNBRVNpQUVCNnpzd0ZZWTdXb1h0bGxvMWFlaG5QSFB0WlBHWUlzWm50NUxlTkRxN1BBTjk1cWZkRnFmdlNVUGRpVTQ1Yi1TcElYOHNFdUpTb044UkhRZ1NwbXpRMTQwVGJzSFNlLUhpdmtVa0w1LVplaURVU0NmSjVJekVzWWlRY2IzSzdKZUFLN3JJdFo0b244aWR2Z1pEQVBJR0hPbHdsTGVxbm9vWEpvZ3pPV3AwMHdRdXVrRU9ORERWEgQaAggAGuQGEgIIABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAvgYIABAAGAAgACpYCglhdXRvbWF0ZWQVAAAAABoEYXV0bxoJYXV0b21hdGljGgptZWNoYW5pY2FsGgdyb2JvdGljGhBhdXRvbWF0ZWRwYXJraW5nGg5pdjtwO2F1dG9tYXRlZCogCgdwYXJraW5nFSMoaT0aEGF1dG9tYXRlZHBhcmtpbmcqNAoNYWNjZXNzaWJpbGl0eRWV0wI6GgZhY2Nlc3MaCmFjY2Vzc2libGUaCmRpc2FiaWxpdHkqIgoEZmlyZRVIQblAGgVmaXJlcxoOZmlyZXByb3RlY3Rpb24qhQEKCnByb3RlY3Rpb24VWUjVPxoFYWxhcm0aB2NvbnRyb2waCmRlcGFydG1lbnQaCnByZXZlbnRpb24aBnNhZmV0eRoHc2VydmljZRoIc2VydmljZXMaCXNwcmlua2xlchoLc3VwcHJlc3Npb24aB3N5c3RlbXMaDmZpcmVwcm90ZWN0aW9uKhIKBGNvZGUVC26PQBoFY29kZXMyxgEvZ290bz91cmw9Q0FFU2lBRUI2enN3RllZN1dvWHRsbG8xYWVoblBIUHRaUEdZSXNabnQ1TGVORHE3UEFOOTVxZmRGcWZ2U1VQZGlVNDViLVNwSVg4c0V1SlNvTjhSSFFnU3BtelExNDBUYnNIU2UtSGl2a1VrTDUtWmVpRFVTQ2ZKNUl6RXNZaVFjYjNLN0plQUs3ckl0WjRvbjhpZHZnWkRBUElHSE9sd2xMZXFub29YSm9nek9XcDAwd1F1dWtFT05ERFY6QUNIQVBURVIgNSA8Yj5GSVJFIFNFUlZJQ0U8L2I-IEZFQVRVUkVTIC0gSUNDIERpZ2l0YWwgPGI-Q29kZXM8L2I-QrUBPGI-RmlyZTwvYj4gYXBwYXJhdHVzIDxiPmFjY2VzczwvYj4gcm9hZHMgc2hhbGwgaGF2ZSBhbiB1bm9ic3RydWN0ZWQgd2lkdGggb2Ygbm90IGxlc3MgdGhhbiAyMCBmZWV0ICg2MDk2IG1tKSwgZXhjbHVzaXZlIG9mIHNob3VsZGVycywgZXhjZXB0IGZvciBhcHByb3ZlZCBzZWN1cml0eSBnYXRlcyBpbiZuYnNwOy4uLiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CsYBL2dvdG8_dXJsPUNBRVNpQUVCNnpzd0ZZWTdXb1h0bGxvMWFlaG5QSFB0WlBHWUlzWm50NUxlTkRxN1BBTjk1cWZkRnFmdlNVUGRpVTQ1Yi1TcElYOHNFdUpTb044UkhRZ1NwbXpRMTQwVGJzSFNlLUhpdmtVa0w1LVplaURVU0NmSjVJekVzWWlRY2IzSzdKZUFLN3JJdFo0b244aWR2Z1pEQVBJR0hPbHdsTGVxbm9vWEpvZ3pPV3AwMHdRdXVrRU9ORERWEgQaAggAGuQGEgIIABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAvgYIABAAGAAgACpYCglhdXRvbWF0ZWQVAAAAABoEYXV0bxoJYXV0b21hdGljGgptZWNoYW5pY2FsGgdyb2JvdGljGhBhdXRvbWF0ZWRwYXJraW5nGg5pdjtwO2F1dG9tYXRlZCogCgdwYXJraW5nFSMoaT0aEGF1dG9tYXRlZHBhcmtpbmcqNAoNYWNjZXNzaWJpbGl0eRWV0wI6GgZhY2Nlc3MaCmFjY2Vzc2libGUaCmRpc2FiaWxpdHkqIgoEZmlyZRVIQblAGgVmaXJlcxoOZmlyZXByb3RlY3Rpb24qhQEKCnByb3RlY3Rpb24VWUjVPxoFYWxhcm0aB2NvbnRyb2waCmRlcGFydG1lbnQaCnByZXZlbnRpb24aBnNhZmV0eRoHc2VydmljZRoIc2VydmljZXMaCXNwcmlua2xlchoLc3VwcHJlc3Npb24aB3N5c3RlbXMaDmZpcmVwcm90ZWN0aW9uKhIKBGNvZGUVC26PQBoFY29kZXMyxgEvZ290bz91cmw9Q0FFU2lBRUI2enN3RllZN1dvWHRsbG8xYWVoblBIUHRaUEdZSXNabnQ1TGVORHE3UEFOOTVxZmRGcWZ2U1VQZGlVNDViLVNwSVg4c0V1SlNvTjhSSFFnU3BtelExNDBUYnNIU2UtSGl2a1VrTDUtWmVpRFVTQ2ZKNUl6RXNZaVFjYjNLN0plQUs3ckl0WjRvbjhpZHZnWkRBUElHSE9sd2xMZXFub29YSm9nek9XcDAwd1F1dWtFT05ERFY6QUNIQVBURVIgNSA8Yj5GSVJFIFNFUlZJQ0U8L2I-IEZFQVRVUkVTIC0gSUNDIERpZ2l0YWwgPGI-Q29kZXM8L2I-QrUBPGI-RmlyZTwvYj4gYXBwYXJhdHVzIDxiPmFjY2VzczwvYj4gcm9hZHMgc2hhbGwgaGF2ZSBhbiB1bm9ic3RydWN0ZWQgd2lkdGggb2Ygbm90IGxlc3MgdGhhbiAyMCBmZWV0ICg2MDk2IG1tKSwgZXhjbHVzaXZlIG9mIHNob3VsZGVycywgZXhjZXB0IGZvciBhcHByb3ZlZCBzZWN1cml0eSBnYXRlcyBpbiZuYnNwOy4uLiICEAFIAFgAaAA",
+        "source": "ICC Digital Codes",
+        "read_more_link": "https://codes.iccsafe.org/content/IFC2024V2.1/chapter-5-fire-service-features#:~:text=Fire%20apparatus%20access%20roads%20shall,in%20accordance%20with%20Section%20503.6"
+      },
+      {
+        "position": 5,
+        "title": "CHAPTER 9 FIRE PROTECTION AND LIFE SAFETY SYSTEMS",
+        "link": "https://codes.iccsafe.org/content/IBC2021P1/chapter-9-fire-protection-and-life-safety-systems",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESmAEB6zswFU6ddcpb562AEFih5czs3jhE-q4nMBsluBmfSntbs-rIcE3uDIouxaegUjEDkgG3Gvm-S3BELJ1ULD8iGAfs6Bpbc1eguXtmqhPAaW6sUoKaFDDewDQMTQSqPY-PrrahRslhkeRGaO05JHZ9xj26Wr5GNvXvC82NG34NGZBIb-nopSVZ_XujrpwOtbt5DqBaowo1AQ&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQFnoECCQQAQ&uoh=1",
+        "displayed_link": "https://codes.iccsafe.org › content › chapter-9-fire-protec...",
+        "favicon": "https://serpapi.com/searches/6adb9579739fd7618dcc1986/images/CuuWhLUHCZ_WZ_xdzCCKtg7WGW8ChKheaZQOEngXdhc.png",
+        "snippet": "The portion of the building that contains the mechanical-access enclosed parking garage shall be protected with a specially engineered automatic sprinkler ...",
+        "snippet_highlighted_words": [
+          "mechanical",
+          "access",
+          "parking",
+          "automatic sprinkler"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "The portion of the building that contains the mechanical-access enclosed parking garage shall be protected with a specially engineered automatic sprinkler ...",
+            "source_info_link": "https://codes.iccsafe.org/content/IBC2021P1/chapter-9-fire-protection-and-life-safety-systems",
+            "icon": "https://serpapi.com/searches/6adb9579739fd7618dcc1986/images/CuuWhLUHCZ_WZ_xdzCCKtqI1MihWfoC6E4PlpVmzv4n0yjdpxhD_ihFjVriDUNqP.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CtwBL2dvdG8_dXJsPUNBRVNtQUVCNnpzd0ZaUXRCYVVCbnA1bFhwMVpTSVdXcUhfRXF1ZXdCc2dHSU4zS2hpTUJzUkJ4dEJ4NkVLZFl0OTM1OHFKLUVFX2lGUWpTYVRqYUFqd3R6aVRvUGw5RTZnSXRjVDdqbm9JMldYMlNONzZtQUNoR1FtN3lpcjgyMlFEYzdJRWJ6N0NWcjB5V3llXzBIV3V4OThtNndEVmdUekNGRXNVQVZfRGp0WTE5Z3h2NDFpalVkRXdwSERkOG1qOFVGZkRocUxoTnlVSEh6ZxIEGgIIABr7BhICCAAaACIAKgAyBggBEgJ1czoAQgQIARAASgBaAHIAegCCQNUGCAAQABgAIAAqWAoJYXV0b21hdGVkFQAAAAAaBGF1dG8aCWF1dG9tYXRpYxoKbWVjaGFuaWNhbBoHcm9ib3RpYxoQYXV0b21hdGVkcGFya2luZxoOaXY7cDthdXRvbWF0ZWQqIAoHcGFya2luZxV9eLY9GhBhdXRvbWF0ZWRwYXJraW5nKjQKDWFjY2Vzc2liaWxpdHkVOYAGPRoGYWNjZXNzGgphY2Nlc3NpYmxlGgpkaXNhYmlsaXR5KiIKBGZpcmUVvWDEQBoFZmlyZXMaDmZpcmVwcm90ZWN0aW9uKoUBCgpwcm90ZWN0aW9uFfBGp0AaBWFsYXJtGgdjb250cm9sGgpkZXBhcnRtZW50GgpwcmV2ZW50aW9uGgZzYWZldHkaB3NlcnZpY2UaCHNlcnZpY2VzGglzcHJpbmtsZXIaC3N1cHByZXNzaW9uGgdzeXN0ZW1zGg5maXJlcHJvdGVjdGlvbioSCgRjb2RlFf3ml0AaBWNvZGVzMtwBL2dvdG8_dXJsPUNBRVNtQUVCNnpzd0ZaUXRCYVVCbnA1bFhwMVpTSVdXcUhfRXF1ZXdCc2dHSU4zS2hpTUJzUkJ4dEJ4NkVLZFl0OTM1OHFKLUVFX2lGUWpTYVRqYUFqd3R6aVRvUGw5RTZnSXRjVDdqbm9JMldYMlNONzZtQUNoR1FtN3lpcjgyMlFEYzdJRWJ6N0NWcjB5V3llXzBIV3V4OThtNndEVmdUekNGRXNVQVZfRGp0WTE5Z3h2NDFpalVkRXdwSERkOG1qOFVGZkRocUxoTnlVSEh6Zzo4Q0hBUFRFUiA5IDxiPkZJUkUgUFJPVEVDVElPTjwvYj4gQU5EIExJRkUgU0FGRVRZIFNZU1RFTVNCvwFUaGUgcG9ydGlvbiBvZiB0aGUgYnVpbGRpbmcgdGhhdCBjb250YWlucyB0aGUgPGI-bWVjaGFuaWNhbDwvYj4tPGI-YWNjZXNzPC9iPiBlbmNsb3NlZCA8Yj5wYXJraW5nPC9iPiBnYXJhZ2Ugc2hhbGwgYmUgcHJvdGVjdGVkIHdpdGggYSBzcGVjaWFsbHkgZW5naW5lZXJlZCA8Yj5hdXRvbWF0aWMgc3ByaW5rbGVyPC9iPiZuYnNwOy4uLiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CtwBL2dvdG8_dXJsPUNBRVNtQUVCNnpzd0ZaUXRCYVVCbnA1bFhwMVpTSVdXcUhfRXF1ZXdCc2dHSU4zS2hpTUJzUkJ4dEJ4NkVLZFl0OTM1OHFKLUVFX2lGUWpTYVRqYUFqd3R6aVRvUGw5RTZnSXRjVDdqbm9JMldYMlNONzZtQUNoR1FtN3lpcjgyMlFEYzdJRWJ6N0NWcjB5V3llXzBIV3V4OThtNndEVmdUekNGRXNVQVZfRGp0WTE5Z3h2NDFpalVkRXdwSERkOG1qOFVGZkRocUxoTnlVSEh6ZxIEGgIIABr7BhICCAAaACIAKgAyBggBEgJ1czoAQgQIARAASgBaAHIAegCCQNUGCAAQABgAIAAqWAoJYXV0b21hdGVkFQAAAAAaBGF1dG8aCWF1dG9tYXRpYxoKbWVjaGFuaWNhbBoHcm9ib3RpYxoQYXV0b21hdGVkcGFya2luZxoOaXY7cDthdXRvbWF0ZWQqIAoHcGFya2luZxV9eLY9GhBhdXRvbWF0ZWRwYXJraW5nKjQKDWFjY2Vzc2liaWxpdHkVOYAGPRoGYWNjZXNzGgphY2Nlc3NpYmxlGgpkaXNhYmlsaXR5KiIKBGZpcmUVvWDEQBoFZmlyZXMaDmZpcmVwcm90ZWN0aW9uKoUBCgpwcm90ZWN0aW9uFfBGp0AaBWFsYXJtGgdjb250cm9sGgpkZXBhcnRtZW50GgpwcmV2ZW50aW9uGgZzYWZldHkaB3NlcnZpY2UaCHNlcnZpY2VzGglzcHJpbmtsZXIaC3N1cHByZXNzaW9uGgdzeXN0ZW1zGg5maXJlcHJvdGVjdGlvbioSCgRjb2RlFf3ml0AaBWNvZGVzMtwBL2dvdG8_dXJsPUNBRVNtQUVCNnpzd0ZaUXRCYVVCbnA1bFhwMVpTSVdXcUhfRXF1ZXdCc2dHSU4zS2hpTUJzUkJ4dEJ4NkVLZFl0OTM1OHFKLUVFX2lGUWpTYVRqYUFqd3R6aVRvUGw5RTZnSXRjVDdqbm9JMldYMlNONzZtQUNoR1FtN3lpcjgyMlFEYzdJRWJ6N0NWcjB5V3llXzBIV3V4OThtNndEVmdUekNGRXNVQVZfRGp0WTE5Z3h2NDFpalVkRXdwSERkOG1qOFVGZkRocUxoTnlVSEh6Zzo4Q0hBUFRFUiA5IDxiPkZJUkUgUFJPVEVDVElPTjwvYj4gQU5EIExJRkUgU0FGRVRZIFNZU1RFTVNCvwFUaGUgcG9ydGlvbiBvZiB0aGUgYnVpbGRpbmcgdGhhdCBjb250YWlucyB0aGUgPGI-bWVjaGFuaWNhbDwvYj4tPGI-YWNjZXNzPC9iPiBlbmNsb3NlZCA8Yj5wYXJraW5nPC9iPiBnYXJhZ2Ugc2hhbGwgYmUgcHJvdGVjdGVkIHdpdGggYSBzcGVjaWFsbHkgZW5naW5lZXJlZCA8Yj5hdXRvbWF0aWMgc3ByaW5rbGVyPC9iPiZuYnNwOy4uLiICEAFIAFgAaAA",
+        "source": "ICC Digital Codes",
+        "read_more_link": "https://codes.iccsafe.org/content/IBC2021P1/chapter-9-fire-protection-and-life-safety-systems#:~:text=The%20portion%20of%20the%20building,specially%20engineered%20automatic%20sprinkler%20system."
+      },
+      {
+        "position": 6,
+        "title": "Does open parking area for a mixed occupancy ... - ICC Digital Codes",
+        "link": "https://codes-conv.iccsafe.org/premium-answers/65219/does-open-parking-area-for-a-mixed-occupancy",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESnAEB6zswFSPv2KFFpKo1LUw8xsb5gnvdZzzLBeSoDmh8_WmxFOEQFRHi6ZUFXi6ND8JQ6i6oQJPECDNyHwyzu8m9HUdUPRTS7T7246CpqNt8N8PU0LZwvcVNrv7Wz1bVE7dX3PZNw6d6n6C2AFGQxsXN8E-_SI6pJJ_NZffVerh0-4hYfiY6Bz1rxk2XFUY2rHX25qQSoRXyigI_vII&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQFnoECCkQAQ&uoh=1",
+        "displayed_link": "https://codes-conv.iccsafe.org › premium-answers › does...",
+        "favicon": "https://serpapi.com/searches/6adb9579739fd7618dcc1986/images/CuuWhLUHCZ_WZ_xdzCCKtnzTKG8XXOtQJxxfig5pDBI.png",
+        "snippet": "In an occupancy required to be equipped with a fire alarm system, is the audible alarm required to provide the minimum sound pressure level throughout bathrooms ...",
+        "snippet_highlighted_words": [
+          "fire alarm"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "In an occupancy required to be equipped with a fire alarm system, is the audible alarm required to provide the minimum sound pressure level throughout bathrooms ...",
+            "source_info_link": "https://codes-conv.iccsafe.org/premium-answers/65219/does-open-parking-area-for-a-mixed-occupancy",
+            "icon": "https://serpapi.com/searches/6adb9579739fd7618dcc1986/images/CuuWhLUHCZ_WZ_xdzCCKtgwotnfFcu-Uc2s2KXZ7VfQ5997ueDmN6-BqpDXD0VAQ.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CuEBL2dvdG8_dXJsPUNBRVNuQUVCNnpzd0ZidDhNaktqaWZxZXJvdVk3N0xtbm5PUkROZ0JoWlVuLTY0TmVpYXg0a0YyUkdMMVU1Ni1nRnRvYVNLZTgwM0tCaUZHcnAzcnljaGNSdER1YlRFN2tWRF93RnRNd0htSkVGbXdmamVvMjVraXlBd0NNQTh2MmRlQU95MHdiWVJaN01rdzFPZUdCa09fbW0wbUw2Vm1ab1dZR0dzbVFybWItR2JxbGhnamlRX3VlUXoxc0dLdnVtMnFBT2Zpb0l3aWNuTW5La3NPUThnEgQaAggAGokHEgAaACIAKgAyBggBEgJ1czoAQgQIARAASgBaAHIAegCCQOUGCAAQABgAIAAqWAoJYXV0b21hdGVkFegdoT4aBGF1dG8aCWF1dG9tYXRpYxoKbWVjaGFuaWNhbBoHcm9ib3RpYxoQYXV0b21hdGVkcGFya2luZxoOaXY7cDthdXRvbWF0ZWQqIAoHcGFya2luZxVKgo5AGhBhdXRvbWF0ZWRwYXJraW5nKjQKDWFjY2Vzc2liaWxpdHkVlTSyPBoGYWNjZXNzGgphY2Nlc3NpYmxlGgpkaXNhYmlsaXR5KiIKBGZpcmUVIBVsQBoFZmlyZXMaDmZpcmVwcm90ZWN0aW9uKoUBCgpwcm90ZWN0aW9uFbat-T8aBWFsYXJtGgdjb250cm9sGgpkZXBhcnRtZW50GgpwcmV2ZW50aW9uGgZzYWZldHkaB3NlcnZpY2UaCHNlcnZpY2VzGglzcHJpbmtsZXIaC3N1cHByZXNzaW9uGgdzeXN0ZW1zGg5maXJlcHJvdGVjdGlvbioSCgRjb2RlFYMuSUAaBWNvZGVzMuEBL2dvdG8_dXJsPUNBRVNuQUVCNnpzd0ZidDhNaktqaWZxZXJvdVk3N0xtbm5PUkROZ0JoWlVuLTY0TmVpYXg0a0YyUkdMMVU1Ni1nRnRvYVNLZTgwM0tCaUZHcnAzcnljaGNSdER1YlRFN2tWRF93RnRNd0htSkVGbXdmamVvMjVraXlBd0NNQTh2MmRlQU95MHdiWVJaN01rdzFPZUdCa09fbW0wbUw2Vm1ab1dZR0dzbVFybWItR2JxbGhnamlRX3VlUXoxc0dLdnVtMnFBT2Zpb0l3aWNuTW5La3NPUThnOlJEb2VzIG9wZW4gPGI-cGFya2luZzwvYj4gYXJlYSBmb3IgYSBtaXhlZCBvY2N1cGFuY3kgLi4uIC0gSUNDIERpZ2l0YWwgPGI-Q29kZXM8L2I-QrABSW4gYW4gb2NjdXBhbmN5IHJlcXVpcmVkIHRvIGJlIGVxdWlwcGVkIHdpdGggYSA8Yj5maXJlIGFsYXJtPC9iPiBzeXN0ZW0sIGlzIHRoZSBhdWRpYmxlIGFsYXJtIHJlcXVpcmVkIHRvIHByb3ZpZGUgdGhlIG1pbmltdW0gc291bmQgcHJlc3N1cmUgbGV2ZWwgdGhyb3VnaG91dCBiYXRocm9vbXMmbmJzcDsuLi4iAhABSABYAGgA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CuEBL2dvdG8_dXJsPUNBRVNuQUVCNnpzd0ZidDhNaktqaWZxZXJvdVk3N0xtbm5PUkROZ0JoWlVuLTY0TmVpYXg0a0YyUkdMMVU1Ni1nRnRvYVNLZTgwM0tCaUZHcnAzcnljaGNSdER1YlRFN2tWRF93RnRNd0htSkVGbXdmamVvMjVraXlBd0NNQTh2MmRlQU95MHdiWVJaN01rdzFPZUdCa09fbW0wbUw2Vm1ab1dZR0dzbVFybWItR2JxbGhnamlRX3VlUXoxc0dLdnVtMnFBT2Zpb0l3aWNuTW5La3NPUThnEgQaAggAGokHEgAaACIAKgAyBggBEgJ1czoAQgQIARAASgBaAHIAegCCQOUGCAAQABgAIAAqWAoJYXV0b21hdGVkFegdoT4aBGF1dG8aCWF1dG9tYXRpYxoKbWVjaGFuaWNhbBoHcm9ib3RpYxoQYXV0b21hdGVkcGFya2luZxoOaXY7cDthdXRvbWF0ZWQqIAoHcGFya2luZxVKgo5AGhBhdXRvbWF0ZWRwYXJraW5nKjQKDWFjY2Vzc2liaWxpdHkVlTSyPBoGYWNjZXNzGgphY2Nlc3NpYmxlGgpkaXNhYmlsaXR5KiIKBGZpcmUVIBVsQBoFZmlyZXMaDmZpcmVwcm90ZWN0aW9uKoUBCgpwcm90ZWN0aW9uFbat-T8aBWFsYXJtGgdjb250cm9sGgpkZXBhcnRtZW50GgpwcmV2ZW50aW9uGgZzYWZldHkaB3NlcnZpY2UaCHNlcnZpY2VzGglzcHJpbmtsZXIaC3N1cHByZXNzaW9uGgdzeXN0ZW1zGg5maXJlcHJvdGVjdGlvbioSCgRjb2RlFYMuSUAaBWNvZGVzMuEBL2dvdG8_dXJsPUNBRVNuQUVCNnpzd0ZidDhNaktqaWZxZXJvdVk3N0xtbm5PUkROZ0JoWlVuLTY0TmVpYXg0a0YyUkdMMVU1Ni1nRnRvYVNLZTgwM0tCaUZHcnAzcnljaGNSdER1YlRFN2tWRF93RnRNd0htSkVGbXdmamVvMjVraXlBd0NNQTh2MmRlQU95MHdiWVJaN01rdzFPZUdCa09fbW0wbUw2Vm1ab1dZR0dzbVFybWItR2JxbGhnamlRX3VlUXoxc0dLdnVtMnFBT2Zpb0l3aWNuTW5La3NPUThnOlJEb2VzIG9wZW4gPGI-cGFya2luZzwvYj4gYXJlYSBmb3IgYSBtaXhlZCBvY2N1cGFuY3kgLi4uIC0gSUNDIERpZ2l0YWwgPGI-Q29kZXM8L2I-QrABSW4gYW4gb2NjdXBhbmN5IHJlcXVpcmVkIHRvIGJlIGVxdWlwcGVkIHdpdGggYSA8Yj5maXJlIGFsYXJtPC9iPiBzeXN0ZW0sIGlzIHRoZSBhdWRpYmxlIGFsYXJtIHJlcXVpcmVkIHRvIHByb3ZpZGUgdGhlIG1pbmltdW0gc291bmQgcHJlc3N1cmUgbGV2ZWwgdGhyb3VnaG91dCBiYXRocm9vbXMmbmJzcDsuLi4iAhABSABYAGgA",
+        "source": "International Code Council - ICC"
+      },
+      {
+        "position": 7,
+        "title": "Is a below-grade space in an automotive service shop ...",
+        "link": "https://codes-conv.iccsafe.org/premium-answers/66556/is-a-below-grade-space-in-an-automotive-service",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESnwEB6zswFfj_4BvrMuS_2rOn_0b41BSQKWaTCq073n2BQYEHpkTImQJbFui8qBeT-Ry-AKYWA_aFw0w7e9NqM4QZkNWoxd_PuHq0gT4mtF-s0KyvYhxc9AvdT6P6rTU7885cTZfMOaWhZL8rjvdpr_O84me1EcJBaXfDtSsUUTK_ZKRe93uxj_1SyDTEteFjoun0WvCBNkNT3nDNQm-Rk1g&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQFnoECCYQAQ&uoh=1",
+        "displayed_link": "https://codes-conv.iccsafe.org › premium-answers › is-a-...",
+        "favicon": "https://serpapi.com/searches/6adb9579739fd7618dcc1986/images/CuuWhLUHCZ_WZ_xdzCCKtib7F14TfYzeEvLNLBZkphg.png",
+        "snippet": "A building is provided with openings (exit doors) in the exterior wall in lieu of the automatic fire suppression system in accordance with IBC Section 903.2.",
+        "snippet_highlighted_words": [
+          "automatic fire suppression"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "A building is provided with openings (exit doors) in the exterior wall in lieu of the automatic fire suppression system in accordance with IBC Section 903.2.",
+            "source_info_link": "https://codes-conv.iccsafe.org/premium-answers/66556/is-a-below-grade-space-in-an-automotive-service",
+            "icon": "https://serpapi.com/searches/6adb9579739fd7618dcc1986/images/CuuWhLUHCZ_WZ_xdzCCKtgddgF1-B6JFZO6U7uD_tPxV8ssPNDrKuYPfK0ALUUHe.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CuUBL2dvdG8_dXJsPUNBRVNud0VCNnpzd0ZTYV94SDloSGNGRmYwd0V1TWhIZmZMYTg3WnVuVnViWFktejR4SF8xYm1yRmVRYWFYeEItNmxWMXowaEh3QndFWjA1ZFl4ald1R0pyWWVVYVJILXBraEE0dzN0d2k1Y2hQTHZxS1NicDhvRWJLQTNCaWhDdkp0dk1pR1VkbFNPbjdBLXdMVGpMU0d5ZGU5RFNfbUM3cDdNdFdva21fMzdBY3Z2ZVFZZGdnZ0M1TjMtUFRxQlU4eV90RS0tcVB1Y3Mwc1RISmpPLVZ6LWhPdxIEGgIIABruBhIAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkDKBggAEAAYACAAKlgKCWF1dG9tYXRlZBUAAAAAGgRhdXRvGglhdXRvbWF0aWMaCm1lY2hhbmljYWwaB3JvYm90aWMaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkKiAKB3BhcmtpbmcV2EO5PxoQYXV0b21hdGVkcGFya2luZyo0Cg1hY2Nlc3NpYmlsaXR5FVYd5TwaBmFjY2VzcxoKYWNjZXNzaWJsZRoKZGlzYWJpbGl0eSoiCgRmaXJlFXvmf0AaBWZpcmVzGg5maXJlcHJvdGVjdGlvbiqFAQoKcHJvdGVjdGlvbhWxRM8_GgVhbGFybRoHY29udHJvbBoKZGVwYXJ0bWVudBoKcHJldmVudGlvbhoGc2FmZXR5GgdzZXJ2aWNlGghzZXJ2aWNlcxoJc3ByaW5rbGVyGgtzdXBwcmVzc2lvbhoHc3lzdGVtcxoOZmlyZXByb3RlY3Rpb24qEgoEY29kZRUh-kpAGgVjb2RlczLlAS9nb3RvP3VybD1DQUVTbndFQjZ6c3dGU2FfeEg5aEhjRkZmMHdFdU1oSGZmTGE4N1p1blZ1YlhZLXo0eEhfMWJtckZlUWFhWHhCLTZsVjF6MGhId0J3RVowNWRZeGpXdUdKclllVWFSSC1wa2hBNHczdHdpNWNoUEx2cUtTYnA4b0ViS0EzQmloQ3ZKdHZNaUdVZGxTT243QS13TFRqTFNHeWRlOURTX21DN3A3TXRXb2ttXzM3QWN2dmVRWWRnZ2dDNU4zLVBUcUJVOHlfdEUtLXFQdWNzMHNUSEpqTy1Wei1oT3c6P0lzIGEgYmVsb3ctZ3JhZGUgc3BhY2UgaW4gYW4gYXV0b21vdGl2ZSA8Yj5zZXJ2aWNlPC9iPiBzaG9wIC4uLkKkAUEgYnVpbGRpbmcgaXMgcHJvdmlkZWQgd2l0aCBvcGVuaW5ncyAoZXhpdCBkb29ycykgaW4gdGhlIGV4dGVyaW9yIHdhbGwgaW4gbGlldSBvZiB0aGUgPGI-YXV0b21hdGljIGZpcmUgc3VwcHJlc3Npb248L2I-IHN5c3RlbSBpbiBhY2NvcmRhbmNlIHdpdGggSUJDIFNlY3Rpb24gOTAzLjIuIgIQAUgAWABoAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CuUBL2dvdG8_dXJsPUNBRVNud0VCNnpzd0ZTYV94SDloSGNGRmYwd0V1TWhIZmZMYTg3WnVuVnViWFktejR4SF8xYm1yRmVRYWFYeEItNmxWMXowaEh3QndFWjA1ZFl4ald1R0pyWWVVYVJILXBraEE0dzN0d2k1Y2hQTHZxS1NicDhvRWJLQTNCaWhDdkp0dk1pR1VkbFNPbjdBLXdMVGpMU0d5ZGU5RFNfbUM3cDdNdFdva21fMzdBY3Z2ZVFZZGdnZ0M1TjMtUFRxQlU4eV90RS0tcVB1Y3Mwc1RISmpPLVZ6LWhPdxIEGgIIABruBhIAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkDKBggAEAAYACAAKlgKCWF1dG9tYXRlZBUAAAAAGgRhdXRvGglhdXRvbWF0aWMaCm1lY2hhbmljYWwaB3JvYm90aWMaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkKiAKB3BhcmtpbmcV2EO5PxoQYXV0b21hdGVkcGFya2luZyo0Cg1hY2Nlc3NpYmlsaXR5FVYd5TwaBmFjY2VzcxoKYWNjZXNzaWJsZRoKZGlzYWJpbGl0eSoiCgRmaXJlFXvmf0AaBWZpcmVzGg5maXJlcHJvdGVjdGlvbiqFAQoKcHJvdGVjdGlvbhWxRM8_GgVhbGFybRoHY29udHJvbBoKZGVwYXJ0bWVudBoKcHJldmVudGlvbhoGc2FmZXR5GgdzZXJ2aWNlGghzZXJ2aWNlcxoJc3ByaW5rbGVyGgtzdXBwcmVzc2lvbhoHc3lzdGVtcxoOZmlyZXByb3RlY3Rpb24qEgoEY29kZRUh-kpAGgVjb2RlczLlAS9nb3RvP3VybD1DQUVTbndFQjZ6c3dGU2FfeEg5aEhjRkZmMHdFdU1oSGZmTGE4N1p1blZ1YlhZLXo0eEhfMWJtckZlUWFhWHhCLTZsVjF6MGhId0J3RVowNWRZeGpXdUdKclllVWFSSC1wa2hBNHczdHdpNWNoUEx2cUtTYnA4b0ViS0EzQmloQ3ZKdHZNaUdVZGxTT243QS13TFRqTFNHeWRlOURTX21DN3A3TXRXb2ttXzM3QWN2dmVRWWRnZ2dDNU4zLVBUcUJVOHlfdEUtLXFQdWNzMHNUSEpqTy1Wei1oT3c6P0lzIGEgYmVsb3ctZ3JhZGUgc3BhY2UgaW4gYW4gYXV0b21vdGl2ZSA8Yj5zZXJ2aWNlPC9iPiBzaG9wIC4uLkKkAUEgYnVpbGRpbmcgaXMgcHJvdmlkZWQgd2l0aCBvcGVuaW5ncyAoZXhpdCBkb29ycykgaW4gdGhlIGV4dGVyaW9yIHdhbGwgaW4gbGlldSBvZiB0aGUgPGI-YXV0b21hdGljIGZpcmUgc3VwcHJlc3Npb248L2I-IHN5c3RlbSBpbiBhY2NvcmRhbmNlIHdpdGggSUJDIFNlY3Rpb24gOTAzLjIuIgIQAUgAWABoAA",
+        "source": "ICC Digital Codes",
+        "read_more_link": "https://codes-conv.iccsafe.org/premium-answers/66556/is-a-below-grade-space-in-an-automotive-service#:~:text=A%20building%20is%20provided%20with,accordance%20with%20IBC%20Section%20903.2.11.1."
+      },
+      {
+        "position": 8,
+        "title": "BSM Week 4 - ICC",
+        "link": "https://www.iccsafe.org/advocacy/building-safety-month/bsm-week-4/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESfQHrOzAVEDEUCDoYr1ejcq591Yk0Re0yne2Br8vjXLvtcogajajbkawiRwVXravPf5TZdhxfHIVOnJISJFtfpI8rL5XE2TBVdnGymhlcfrkFMLf6SujQvkS7uqKUYccOsNrv3fGitRdaD6RIsgvFFefV4OJ8wN2dkPjAryBD&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQFnoECCoQAQ&uoh=1",
+        "displayed_link": "https://www.iccsafe.org › building-safety-month › bsm-...",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAMFBMVEUJWD7___8ATS_C0csAQh7u8vHQ3Ne3ycJhh3iovbVylIeCoJXb4-A7cFyWr6YhY0z1nbE_AAABWElEQVQ4jY2Sh3bdIAxA0UZi_f_fVtjJq0dyWhkLsC9aqMA_pBw66k9yARaWjyAi71HKL0DMJq2K4RXoXvGbaS6rW5U7kC-NA8EEClPwzQUN6RP6gWxgWp03CxBMghMcN6Cmk-4uApBduKgsHKNEwRg3F6VH-lXmCWckZetrmtEZWRpy_SbuQAtorU2IFgbrB0BJhIg6pCLAN7C4Uda3QBaaibCsBzDKgqwM2s4Tob4sjPyaeZWxzWMIvlwga-w7lHroeAJdVUT1ozu-0gzvkTKhpq7wDHIh1s67gEeOSBOfQZZxRIYyjivXN1DOs9r2tOABFGYG3uLzmPJ2Ga_98Lt8ddSkaWTu1t1JnbJl9ApYM1I1p2ZGMmHu1Q1IE0qnDRNzo6ZNL4Ccz1bn9mt8ACfPYy6QDWtEzWmbo0uQR6ckcC4oCM7ff2Ow7HXrYJqxUK5clf6vDn8AxEYNCAg-6w4AAAAASUVORK5CYII.png",
+        "snippet": "Maneuvering clearances or automatic openers at doors; Tactile and high-contrast visual signage for wayfinding; Accessible parking spaces and passenger loading ...",
+        "snippet_highlighted_words": [
+          "Accessible parking spaces"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "Maneuvering clearances or automatic openers at doors; Tactile and high-contrast visual signage for wayfinding; Accessible parking spaces and passenger loading ...",
+            "source_info_link": "https://www.iccsafe.org/advocacy/building-safety-month/bsm-week-4/",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAMFBMVEUJWD7___8ATS_C0csAQh7u8vHQ3Ne3ycJhh3iovbVylIeCoJXb4-A7cFyWr6YhY0z1nbE_AAABWElEQVQ4jY2Sh3bdIAxA0UZi_f_fVtjJq0dyWhkLsC9aqMA_pBw66k9yARaWjyAi71HKL0DMJq2K4RXoXvGbaS6rW5U7kC-NA8EEClPwzQUN6RP6gWxgWp03CxBMghMcN6Cmk-4uApBduKgsHKNEwRg3F6VH-lXmCWckZetrmtEZWRpy_SbuQAtorU2IFgbrB0BJhIg6pCLAN7C4Uda3QBaaibCsBzDKgqwM2s4Tob4sjPyaeZWxzWMIvlwga-w7lHroeAJdVUT1ozu-0gzvkTKhpq7wDHIh1s67gEeOSBOfQZZxRIYyjivXN1DOs9r2tOABFGYG3uLzmPJ2Ga_98Lt8ddSkaWTu1t1JnbJl9ApYM1I1p2ZGMmHu1Q1IE0qnDRNzo6ZNL4Ccz1bn9mt8ACfPYy6QDWtEzWmbo0uQR6ckcC4oCM7ff2Ow7HXrYJqxUK5clf6vDn8AxEYNCAg-6w4AAAAASUVORK5CYII.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CrYBL2dvdG8_dXJsPUNBRVNmUUhyT3pBVmlycjE4ejlQT3dfSWNISGRDdmx3Wm1ZejFjWFhJN3ZMeldjZHh3Q3dMTi05dDVlY3I5Z29XTWdIdXRqT2lmM2J6MUVBa1lTX2tlVXBoMURjV2JXRTVCdVhabFZKaW9kakhFTXpLMnZiTnhyOHFBdl9XQnlud2ExNHp5ajVkTk5CNU9GbUxCbUd2alBZTkZpRzk0NmIzQllXcWhfd3F2cXcSBBoCCAAazwYSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWg8IARILaWNjc2FmZS5vcmdyAHoAgkCaBggAEAAYACAAKlgKCWF1dG9tYXRlZBUAAAAAGgRhdXRvGglhdXRvbWF0aWMaCm1lY2hhbmljYWwaB3JvYm90aWMaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkKiAKB3BhcmtpbmcV68eNPhoQYXV0b21hdGVkcGFya2luZyo0Cg1hY2Nlc3NpYmlsaXR5FahdyD8aBmFjY2VzcxoKYWNjZXNzaWJsZRoKZGlzYWJpbGl0eSoiCgRmaXJlFdqhpT4aBWZpcmVzGg5maXJlcHJvdGVjdGlvbiqFAQoKcHJvdGVjdGlvbhXFKDk-GgVhbGFybRoHY29udHJvbBoKZGVwYXJ0bWVudBoKcHJldmVudGlvbhoGc2FmZXR5GgdzZXJ2aWNlGghzZXJ2aWNlcxoJc3ByaW5rbGVyGgtzdXBwcmVzc2lvbhoHc3lzdGVtcxoOZmlyZXByb3RlY3Rpb24qEgoEY29kZRVsRJ4_GgVjb2RlczK2AS9nb3RvP3VybD1DQUVTZlFIck96QVZpcnIxOHo5UE93X0ljSEhkQ3Zsd1ptWXoxY1hYSTd2THpXY2R4d0N3TE4tOXQ1ZWNyOWdvV01nSHV0ak9pZjNiejFFQWtZU19rZVVwaDFEY1diV0U1QnVYWmxWSmlvZGpIRU16SzJ2Yk54cjhxQXZfV0J5bndhMTR6eWo1ZE5OQjVPRm1MQm1HdmpQWU5GaUc5NDZiM0JZV3FoX3dxdnF3OjRCU00gV2VlayA0IC0gSUNDIC0gSW50ZXJuYXRpb25hbCA8Yj5Db2RlPC9iPiBDb3VuY2lsQq4BTWFuZXV2ZXJpbmcgY2xlYXJhbmNlcyBvciBhdXRvbWF0aWMgb3BlbmVycyBhdCBkb29yczsgVGFjdGlsZSBhbmQgaGlnaC1jb250cmFzdCB2aXN1YWwgc2lnbmFnZSBmb3Igd2F5ZmluZGluZzsgPGI-QWNjZXNzaWJsZSBwYXJraW5nIHNwYWNlczwvYj4gYW5kIHBhc3NlbmdlciBsb2FkaW5nJm5ic3A7Li4uIgIQAUgAWABoAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CrYBL2dvdG8_dXJsPUNBRVNmUUhyT3pBVmlycjE4ejlQT3dfSWNISGRDdmx3Wm1ZejFjWFhJN3ZMeldjZHh3Q3dMTi05dDVlY3I5Z29XTWdIdXRqT2lmM2J6MUVBa1lTX2tlVXBoMURjV2JXRTVCdVhabFZKaW9kakhFTXpLMnZiTnhyOHFBdl9XQnlud2ExNHp5ajVkTk5CNU9GbUxCbUd2alBZTkZpRzk0NmIzQllXcWhfd3F2cXcSBBoCCAAazwYSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWg8IARILaWNjc2FmZS5vcmdyAHoAgkCaBggAEAAYACAAKlgKCWF1dG9tYXRlZBUAAAAAGgRhdXRvGglhdXRvbWF0aWMaCm1lY2hhbmljYWwaB3JvYm90aWMaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkKiAKB3BhcmtpbmcV68eNPhoQYXV0b21hdGVkcGFya2luZyo0Cg1hY2Nlc3NpYmlsaXR5FahdyD8aBmFjY2VzcxoKYWNjZXNzaWJsZRoKZGlzYWJpbGl0eSoiCgRmaXJlFdqhpT4aBWZpcmVzGg5maXJlcHJvdGVjdGlvbiqFAQoKcHJvdGVjdGlvbhXFKDk-GgVhbGFybRoHY29udHJvbBoKZGVwYXJ0bWVudBoKcHJldmVudGlvbhoGc2FmZXR5GgdzZXJ2aWNlGghzZXJ2aWNlcxoJc3ByaW5rbGVyGgtzdXBwcmVzc2lvbhoHc3lzdGVtcxoOZmlyZXByb3RlY3Rpb24qEgoEY29kZRVsRJ4_GgVjb2RlczK2AS9nb3RvP3VybD1DQUVTZlFIck96QVZpcnIxOHo5UE93X0ljSEhkQ3Zsd1ptWXoxY1hYSTd2THpXY2R4d0N3TE4tOXQ1ZWNyOWdvV01nSHV0ak9pZjNiejFFQWtZU19rZVVwaDFEY1diV0U1QnVYWmxWSmlvZGpIRU16SzJ2Yk54cjhxQXZfV0J5bndhMTR6eWo1ZE5OQjVPRm1MQm1HdmpQWU5GaUc5NDZiM0JZV3FoX3dxdnF3OjRCU00gV2VlayA0IC0gSUNDIC0gSW50ZXJuYXRpb25hbCA8Yj5Db2RlPC9iPiBDb3VuY2lsQq4BTWFuZXV2ZXJpbmcgY2xlYXJhbmNlcyBvciBhdXRvbWF0aWMgb3BlbmVycyBhdCBkb29yczsgVGFjdGlsZSBhbmQgaGlnaC1jb250cmFzdCB2aXN1YWwgc2lnbmFnZSBmb3Igd2F5ZmluZGluZzsgPGI-QWNjZXNzaWJsZSBwYXJraW5nIHNwYWNlczwvYj4gYW5kIHBhc3NlbmdlciBsb2FkaW5nJm5ic3A7Li4uIgIQAUgAWABoAA",
+        "source": "International Code Council - ICC",
+        "read_more_link": "https://www.iccsafe.org/advocacy/building-safety-month/bsm-week-4/#:~:text=Maneuvering%20clearances%20or%20automatic%20openers,spaces%20and%20passenger%20loading%20zones"
+      },
+      {
+        "position": 9,
+        "title": "ALTERATIONS—LEVEL 2",
+        "link": "https://shop.iccsafe.org/media/wysiwyg/material/3550S24EP-Sample.pdf",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESfwHrOzAVqliwX46UKHBhTMpu_uBfclnrIZtC_BUoJEkrnJbCtofp1KECWjRfYHmx0TF3s_UnHocvwYlTyQ4gLUpfLHLPjpGwfey8VJUCwgOGBGgSfkSQqGl44mGnVU1TNIbG6sSRUAUv2Bo8FJUyW6ofslqgsonVz4_ywcc6A1Y&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQFnoECCgQAQ&uoh=1",
+        "displayed_link": "https://shop.iccsafe.org › wysiwyg › material",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAXVBMVEUMWUBckH9BfWp9ppkbY0yFrJ8yc160zMSUtqukwbdIgm9vnY5SiXeQs6fj7OnJ2tS80ctgkoIlalO60MmuyL9nl4d2oZMWYEgqbljD1tCbu7A5eGPc5-Onw7pPh3TX00fMAAAAkElEQVR4AWLADQA1TIMBwDAQvNi1tf-YjfE4Ecq4kIBisgDaWOcJELp-IAXgo52AmS_rNssIBEM0AzYP4yMIjileYFdRdUAw1LP2bhXnGlsDwrKu5lrXhVZkXwCuYh_2iszxXwfgS8x9K3rfLtz33WeJELMRQjzxv2OxjASAip-_BfgcAH3UtJQiAGw2RU_AD2FLBxHzs285AAAAAElFTkSuQmCC.png",
+        "snippet": "The building is protected throughout by an automatic fire alarm system, installed and supervised in accordance with the EPCOT Building Code.",
+        "snippet_highlighted_words": [
+          "automatic fire alarm",
+          "Code"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "The building is protected throughout by an automatic fire alarm system, installed and supervised in accordance with the EPCOT Building Code.",
+            "source_info_link": "https://shop.iccsafe.org/media/wysiwyg/material/3550S24EP-Sample.pdf",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAXVBMVEUMWUBckH9BfWp9ppkbY0yFrJ8yc160zMSUtqukwbdIgm9vnY5SiXeQs6fj7OnJ2tS80ctgkoIlalO60MmuyL9nl4d2oZMWYEgqbljD1tCbu7A5eGPc5-Onw7pPh3TX00fMAAAAkElEQVR4AWLADQA1TIMBwDAQvNi1tf-YjfE4Ecq4kIBisgDaWOcJELp-IAXgo52AmS_rNssIBEM0AzYP4yMIjileYFdRdUAw1LP2bhXnGlsDwrKu5lrXhVZkXwCuYh_2iszxXwfgS8x9K3rfLtz33WeJELMRQjzxv2OxjASAip-_BfgcAH3UtJQiAGw2RU_AD2FLBxHzs285AAAAAElFTkSuQmCC.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CrkBL2dvdG8_dXJsPUNBRVNmd0hyT3pBVmZiUThkZDl3RUh6bWxlcGtGTDc2UmhRYVl6c0ZuRVNyWEFuVEFqdFBtdWh0Wl9iSVI2bnB4MzRkQlR1cGpmSmJtaUtxYURwelEyM3YwYmtRNVVGdlR0WTdOTS1WYW51MUJBVFpnbEFFaDNGSEFQVXd2UHJfV3h5RXhvbXZRM29RSUdXSWg4Q3V0WC1QMVFlcnJPeW9yTlItTjZ4eVJSRkltNVESBBoCCAAajgYSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJA6gUIABAAGAAgACpYCglhdXRvbWF0ZWQVAAAAABoEYXV0bxoJYXV0b21hdGljGgptZWNoYW5pY2FsGgdyb2JvdGljGhBhdXRvbWF0ZWRwYXJraW5nGg5pdjtwO2F1dG9tYXRlZCogCgdwYXJraW5nFdVxRj0aEGF1dG9tYXRlZHBhcmtpbmcqNAoNYWNjZXNzaWJpbGl0eRUAAAAAGgZhY2Nlc3MaCmFjY2Vzc2libGUaCmRpc2FiaWxpdHkqIgoEZmlyZRUzqu8_GgVmaXJlcxoOZmlyZXByb3RlY3Rpb24qhQEKCnByb3RlY3Rpb24Vmv9rPxoFYWxhcm0aB2NvbnRyb2waCmRlcGFydG1lbnQaCnByZXZlbnRpb24aBnNhZmV0eRoHc2VydmljZRoIc2VydmljZXMaCXNwcmlua2xlchoLc3VwcHJlc3Npb24aB3N5c3RlbXMaDmZpcmVwcm90ZWN0aW9uKhIKBGNvZGUVi-_9PxoFY29kZXMyuQEvZ290bz91cmw9Q0FFU2Z3SHJPekFWZmJROGRkOXdFSHptbGVwa0ZMNzZSaFFhWXpzRm5FU3JYQW5UQWp0UG11aHRaX2JJUjZucHgzNGRCVHVwamZKYm1pS3FhRHB6UTIzdjBia1E1VUZ2VHRZN05NLVZhbnUxQkFUWmdsQUVoM0ZIQVBVd3ZQcl9XeHlFeG9tdlEzb1FJR1dJaDhDdXRYLVAxUWVyck95b3JOUi1ONnh5UlJGSW01UToVQUxURVJBVElPTlPigJRMRVZFTCAyQpoBVGhlIGJ1aWxkaW5nIGlzIHByb3RlY3RlZCB0aHJvdWdob3V0IGJ5IGFuIDxiPmF1dG9tYXRpYyBmaXJlIGFsYXJtPC9iPiBzeXN0ZW0sIGluc3RhbGxlZCBhbmQgc3VwZXJ2aXNlZCBpbiBhY2NvcmRhbmNlIHdpdGggdGhlIEVQQ09UIEJ1aWxkaW5nIDxiPkNvZGU8L2I-LiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CrkBL2dvdG8_dXJsPUNBRVNmd0hyT3pBVmZiUThkZDl3RUh6bWxlcGtGTDc2UmhRYVl6c0ZuRVNyWEFuVEFqdFBtdWh0Wl9iSVI2bnB4MzRkQlR1cGpmSmJtaUtxYURwelEyM3YwYmtRNVVGdlR0WTdOTS1WYW51MUJBVFpnbEFFaDNGSEFQVXd2UHJfV3h5RXhvbXZRM29RSUdXSWg4Q3V0WC1QMVFlcnJPeW9yTlItTjZ4eVJSRkltNVESBBoCCAAajgYSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJA6gUIABAAGAAgACpYCglhdXRvbWF0ZWQVAAAAABoEYXV0bxoJYXV0b21hdGljGgptZWNoYW5pY2FsGgdyb2JvdGljGhBhdXRvbWF0ZWRwYXJraW5nGg5pdjtwO2F1dG9tYXRlZCogCgdwYXJraW5nFdVxRj0aEGF1dG9tYXRlZHBhcmtpbmcqNAoNYWNjZXNzaWJpbGl0eRUAAAAAGgZhY2Nlc3MaCmFjY2Vzc2libGUaCmRpc2FiaWxpdHkqIgoEZmlyZRUzqu8_GgVmaXJlcxoOZmlyZXByb3RlY3Rpb24qhQEKCnByb3RlY3Rpb24Vmv9rPxoFYWxhcm0aB2NvbnRyb2waCmRlcGFydG1lbnQaCnByZXZlbnRpb24aBnNhZmV0eRoHc2VydmljZRoIc2VydmljZXMaCXNwcmlua2xlchoLc3VwcHJlc3Npb24aB3N5c3RlbXMaDmZpcmVwcm90ZWN0aW9uKhIKBGNvZGUVi-_9PxoFY29kZXMyuQEvZ290bz91cmw9Q0FFU2Z3SHJPekFWZmJROGRkOXdFSHptbGVwa0ZMNzZSaFFhWXpzRm5FU3JYQW5UQWp0UG11aHRaX2JJUjZucHgzNGRCVHVwamZKYm1pS3FhRHB6UTIzdjBia1E1VUZ2VHRZN05NLVZhbnUxQkFUWmdsQUVoM0ZIQVBVd3ZQcl9XeHlFeG9tdlEzb1FJR1dJaDhDdXRYLVAxUWVyck95b3JOUi1ONnh5UlJGSW01UToVQUxURVJBVElPTlPigJRMRVZFTCAyQpoBVGhlIGJ1aWxkaW5nIGlzIHByb3RlY3RlZCB0aHJvdWdob3V0IGJ5IGFuIDxiPmF1dG9tYXRpYyBmaXJlIGFsYXJtPC9iPiBzeXN0ZW0sIGluc3RhbGxlZCBhbmQgc3VwZXJ2aXNlZCBpbiBhY2NvcmRhbmNlIHdpdGggdGhlIEVQQ09UIEJ1aWxkaW5nIDxiPkNvZGU8L2I-LiICEAFIAFgAaAA",
+        "source": "ICC Store"
+      },
+      {
+        "position": 10,
+        "title": "2021 International Fire Code® - ICC Store",
+        "link": "https://shop.iccsafe.org/2021-international-fire-coder.html",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESdgHrOzAVshcBF5GIo4ga1VC4XMgNqiL6fjoOdnNagf2ovdVKMKA6uRy0lNabYYFaTXdejpU9hnxHCFOgmw96ROVKUKsuoxL3s3AVwmP_afMgG7u6AAtxm6AOEac1aHs0T3JaHMYi98b43HcktDcIJEbCQH_yNao&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQFnoECCsQAQ&uoh=1",
+        "displayed_link": "https://shop.iccsafe.org › 2021-international-fire-coder",
+        "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAXVBMVEUMWUBckH9BfWp9ppkbY0yFrJ8yc160zMSUtqukwbdIgm9vnY5SiXeQs6fj7OnJ2tS80ctgkoIlalO60MmuyL9nl4d2oZMWYEgqbljD1tCbu7A5eGPc5-Onw7pPh3TX00fMAAAAkElEQVR4AWLADQA1TIMBwDAQvNi1tf-YjfE4Ecq4kIBisgDaWOcJELp-IAXgo52AmS_rNssIBEM0AzYP4yMIjileYFdRdUAw1LP2bhXnGlsDwrKu5lrXhVZkXwCuYh_2iszxXwfgS8x9K3rfLtz33WeJELMRQjzxv2OxjASAip-_BfgcAH3UtJQiAGw2RU_AD2FLBxHzs285AAAAAElFTkSuQmCC.png",
+        "date": "Mar 27, 2023",
+        "snippet": "An automatic sprinkler system is now required for open parking garages exceeding a certain fire area threshold. The requirements for energy ...",
+        "snippet_highlighted_words": [
+          "automatic sprinkler",
+          "parking",
+          "fire"
+        ],
+        "about_this_result": {
+          "source": {
+            "description": "An automatic sprinkler system is now required for open parking garages exceeding a certain fire area threshold. The requirements for energy ...",
+            "source_info_link": "https://shop.iccsafe.org/2021-international-fire-coder.html",
+            "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAXVBMVEUMWUBckH9BfWp9ppkbY0yFrJ8yc160zMSUtqukwbdIgm9vnY5SiXeQs6fj7OnJ2tS80ctgkoIlalO60MmuyL9nl4d2oZMWYEgqbljD1tCbu7A5eGPc5-Onw7pPh3TX00fMAAAAkElEQVR4AWLADQA1TIMBwDAQvNi1tf-YjfE4Ecq4kIBisgDaWOcJELp-IAXgo52AmS_rNssIBEM0AzYP4yMIjileYFdRdUAw1LP2bhXnGlsDwrKu5lrXhVZkXwCuYh_2iszxXwfgS8x9K3rfLtz33WeJELMRQjzxv2OxjASAip-_BfgcAH3UtJQiAGw2RU_AD2FLBxHzs285AAAAAElFTkSuQmCC.png"
+          },
+          "languages": [
+            "en"
+          ],
+          "regions": [
+            "US"
+          ]
+        },
+        "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=Cq0BL2dvdG8_dXJsPUNBRVNkZ0hyT3pBVlhhYmtmZDR4Q2lmZHBxLVZXcjFHSUVpMl9JTkRDR09EQ2JZSUNNcWVaUlNyOWV4RExsRUNNcjJQd2JwWkU3RHlKRHpSUWRBNWxCcjZyZW5DVFlhcXpfUkNYTFZjVkRQS29HZnZkdEdoQ21PSXlBdC0zSDd5Slh3aVZ6TGZlU00yWVRvT2M4T2tCS3VqMV9fU05WQURkYUkSBBoCCAAarwYSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkCJBggAEAAYACAAKlgKCWF1dG9tYXRlZBUAAAAAGgRhdXRvGglhdXRvbWF0aWMaCm1lY2hhbmljYWwaB3JvYm90aWMaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkKiAKB3BhcmtpbmcVqiXtPRoQYXV0b21hdGVkcGFya2luZyo0Cg1hY2Nlc3NpYmlsaXR5FYyYJT4aBmFjY2VzcxoKYWNjZXNzaWJsZRoKZGlzYWJpbGl0eSoiCgRmaXJlFVDprkAaBWZpcmVzGg5maXJlcHJvdGVjdGlvbiqFAQoKcHJvdGVjdGlvbhVqlwU9GgVhbGFybRoHY29udHJvbBoKZGVwYXJ0bWVudBoKcHJldmVudGlvbhoGc2FmZXR5GgdzZXJ2aWNlGghzZXJ2aWNlcxoJc3ByaW5rbGVyGgtzdXBwcmVzc2lvbhoHc3lzdGVtcxoOZmlyZXByb3RlY3Rpb24qEgoEY29kZRXZVmJAGgVjb2RlczKtAS9nb3RvP3VybD1DQUVTZGdIck96QVZYYWJrZmQ0eENpZmRwcS1WV3IxR0lFaTJfSU5EQ0dPRENiWUlDTXFlWlJTcjlleERMbEVDTXIyUHdicFpFN0R5SkR6UlFkQTVsQnI2cmVuQ1RZYXF6X1JDWExWY1ZEUEtvR2Z2ZHRHaENtT0l5QXQtM0g3eUpYd2lWekxmZVNNMllUb09jOE9rQkt1ajFfX1NOVkFEZGFJOjEyMDIxIEludGVybmF0aW9uYWwgPGI-RmlyZSBDb2RlPC9iPsKuIC0gSUNDIFN0b3JlQqkBQW4gPGI-YXV0b21hdGljIHNwcmlua2xlcjwvYj4gc3lzdGVtIGlzIG5vdyByZXF1aXJlZCBmb3Igb3BlbiA8Yj5wYXJraW5nPC9iPiBnYXJhZ2VzIGV4Y2VlZGluZyBhIGNlcnRhaW4gPGI-ZmlyZTwvYj4gYXJlYSB0aHJlc2hvbGQuIFRoZSByZXF1aXJlbWVudHMgZm9yIGVuZXJneSZuYnNwOy4uLiICEAFIAFgAaAA",
+        "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=Cq0BL2dvdG8_dXJsPUNBRVNkZ0hyT3pBVlhhYmtmZDR4Q2lmZHBxLVZXcjFHSUVpMl9JTkRDR09EQ2JZSUNNcWVaUlNyOWV4RExsRUNNcjJQd2JwWkU3RHlKRHpSUWRBNWxCcjZyZW5DVFlhcXpfUkNYTFZjVkRQS29HZnZkdEdoQ21PSXlBdC0zSDd5Slh3aVZ6TGZlU00yWVRvT2M4T2tCS3VqMV9fU05WQURkYUkSBBoCCAAarwYSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkCJBggAEAAYACAAKlgKCWF1dG9tYXRlZBUAAAAAGgRhdXRvGglhdXRvbWF0aWMaCm1lY2hhbmljYWwaB3JvYm90aWMaEGF1dG9tYXRlZHBhcmtpbmcaDml2O3A7YXV0b21hdGVkKiAKB3BhcmtpbmcVqiXtPRoQYXV0b21hdGVkcGFya2luZyo0Cg1hY2Nlc3NpYmlsaXR5FYyYJT4aBmFjY2VzcxoKYWNjZXNzaWJsZRoKZGlzYWJpbGl0eSoiCgRmaXJlFVDprkAaBWZpcmVzGg5maXJlcHJvdGVjdGlvbiqFAQoKcHJvdGVjdGlvbhVqlwU9GgVhbGFybRoHY29udHJvbBoKZGVwYXJ0bWVudBoKcHJldmVudGlvbhoGc2FmZXR5GgdzZXJ2aWNlGghzZXJ2aWNlcxoJc3ByaW5rbGVyGgtzdXBwcmVzc2lvbhoHc3lzdGVtcxoOZmlyZXByb3RlY3Rpb24qEgoEY29kZRXZVmJAGgVjb2RlczKtAS9nb3RvP3VybD1DQUVTZGdIck96QVZYYWJrZmQ0eENpZmRwcS1WV3IxR0lFaTJfSU5EQ0dPRENiWUlDTXFlWlJTcjlleERMbEVDTXIyUHdicFpFN0R5SkR6UlFkQTVsQnI2cmVuQ1RZYXF6X1JDWExWY1ZEUEtvR2Z2ZHRHaENtT0l5QXQtM0g3eUpYd2lWekxmZVNNMllUb09jOE9rQkt1ajFfX1NOVkFEZGFJOjEyMDIxIEludGVybmF0aW9uYWwgPGI-RmlyZSBDb2RlPC9iPsKuIC0gSUNDIFN0b3JlQqkBQW4gPGI-YXV0b21hdGljIHNwcmlua2xlcjwvYj4gc3lzdGVtIGlzIG5vdyByZXF1aXJlZCBmb3Igb3BlbiA8Yj5wYXJraW5nPC9iPiBnYXJhZ2VzIGV4Y2VlZGluZyBhIGNlcnRhaW4gPGI-ZmlyZTwvYj4gYXJlYSB0aHJlc2hvbGQuIFRoZSByZXF1aXJlbWVudHMgZm9yIGVuZXJneSZuYnNwOy4uLiICEAFIAFgAaAA",
+        "source": "ICC Store",
+        "read_more_link": "https://shop.iccsafe.org/2021-international-fire-coder.html#:~:text=An%20automatic%20sprinkler%20system%20is,The%20requirements%20for%20energy"
+      }
+    ],
+    "related_searches": [
+      {
+        "block_position": 1,
+        "query": "Automated parking accessibility fire protection code pdf",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnt-0iNv-GMrG-1XxUsdMFKi1IcvDA:1792775546270&q=Automated+parking+accessibility+fire+protection+code+pdf&sa=X&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQ1QJ6BAghEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Automated+parking+accessibility+fire+protection+code+pdf"
+      },
+      {
+        "block_position": 1,
+        "query": "Automated parking accessibility fire protection code 2021",
+        "link": "https://www.google.com/search?sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnt-0iNv-GMrG-1XxUsdMFKi1IcvDA:1792775546270&q=Automated+parking+accessibility+fire+protection+code+2021&sa=X&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQ1QJ6BAgiEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Automated+parking+accessibility+fire+protection+code+2021"
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "next": "https://www.google.com/search?q=site:iccsafe.org+automated+parking+accessibility+fire+protection+code&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnt-0iNv-GMrG-1XxUsdMFKi1IcvDA:1792775546270&ei=epXbatmQEPH4yckPwrj14QY&start=10&sa=N&sstk=AS6-VmJ_u-uzLZlj8M1FsK-OLRqPxEVzM5v0TAM3YW7pjolgbAqO4I21K0JjGM23qf9rDbpQW8OqnNpzyWaDBMC9s0l-fdgcRRK3JQ&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQ8NMDegQIIxAW",
+      "other_pages": {
+        "2": "https://www.google.com/search?q=site:iccsafe.org+automated+parking+accessibility+fire+protection+code&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnt-0iNv-GMrG-1XxUsdMFKi1IcvDA:1792775546270&ei=epXbatmQEPH4yckPwrj14QY&start=10&sa=N&sstk=AS6-VmJ_u-uzLZlj8M1FsK-OLRqPxEVzM5v0TAM3YW7pjolgbAqO4I21K0JjGM23qf9rDbpQW8OqnNpzyWaDBMC9s0l-fdgcRRK3JQ&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQ8tMDegQIIxAE",
+        "3": "https://www.google.com/search?q=site:iccsafe.org+automated+parking+accessibility+fire+protection+code&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnt-0iNv-GMrG-1XxUsdMFKi1IcvDA:1792775546270&ei=epXbatmQEPH4yckPwrj14QY&start=20&sa=N&sstk=AS6-VmJ_u-uzLZlj8M1FsK-OLRqPxEVzM5v0TAM3YW7pjolgbAqO4I21K0JjGM23qf9rDbpQW8OqnNpzyWaDBMC9s0l-fdgcRRK3JQ&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQ8tMDegQIIxAG",
+        "4": "https://www.google.com/search?q=site:iccsafe.org+automated+parking+accessibility+fire+protection+code&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnt-0iNv-GMrG-1XxUsdMFKi1IcvDA:1792775546270&ei=epXbatmQEPH4yckPwrj14QY&start=30&sa=N&sstk=AS6-VmJ_u-uzLZlj8M1FsK-OLRqPxEVzM5v0TAM3YW7pjolgbAqO4I21K0JjGM23qf9rDbpQW8OqnNpzyWaDBMC9s0l-fdgcRRK3JQ&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQ8tMDegQIIxAI",
+        "5": "https://www.google.com/search?q=site:iccsafe.org+automated+parking+accessibility+fire+protection+code&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnt-0iNv-GMrG-1XxUsdMFKi1IcvDA:1792775546270&ei=epXbatmQEPH4yckPwrj14QY&start=40&sa=N&sstk=AS6-VmJ_u-uzLZlj8M1FsK-OLRqPxEVzM5v0TAM3YW7pjolgbAqO4I21K0JjGM23qf9rDbpQW8OqnNpzyWaDBMC9s0l-fdgcRRK3JQ&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQ8tMDegQIIxAK",
+        "6": "https://www.google.com/search?q=site:iccsafe.org+automated+parking+accessibility+fire+protection+code&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnt-0iNv-GMrG-1XxUsdMFKi1IcvDA:1792775546270&ei=epXbatmQEPH4yckPwrj14QY&start=50&sa=N&sstk=AS6-VmJ_u-uzLZlj8M1FsK-OLRqPxEVzM5v0TAM3YW7pjolgbAqO4I21K0JjGM23qf9rDbpQW8OqnNpzyWaDBMC9s0l-fdgcRRK3JQ&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQ8tMDegQIIxAM",
+        "7": "https://www.google.com/search?q=site:iccsafe.org+automated+parking+accessibility+fire+protection+code&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnt-0iNv-GMrG-1XxUsdMFKi1IcvDA:1792775546270&ei=epXbatmQEPH4yckPwrj14QY&start=60&sa=N&sstk=AS6-VmJ_u-uzLZlj8M1FsK-OLRqPxEVzM5v0TAM3YW7pjolgbAqO4I21K0JjGM23qf9rDbpQW8OqnNpzyWaDBMC9s0l-fdgcRRK3JQ&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQ8tMDegQIIxAO",
+        "8": "https://www.google.com/search?q=site:iccsafe.org+automated+parking+accessibility+fire+protection+code&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnt-0iNv-GMrG-1XxUsdMFKi1IcvDA:1792775546270&ei=epXbatmQEPH4yckPwrj14QY&start=70&sa=N&sstk=AS6-VmJ_u-uzLZlj8M1FsK-OLRqPxEVzM5v0TAM3YW7pjolgbAqO4I21K0JjGM23qf9rDbpQW8OqnNpzyWaDBMC9s0l-fdgcRRK3JQ&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQ8tMDegQIIxAQ",
+        "9": "https://www.google.com/search?q=site:iccsafe.org+automated+parking+accessibility+fire+protection+code&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnt-0iNv-GMrG-1XxUsdMFKi1IcvDA:1792775546270&ei=epXbatmQEPH4yckPwrj14QY&start=80&sa=N&sstk=AS6-VmJ_u-uzLZlj8M1FsK-OLRqPxEVzM5v0TAM3YW7pjolgbAqO4I21K0JjGM23qf9rDbpQW8OqnNpzyWaDBMC9s0l-fdgcRRK3JQ&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQ8tMDegQIIxAS",
+        "10": "https://www.google.com/search?q=site:iccsafe.org+automated+parking+accessibility+fire+protection+code&sca_esv=fc7020e035777d64&gl=us&hl=en&sxsrf=APpeQnt-0iNv-GMrG-1XxUsdMFKi1IcvDA:1792775546270&ei=epXbatmQEPH4yckPwrj14QY&start=90&sa=N&sstk=AS6-VmJ_u-uzLZlj8M1FsK-OLRqPxEVzM5v0TAM3YW7pjolgbAqO4I21K0JjGM23qf9rDbpQW8OqnNpzyWaDBMC9s0l-fdgcRRK3JQ&ved=2ahUKEwjZteOs0dCXAxVxfDIDHUJcPWwQ8tMDegQIIxAU"
+      }
+    },
+    "serpapi_pagination": {
+      "current": 1,
+      "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aiccsafe.org+automated+parking+accessibility+fire+protection+code&start=10",
+      "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aiccsafe.org+automated+parking+accessibility+fire+protection+code&start=10",
+      "other_pages": {
+        "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aiccsafe.org+automated+parking+accessibility+fire+protection+code&start=10",
+        "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aiccsafe.org+automated+parking+accessibility+fire+protection+code&start=20",
+        "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aiccsafe.org+automated+parking+accessibility+fire+protection+code&start=30",
+        "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aiccsafe.org+automated+parking+accessibility+fire+protection+code&start=40",
+        "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aiccsafe.org+automated+parking+accessibility+fire+protection+code&start=50",
+        "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aiccsafe.org+automated+parking+accessibility+fire+protection+code&start=60",
+        "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aiccsafe.org+automated+parking+accessibility+fire+protection+code&start=70",
+        "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aiccsafe.org+automated+parking+accessibility+fire+protection+code&start=80",
+        "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=site%3Aiccsafe.org+automated+parking+accessibility+fire+protection+code&start=90"
+      }
+    }
+  }
+}
