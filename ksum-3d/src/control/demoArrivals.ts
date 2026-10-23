@@ -135,7 +135,7 @@ export const SCENARIOS: Record<ScenarioName, Scenario> = {
   rush_hour: {
     label: 'Rush hour',
     blurb: '12 cars in 35 minutes before 9:30, chargers already busy, little sun yet.',
-    env: { gridPriceInr: 7.0, offPeak: { priceInr: 6.3, from: hm(22, 0) }, solarKw: 6, gridLimitKw: 60, baseLoadKw: 35 },
+    env: { gridPriceInr: 7.0, offPeak: { priceInr: 6.3, from: hm(22, 0) }, solarKw: 6, gridLimitKw: 60, baseLoadKw: 18 },
     arrivals: rushHour,
   },
   power_cut: {

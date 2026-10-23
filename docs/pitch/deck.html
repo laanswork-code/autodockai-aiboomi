@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AutoDock × Jev Deck</title>
+<style>
+@font-face { font-family: "Barlow"; src: url("../../ksum-3d/public/fonts/Barlow-SemiBold.ttf") format("truetype"); font-weight: 600 800; }
+:root { --paper: #f3efe6; --card: #fbf9f4; --ink: #16181b; --ink-2: #4a4e55; --ink-3: #7b7f86; --rule: #d4ccbb; --sign: #1747a6; --stop: #c8322b; --mark: #f0b91c; --go: #2f7d4f; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #2b2d30; }
+body { font: 400 26px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); }
+.slide { width: 1920px; height: 1080px; margin: 0 auto 40px; background: var(--paper); position: relative; overflow: hidden; padding: 72px 96px 64px; display: flex; flex-direction: column; }
+.slide::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 12px; background: repeating-linear-gradient(90deg, var(--mark) 0 60px, transparent 60px 96px), var(--ink); }
+.num { position: absolute; right: 96px; bottom: 44px; font: 600 22px "Barlow", sans-serif; color: var(--ink-3); letter-spacing: .1em; }
+.kicker { font: 700 24px/1 "Barlow", sans-serif; letter-spacing: .18em; text-transform: uppercase; color: var(--stop); margin: 0 0 18px; }
+h1 { font: 800 84px/1 "Barlow", sans-serif; margin: 0 0 28px; letter-spacing: -.01em; }
+h1 em { font-style: normal; color: var(--sign); }
+h2 { font: 800 40px/1.1 "Barlow", sans-serif; margin: 0 0 14px; }
+p { margin: 0 0 16px; }
+.lede { font-size: 32px; color: var(--ink-2); max-width: 30ch; }
+.grid { display: grid; gap: 40px; flex: 1; min-height: 0; grid-template-rows: minmax(0, 1fr); }
+.grid.top { align-items: start; }
+.grid > img { min-height: 0; max-height: 100%; }
+.g2 { grid-template-columns: 1fr 1fr; }
+.g37 { grid-template-columns: 0.9fr 1.1fr; }
+.g73 { grid-template-columns: 1.25fr 0.75fr; }
+.shot { width: 100%; height: 100%; object-fit: cover; border-radius: 14px; border: 2px solid var(--rule); box-shadow: 0 20px 50px -30px rgba(0,0,0,.5); }
+.shot.contain { object-fit: contain; background: #e6e2d8; }
+.stack { display: flex; flex-direction: column; gap: 20px; min-height: 0; }
+.stat { font: 800 88px/1 "Barlow", sans-serif; color: var(--sign); }
+.stat small { font-size: 34px; color: var(--ink-2); }
+.card { background: var(--card); border: 2px solid var(--rule); border-radius: 14px; padding: 24px 28px; }
+.card b { color: var(--ink); }
+ul { margin: 0; padding-left: 30px; }
+li { margin-bottom: 10px; }
+.muted { color: var(--ink-3); font-size: 21px; }
+table { width: 100%; border-collapse: collapse; font-size: 25px; }
+th, td { text-align: left; padding: 12px 14px; border-bottom: 2px solid var(--rule); }
+th { font: 700 18px "Barlow", sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+td.win { color: var(--go); font-weight: 700; }
+td.lose { color: var(--stop); font-weight: 700; }
+.pipe { display: flex; align-items: stretch; gap: 14px; margin: 6px 0 28px; }
+.pipe div { flex: 1; background: var(--card); border: 2px solid var(--rule); border-radius: 12px; padding: 18px 16px; font: 700 24px/1.15 "Barlow", sans-serif; text-align: center; display: flex; align-items: center; justify-content: center; }
+.pipe .jev { background: var(--sign); color: #fff; border-color: var(--sign); }
+.pipe span { align-self: center; font-size: 34px; color: var(--ink-3); }
+.tag { display: inline-block; font: 700 18px/1 "Barlow", sans-serif; letter-spacing: .08em; text-transform: uppercase; padding: 6px 10px; border-radius: 6px; background: var(--mark); color: var(--ink); vertical-align: middle; }
+.qa { font: italic 30px/1.35 Georgia, serif; border-left: 6px solid var(--mark); padding-left: 22px; color: var(--ink); }
+@media print {
+  @page { size: 1920px 1080px; margin: 0; }
+  html, body { background: var(--paper); }
+  .slide { margin: 0; page-break-after: always; break-after: page; }
+}
+</style>
+</head>
+<body>
+
+<!-- 1. Problem and who cares -->
+<section class="slide">
+  <p class="kicker">AIBoomi Startup Weekend · Problem</p>
+  <div class="grid g37">
+    <div class="stack">
+      <h1>Nowhere to park.<br><em>Nowhere to charge.</em></h1>
+      <p class="lede">At the Kerala Startup Mission in Kalamassery, 15 surface bays are full by mid-morning, with no chargers. Drivers circle, park on the road, or leave.</p>
+      <div class="card">
+        <div class="stat">474 <small>real complaints</small></div>
+        <p class="muted">From Reddit, forums and news across Kozhikode, Kochi, Kerala and India, collected with SerpAPI. Fights over spots, overcharging, apartments with no EV charger.</p>
+      </div>
+      <p><b>Who cares:</b> site owners with no spare land, drivers doing two errands (park, then charge), and fleets that will need unattended depots.</p>
+    </div>
+    <img class="shot" style="object-position: center 70%" src="img/site-photo.jpg" alt="The KSUM parking strip, photographed 23 Oct 2026">
+  </div>
+  <div class="num">1 / 6</div>
+</section>
+
+<!-- 2. Insight and why now -->
+<section class="slide">
+  <p class="kicker">Insight · why now</p>
+  <h1>The tower exists.<br><em>The brain doesn't.</em></h1>
+  <div class="grid g2 top">
+    <div class="stack">
+      <div class="card"><h2>Hardware is solved</h2><p>AutoDock AI (Kozhikode) already builds rotary towers with a charger in every bay. In our model a 20-pallet tower stands on 2 parking bays.</p></div>
+      <div class="card"><h2>Every car is a set of decisions</h2><p>Which pallet, charge now or wait for solar and off-peak, what price, is this the right car and is it paid for. Rules get these wrong at the edges; people can't watch every car.</p></div>
+    </div>
+    <div class="stack">
+      <div class="card"><h2>Why now: typed, calibrated AI</h2><p>TypeSafe's Jev returns typed answers with a calibrated confidence in about half a second, for about <b>$0.00008 a decision</b>. Cheap enough to decide on every event, and honest enough to ask a person when it isn't sure.</p></div>
+      <div class="card"><h2>Why now: the grid</h2><p>More EVs than sockets, and the site's grid connection is the bottleneck. Robotaxi fleets are scaling in the US, and need depots that run unattended.</p></div>
+    </div>
+  </div>
+  <div class="num">2 / 6</div>
+</section>
+
+<!-- 3. Solution demo -->
+<section class="slide">
+  <p class="kicker">Solution · live demo</p>
+  <div class="grid g73">
+    <img class="shot contain" src="img/control-room.jpg" alt="Control room during rush hour with Jev decisions and an operator review">
+    <div class="stack">
+      <h1 style="font-size:64px">Jev decides.<br><em>It asks when unsure.</em></h1>
+      <ul>
+        <li>3D twin of the real site, two towers on 4 of 15 bays: <b>40 cars on 57 m²</b>.</li>
+        <li>Per car: bay, charge plan, price, plate and payment checks, each with Jev's confidence.</li>
+        <li>Unsure charge or anomaly calls go to the <b>operator queue</b>. Here: a camera misread Jev wouldn't guess on.</li>
+        <li>Solar and grid flows, live kW gauge, Jev cost counter, event log.</li>
+        <li>Driver phone: arrive, dock, charge, pay by UPI (mock).</li>
+      </ul>
+      <img class="shot" style="height:300px;flex:none;object-position:right center" src="img/driver-phone.jpg" alt="Driver phone mockup">
+    </div>
+  </div>
+  <div class="num">3 / 6</div>
+</section>
+
+<!-- 4. Tech architecture -->
+<section class="slide">
+  <p class="kicker">Tech architecture</p>
+  <h1>One Jev request per car.<br><em>Code owns the rest.</em></h1>
+  <div class="pipe">
+    <div>Scenario player</div><span>→</span><div>Event bus</div><span>→</span><div class="jev">Jev decision step<br>(server, key stays here)</div><span>→</span><div>Tower orchestrator</div><span>→</span><div>3D twin + control room</div>
+  </div>
+  <div class="grid g2 top">
+    <div class="card">
+      <h2>Five judgments, one call</h2>
+      <ul>
+        <li><b>Bay:</b> Choice over 4-6 pallets code proposes</li>
+        <li><b>Charge:</b> Choice (now, solar, off-peak, none)</li>
+        <li><b>Price:</b> Score, demand 0-3, mapped to a tier</li>
+        <li><b>Plate, payment:</b> two Nouls (probabilities)</li>
+      </ul>
+      <p class="muted">Confidence counts options with the same outcome together: indifference between equivalent pallets is not doubt.</p>
+    </div>
+    <div class="card">
+      <h2>Guardrails</h2>
+      <ul>
+        <li>Rules fallback on any error or timeout, same interface</li>
+        <li>Flagged plate or payment always reaches a person</li>
+        <li>Audit log of every decision and its confidence</li>
+        <li>52 tests; seeded simulator for rules vs Jev</li>
+      </ul>
+      <p class="muted">React 19 · React Three Fiber · zustand · Vite · Node 25 · @typesafe-ai/sdk (jev-latest) · OpenStreetMap · SerpAPI</p>
+    </div>
+  </div>
+  <div class="num">4 / 6</div>
+</section>
+
+<!-- 5. Value and GTM -->
+<section class="slide">
+  <p class="kicker">Value · go to market</p>
+  <div class="grid g2">
+    <div class="stack">
+      <h1 style="font-size:66px">Same rush hour,<br><em>rules vs Jev</em> <span class="tag">Simulated</span></h1>
+      <table>
+        <tr><th>Rush hour, seed 42</th><th>Rules</th><th>Jev</th></tr>
+        <tr><td>Grid peak</td><td>60 kW</td><td class="win">42.6 kW (-29%)</td></tr>
+        <tr><td>Energy cost</td><td>₹2,989</td><td class="win">₹2,262 (-24%)</td></tr>
+        <tr><td>Missed anomalies</td><td>0</td><td class="win">0</td></tr>
+        <tr><td>Sent to an operator</td><td>22</td><td>26</td></tr>
+        <tr><td>kWh delivered</td><td>590</td><td class="lose">490</td></tr>
+      </table>
+      <p class="muted">Synthetic day, illustrative tariffs and behaviour; not a measurement. Jev wins on grid and energy cost, and sells less energy. Full table in the repo.</p>
+    </div>
+    <div class="stack">
+      <div class="card"><h2>Who pays</h2><p>Site owners and operators: a per-session fee, a per-bay software subscription, a margin on energy, and a revenue share with the landowner.</p></div>
+      <div class="card"><h2>How we reach them</h2><p>Through AutoDock AI as the hardware partner. First a Kerala pilot site (KSUM / KINFRA style campuses), then Kochi, Trivandrum and Kozhikode; fleets and robotaxi depots next.</p></div>
+      <div class="card"><h2>Ready to send</h2><p>Non-binding LOI drafts for AutoDock AI (shadow pilot) and a site owner (survey and proposal).</p></div>
+    </div>
+  </div>
+  <div class="num">5 / 6</div>
+</section>
+
+<!-- 6. Roadmap and risks -->
+<section class="slide">
+  <p class="kicker">Roadmap · risks</p>
+  <h1>From simulation<br><em>to a real tower.</em></h1>
+  <div class="grid g2 top">
+    <div class="card">
+      <h2>Next</h2>
+      <ul>
+        <li><b>4 weeks:</b> integrate with AutoDock's tower controller on recorded events.</li>
+        <li><b>8 weeks:</b> shadow pilot at one Kerala site: Jev logs what it would decide, controls nothing.</li>
+        <li>Calibrate thresholds on real outcomes; tune for each site's grid and tariffs.</li>
+        <li>Live pilot under a separate agreement if the shadow results hold.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Risks, stated plainly</h2>
+      <ul>
+        <li>Our numbers are simulated; real behaviour may differ.</li>
+        <li>Depends on a hardware partner and site approvals (grid, fire, structural).</li>
+        <li>Jev's calibration checked only on synthetic cases so far.</li>
+        <li>Demo 3D models come from AutoDock's demo; permission needed for public use.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="qa" style="margin-top:28px">The ask: a pilot site, an introduction to AutoDock AI's team, and mentors who have run EV or parking operations.</p>
+  <div class="num">6 / 6</div>
+</section>
+
+</body>
+</html>

@@ -3,10 +3,12 @@
 A 3D replica of the Kerala Startup Mission building (Kerala Technology
 Innovation Zone) at KINFRA Hi-Tech Park, Kalamassery, with two AutoDock rotary
 towers placed on the paver parking strip in front of it. Toggle **Today** and
-**With AutoDock** to compare the ground each layout needs.
+**With AutoDock** to compare the ground each layout needs. Project overview,
+submission material and licences: see the [root README](../README.md).
 
 ```sh
 npm install
+npm run server     # Jev decision server on :8788 (needs TYPESAFE_API_KEY in ../.env)
 npm run dev        # http://localhost:5173
 npm run build      # static site in dist/
 ```
@@ -159,7 +161,7 @@ the connection is the bottleneck.
 
 ### Screenshots and slow machines
 
-`?lite` in the URL (e.g. http://localhost:5179/?lite) drops the trees and
+`?lite` in the URL (e.g. http://localhost:5173/?lite) drops the trees and
 shadows and redraws only on change. Use it for headless screenshots on
 software WebGL, where the full scene takes minutes per frame.
 
