@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "r3f-loaders": {
+      "source": "enzed/r3f-skills",
+      "sourceType": "github",
+      "skillPath": "skills/r3f-loaders/SKILL.md",
+      "computedHash": "6d555177a4afc7b8aa8ce7254af3337e2a07fae96758ee55baaf8441afc7ddcd"
+    },
+    "react-three-fiber": {
+      "source": "freshtechbro/claudedesignskills",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/react-three-fiber/SKILL.md",
+      "computedHash": "d672dfba48620140185d451bc9b6841833eed4306277776efab2e2a82c7b8fbf"
+    }
+  }
+}
