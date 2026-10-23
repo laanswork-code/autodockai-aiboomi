@@ -1,0 +1,125 @@
+{
+  "recordedAt": "2026-10-23T20:45:11.287Z",
+  "samples": [
+    {
+      "arrivalId": "a-quick",
+      "model": "jev-1.14.0",
+      "latencyMs": 806,
+      "usage": {
+        "input_tokens": 1786,
+        "output_tokens": 186
+      },
+      "answers": {
+        "price": {
+          "type": "score",
+          "score": 2,
+          "confidence": 0.99,
+          "legend": {
+            "0": "Quiet: nobody queued at the gate and fewer than half the pallets taken on a normal day; spare capacity is going unused.",
+            "1": "Ordinary demand: at most a couple of cars queued and roughly half to three quarters of the pallets taken.",
+            "2": "Busy: several cars queued or most pallets taken, as in rush hour.",
+            "3": "Overloaded: a long queue with the towers nearly full, or capacity squeezed by a power cut or a robotaxi fleet arriving at once."
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0.01,
+            "2": 0.99,
+            "3": 0
+          }
+        },
+        "plate_mismatch": {
+          "type": "noul",
+          "noul": 0.02
+        },
+        "payment_risk": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "bay": {
+          "type": "choice",
+          "choice": "t1_p02",
+          "confidence": 0.32,
+          "probabilities": {
+            "t2_p09": 0.08,
+            "t1_p04": 0.42,
+            "t1_p02": 0.43,
+            "t2_p06": 0.05,
+            "t1_p19": 0.01,
+            "t2_p15": 0.01
+          }
+        },
+        "charge": {
+          "type": "choice",
+          "choice": "now",
+          "confidence": 0.97,
+          "probabilities": {
+            "now": 0.98,
+            "wait_solar": 0,
+            "wait_offpeak": 0,
+            "no_charge": 0.02
+          }
+        }
+      }
+    },
+    {
+      "arrivalId": "a-overnight",
+      "model": "jev-1.14.0",
+      "latencyMs": 284,
+      "usage": {
+        "input_tokens": 1792,
+        "output_tokens": 189
+      },
+      "answers": {
+        "price": {
+          "type": "score",
+          "score": 2,
+          "confidence": 0.99,
+          "legend": {
+            "0": "Quiet: nobody queued at the gate and fewer than half the pallets taken on a normal day; spare capacity is going unused.",
+            "1": "Ordinary demand: at most a couple of cars queued and roughly half to three quarters of the pallets taken.",
+            "2": "Busy: several cars queued or most pallets taken, as in rush hour.",
+            "3": "Overloaded: a long queue with the towers nearly full, or capacity squeezed by a power cut or a robotaxi fleet arriving at once."
+          },
+          "probabilities": {
+            "0": 0,
+            "1": 0.01,
+            "2": 0.99,
+            "3": 0
+          }
+        },
+        "plate_mismatch": {
+          "type": "noul",
+          "noul": 0.21
+        },
+        "payment_risk": {
+          "type": "noul",
+          "noul": 0.34
+        },
+        "bay": {
+          "type": "choice",
+          "choice": "t2_p15",
+          "confidence": 0.83,
+          "probabilities": {
+            "t2_p09": 0,
+            "t1_p04": 0,
+            "t1_p02": 0,
+            "t2_p06": 0.01,
+            "t1_p19": 0.13,
+            "t2_p15": 0.86
+          }
+        },
+        "charge": {
+          "type": "choice",
+          "choice": "wait_offpeak",
+          "confidence": 0.91,
+          "probabilities": {
+            "now": 0.05,
+            "wait_solar": 0.01,
+            "wait_offpeak": 0.93,
+            "no_charge": 0.01
+          }
+        }
+      }
+    }
+  ]
+}

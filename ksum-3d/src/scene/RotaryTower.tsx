@@ -23,6 +23,8 @@ const TUNE: Record<string, [number, number]> = {
 }
 const HIDDEN = new Set(['typeMesh1', 'a10xianshiping_3'])
 const SPEED = 0.55 // m/s along the chain
+/** Chain speed when the control room sends a pallet to the door: demo-quick, so a tower answers within a few seconds. */
+const SEEK_SPEED = 5
 
 /** Pallets per tower. The model has 12; the chain loop is stretched to fit 20. */
 export const PALLETS = 20
@@ -270,10 +272,14 @@ type RotaryTowerProps = {
   /** One entry per pallet, starting from the ground pallet; null = empty pallet. */
   load: (TowerLoad | null)[]
   reportSize?: boolean
+  /** Driven by the control room: ignore the idle spin and turn only to bring `doorPallet` to the door. */
+  controlled?: boolean
+  /** Pallet to bring to the door; its car stays hidden until the pallet gets there. */
+  doorPallet?: number | null
 } & Omit<React.ComponentProps<'group'>, 'children'>
 
 /** An AutoDock rotary tower with its pallets moving on the chain loop. */
-export function RotaryTower({ load, reportSize, ...props }: RotaryTowerProps) {
+export function RotaryTower({ load, reportSize, controlled = false, doorPallet = null, ...props }: RotaryTowerProps) {
   const { scene, materials } = useGLTF(TOWER_URL)
   const [atlas, board] = useTexture(TEX)
   const seal = useGLTF(CARS.seal.url).scene
@@ -293,9 +299,26 @@ export function RotaryTower({ load, reportSize, ...props }: RotaryTowerProps) {
   const offset = useRef(0)
   const spinning = useSceneStore((s) => s.spinning)
   const tmp = useMemo(() => new THREE.Vector3(), [])
+  const waiting = useRef<THREE.Object3D | null>(null)
+  const carObjs = useRef<(THREE.Object3D | null)[]>([])
   useFrame((_, dt) => {
-    if (spinning) offset.current += Math.min(dt, 0.05) * SPEED
+    const step = Math.min(dt, 0.05)
+    let docked = true
+    if (controlled && doorPallet !== null) {
+      // Pallet i sits at the door (s = 0) when offset = -i * pitch; go the shorter way round.
+      const loop = PALLETS * tower.pitch
+      let d = (((-doorPallet * tower.pitch - offset.current) % loop) + loop) % loop
+      if (d > loop / 2) d -= loop
+      const move = step * SEEK_SPEED
+      if (Math.abs(d) <= move) offset.current += d
+      else { offset.current += Math.sign(d) * move; docked = false }
+    } else if (!controlled && spinning) offset.current += step * SPEED
     pallets.current.forEach((g, i) => { if (g) g.position.copy(tower.pointAt(i * tower.pitch + offset.current, tmp)) })
+    // The new car drives on once its pallet is at the door; one cut short by a newer target shows at once.
+    const arriving = doorPallet === null ? null : carObjs.current[doorPallet] ?? null
+    if (waiting.current && waiting.current !== arriving) waiting.current.visible = true
+    if (arriving) arriving.visible = docked
+    waiting.current = arriving
   })
 
   return (
@@ -308,7 +331,7 @@ export function RotaryTower({ load, reportSize, ...props }: RotaryTowerProps) {
           {tower.pallet.map((p) => (
             <mesh key={p.geo.uuid} geometry={p.geo} material={p.mat} castShadow receiveShadow />
           ))}
-          {cars[i] && <primitive object={cars[i]} position={[0, tower.deck, 0]} scale={CAR_ON_PALLET} />}
+          {cars[i] && <primitive object={cars[i]} ref={(o: THREE.Object3D | null) => { carObjs.current[i] = o }} position={[0, tower.deck, 0]} scale={CAR_ON_PALLET} />}
         </group>
       ))}
     </group>

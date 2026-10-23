@@ -1,6 +1,9 @@
 import { VIEWS, type ViewName } from '../config/site'
+import { ControlRoom } from '../control/ControlRoom'
+import { SimCard } from '../control/SimCard'
 import { spaceStats } from '../lib/stats'
 import { useSceneStore, type Mode } from '../store/useSceneStore'
+import { DriverPhone } from './DriverPhone'
 
 const MODES: { id: Mode; label: string }[] = [
   { id: 'today', label: 'Today' },
@@ -68,6 +71,7 @@ function Stats() {
 }
 
 export function Hud() {
+  const mode = useSceneStore((s) => s.mode)
   return (
     <>
       <header className="hud-top">
@@ -78,12 +82,15 @@ export function Hud() {
         </div>
         <ModeSwitch />
       </header>
+      {mode === 'autodock' && <ControlRoom />}
       <aside className="hud-side">
         <Stats />
+        {mode === 'autodock' && <SimCard />}
       </aside>
       <footer className="hud-bottom">
         <ViewSwitch />
         <SpinToggle />
+        {mode === 'autodock' && <DriverPhone />}
         <span className="credit">Map data © OpenStreetMap contributors · heights estimated · tower and cars from the AutoDock demo</span>
       </footer>
     </>

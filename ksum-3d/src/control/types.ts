@@ -104,7 +104,16 @@ export interface Decider {
   decide(arrival: Arrival, state: SiteState): Promise<DecisionSet>
 }
 
-/** Confidence at or above which a decision acts on its own; below goes to review. */
+/**
+ * Which decisions may go to an operator when Jev is unsure: only those where a
+ * wrong call costs the driver or the site (a car left uncharged, a wrong car or
+ * unpaid stay). Bay and price act on Jev's best answer: a misjudged pallet costs a
+ * few seconds of rotation, a misjudged tier a few rupees. A full site still needs
+ * a person for the bay, whatever Jev says.
+ */
+export const ESCALATES: Record<DecisionKind, boolean> = { bay: false, charge: true, price: false, anomaly: true }
+
+/** Confidence at or above which an escalating decision acts on its own; below goes to review. */
 export const AUTO_THRESHOLD: Record<DecisionKind, number> = {
   bay: 0.6,
   charge: 0.6,

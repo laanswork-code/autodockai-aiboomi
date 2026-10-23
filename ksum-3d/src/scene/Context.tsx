@@ -7,6 +7,7 @@ import { clipPolyline, polylineRibbon, toShape } from '../lib/geo'
 import { asphaltTexture, lawnTexture } from '../lib/textures'
 import { CityBuildings } from './CityBuildings'
 import { Greenery } from './Greenery'
+import { LITE } from '../config/quality'
 
 /** OSM road that runs along the KTIZ facade; replaced by the curved road in Site. */
 const FRONT_ROAD_ID = 209966289
@@ -47,7 +48,7 @@ export function Context() {
         </mesh>
       )}
       <CityBuildings />
-      <Greenery />
+      {!LITE && <Greenery />}
     </group>
   )
 }

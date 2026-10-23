@@ -1,9 +1,11 @@
 import { Html } from '@react-three/drei'
+import { useMemo } from 'react'
 import {
   FACADE, KEPT_BAYS, STRIP, STRIP_T_EAST, TODAY_BAYS, TOWERS_T_EAST, TOWER_CAPACITY, TOWER_FALLBACK, bayTheta, towerTheta,
 } from '../config/site'
 import { arcPoint, yawInward, yawOutward } from '../lib/geo'
 import { spaceStats } from '../lib/stats'
+import { useControlStore } from '../control/useControlStore'
 import { useSceneStore, type Mode } from '../store/useSceneStore'
 import { Car } from './Car'
 import type { CarKind } from './carModels'
@@ -66,10 +68,19 @@ function Towers({ mode }: { mode: Mode }) {
   })
   const stats = spaceStats()
   const [lx, lz] = arcPoint(FACADE, (STRIP_T_EAST + TOWERS_T_EAST) / 2, (STRIP[0] + STRIP[1]) / 2)
+  // While a control-room scenario runs, the towers turn to its decisions and carry its docked cars.
+  const controlled = useControlStore((s) => s.scenario !== null)
+  const door = useControlStore((s) => s.door)
+  const docked = useControlStore((s) => s.cars)
+  const loads = useMemo(
+    () => towerLoads.map((base, k) => (Object.keys(docked[k]).length ? base.map((b, p) => docked[k][p] ?? b) : base)),
+    [docked],
+  )
   return (
     <group>
       {placed.map(({ k, t, x, z }) => (
-        <RotaryTower key={k} load={towerLoads[k]} reportSize={k === 0} position={[x, 0.08, z]} rotation={[0, yawOutward(t), 0]} />
+        <RotaryTower key={k} load={loads[k]} reportSize={k === 0} controlled={controlled} doorPallet={door[k]}
+          position={[x, 0.08, z]} rotation={[0, yawOutward(t), 0]} />
       ))}
       <SurfaceCars cars={keptFleet} />
       {/* Html ignores the parent's visibility, so labels mount only in this mode */}

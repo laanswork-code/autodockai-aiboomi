@@ -47,11 +47,102 @@ button:focus-visible { outline: 3px solid var(--mark); outline-offset: 2px; }
 .tag { font: 600 13px system-ui, sans-serif; white-space: nowrap; background: rgba(22, 24, 27, .82); color: #fff; padding: 6px 10px; border-radius: 6px; pointer-events: none; }
 .tag--tower { background: rgba(23, 71, 166, .92); }
 
+/* Jev control room: left column, below the title, above the camera controls. */
+.ctl {
+  position: absolute; left: 16px; top: 132px; bottom: 72px; width: 384px; display: flex; flex-direction: column; gap: 8px;
+  background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; padding: 12px; backdrop-filter: blur(8px);
+  font-size: 12.5px; color: #4a4e55; z-index: 11; /* above drei's in-scene labels */
+}
+.ctl:not(.is-open) { bottom: auto; }
+.ctl h2 { margin: 2px 0 0; font-size: 17px; color: var(--ink); }
+.ctl h3 { margin: 4px 0; font: 700 11px/1.4 system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); }
+.ctl__head { display: flex; justify-content: space-between; align-items: flex-start; }
+.ctl__bar { display: grid; gap: 6px; }
+.ctl__run { display: flex; align-items: center; gap: 6px; }
+.ctl__blurb { margin: 0; }
+.ctl__body { overflow-y: auto; min-height: 0; display: grid; gap: 8px; align-content: start; padding-right: 2px; }
+.seg--wrap { flex-wrap: wrap; }
+.ctl .seg button { padding: 6px 9px; }
+.chip:disabled { opacity: .5; cursor: default; }
+.chip--small { padding: 5px 9px; font-size: 12px; }
+.muted { color: #6b6f76; margin: 0; }
+.pill { justify-self: start; font: 600 11.5px system-ui, sans-serif; padding: 4px 8px; border-radius: 999px; background: #e7e9ec; color: #4a4e55; }
+.pill--up { background: #dff3e6; color: #1d6b3d; }
+.pill--down { background: #fdeccf; color: #8a5300; }
+.plate { font: 700 12px ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--ink); background: #fff; border: 1px solid var(--rule); border-radius: 4px; padding: 1px 5px; white-space: nowrap; }
+.count { display: inline-block; min-width: 18px; text-align: center; padding: 0 5px; border-radius: 9px; background: #c8322b; color: #fff; letter-spacing: 0; }
+
+.queue ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.qitem { border: 1px solid #f0b91c; border-left-width: 4px; background: #fffaf0; border-radius: 8px; padding: 8px; display: grid; gap: 4px; }
+.qitem__top { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; color: var(--ink); font-weight: 600; }
+.qitem__why { margin: 0; }
+.qitem__act { display: flex; gap: 6px; }
+.btn { font: 600 12.5px system-ui, sans-serif; border: 1px solid var(--rule); background: #fff; color: var(--ink); border-radius: 7px; padding: 6px 12px; cursor: pointer; }
+.btn--go { background: var(--go); border-color: var(--go); color: #fff; }
+.btn:disabled { opacity: .45; cursor: default; }
+
+.feed { display: grid; gap: 8px; }
+.dcard { background: #fff; border: 1px solid var(--rule); border-radius: 8px; padding: 8px; display: grid; gap: 4px; }
+.dcard__head { display: flex; align-items: center; gap: 8px; color: var(--ink); }
+.dcard__head span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dcard__note { margin: 0; font-style: italic; }
+.drows { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; }
+.drow { display: grid; grid-template-columns: 68px 1fr auto auto; grid-template-areas: "k v src st" "bar bar bar pct" "why why why why"; gap: 2px 6px; align-items: center; padding: 4px 0 0; border-top: 1px solid var(--rule); }
+.drow.is-review { background: #fffaf0; }
+.drow__k { grid-area: k; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
+.drow__v { grid-area: v; color: var(--ink); font-weight: 600; min-width: 0; }
+.drow__was { margin-left: 6px; color: #8a8e94; font-weight: 400; }
+.drow__why { grid-area: why; font-size: 11.5px; }
+.drow__conf { grid-area: pct; font-variant-numeric: tabular-nums; font-size: 11.5px; text-align: right; min-width: 32px; }
+.drow .conf { grid-area: bar; }
+.badge { grid-area: src; font: 700 10px/1 system-ui, sans-serif; text-transform: uppercase; letter-spacing: .06em; padding: 3px 5px; border-radius: 4px; }
+.badge--jev { background: var(--sign); color: #fff; }
+.badge--rules { background: #e7e9ec; color: #4a4e55; }
+.state { grid-area: st; font: 600 11px system-ui, sans-serif; padding: 2px 6px; border-radius: 4px; background: #eef6f1; color: #1d6b3d; }
+.state--review { background: #fdeccf; color: #8a5300; }
+.state--overridden, .state--cleared { background: #e8eefb; color: var(--sign); }
+.conf { position: relative; height: 6px; border-radius: 3px; background: #e7e9ec; }
+.conf__bar { position: absolute; inset: 0 auto 0 0; border-radius: 3px; background: var(--go); }
+.conf__bar.is-low { background: #e0962a; }
+.conf__tick { position: absolute; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; background: var(--ink); }
+
+.sim { display: grid; gap: 8px; }
+.tag-sim { margin-left: 6px; padding: 2px 6px; border-radius: 4px; background: #fdeccf; color: #8a5300; letter-spacing: .04em; }
+.sim__table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.sim__table caption { text-align: left; font-weight: 600; color: var(--ink); padding-bottom: 4px; }
+.sim__table th, .sim__table td { padding: 3px 4px; border-top: 1px solid var(--rule); text-align: right; font-variant-numeric: tabular-nums; }
+.sim__table th[scope="row"], .sim__table thead th:first-child { text-align: left; font-weight: 500; }
+.sim__table .is-good { color: var(--go); font-weight: 700; }
+.sim__table .is-bad { color: #c8322b; font-weight: 700; }
+
 @media (max-width: 760px) {
   .hud-top { flex-direction: column; }
   .hud-side { top: auto; bottom: 120px; transform: none; left: 16px; right: 16px; width: auto; }
   .stats { grid-template-columns: repeat(3, 1fr); }
   .stat b { font-size: 16px; }
   .stat--big b { font-size: 20px; }
+  /* phone: headline numbers only; the detail lines do not fit three across */
+  .stat > span:not(.stat__k) { display: none; }
   .credit { margin-left: 0; }
+  .ctl { top: 212px; left: 16px; right: 16px; width: auto; bottom: 156px; }
+  /* on a phone the open control room takes the stats' place; hiding it brings them back */
+  .app:has(.ctl.is-open) .hud-side { display: none; }
 }
+
+/* Simulated comparison under the stats; the side column scrolls if the window is short. */
+.hud-side { max-height: calc(100vh - 160px); overflow-y: auto; display: grid; gap: 8px; }
+.simcard { background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; padding: 10px 12px; display: grid; gap: 6px; font-size: 12px; color: #4a4e55; backdrop-filter: blur(8px); }
+.simcard .sim h3 { margin: 0; font: 700 11px/1.4 system-ui, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
+.simcard__more summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+.simcard__more p { margin: 4px 0; }
+.simcard__more ul { margin: 4px 0 0; padding-left: 16px; display: grid; gap: 3px; }
+
+/* Driver phone: bottom right, above the camera controls, over the side column. */
+.phone-dock { position: fixed; right: 16px; bottom: 72px; z-index: 12; transform: scale(.85); transform-origin: bottom right; }
+.app:has(.phone-dock) .hud-side { visibility: hidden; }
+@media (max-height: 820px) { .phone-dock { transform: scale(.7); } }
+@media (max-width: 760px) {
+  .phone-dock { left: 16px; right: 16px; bottom: 120px; display: flex; justify-content: center; transform: scale(.8); transform-origin: bottom center; }
+}
+/* phones: the comparison would cover the scene; the README and sim/results.json carry it there */
+@media (max-width: 760px) { .simcard { display: none; } }

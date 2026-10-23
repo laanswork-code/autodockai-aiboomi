@@ -1,0 +1,208 @@
+{
+  "simulated": true,
+  "note": "Simulated results from a synthetic day at the KSUM / KINFRA towers. Tariffs, prices and behaviour are illustrative assumptions, not measurements.",
+  "seed": 42,
+  "assumptions": {
+    "towers": "2 rotary towers x 20 pallets, one door each, one door operation at a time",
+    "rotation": "5 s per pallet step (shorter way round), 60 s to dock on arrival, 90 s to hand a car back",
+    "charger": "7.4 kW AC charger in every bay; default target 80% SoC, 100% when the note asks for a full charge",
+    "grid": "60 kW contracted grid limit for charging; power_cut drops it to 15 kW from 10:00 to 16:00 (DG backup)",
+    "horizon": "Arrivals from 00:00 to 24:00; the run continues to 06:00 the next morning so overnight off-peak charging is delivered and billed",
+    "solar": "30 kWp rooftop solar, half-sine 06:00 to 18:00, peak at noon; cars waiting for solar draw only solar",
+    "tariff": "Illustrative Kerala ToD tariff: INR 6.3/kWh 22:00-06:00, 7 06:00-18:00, 9.8 18:00-22:00",
+    "pricing": "Parking INR 30/40/60/80 per started hour (discount/standard/peak/surge); energy sold at INR 18/kWh",
+    "balking": "Drivers drive off when quoted a tier with probability 0/0.02/0.1/0.25",
+    "operator": "An escalated (review) decision or an anomaly flag holds the car 1.5 min for a human operator, then the decision is applied",
+    "anomalies": "A real plate or payment problem that is not flagged loses that car's revenue",
+    "gate": "No free pallet: the car queues at the gate and gives up after 20 min",
+    "wait": "Wait per car = gate queue + operator hold + door queue + rotation + dock, plus on exit: door queue + rotation + hand-back"
+  },
+  "results": [
+    {
+      "policy": "baseline",
+      "scenario": "normal",
+      "cars": 76,
+      "avgWaitMin": 3.3,
+      "p90WaitMin": 4.58,
+      "kwhDelivered": 502.9,
+      "energyCostInr": 2253,
+      "revenueInr": 23292,
+      "revenuePerBayInr": 582,
+      "gridPeakKw": 44.1,
+      "escalations": 14,
+      "decisions": 304
+    },
+    {
+      "policy": "jev",
+      "scenario": "normal",
+      "cars": 76,
+      "avgWaitMin": 3.74,
+      "p90WaitMin": 5,
+      "kwhDelivered": 487.9,
+      "energyCostInr": 2097,
+      "revenueInr": 20823,
+      "revenuePerBayInr": 521,
+      "gridPeakKw": 39.6,
+      "escalations": 14,
+      "decisions": 304
+    },
+    {
+      "policy": "baseline",
+      "scenario": "rush_hour",
+      "cars": 108,
+      "avgWaitMin": 8.38,
+      "p90WaitMin": 20,
+      "kwhDelivered": 590.3,
+      "energyCostInr": 2989,
+      "revenueInr": 30266,
+      "revenuePerBayInr": 757,
+      "gridPeakKw": 60,
+      "escalations": 22,
+      "decisions": 376
+    },
+    {
+      "policy": "jev",
+      "scenario": "rush_hour",
+      "cars": 108,
+      "avgWaitMin": 8.98,
+      "p90WaitMin": 20,
+      "kwhDelivered": 490.4,
+      "energyCostInr": 2262,
+      "revenueInr": 26397,
+      "revenuePerBayInr": 660,
+      "gridPeakKw": 42.6,
+      "escalations": 26,
+      "decisions": 376
+    },
+    {
+      "policy": "baseline",
+      "scenario": "power_cut",
+      "cars": 76,
+      "avgWaitMin": 3.3,
+      "p90WaitMin": 4.58,
+      "kwhDelivered": 431.3,
+      "energyCostInr": 1752,
+      "revenueInr": 22003,
+      "revenuePerBayInr": 550,
+      "gridPeakKw": 39.4,
+      "escalations": 14,
+      "decisions": 304
+    },
+    {
+      "policy": "jev",
+      "scenario": "power_cut",
+      "cars": 76,
+      "avgWaitMin": 3.22,
+      "p90WaitMin": 5.17,
+      "kwhDelivered": 430.9,
+      "energyCostInr": 1765,
+      "revenueInr": 21236,
+      "revenuePerBayInr": 531,
+      "gridPeakKw": 29.6,
+      "escalations": 13,
+      "decisions": 304
+    },
+    {
+      "policy": "baseline",
+      "scenario": "robotaxi_fleet",
+      "cars": 90,
+      "avgWaitMin": 3.33,
+      "p90WaitMin": 4.75,
+      "kwhDelivered": 559.1,
+      "energyCostInr": 2646,
+      "revenueInr": 25164,
+      "revenuePerBayInr": 629,
+      "gridPeakKw": 60,
+      "escalations": 18,
+      "decisions": 360
+    },
+    {
+      "policy": "jev",
+      "scenario": "robotaxi_fleet",
+      "cars": 90,
+      "avgWaitMin": 3.49,
+      "p90WaitMin": 5.67,
+      "kwhDelivered": 473.2,
+      "energyCostInr": 2054,
+      "revenueInr": 24478,
+      "revenuePerBayInr": 612,
+      "gridPeakKw": 60,
+      "escalations": 22,
+      "decisions": 360
+    }
+  ],
+  "details": [
+    {
+      "policy": "baseline",
+      "scenario": "normal",
+      "parked": 75,
+      "balked": 1,
+      "turnedAway": 0,
+      "reviewDecisions": 0,
+      "missedAnomalies": 0
+    },
+    {
+      "policy": "jev",
+      "scenario": "normal",
+      "parked": 75,
+      "balked": 1,
+      "turnedAway": 0,
+      "reviewDecisions": 14,
+      "missedAnomalies": 0
+    },
+    {
+      "policy": "baseline",
+      "scenario": "rush_hour",
+      "parked": 92,
+      "balked": 2,
+      "turnedAway": 14,
+      "reviewDecisions": 0,
+      "missedAnomalies": 0
+    },
+    {
+      "policy": "jev",
+      "scenario": "rush_hour",
+      "parked": 92,
+      "balked": 2,
+      "turnedAway": 14,
+      "reviewDecisions": 27,
+      "missedAnomalies": 0
+    },
+    {
+      "policy": "baseline",
+      "scenario": "power_cut",
+      "parked": 75,
+      "balked": 1,
+      "turnedAway": 0,
+      "reviewDecisions": 0,
+      "missedAnomalies": 0
+    },
+    {
+      "policy": "jev",
+      "scenario": "power_cut",
+      "parked": 68,
+      "balked": 8,
+      "turnedAway": 0,
+      "reviewDecisions": 13,
+      "missedAnomalies": 0
+    },
+    {
+      "policy": "baseline",
+      "scenario": "robotaxi_fleet",
+      "parked": 88,
+      "balked": 2,
+      "turnedAway": 0,
+      "reviewDecisions": 0,
+      "missedAnomalies": 0
+    },
+    {
+      "policy": "jev",
+      "scenario": "robotaxi_fleet",
+      "parked": 77,
+      "balked": 13,
+      "turnedAway": 0,
+      "reviewDecisions": 23,
+      "missedAnomalies": 0
+    }
+  ]
+}

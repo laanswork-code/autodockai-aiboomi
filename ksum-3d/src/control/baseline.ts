@@ -33,9 +33,8 @@ export function nearestFreePallet(state: SiteState): DecisionValues['bay'] | nul
 
 export function baselineDecisions(arrival: Arrival, state: SiteState): DecisionSet {
   const bay = nearestFreePallet(state) ?? { tower: 0 as const, pallet: 0 }
-  const charge = !arrival.vehicle.ev || state.scenario === 'power_cut'
-    ? 'no_charge' as const
-    : arrival.vehicle.socPct < 80 ? 'now' as const : 'no_charge' as const
+  // naive: every EV below 80% starts charging on arrival, whatever the tariff or grid
+  const charge = arrival.vehicle.ev && arrival.vehicle.socPct < 80 ? 'now' as const : 'no_charge' as const
   const occupied = state.towers.reduce((a, t) => a + t.pallets.filter((p) => p.occupiedBy).length, 0)
   const price = state.queue > 5 || occupied > 0.85 * 2 * PALLETS_PER_TOWER ? 'peak' as const : 'standard' as const
   const plateDiffers = arrival.plateRead.text.replace(/\s/g, '').toUpperCase() !== arrival.bookedPlate.replace(/\s/g, '').toUpperCase()
