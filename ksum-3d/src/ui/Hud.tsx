@@ -76,9 +76,9 @@ export function Hud() {
     <>
       <header className="hud-top">
         <div>
-          <p className="kicker">AutoDock · site study</p>
+          <p className="kicker">AutoDock · digital twin</p>
           <h1>KINFRA Hi-Tech Park, Kalamassery</h1>
-          <p className="sub">Kerala Startup Mission building (KTIZ). Two rotary towers on today's parking strip.</p>
+          <p className="sub">Live digital twin of the Kerala Startup Mission building (KTIZ), with two rotary towers on today's parking strip.</p>
         </div>
         <ModeSwitch />
       </header>
