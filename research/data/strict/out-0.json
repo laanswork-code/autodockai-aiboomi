@@ -1,0 +1,950 @@
+[
+ {
+  "id": 0,
+  "keep": true,
+  "category": "no-space",
+  "problem": "A traveller in Kozhikode town struggles to find a safe place to park a car for two days."
+ },
+ {
+  "id": 1,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Shoppers near Kozhikode's Rahmath and Paragon find the dedicated parking overcrowded at peak hours."
+ },
+ {
+  "id": 2,
+  "keep": true,
+  "category": "no-space",
+  "problem": "A weekly hybrid commuter struggles to find a safe place to leave a bike near Kozhikode town for three days."
+ },
+ {
+  "id": 3,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Visitors to Kozhikode beach are told to park a kilometre away because the beach road has no room."
+ },
+ {
+  "id": 4,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Visitors to Mananchira Square in Kozhikode find it very difficult to get a parking spot at peak times."
+ },
+ {
+  "id": 5,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 6,
+  "keep": true,
+  "category": "no-space",
+  "problem": "A traveller from Kozhikode worries about finding trusted overnight parking and whether railway parking is safe."
+ },
+ {
+  "id": 7,
+  "keep": true,
+  "category": "fees",
+  "problem": "Kozhikode residents complain of a parking mafia and fear parking charges at the beach will spoil visits."
+ },
+ {
+  "id": 8,
+  "keep": true,
+  "category": "fees",
+  "problem": "Kozhikode airport users say parking costs 85 rupees for just two hours, with extra charges after."
+ },
+ {
+  "id": 9,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 10,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 11,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Pedestrians near Kozhikode beach are forced onto the road because vehicles are parked on the footpath."
+ },
+ {
+  "id": 12,
+  "keep": true,
+  "category": "fees",
+  "problem": "A traveller was charged Rs.215 for about 31 hours at Kozhikode railway station parking."
+ },
+ {
+  "id": 13,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 14,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 15,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 16,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Lorry operators in Kozhikode city are demanding dedicated parking spots because they have nowhere to park."
+ },
+ {
+  "id": 17,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Truck drivers in Kozhikode city are seeking a dedicated parking spot because they have nowhere to park."
+ },
+ {
+  "id": 18,
+  "keep": true,
+  "category": "failed-facilities",
+  "problem": "Kozhikode's multi-level car parking projects are stuck in limbo, leaving the city without the promised parking."
+ },
+ {
+  "id": 19,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 20,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Autorickshaw drivers in Kozhikode are demanding more dedicated parking spots."
+ },
+ {
+  "id": 21,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Bus operators on the Kozhikode-Kuttiyadi route want action against illegal parking that obstructs them."
+ },
+ {
+  "id": 22,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 23,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 24,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 25,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 26,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 27,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Truckers in Kozhikode city do not have enough parking space."
+ },
+ {
+  "id": 28,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 29,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 30,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 31,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 32,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Motorists faced chaos at a railway station parking lot in Kozhikode."
+ },
+ {
+  "id": 33,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 34,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Long-haul truck drivers in Moorad, Kozhikode, are forced to park on a precarious 50-foot hill."
+ },
+ {
+  "id": 35,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 36,
+  "keep": true,
+  "category": "no-space",
+  "problem": "KSRTC lost Rs3.26 crore as 42 buses ran 16 km each just to find parking in Kozhikode."
+ },
+ {
+  "id": 37,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Road users on an NH 66 stretch in Kozhikode face safety risks from illegally parked lorries."
+ },
+ {
+  "id": 38,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 39,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 40,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 41,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 42,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A youth died in Kozhikode after a mob attacked him in a parking dispute."
+ },
+ {
+  "id": 43,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 44,
+  "keep": true,
+  "category": "fees",
+  "problem": "Travellers at Kozhikode airport are outraged at an Rs40 entry fee charged despite the parking rules."
+ },
+ {
+  "id": 45,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Kochi residents are frustrated by drivers parking in no-parking zones, even in the middle of the road."
+ },
+ {
+  "id": 46,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 47,
+  "keep": true,
+  "category": "fees",
+  "problem": "A visitor says Lulu Mall Kochi charges more for parking than the rates they understood."
+ },
+ {
+  "id": 48,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Visitors to Edappally and Lulu Mall Kochi face terrible Sunday traffic and are told to park at the metro instead."
+ },
+ {
+  "id": 49,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Mall-goers in Kochi worry Forum Mall parking is still a circling hunt for a spot."
+ },
+ {
+  "id": 50,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 51,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Visitors planning Fort Kochi trips are warned that traffic and lack of parking make driving a bad idea."
+ },
+ {
+  "id": 52,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 53,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 54,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 55,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Fort Kochi residents see owners of expensive cars parking on the footpath instead of building a garage."
+ },
+ {
+  "id": 56,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Employees at Infopark Kochi say finding a parking spot is harder than getting a job."
+ },
+ {
+  "id": 57,
+  "keep": true,
+  "category": "no-space",
+  "problem": "A driver could not find a parking spot near WTC at Infopark Kochi for a month."
+ },
+ {
+  "id": 58,
+  "keep": true,
+  "category": "fees",
+  "problem": "A patient was shocked by Rs50 for the first hour at pay and park near Lisie Hospital, Kochi."
+ },
+ {
+  "id": 59,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 60,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 61,
+  "keep": true,
+  "category": "failed-facilities",
+  "problem": "Users call Kochi metro parking ridiculous because access to areas outside main stations is barely wide enough for a car."
+ },
+ {
+  "id": 62,
+  "keep": true,
+  "category": "failed-facilities",
+  "problem": "Kochi metro users were left looking for other stations after car parking at Vadakkekotta was closed."
+ },
+ {
+  "id": 63,
+  "keep": true,
+  "category": "fees",
+  "problem": "Travellers say parking near Ernakulam North railway station costs 30 to 50 rupees per hour, which is too high."
+ },
+ {
+  "id": 64,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Commuters find it hard to park two-wheelers at Kochi metro stations, with very few spaces near Maharajas ground."
+ },
+ {
+  "id": 65,
+  "keep": true,
+  "category": "fees",
+  "problem": "A visitor calls Lulu Mall Kochi's apparent parking fee hike to 50 rupees unreasonable."
+ },
+ {
+  "id": 66,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 67,
+  "keep": true,
+  "category": "fees",
+  "problem": "Bike owners at Forum Mall Kochi now have to pay 10 rupees for parking."
+ },
+ {
+  "id": 68,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 69,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Pedestrians on Ernakulam Broadway can barely walk through because two-wheelers are parked in three rows."
+ },
+ {
+  "id": 70,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Kochi drivers circle hunting for one empty parking spot amid the city's parking chaos."
+ },
+ {
+  "id": 71,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 72,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Indiscriminate parking is choking Kochi's roads and the problem remains unsolved."
+ },
+ {
+  "id": 73,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Road users on Kochi's national highways face congestion and accident risk from parked trucks and roadside unloading."
+ },
+ {
+  "id": 74,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 75,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Cyclists on Marine Drive in Kochi lose their cycling track to parked vehicles amid poor enforcement."
+ },
+ {
+  "id": 76,
+  "keep": true,
+  "category": "fees",
+  "problem": "Lulu Mall Kochi customers complained about parking fees, leading to a High Court notice."
+ },
+ {
+  "id": 77,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Illegal parking near the Vytilla mobility hub in Kochi blocks the service road, and hub officials filed a complaint."
+ },
+ {
+  "id": 78,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 79,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Illegal parking near the Vytilla mobility hub in Kochi blocks the service road, and hub officials filed a complaint."
+ },
+ {
+  "id": 80,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 81,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Residents of cramped Kochi have little parking space and are turning to agencies for help."
+ },
+ {
+  "id": 82,
+  "keep": true,
+  "category": "fees",
+  "problem": "Lulu Mall Kochi customers complained they are being charged parking fees, leading to a High Court notice."
+ },
+ {
+  "id": 83,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Road users on Udayanagar Road in Kochi are choked by illegal truck parking even after renovation."
+ },
+ {
+  "id": 84,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Pedestrians in Kochi lose walkways that have become parking strips."
+ },
+ {
+  "id": 85,
+  "keep": true,
+  "category": "fines-towing",
+  "problem": "Visitors to Kochi corporation office and general hospital struggle with parking fines."
+ },
+ {
+  "id": 86,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 87,
+  "keep": true,
+  "category": "fees",
+  "problem": "Non-commuters using crowded Kochi Metro stations must pay higher parking charges after a hike."
+ },
+ {
+  "id": 88,
+  "keep": true,
+  "category": "failed-facilities",
+  "problem": "Outsourced parking at Kochi metro stations suffers from poor monitoring and fee collection problems."
+ },
+ {
+  "id": 89,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 90,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Kochi drivers face what a report calls a parking nightmare."
+ },
+ {
+  "id": 91,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 92,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 93,
+  "keep": true,
+  "category": "fees",
+  "problem": "Users of a multi-level parking space in Kochi were charged fees that the High Court said are illegal."
+ },
+ {
+  "id": 94,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 95,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 96,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 97,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 98,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 99,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 100,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 101,
+  "keep": true,
+  "category": "fees",
+  "problem": "Commuters at nine Kochi metro stations face a parking fee increase."
+ },
+ {
+  "id": 102,
+  "keep": true,
+  "category": "fees",
+  "problem": "Mall visitors in Kerala pay parking fees that the High Court called prima facie illegal."
+ },
+ {
+  "id": 103,
+  "keep": true,
+  "category": "fees",
+  "problem": "Tourism stakeholders protest new parking charges at Cochin airport and want them withdrawn."
+ },
+ {
+  "id": 104,
+  "keep": true,
+  "category": "fees",
+  "problem": "Train passengers protested a steep rise in parking fees at railway stations."
+ },
+ {
+  "id": 105,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 106,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 107,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 108,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 109,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 110,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 111,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 112,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 113,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 114,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 115,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 116,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 117,
+  "keep": true,
+  "category": "fees",
+  "problem": "Commuters will have to pay more for parking at railway stations."
+ },
+ {
+  "id": 118,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Kochi's vehicle numbers are growing but there is not enough space to park them."
+ },
+ {
+  "id": 119,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 120,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 121,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 122,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Kochi hospitals hit by a space crunch are adopting vertical parking."
+ },
+ {
+  "id": 123,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 124,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Truckers at Vallarpadam face parking woes."
+ },
+ {
+  "id": 125,
+  "keep": true,
+  "category": "failed-facilities",
+  "problem": "Container trucks keep skipping the designated parking facility in Kochi, leaving it unused."
+ },
+ {
+  "id": 126,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Road users in Kochi face risk from haphazard parking by trailer trucks."
+ },
+ {
+  "id": 127,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 128,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Passengers at Kochi railway stations face parking as a major issue."
+ },
+ {
+  "id": 129,
+  "keep": true,
+  "category": "failed-facilities",
+  "problem": "Container parking terminals in Kochi run at under 50 percent occupancy, leaving trucks parking elsewhere."
+ },
+ {
+  "id": 130,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Parking woes on Container Road in Kochi show no end."
+ },
+ {
+  "id": 131,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 132,
+  "keep": true,
+  "category": "fees",
+  "problem": "Lulu Mall Kochi visitors' complaints over parking fees led the High Court to send notice to the government and mall."
+ },
+ {
+  "id": 133,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 134,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 135,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 136,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 137,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A security guard in Kochi was assaulted over a parking dispute and two people were booked."
+ },
+ {
+  "id": 138,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Road users near the Kumbalam toll plaza face continued illegal truck parking."
+ },
+ {
+  "id": 139,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Tripunithura residents protested over illegal parking along with a stray dog menace."
+ },
+ {
+  "id": 140,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 141,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 142,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 143,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 144,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 145,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 146,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 147,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 148,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Road users on the Seaport-Airport road in Kochi are concerned about illegally parked large oil tankers."
+ },
+ {
+  "id": 149,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 150,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Residents' association Trura wants action against illegal parking around Kochi Metro stations."
+ },
+ {
+  "id": 151,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 152,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 153,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 154,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 155,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 156,
+  "keep": true,
+  "category": "fees",
+  "problem": "A visitor to GG Hospital Thiruvananthapuram suspects a parking fee scam, with payment demanded elsewhere in the city too."
+ },
+ {
+  "id": 157,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Visitors to the General Hospital in Thiruvananthapuram must hunt on nearby roads with no guarantee of a space."
+ }
+]

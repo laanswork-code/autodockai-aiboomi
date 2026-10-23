@@ -1,0 +1,950 @@
+[
+ {
+  "id": 316,
+  "keep": true,
+  "category": "ev-charging",
+  "problem": "An EV owner in a Bengaluru apartment fought a long legal battle before getting permission to install a charger in their own parking slot."
+ },
+ {
+  "id": 317,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 318,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 319,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 320,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 321,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 322,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 323,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 324,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 325,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 326,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 327,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 328,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 329,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 330,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 331,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 332,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 333,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 334,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 335,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 336,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 337,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 338,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 339,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 340,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 341,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 342,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 343,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 344,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 345,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 346,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 347,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 348,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 349,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 350,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 351,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 352,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 353,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 354,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 355,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 356,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 357,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 358,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 359,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 360,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 361,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 362,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 363,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 364,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 365,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 366,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 367,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 368,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 369,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 370,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 371,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 372,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 373,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 374,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 375,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 376,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 377,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 378,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 379,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 380,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 381,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 382,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 383,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 384,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 385,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 386,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 387,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 388,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 389,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 390,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 391,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 392,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 393,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 394,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 395,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Cab drivers and travellers at Bengaluru airport faced new parking and pick-up rules that drew protests and criticism from the minister."
+ },
+ {
+  "id": 396,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Cab drivers and travellers at Bengaluru airport faced new parking and pick-up rules that drew protests and criticism from the minister."
+ },
+ {
+  "id": 397,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 398,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 399,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Cab drivers in Bengaluru protested the airport's new parking policy."
+ },
+ {
+  "id": 400,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Cab drivers and travellers at Bengaluru airport faced new parking rules that the state government ordered tweaked after protests."
+ },
+ {
+  "id": 401,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 402,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 403,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Traffic on Bengaluru airport road was disrupted as cab drivers protested the new airport parking rules."
+ },
+ {
+  "id": 404,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 405,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 406,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Cab drivers and travellers at Bengaluru airport faced a new parking policy that the transport minister criticised for making people spend more."
+ },
+ {
+  "id": 407,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Cab drivers protested the new parking rules at Kempegowda International Airport in Bengaluru."
+ },
+ {
+  "id": 408,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 409,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Travellers at Bengaluru airport T1 arrivals faced short free parking time until backlash led to an increase."
+ },
+ {
+  "id": 410,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 411,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 412,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 413,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 414,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 415,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 416,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 417,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 418,
+  "keep": true,
+  "category": "residential",
+  "problem": "A Mumbai renter paying 35k+ rent cannot buy a car because the parking promised by the landlord is not available."
+ },
+ {
+  "id": 419,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Travellers picking up arrivals at Mumbai airport T2 face a chaotic parking lot with abandoned cars parked zigzag and diagonally."
+ },
+ {
+  "id": 420,
+  "keep": true,
+  "category": "fees",
+  "problem": "Residents of Borivali West, Mumbai, are losing free roadside parking as roads are converted to pay and park."
+ },
+ {
+  "id": 421,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Mumbai drivers say practically every road has a no parking sign and pay and park options are not affordable or accessible."
+ },
+ {
+  "id": 422,
+  "keep": true,
+  "category": "failed-facilities",
+  "problem": "A mechanical multilevel car park collapsed in Matunga, Mumbai, blamed on poor hardware and maintenance."
+ },
+ {
+  "id": 423,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 424,
+  "keep": true,
+  "category": "residential",
+  "problem": "Residents of a redeveloped Mumbai society have less than one parking space per flat and face a blind lottery for allotment."
+ },
+ {
+  "id": 425,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 426,
+  "keep": true,
+  "category": "fees",
+  "problem": "A driver at Mumbai airport describes a parking scam while a queue of cars honked behind them."
+ },
+ {
+  "id": 427,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Car owners in Mumbai find legal car parking spots taken by auto rickshaws that park and nap in them."
+ },
+ {
+  "id": 428,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 429,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 430,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 431,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 432,
+  "keep": true,
+  "category": "fines-towing",
+  "problem": "Malabar Hill residents in Mumbai are irked by parking fines and bad roads."
+ },
+ {
+  "id": 433,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 434,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A man was killed and another critically injured after a parking dispute in Navi Mumbai."
+ },
+ {
+  "id": 435,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A 63-year-old man in Mumbai was killed by two men over a parking dispute."
+ },
+ {
+  "id": 436,
+  "keep": true,
+  "category": "disputes",
+  "problem": "Residents of an Ambernath housing society had five vehicles set on fire by a woman over a parking dispute."
+ },
+ {
+  "id": 437,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A man was brutally murdered over a parking dispute in Dharavi, Mumbai, and a viral video shows him bleeding and asking for help."
+ },
+ {
+  "id": 438,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A man died after a parking dispute in Kandivli, Mumbai."
+ },
+ {
+  "id": 439,
+  "keep": true,
+  "category": "disputes",
+  "problem": "Two Delhi neighbours fought violently over parking, and a witness says seeing a killing left them traumatised."
+ },
+ {
+  "id": 440,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A resident of a three-floor Delhi building faces a persistent parking dispute and is seeking legal options."
+ },
+ {
+  "id": 441,
+  "keep": true,
+  "category": "disputes",
+  "problem": "Delhi residents say parking is the biggest cause of neighbour feuds, with people even murdered over it."
+ },
+ {
+  "id": 442,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A newly arrived Delhi car owner finds many people claim ownership of public parking spots."
+ },
+ {
+  "id": 443,
+  "keep": true,
+  "category": "disputes",
+  "problem": "Gurgaon residents blocked by cars parked in front of theirs wait to leave for work, and parking disputes quickly escalate into fights."
+ },
+ {
+  "id": 444,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "A Delhi resident on the first floor has a neighbour parking in front of their building gate and seeks advice."
+ },
+ {
+  "id": 445,
+  "keep": true,
+  "category": "disputes",
+  "problem": "Residents of a Janakpuri flat building in Delhi are caught in a parking dispute."
+ },
+ {
+  "id": 446,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 447,
+  "keep": true,
+  "category": "ev-charging",
+  "problem": "An EV owner in a Noida housing society was fined Rs 25,000 by the AOA, sparking debate over charging infrastructure."
+ },
+ {
+  "id": 448,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 449,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 450,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Drivers in Delhi circling for parking add to traffic congestion every minute."
+ },
+ {
+  "id": 451,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 452,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 453,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 454,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 455,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Shoppers and visitors at Khan Market in Delhi still face parking problems."
+ },
+ {
+  "id": 456,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 457,
+  "keep": true,
+  "category": "fines-towing",
+  "problem": "Commuters in Sector 62, Noida, are fined daily for parking on the road because there is no surface parking facility."
+ },
+ {
+  "id": 458,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 459,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A parking dispute in Preet Vihar, Delhi, escalated from an argument to gunfire."
+ },
+ {
+  "id": 460,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A man was brutally killed over a parking dispute in East Delhi."
+ },
+ {
+  "id": 461,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A man was shot dead by a BMW and Fortuner owner over a midnight parking dispute in Delhi."
+ },
+ {
+  "id": 462,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A man was killed by a neighbour with a BMW over a parking spot in Delhi."
+ },
+ {
+  "id": 463,
+  "keep": true,
+  "category": "disputes",
+  "problem": "Delhi residents face parking wars that now end in murder and court cases."
+ },
+ {
+  "id": 464,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A 26-year-old woman was stabbed to death by a minor and her husband injured in a Delhi parking dispute."
+ },
+ {
+  "id": 465,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A woman was killed and her husband critically hurt over a parking dispute in Dwarka, Delhi."
+ },
+ {
+  "id": 466,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A woman was stabbed to death and her husband injured in a fight over parking in Delhi."
+ },
+ {
+  "id": 467,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A woman was stabbed to death and her husband injured over a parking dispute in Delhi."
+ },
+ {
+  "id": 468,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A man was killed over a parking dispute in Delhi."
+ },
+ {
+  "id": 469,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A 77-year-old man died after being pushed by a neighbour following a parking spat in Noida."
+ },
+ {
+  "id": 470,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A property dealer was shot dead over a parking dispute in Preet Vihar, Delhi."
+ },
+ {
+  "id": 471,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A family in Preet Vihar, Delhi, lost a member to a parking dispute murder."
+ },
+ {
+  "id": 472,
+  "keep": true,
+  "category": "disputes",
+  "problem": "The family of an East Delhi trader killed over a parking row is in shock."
+ },
+ {
+  "id": 473,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A fruit trader was stabbed to death over a parking dispute in a Gurugram mandi."
+ }
+]

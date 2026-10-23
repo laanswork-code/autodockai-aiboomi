@@ -36,9 +36,40 @@ for (const f of files) {
 posts.sort((a, b) => CITY_ORDER.indexOf(a.city) - CITY_ORDER.indexOf(b.city)
   || KIND_ORDER.indexOf(a.kind) - KIND_ORDER.indexOf(b.kind));
 
+await writeFile(new URL("candidates.json", DATA), JSON.stringify(posts, null, 2));
+
+// Second, stricter pass: data/strict/in-N.json holds candidates (id = index above);
+// out-N.json keeps only items where someone actually faced a parking problem.
+const STRICT = new URL("strict/", DATA);
+const strict = new Map();
+for (const f of (await readdir(STRICT).catch(() => [])).filter((f) => f.startsWith("out-"))) {
+  for (const o of await read(new URL(f, STRICT))) strict.set(o.id, o);
+}
+const final = strict.size
+  ? posts.flatMap((p, id) => {
+      const s = strict.get(id);
+      return s?.keep ? [{ ...p, category: s.category, problem: tidy(s.problem) }] : [];
+    })
+  : posts;
+
+// One card per incident: widely covered stories collapse into the first report,
+// with the rest listed as related links.
+const INCIDENTS = [/huma qureshi/i, /iiser|swarnkar|scientist/i, /araria|forbesganj|ravi chauhan|beheads/i,
+  /pinjore/i, /varanasi|up teacher/i, /south delhi road rage/i, /preet vihar|bmw owner|property dealer, his stepson/i];
+const merged = [];
+for (const p of final) {
+  const re = INCIDENTS.find((r) => r.test(p.title));
+  const head = re && merged.find((m) => re.test(m.title));
+  if (head) (head.related ??= []).push({ url: p.url, source: p.source });
+  else merged.push(p);
+}
+// The strict pass filled some dispute summaries with "People were hurt or killed...: <headline>".
+// The headline already says it, so drop those.
+for (const p of merged) if (/^People were hurt or killed/i.test(p.problem)) p.problem = "";
+
 const meta = { collected: new Date().toISOString().slice(0, 10), cities: CITY_ORDER };
-await writeFile(new URL("posts.json", DATA), JSON.stringify(posts, null, 2));
+await writeFile(new URL("posts.json", DATA), JSON.stringify(merged, null, 2));
 const template = await readFile(new URL("template.html", SITE), "utf8");
-const payload = JSON.stringify({ meta, posts }).replace(/</g, "\\u003c");
+const payload = JSON.stringify({ meta, posts: merged }).replace(/</g, "\\u003c");
 await writeFile(new URL("index.html", SITE), template.replace("/*__DATA__*/null", payload));
-console.log(`${posts.length} posts -> site/index.html`);
+console.log(`${posts.length} candidates, ${merged.length} problems -> site/index.html`);

@@ -1,0 +1,950 @@
+[
+ {
+  "id": 158,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Patients at Precise Eye Hospital in Thiruvananthapuram face limited, underground-only parking."
+ },
+ {
+  "id": 159,
+  "keep": true,
+  "category": "fees",
+  "problem": "Hospital visitors in Thiruvananthapuram are charged hourly parking, with the free grounds across the road in another compound."
+ },
+ {
+  "id": 160,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 161,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "A resident near a Thiruvananthapuram supermarket has their gate completely blocked by cars parked in front of it."
+ },
+ {
+  "id": 162,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Drivers in Thiruvananthapuram say the city has no proper parking facilities, making it hard to park legally."
+ },
+ {
+  "id": 163,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A driver in Thiruvananthapuram was confronted by a stationery shop owner over parking near a no parking cone."
+ },
+ {
+  "id": 164,
+  "keep": true,
+  "category": "fines-towing",
+  "problem": "Drivers in Thiruvananthapuram say almost everywhere is a no-parking zone and signs are missing, so they risk being penalised."
+ },
+ {
+  "id": 165,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 166,
+  "keep": true,
+  "category": "hubs",
+  "problem": "A driver was stuck for 50 minutes trying to exit the Lulu Mall parking lot in Thiruvananthapuram."
+ },
+ {
+  "id": 167,
+  "keep": true,
+  "category": "fees",
+  "problem": "Travellers say the new parking charges at Thiruvananthapuram airport are steep compared with Cochin airport."
+ },
+ {
+  "id": 168,
+  "keep": true,
+  "category": "fees",
+  "problem": "A traveller was charged 559 rupees for car parking at Thampanoor railway station after rates rose sharply."
+ },
+ {
+  "id": 169,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Road users on Chala Road in Thiruvananthapuram face severe traffic snarl-ups from illegal parking."
+ },
+ {
+  "id": 170,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 171,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Rampant illegal parking chokes the Museum to Kanakakunnu stretch in Thiruvananthapuram."
+ },
+ {
+  "id": 172,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 173,
+  "keep": true,
+  "category": "fees",
+  "problem": "Rail passengers in the Thiruvananthapuram division demand a rollback of a steep parking fee hike at stations."
+ },
+ {
+  "id": 174,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Onam shoppers in Thiruvananthapuram faced choked roads and police fines because of a shortage of parking spaces."
+ },
+ {
+  "id": 175,
+  "keep": true,
+  "category": "fees",
+  "problem": "Users of Thiruvananthapuram airport face higher parking and user fees, raising affordability concerns."
+ },
+ {
+  "id": 176,
+  "keep": true,
+  "category": "failed-facilities",
+  "problem": "Multi-level parking lot projects in Thiruvananthapuram are delayed, leaving the city short of parking."
+ },
+ {
+  "id": 177,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 178,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 179,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 180,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 181,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 182,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Drivers in Thiruvananthapuram find parking space bursting at the seams because of the vehicle boom."
+ },
+ {
+  "id": 183,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 184,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 185,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 186,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 187,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 188,
+  "keep": true,
+  "category": "fees",
+  "problem": "Trivandrum Chamber urges the airport to review high parking fees that burden users."
+ },
+ {
+  "id": 189,
+  "keep": true,
+  "category": "fees",
+  "problem": "Traders seek a review of steep parking and access charges at Thiruvananthapuram airport."
+ },
+ {
+  "id": 190,
+  "keep": true,
+  "category": "fees",
+  "problem": "Commuters and taxi drivers are under strain after a parking charge hike at Thiruvananthapuram airport."
+ },
+ {
+  "id": 191,
+  "keep": true,
+  "category": "fees",
+  "problem": "Youth Congress workers protested at Thiruvananthapuram airport over increased parking charges."
+ },
+ {
+  "id": 192,
+  "keep": true,
+  "category": "fees",
+  "problem": "Political parties demand withdrawal of parking and user fee hikes at Thiruvananthapuram airport."
+ },
+ {
+  "id": 193,
+  "keep": true,
+  "category": "fees",
+  "problem": "Airport workers in Thiruvananthapuram had to agitate to win a waiver from a parking fee hike."
+ },
+ {
+  "id": 194,
+  "keep": true,
+  "category": "fees",
+  "problem": "Political parties demand rollback of the airport parking fee hike in Thiruvananthapuram."
+ },
+ {
+  "id": 195,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 196,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 197,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Residents say illegally parked vehicles hold Thiruvananthapuram's neighbourhood roads hostage."
+ },
+ {
+  "id": 198,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 199,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 200,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 201,
+  "keep": true,
+  "category": "fees",
+  "problem": "Visitors in Thiruvananthapuram face illegal parking fee collection, prompting officials to plan a crackdown."
+ },
+ {
+  "id": 202,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 203,
+  "keep": true,
+  "category": "fees",
+  "problem": "Passengers are irked by high parking charges at Thiruvananthapuram railway station."
+ },
+ {
+  "id": 204,
+  "keep": true,
+  "category": "failed-facilities",
+  "problem": "Thiruvananthapuram's biggest multi-level car parking facility remains underutilised while the city struggles for parking."
+ },
+ {
+  "id": 205,
+  "keep": true,
+  "category": "failed-facilities",
+  "problem": "Thiruvananthapuram gasps under the Onam rush while its multi-level parking lies underused."
+ },
+ {
+  "id": 206,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 207,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 208,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 209,
+  "keep": true,
+  "category": "fees",
+  "problem": "Visitors to tourist spots in Thiruvananthapuram say parking fee collectors overcharge them in 'daylight robbery'."
+ },
+ {
+  "id": 210,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "The public near Thiruvananthapuram Museum police station is troubled by illegal parking."
+ },
+ {
+  "id": 211,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 212,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 213,
+  "keep": true,
+  "category": "fines-towing",
+  "problem": "Drivers in Thiruvananthapuram faced chaos after parking restrictions were imposed."
+ },
+ {
+  "id": 214,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 215,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 216,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 217,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 218,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 219,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 220,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 221,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 222,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 223,
+  "keep": true,
+  "category": "failed-facilities",
+  "problem": "Multi-level car parking at the Thiruvananthapuram corporation office is yet to open to the public."
+ },
+ {
+  "id": 224,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 225,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 226,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 227,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 228,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 229,
+  "keep": true,
+  "category": "fees",
+  "problem": "Commuters are frustrated by a steep parking fee hike at a Thiruvananthapuram railway station and bus stand."
+ },
+ {
+  "id": 230,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 231,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 232,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 233,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 234,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 235,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 236,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 237,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 238,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 239,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 240,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 241,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 242,
+  "keep": true,
+  "category": "failed-facilities",
+  "problem": "Museum visitors in Trivandrum are irked that parking space is used for impounded vehicles."
+ },
+ {
+  "id": 243,
+  "keep": true,
+  "category": "no-space",
+  "problem": "A person visiting Thrissur round often cannot easily find parking nearby."
+ },
+ {
+  "id": 244,
+  "keep": true,
+  "category": "fees",
+  "problem": "Shoppers at Hilite Mall Thrissur say the new parking fee has a 15 minute free period that is of little use."
+ },
+ {
+  "id": 245,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "A Thrissur family is trapped inside its own home by illegally parked trucks."
+ },
+ {
+  "id": 246,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Eight students died in a Thrissur crash blamed on an illegally parked lorry and a speeding car."
+ },
+ {
+  "id": 247,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 248,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 249,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 250,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 251,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 252,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 253,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 254,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 255,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A lottery distributor was murdered in Thrissur after a parking dispute."
+ },
+ {
+  "id": 256,
+  "keep": true,
+  "category": "failed-facilities",
+  "problem": "Owners of bikes burnt in the Thrissur railway station parking area plan to petition consumer court."
+ },
+ {
+  "id": 257,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 258,
+  "keep": true,
+  "category": "failed-facilities",
+  "problem": "Owners of bikes burnt in the Thrissur railway station parking fire are seeking compensation."
+ },
+ {
+  "id": 259,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 260,
+  "keep": true,
+  "category": "ev-charging",
+  "problem": "An apartment resident in Kerala has no common charging point at parking slots and the association is unresponsive."
+ },
+ {
+  "id": 261,
+  "keep": true,
+  "category": "fees",
+  "problem": "Kerala shoppers question why malls charge for parking when building approval requires free customer parking."
+ },
+ {
+  "id": 262,
+  "keep": true,
+  "category": "disputes",
+  "problem": "Kerala shop owners put no-parking boards on public roads in front of their premises, causing friction with drivers."
+ },
+ {
+  "id": 263,
+  "keep": true,
+  "category": "no-space",
+  "problem": "A Kerala resident calls parking a huge problem for shops and stores."
+ },
+ {
+  "id": 264,
+  "keep": true,
+  "category": "disputes",
+  "problem": "Shop owners and car owners in Kerala clash over who may use roadside parking in front of shops."
+ },
+ {
+  "id": 265,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "A Kerala resident struggles to get an illegally parked vehicle removed and asks about police or towing."
+ },
+ {
+  "id": 266,
+  "keep": true,
+  "category": "fines-towing",
+  "problem": "A Kerala driver wants to dispute a parking ticket they believe was wrongly issued."
+ },
+ {
+  "id": 267,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 268,
+  "keep": true,
+  "category": "fees",
+  "problem": "Kerala shoppers say malls still collect parking charges despite a rule against it."
+ },
+ {
+  "id": 269,
+  "keep": true,
+  "category": "fines-towing",
+  "problem": "A Kerala driver was fined for a parking violation and may have the vehicle impounded if unpaid."
+ },
+ {
+  "id": 270,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 271,
+  "keep": true,
+  "category": "fees",
+  "problem": "A traveller felt parking charges at Changanassery railway station were steep."
+ },
+ {
+  "id": 272,
+  "keep": true,
+  "category": "fees",
+  "problem": "Railway station parking fees across Kerala are being increased, burdening users."
+ },
+ {
+  "id": 273,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Drivers in Kerala park on storm water drains because there is no place to park."
+ },
+ {
+  "id": 274,
+  "keep": true,
+  "category": "fees",
+  "problem": "Parking fees at Kerala malls have drawn legal scrutiny after customer complaints."
+ },
+ {
+  "id": 275,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Road users on MC Road face repeated mishaps from tipper trucks parked alongside, with no action taken."
+ },
+ {
+  "id": 276,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Road users in Muvattupuzha face roads turned into parking zones at night by interstate luxury buses."
+ },
+ {
+  "id": 277,
+  "keep": true,
+  "category": "fees",
+  "problem": "Kerala railway station users face higher parking fees and extra charges to store helmets."
+ },
+ {
+  "id": 278,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Payyanur railway station sees no-parking warnings blatantly ignored amid the RPF's absence."
+ },
+ {
+  "id": 279,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Pedestrians in Edappal are forced onto the road because footpaths have turned into parking lots."
+ },
+ {
+  "id": 280,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 281,
+  "keep": true,
+  "category": "fees",
+  "problem": "Pilgrims at Sabarimala face illegal parking fee collection that needs to be checked."
+ },
+ {
+  "id": 282,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 283,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 284,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Vadakara Link road has become a parking lot, hampering road users."
+ },
+ {
+  "id": 285,
+  "keep": true,
+  "category": "hubs",
+  "problem": "Kollam roads choked during the Onam rush as parking chaos and encroachments mounted."
+ },
+ {
+  "id": 286,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 287,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 288,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 289,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 290,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 291,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 292,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 293,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 294,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 295,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 296,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 297,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 298,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 299,
+  "keep": true,
+  "category": "fees",
+  "problem": "Devotees at Guruvayur are at risk of being squeezed by parking fees at the complex, says the BJP."
+ },
+ {
+  "id": 300,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 301,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Residents of Bengaluru say parking is a nightmare, with too little space and weak enforcement."
+ },
+ {
+  "id": 302,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Drivers in Bengaluru say the car parking situation is horrible and enforcement is lacking."
+ },
+ {
+  "id": 303,
+  "keep": true,
+  "category": "disputes",
+  "problem": "Residents face roadside parking fights in Bengaluru, with apartments claiming public spots as their own."
+ },
+ {
+  "id": 304,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Bengaluru keeps adding cars but not parking, leaving drivers with nowhere to park."
+ },
+ {
+  "id": 305,
+  "keep": true,
+  "category": "disputes",
+  "problem": "A driver in Bengaluru is shouted at by nearby residents for parking in the spot they usually use on a public street."
+ },
+ {
+  "id": 306,
+  "keep": true,
+  "category": "residential",
+  "problem": "Homeowners in Bengaluru with a garage still park outside because strangers keep blocking their garage entrance."
+ },
+ {
+  "id": 307,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Cars parked along Bengaluru roads eat up half the carriageway in many areas."
+ },
+ {
+  "id": 308,
+  "keep": true,
+  "category": "no-space",
+  "problem": "Bengaluru residents say multi-floor buildings are approved without adequate parking, pushing cars onto public roads."
+ },
+ {
+  "id": 309,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 310,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 311,
+  "keep": true,
+  "category": "disputes",
+  "problem": "Some Bengaluru owners block parking outside their houses with plants and road dividers, causing conflict over public space."
+ },
+ {
+  "id": 312,
+  "keep": false,
+  "category": "",
+  "problem": ""
+ },
+ {
+  "id": 313,
+  "keep": true,
+  "category": "fees",
+  "problem": "Bengaluru metro station users pay 30 rupees for about two hours and fear harassment if they object."
+ },
+ {
+  "id": 314,
+  "keep": true,
+  "category": "roadside-congestion",
+  "problem": "Bengaluru pedestrians lose footpaths to parked vehicles because markets and public places lack adequate parking."
+ },
+ {
+  "id": 315,
+  "keep": true,
+  "category": "ev-charging",
+  "problem": "A Bengaluru apartment EV owner had to fight a long legal battle to install a charger in their parking slot."
+ }
+]

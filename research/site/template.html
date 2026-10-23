@@ -132,12 +132,17 @@ h2 small { font: 500 14px/1 "Barlow", sans-serif; text-transform: none; color: v
 .card h3 a:hover { text-decoration: underline; text-decoration-color: var(--stop); text-underline-offset: 3px; }
 .problem { margin: 0; color: var(--ink-2); font-size: 15px; }
 .quote { margin: 0; font: italic 400 17px/1.4 "Source Serif 4", Georgia, serif; padding-left: 12px; border-left: 2px solid var(--mark); }
+.related { margin: 0; font-size: 13px; color: var(--ink-3); }
+.related a { color: var(--ink-2); }
 .foot { margin-top: auto; display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 6px; border-top: 1px dashed var(--rule); font-size: 13px; color: var(--ink-3); }
 .foot a { font-weight: 600; color: var(--sign); text-decoration: none; white-space: nowrap; }
 .foot a:hover { text-decoration: underline; }
 .empty { grid-column: 1 / -1; text-align: center; padding: 60px 0; color: var(--ink-3); font: 700 24px "Barlow Condensed", sans-serif; text-transform: uppercase; }
-.more { display: block; margin: -40px auto 60px; font: 700 18px "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .06em; padding: 12px 22px; border: 2px solid var(--ink); background: transparent; color: var(--ink); border-radius: 4px; cursor: pointer; }
-.more:hover { background: var(--ink); color: var(--paper); }
+.pgroup { padding-bottom: 36px; }
+.pgroup:last-child { padding-bottom: 60px; }
+.ghead { border-top: 3px solid var(--ink); padding-top: 14px; scroll-margin-top: 80px; }
+.ghead .rank { color: var(--stop); font-variant-numeric: tabular-nums; }
+.pgroup .grid { padding-bottom: 0; }
 
 footer { border-top: 3px solid var(--ink); padding: 28px 0 48px; color: var(--ink-2); font-size: 14px; }
 footer h2 { font-size: 22px; }
@@ -168,7 +173,7 @@ footer p { max-width: 80ch; }
     <div>
       <div class="kicker">Field evidence · Kozhikode · Kochi · Kerala · India</div>
       <h1>Nowhere<br><span>to park.</span></h1>
-      <p class="lede">What people actually say about parking: Reddit threads, forum posts and local news, collected from the open web and sorted by city and by the kind of pain. Every card links to the original.</p>
+      <p class="lede">What people actually say about parking: Reddit threads, forum posts and local news, collected from the open web and grouped by the problem people faced, biggest problem first. Every card links to the original.</p>
     </div>
   </header>
 
@@ -190,18 +195,13 @@ footer p { max-width: 80ch; }
   <div class="wrap">
     <input id="q" type="search" placeholder="Search titles, summaries, quotes…" aria-label="Search">
     <div class="seg" id="kinds" role="group" aria-label="Source type"></div>
-    <select id="sort" aria-label="Sort">
-      <option value="city">Sort: Kerala first</option>
-      <option value="kind">Sort: Reddit first</option>
-    </select>
     <button class="reset" id="reset" type="button">Clear filters</button>
     <span class="count" id="count"></span>
   </div>
 </div>
 
 <main class="wrap">
-  <div class="grid" id="grid"></div>
-  <button class="more" id="more" type="button" hidden>Show more</button>
+  <div id="grid"></div>
 </main>
 
 <footer>
@@ -223,17 +223,18 @@ const CATS = {
   "residential": "Homes and apartments",
   "hubs": "Metro, station, mall, hospital",
   "ev-charging": "EV charging",
-  "policy-infra": "Policy and parking projects",
+  "failed-facilities": "Parking that failed or sits unused",
 };
 const KINDS = { all: "All", reddit: "Reddit", web: "Forums", news: "News" };
 const KERALA = new Set(["Kozhikode", "Kochi", "Thiruvananthapuram", "Thrissur", "Kerala (other)"]);
-const PAGE = 60;
 
 const posts = DATA.posts;
-const state = { city: null, cat: null, kind: "all", q: "", sort: "city", shown: PAGE };
+const state = { city: null, cat: null, kind: "all", q: "" };
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const countBy = (arr, key) => arr.reduce((m, p) => (m[p[key]] = (m[p[key]] || 0) + 1, m), {});
+// Google News dates arrive as "04/28/2025, 07:00 AM, +0000 UTC".
+const niceDate = (d) => { const m = /^(\d\d)\/(\d\d)\/(\d{4})/.exec(d || ""); return m ? new Date(+m[3], m[1] - 1, +m[2]).toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" }) : d; };
 const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
 
 // Theme toggle (per-viewer convenience, storage may be unavailable)
@@ -251,7 +252,7 @@ function renderStats() {
   const k = countBy(posts, "kind");
   const kerala = posts.filter((p) => KERALA.has(p.city)).length;
   const cells = [
-    [posts.length, "complaints and reports"],
+    [posts.length, "problems people faced"],
     [kerala, "from Kerala"],
     [k.reddit || 0, "Reddit threads"],
     [k.news || 0, "news reports"],
@@ -299,11 +300,12 @@ function card(p, i) {
   const showQuote = p.quote && !p.title.toLowerCase().includes(p.quote.toLowerCase().slice(0, 40));
   const src = p.kind === "reddit" ? p.source : (p.source || host(p.url));
   return `<article class="card ${p.kind}" style="animation-delay:${Math.min(i, 12) * 30}ms">
-    <div class="meta"><span class="tag src">${esc(src)}</span><span class="tag">${esc(p.city)}</span><span class="tag">${esc(CATS[p.category] || p.category)}</span></div>
+    <div class="meta"><span class="tag src">${esc(src)}</span><span class="tag">${esc(p.city)}</span></div>
     <h3><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.title)}</a></h3>
     ${p.problem ? `<p class="problem">${esc(p.problem)}</p>` : ""}
     ${showQuote ? `<p class="quote">“${esc(p.quote)}”</p>` : ""}
-    <div class="foot"><span>${esc(p.engagement || p.date || KINDS[p.kind])}</span><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">Open original ↗</a></div>
+    ${p.related ? `<p class="related">+${p.related.length} more ${p.related.length === 1 ? "report" : "reports"} on this incident: ${p.related.map((r, k) => `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.source || host(r.url))}</a>`).join(", ")}</p>` : ""}
+    <div class="foot"><span>${esc(p.engagement || niceDate(p.date) || KINDS[p.kind])}</span><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">Open original ↗</a></div>
   </article>`;
 }
 
@@ -311,18 +313,18 @@ function render() {
   renderBars(posts.filter((p) => matches(p, "cat")));
   renderCities(posts.filter((p) => matches(p, "city")));
   renderKinds();
-  let list = posts.filter((p) => matches(p));
-  if (state.sort === "kind") {
-    const order = ["reddit", "web", "news"];
-    list = [...list].sort((a, b) => order.indexOf(a.kind) - order.indexOf(b.kind));
-  }
+  // Grouped by problem, biggest group first. Within a group the build order
+  // holds: Kerala first, then Reddit and forums before news.
+  const list = posts.filter((p) => matches(p));
+  const groups = Object.entries(countBy(list, "category")).sort((a, b) => b[1] - a[1]);
   $("count").textContent = `${list.length} of ${posts.length}`;
-  $("grid").innerHTML = list.length ? list.slice(0, state.shown).map(card).join("") : `<div class="empty">Nothing matches. Try clearing filters.</div>`;
-  $("more").hidden = list.length <= state.shown;
-  $("more").textContent = `Show more (${list.length - state.shown} left)`;
+  $("grid").innerHTML = list.length ? groups.map(([cat, n], g) => `<section class="pgroup">
+      <h2 class="ghead" id="p-${cat}"><span class="rank">${String(g + 1).padStart(2, "0")}</span> ${esc(CATS[cat] || cat)} <small>${n} ${n === 1 ? "problem" : "problems"}</small></h2>
+      <div class="grid">${list.filter((p) => p.category === cat).map(card).join("")}</div></section>`).join("")
+    : `<div class="empty">Nothing matches. Try clearing filters.</div>`;
 }
 
-const refilter = () => { state.shown = PAGE; render(); };
+const refilter = () => render();
 document.addEventListener("click", (e) => {
   const t = e.target.closest("[data-cat],[data-city],[data-kind]");
   if (!t) return;
@@ -332,9 +334,7 @@ document.addEventListener("click", (e) => {
   refilter();
 });
 $("q").addEventListener("input", (e) => { state.q = e.target.value.trim().toLowerCase(); refilter(); });
-$("sort").addEventListener("change", (e) => { state.sort = e.target.value; refilter(); });
 $("reset").onclick = () => { Object.assign(state, { city: null, cat: null, kind: "all", q: "" }); $("q").value = ""; refilter(); };
-$("more").onclick = () => { state.shown += PAGE; render(); };
 
 renderStats();
 render();
