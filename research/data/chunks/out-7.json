@@ -1,0 +1,1034 @@
+[
+ {
+  "id": 393,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "An apartment buyer in India faces a parking dispute after delayed registration and is seeking RERA or consumer court advice.",
+  "quote": "Seeking legal advice (RERA/Consumer Court)"
+ },
+ {
+  "id": 394,
+  "keep": true,
+  "city": "Chennai",
+  "category": "residential",
+  "problem": "A flat owner living abroad says their rented Chennai apartment has trouble over common parking space and seeks legal advice.",
+  "quote": "too many"
+ },
+ {
+  "id": 395,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "disputes",
+  "problem": "An apartment owner in Bangalore says they are being threatened over their own parking space.",
+  "quote": "Being threatened over my own parking space"
+ },
+ {
+  "id": 396,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "residential",
+  "problem": "A resident of Indiranagar, Bengaluru says the road in front of their house is too narrow to park their car.",
+  "quote": "There isn't sufficient space to park my car in front of our house."
+ },
+ {
+  "id": 397,
+  "keep": true,
+  "city": "India (other)",
+  "category": "fees",
+  "problem": "Home buyers in India are asked to pay 5-10 lakh for a parking slot along with the flat.",
+  "quote": "builders ask buyers to pay 5-10L"
+ },
+ {
+  "id": 398,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "Buyers in India say a builder sold the same parking spot to 3 different buyers.",
+  "quote": "sold the SAME parking spot to 3 different"
+ },
+ {
+  "id": 399,
+  "keep": true,
+  "city": "India (other)",
+  "category": "fees",
+  "problem": "A flat buyer says the builder demands 4 lakhs for parking that was not mentioned in the agreement.",
+  "quote": "4 Lakhs for Parking not mentioned in agreement"
+ },
+ {
+  "id": 400,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "An apartment buyer says the builder claims all parking slots are sold out, though parking was never mentioned in the agreement.",
+  "quote": "all the parking slots are sold out and he can't do anything"
+ },
+ {
+  "id": 401,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "A flat buyer says the builder refuses to allocate a car park at possession, citing pending basement work.",
+  "quote": "the builder is still refusing to provide an allocated parking"
+ },
+ {
+  "id": 402,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 403,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 404,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 405,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 406,
+  "keep": true,
+  "city": "Chennai",
+  "category": "residential",
+  "problem": "Residents of a Chennai apartment say it can accommodate only 3 cars for parking.",
+  "quote": "Our apartment can accommodate only 3 cars for parking."
+ },
+ {
+  "id": 407,
+  "keep": true,
+  "city": "Chennai",
+  "category": "fees",
+  "problem": "Residents in a Chennai apartment say the association demands parking fees for parking in vacant spots.",
+  "quote": "Apartment association demanding Parking fees for parking in vacant spots."
+ },
+ {
+  "id": 408,
+  "keep": true,
+  "city": "Chennai",
+  "category": "residential",
+  "problem": "Residents of a Chennai apartment say cars parked in unallotted space sometimes stop them from even opening the main gate.",
+  "quote": "we can't able to even open the main gate sometimes"
+ },
+ {
+  "id": 409,
+  "keep": true,
+  "city": "Chennai",
+  "category": "roadside-congestion",
+  "problem": "Chennai residents face disputes and traffic congestion from cars parked on streets.",
+  "quote": "causing disputes and traffic congestion"
+ },
+ {
+  "id": 410,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 411,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 412,
+  "keep": true,
+  "city": "Chennai",
+  "category": "residential",
+  "problem": "A Chennai resident wants to confront a neighbour who parks in the wrong place despite having his own parking space.",
+  "quote": "tell him to park in his space"
+ },
+ {
+  "id": 413,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 414,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "residential",
+  "problem": "Residents in a Delhi locality have no place to park their cars and neighbours fight a lot.",
+  "quote": "There is no place for residents to park their cars"
+ },
+ {
+  "id": 415,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "residential",
+  "problem": "A Gurgaon resident says a bullying neighbour keeps hijacking their parking spot.",
+  "quote": "My neighbour is a bully and keeps hijacking my parking"
+ },
+ {
+  "id": 416,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "roadside-congestion",
+  "problem": "A Delhi resident found someone's car parked in front of their gate and asks what to do.",
+  "quote": "Someone parked his car infront of my gate."
+ },
+ {
+  "id": 417,
+  "keep": true,
+  "city": "India (other)",
+  "category": "roadside-congestion",
+  "problem": "A family says a neighbour deliberately parks his unused car directly in front of their house to create nuisance.",
+  "quote": "deliberately creating nuisance by parking his unused car directly in front of our house"
+ },
+ {
+  "id": 418,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A Delhi resident says aggressive neighbours put up cones or number plates to block public parking spots.",
+  "quote": "many of my neighbours have put up cones or number plates to block parking spots"
+ },
+ {
+  "id": 419,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A scooter owner is in a parking dispute with a neighbour over a few inches of the scooter extending toward his side.",
+  "quote": "Only a few inches of my scooter extend towards that side"
+ },
+ {
+  "id": 420,
+  "keep": true,
+  "city": "India (other)",
+  "category": "roadside-congestion",
+  "problem": "A family says a neighbour without dedicated parking keeps parking his car directly in front of their house gate.",
+  "quote": "keeps parking his car directly in front of our house gate"
+ },
+ {
+  "id": 421,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "An EV owner found both plugs of a public charger blocked by badly parked cars.",
+  "quote": "both blocked due to bad parking"
+ },
+ {
+  "id": 422,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV owners say highway petrol pumps lack working chargers, with one claiming installed chargers are made not to work.",
+  "quote": "the charger installed does not work"
+ },
+ {
+  "id": 423,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV owners complain that people block chargers, comparing it to hijacking petrol pump terminals.",
+  "quote": "literally blocking the country's infrastructure"
+ },
+ {
+  "id": 424,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "An EV owner had to struggle to find another charger after one outside a Goa medical college failed, and asks where to complain.",
+  "quote": "I had to struggle and find another charger"
+ },
+ {
+  "id": 425,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 426,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 427,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 428,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 429,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 430,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 431,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV owners say people do not vacate chargers after 80 percent and there is no way to queue for the next charge.",
+  "quote": "People not vacating the chargers after 80%+ of charge"
+ },
+ {
+  "id": 432,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 433,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "An EV driver on an expressway had to wait 2 hours in a queue because only one charger was available.",
+  "quote": "Had to wait for 2 hrs in the queue"
+ },
+ {
+  "id": 434,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 435,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 436,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 437,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 438,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 439,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV users in India report chargers showing available but not working, payment failures and no proper maintenance.",
+  "quote": "Chargers showing “available” but not working"
+ },
+ {
+  "id": 440,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV drivers in India find chargers occupied or broken, with RFID readers failing and many apps needed.",
+  "quote": "Charger is occupied or broken."
+ },
+ {
+  "id": 441,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV owners are urged to report broken BPCL Ionage chargers through the helpline.",
+  "quote": "Report Broken BPCL Ionage Chargers!"
+ },
+ {
+  "id": 442,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "An EV buyer hesitates over charging infrastructure, noting nearly a third of India's charging stations are non functional or unreliable.",
+  "quote": "nearly a third are non functional or unreliable"
+ },
+ {
+  "id": 443,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV owners in India need multiple apps to find one working station and get no real-time reliability information.",
+  "quote": "You need multiple apps just to find one working station"
+ },
+ {
+  "id": 444,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV owners arrive at charging stations to find chargers not working and have to restart them or call support.",
+  "quote": "call support and tell them to restart the charger."
+ },
+ {
+  "id": 445,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "An EV owner struggles to find chargers on road trips in India even with apps like ChargeZone and Statiq.",
+  "quote": "I’ve been struggling with this on road trips"
+ },
+ {
+  "id": 446,
+  "keep": true,
+  "city": "Hyderabad",
+  "category": "residential",
+  "problem": "Hyderabad residents report parking problems in apartments and gated communities caused by layout and other factors.",
+  "quote": "problems exist in standalone apartments and gated communities"
+ },
+ {
+  "id": 447,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 448,
+  "keep": true,
+  "city": "Hyderabad",
+  "category": "residential",
+  "problem": "Residents of Hyderabad gated communities struggle with guest parking and are told to ask guests to come by cab.",
+  "quote": "We can ask them to come by cab and association won't allow to park cars"
+ },
+ {
+  "id": 449,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 450,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 451,
+  "keep": true,
+  "city": "Hyderabad",
+  "category": "ev-charging",
+  "problem": "Residents of Hyderabad gated communities say many builders provide no dedicated EV charging sockets in the parking area.",
+  "quote": "Many builders are not providing a provision for dedicated AC EV charging sockets"
+ },
+ {
+  "id": 452,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 453,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 454,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV owners in apartment complexes face fewer chargers because society management denies permission.",
+  "quote": "the society's management denies permission"
+ },
+ {
+  "id": 455,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "A Tata Tiago EV owner living in an apartment has difficulty charging the vehicle.",
+  "quote": "have difficulty charging my electric vehicle"
+ },
+ {
+  "id": 456,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV owners in Indian apartments face complexes that do not permit chargers in basements over fire safety concerns.",
+  "quote": "many apartment complexes don't permit EV chargers in basements due to fire safety concerns"
+ },
+ {
+  "id": 457,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 458,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 459,
+  "keep": true,
+  "city": "Kochi",
+  "category": "residential",
+  "problem": "Kochi residents with 2 cars in a 3BHK flat struggle to find a second parking space and rely on guest parking.",
+  "quote": "Guest parking can be used if empty for a few days until you find a space."
+ },
+ {
+  "id": 460,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "residential",
+  "problem": "Kerala apartment residents say guest parking is scarce and parking is a problem in flats.",
+  "quote": "parking sucks"
+ },
+ {
+  "id": 461,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "residential",
+  "problem": "Residents of flats near Technopark say owners' associations create parking issues, even when guest parking was full.",
+  "quote": "Have heard issues from most flats near Technopark"
+ },
+ {
+  "id": 462,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 463,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 464,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 465,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 466,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 467,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 468,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 469,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 470,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 471,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 472,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 473,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 474,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 475,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 476,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 477,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 478,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 479,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "roadside-congestion",
+  "problem": "A driver says people park carelessly on narrow village roads in Kerala, blocking the way to the market.",
+  "quote": "idiots parking on narrow village roads in Kerala"
+ },
+ {
+  "id": 480,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fines-towing",
+  "problem": "A driver in Thiruvananthapuram was fined for roadside parking on MG Road where no signboards showed it was prohibited.",
+  "quote": "This was MG Road where I got fined for Parking last December."
+ },
+ {
+  "id": 481,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 482,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 483,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 484,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 485,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 486,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 487,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "A Mumbai flat buyer has a dispute with the society over the parking they purchased with the apartment.",
+  "quote": "I also purchased a parking."
+ },
+ {
+  "id": 488,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "A Navi Mumbai resident is in a parking dispute with their society and says they are in quite a predicament.",
+  "quote": "i am in quite a predicament"
+ },
+ {
+  "id": 489,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "Residents of a Mumbai housing society fell out over a parking allotment process.",
+  "quote": "Parking allotment tiff in mumbai housing society"
+ },
+ {
+  "id": 490,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "disputes",
+  "problem": "A Mumbai resident seeks advice on a parking dispute with a neighbour.",
+  "quote": "parking dispute with a neighbour"
+ },
+ {
+  "id": 491,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "A Navi Mumbai resident is in a parking dispute with their society.",
+  "quote": "my parking dispute with the society"
+ },
+ {
+  "id": 492,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 493,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 494,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 495,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 496,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "A tenant in Thane says society members refuse to let them park their car because they are on rent.",
+  "quote": "as I am on rent, i cannot park my"
+ },
+ {
+  "id": 497,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "fees",
+  "problem": "A Mumbai resident with two cars says the society harasses them over parking charges for the car kept on the street.",
+  "quote": "Society harrasing over parking charges"
+ },
+ {
+  "id": 498,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 499,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 500,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 501,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 502,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "A first-time car buyer in Thane has no dedicated parking spot and asks where to park.",
+  "quote": "i do not have dedicated parking spot"
+ },
+ {
+  "id": 503,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "fees",
+  "problem": "MHADA apartment owners with 2 cars are told to keep one car outside or pay 200 rupees per day for the second.",
+  "quote": "pay 200/- per day parking charges for the second car"
+ },
+ {
+  "id": 504,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 505,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "fees",
+  "problem": "A buyer of a Mumbai suburban house is asked for 4 lakhs cash for an open car parking space.",
+  "quote": "The owner is asking for 4 lakhs cash for car parking."
+ },
+ {
+  "id": 506,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "A tenant who bought an electric two-wheeler says the society committee will not allow EV charging.",
+  "quote": "Society committee not allowing EV charging"
+ },
+ {
+  "id": 507,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "An EV owner found out their society will not allow a charger at their parking spot.",
+  "quote": "the society will not"
+ },
+ {
+  "id": 508,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "An EV owner says the housing society is not granting an NOC for a home charger.",
+  "quote": "Housing Society not granting NOC for Home Charger"
+ },
+ {
+  "id": 509,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 510,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 511,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 512,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 513,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "A car owner says apartment parking is very narrow, with 6 cars squeezed in and tight fits.",
+  "quote": "We have very narrow space & 6 cars are fitted"
+ },
+ {
+  "id": 514,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 515,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 516,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "A housing society has 10 charging outlets for 25 EVs, creating charging issues for residents.",
+  "quote": "10 charging outlets for 25 EV vehicles"
+ },
+ {
+  "id": 517,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV owners say housing societies refuse home chargers, citing fire hazard risk.",
+  "quote": "EV charging is a risky affair and can lead to fire hazards"
+ },
+ {
+  "id": 518,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "Apartment EV owners using a common charging point face higher cost with 18 percent GST and having to physically go to it.",
+  "quote": "With a common charging point you have all these problems"
+ },
+ {
+  "id": 519,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "An EV owner in a Kolkata gated community asks how to deal with the association opposing personal charging points.",
+  "quote": "community associations who are negative on the personal charging point installation"
+ },
+ {
+  "id": 520,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 521,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ }
+]

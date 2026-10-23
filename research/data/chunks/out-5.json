@@ -1,0 +1,1050 @@
+[
+ {
+  "id": 131,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 132,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 133,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 134,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 135,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 136,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV owners in a Bhubaneswar housing complex were denied permission by the association to set up an EV charging point, prompting a BDA notice.",
+  "quote": "Denial Of Permission For EV Charging Point"
+ },
+ {
+  "id": 137,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute in a Noida society triggered a clash on dandiya night and led to an arrest.",
+  "quote": ""
+ },
+ {
+  "id": 138,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 139,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "A homebuyer lost a court case after a neighbour occupied his parking slot.",
+  "quote": ""
+ },
+ {
+  "id": 140,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "A homebuyer lost a parking dispute in court after a neighbour occupied his parking space.",
+  "quote": ""
+ },
+ {
+  "id": 141,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 142,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "A homebuyer given parking by the builder in 2008 found the society later adopted a first come, first served rule.",
+  "quote": ""
+ },
+ {
+  "id": 143,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "A homebuyer was caught in a fight between builder and housing society over parking and had to go to court for relief.",
+  "quote": ""
+ },
+ {
+  "id": 144,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 145,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "disputes",
+  "problem": "TV actor Anuj Sachdeva alleges a society resident attacked him over a parking dispute.",
+  "quote": ""
+ },
+ {
+  "id": 146,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A woman and her brother were assaulted by a Lucknow housing society RWA president over a parking dispute.",
+  "quote": ""
+ },
+ {
+  "id": 147,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A man was assaulted by a group after a parking dispute at a Gurgaon society.",
+  "quote": ""
+ },
+ {
+  "id": 148,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 149,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "A flat buyer in a Mumbai project lost parking rights until MahaRERA restored them.",
+  "quote": ""
+ },
+ {
+  "id": 150,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "Flat buyers in a Santacruz parking dispute found they cannot automatically claim the seller's parking space.",
+  "quote": ""
+ },
+ {
+  "id": 151,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 152,
+  "keep": true,
+  "city": "India (other)",
+  "category": "fines-towing",
+  "problem": "A senior citizen was fined by his housing society for parking in open space and had to go to court for relief.",
+  "quote": ""
+ },
+ {
+  "id": 153,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 154,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent at the Science City housing society.",
+  "quote": ""
+ },
+ {
+  "id": 155,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 156,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 157,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A man bit off a housing society secretary's nose in a parking dispute in Kanpur.",
+  "quote": ""
+ },
+ {
+  "id": 158,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A 67-year-old man killed himself after a threat of a false sex case over a parking dispute.",
+  "quote": ""
+ },
+ {
+  "id": 159,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "fines-towing",
+  "problem": "A Mumbai housing society fined a resident Rs 15 lakh over bicycle parking, which the Bombay High Court quashed.",
+  "quote": ""
+ },
+ {
+  "id": 160,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A man was punched and kicked over a parking dispute in Ghaziabad.",
+  "quote": ""
+ },
+ {
+  "id": 161,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "Navi Mumbai housing society residents are in a fight with the authority over parking space.",
+  "quote": ""
+ },
+ {
+  "id": 162,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A renter was stabbed inside a Vadodara society in a parking dispute.",
+  "quote": ""
+ },
+ {
+  "id": 163,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 164,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "residential",
+  "problem": "Members of a Dwarka housing society lost their rights over stilt parking until the Registrar restored them.",
+  "quote": ""
+ },
+ {
+  "id": 165,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "Two men fought over a parking space in a Greater Noida building and were arrested.",
+  "quote": ""
+ },
+ {
+  "id": 166,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 167,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A woman was injured in a parking dispute in Pimple Gurav, and a family of three was booked.",
+  "quote": ""
+ },
+ {
+  "id": 168,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A security guard was thrashed by a drunk man over a parking dispute in a Dwarka housing society.",
+  "quote": ""
+ },
+ {
+  "id": 169,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "disputes",
+  "problem": "A senior citizen in a Mumbai housing society died by suicide after a woman threatened to file a fake case over a parking spot.",
+  "quote": ""
+ },
+ {
+  "id": 170,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 171,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "A dialysis patient says he was denied parking inside his condo, and a Haryana rights panel ordered a probe into harassment.",
+  "quote": ""
+ },
+ {
+  "id": 172,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "disputes",
+  "problem": "TV actor Anuj Sachdeva was assaulted by a neighbour after flagging an improperly parked car in Mumbai.",
+  "quote": ""
+ },
+ {
+  "id": 173,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "disputes",
+  "problem": "Anuj Sachdeva shows injury marks after a parking row and says Mumbai Police took no action.",
+  "quote": ""
+ },
+ {
+  "id": 174,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 175,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 176,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "disputes",
+  "problem": "TV actor Anuj Sachdeva was assaulted over a parking dispute in a Goregaon society.",
+  "quote": ""
+ },
+ {
+  "id": 177,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "disputes",
+  "problem": "TV actor Anuj Sachdeva was attacked with a rod by a Mumbai neighbour over a parking dispute.",
+  "quote": ""
+ },
+ {
+  "id": 178,
+  "keep": true,
+  "city": "India (other)",
+  "category": "no-space",
+  "problem": "Bhopal residents face parking wars as vehicle numbers increase while space shrinks.",
+  "quote": ""
+ },
+ {
+  "id": 179,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 180,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 181,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 182,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 183,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "ev-charging",
+  "problem": "Kerala EV owners are in a fix because KSEB chargers use incompatible connectors.",
+  "quote": "EV owners in fix"
+ },
+ {
+  "id": 184,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 185,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 186,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 187,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 188,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 189,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 190,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 191,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 192,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 193,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 194,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 195,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "ev-charging",
+  "problem": "Delhi EV users are frustrated by non-functional charging stations that have become ghost stations.",
+  "quote": "Non-functional charging stations frustrate Delhi’s EV users"
+ },
+ {
+  "id": 196,
+  "keep": true,
+  "city": "Hyderabad",
+  "category": "ev-charging",
+  "problem": "E-bus passengers in Telangana were left hot under the collar after a power cut at an EV charging station.",
+  "quote": ""
+ },
+ {
+  "id": 197,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 198,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 199,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 200,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 201,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 202,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 203,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 204,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 205,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 206,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 207,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 208,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "ev-charging",
+  "problem": "Delhi EV owners face charging woes and app chaos that slow adoption.",
+  "quote": ""
+ },
+ {
+  "id": 209,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 210,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "A video exposes India's EV charging crisis and infrastructure failures for EV users.",
+  "quote": ""
+ },
+ {
+  "id": 211,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 212,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 213,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 214,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 215,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 216,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 217,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 218,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 219,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 220,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 221,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 222,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 223,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 224,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 225,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 226,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 227,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "ev-charging",
+  "problem": "Kerala EV owners are frustrated by wide price disparities at private charging stations.",
+  "quote": "EV owners frustrated by wide private charging price disparities"
+ },
+ {
+  "id": 228,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 229,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 230,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 231,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "ev-charging",
+  "problem": "Kerala EV owners find pole-mounted charging units a herculean task to locate.",
+  "quote": "turns a herculean task"
+ },
+ {
+  "id": 232,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "ev-charging",
+  "problem": "Kerala EV owners face KSEB charging rate hikes that make prices higher than private stations.",
+  "quote": ""
+ },
+ {
+  "id": 233,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 234,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "ev-charging",
+  "problem": "Kerala EV owners are anxious over charging because of frequent power outages.",
+  "quote": "leave Keralam’s EV owners anxious over charging woes"
+ },
+ {
+  "id": 235,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 236,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 237,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 238,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 239,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "Nashik's EV boom has left the city short of charging stations.",
+  "quote": "EV boom leaves Nashik city short of charging stations"
+ },
+ {
+  "id": 240,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 241,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 242,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 243,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 244,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 245,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 246,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 247,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 248,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 249,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 250,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 251,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 252,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 253,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 254,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 255,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 256,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 257,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 258,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 259,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 260,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 261,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ }
+]

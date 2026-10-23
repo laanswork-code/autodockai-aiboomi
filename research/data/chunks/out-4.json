@@ -1,0 +1,1050 @@
+[
+ {
+  "id": 0,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 1,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 2,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 3,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 4,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 5,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 6,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 7,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 8,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 9,
+  "keep": true,
+  "city": "Kochi",
+  "category": "residential",
+  "problem": "A Kochi apartment owner says the builder gave no guest parking for cars or two-wheelers, causing a parking problem in the complex.",
+  "quote": "the builder did not provide for guest parking of either cars or 2 wheelers"
+ },
+ {
+  "id": 10,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 11,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 12,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 13,
+  "keep": true,
+  "city": "Kochi",
+  "category": "residential",
+  "problem": "A Kochi apartment resident, Riga Aravindan, is struggling to find a space to park her new car in her complex.",
+  "quote": "facing a tough time finding a space to park her new car"
+ },
+ {
+  "id": 14,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 15,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 16,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 17,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "ev-charging",
+  "problem": "Residents of BDA apartments in Bengaluru face a gap in EV charging infrastructure.",
+  "quote": ""
+ },
+ {
+  "id": 18,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "BMW, Kia and XUV owners are fighting resident welfare associations and red tape to get EV chargers installed.",
+  "quote": ""
+ },
+ {
+  "id": 19,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "Indian housing societies are blocking residents from installing private EV home chargers in basement parking.",
+  "quote": ""
+ },
+ {
+  "id": 20,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "ev-charging",
+  "problem": "A Greater Noida man took his housing society to the Supreme Court because 56 EVs there share just two chargers.",
+  "quote": "56 EVs, just two chargers in housing society"
+ },
+ {
+  "id": 21,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 22,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 23,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "A Mercedes EQB owner had to fight a resident welfare association for 2.5 years before getting a home charger installed.",
+  "quote": "After 2.5 Year Dispute With RWA"
+ },
+ {
+  "id": 24,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 25,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 26,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 27,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "disputes",
+  "problem": "A Kerala tenant complained about another tenant parking vehicles in front of his shop.",
+  "quote": ""
+ },
+ {
+  "id": 28,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 29,
+  "keep": true,
+  "city": "Hyderabad",
+  "category": "disputes",
+  "problem": "A spat over parking turned into a fatal altercation in Kothapet, Telangana, and police booked a case.",
+  "quote": "Spat over parking turns into fatal altercation"
+ },
+ {
+  "id": 30,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "residential",
+  "problem": "Residents of Delhi colonies face a lack of parking spaces, and the High Court declined to intervene.",
+  "quote": "lack of parking spaces in residential colonies"
+ },
+ {
+  "id": 31,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A school teacher in Uttar Pradesh was beaten to death over a parking dispute and three people were arrested.",
+  "quote": "beaten to death over parking dispute"
+ },
+ {
+  "id": 32,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "no-space",
+  "problem": "People face a fight for parking space that does not exist.",
+  "quote": "A war out there for parking space that does not exist"
+ },
+ {
+  "id": 33,
+  "keep": true,
+  "city": "Kochi",
+  "category": "disputes",
+  "problem": "A dispute over parking space continues at Marine Drive in Kochi.",
+  "quote": "Dispute over parking space continues"
+ },
+ {
+  "id": 34,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A bar owner in Greater Noida abused security guards and threatened to shoot them over a parking dispute.",
+  "quote": "Threatens To Shoot Them Over Parking Dispute"
+ },
+ {
+  "id": 35,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "A man paid Rs 22 lakh for a flat but did not get the promised parking space and won Rs 40,000 compensation.",
+  "quote": "Man pays Rs 22 lakh for flat"
+ },
+ {
+  "id": 36,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "residential",
+  "problem": "A Greater Noida flat owner fought eight years in consumer court to get a parking space denied to him.",
+  "quote": "parking space denied to him after 8-year battle"
+ },
+ {
+  "id": 37,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "Homebuyers had to go to a consumer forum to get promised parking spaces from a developer.",
+  "quote": "Hand Over Promised Parking Spaces"
+ },
+ {
+  "id": 38,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 39,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "Mumbai homebuyers are in parking wars as consumer forums hear cases over parking allotment.",
+  "quote": "Consumer forum fuels parking wars"
+ },
+ {
+  "id": 40,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "Homebuyers in Maharashtra lost a case over stilt parking after the court held the builder's allotment invalid.",
+  "quote": "Homebuyers lose stilt parking case"
+ },
+ {
+  "id": 41,
+  "keep": true,
+  "city": "Hyderabad",
+  "category": "residential",
+  "problem": "A homebuyer in Ranga Reddy district was not given a second parking spot and the builder was fined Rs 1 lakh.",
+  "quote": "failing to deliver second parking spot"
+ },
+ {
+  "id": 42,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 43,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 44,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "residential",
+  "problem": "A Kerala homebuyer was not given permanent car parking slots by the builder and RERA ordered Rs 75,000 compensation.",
+  "quote": "Failing To Provide Permanent Car Parking Slots"
+ },
+ {
+  "id": 45,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 46,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "A flat buyer was not given parking space by the builder and a court had to order it.",
+  "quote": "Provide parking space to flat bought from landowner"
+ },
+ {
+  "id": 47,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "Mumbai housing society members lost parking slots that the builder sold, and a consumer body ruled against the builder.",
+  "quote": "Builder can’t sell society parking slots"
+ },
+ {
+  "id": 48,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "A Mumbai homebuyer was allotted no parking slot and was awarded Rs 75,000.",
+  "quote": "No parking slot allotted"
+ },
+ {
+  "id": 49,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "A Mumbai resident was denied a parking slot by the housing society, which was fined and told to give one.",
+  "quote": "must give resident parking slot"
+ },
+ {
+  "id": 50,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 51,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV owners say housing societies can block their chargers, and the Supreme Court may decide the issue.",
+  "quote": "Can a housing society block your EV charger?"
+ },
+ {
+  "id": 52,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 53,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 54,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 55,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "A housing society denied a resident's private EV charger and the case reached the Supreme Court.",
+  "quote": "Housing society denies private EV charger"
+ },
+ {
+  "id": 56,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 57,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 58,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 59,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "India's EV owners face obstruction from landlords, housing societies and the fire department when trying to charge at home.",
+  "quote": "Landlord, Housing Society, and Fire Department"
+ },
+ {
+  "id": 60,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "ev-charging",
+  "problem": "A Gurgaon apartment asked owners to remove EV chargers because the fire department gave no NOC.",
+  "quote": "Gurgaon Apartment Asks Owners To Remove EV Chargers"
+ },
+ {
+  "id": 61,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV owners cannot get fire department NOC for car chargers in covered apartment parking.",
+  "quote": "Not Giving NOC For Electric Car Chargers"
+ },
+ {
+  "id": 62,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "An EV owner went to the Supreme Court after the RWA delayed permission for a home charger.",
+  "quote": "After RWA Delays Permission For Home Charger"
+ },
+ {
+  "id": 63,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "A prospective EV buyer worries that charging at their apartment will be an issue.",
+  "quote": "charging it will be an issue at my apartment"
+ },
+ {
+  "id": 64,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 65,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 66,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "An EV owner had to find a way to install a charger after the apartment complex banned it.",
+  "quote": "Despite Apartment Complex Banning It"
+ },
+ {
+  "id": 67,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "Residents are prohibited from installing EV chargers in basement parking.",
+  "quote": "Residents prohibited from installing EV chargers"
+ },
+ {
+  "id": 68,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 69,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "ev-charging",
+  "problem": "EV owners and RWAs in Bengaluru are fighting over charging points in apartments.",
+  "quote": "Cross Swords Over Charging Points"
+ },
+ {
+  "id": 70,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 71,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "Housing societies deny personal EV chargers and residents face a Rs 25,000 fine for charging at home.",
+  "quote": "Rs 25,000 fine for charging at home"
+ },
+ {
+  "id": 72,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 73,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "ev-charging",
+  "problem": "Bengaluru RWAs are at odds with EV owners over charging infrastructure.",
+  "quote": "RWAs at odds with EV owners"
+ },
+ {
+  "id": 74,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 75,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "ev-charging",
+  "problem": "A Gurgaon basement EV charger dispute has taken a new twist.",
+  "quote": "Gurgaon basement charger saga"
+ },
+ {
+  "id": 76,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 77,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 78,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 79,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 80,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "ev-charging",
+  "problem": "Karnataka's EV users face charging, cost and infrastructure hurdles.",
+  "quote": "face charging, cost and infrastructure hurdles"
+ },
+ {
+  "id": 81,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 82,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 83,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 84,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "An EV owner was not allowed to charge their vehicle at their condo and wrote to the District Magistrate.",
+  "quote": "EV owner not allowed to charge vehicle at condo"
+ },
+ {
+  "id": 85,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "ev-charging",
+  "problem": "After the RWA refused, a Bengaluru EV owner hauled an e-scooter to a fifth-floor kitchen to charge it.",
+  "quote": "After RWA snub, EV owner hauls e-scooter to 5th floor kitchen"
+ },
+ {
+  "id": 86,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 87,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 88,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 89,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 90,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 91,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 92,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 93,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 94,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV customers are facing charging roadblocks.",
+  "quote": "EV customers facing charging roadblocks"
+ },
+ {
+  "id": 95,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 96,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 97,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 98,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 99,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 100,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 101,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "ev-charging",
+  "problem": "An Ather scooter owner charges the scooter in the kitchen of a fifth-floor flat.",
+  "quote": "Getting Charged In Kitchen Of 5th Floor Flat"
+ },
+ {
+  "id": 102,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 103,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 104,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 105,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 106,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 107,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 108,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 109,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "Housing societies arbitrarily deny EV charger NOCs, prompting a PIL in the Supreme Court.",
+  "quote": "arbitrary denial of EV charger NOCs by housing societies"
+ },
+ {
+  "id": 110,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "An automotive influencer warns people against buying EVs because of problems with charging ports.",
+  "quote": "warns people against buying EVs"
+ },
+ {
+  "id": 111,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 112,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 113,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 114,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "An EV owner says India is not ready for EVs and has written to Nitin Gadkari.",
+  "quote": "India Is NOT Ready For EVs"
+ },
+ {
+  "id": 115,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "EV charging was denied by a housing society, sparking a legal battle.",
+  "quote": "EV Charging Denied"
+ },
+ {
+  "id": 116,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 117,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 118,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 119,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 120,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 121,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 122,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 123,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "ev-charging",
+  "problem": "A housing society member in Mumbai went to the Bombay HC over lack of EV charging stations.",
+  "quote": "Lack of EV charging stations"
+ },
+ {
+  "id": 124,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 125,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "ev-charging",
+  "problem": "An EV owner was fined Rs 25,000 for charging a vehicle in a Noida apartment complex.",
+  "quote": "Fined ₹25,000 for Charging Vehicle in Noida Apartment Complex"
+ },
+ {
+  "id": 126,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "A Nexon EV owner at 8% battery was denied charger access by Tata and offered one by MG.",
+  "quote": "Tata denies charger access"
+ },
+ {
+  "id": 127,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 128,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 129,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 130,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ }
+]

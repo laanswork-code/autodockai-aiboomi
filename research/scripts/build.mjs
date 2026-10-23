@@ -38,19 +38,22 @@ posts.sort((a, b) => CITY_ORDER.indexOf(a.city) - CITY_ORDER.indexOf(b.city)
 
 await writeFile(new URL("candidates.json", DATA), JSON.stringify(posts, null, 2));
 
-// Second, stricter pass: data/strict/in-N.json holds candidates (id = index above);
-// out-N.json keeps only items where someone actually faced a parking problem.
+// Second, stricter pass: data/strict/out-N.json keeps only items where someone
+// actually faced a parking problem. Decisions are joined by URL via in-N.json.
+// Items with no strict decision (later batches, classified with the strict
+// rubric in pass 1) keep their pass 1 result.
 const STRICT = new URL("strict/", DATA);
 const strict = new Map();
 for (const f of (await readdir(STRICT).catch(() => [])).filter((f) => f.startsWith("out-"))) {
-  for (const o of await read(new URL(f, STRICT))) strict.set(o.id, o);
+  const input = await read(new URL(f.replace("out-", "in-"), STRICT));
+  const urlOf = new Map(input.map((i) => [i.id, i.url]));
+  for (const o of await read(new URL(f, STRICT))) strict.set(urlOf.get(o.id), o);
 }
-const final = strict.size
-  ? posts.flatMap((p, id) => {
-      const s = strict.get(id);
-      return s?.keep ? [{ ...p, category: s.category, problem: tidy(s.problem) }] : [];
-    })
-  : posts;
+const final = posts.flatMap((p) => {
+  const s = strict.get(p.url);
+  if (!s) return [p];
+  return s.keep ? [{ ...p, category: s.category, problem: tidy(s.problem) }] : [];
+});
 
 // One card per incident: widely covered stories collapse into the first report,
 // with the rest listed as related links.
