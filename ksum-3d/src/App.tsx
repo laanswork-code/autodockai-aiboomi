@@ -14,11 +14,11 @@ export default function App() {
     <div className="app">
       <Canvas
         shadows={LITE ? false : 'percentage'}
-        dpr={LITE ? 1 : [1, 1.75]}
+        dpr={LITE ? 1 : [1, 1.5]}
         // software WebGL renders slowly enough to starve the page's network callbacks, so only redraw on change
         frameloop={LITE ? 'demand' : 'always'}
         camera={{ position: [...START.pos], fov: 38, near: 0.5, far: 3000 }}
-        gl={{ antialias: true, toneMapping: THREE.ACESFilmicToneMapping, preserveDrawingBuffer: true }}
+        gl={{ antialias: true, toneMapping: THREE.ACESFilmicToneMapping, preserveDrawingBuffer: LITE }}
       >
         <Suspense fallback={null}>
           <Scene />

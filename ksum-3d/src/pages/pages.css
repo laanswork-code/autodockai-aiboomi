@@ -2,29 +2,37 @@
 .page {
   position: fixed; inset: 0; overflow-y: auto; background: #f3efe6; color: var(--ink);
   --card: #fbf9f4; --line: #d4ccbb; --muted: #6b6f76; --sub: #4a4e55; --warn: #b7791f; --bad: #c8322b;
+  /* one spacing and radius scale for both pages */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px;
+  --r-sm: 4px; --r-md: 8px; --r-lg: 10px;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  animation: page-fade 220ms var(--ease-out) both;
 }
-.page-loading { position: fixed; inset: 0; display: grid; place-items: center; color: #4a4e55; font: 600 15px system-ui, sans-serif; }
+/* Only shows when a chunk takes longer than 300 ms, so warm navigations never flash it. */
+.page-loading { position: fixed; inset: 0; display: grid; place-items: center; color: #4a4e55; font: 600 15px system-ui, sans-serif; animation: page-fade 200ms ease-out 300ms both; }
+@keyframes page-fade { from { opacity: 0; } }
+@keyframes page-rise { from { transform: translateY(8px); } }
 .page__bar { height: 8px; background: repeating-linear-gradient(90deg, var(--mark) 0 46px, transparent 46px 74px), var(--ink); }
-.page__wrap { max-width: 1240px; margin: 0 auto; padding: 0 16px 48px; }
+.page__wrap { max-width: 1240px; margin: 0 auto; padding: 0 16px 48px; animation: page-rise 260ms var(--ease-out) backwards; }
 .page__head { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; padding: 20px 0 16px; border-bottom: 3px solid var(--ink); margin-bottom: 20px; }
 .page__head h1 { margin: 2px 0 0; font-size: 28px; line-height: 1.1; }
 .page__head .sub { margin: 4px 0 0; }
 .page__title { flex: 1 1 320px; }
 
-.panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-lg); padding: var(--s4); min-width: 0; }
 .panel h2 { margin: 0 0 4px; font-size: 17px; }
 .panel .hint { margin: 0 0 12px; font-size: 13px; color: var(--muted); }
-.pill { display: inline-flex; align-items: center; gap: 6px; font: 600 13px system-ui, sans-serif; padding: 6px 10px; border-radius: 999px; background: #e3efe7; color: #1e6b3f; }
-.pill::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
-.pill.is-down { background: #f6e3e1; color: var(--bad); }
-.pill.is-wait { background: #eee9dd; color: var(--sub); }
-.tag-sim { display: inline-block; font: 700 11px system-ui, sans-serif; letter-spacing: .08em; padding: 3px 6px; border-radius: 4px; background: var(--mark); color: var(--ink); vertical-align: 2px; }
+.page .pill { display: inline-flex; align-items: center; gap: 6px; font: 600 13px system-ui, sans-serif; padding: 6px 10px; border-radius: 999px; background: #e3efe7; color: #1e6b3f; }
+.page .pill::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+.page .pill.is-down { background: #f6e3e1; color: var(--bad); }
+.page .pill.is-wait { background: #eee9dd; color: var(--sub); }
+.page .tag-sim { display: inline-block; font: 700 11px system-ui, sans-serif; letter-spacing: .08em; padding: 3px 6px; border-radius: 4px; background: var(--mark); color: var(--ink); vertical-align: 2px; }
 
 /* single-series horizontal bars: label, track, value */
 .bars { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .bars li { display: grid; grid-template-columns: minmax(120px, 190px) 1fr 52px; align-items: center; gap: 10px; font-size: 13.5px; }
 .bars .track { height: 14px; background: #ece6da; border-radius: 4px; overflow: hidden; }
-.bars .fill { height: 100%; background: var(--sign); border-radius: 0 4px 4px 0; }
+.bars .fill { height: 100%; background: var(--sign); border-radius: 0 4px 4px 0; transition: width 400ms var(--ease-out); }
 .bars .val { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
 .bars a { color: inherit; }
 
@@ -35,9 +43,15 @@
 .tbl .better { color: #1e6b3f; font-weight: 600; }
 .tbl .worse { color: var(--bad); font-weight: 600; }
 .tbl-wrap { overflow-x: auto; }
+.tbl td.mono { white-space: nowrap; }
 .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; }
 
 @media (max-width: 700px) {
   .bars li { grid-template-columns: 110px 1fr 44px; }
   .page__head h1 { font-size: 22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page__wrap { animation: none; }
+  .bars .fill { transition: none; }
 }

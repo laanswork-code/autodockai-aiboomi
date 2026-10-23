@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { KIND_LABEL, clock, valueText } from './format.ts'
 import type { Decision, DecisionKind } from './types.ts'
 import { AUTO_THRESHOLD, ESCALATES } from './types.ts'
@@ -44,8 +45,8 @@ function Row({ item, kind }: { item: FeedItem; kind: DecisionKind }) {
   )
 }
 
-/** One car at the gate and the four decisions made for it. */
-export function DecisionCard({ item }: { item: FeedItem }) {
+/** One car at the gate and the four decisions made for it. Memoized: the store keeps untouched items by reference. */
+export const DecisionCard = memo(function DecisionCard({ item }: { item: FeedItem }) {
   const { arrival: a } = item
   return (
     <article className="dcard">
@@ -60,4 +61,4 @@ export function DecisionCard({ item }: { item: FeedItem }) {
       </ul>
     </article>
   )
-}
+})

@@ -60,7 +60,7 @@ export default function ProblemsPage() {
           {groups.map(([cat, n]) => <a key={cat} href={`#p-${cat}`}>{CATEGORY_LABEL[cat] ?? cat} <b>{n}</b></a>)}
         </nav>
 
-        {groups.length === 0 ? <p className="pempty">Nothing matches.</p> : groups.map(([cat, n], g) => (
+        {groups.length === 0 ? <p className="pempty">Nothing matches. <button type="button" className="btn" onClick={() => { setQuery(''); setKind('all'); setCity('') }}>Clear filters</button></p> : groups.map(([cat, n], g) => (
           <section key={cat} className="pgroup">
             <h2 id={`p-${cat}`}><span>{String(g + 1).padStart(2, '0')}</span> {CATEGORY_LABEL[cat] ?? cat} <small>{n} {n === 1 ? 'problem' : 'problems'}</small></h2>
             <div className="pgrid">

@@ -37,10 +37,10 @@ const radiusFor = (kw: number) => (kw > 0 ? Math.min(0.45, 0.12 + 0.06 * Math.sq
 /** Metres per second along the line. */
 const speedFor = (kw: number) => (kw > 0 ? Math.min(7, 0.6 + 0.12 * kw) : 0)
 
-interface FlowProps { points: THREE.Vector3[]; kw: number; color: string; dash: readonly [number, number] }
+interface FlowProps { points: THREE.Vector3[]; kw: number; color: string; dash: readonly [number, number]; active: boolean }
 
 /** A polyline drawn as a faint guide tube with dashes running along it. */
-function Flow({ points, kw, color, dash }: FlowProps) {
+function Flow({ points, kw, color, dash, active }: FlowProps) {
   const curve = useMemo(() => {
     const path = new THREE.CurvePath<THREE.Vector3>()
     for (let i = 1; i < points.length; i++) path.add(new THREE.LineCurve3(points[i - 1], points[i]))
@@ -61,7 +61,7 @@ function Flow({ points, kw, color, dash }: FlowProps) {
   const tmp = useMemo(() => ({ m: new THREE.Matrix4(), p: new THREE.Vector3(), t: new THREE.Vector3(), q: new THREE.Quaternion(), s: new THREE.Vector3() }), [])
   useFrame((_, dt) => {
     const mesh = ref.current
-    if (!mesh) return
+    if (!mesh || !active) return // hidden in Today mode: skip the per-dash work
     offset.current = (offset.current + Math.min(dt, 0.05) * speed) % pitch
     const { m, p, t, q, s } = tmp
     for (let i = 0; i <= count; i++) {
@@ -181,8 +181,8 @@ export function EnergyFlows() {
             <boxGeometry args={[0.9, 1.4, 0.3]} />
             <meshStandardMaterial color="#e7e9ec" roughness={0.5} />
           </mesh>
-          <Flow points={solar} kw={energy.solarToTower[k]} color={SOLAR} dash={DASH.solid} />
-          <Flow points={grid} kw={energy.gridToTower[k]} color={cut ? CUT : GRID} dash={cut ? DASH.cut : DASH.solid} />
+          <Flow points={solar} kw={energy.solarToTower[k]} color={SOLAR} dash={DASH.solid} active={mode === 'autodock'} />
+          <Flow points={grid} kw={energy.gridToTower[k]} color={cut ? CUT : GRID} dash={cut ? DASH.cut : DASH.solid} active={mode === 'autodock'} />
         </group>
       ))}
     </group>

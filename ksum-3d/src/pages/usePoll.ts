@@ -11,6 +11,8 @@ export function usePoll<T>(url: string, ms: number): Poll<T> {
   useEffect(() => {
     let alive = true
     let ctrl: AbortController | null = null
+    // Last body seen: an unchanged poll keeps the same `data` object, so nothing downstream re-renders.
+    let last = ''
     const tick = async () => {
       if (document.visibilityState !== 'visible') return
       ctrl?.abort()
@@ -18,8 +20,15 @@ export function usePoll<T>(url: string, ms: number): Poll<T> {
       try {
         const res = await fetch(url, { signal: ctrl.signal })
         if (!res.ok) throw new Error(`HTTP ${res.status}`)
-        const data = (await res.json()) as T
-        if (alive) setState({ data, error: null, at: Date.now() })
+        const text = await res.text()
+        if (!alive) return
+        if (text === last) {
+          setState((s) => (s.error ? { ...s, error: null, at: Date.now() } : s))
+          return
+        }
+        const data = JSON.parse(text) as T
+        last = text
+        setState({ data, error: null, at: Date.now() })
       } catch (e) {
         if (alive && !(e instanceof DOMException && e.name === 'AbortError')) {
           setState((s) => ({ ...s, error: e instanceof Error ? e.message : String(e), at: Date.now() }))

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import type { Decision, DecisionKind, DecisionSet } from '../control/types'
 import { useControlStore, type FeedItem } from '../control/useControlStore'
 import { Phone, PhoneToggle } from '../phone'
@@ -13,19 +13,41 @@ const settled = (item: FeedItem): DecisionSet => ({
   bay: settle(item, 'bay'), charge: settle(item, 'charge'), price: settle(item, 'price'), anomaly: settle(item, 'anomaly'),
 })
 
-/** The driver phone for the newest car through the decision layer, or sample data before any. */
+/**
+ * The driver phone for the newest car through the decision layer, or sample data before any.
+ * The car is pinned when the phone opens, so new arrivals do not reset a walkthrough;
+ * reopening picks up the newest car. Operator resolutions still flow in by id.
+ */
 export function DriverPhone() {
-  const latest = useControlStore((s) => s.feed[0])
   const [open, setOpen] = useState(false)
+  const [pinnedId, setPinnedId] = useState<string | null>(null)
+  const item = useControlStore((s) => s.feed.find((f) => f.arrival.id === pinnedId))
+  const dock = useRef<HTMLDivElement>(null)
+
+  const toggle = () => {
+    if (!open) setPinnedId(useControlStore.getState().feed[0]?.arrival.id ?? null)
+    setOpen(!open)
+  }
+
+  useEffect(() => {
+    if (!open) return
+    // focus moves into the dialog: the plate field, or the close button on later steps
+    const el = dock.current?.querySelector<HTMLElement>('input') ?? dock.current?.querySelector<HTMLElement>('button')
+    el?.focus({ preventScroll: true })
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false) }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [open])
+
   return (
     <>
-      <PhoneToggle open={open} onToggle={() => setOpen(!open)} />
+      <PhoneToggle open={open} onToggle={toggle} />
       {open && (
-        <div className="phone-dock">
+        <div className="phone-dock" ref={dock}>
           <Phone
-            key={latest?.arrival.id ?? 'sample'}
-            arrival={latest?.arrival}
-            decisions={latest && settled(latest)}
+            key={item?.arrival.id ?? 'sample'}
+            arrival={item?.arrival}
+            decisions={item && settled(item)}
             onClose={() => setOpen(false)}
           />
         </div>

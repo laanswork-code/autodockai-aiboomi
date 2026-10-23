@@ -90,7 +90,7 @@ function EnergyGauge() {
         <b>{kw(e.gridKw)} <small>/ {e.gridLimitKw} kW</small></b>
         <div className="energy__bar" role="meter" aria-label="Grid draw against the limit"
           aria-valuemin={0} aria-valuemax={e.gridLimitKw} aria-valuenow={Math.round(e.gridKw)}>
-          <div style={{ width: `${Math.min(100, (e.gridKw / e.gridLimitKw) * 100)}%` }} />
+          <div style={{ transform: `scaleX(${Math.min(1, e.gridKw / e.gridLimitKw)})` }} />
         </div>
       </div>
       <div className="energy__cell">
@@ -135,12 +135,18 @@ function EventLog() {
   )
 }
 
+/** Leaf for the playback timer, so its busy/cursor updates do not re-render the whole control room. */
+function Playback() {
+  usePlayback()
+  return null
+}
+
 /** The Jev control room: scenario controls, the operator queue and a card per car. */
 export function ControlRoom() {
-  usePlayback()
   const [open, setOpen] = useState(() => !window.matchMedia('(max-width: 760px)').matches)
   return (
     <section className={`ctl ${open ? 'is-open' : ''}`} aria-label="Jev control room">
+      <Playback />
       <header className="ctl__head">
         <div>
           <p className="kicker">Jev decision layer</p>

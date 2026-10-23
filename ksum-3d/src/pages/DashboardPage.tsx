@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { memo, useMemo, useState } from 'react'
 import results from '../../sim/results.json'
 import { KIND_LABEL as DECISION_LABEL, valueText } from '../control/format.ts'
 import { AUTO_THRESHOLD, ESCALATES, type AuditEntry, type Decision, type DecisionKind, type JevUsage, type ScenarioName, type SimMetrics } from '../control/types.ts'
@@ -20,7 +20,10 @@ export default function DashboardPage() {
   const health = usePoll<Health>('/api/health', POLL_MS)
   const audit = usePoll<{ entries: AuditEntry[] }>('/api/audit?limit=500', POLL_MS)
   const entries = useMemo(() => (audit.data?.entries ?? []).toReversed(), [audit.data])
-  const live = health.data && !health.error
+  const live = !!health.data && !health.error
+  // Audit unreachable: show the last good data dimmed, or say why there is none.
+  const stale = !!audit.error && !!audit.data
+  const offline = !!audit.error && !audit.data
 
   return (
     <div className="page">
@@ -41,29 +44,31 @@ export default function DashboardPage() {
             : health.at
               ? <span className="pill is-down">Decision server offline: run <code>npm run server</code></span>
               : <span className="pill is-wait">Connecting…</span>}
-          {health.at && <span className="dstatus__at">Updated {new Date(health.at).toLocaleTimeString('en-IN')}</span>}
+          {health.at && <span className="dstatus__at">{health.error ? 'Last tried' : 'Updated'} {new Date(health.at).toLocaleTimeString('en-IN')}</span>}
         </div>
 
-        <Tiles usage={health.data?.jev} entries={entries} />
+        <div className={stale ? 'dstale' : undefined}>
+          <Tiles usage={live ? health.data!.jev : undefined} live={live} entries={entries} />
 
-        <div className="dgrid">
-          <section className="panel">
-            <h2>Who decided, and who needed a person</h2>
-            <p className="hint">From the audit log ({entries.length} cars). Bay and price never wait for a person; a flagged plate or payment always does.</p>
-            <ModeTable entries={entries} />
-          </section>
-          <section className="panel">
-            <h2>How sure Jev was</h2>
-            <p className="hint">Confidence of Jev's decisions, in 10% bins. The red line is where charge and anomaly calls stop acting alone.</p>
-            <Confidence entries={entries} />
+          <div className="dgrid">
+            <section className="panel">
+              <h2>Who decided, and who needed a person</h2>
+              <p className="hint">From the audit log ({entries.length} cars). Bay and price never wait for a person; a flagged plate or payment always does.</p>
+              <ModeTable entries={entries} offline={offline} />
+            </section>
+            <section className="panel">
+              <h2>How sure Jev was</h2>
+              <p className="hint">Confidence of Jev's decisions, in 10% bins. The red line is where charge and anomaly calls stop acting alone.</p>
+              <Confidence entries={entries} offline={offline} />
+            </section>
+          </div>
+
+          <section className="panel dwide">
+            <h2>Latest decisions</h2>
+            <p className="hint">Newest first. Amber rows waited for an operator.</p>
+            <Recent entries={entries} offline={offline} />
           </section>
         </div>
-
-        <section className="panel dwide">
-          <h2>Latest decisions</h2>
-          <p className="hint">Newest first. Amber rows waited for an operator.</p>
-          <Recent entries={entries} />
-        </section>
 
         <div className="dgrid">
           <section className="panel"><Simulation /></section>
@@ -78,7 +83,10 @@ function Tile({ k, v, note }: { k: string; v: string; note?: string }) {
   return <div className="dtile"><span className="dtile__k">{k}</span><b>{v}</b>{note && <span className="dtile__n">{note}</span>}</div>
 }
 
-function Tiles({ usage, entries }: { usage?: JevUsage; entries: AuditEntry[] }) {
+const OFFLINE_TEXT = 'Decision server offline, no audit log to show.'
+
+const Tiles = memo(function Tiles({ usage, live, entries }: { usage?: JevUsage; live: boolean; entries: AuditEntry[] }) {
+  const noData = !entries.length && !live
   const decisions = entries.flatMap((e) => KINDS.map((k) => e.decisions[k] as Decision))
   const review = decisions.filter((d) => d.mode === 'review').length
   const carsHeld = entries.filter((e) => KINDS.some((k) => e.decisions[k].mode === 'review')).length
@@ -89,14 +97,14 @@ function Tiles({ usage, entries }: { usage?: JevUsage; entries: AuditEntry[] }) 
       <Tile k="Cost" v={usage ? usd(usage.costUsd) : '-'} note={usage ? `${usd(usage.usdPerDecision)} per decision` : undefined} />
       <Tile k="Avg latency" v={usage?.avgLatencyMs != null ? `${Math.round(usage.avgLatencyMs)} ms` : '-'} note="per Jev call" />
       <Tile k="Fallbacks" v={usage ? String(usage.failures) : '-'} note="Jev errors handled by rules" />
-      <Tile k="Cars audited" v={String(entries.length)} note={`${carsHeld} held for an operator`} />
-      <Tile k="Escalation rate" v={decisions.length ? pct(review / decisions.length) : '-'} note={`${review} of ${decisions.length} decisions · ${fallback} by rules`} />
+      <Tile k="Cars audited" v={noData ? '-' : String(entries.length)} note={noData ? 'server offline' : `${carsHeld} held for an operator`} />
+      <Tile k="Escalation rate" v={decisions.length ? pct(review / decisions.length) : '-'} note={noData ? undefined : `${review} of ${decisions.length} decisions · ${fallback} by rules`} />
     </div>
   )
-}
+})
 
-function ModeTable({ entries }: { entries: AuditEntry[] }) {
-  if (!entries.length) return <p className="dempty">No decisions yet. Play a scenario in the digital twin.</p>
+const ModeTable = memo(function ModeTable({ entries, offline }: { entries: AuditEntry[]; offline: boolean }) {
+  if (!entries.length) return <p className="dempty">{offline ? OFFLINE_TEXT : 'No decisions yet. Play a scenario in the digital twin.'}</p>
   return (
     <div className="tbl-wrap">
       <table className="tbl">
@@ -120,9 +128,9 @@ function ModeTable({ entries }: { entries: AuditEntry[] }) {
       </table>
     </div>
   )
-}
+})
 
-function Confidence({ entries }: { entries: AuditEntry[] }) {
+const Confidence = memo(function Confidence({ entries, offline }: { entries: AuditEntry[]; offline: boolean }) {
   const hist = useMemo(() => KINDS.map((k) => {
     const bins = Array<number>(10).fill(0)
     for (const e of entries) {
@@ -131,7 +139,7 @@ function Confidence({ entries }: { entries: AuditEntry[] }) {
     }
     return { k, bins, n: bins.reduce((a, b) => a + b, 0) }
   }), [entries])
-  if (!entries.length) return <p className="dempty">No decisions yet.</p>
+  if (!entries.length) return <p className="dempty">{offline ? OFFLINE_TEXT : 'No decisions yet.'}</p>
   return (
     <div className="dhists">
       {hist.map(({ k, bins, n }) => {
@@ -153,10 +161,18 @@ function Confidence({ entries }: { entries: AuditEntry[] }) {
       })}
     </div>
   )
-}
+})
 
-function Recent({ entries }: { entries: AuditEntry[] }) {
-  if (!entries.length) return <p className="dempty">No decisions yet. Start the decision server and play a scenario in the digital twin.</p>
+const Recent = memo(function Recent({ entries, offline }: { entries: AuditEntry[]; offline: boolean }) {
+  if (!entries.length) return <p className="dempty">{offline ? OFFLINE_TEXT : 'No decisions yet. Start the decision server and play a scenario in the digital twin.'}</p>
+  return <RecentTable entries={entries} />
+})
+
+const rowKey = (e: AuditEntry) => `${e.at}-${e.arrival.id}`
+
+/** Mounts with the first non-empty audit, so only rows that arrive after it get the new-row tint. */
+function RecentTable({ entries }: { entries: AuditEntry[] }) {
+  const [initial] = useState(() => new Set(entries.slice(0, 15).map(rowKey)))
   return (
     <div className="tbl-wrap">
       <table className="tbl">
@@ -165,7 +181,7 @@ function Recent({ entries }: { entries: AuditEntry[] }) {
           {entries.slice(0, 15).map((e) => {
             const held = KINDS.filter((k) => e.decisions[k].mode === 'review')
             return (
-              <tr key={`${e.at}-${e.arrival.id}`} className={held.length ? 'is-held' : undefined}>
+              <tr key={rowKey(e)} className={[held.length ? 'is-held' : '', initial.has(rowKey(e)) ? '' : 'is-new'].join(' ').trim() || undefined}>
                 <td className="mono">{time(e.at)}</td>
                 <td className="mono">{e.arrival.bookedPlate}</td>
                 <td>{e.arrival.vehicle.model}{e.arrival.vehicle.ev ? ` · ${e.arrival.vehicle.socPct}%` : ''}</td>

@@ -26,7 +26,13 @@ const TABS: { id: Step; label: string }[] = [
 const TAB_OF: Record<Step, Step> = { arrive: 'arrive', dock: 'dock', charge: 'charge', pay: 'pay', upi: 'pay', paid: 'pay' }
 const STAYS = [60, 120, 240, 480, 720]
 const PAYEE = 'autodock@upi'
-/** Demo clock: one tick every 100 ms. Rotation takes 50 ticks; charging adds 1% per tick. */
+/**
+ * Demo clock: one tick per 100 ms of wall time. Rotation takes 50 ticks (5 s,
+ * matching --ph-dock-ms in phone.css); charging adds 1% per tick. Ticks only
+ * drive the text and the button: the ring and the dock bar animate in CSS.
+ * Ticks come from elapsed time, not a count of interval callbacks, so the text
+ * stays in step with the CSS even when the WebGL frame starves the timer.
+ */
 const TICK_MS = 100
 const ROTATE_TICKS = 50
 
@@ -47,15 +53,17 @@ export function Phone({ arrival, decisions, onClose }: PhoneProps) {
   const [plate, setPlate] = useState(a.bookedPlate)
   const [stay, setStay] = useState<number | null>(a.plannedStayMin)
   const [note, setNote] = useState(a.note)
-  const [ticks, setTicks] = useState(0)
+  const [elapsedMs, setElapsedMs] = useState(0)
+  const ticks = Math.floor(elapsedMs / TICK_MS)
 
-  const go = (s: Step) => { setStep(s); setTicks(0) }
+  const go = (s: Step) => { setStep(s); setElapsedMs(0) }
 
   // drives the rotation and charge animations; values are derived from ticks
   const animating = step === 'dock' || (step === 'charge' && d.charge.value === 'now')
   useEffect(() => {
     if (!animating) return
-    const id = window.setInterval(() => setTicks((n) => n + 1), TICK_MS)
+    const t0 = performance.now()
+    const id = window.setInterval(() => setElapsedMs(performance.now() - t0), TICK_MS)
     return () => window.clearInterval(id)
   }, [animating, step])
 
@@ -117,13 +125,13 @@ export function Phone({ arrival, decisions, onClose }: PhoneProps) {
               <p className="ph-why">{d.bay.why}</p>
               <Review d={d.bay} />
               <div className="ph-rotor" aria-hidden="true">
-                <div className="ph-rotor__ring" style={{ transform: `rotate(${rotatePct * 3.6}deg)` }}>
+                <div className="ph-rotor__ring">
                   <span className="ph-rotor__pallet" />
                 </div>
                 <b>{Math.round(rotatePct)}%</b>
               </div>
-              <div className="ph-progress" role="progressbar" aria-label="Pallet rotation" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(rotatePct)}>
-                <span style={{ width: `${rotatePct}%` }} />
+              <div className="ph-progress ph-progress--dock" role="progressbar" aria-label="Pallet rotation" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(rotatePct)}>
+                <span />
               </div>
               {rotatePct < 100
                 ? <p className="ph-instr">Pallet {pallet + 1} is turning to the door. Wait at the line.</p>
@@ -144,7 +152,7 @@ export function Phone({ arrival, decisions, onClose }: PhoneProps) {
                     <span>target {target}%</span>
                   </div>
                   <div className="ph-progress ph-progress--go" role="progressbar" aria-label="State of charge" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(soc)}>
-                    <span style={{ width: `${soc}%` }} />
+                    <span style={{ transform: `scaleX(${soc / 100})` }} />
                   </div>
                 </>
               )}

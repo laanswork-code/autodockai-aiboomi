@@ -298,10 +298,12 @@ export function RotaryTower({ load, reportSize, controlled = false, doorPallet =
   const pallets = useRef<(THREE.Group | null)[]>([])
   const offset = useRef(0)
   const spinning = useSceneStore((s) => s.spinning)
+  const mode = useSceneStore((s) => s.mode)
   const tmp = useMemo(() => new THREE.Vector3(), [])
   const waiting = useRef<THREE.Object3D | null>(null)
   const carObjs = useRef<(THREE.Object3D | null)[]>([])
   useFrame((_, dt) => {
+    if (mode !== 'autodock') return // towers are hidden in Today mode
     const step = Math.min(dt, 0.05)
     let docked = true
     if (controlled && doorPallet !== null) {

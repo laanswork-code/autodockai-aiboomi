@@ -3,6 +3,8 @@ import type { JevUsage } from './types.ts'
 import { useControlStore } from './useControlStore.ts'
 
 /** "$0.01160" while under a dollar: at $0.00008 a decision, cents alone would sit still for 125 decisions. */
+/** Indian digit grouping, as on the rest of the page: 1,26,538. */
+const n = (x: number) => x.toLocaleString('en-IN')
 const usd = (x: number) => `$${x < 1 ? x.toFixed(5) : x.toFixed(2)}`
 
 /**
@@ -29,11 +31,11 @@ export function CostCounter() {
   const avg = usage.avgLatencyMs === null ? 'no calls yet' : `${usage.avgLatencyMs} ms avg`
   return (
     <div className="cost" aria-label="Jev cost per decision">
-      <p className="cost__line">Jev: {usage.decisions} decisions, {usd(usage.costUsd)} total, {avg}</p>
+      <p className="cost__line">Jev: {n(usage.decisions)} decisions, {usd(usage.costUsd)} total, {avg}</p>
       <p className="muted cost__note">
-        {usage.calls} call{usage.calls === 1 ? '' : 's'}
-        {usage.failures > 0 && `, ${usage.failures} fell back to rules`}
-        {usage.inputTokens !== null && `, ${usage.inputTokens + (usage.outputTokens ?? 0)} tokens`}
+        {n(usage.calls)} call{usage.calls === 1 ? '' : 's'}
+        {usage.failures > 0 && `, ${n(usage.failures)} fell back to rules`}
+        {usage.inputTokens !== null && `, ${n(usage.inputTokens + (usage.outputTokens ?? 0))} tokens`}
         {' '}since the server started, at {usd(usage.usdPerDecision)} per decision (TypeSafe list price)
       </p>
     </div>
