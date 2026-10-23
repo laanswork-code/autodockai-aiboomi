@@ -1,0 +1,19 @@
+{
+  "name": "parking-research",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "collect": "node --env-file=.env scripts/collect.mjs",
+    "normalize": "node scripts/normalize.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "private": "true",
+  "dependencies": {
+    "serpapi": "^2.2.1"
+  }
+}

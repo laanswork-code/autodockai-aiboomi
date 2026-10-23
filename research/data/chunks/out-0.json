@@ -1,0 +1,1554 @@
+[
+ {
+  "id": 0,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "Vehicle congestion and insufficient parking facilities are emerging as major challenges for India's big cities.",
+  "quote": "insufficient parking facilities"
+ },
+ {
+  "id": 1,
+  "keep": true,
+  "city": "India (other)",
+  "category": "fines-towing",
+  "problem": "A new car owner's BMW was towed from the road on the very first day, showing the towing and parking trouble drivers face.",
+  "quote": "your car gets towed from the road"
+ },
+ {
+  "id": 2,
+  "keep": true,
+  "city": "India (other)",
+  "category": "no-space",
+  "problem": "A resident says Indian cities were not built with four-wheeler parking in mind, so finding space is a constant gripe.",
+  "quote": "none of them seem to have been built with 4-wheeler parking"
+ },
+ {
+  "id": 3,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "Metro city car parking has reached a critical point, with congestion, illegal parking and inadequate infrastructure.",
+  "quote": "congestion, illegal parking, and inadequate infrastructure"
+ },
+ {
+  "id": 4,
+  "keep": true,
+  "city": "India (other)",
+  "category": "no-space",
+  "problem": "A commenter says finding a parking space in India is a very big problem now that the population has grown.",
+  "quote": "finding a parking space is a very big problem"
+ },
+ {
+  "id": 5,
+  "keep": true,
+  "city": "India (other)",
+  "category": "roadside-congestion",
+  "problem": "Poor parking management and policy leave Indian metros with overcrowded footpaths and illegal parking.",
+  "quote": "overcrowded footpaths, illegal parking"
+ },
+ {
+  "id": 6,
+  "keep": true,
+  "city": "India (other)",
+  "category": "roadside-congestion",
+  "problem": "Street parking obstructs traffic and shrinks driving space while car numbers keep growing and road space stays limited.",
+  "quote": "the number of cars would continue to grow but the space on road will always remain limited"
+ },
+ {
+  "id": 7,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 8,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "Research paper on the causes, effects and monetary loss from parking problems in India.",
+  "quote": "parking problems in india"
+ },
+ {
+  "id": 9,
+  "keep": true,
+  "city": "Kochi",
+  "category": "roadside-congestion",
+  "problem": "Drivers in Kochi park in no-parking zones, even in the middle of the road, and residents share their frustrations.",
+  "quote": "park in a non parking zone that too in the middle of the road"
+ },
+ {
+  "id": 10,
+  "keep": true,
+  "city": "Kochi",
+  "category": "policy-infra",
+  "problem": "Kochi Metro prepared a multi-level robotic parking system to address Kochi's growing vehicle parking problem.",
+  "quote": "increasing problem of vehicle parking in Kochi"
+ },
+ {
+  "id": 11,
+  "keep": true,
+  "city": "Kochi",
+  "category": "roadside-congestion",
+  "problem": "Two-wheelers parked in three rows on Broadway make it hard to even walk through, so the issue went to the town planning committee.",
+  "quote": "two-wheelers were being parked in three rows"
+ },
+ {
+  "id": 12,
+  "keep": true,
+  "city": "Kochi",
+  "category": "no-space",
+  "problem": "Kochi drivers circle hunting for one empty spot, and the city is turning to AI smart parking.",
+  "quote": "just one empty spot"
+ },
+ {
+  "id": 13,
+  "keep": true,
+  "city": "Kochi",
+  "category": "policy-infra",
+  "problem": "A new multi-level robotic car park at Vadakkekotta Metro station in Kochi was opened to ease parking.",
+  "quote": "New Multilevel Robotic Car Parking at Vadakkekotta Metro"
+ },
+ {
+  "id": 14,
+  "keep": true,
+  "city": "Kochi",
+  "category": "roadside-congestion",
+  "problem": "Indiscriminate parking is choking Kochi's roads and the problem remained unsolved.",
+  "quote": "indiscriminate parking that is choking Kochi's"
+ },
+ {
+  "id": 15,
+  "keep": true,
+  "city": "Kochi",
+  "category": "roadside-congestion",
+  "problem": "Parked trucks and roadside unloading on Kochi's national highways cause congestion and raise accident risks.",
+  "quote": "Parked trucks and roadside unloading are causing congestion and increasing accident risks"
+ },
+ {
+  "id": 16,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "ev-charging",
+  "problem": "An EV owner in a Bengaluru apartment had to fight a long legal battle before the High Court allowed a charger in their parking slot.",
+  "quote": "High Court Allows EV Owner To Install Charger In Parking Slot After Long Legal Battle"
+ },
+ {
+  "id": 17,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "ev-charging",
+  "problem": "An EV owner in a Bengaluru apartment had to fight a long legal battle before the High Court allowed a charger in their parking slot.",
+  "quote": "long legal battle"
+ },
+ {
+  "id": 18,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "Fire department asked EV owners to remove charging points from apartment parking, calling them unsafe, leaving owners with charging hurdles.",
+  "quote": "Remove Charging Points From Apartment Parking"
+ },
+ {
+  "id": 19,
+  "keep": true,
+  "city": "Pune",
+  "category": "residential",
+  "problem": "Maharashtra housing federation wants clearer rules on parking in draft model bylaws for housing societies.",
+  "quote": "clearer rules on parking"
+ },
+ {
+  "id": 20,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 21,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "ev-charging",
+  "problem": "A Noida housing society fined an EV owner Rs 25,000, sparking debate over charging infrastructure in societies.",
+  "quote": "Rs 25k fine on electric vehicle owner"
+ },
+ {
+  "id": 22,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's draft parking rules drew over 800 objections from citizens, forcing a fresh review of proposed parking fees.",
+  "quote": "800 objections"
+ },
+ {
+  "id": 23,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Residents say Bengaluru's new parking rules make big promises but ignore their concerns.",
+  "quote": "unheard residents"
+ },
+ {
+  "id": 24,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's draft parking rules drew over 800 objections from citizens, forcing a fresh review of proposed parking fees.",
+  "quote": "800 objections"
+ },
+ {
+  "id": 25,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru proposes tax waivers for vacant plots used as parking to create more off-street parking space.",
+  "quote": "100% property tax waiver for plots used for car parking"
+ },
+ {
+  "id": 26,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru rules would charge residents up to Rs 25,000 a year to park on the road outside their own homes.",
+  "quote": "Bangalore: Parking outside? Get ready to shell out Rs 25,000/year"
+ },
+ {
+  "id": 27,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru rules would charge residents up to Rs 25,000 a year to park on the road outside their own homes.",
+  "quote": "Bengaluru new parking rules: Parking on road may cost car owners up to Rs 25,000 a year under proposed policy"
+ },
+ {
+  "id": 28,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "A Karnataka minister asked the CM to rethink the proposed Bengaluru parking fee of up to Rs 25,000 a year for residents.",
+  "quote": "Parking Fee Proposal For Bengaluru Residents"
+ },
+ {
+  "id": 29,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru proposes tax waivers for vacant plots used as parking to create more off-street parking space.",
+  "quote": "Own vacant land in Bengaluru? New parking proposal offers 100% tax waiver"
+ },
+ {
+  "id": 30,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Commuters praised Bengaluru's new parking rules but residents call them too strict.",
+  "quote": "residents call them too strict"
+ },
+ {
+  "id": 31,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru's draft parking rules set out new fees, restrictions and enforcement, and the public is being asked for feedback.",
+  "quote": "Draft Bengaluru Parking Rules 2026: What May Change"
+ },
+ {
+  "id": 32,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's draft parking rules drew over 800 objections from citizens, forcing a fresh review of proposed parking fees.",
+  "quote": "Bengaluru Parking Policy Draws 800 Objections"
+ },
+ {
+  "id": 33,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru's draft parking rules set out new fees, restrictions and enforcement, and the public is being asked for feedback.",
+  "quote": "What are Bengaluru new parking rules and how much will you have to pay?"
+ },
+ {
+  "id": 34,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's draft rules would make on-street parking costlier, with hourly rates up to Rs 80 and expanded paid zones.",
+  "quote": "On-street parking in Bengaluru may get costlier as new draft rules aim to promote off-street parking"
+ },
+ {
+  "id": 35,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's draft rules would make on-street parking costlier, with hourly rates up to Rs 80 and expanded paid zones.",
+  "quote": "Rs 80 an hour"
+ },
+ {
+  "id": 36,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's draft parking rules drew over 800 objections from citizens, forcing a fresh review of proposed parking fees.",
+  "quote": "800 objections"
+ },
+ {
+  "id": 37,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru plans footpath and parking policy with parking curbs as part of traffic measures.",
+  "quote": "Parking Curbs, Tax SOPs Among Proposed Bengaluru Traffic Measures"
+ },
+ {
+  "id": 38,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's draft rules would make on-street parking costlier, with hourly rates up to Rs 80 and expanded paid zones.",
+  "quote": "Bengaluru’s new parking rules seek four-way expansion of paid parking"
+ },
+ {
+  "id": 39,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru's new parking rules are pitched as a toolkit for public parking pain in the city.",
+  "quote": "public parking pain in Bengaluru"
+ },
+ {
+  "id": 40,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru rules would charge residents up to Rs 25,000 a year to park on the road outside their own homes.",
+  "quote": "Bengaluru residents, parking car outside your house? Pay up to ₹25,000 based on car you own"
+ },
+ {
+  "id": 41,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "roadside-congestion",
+  "problem": "Bengaluru's parking rules aim to clear traffic chokepoints at notorious junctions caused by parked vehicles.",
+  "quote": "traffic chokepoints at notorious junctions"
+ },
+ {
+  "id": 42,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's draft rules would make on-street parking costlier, with hourly rates up to Rs 80 and expanded paid zones.",
+  "quote": "Rs 10-Rs 80/hour: Rules in place to streamline parking in Bengaluru"
+ },
+ {
+  "id": 43,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru's draft parking rules set out new fees, restrictions and enforcement, and the public is being asked for feedback.",
+  "quote": "All you need to know about parking but were afraid to ask"
+ },
+ {
+  "id": 44,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru rules would charge residents up to Rs 25,000 a year to park on the road outside their own homes.",
+  "quote": "Want To Park On Bengaluru Road? Get Ready To Shell Out Upto Rs 25,000 A Year"
+ },
+ {
+  "id": 45,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Public outcry over Bengaluru's parking fee proposal may lead the Karnataka government to drop it.",
+  "quote": "Parking Row"
+ },
+ {
+  "id": 46,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru rules would charge residents up to Rs 25,000 a year to park on the road outside their own homes.",
+  "quote": "Bengaluru residents may have to pay up to Rs 25,000 a year for parking on roads under draft rules"
+ },
+ {
+  "id": 47,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru's draft parking rules set out new fees, restrictions and enforcement, and the public is being asked for feedback.",
+  "quote": "GBA seeks public suggestions on draft parking rules; window to file objections open till September 10"
+ },
+ {
+  "id": 48,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru's draft parking rules set out new fees, restrictions and enforcement, and the public is being asked for feedback.",
+  "quote": "Bengaluru’s parking overhaul: Who pays, where you can park and who enforces it | Explained"
+ },
+ {
+  "id": 49,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru rules would charge residents up to Rs 25,000 a year to park on the road outside their own homes.",
+  "quote": "Bengaluru’s new parking plan: Pay up to Rs 25,000 a year for your SUV"
+ },
+ {
+  "id": 50,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru rules would charge residents up to Rs 25,000 a year to park on the road outside their own homes.",
+  "quote": "Bengaluru parking rules 2026: Residents may pay up to Rs 25,000 annually"
+ },
+ {
+  "id": 51,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "The Bengaluru parking permit plan sparked backlash and fears of higher rents.",
+  "quote": "fears of higher rent in Bengaluru"
+ },
+ {
+  "id": 52,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's draft rules would make on-street parking costlier, with hourly rates up to Rs 80 and expanded paid zones.",
+  "quote": "Rs 80 an hour"
+ },
+ {
+  "id": 53,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fines-towing",
+  "problem": "Bengaluru is preparing a drive to enforce parking regulations as on-street enforcement tightens.",
+  "quote": "enforce parking regulations"
+ },
+ {
+  "id": 54,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru rules would charge residents up to Rs 25,000 a year to park on the road outside their own homes.",
+  "quote": "Bengaluru Parking Rules 2026: Park Outside Your Home to Cost Up to Rs.25k/Year; Check New Fees, Rules & Fines"
+ },
+ {
+  "id": 55,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's draft rules would make on-street parking costlier, with hourly rates up to Rs 80 and expanded paid zones.",
+  "quote": "Proposed parking charges a solution or a price on Bengaluru’s traffic problem?"
+ },
+ {
+  "id": 56,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru rules would charge residents up to Rs 25,000 a year to park on the road outside their own homes.",
+  "quote": "'No More Free Parking': Parking Outside Home Could Cost Rs 25,000 A Year In Bengaluru"
+ },
+ {
+  "id": 57,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "A Karnataka minister asked the CM to rethink the proposed Bengaluru parking fee of up to Rs 25,000 a year for residents.",
+  "quote": "Minister Urges Reconsideration Of Bengaluru Parking Fee Proposal"
+ },
+ {
+  "id": 58,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru residents say old parking lapses should be fixed before new rules are enforced.",
+  "quote": "Fix legacy parking lapses"
+ },
+ {
+  "id": 59,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's draft rules would make on-street parking costlier, with hourly rates up to Rs 80 and expanded paid zones.",
+  "quote": "Parking rates may double on Bengaluru’s busiest commercial stretches under draft rules"
+ },
+ {
+  "id": 60,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's draft rules would make on-street parking costlier, with hourly rates up to Rs 80 and expanded paid zones.",
+  "quote": "Video: Parking on public roads may no longer be free | Bengaluru's new parking rules"
+ },
+ {
+  "id": 61,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru rules would charge residents up to Rs 25,000 a year to park on the road outside their own homes.",
+  "quote": "Park outside your Bengaluru home? It may soon cost up to Rs 25,000 a year"
+ },
+ {
+  "id": 62,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru rules would charge residents up to Rs 25,000 a year to park on the road outside their own homes.",
+  "quote": "Parking On The Road Outside Your House? Pay Govt Rs 25k Per Year In Bangalore"
+ },
+ {
+  "id": 63,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru rules would charge residents up to Rs 25,000 a year to park on the road outside their own homes.",
+  "quote": "Parking outside your home in Bengaluru? Pay up to Rs 25k a year"
+ },
+ {
+  "id": 64,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "A Karnataka minister asked the CM to rethink the proposed Bengaluru parking fee of up to Rs 25,000 a year for residents.",
+  "quote": "Rs 25,000 parking fee? Karnataka minister urges CM to rethink Bengaluru plan"
+ },
+ {
+  "id": 65,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "A Karnataka minister asked the CM to rethink the proposed Bengaluru parking fee of up to Rs 25,000 a year for residents.",
+  "quote": "Karnataka minister flags proposed Bengaluru parking fee of up to ₹25,000 to CM Shivakumar, asks to reconsider | India News"
+ },
+ {
+  "id": 66,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru proposes tax waivers for vacant plots used as parking to create more off-street parking space.",
+  "quote": "Bengaluru parking rules explained: Convert vacant plots into parking lots, get up to 100% tax exemption"
+ },
+ {
+  "id": 67,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's draft rules would make on-street parking costlier, with hourly rates up to Rs 80 and expanded paid zones.",
+  "quote": "Pay & park puzzle"
+ },
+ {
+  "id": 68,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "A Karnataka minister asked the CM to rethink the proposed Bengaluru parking fee of up to Rs 25,000 a year for residents.",
+  "quote": "Extra burden: Minister asks Shivakumar to rethink planned Bengaluru parking fee hike"
+ },
+ {
+  "id": 69,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru's draft parking rules set out new fees, restrictions and enforcement, and the public is being asked for feedback.",
+  "quote": "Karnataka proposes stricter parking rules for Bengaluru, seeks public feedback"
+ },
+ {
+  "id": 70,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Political parties attacked the proposed Bengaluru fee for parking cars outside homes as anti-people.",
+  "quote": "R Ashoka and BJP slam Congress govt over proposed GBA parking fee for parking cars in front of homes"
+ },
+ {
+  "id": 71,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's draft rules would make on-street parking costlier, with hourly rates up to Rs 80 and expanded paid zones.",
+  "quote": "Why Bengaluru intends to charge residents for on-street parking"
+ },
+ {
+  "id": 72,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "A Karnataka minister asked the CM to rethink the proposed Bengaluru parking fee of up to Rs 25,000 a year for residents.",
+  "quote": "Rs 25,000 a year to park outside home? Bengaluru minister asks CM to rethink parking rules"
+ },
+ {
+  "id": 73,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Political parties attacked the proposed Bengaluru fee for parking cars outside homes as anti-people.",
+  "quote": "BJP attacks proposed parking charges in Bengaluru; claims Karnataka govt is bankrupt"
+ },
+ {
+  "id": 74,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "roadside-congestion",
+  "problem": "Parked vehicles eat up about 60% of Bengaluru's road space, and the minister wants a dedicated enforcement body.",
+  "quote": "Parking eats up 60% of road space"
+ },
+ {
+  "id": 75,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru plans more parking through vacant plots and multi-level car parks.",
+  "quote": "More parking spaces on the way for Bengaluru"
+ },
+ {
+  "id": 76,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru's draft parking rules set out new fees, restrictions and enforcement, and the public is being asked for feedback.",
+  "quote": "Give suggestions on parking rules for Greater Bengaluru Authority till Sept 10"
+ },
+ {
+  "id": 77,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru rules would charge residents up to Rs 25,000 a year to park on the road outside their own homes.",
+  "quote": "Bengalureans May Soon Pay Up To Rs 25,000 A Year To Park Outside Homes: New Parking Rules Explained"
+ },
+ {
+  "id": 78,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru citizens want better public transport before parking fees are imposed.",
+  "quote": "before imposing parking fees"
+ },
+ {
+  "id": 79,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's draft rules would make on-street parking costlier, with hourly rates up to Rs 80 and expanded paid zones.",
+  "quote": "Bangalore Parking May Get Costlier: Cars, SUVs and Bikes May Face New Fees Under Proposed Karnataka Rules"
+ },
+ {
+  "id": 80,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "roadside-congestion",
+  "problem": "Parked vehicles eat up about 60% of Bengaluru's road space, and the minister wants a dedicated enforcement body.",
+  "quote": "Parked vehicles eat up 60% Bengaluru road space: Minister seeks regulatory body"
+ },
+ {
+  "id": 81,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Political parties attacked the proposed Bengaluru fee for parking cars outside homes as anti-people.",
+  "quote": "anti-people"
+ },
+ {
+  "id": 82,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "CEEW study draws parking management lessons from Amritsar.",
+  "quote": "Parking Management India"
+ },
+ {
+  "id": 83,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru's civic body is eyeing private properties to create parking spaces.",
+  "quote": "create parking spaces in Bengaluru"
+ },
+ {
+  "id": 84,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru proposes tax waivers for vacant plots used as parking to create more off-street parking space.",
+  "quote": "Give vacant land for parking space in Bengaluru, get tax waiver"
+ },
+ {
+  "id": 85,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru proposes tax waivers for vacant plots used as parking to create more off-street parking space.",
+  "quote": "Karnataka proposes 100% property tax waiver for vacant plots used for multi-level car parking facilities"
+ },
+ {
+  "id": 86,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru rules would charge residents up to Rs 25,000 a year to park on the road outside their own homes.",
+  "quote": "Bengaluru residents to pay up to Rs 25,000 for parking outside home? Here’s what new proposal says"
+ },
+ {
+  "id": 87,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru's draft parking rules set out new fees, restrictions and enforcement, and the public is being asked for feedback.",
+  "quote": "Bengaluru Parking Rules Set For Major Overhaul"
+ },
+ {
+  "id": 88,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru's Rs 25,000 parking rule sparked outrage.",
+  "quote": "Sparks Outrage"
+ },
+ {
+  "id": 89,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "roadside-congestion",
+  "problem": "Bengaluru's parking rules aim to clear traffic chokepoints at notorious junctions caused by parked vehicles.",
+  "quote": "Bengaluru Parking Rules Target Major Traffic Chokepoints"
+ },
+ {
+  "id": 90,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "A Karnataka minister asked the CM to rethink the proposed Bengaluru parking fee of up to Rs 25,000 a year for residents.",
+  "quote": "Rs 25,000 Bengaluru Parking Fee Plan: Karnataka Minister Ramalinga Reddy Writes To CM, Seeks Review"
+ },
+ {
+  "id": 91,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru proposes tax waivers for vacant plots used as parking to create more off-street parking space.",
+  "quote": "Vacant Sites In Bengaluru Could Get 100% Tax Waiver If Used For Multi-Level Parking, Draft Rules Propose"
+ },
+ {
+  "id": 92,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "residential",
+  "problem": "Housing society residents in Bengaluru and apartment projects need clearer parking rights and rules.",
+  "quote": "parking rights and regulations"
+ },
+ {
+  "id": 93,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 94,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "New rules aim to promote private parking bays in Bengaluru.",
+  "quote": "private parking bays in Bengaluru"
+ },
+ {
+  "id": 95,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "residential",
+  "problem": "Housing society residents in Bengaluru and apartment projects need clearer parking rights and rules.",
+  "quote": "Karnataka RERA chairman calls for clear parking policy in apartment projects"
+ },
+ {
+  "id": 96,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru techies may have to pay for office parking under a proposal to fix Outer Ring Road traffic.",
+  "quote": "Techies To Pay For Office Parking"
+ },
+ {
+  "id": 97,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru plans footpath and parking policy with parking curbs as part of traffic measures.",
+  "quote": "Footpath, parking policy for Bengaluru: Shivakumar holds meeting with city MLAs"
+ },
+ {
+  "id": 98,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fines-towing",
+  "problem": "Bengaluru is preparing a drive to enforce parking regulations as on-street enforcement tightens.",
+  "quote": "Bengaluru civic bodies plan off-street parking as on-street enforcement set to tighten"
+ },
+ {
+  "id": 99,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru rules would charge residents up to Rs 25,000 a year to park on the road outside their own homes.",
+  "quote": "Parking Vehicles Outside Your Gate? Bengaluru Residents May Soon Have To Pay"
+ },
+ {
+  "id": 100,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru plans footpath and parking policy with parking curbs as part of traffic measures.",
+  "quote": "Bengaluru civic budget: Footpath policy, ward-wise allocation, parking restrictions on cards"
+ },
+ {
+  "id": 101,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru plans footpath and parking policy with parking curbs as part of traffic measures.",
+  "quote": "Bengaluru to unveil footpath, parking policy; only authorised vendors allowed"
+ },
+ {
+  "id": 102,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "hubs",
+  "problem": "New parking and pick-up rules at Bengaluru airport drew protests and criticism from the minister and cab drivers.",
+  "quote": "CS reviews Bengaluru airport’s new pick-up, parking regulations"
+ },
+ {
+  "id": 103,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "hubs",
+  "problem": "New parking and pick-up rules at Bengaluru airport drew protests and criticism from the minister and cab drivers.",
+  "quote": "Minister raps BIAL over Bengaluru airport’s pick-up, parking regulations"
+ },
+ {
+  "id": 104,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru's parking crisis deepens with a dusty policy and crowded streets.",
+  "quote": "parking crisis deepens"
+ },
+ {
+  "id": 105,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Revision of Bengaluru's parking policy is expected to cut civic revenue by Rs 40 crore.",
+  "quote": "Revision in parking policy to reduce revenue of BBMP by ₹40 crore in Bengaluru"
+ },
+ {
+  "id": 106,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "hubs",
+  "problem": "New parking and pick-up rules at Bengaluru airport drew protests and criticism from the minister and cab drivers.",
+  "quote": "Bengaluru Drivers' Body Protests Airport Parking Policy, Authorities Respond"
+ },
+ {
+  "id": 107,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "hubs",
+  "problem": "New parking and pick-up rules at Bengaluru airport drew protests and criticism from the minister and cab drivers.",
+  "quote": "Karnataka government orders parking rule tweaks at Bengaluru airport"
+ },
+ {
+  "id": 108,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "roadside-congestion",
+  "problem": "A parking plan is being prepared to streamline traffic in Jayanagar, Bengaluru.",
+  "quote": "streamline Jayanagar traffic"
+ },
+ {
+  "id": 109,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "A Rs 3,000 monthly fee for on-street parking is coming in Bengaluru.",
+  "quote": "3,000 Rupee Per Month Parking Fee"
+ },
+ {
+  "id": 110,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "hubs",
+  "problem": "New parking and pick-up rules at Bengaluru airport drew protests and criticism from the minister and cab drivers.",
+  "quote": "new parking rules"
+ },
+ {
+  "id": 111,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "hubs",
+  "problem": "Parking is banned on several roads during Bengaluru IPL match days.",
+  "quote": "No Parking Allowed On These Road"
+ },
+ {
+  "id": 112,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Pay and park is coming to 35 roads in Bengaluru's central business district.",
+  "quote": "pay & park on 35 roads"
+ },
+ {
+  "id": 113,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "hubs",
+  "problem": "New parking and pick-up rules at Bengaluru airport drew protests and criticism from the minister and cab drivers.",
+  "quote": ""
+ },
+ {
+  "id": 114,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "hubs",
+  "problem": "New parking and pick-up rules at Bengaluru airport drew protests and criticism from the minister and cab drivers.",
+  "quote": "new parking rules"
+ },
+ {
+  "id": 115,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Free parking is ending in Bengaluru.",
+  "quote": "Say goodbye to free parking"
+ },
+ {
+  "id": 116,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "hubs",
+  "problem": "New parking and pick-up rules at Bengaluru airport drew protests and criticism from the minister and cab drivers.",
+  "quote": "After backlash, BIAL increases free parking duration at T1 arrivals at Bengaluru airport"
+ },
+ {
+  "id": 117,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Commentary says Bengaluru's parking problem needs a policy that goes beyond the streets and real enforcement.",
+  "quote": "Parking policy: Take it beyond the streets"
+ },
+ {
+  "id": 118,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Commentary says Bengaluru's parking problem needs a policy that goes beyond the streets and real enforcement.",
+  "quote": "Fixing Bengaluru’s parking problem: The need to bell the cat"
+ },
+ {
+  "id": 119,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Analysis of Bengaluru's draft parking policy covering residential and commercial areas and penalties.",
+  "quote": "Draft Parking Policy 2020"
+ },
+ {
+  "id": 120,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 121,
+  "keep": true,
+  "city": "Kochi",
+  "category": "policy-infra",
+  "problem": "Kerala police plan a QR code system to guide motorists to pay-and-park lots.",
+  "quote": "guide motorists to pay-and-park lots"
+ },
+ {
+  "id": 122,
+  "keep": true,
+  "city": "Kochi",
+  "category": "roadside-congestion",
+  "problem": "The cycling track at Marine Drive in Kochi has become a parking zone amid poor enforcement.",
+  "quote": "turns into parking zone amid poor enforcement"
+ },
+ {
+  "id": 123,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 124,
+  "keep": true,
+  "city": "Kochi",
+  "category": "fees",
+  "problem": "Lulu Mall in Kochi faced a High Court notice and customer complaints over parking fees.",
+  "quote": "illegal parking fees"
+ },
+ {
+  "id": 125,
+  "keep": true,
+  "city": "Kochi",
+  "category": "roadside-congestion",
+  "problem": "Illegal parking near the Vytilla mobility hub in Kochi blocks the service road, and hub officials filed a complaint.",
+  "quote": "D Dhanuraj of CPPR Comments in TNIE on Illegal Parking near Vytilla Mobility Hub"
+ },
+ {
+  "id": 126,
+  "keep": true,
+  "city": "Kochi",
+  "category": "roadside-congestion",
+  "problem": "Parking on Ernakulam's Broadway was to be banned because of congestion.",
+  "quote": "No parking on Ernakulam Broadway"
+ },
+ {
+  "id": 127,
+  "keep": true,
+  "city": "Kochi",
+  "category": "roadside-congestion",
+  "problem": "Illegal parking near the Vytilla mobility hub in Kochi blocks the service road, and hub officials filed a complaint.",
+  "quote": "illegal parking on service road"
+ },
+ {
+  "id": 128,
+  "keep": true,
+  "city": "Kochi",
+  "category": "policy-infra",
+  "problem": "Cochin Smart Mission Limited is trialling a smart solution to Kochi's parking troubles.",
+  "quote": "parking troubles"
+ },
+ {
+  "id": 129,
+  "keep": true,
+  "city": "Kochi",
+  "category": "no-space",
+  "problem": "Cramped Kochi has little parking, so agencies are now offering parking solutions.",
+  "quote": "cramped Kochi"
+ },
+ {
+  "id": 130,
+  "keep": true,
+  "city": "Kochi",
+  "category": "fees",
+  "problem": "Lulu Mall in Kochi faced a High Court notice and customer complaints over parking fees.",
+  "quote": "Kochi Corporation and Lulu customers: Is the Mall taking you for a parking \"fee\" ride?"
+ },
+ {
+  "id": 131,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "roadside-congestion",
+  "problem": "Illegal parking on Chala Road in Thiruvananthapuram triggers severe traffic snarl-ups.",
+  "quote": "severe traffic snarl-ups"
+ },
+ {
+  "id": 132,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "fees",
+  "problem": "Parking fees at Kerala malls have put the malls under legal scrutiny.",
+  "quote": "Parking fee puts malls in dock"
+ },
+ {
+  "id": 133,
+  "keep": true,
+  "city": "Kochi",
+  "category": "roadside-congestion",
+  "problem": "Illegal truck parking chokes Udayanagar Road in Kochi even after renovation.",
+  "quote": "Illegal truck parking chokes"
+ },
+ {
+  "id": 134,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "roadside-congestion",
+  "problem": "Tipper trucks parked along MC Road cause repeated mishaps with no action taken.",
+  "quote": "no action taken despite repeated mishaps"
+ },
+ {
+  "id": 135,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "residential",
+  "problem": "A Thrissur family is trapped in its own home by illegally parked trucks.",
+  "quote": "trapped in own home by illegally parked trucks"
+ },
+ {
+  "id": 136,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "roadside-congestion",
+  "problem": "An illegally parked lorry and a speeding car were blamed for a Thrissur crash that killed 8 students.",
+  "quote": "illegally parked lorry"
+ },
+ {
+  "id": 137,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "roadside-congestion",
+  "problem": "A KSRTC bus shelter on prime national highway land in Thiruvananthapuram has turned into an illegal parking area.",
+  "quote": "turns into illegal parking area"
+ },
+ {
+  "id": 138,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "roadside-congestion",
+  "problem": "Interstate luxury buses turn Muvattupuzha roads into parking zones at night.",
+  "quote": "turn Muvattupuzha roads into parking zones at night"
+ },
+ {
+  "id": 139,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "fees",
+  "problem": "Parking fees at Kerala railway stations were increased, with extra charges to store helmets.",
+  "quote": "Parking fees at railway stations in Kerala increased"
+ },
+ {
+  "id": 140,
+  "keep": true,
+  "city": "India (other)",
+  "category": "fees",
+  "problem": "Opinion says India's biggest parking problem is that parking is free.",
+  "quote": "India’s biggest parking problem is that it’s free"
+ },
+ {
+  "id": 141,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "policy-infra",
+  "problem": "India's parking crisis is turning into a major civic headache, reports Delhi.",
+  "quote": "parking crisis is turning into a major civic headache"
+ },
+ {
+  "id": 142,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "policy-infra",
+  "problem": "Mumbai's parking crisis is prompting calls for automated parking systems.",
+  "quote": "Mumbai’s Parking Crisis: Can Automated Parking Systems Be the Ultimate Solution"
+ },
+ {
+  "id": 143,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "Nagpur faces a parking crisis with little sincere effort to resolve it.",
+  "quote": "Parking crisis in Nagpur"
+ },
+ {
+  "id": 144,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Bengaluru's citywide parking plan faces delays despite a pilot push.",
+  "quote": "Bengaluru’s parking mess: GBA’s citywide plan faces delays despite pilot push"
+ },
+ {
+  "id": 145,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 146,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 147,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "disputes",
+  "problem": "A Mercedes parking incident in Bengaluru is described as the tip of India's massive parking nightmare.",
+  "quote": "India's massive parking nightmare"
+ },
+ {
+  "id": 148,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "TV segment on urban parking crisis and tackling parking problems in cities.",
+  "quote": "Video | Urban Parking Crisis : Challenges and Solutions"
+ },
+ {
+  "id": 149,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 150,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "TV segment on urban parking crisis and tackling parking problems in cities.",
+  "quote": "Video | Tackling Parking Problems In Cities"
+ },
+ {
+  "id": 151,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "Bhubaneswar civic body floated tenders for 36 new parking lots.",
+  "quote": "36 new parking lots"
+ },
+ {
+  "id": 152,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 153,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 154,
+  "keep": true,
+  "city": "India (other)",
+  "category": "no-space",
+  "problem": "Finding a parking spot feels like winning a lottery.",
+  "quote": "Why Finding a Spot Feels Like Winning a Lottery"
+ },
+ {
+  "id": 155,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 156,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "Rising car ownership in Indian cities triggers fights over parking.",
+  "quote": "fights over parking"
+ },
+ {
+  "id": 157,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "policy-infra",
+  "problem": "Delhi High Court called for a policy response to the city's parking woes.",
+  "quote": "Parking Woes Need Policy Response"
+ },
+ {
+  "id": 158,
+  "keep": true,
+  "city": "Chennai",
+  "category": "policy-infra",
+  "problem": "Chennai's lack of a parking policy puts it in a fix, with revenue loss and urban chaos.",
+  "quote": "No Parking Policy Puts Chennai In A Fix"
+ },
+ {
+  "id": 159,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "A guest column urges solving the car-parking crisis in Chandigarh.",
+  "quote": "solve the car-parking crisis"
+ },
+ {
+  "id": 160,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "Empty multi-level parking lots sit unused while streets stay choked.",
+  "quote": "Empty lots, choked streets"
+ },
+ {
+  "id": 161,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "Meghalaya launched a grant scheme to tackle Shillong's parking crisis.",
+  "quote": "Shillong's parking crisis"
+ },
+ {
+  "id": 162,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "no-space",
+  "problem": "Drivers searching for parking in Delhi add to traffic congestion every minute.",
+  "quote": "Driving slow, looking for parking?"
+ },
+ {
+  "id": 163,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "Commentary says India urgently needs to unlock its parking problem.",
+  "quote": "Dire Need to Unlock the Parking Game"
+ },
+ {
+  "id": 164,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "policy-infra",
+  "problem": "Mumbai's parking is set to go digital while experts seek infrastructure push.",
+  "quote": "Experts Seek Infrastructure Push"
+ },
+ {
+  "id": 165,
+  "keep": true,
+  "city": "India (other)",
+  "category": "roadside-congestion",
+  "problem": "About 37.6% of Kolkata car owners keep their vehicles parked on roads.",
+  "quote": "keep their vehicles parked on roads"
+ },
+ {
+  "id": 166,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 167,
+  "keep": true,
+  "city": "Hyderabad",
+  "category": "policy-infra",
+  "problem": "Hyderabad is getting a new system to solve parking issues.",
+  "quote": "Solve Parking Issues"
+ },
+ {
+  "id": 168,
+  "keep": true,
+  "city": "India (other)",
+  "category": "no-space",
+  "problem": "Panchkula has mounting parking woes with no space and cars in the wrong place.",
+  "quote": "No space, wrong place"
+ },
+ {
+  "id": 169,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "policy-infra",
+  "problem": "The Supreme Court issued directions on urban parking management and called for a statutory regime and pilots in Delhi colonies.",
+  "quote": "Parking Management in Urban Areas"
+ },
+ {
+  "id": 170,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "policy-infra",
+  "problem": "Three new parking projects in Delhi aim to ease parking difficulty.",
+  "quote": "3 New Parking Projects"
+ },
+ {
+  "id": 171,
+  "keep": true,
+  "city": "Kochi",
+  "category": "roadside-congestion",
+  "problem": "Many walkways in Kochi have become parking strips.",
+  "quote": "Many walkways in Kochi now parking strips"
+ },
+ {
+  "id": 172,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "policy-infra",
+  "problem": "Delhi's MCD plans 20 new parking facilities to tackle the roadside parking crisis.",
+  "quote": "Roadside Parking Crisis"
+ },
+ {
+  "id": 173,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "policy-infra",
+  "problem": "Mumbai's parking crisis is under discussion, with questions about whether it is closer to a solution.",
+  "quote": "Mumbai a step closer to solving its parking crisis"
+ },
+ {
+  "id": 174,
+  "keep": true,
+  "city": "India (other)",
+  "category": "no-space",
+  "problem": "Parking woes in crowded areas affect people's mental health and time.",
+  "quote": "Parking Woes in Crowded Areas"
+ },
+ {
+  "id": 175,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "Space-starved Ahmedabad residential societies demand civic plots to park their vehicles.",
+  "quote": "Space-starved societies demand AMC plots"
+ },
+ {
+  "id": 176,
+  "keep": true,
+  "city": "Chennai",
+  "category": "policy-infra",
+  "problem": "Chennai's civic body is trying a new parking policy for T Nagar congestion.",
+  "quote": "T Nagar parking"
+ },
+ {
+  "id": 177,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "no-space",
+  "problem": "Parking is described as a nightmare in Bengaluru.",
+  "quote": "parking is a nightmare in Bengaluru"
+ },
+ {
+  "id": 178,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 179,
+  "keep": true,
+  "city": "India (other)",
+  "category": "hubs",
+  "problem": "Parking at Kalka temple is in crisis because land delays block the parking project.",
+  "quote": "Kalka Temple Parking Crisis Deepens"
+ },
+ {
+  "id": 180,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "The High Court issued notice to Punjab over the parking crisis in Mohali.",
+  "quote": "High court notice to Punjab government over parking ‘crisis’ in Mohali"
+ },
+ {
+  "id": 181,
+  "keep": true,
+  "city": "India (other)",
+  "category": "hubs",
+  "problem": "Parking at Kalka temple is in crisis because land delays block the parking project.",
+  "quote": "Kalka Temple Parking Crisis Deepens"
+ },
+ {
+  "id": 182,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "roadside-congestion",
+  "problem": "Bengaluru's clogged roads and parking problems are covered in this report.",
+  "quote": "clogged roads & parking problems"
+ },
+ {
+  "id": 183,
+  "keep": true,
+  "city": "India (other)",
+  "category": "fines-towing",
+  "problem": "In Ahmedabad, 66,000 vehicles were found illegally parked on roads.",
+  "quote": "66k vehicles illegally park on roads"
+ },
+ {
+  "id": 184,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "roadside-congestion",
+  "problem": "Rampant illegal parking chokes the Museum to Kanakakunnu stretch in Thiruvananthapuram.",
+  "quote": "Rampant illegal parking chokes"
+ },
+ {
+  "id": 185,
+  "keep": true,
+  "city": "India (other)",
+  "category": "roadside-congestion",
+  "problem": "Jalandhar residents are asked what steps should check illegal parking along roads.",
+  "quote": "Illegal parking along roads"
+ },
+ {
+  "id": 186,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "policy-infra",
+  "problem": "Delhi notified its first parking rules to restrain vehicle use and cut air pollution.",
+  "quote": "first-ever parking rules"
+ },
+ {
+  "id": 187,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "Jaipur's new building regulations address parking problems.",
+  "quote": "address parking problems"
+ },
+ {
+  "id": 188,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 189,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking feud in Pinjore ended in murder and four people were held.",
+  "quote": "Pinjore parking feud murder"
+ },
+ {
+  "id": 190,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Thiruvananthapuram opened its largest multi-level parking lot.",
+  "quote": "Largest multi-level parking lot"
+ },
+ {
+  "id": 191,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "no-space",
+  "problem": "Khan Market in Delhi still faces parking problems.",
+  "quote": "still faces parking problems"
+ },
+ {
+  "id": 192,
+  "keep": true,
+  "city": "India (other)",
+  "category": "fees",
+  "problem": "Article asks whether a higher parking fee will reduce the parking problem.",
+  "quote": "Higher Fee Reduce Parking Problem"
+ },
+ {
+  "id": 193,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ }
+]

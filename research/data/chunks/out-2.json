@@ -1,0 +1,1554 @@
+[
+ {
+  "id": 388,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Two new multi-level car parking facilities set to open in Thiruvananthapuram.",
+  "quote": "Two new multi-level car parking facilities set to open in Thiruvananthapuram"
+ },
+ {
+  "id": 389,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "fees",
+  "problem": "Parking issue reported: Building Owner Can Decide If Parking Fees Is To Be Levied From Customers Utilizing Its Shopping Facility: ....",
+  "quote": "Building Owner Can Decide If Parking Fees Is To Be Levied From Customers Utilizing Its Shopping Facility: ..."
+ },
+ {
+  "id": 390,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Multi-level Kaiserbagh parking to ease congestion.",
+  "quote": "Multi-level Kaiserbagh parking to ease congestion"
+ },
+ {
+  "id": 391,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 392,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Suresh Gopi to inaugurate multi-level parking complex at Kollam railway station on Feb 14.",
+  "quote": "Suresh Gopi to inaugurate multi-level parking complex at Kollam railway station on Feb 14"
+ },
+ {
+  "id": 393,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "hubs",
+  "problem": "Parking issue reported: TVM Onam traffic: Drivers told to display phone numbers on parked cars.",
+  "quote": "TVM Onam traffic: Drivers told to display phone numbers on parked cars"
+ },
+ {
+  "id": 394,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Multi-Level Car Parking Facility Inaugurated at Nehru Place.",
+  "quote": "Multi-Level Car Parking Facility Inaugurated at Nehru Place"
+ },
+ {
+  "id": 395,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: First phase of Kerala's largest multi-level parking lot launched in Trivandrum.",
+  "quote": "First phase of Kerala's largest multi-level parking lot launched in Trivandrum"
+ },
+ {
+  "id": 396,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Kannur Corporation sets up two multi-level parking centres to tackle congestion.",
+  "quote": "Kannur Corporation sets up two multi-level parking centres to tackle congestion"
+ },
+ {
+  "id": 397,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: CM inaugurates Rs 19 crore five-storey multi-level parking centre in Thampanoor.",
+  "quote": "CM inaugurates Rs 19 crore five-storey multi-level parking centre in Thampanoor"
+ },
+ {
+  "id": 398,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Thampanoor multilevel parking to accommodate more cars; extension in cards.",
+  "quote": "Thampanoor multilevel parking to accommodate more cars; extension in cards"
+ },
+ {
+  "id": 399,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "fees",
+  "problem": "Parking issue reported: Parking complex at Guruvayur constructed with centre’s grant, BJP asks chairman not to squeeze devotees in nam.",
+  "quote": "Parking complex at Guruvayur constructed with centre’s grant, BJP asks chairman not to squeeze devotees in name of fees"
+ },
+ {
+  "id": 400,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 401,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Inauguration of New Advocate Chambers and Multi-Level Parking at Allahabad High Court.",
+  "quote": "Inauguration of New Advocate Chambers and Multi-Level Parking at Allahabad High Court"
+ },
+ {
+  "id": 402,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "ev-charging",
+  "problem": "Parking issue reported: EV charging station opened at Guruvayur temple parking facility.",
+  "quote": "EV charging station opened at Guruvayur temple parking facility"
+ },
+ {
+  "id": 403,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Ludhiana: Driver shot dead over parking dispute; 1 held, illegal weapon seized.",
+  "quote": "Ludhiana: Driver shot dead over parking dispute; 1 held, illegal weapon seized"
+ },
+ {
+  "id": 404,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 405,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: From Argument To Gunshot, Parking Dispute In Preet Vihar Turned Violent.",
+  "quote": "From Argument To Gunshot, Parking Dispute In Preet Vihar Turned Violent"
+ },
+ {
+  "id": 406,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Man brutally killed over a parking dispute in East Delhi.",
+  "quote": "Man brutally killed over a parking dispute in East Delhi"
+ },
+ {
+  "id": 407,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: BMW, Fortuner Owner Shoots Man Dead Over Midnight Parking Dispute In Delhi.",
+  "quote": "BMW, Fortuner Owner Shoots Man Dead Over Midnight Parking Dispute In Delhi"
+ },
+ {
+  "id": 408,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: BMW owner kills neighbour’s brother over parking spot in Delhi, arrested after 12 hours.",
+  "quote": "BMW owner kills neighbour’s brother over parking spot in Delhi, arrested after 12 hours"
+ },
+ {
+  "id": 409,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Delhi’s parking wars now end in murder & court cases. It’s the new road rage.",
+  "quote": "Delhi’s parking wars now end in murder & court cases. It’s the new road rage"
+ },
+ {
+  "id": 410,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Priest dies after brain bleed; family alleges police assault over parking dispute.",
+  "quote": "Priest dies after brain bleed; family alleges police assault over parking dispute"
+ },
+ {
+  "id": 411,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Parking Dispute Turns Deadly In Delhi: 26-Year-Old Woman Stabbed To Death By Minor, Husband Injured.",
+  "quote": "Parking Dispute Turns Deadly In Delhi: 26-Year-Old Woman Stabbed To Death By Minor, Husband Injured"
+ },
+ {
+  "id": 412,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Woman killed, husband critically hurt over parking dispute in Dwarka; 2 held.",
+  "quote": "Woman killed, husband critically hurt over parking dispute in Dwarka; 2 held"
+ },
+ {
+  "id": 413,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Man killed, another critically injured after parking dispute in Navi Mumbai.",
+  "quote": "Man killed, another critically injured after parking dispute in Navi Mumbai"
+ },
+ {
+  "id": 414,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: BMW owner who shot man dead over parking dispute was arrested earlier too, say cops; stepson among 3.",
+  "quote": "BMW owner who shot man dead over parking dispute was arrested earlier too, say cops; stepson among 3 more held in murder"
+ },
+ {
+  "id": 415,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Woman Stabbed To Death, Husband Injured In Fight Over Parking In Delhi.",
+  "quote": "Woman Stabbed To Death, Husband Injured In Fight Over Parking In Delhi"
+ },
+ {
+  "id": 416,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Woman stabbed to death, husband injured over parking dispute in Delhi.",
+  "quote": "Woman stabbed to death, husband injured over parking dispute in Delhi"
+ },
+ {
+  "id": 417,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Man killed over parking dispute in Delhi.",
+  "quote": "Man killed over parking dispute in Delhi"
+ },
+ {
+  "id": 418,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: 77-year-old dies as IIT graduate pushes him after parking spat in Noida.",
+  "quote": "77-year-old dies as IIT graduate pushes him after parking spat in Noida"
+ },
+ {
+  "id": 419,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: 43-year-old vegetable trader stabbed to death over parking dispute in Chandigarh.",
+  "quote": "43-year-old vegetable trader stabbed to death over parking dispute in Chandigarh"
+ },
+ {
+  "id": 420,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Parking Row: SUV Dispute Ended in Businessman’s Murder, Says Chargesheet.",
+  "quote": "Parking Row: SUV Dispute Ended in Businessman’s Murder, Says Chargesheet"
+ },
+ {
+  "id": 421,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Property dealer shot dead over parking dispute in Delhi’s Preet Vihar; accused on run.",
+  "quote": "Property dealer shot dead over parking dispute in Delhi’s Preet Vihar; accused on run"
+ },
+ {
+  "id": 422,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Kota auto-rickshaw driver stabbed to death over parking dispute.",
+  "quote": "Kota auto-rickshaw driver stabbed to death over parking dispute"
+ },
+ {
+  "id": 423,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Man beheads driver over parking dispute in Bihar, victim's family kills him.",
+  "quote": "Man beheads driver over parking dispute in Bihar, victim's family kills him"
+ },
+ {
+  "id": 424,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Another stepson nabbed two days after Preet Vihar parking dispute murder.",
+  "quote": "Another stepson nabbed two days after Preet Vihar parking dispute murder"
+ },
+ {
+  "id": 425,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: East Delhi Trader Killed Over Parking Row: Family In Shock.",
+  "quote": "East Delhi Trader Killed Over Parking Row: Family In Shock"
+ },
+ {
+  "id": 426,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Vendor killed by mob after he hacked driver to death over parking dispute in Bihar.",
+  "quote": "Vendor killed by mob after he hacked driver to death over parking dispute in Bihar"
+ },
+ {
+  "id": 427,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: 63-year-old killed by duo over parking dispute.",
+  "quote": "63-year-old killed by duo over parking dispute"
+ },
+ {
+  "id": 428,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Parking dispute turns violent: Ravi Chauhan beheads Ali Hussain, later lynched by mob.",
+  "quote": "Parking dispute turns violent: Ravi Chauhan beheads Ali Hussain, later lynched by mob"
+ },
+ {
+  "id": 429,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Fruit trader stabbed to death in Gurugram mandi over parking dispute.",
+  "quote": "Fruit trader stabbed to death in Gurugram mandi over parking dispute"
+ },
+ {
+  "id": 430,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: South Delhi Road Rage: Techie Stabs Man To Death Over Parking Dispute.",
+  "quote": "South Delhi Road Rage: Techie Stabs Man To Death Over Parking Dispute"
+ },
+ {
+  "id": 431,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Man beaten to death in Pinjore, four arrested: Panchkula police suspect parking dispute.",
+  "quote": "Man beaten to death in Pinjore, four arrested: Panchkula police suspect parking dispute"
+ },
+ {
+  "id": 432,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Parking dispute turns deadly in Forbesganj, two killed in mob attack.",
+  "quote": "Parking dispute turns deadly in Forbesganj, two killed in mob attack"
+ },
+ {
+  "id": 433,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Fortuner at gate, gunshots at 2am: How a parking feud turned fatal in Delhi's Preet Vihar.",
+  "quote": "Fortuner at gate, gunshots at 2am: How a parking feud turned fatal in Delhi's Preet Vihar"
+ },
+ {
+  "id": 434,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Property dealer, his stepson, two friends: Who killed Delhi man over parking row.",
+  "quote": "Property dealer, his stepson, two friends: Who killed Delhi man over parking row"
+ },
+ {
+  "id": 435,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: ‘We heard screams’: How a parking feud at South Delhi’s Alaknanda ended in double murder.",
+  "quote": "‘We heard screams’: How a parking feud at South Delhi’s Alaknanda ended in double murder"
+ },
+ {
+  "id": 436,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Man murdered over parking dispute; 3 held.",
+  "quote": "Man murdered over parking dispute; 3 held"
+ },
+ {
+  "id": 437,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Woman ‘sets 5 vehicles on fire’ over parking dispute in Ambernath housing society.",
+  "quote": "Woman ‘sets 5 vehicles on fire’ over parking dispute in Ambernath housing society"
+ },
+ {
+  "id": 438,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Parking Row Turns Deadly: Delhi Trader Shot Dead By Tenant.",
+  "quote": "Parking Row Turns Deadly: Delhi Trader Shot Dead By Tenant"
+ },
+ {
+  "id": 439,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: 65-year-old retired govt employee shot dead over bike parking dispute in Moga district.",
+  "quote": "65-year-old retired govt employee shot dead over bike parking dispute in Moga district"
+ },
+ {
+  "id": 440,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Man stabbed to death over parking dispute; accused held within an hour.",
+  "quote": "Man stabbed to death over parking dispute; accused held within an hour"
+ },
+ {
+  "id": 441,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: 34-year-old man shot dead in Delhi over parking dispute, hunt on for accused.",
+  "quote": "34-year-old man shot dead in Delhi over parking dispute, hunt on for accused"
+ },
+ {
+  "id": 442,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: South Delhi road rage: Techie stabs man to death in parking row, injures friend.",
+  "quote": "South Delhi road rage: Techie stabs man to death in parking row, injures friend"
+ },
+ {
+  "id": 443,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Mumbai: Ashik Khan brutally murders Hindu man over 'parking dispute' in Dharavi, viral video shows v.",
+  "quote": "Mumbai: Ashik Khan brutally murders Hindu man over 'parking dispute' in Dharavi, viral video shows victim bleeding profu"
+ },
+ {
+  "id": 444,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Karnal: Womans murder plotted in Bangkok over parking dispute, say police.",
+  "quote": "Karnal: Womans murder plotted in Bangkok over parking dispute, say police"
+ },
+ {
+  "id": 445,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Parking, garbage among old grudges: How 50-year feud exploded on Holi in Delhi's Uttam Nagar, left 2.",
+  "quote": "Parking, garbage among old grudges: How 50-year feud exploded on Holi in Delhi's Uttam Nagar, left 26-yea"
+ },
+ {
+  "id": 446,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Bihar: Ravi Chauhan Beheads Ali Hussain Over Parking Dispute, Later Lynched by Mob in Araria.",
+  "quote": "Bihar: Ravi Chauhan Beheads Ali Hussain Over Parking Dispute, Later Lynched by Mob in Araria"
+ },
+ {
+  "id": 447,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Parking spat to bloodshed: Sarpanch's son hacked to death in MP's Shivpuri.",
+  "quote": "Parking spat to bloodshed: Sarpanch's son hacked to death in MP's Shivpuri"
+ },
+ {
+  "id": 448,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Scientist dies in Punjab after neighbour assaults him during parking dispute.",
+  "quote": "Scientist dies in Punjab after neighbour assaults him during parking dispute"
+ },
+ {
+  "id": 449,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Scientist Dies After Neighbour Assaults Him During Parking Row In Mohali.",
+  "quote": "Scientist Dies After Neighbour Assaults Him During Parking Row In Mohali"
+ },
+ {
+  "id": 450,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: \"Lost A Brilliant Mind\": IISER On Scientist's Death In Mohali Parking Row.",
+  "quote": "\"Lost A Brilliant Mind\": IISER On Scientist's Death In Mohali Parking Row"
+ },
+ {
+  "id": 451,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: IISER scientist killed in brutal assault over parking row in Punjab's Mohali.",
+  "quote": "IISER scientist killed in brutal assault over parking row in Punjab's Mohali"
+ },
+ {
+  "id": 452,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Mohali: Who was Abhishek Swarnkar? IISER scientist killed after being pushed, punched over parking d.",
+  "quote": "Mohali: Who was Abhishek Swarnkar? IISER scientist killed after being pushed, punched over parking dispute"
+ },
+ {
+  "id": 453,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: 'Attacked with bricks and rod': UP teacher beaten to death over parking dispute; 3 arrested.",
+  "quote": "'Attacked with bricks and rod': UP teacher beaten to death over parking dispute; 3 arrested"
+ },
+ {
+  "id": 454,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Huma Qureshi’s cousin murdered in Delhi over parking dispute; 2 arrested.",
+  "quote": "Huma Qureshi’s cousin murdered in Delhi over parking dispute; 2 arrested"
+ },
+ {
+  "id": 455,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Foreign-returned scientist suffering from kidney failure killed over parking dispute in Mohali, neig.",
+  "quote": "Foreign-returned scientist suffering from kidney failure killed over parking dispute in Mohali, neighbour"
+ },
+ {
+  "id": 456,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Scientist dies after assault in Punjab over parking dispute - India Today.",
+  "quote": "Scientist dies after assault in Punjab over parking dispute - India Today"
+ },
+ {
+  "id": 457,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Huma Qureshi's cousin murdered in Delhi's Nizamuddin over parking dispute - India Today.",
+  "quote": "Huma Qureshi's cousin murdered in Delhi's Nizamuddin over parking dispute - India Today"
+ },
+ {
+  "id": 458,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Scientist dies in Mohali parking dispute, family demands strict action.",
+  "quote": "Scientist dies in Mohali parking dispute, family demands strict action"
+ },
+ {
+  "id": 459,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Four Killed Over Parking Dispute In Bihar's Aurangabad.",
+  "quote": "Four Killed Over Parking Dispute In Bihar's Aurangabad"
+ },
+ {
+  "id": 460,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Huma Qureshi's cousin stabbed and killed in Delhi over parking dispute; police arrest accused, seize.",
+  "quote": "Huma Qureshi's cousin stabbed and killed in Delhi over parking dispute; police arrest accused, seize murder weapon"
+ },
+ {
+  "id": 461,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: How Mohali Parking Row Led To Scientist's Death. His Mother Narrates Horror.",
+  "quote": "How Mohali Parking Row Led To Scientist's Death. His Mother Narrates Horror"
+ },
+ {
+  "id": 462,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Thrashed with bricks and rods: UP teacher killed over parking dispute, 3 arrested.",
+  "quote": "Thrashed with bricks and rods: UP teacher killed over parking dispute, 3 arrested"
+ },
+ {
+  "id": 463,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Vadodara: Meeting to resolve parking dispute ends in murder as man stabs neighbour.",
+  "quote": "Vadodara: Meeting to resolve parking dispute ends in murder as man stabs neighbour"
+ },
+ {
+  "id": 464,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Huma Qureshi's brother murdered over parking dispute in Delhi's Nizamuddin area, 2 arrested.",
+  "quote": "Huma Qureshi's brother murdered over parking dispute in Delhi's Nizamuddin area, 2 arrested"
+ },
+ {
+  "id": 465,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: AISSF president shot dead in Punjab over parking dispute.",
+  "quote": "AISSF president shot dead in Punjab over parking dispute"
+ },
+ {
+  "id": 466,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Abhishek Swarnkar death: IISER researcher dies after being pushed to ground in Mohali parking row.",
+  "quote": "Abhishek Swarnkar death: IISER researcher dies after being pushed to ground in Mohali parking row"
+ },
+ {
+  "id": 467,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Parking dispute turns fatal, teacher killed in Varanasi.",
+  "quote": "Parking dispute turns fatal, teacher killed in Varanasi"
+ },
+ {
+  "id": 468,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Tragic Clash In Kanpur Dehat: Two Brothers Killed, Four Injured In Parking Dispute.",
+  "quote": "Tragic Clash In Kanpur Dehat: Two Brothers Killed, Four Injured In Parking Dispute"
+ },
+ {
+  "id": 469,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Parking dispute ends in man's death in Mumbai's Kandivli.",
+  "quote": "Parking dispute ends in man's death in Mumbai's Kandivli"
+ },
+ {
+  "id": 470,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: IISER scientist dies after violent parking clash with neighbour in Mohali.",
+  "quote": "IISER scientist dies after violent parking clash with neighbour in Mohali"
+ },
+ {
+  "id": 471,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Uttar Pradesh: School teacher beaten to death over parking dispute in Varanasi, all accused held.",
+  "quote": "Uttar Pradesh: School teacher beaten to death over parking dispute in Varanasi, all accused held"
+ },
+ {
+  "id": 472,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Father-son duo held for killing a 53-year-old man over bicycle parking issue.",
+  "quote": "Father-son duo held for killing a 53-year-old man over bicycle parking issue"
+ },
+ {
+  "id": 473,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: 2 Killed, Buildings Set On Fire In Parking Dispute In Bihar.",
+  "quote": "2 Killed, Buildings Set On Fire In Parking Dispute In Bihar"
+ },
+ {
+  "id": 474,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Huma Qureshi & Saqib Saleem's cousin 'murdered' over parking dispute in Delhi.",
+  "quote": "Huma Qureshi & Saqib Saleem's cousin 'murdered' over parking dispute in Delhi"
+ },
+ {
+  "id": 475,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Actor Huma Qureshi’s Cousin Stabbed To Death Over Parking Dispute In Delhi's Nizamuddin.",
+  "quote": "Actor Huma Qureshi’s Cousin Stabbed To Death Over Parking Dispute In Delhi's Nizamuddin"
+ },
+ {
+  "id": 476,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Locals storm party at Gurgaon farmhouse over parking brawl, 1 dead.",
+  "quote": "Locals storm party at Gurgaon farmhouse over parking brawl, 1 dead"
+ },
+ {
+  "id": 477,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: ‘Move the scooter’: How parking spat killed actor Huma Qureshi’s cousin in Delhi’s Nizamuddin; fathe.",
+  "quote": "‘Move the scooter’: How parking spat killed actor Huma Qureshi’s cousin in Delhi’s Nizamuddin; father sha"
+ },
+ {
+  "id": 478,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Huma Qureshi’s Cousin Stabbed To Death Over Delhi Parking Dispute, Shocking CCTV Footage Emerges.",
+  "quote": "Huma Qureshi’s Cousin Stabbed To Death Over Delhi Parking Dispute, Shocking CCTV Footage Emerges"
+ },
+ {
+  "id": 479,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Hotelier beaten to death in Gujarat housing society over parking scuffle.",
+  "quote": "Hotelier beaten to death in Gujarat housing society over parking scuffle"
+ },
+ {
+  "id": 480,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Vegetable Seller Beaten To Death In Rajasthan's Beawar Over Parking Dispute.",
+  "quote": "Vegetable Seller Beaten To Death In Rajasthan's Beawar Over Parking Dispute"
+ },
+ {
+  "id": 481,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: India: Actress Huma Qureshi's cousin killed in parking dispute in Delhi, two arrested.",
+  "quote": "India: Actress Huma Qureshi's cousin killed in parking dispute in Delhi, two arrested"
+ },
+ {
+  "id": 482,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: What happened to Huma Qureshi's cousin Asif? Argument over parking dispute leads to murder, CCTV foo.",
+  "quote": "What happened to Huma Qureshi's cousin Asif? Argument over parking dispute leads to murder, CCTV footage show"
+ },
+ {
+  "id": 483,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: 2 dead, several injured after clash over parking lot in Bihar's Patna leads to gun firing.",
+  "quote": "2 dead, several injured after clash over parking lot in Bihar's Patna leads to gun firing"
+ },
+ {
+  "id": 484,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 485,
+  "keep": true,
+  "city": "Pune",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Pune: IT engineer dies over car parking dispute.",
+  "quote": "Pune: IT engineer dies over car parking dispute"
+ },
+ {
+  "id": 486,
+  "keep": true,
+  "city": "Pune",
+  "category": "residential",
+  "problem": "After an engineer was killed over parking, traffic police urge RTO to demand proof of parking space before vehicle registration.",
+  "quote": "Day after Engineer ‘killed’ over parking dispute: Traffic cops urge RTO to avoid registration of vehicles without parkin"
+ },
+ {
+  "id": 487,
+  "keep": true,
+  "city": "Pune",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Software engineer murdered over parking dispute in Lullanagar.",
+  "quote": "Software engineer murdered over parking dispute in Lullanagar"
+ },
+ {
+  "id": 488,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Warring brothers kill each other in scuffle over parking, wife of one among the dead.",
+  "quote": "Warring brothers kill each other in scuffle over parking, wife of one among the dead"
+ },
+ {
+  "id": 489,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Dispute over parking slot leads to murder.",
+  "quote": "Dispute over parking slot leads to murder"
+ },
+ {
+  "id": 490,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Delhi ready to kill for a parking slot.",
+  "quote": "Delhi ready to kill for a parking slot"
+ },
+ {
+  "id": 491,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Punjab: Scientist beaten to death in Mohali over parking dispute, cctv captures shocking incident.",
+  "quote": "Punjab: Scientist beaten to death in Mohali over parking dispute, cctv captures shocking incident"
+ },
+ {
+  "id": 492,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Parking dispute leads to murder of 34-year-old man in Delhi; accused absconding, police launch hunt.",
+  "quote": "Parking dispute leads to murder of 34-year-old man in Delhi; accused absconding, police launch hunt"
+ },
+ {
+  "id": 493,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Parking Dispute Turns Fatal in Araria: Driver Killed, Accused Shopkeeper Lynched by Mob.",
+  "quote": "Parking Dispute Turns Fatal in Araria: Driver Killed, Accused Shopkeeper Lynched by Mob"
+ },
+ {
+  "id": 494,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Forbesganj Horror! Sattu Vendor Beaten To Death After He Decapitates Pickup Driver Over Parking Disp.",
+  "quote": "Forbesganj Horror! Sattu Vendor Beaten To Death After He Decapitates Pickup Driver Over Parking Dispute In"
+ },
+ {
+  "id": 495,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: Trivandrum Chamber urges airport to review high parking fees.",
+  "quote": "Trivandrum Chamber urges airport to review high parking fees"
+ },
+ {
+  "id": 496,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: TCCI seeks review of steep parking, access charges at Thiruvananthapuram airport.",
+  "quote": "TCCI seeks review of steep parking, access charges at Thiruvananthapuram airport"
+ },
+ {
+  "id": 497,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: Hike in Thiruvananthapuram International Airport parking charges puts commuters, taxi drivers under strain.",
+  "quote": "Hike in Thiruvananthapuram International Airport parking charges puts commuters, taxi drivers under strain"
+ },
+ {
+  "id": 498,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: Increase in parking charges: Youth Congress launches protest at Thiruvananthapuram Airport.",
+  "quote": "Increase in parking charges: Youth Congress launches protest at Thiruvananthapuram Airport"
+ },
+ {
+  "id": 499,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: LDF demands withdrawal of parking and user fee hikes in Thiruvananthapuram airport.",
+  "quote": "LDF demands withdrawal of parking and user fee hikes in Thiruvananthapuram airport"
+ },
+ {
+  "id": 500,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: Thiruvananthapuram International Airport parking fee hike: Trade union agitation forces waiver for workers.",
+  "quote": "Thiruvananthapuram International Airport parking fee hike: Trade union agitation forces waiver for workers"
+ },
+ {
+  "id": 501,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: LDF demands rollback of airport parking fee hike.",
+  "quote": "LDF demands rollback of airport parking fee hike"
+ },
+ {
+  "id": 502,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 503,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Multi-Level Car Parking Facility Opened At Putharikandam.",
+  "quote": "Multi-Level Car Parking Facility Opened At Putharikandam"
+ },
+ {
+  "id": 504,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "hubs",
+  "problem": "Parking issue reported: Onam traffic plan puts focus on parking, diversions as city braces for rush.",
+  "quote": "Onam traffic plan puts focus on parking, diversions as city braces for rush"
+ },
+ {
+  "id": 505,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "roadside-congestion",
+  "problem": "Parking issue reported: Illegally parked vehicles hold Thiruvananthapuram’s neighbourhood roads hostage.",
+  "quote": "Illegally parked vehicles hold Thiruvananthapuram’s neighbourhood roads hostage"
+ },
+ {
+  "id": 506,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Multi-level car parking facility opened in Thiruvananthapuram's Putharikandam.",
+  "quote": "Multi-level car parking facility opened in Thiruvananthapuram's Putharikandam"
+ },
+ {
+  "id": 507,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fines-towing",
+  "problem": "Parking issue reported: City police to intensify action against illegal parking.",
+  "quote": "City police to intensify action against illegal parking"
+ },
+ {
+  "id": 508,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 509,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Vaniyamkulam multi-level car park facility set to open by Sept.",
+  "quote": "Vaniyamkulam multi-level car park facility set to open by Sept"
+ },
+ {
+  "id": 510,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: Officials to crack down on illegal parking fee collection.",
+  "quote": "Officials to crack down on illegal parking fee collection"
+ },
+ {
+  "id": 511,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "hubs",
+  "problem": "Parking issue reported: Traffic curbs in city, special parking arrangements for Navy Day celebrations.",
+  "quote": "Traffic curbs in city, special parking arrangements for Navy Day celebrations"
+ },
+ {
+  "id": 512,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: High parking charges at Thiruvananthapuram railway station irk passengers.",
+  "quote": "High parking charges at Thiruvananthapuram railway station irk passengers"
+ },
+ {
+  "id": 513,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Biggest multi-level car parking facility in Thiruvananthapuram remains underutilised.",
+  "quote": "Biggest multi-level car parking facility in Thiruvananthapuram remains underutilised"
+ },
+ {
+  "id": 514,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "hubs",
+  "problem": "Parking issue reported: Onam rush leaves Thiruvananthapuram gasping, but multi-level parking lies underused.",
+  "quote": "Onam rush leaves Thiruvananthapuram gasping, but multi-level parking lies underused"
+ },
+ {
+  "id": 515,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fines-towing",
+  "problem": "Parking issue reported: Thiruvananthapuram City police introduce wheel locks to curb illegal parking.",
+  "quote": "Thiruvananthapuram City police introduce wheel locks to curb illegal parking"
+ },
+ {
+  "id": 516,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Corporation council to take steps to address parking woes in Thiruvananthapuram.",
+  "quote": "Corporation council to take steps to address parking woes in Thiruvananthapuram"
+ },
+ {
+  "id": 517,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Multi-level parking facility at Thampanoor in Thiruvananthapuram to open.",
+  "quote": "Multi-level parking facility at Thampanoor in Thiruvananthapuram to open"
+ },
+ {
+  "id": 518,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: ‘Daylight robbery’: Parking fee collectors overcharge visitors in tourist spots in Thiruvananthapuram.",
+  "quote": "‘Daylight robbery’: Parking fee collectors overcharge visitors in tourist spots in Thiruvananthapuram"
+ },
+ {
+  "id": 519,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "roadside-congestion",
+  "problem": "Parking issue reported: Illegal parking near Thiruvananthapuram Museum police station poses headache to public.",
+  "quote": "Illegal parking near Thiruvananthapuram Museum police station poses headache to public"
+ },
+ {
+  "id": 520,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: Thiruvananthapuram airport introduces FASTag parking for vehicles.",
+  "quote": "Thiruvananthapuram airport introduces FASTag parking for vehicles"
+ },
+ {
+  "id": 521,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Multi-level parking at MCH, East Fort by Oct 20.",
+  "quote": "Multi-level parking at MCH, East Fort by Oct 20"
+ },
+ {
+  "id": 522,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 523,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fines-towing",
+  "problem": "Parking issue reported: Not fine!: Parking restrictions imposed in Thiruvananthapuram lead to chaos.",
+  "quote": "Not fine!: Parking restrictions imposed in Thiruvananthapuram lead to chaos"
+ },
+ {
+  "id": 524,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: Corporation seeks govt nod for area-based parking fee.",
+  "quote": "Corporation seeks govt nod for area-based parking fee"
+ },
+ {
+  "id": 525,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Automated parking system rolled out at Thiruvananthapuram airport.",
+  "quote": "Automated parking system rolled out at Thiruvananthapuram airport"
+ },
+ {
+  "id": 526,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: Corporation’s draft bylaw on parking fees seeks to fix a ceiling on the fee collected.",
+  "quote": "Corporation’s draft bylaw on parking fees seeks to fix a ceiling on the fee collected"
+ },
+ {
+  "id": 527,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Start-up offers digital parking system at central station in Thiruvananthapuram.",
+  "quote": "Start-up offers digital parking system at central station in Thiruvananthapuram"
+ },
+ {
+  "id": 528,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "roadside-congestion",
+  "problem": "Parking issue reported: Corp revamps parking layout to ease traffic jam.",
+  "quote": "Corp revamps parking layout to ease traffic jam"
+ },
+ {
+  "id": 529,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: Parking fee slashed at Thiruvananthapuram airport.",
+  "quote": "Parking fee slashed at Thiruvananthapuram airport"
+ },
+ {
+  "id": 530,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Revenue department stalls proposed\npaid parking at Varkala helipad in Thiruvananthapuram.",
+  "quote": "Revenue department stalls proposed\npaid parking at Varkala helipad in Thiruvananthapuram"
+ },
+ {
+  "id": 531,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Multi-level parking facility all set to open at Thampanoor.",
+  "quote": "Multi-level parking facility all set to open at Thampanoor"
+ },
+ {
+  "id": 532,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Tender issued for multilevel car park at medical college.",
+  "quote": "Tender issued for multilevel car park at medical college"
+ },
+ {
+  "id": 533,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 534,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Multi-level car parking at Thiruvananthapuram corporation office yet to open for public.",
+  "quote": "Multi-level car parking at Thiruvananthapuram corporation office yet to open for public"
+ },
+ {
+  "id": 535,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fines-towing",
+  "problem": "Parking issue reported: Thiruvananthapuram Corporation cracks down on parking space violators.",
+  "quote": "Thiruvananthapuram Corporation cracks down on parking space violators"
+ },
+ {
+  "id": 536,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 537,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Six new multilevel parking spots on cards; facility at Palayam to open next year.",
+  "quote": "Six new multilevel parking spots on cards; facility at Palayam to open next year"
+ },
+ {
+  "id": 538,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Thiruvananthapuram: Multi-level car parking facility at corporation's main office to be inaugurated on Mo.",
+  "quote": "Thiruvananthapuram: Multi-level car parking facility at corporation's main office to be inaugurated on Mo"
+ },
+ {
+  "id": 539,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Fully-automated parking system installed in Thiruvananthapuram airport.",
+  "quote": "Fully-automated parking system installed in Thiruvananthapuram airport"
+ },
+ {
+  "id": 540,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: New parking system at airport.",
+  "quote": "New parking system at airport"
+ },
+ {
+  "id": 541,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: Steep hike in parking fees at railway station, bus stand leaves commuters frustrated.",
+  "quote": "Steep hike in parking fees at railway station, bus stand leaves commuters frustrated"
+ },
+ {
+  "id": 542,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: Thiruvananthapuram: Tariff reduced, new parking system introduced at airport.",
+  "quote": "Thiruvananthapuram: Tariff reduced, new parking system introduced at airport"
+ },
+ {
+  "id": 543,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Thiruvananthapuram: UST launches largest parking facility for 1,800 four-wheelers.",
+  "quote": "Thiruvananthapuram: UST launches largest parking facility for 1,800 four-wheelers"
+ },
+ {
+  "id": 544,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 545,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: New multi-level parking facility at Thampanoor in Thiruvananthapuram opened to public.",
+  "quote": "New multi-level parking facility at Thampanoor in Thiruvananthapuram opened to public"
+ },
+ {
+  "id": 546,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 547,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "hubs",
+  "problem": "Parking issue reported: Thiruvananthapuram: Lulu Mall introduces Pink Parking facility for women.",
+  "quote": "Thiruvananthapuram: Lulu Mall introduces Pink Parking facility for women"
+ },
+ {
+  "id": 548,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 549,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Thiruvananthapuram Central railway station gets more parking space for cars.",
+  "quote": "Thiruvananthapuram Central railway station gets more parking space for cars"
+ },
+ {
+  "id": 550,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Parking issue reported: Thiruvananthapuram: Parking fees at Central up.",
+  "quote": "Thiruvananthapuram: Parking fees at Central up"
+ },
+ {
+  "id": 551,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Thiruvananthapuram: Central station expands 4-wheeler parking facility.",
+  "quote": "Thiruvananthapuram: Central station expands 4-wheeler parking facility"
+ },
+ {
+  "id": 552,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "hubs",
+  "problem": "Parking issue reported: Despite repeated collapses, parking continues unabated on Varkala Cliff.",
+  "quote": "Despite repeated collapses, parking continues unabated on Varkala Cliff"
+ },
+ {
+  "id": 553,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 554,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: UST Thiruvananthapuram Campus opens one of the largest multi-level car parking facilities in city.",
+  "quote": "UST Thiruvananthapuram Campus opens one of the largest multi-level car parking facilities in city"
+ },
+ {
+  "id": 555,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Parking issue reported: Revamped parking lot opened at Central station.",
+  "quote": "Revamped parking lot opened at Central station"
+ },
+ {
+  "id": 556,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fines-towing",
+  "problem": "Parking issue reported: Railways launches drive to check illegal parking.",
+  "quote": "Railways launches drive to check illegal parking"
+ },
+ {
+  "id": 557,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fines-towing",
+  "problem": "Parking issue reported: Thiruvananthapuram police launch drive against parking of cars on footpath.",
+  "quote": "Thiruvananthapuram police launch drive against parking of cars on footpath"
+ },
+ {
+  "id": 558,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 559,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "roadside-congestion",
+  "problem": "Parking issue reported: Museum visitors in Trivandrum irked over parking space used for impounded vehicles.",
+  "quote": "Museum visitors in Trivandrum irked over parking space used for impounded vehicles"
+ },
+ {
+  "id": 560,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "hubs",
+  "problem": "Parking issue reported: Southern Railway says fire at Thrissur Railway Station’s two-wheeler parking area was caused by parked vehicle.",
+  "quote": "Southern Railway says fire at Thrissur Railway Station’s two-wheeler parking area was caused by parked vehicle"
+ },
+ {
+  "id": 561,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "hubs",
+  "problem": "Parking issue reported: Massive fire ravages bike parking at Thrissur Railway Station.",
+  "quote": "Massive fire ravages bike parking at Thrissur Railway Station"
+ },
+ {
+  "id": 562,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "hubs",
+  "problem": "Parking issue reported: Over 250 bikes gutted at parking area in Thrissur railway station.",
+  "quote": "Over 250 bikes gutted at parking area in Thrissur railway station"
+ },
+ {
+  "id": 563,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "hubs",
+  "problem": "Parking issue reported: Around 500 Two-Wheelers Gutted in Fire at Thrissur Railway Station Parking Area.",
+  "quote": "Around 500 Two-Wheelers Gutted in Fire at Thrissur Railway Station Parking Area"
+ },
+ {
+  "id": 564,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "hubs",
+  "problem": "Parking issue reported: Major fire engulfs bike parking at Thrissur railway station; nearly 500 two-wheelers destroyed.",
+  "quote": "Major fire engulfs bike parking at Thrissur railway station; nearly 500 two-wheelers destroyed"
+ },
+ {
+  "id": 565,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "hubs",
+  "problem": "Parking issue reported: 500 Bikes Gutted In Massive Fire At Parking Area Of Thrissur Railway Station, Probe On.",
+  "quote": "500 Bikes Gutted In Massive Fire At Parking Area Of Thrissur Railway Station, Probe On"
+ },
+ {
+  "id": 566,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "hubs",
+  "problem": "Parking issue reported: Around 500 two-wheelers gutted in fire at Thrissur railway station parking area.",
+  "quote": "Around 500 two-wheelers gutted in fire at Thrissur railway station parking area"
+ },
+ {
+  "id": 567,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "hubs",
+  "problem": "Parking issue reported: IN PHOTOS: 500 bikes gutted in Thrissur; are Mumbai’s station parkings prepared?.",
+  "quote": "IN PHOTOS: 500 bikes gutted in Thrissur; are Mumbai’s station parkings prepared?"
+ },
+ {
+  "id": 568,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 569,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 570,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 571,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 572,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 573,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 574,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "disputes",
+  "problem": "A parking dispute turned violent or fatal: Parking dispute leads to murder of lottery distributor in Thrissur.",
+  "quote": "Parking dispute leads to murder of lottery distributor in Thrissur"
+ },
+ {
+  "id": 575,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "hubs",
+  "problem": "Parking issue reported: Bikes burnt in Thrissur railway parking; Owners to file petition in consumer court.",
+  "quote": "Bikes burnt in Thrissur railway parking; Owners to file petition in consumer court"
+ },
+ {
+  "id": 576,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "hubs",
+  "problem": "Parking issue reported: Major fire in parking area of Thrissur railway station; bikes gutted, fire spreads to tree.",
+  "quote": "Major fire in parking area of Thrissur railway station; bikes gutted, fire spreads to tree"
+ },
+ {
+  "id": 577,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "hubs",
+  "problem": "Parking issue reported: Thrissur railway station parking lot fire: How vehicle owners can seek compensation for burnt bikes?.",
+  "quote": "Thrissur railway station parking lot fire: How vehicle owners can seek compensation for burnt bikes?"
+ },
+ {
+  "id": 578,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "hubs",
+  "problem": "Parking issue reported: Massive fire breaks out at Thrissur Railway Station parking area; more than 100 bikes gutted.",
+  "quote": "Massive fire breaks out at Thrissur Railway Station parking area; more than 100 bikes gutted"
+ },
+ {
+  "id": 579,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 580,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "no-space",
+  "problem": "Parking is a nightmare, with too little space and weak enforcement in Bengaluru.",
+  "quote": "r/bangalore - Why parking is a nightmare in Bengaluru"
+ },
+ {
+  "id": 581,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "no-space",
+  "problem": "Parking is a nightmare, with too little space and weak enforcement in Bengaluru.",
+  "quote": "Bangalore's car parking situation is horrible (and so are the ..."
+ }
+]

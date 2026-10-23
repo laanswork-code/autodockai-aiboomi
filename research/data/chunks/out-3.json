@@ -1,0 +1,1530 @@
+[
+ {
+  "id": 582,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "disputes",
+  "problem": "Residents face roadside parking fights in Bengaluru, with apartments claiming public spots as their own.",
+  "quote": "apartments can't claim exclusive rights over public parking spots"
+ },
+ {
+  "id": 583,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "no-space",
+  "problem": "Bengaluru keeps adding cars but not parking, leaving drivers with nowhere to park.",
+  "quote": "Why is Bangalore adding more cars but no parking"
+ },
+ {
+  "id": 584,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "disputes",
+  "problem": "Residents of nearby houses shout at a driver for parking in the spot they usually use on a public street.",
+  "quote": "Residents of these houses come out screaming that I've parked in the spot they usually park"
+ },
+ {
+  "id": 585,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "residential",
+  "problem": "Homeowners with a garage still park outside because strangers keep blocking their garage entrance.",
+  "quote": "some random person parking outside their garage and blocking them"
+ },
+ {
+  "id": 586,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "roadside-congestion",
+  "problem": "Cars parked along the road eat up half the carriageway in many Bengaluru areas.",
+  "quote": "Half the road goes away cuz of the parked cars"
+ },
+ {
+  "id": 587,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "policy-infra",
+  "problem": "Authorities approve multi-floor buildings without enough parking, then complain when people park on public roads.",
+  "quote": "Authorities allowing multi floor buildings without adequate parking spaces"
+ },
+ {
+  "id": 588,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Bengaluru parking rules would charge more for long-duration on-street parking.",
+  "quote": "Want To Park On Bengaluru Road? Get Ready To Shell"
+ },
+ {
+  "id": 589,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Draft Greater Bengaluru parking rules propose on-street charges of 40 to 80 rupees per hour depending on road category.",
+  "quote": "On-street parking charges of ₹40"
+ },
+ {
+  "id": 590,
+  "keep": true,
+  "city": "Kozhikode",
+  "category": "no-space",
+  "problem": "A visitor needs a safe place to leave a car in Kozhikode town for two days and cannot easily find one.",
+  "quote": "looking for a safe place to park my car in Kozhikode town for 2 days"
+ },
+ {
+  "id": 591,
+  "keep": true,
+  "city": "Kozhikode",
+  "category": "hubs",
+  "problem": "Dedicated parking near Kozhikode shopping spots gets overcrowded during peak hours.",
+  "quote": "can get overcrowded during peak hours"
+ },
+ {
+  "id": 592,
+  "keep": true,
+  "city": "Kozhikode",
+  "category": "no-space",
+  "problem": "A weekly commuter struggles to find a safe place to leave a bike near Kozhikode town for three days.",
+  "quote": "Where to park bike safely in kozhikode town for 2-3 days"
+ },
+ {
+  "id": 593,
+  "keep": true,
+  "city": "Kozhikode",
+  "category": "hubs",
+  "problem": "Visitors to Kozhikode beach are advised to park a kilometre away because the beach road has no room.",
+  "quote": "Try to park 1 km away and take an auto"
+ },
+ {
+  "id": 594,
+  "keep": true,
+  "city": "Kozhikode",
+  "category": "no-space",
+  "problem": "Finding a parking spot near Mananchira Square in peak hours is very hard.",
+  "quote": "Very difficult to find parking spots in the city"
+ },
+ {
+  "id": 595,
+  "keep": true,
+  "city": "Kozhikode",
+  "category": "fines-towing",
+  "problem": "Police are enforcing a zero parking zone on the Mananchira to Malaparamba road in Kozhikode.",
+  "quote": "Malaparamba Road is a no-parking zone"
+ },
+ {
+  "id": 596,
+  "keep": true,
+  "city": "Kozhikode",
+  "category": "hubs",
+  "problem": "A traveller needs trusted overnight parking in Kozhikode and is unsure the railway parking is safe.",
+  "quote": "Are there any trusted overnight parking spots?"
+ },
+ {
+  "id": 597,
+  "keep": true,
+  "city": "Kozhikode",
+  "category": "fees",
+  "problem": "Kozhikode residents complain of a parking mafia and want beach parking kept free of charges.",
+  "quote": "The Parking Mafia of Kozhikode"
+ },
+ {
+  "id": 598,
+  "keep": true,
+  "city": "Kozhikode",
+  "category": "hubs",
+  "problem": "Kozhikode airport parking is charged at 85 rupees for just two hours, with more added after.",
+  "quote": "they charge 85 rupees for a car"
+ },
+ {
+  "id": 599,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 600,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 601,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 602,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 603,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 604,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 605,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 606,
+  "keep": true,
+  "city": "Chennai",
+  "category": "no-space",
+  "problem": "Rising personal vehicle use is worsening parking difficulties in Chennai.",
+  "quote": "Increase in personal vehicle usage leads to parking woes"
+ },
+ {
+  "id": 607,
+  "keep": true,
+  "city": "Chennai",
+  "category": "roadside-congestion",
+  "problem": "Chennai has haphazard parking on streets, and the corporation plans a parking system to curb it.",
+  "quote": "unsystematic and haphazard parking on streets and roads"
+ },
+ {
+  "id": 608,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 609,
+  "keep": true,
+  "city": "Chennai",
+  "category": "disputes",
+  "problem": "A Chennai resident says a car parking dispute has cost them peace, with rowdies being used to threaten them.",
+  "quote": "Carparking Issue"
+ },
+ {
+  "id": 610,
+  "keep": true,
+  "city": "Chennai",
+  "category": "roadside-congestion",
+  "problem": "Chennai has had a big parking problem for over a decade, with cars parked on pavements.",
+  "quote": "Parking has been big problem in Chennai for more than a decade"
+ },
+ {
+  "id": 611,
+  "keep": true,
+  "city": "Chennai",
+  "category": "roadside-congestion",
+  "problem": "Residents of Venkateshwara Lane in Chennai say haphazardly parked vehicles block the entire lane.",
+  "quote": "blocking the entire lane"
+ },
+ {
+  "id": 612,
+  "keep": true,
+  "city": "Chennai",
+  "category": "fines-towing",
+  "problem": "Chennai no-parking violations attract a 500 rupee fine plus towing and impounding fees.",
+  "quote": "No-parking violations will attract a ₹500 fine"
+ },
+ {
+  "id": 613,
+  "keep": true,
+  "city": "Chennai",
+  "category": "roadside-congestion",
+  "problem": "Illegal parking on both sides of T. Nagar main roads has worsened traffic and irritates residents.",
+  "quote": "Illegal parking on main roads has worsened traffic movement"
+ },
+ {
+  "id": 614,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A parking fight between two Delhi neighbours turned violent, and a witness describes the trauma of seeing a killing.",
+  "quote": "2 neighbours had a huge fight for parking which turned violent"
+ },
+ {
+  "id": 615,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A resident of a three-floor Delhi building faces a persistent parking dispute and is seeking legal options.",
+  "quote": "persistent parking issue in our residential building in Delhi"
+ },
+ {
+  "id": 616,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "Posters say car parking is the biggest reason Delhi neighbours fall out, with people even murdered over it.",
+  "quote": "People are getting murdered boss"
+ },
+ {
+  "id": 617,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A newly arrived Delhi car owner finds many people claim ownership of public parking spots.",
+  "quote": "numerous individuals assert ownership of the parking spot"
+ },
+ {
+  "id": 618,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A man was nearly killed by a neighbour in his own apartment building over a minor parking dispute.",
+  "quote": "my father was nearly killed over a minor parking dispute"
+ },
+ {
+  "id": 619,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "In Gurgaon, cars parked in front of others force residents to wait, and parking disputes quickly escalate into fights.",
+  "quote": "those who need to leave for work have to wait until the other car is moved"
+ },
+ {
+  "id": 620,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "A Delhi resident has a neighbour parking in front of their building gate and asks for advice.",
+  "quote": "Parking issue caused by neighbor"
+ },
+ {
+  "id": 621,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "disputes",
+  "problem": "Residents of a Janakpuri flat building in Delhi are in a parking dispute.",
+  "quote": "parking dispute"
+ },
+ {
+  "id": 622,
+  "keep": true,
+  "city": "Delhi NCR",
+  "category": "policy-infra",
+  "problem": "Delhi colonies are fighting illegal parking, and MCD offers an email complaint channel while managing 403 parking lots.",
+  "quote": "Delhi colonies fight parking menace"
+ },
+ {
+  "id": 623,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A top-floor resident parks in a common passage so that it blocks all other cars from entering or leaving.",
+  "quote": "blocks all cars from entering/exiting"
+ },
+ {
+  "id": 624,
+  "keep": true,
+  "city": "Kochi",
+  "category": "hubs",
+  "problem": "A commuter asks whether two-wheeler parking is available at Kochi metro stations for several days.",
+  "quote": "Is two-wheeler parking available at Metro stations"
+ },
+ {
+  "id": 625,
+  "keep": true,
+  "city": "Kochi",
+  "category": "fees",
+  "problem": "A visitor says Lulu Mall Kochi overcharges for parking beyond the stated rates.",
+  "quote": "Kochi Lulu Mall Parking Overcharging"
+ },
+ {
+  "id": 626,
+  "keep": true,
+  "city": "Kochi",
+  "category": "hubs",
+  "problem": "Traffic around Edappally and inside Lulu Mall on Sundays is so bad that visitors are told to use metro parking.",
+  "quote": "The traffic in the roads at Edapally as well as inside Lulu Mall is pathetic"
+ },
+ {
+  "id": 627,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 628,
+  "keep": true,
+  "city": "Kochi",
+  "category": "hubs",
+  "problem": "Mall-goers ask whether Forum Mall Kochi parking is still a merry-go-round hunt for a spot.",
+  "quote": "Still merry go ..."
+ },
+ {
+  "id": 629,
+  "keep": true,
+  "city": "Kochi",
+  "category": "fees",
+  "problem": "Visitors discuss the parking fee at Lulu Mall Kochi and suggest parking under the metro instead.",
+  "quote": "Lulu parking fee"
+ },
+ {
+  "id": 630,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 631,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 632,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 633,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 634,
+  "keep": true,
+  "city": "Kochi",
+  "category": "hubs",
+  "problem": "A visitor is told not to drive to Fort Kochi because of traffic and lack of parking.",
+  "quote": "the lack of parking options will"
+ },
+ {
+  "id": 635,
+  "keep": true,
+  "city": "Kochi",
+  "category": "hubs",
+  "problem": "Visitors to the Cochin Carnival have to time their arrival around noon to find parking.",
+  "quote": "Best bet would be to find parking spaces around noon"
+ },
+ {
+  "id": 636,
+  "keep": true,
+  "city": "Kochi",
+  "category": "hubs",
+  "problem": "A visitor planning a Fort Kochi trip asks whether parking would be a hassle.",
+  "quote": "Wanted to know if parking would be a hassle"
+ },
+ {
+  "id": 637,
+  "keep": true,
+  "city": "Kochi",
+  "category": "hubs",
+  "problem": "During Kochi Carnival vehicle restrictions mean visitors must arrive at off-peak times to park.",
+  "quote": "vehicles are not allowed"
+ },
+ {
+  "id": 638,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 639,
+  "keep": true,
+  "city": "Kochi",
+  "category": "roadside-congestion",
+  "problem": "In Fort Kochi, owners of expensive cars use the footpath for parking instead of building a garage.",
+  "quote": "people are using it to park cars and save money instead of building a garage"
+ },
+ {
+  "id": 640,
+  "keep": true,
+  "city": "Hyderabad",
+  "category": "fines-towing",
+  "problem": "A Hyderabad apartment has a contract with private towing agencies that tow cars parked without authorisation.",
+  "quote": "if someone does unauthorized parking their vehicle would be towed by private towing agencies"
+ },
+ {
+  "id": 641,
+  "keep": true,
+  "city": "Hyderabad",
+  "category": "residential",
+  "problem": "A Hyderabad neighbourhood has such a parking crunch that most residents' cars get blocked.",
+  "quote": "70% of the people's cars get blocked"
+ },
+ {
+  "id": 642,
+  "keep": true,
+  "city": "Hyderabad",
+  "category": "roadside-congestion",
+  "problem": "Hyderabad's car population has outgrown its parking habits, with people parking badly on roads.",
+  "quote": "car population has risen"
+ },
+ {
+  "id": 643,
+  "keep": true,
+  "city": "Hyderabad",
+  "category": "no-space",
+  "problem": "Hyderabad has both irresponsible parking and a lack of parking amid heavy traffic.",
+  "quote": "irresponsible parking, and a lack of parking"
+ },
+ {
+  "id": 644,
+  "keep": true,
+  "city": "Hyderabad",
+  "category": "fines-towing",
+  "problem": "A Hyderabad driver with no bank parking had to park on the curb and got a challan.",
+  "quote": "I parked my car on the curbside. I got a challan for that."
+ },
+ {
+  "id": 645,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 646,
+  "keep": true,
+  "city": "Hyderabad",
+  "category": "no-space",
+  "problem": "A runner cannot find anywhere to park a bike near the Narsingi cycling track.",
+  "quote": "I'm facing a parking issue"
+ },
+ {
+  "id": 647,
+  "keep": true,
+  "city": "Hyderabad",
+  "category": "fines-towing",
+  "problem": "A Hyderabad driver got a 1000 rupee challan for parking near a no-parking sign.",
+  "quote": "Got a challan of INR 1000!"
+ },
+ {
+  "id": 648,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 649,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 650,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 651,
+  "keep": true,
+  "city": "India (other)",
+  "category": "ev-charging",
+  "problem": "Early EV adopters in apartment societies face challenges getting permission for a charging point in their own parking.",
+  "quote": "facing challenges for installing a charging point in their own parking"
+ },
+ {
+  "id": 652,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 653,
+  "keep": true,
+  "city": "India (other)",
+  "category": "policy-infra",
+  "problem": "Limited land and rising vehicle ownership are creating multiple parking problems in Indian cities.",
+  "quote": "India cities are facing multiple problem of parking"
+ },
+ {
+  "id": 654,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 655,
+  "keep": true,
+  "city": "India (other)",
+  "category": "residential",
+  "problem": "A car owner has no parking space for a car they bought, and is told to move or buy smaller.",
+  "quote": "If you buy a car you dont have parking for"
+ },
+ {
+  "id": 656,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A resident objects to others parking in a spot they consider theirs, and is told parking is not exclusive.",
+  "quote": "Parking space is not exclusive to you"
+ },
+ {
+  "id": 657,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A car park slot allotted to a person without a car leads to a dispute over using it.",
+  "quote": "Car park allotted to person not having car"
+ },
+ {
+  "id": 658,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "policy-infra",
+  "problem": "Maharashtra may require proof of a parking space before car purchase, in response to parking shortage.",
+  "quote": "Car buyers in Maharashtra may face a new hurdle"
+ },
+ {
+  "id": 659,
+  "keep": true,
+  "city": "Kochi",
+  "category": "no-space",
+  "problem": "Finding a parking spot at Infopark Kochi is described as harder than getting a job.",
+  "quote": "finding a parking spot in Infopark is harder than getting a job"
+ },
+ {
+  "id": 660,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 661,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 662,
+  "keep": true,
+  "city": "Kochi",
+  "category": "no-space",
+  "problem": "A driver could not find a parking spot near WTC at Infopark Kochi for a month.",
+  "quote": "not find a parking spot near WTC for the last one month"
+ },
+ {
+  "id": 663,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 664,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 665,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 666,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 667,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 668,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "ev-charging",
+  "problem": "An apartment resident in Kerala has no common charging point at parking slots and the association is unresponsive.",
+  "quote": "doesn’t have a common charging point or connection at parking slots"
+ },
+ {
+  "id": 669,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "A visitor to GG Hospital Thiruvananthapuram suspects a parking fee scam, with fees demanded elsewhere in the city too.",
+  "quote": "Parking fee scam near GG Hospital?"
+ },
+ {
+  "id": 670,
+  "keep": true,
+  "city": "Kochi",
+  "category": "fees",
+  "problem": "A patient was shocked by 50 rupees for the first hour at pay and park near Lisie Hospital.",
+  "quote": "Outrageous Parking charges at Lisie Hospital, Kochi"
+ },
+ {
+  "id": 671,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "hubs",
+  "problem": "Visitors to the General Hospital in Thiruvananthapuram must hunt on nearby roads with no guarantee of a space.",
+  "quote": "No guarantee"
+ },
+ {
+  "id": 672,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "hubs",
+  "problem": "Precise Eye Hospital in Thiruvananthapuram has only limited, underground parking for patients.",
+  "quote": "Only limited parking facility is available"
+ },
+ {
+  "id": 673,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Hospitals in Thiruvananthapuram charge hourly parking, and free grounds are across the road.",
+  "quote": "Hospitals also charges hourly parking"
+ },
+ {
+  "id": 674,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 675,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "policy-infra",
+  "problem": "Users ask whether the multilevel carpark inside Medical College campus is active and usable.",
+  "quote": "Is the multilevel carpark inside the Medical College campus active and functioning?"
+ },
+ {
+  "id": 676,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 677,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "fees",
+  "problem": "Kerala shoppers question how malls can charge for parking when approval requires free customer parking.",
+  "quote": "How could shopping malls charge customer for parking"
+ },
+ {
+  "id": 678,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "disputes",
+  "problem": "Shops in Kerala are putting up no-parking boards on public roads in front of their premises.",
+  "quote": "Shops are increasingly putting these no parking boards"
+ },
+ {
+  "id": 679,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "no-space",
+  "problem": "A Kerala resident calls parking a huge problem and asks how stores should provide it.",
+  "quote": "Parking is a huge problem in Kerala"
+ },
+ {
+  "id": 680,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "disputes",
+  "problem": "Shop owners and car owners clash in Kerala over who may use roadside parking in front of shops.",
+  "quote": "shop-owner vs car-owner"
+ },
+ {
+  "id": 681,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "residential",
+  "problem": "A resident near a Thiruvananthapuram supermarket has their gate blocked by parked cars.",
+  "quote": "park in front of the gate, completely blocking us off"
+ },
+ {
+  "id": 682,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "A Mumbai renter paying 35k+ rent cannot buy a car because promised parking is not available.",
+  "quote": "I can't buy a car"
+ },
+ {
+  "id": 683,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "no-space",
+  "problem": "Thiruvananthapuram has no proper parking facilities, making it hard to park legally.",
+  "quote": "Trivandrum has no proper parking facilities"
+ },
+ {
+  "id": 684,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "disputes",
+  "problem": "A stationery shop owner in Thiruvananthapuram confronts a driver over parking near a no parking cone.",
+  "quote": "The Audacity of This Stationary Shop Owner"
+ },
+ {
+  "id": 685,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "disputes",
+  "problem": "Some Bengaluru owners block parking outside their houses with plants and road dividers to reserve public space.",
+  "quote": "Reserving” parking with potted plants"
+ },
+ {
+  "id": 686,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fines-towing",
+  "problem": "Almost everywhere in Thiruvananthapuram is a no-parking zone, leaving drivers unsure where they can park.",
+  "quote": "Almost everywhere is a no parking"
+ },
+ {
+  "id": 687,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru residents debate new on-street parking rates and call for mandatory parking in new homes.",
+  "quote": "make it mandatory that every house (dwelling unit) has 1 car and 1 two wheeler parking space"
+ },
+ {
+  "id": 688,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "fines-towing",
+  "problem": "A Kerala resident asks how to get an illegally parked vehicle removed, including by towing.",
+  "quote": "Procedure to get rid of illegally parked vehicle"
+ },
+ {
+  "id": 689,
+  "keep": true,
+  "city": "Kochi",
+  "category": "fines-towing",
+  "problem": "Kochi residents use a police reporting channel for illegally parked vehicles.",
+  "quote": "report people who illegally park"
+ },
+ {
+  "id": 690,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "fines-towing",
+  "problem": "A Kerala driver wants to dispute a parking ticket they believe was wrongly issued.",
+  "quote": "How to dispute a parking ticket in Kerala"
+ },
+ {
+  "id": 691,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "roadside-congestion",
+  "problem": "Illegal parking in Kerala causes traffic blocks, and commenters want a civilian penalty system.",
+  "quote": "reduce illegal parking thereby reducing traffic blocks"
+ },
+ {
+  "id": 692,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "fees",
+  "problem": "Kerala shoppers say malls still collect parking charges despite a rule against it.",
+  "quote": "shopping malls should not collect parking charges"
+ },
+ {
+  "id": 693,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "fines-towing",
+  "problem": "A Kerala driver is fined for a parking violation and may have the vehicle impounded if unpaid.",
+  "quote": "It was a parking violation"
+ },
+ {
+  "id": 694,
+  "keep": true,
+  "city": "Kochi",
+  "category": "fees",
+  "problem": "The Kerala High Court upheld Lulu Mall's right to charge parking fees if it holds a municipal licence.",
+  "quote": "upheld Lulu Mall's right to collect parking fees"
+ },
+ {
+  "id": 695,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 696,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 697,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 698,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "fees",
+  "problem": "Kerala railway station front-gate parking is expensive and hourly, so users are told to use the back gate.",
+  "quote": "that parking is expensive and hourly"
+ },
+ {
+  "id": 699,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "fees",
+  "problem": "A traveller felt parking charges at Changanassery railway station were steep.",
+  "quote": "Parking charges at Changanaserry railway station felt like"
+ },
+ {
+  "id": 700,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 701,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 702,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 703,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 704,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "hubs",
+  "problem": "The multilevel parking at Thampanoor railway station holds only about 22 cars at a time.",
+  "quote": "holds only 22 or so cars at atime"
+ },
+ {
+  "id": 705,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 706,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "fees",
+  "problem": "Railway station parking fees across Kerala are being increased.",
+  "quote": "Parking fees at railway stations in Kerala increased"
+ },
+ {
+  "id": 707,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 708,
+  "keep": true,
+  "city": "Kochi",
+  "category": "hubs",
+  "problem": "Kochi metro parking areas outside main stations have access just wide enough for one car.",
+  "quote": "The parking system is really ridiculous"
+ },
+ {
+  "id": 709,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 710,
+  "keep": true,
+  "city": "Kochi",
+  "category": "hubs",
+  "problem": "Car parking at Vadakkekotta metro station in Kochi was closed, forcing users to look for other stations.",
+  "quote": "The parking at the Vadakkekotta station was closed yesterday"
+ },
+ {
+  "id": 711,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 712,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 713,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "fees",
+  "problem": "Bengaluru metro stations charge 30 rupees for about two hours, and users fear being harassed if they object.",
+  "quote": "charge 30rs for like 2 hrs"
+ },
+ {
+  "id": 714,
+  "keep": true,
+  "city": "Kochi",
+  "category": "fees",
+  "problem": "Parking near Ernakulam North railway station costs 30 to 50 rupees per hour, which is too costly.",
+  "quote": "due to high cost"
+ },
+ {
+  "id": 715,
+  "keep": true,
+  "city": "Kochi",
+  "category": "hubs",
+  "problem": "Commuters find it hard to park two-wheelers at Kochi metro stations, with very few spaces near Maharajas ground.",
+  "quote": "i found it hard to park 2 wheelers in metro station"
+ },
+ {
+  "id": 716,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 717,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 718,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 719,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 720,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 721,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 722,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 723,
+  "keep": true,
+  "city": "Kozhikode",
+  "category": "hubs",
+  "problem": "Cars park illegally outside a Kozhikode mall, either because the mall is full or owners avoid paying.",
+  "quote": "Either the mall ran out of parking space or the car owners not willing to pay parking fee"
+ },
+ {
+  "id": 724,
+  "keep": true,
+  "city": "Kozhikode",
+  "category": "hubs",
+  "problem": "At Lulu Mall Kozhikode, even the huge parking area means a long walk to the mall.",
+  "quote": "a long walk from there to"
+ },
+ {
+  "id": 725,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 726,
+  "keep": true,
+  "city": "Kozhikode",
+  "category": "roadside-congestion",
+  "problem": "Vehicles parked on the footpath near Kozhikode beach force pedestrians to walk on the road.",
+  "quote": "Parking on footpath?? Why do we even have a footpath?"
+ },
+ {
+  "id": 727,
+  "keep": true,
+  "city": "Kozhikode",
+  "category": "fees",
+  "problem": "A traveller was charged Rs.215 for about 31 hours at Kozhikode railway station parking.",
+  "quote": "charged Rs.215 for nearly 31 hours"
+ },
+ {
+  "id": 728,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 729,
+  "keep": true,
+  "city": "Kochi",
+  "category": "fees",
+  "problem": "Lulu Mall Kochi appears to have hiked parking fees again, which a visitor calls unreasonable.",
+  "quote": "50 rupees seems so unreasonable"
+ },
+ {
+  "id": 730,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 731,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "hubs",
+  "problem": "A driver was stuck for 50 minutes trying to exit Lulu Mall's parking lot in traffic.",
+  "quote": "Stuck for 50 Minutes in Lulu Mall Parking"
+ },
+ {
+  "id": 732,
+  "keep": true,
+  "city": "Kochi",
+  "category": "fees",
+  "problem": "Budget visitors to Forum and Lulu malls in Kochi ask where to park for free.",
+  "quote": "where do you park your car/ bike for free"
+ },
+ {
+  "id": 733,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 734,
+  "keep": true,
+  "city": "Kochi",
+  "category": "fees",
+  "problem": "Forum Mall Kochi has started charging 10 rupees for bike parking.",
+  "quote": "Forum Mall Kochi now charges ₹10 for bike parking"
+ },
+ {
+  "id": 735,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "hubs",
+  "problem": "Mumbai airport T2 parking lot is chaotic, with cars abandoned in zig zag and diagonal spots during pickups.",
+  "quote": "Cars parked (abandoned) anywhere"
+ },
+ {
+  "id": 736,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "fees",
+  "problem": "Roads in Borivali West that were free parking are being converted into pay and park.",
+  "quote": "previously free parking areas"
+ },
+ {
+  "id": 737,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "no-space",
+  "problem": "Mumbai drivers find practically every road has a no parking sign and no affordable pay and park.",
+  "quote": "Practically every road has a no parking sign"
+ },
+ {
+  "id": 738,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "policy-infra",
+  "problem": "A mechanical multilevel car parking structure collapsed in Matunga, Mumbai, blamed on poor hardware and maintenance.",
+  "quote": "Mechanical car parking collapsed in Mumbai Matunga Area"
+ },
+ {
+  "id": 739,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "A Mumbai home seller asks an extra 10 lakh rupees for a parking space.",
+  "quote": "parking at additional ₹10L"
+ },
+ {
+  "id": 740,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "residential",
+  "problem": "A redeveloped Mumbai society has less than one parking space per flat and allocates by blind lottery.",
+  "quote": "less than 1:1 parking"
+ },
+ {
+  "id": 741,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "fines-towing",
+  "problem": "Mumbai has a new rule with fines up to 15,000 rupees for wrong parking amid traffic and parking problems.",
+  "quote": "Fine upto ₹15,000 for wrong parking"
+ },
+ {
+  "id": 742,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "fees",
+  "problem": "A driver at Mumbai airport describes a parking scam while a queue honked behind.",
+  "quote": "Airport Parking Scam"
+ },
+ {
+  "id": 743,
+  "keep": true,
+  "city": "Mumbai",
+  "category": "no-space",
+  "problem": "Auto rickshaws occupy legal car parking spots in Mumbai, leaving cars with fewer spaces.",
+  "quote": "auto drivers parking (and often napping) in car parking spaces"
+ },
+ {
+  "id": 744,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 745,
+  "keep": true,
+  "city": "Pune",
+  "category": "disputes",
+  "problem": "An owner in a Pune housing society is in a parking space dispute with the committee.",
+  "quote": "Parking Space Dispute in Housing Society"
+ },
+ {
+  "id": 746,
+  "keep": true,
+  "city": "Pune",
+  "category": "disputes",
+  "problem": "Pune residents' repeated complaints about society parking were ignored, so they park in the committee's spots.",
+  "quote": "we complained multiple times to society committee and they didnt do anything"
+ },
+ {
+  "id": 747,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A cooperative society member who bought a bigger car cannot use a stilt slot occupied by a relative.",
+  "quote": "there is a stilt parking slot currently being used by"
+ },
+ {
+  "id": 748,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 749,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 750,
+  "keep": true,
+  "city": "Pune",
+  "category": "disputes",
+  "problem": "A parking dispute in Akurdi, Pune escalated and a shop owner made threats.",
+  "quote": "parking dispute in Akurdi escalates"
+ },
+ {
+  "id": 751,
+  "keep": true,
+  "city": "Pune",
+  "category": "fines-towing",
+  "problem": "A Pune housing society imposed a 2000 rupee penalty for a bike in a common parking area.",
+  "quote": "Society has imposed ₹2000 parking penalty"
+ },
+ {
+  "id": 752,
+  "keep": true,
+  "city": "Pune",
+  "category": "fees",
+  "problem": "Pune residents ask whether societies can charge for parking, including for visitors.",
+  "quote": "Can societies charge for parking?"
+ },
+ {
+  "id": 753,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A resident who bought an apartment parking slot is pressured by the society to change it.",
+  "quote": "Pressurized by Society to change parking"
+ },
+ {
+  "id": 754,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "no-space",
+  "problem": "A person needs parking near Thrissur round and cannot easily find a spot.",
+  "quote": "Where is the closest parking to Thrissur round"
+ },
+ {
+  "id": 755,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 756,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 757,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 758,
+  "keep": true,
+  "city": "Thrissur",
+  "category": "fees",
+  "problem": "Hilite Mall Thrissur began charging for bike and car parking with a 15 minute free period of little use.",
+  "quote": "Parking Fees in Hilite Mall"
+ },
+ {
+  "id": 759,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 760,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 761,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 762,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 763,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "Thiruvananthapuram airport has introduced new parking charges that users compare unfavourably with Cochin airport.",
+  "quote": "New parking charges at Trivandrum Airport"
+ },
+ {
+  "id": 764,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 765,
+  "keep": true,
+  "city": "Thiruvananthapuram",
+  "category": "fees",
+  "problem": "A traveller was charged 559 rupees for car parking at Thampanoor after rates rose.",
+  "quote": "Charged ₹559 for car parking!"
+ },
+ {
+  "id": 766,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 767,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A car owner struggles to reverse out because people park on opposite sides, a great nuisance.",
+  "quote": "people who park even in the opposite sides were of great nuisance"
+ },
+ {
+  "id": 768,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ },
+ {
+  "id": 769,
+  "keep": true,
+  "city": "Kerala (other)",
+  "category": "no-space",
+  "problem": "Many places in Kerala see cars parked on storm water drains because there is no place to park.",
+  "quote": "Lots of places in Kerala have this parking on the Storm water drains"
+ },
+ {
+  "id": 770,
+  "keep": true,
+  "city": "India (other)",
+  "category": "disputes",
+  "problem": "A resident has a conflict with a neighbour who refuses to use dedicated two-wheeler parking.",
+  "quote": "Parking issues lead to conflict with my neighbour"
+ },
+ {
+  "id": 771,
+  "keep": true,
+  "city": "Bengaluru",
+  "category": "roadside-congestion",
+  "problem": "Bengaluru footpaths are used for parking because markets and public places lack adequate parking.",
+  "quote": "The real problem is the lack of adequate parking in our markets and public places"
+ },
+ {
+  "id": 772,
+  "keep": false,
+  "city": "",
+  "category": "",
+  "problem": "",
+  "quote": ""
+ }
+]

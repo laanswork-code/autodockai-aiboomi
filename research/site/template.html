@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nowhere to Park</title>
+<meta name="description" content="Real complaints about the lack of parking in Kozhikode, Kochi, Kerala and across India, linked to the original Reddit posts, forum threads and news reports.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800&family=Barlow:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #f3efe6;
+  --paper-2: #e9e3d6;
+  --ink: #16181b;
+  --ink-2: #4a4e55;
+  --ink-3: #7b7f86;
+  --rule: #d4ccbb;
+  --card: #fbf9f4;
+  --sign: #1747a6;
+  --sign-ink: #ffffff;
+  --stop: #c8322b;
+  --mark: #f0b91c;
+  --shadow: 0 1px 0 rgba(22,24,27,.06), 0 8px 24px -16px rgba(22,24,27,.35);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #141517; --paper-2: #1b1d20; --ink: #ece8df; --ink-2: #b4b0a7; --ink-3: #85827b;
+    --rule: #2c2f33; --card: #1b1d21; --sign: #3c6fd6; --stop: #e0554d; --mark: #f0b91c;
+    --shadow: 0 1px 0 rgba(0,0,0,.4), 0 10px 30px -18px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #141517; --paper-2: #1b1d20; --ink: #ece8df; --ink-2: #b4b0a7; --ink-3: #85827b;
+  --rule: #2c2f33; --card: #1b1d21; --sign: #3c6fd6; --stop: #e0554d; --mark: #f0b91c;
+  --shadow: 0 1px 0 rgba(0,0,0,.4), 0 10px 30px -18px rgba(0,0,0,.9);
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font: 400 16px/1.5 "Barlow", system-ui, sans-serif;
+  background-image: radial-gradient(var(--rule) 0.6px, transparent 0.6px);
+  background-size: 14px 14px;
+}
+a { color: inherit; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+
+/* Road marking strip */
+.lane { height: 10px; background: repeating-linear-gradient(90deg, var(--mark) 0 46px, transparent 46px 74px), var(--ink); }
+
+header.hero { padding: 56px 0 40px; display: grid; grid-template-columns: auto 1fr; gap: 40px; align-items: center; }
+.sign {
+  width: 168px; aspect-ratio: 1; border-radius: 22px; background: var(--sign); color: var(--sign-ink);
+  display: grid; place-items: center; position: relative; box-shadow: inset 0 0 0 6px var(--sign), inset 0 0 0 10px var(--sign-ink), var(--shadow);
+  font: 800 128px/1 "Barlow Condensed", sans-serif; transform: rotate(-4deg);
+  animation: drop .7s cubic-bezier(.2,.9,.3,1.2) both;
+}
+.sign::after {
+  content: ""; position: absolute; inset: 18px; border-radius: 50%; border: 12px solid var(--stop);
+  background: linear-gradient(45deg, transparent calc(50% - 6px), var(--stop) calc(50% - 6px) calc(50% + 6px), transparent calc(50% + 6px));
+}
+@keyframes drop { from { transform: translateY(-30px) rotate(-14deg); opacity: 0; } }
+.kicker { font: 700 14px/1 "Barlow Condensed", sans-serif; letter-spacing: .18em; text-transform: uppercase; color: var(--stop); }
+h1 { font: 800 clamp(56px, 9vw, 120px)/.86 "Barlow Condensed", sans-serif; margin: 10px 0 14px; text-transform: uppercase; letter-spacing: -.01em; }
+h1 span { color: var(--sign); }
+.lede { font-size: 19px; color: var(--ink-2); max-width: 62ch; margin: 0; }
+
+.stats { display: grid; grid-template-columns: repeat(5, 1fr); border-top: 3px solid var(--ink); border-bottom: 1px solid var(--rule); margin-bottom: 36px; }
+.stat { padding: 16px 14px 14px; border-right: 1px solid var(--rule); }
+.stat:last-child { border-right: 0; }
+.stat b { display: block; font: 800 44px/1 "Barlow Condensed", sans-serif; font-variant-numeric: tabular-nums; }
+.stat small { font: 600 12px/1.2 "Barlow", sans-serif; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-3); }
+
+h2 { font: 800 30px/1 "Barlow Condensed", sans-serif; text-transform: uppercase; margin: 0 0 14px; display: flex; align-items: baseline; gap: 12px; }
+h2 small { font: 500 14px/1 "Barlow", sans-serif; text-transform: none; color: var(--ink-3); }
+
+.board { display: grid; grid-template-columns: 1.15fr 1fr; gap: 28px; margin-bottom: 40px; }
+.panel { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 20px; box-shadow: var(--shadow); }
+.bars { display: grid; gap: 6px; }
+.bar { display: grid; grid-template-columns: 170px 1fr 40px; align-items: center; gap: 10px; background: none; border: 0; padding: 4px 0; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.bar .lbl { font-weight: 600; font-size: 14px; }
+.bar .track { display: block; height: 18px; background: var(--paper-2); border-radius: 3px; overflow: hidden; }
+.bar .fill { display: block; height: 100%; background: var(--sign); border-radius: 3px; transform-origin: left; animation: grow .9s cubic-bezier(.2,.8,.2,1) both; }
+.bar .n { font: 700 16px/1 "Barlow Condensed", sans-serif; text-align: right; font-variant-numeric: tabular-nums; }
+.bar:hover .fill, .bar[aria-pressed="true"] .fill { background: var(--stop); }
+.bar[aria-pressed="true"] .lbl { color: var(--stop); }
+@keyframes grow { from { transform: scaleX(0); } }
+
+.cities { display: flex; flex-wrap: wrap; gap: 8px; }
+.city {
+  border: 2px solid var(--ink); background: transparent; color: var(--ink); border-radius: 4px; padding: 8px 12px 7px; cursor: pointer;
+  font: 700 17px/1 "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .03em; display: inline-flex; gap: 8px; align-items: baseline;
+}
+.city em { font-style: normal; font-weight: 500; color: var(--ink-3); font-size: 15px; }
+.city.kerala { border-color: var(--sign); color: var(--sign); }
+.city[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.city.kerala[aria-pressed="true"] { background: var(--sign); color: var(--sign-ink); }
+.city[aria-pressed="true"] em { color: inherit; opacity: .75; }
+.group-label { font: 700 12px/1 "Barlow", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin: 14px 0 8px; }
+.group-label:first-child { margin-top: 0; }
+
+.toolbar { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--rule); padding: 12px 0; margin-bottom: 20px; }
+.toolbar .wrap { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.toolbar input, .toolbar select {
+  font: 500 15px "Barlow", sans-serif; color: var(--ink); background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 9px 12px; min-width: 0;
+}
+.toolbar input { flex: 1 1 260px; }
+.toolbar input:focus, .toolbar select:focus, .city:focus-visible, .bar:focus-visible, button:focus-visible { outline: 3px solid var(--mark); outline-offset: 2px; }
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; }
+.seg button { font: 600 14px "Barlow", sans-serif; border: 0; background: var(--card); color: var(--ink-2); padding: 9px 12px; cursor: pointer; border-right: 1px solid var(--rule); }
+.seg button:last-child { border-right: 0; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.count { font: 700 15px "Barlow Condensed", sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); margin-left: auto; }
+.reset { font: 600 14px "Barlow", sans-serif; background: none; border: 0; color: var(--stop); cursor: pointer; text-decoration: underline; padding: 4px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 16px; padding-bottom: 60px; }
+.card {
+  background: var(--card); border: 1px solid var(--rule); border-left: 5px solid var(--ink-3); border-radius: 4px; padding: 16px 16px 14px;
+  display: flex; flex-direction: column; gap: 10px; box-shadow: var(--shadow); animation: rise .45s ease both; min-width: 0;
+}
+.card.reddit { border-left-color: #ff5a1f; }
+.card.news { border-left-color: var(--sign); }
+.card.web { border-left-color: var(--mark); }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } }
+.meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; font: 600 12px/1 "Barlow", sans-serif; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); }
+.tag { padding: 4px 6px 3px; border-radius: 3px; background: var(--paper-2); color: var(--ink-2); }
+.tag.src { background: var(--ink); color: var(--paper); }
+.card h3 { font: 700 22px/1.05 "Barlow Condensed", sans-serif; margin: 0; overflow-wrap: anywhere; }
+.card h3 a { text-decoration: none; }
+.card h3 a:hover { text-decoration: underline; text-decoration-color: var(--stop); text-underline-offset: 3px; }
+.problem { margin: 0; color: var(--ink-2); font-size: 15px; }
+.quote { margin: 0; font: italic 400 17px/1.4 "Source Serif 4", Georgia, serif; padding-left: 12px; border-left: 2px solid var(--mark); }
+.foot { margin-top: auto; display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-top: 6px; border-top: 1px dashed var(--rule); font-size: 13px; color: var(--ink-3); }
+.foot a { font-weight: 600; color: var(--sign); text-decoration: none; white-space: nowrap; }
+.foot a:hover { text-decoration: underline; }
+.empty { grid-column: 1 / -1; text-align: center; padding: 60px 0; color: var(--ink-3); font: 700 24px "Barlow Condensed", sans-serif; text-transform: uppercase; }
+.more { display: block; margin: -40px auto 60px; font: 700 18px "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .06em; padding: 12px 22px; border: 2px solid var(--ink); background: transparent; color: var(--ink); border-radius: 4px; cursor: pointer; }
+.more:hover { background: var(--ink); color: var(--paper); }
+
+footer { border-top: 3px solid var(--ink); padding: 28px 0 48px; color: var(--ink-2); font-size: 14px; }
+footer h2 { font-size: 22px; }
+footer p { max-width: 80ch; }
+.theme { position: absolute; top: 18px; right: 16px; font: 600 13px "Barlow", sans-serif; background: var(--card); color: var(--ink-2); border: 1px solid var(--rule); border-radius: 20px; padding: 6px 12px; cursor: pointer; }
+
+@media (max-width: 860px) {
+  header.hero { grid-template-columns: 1fr; gap: 24px; padding-top: 44px; }
+  .sign { width: 110px; font-size: 84px; border-radius: 16px; }
+  .sign::after { inset: 12px; border-width: 8px; }
+  .board { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: repeat(3, 1fr); }
+  .stat:nth-child(3) { border-right: 0; }
+  .stat:nth-child(n+4) { border-top: 1px solid var(--rule); }
+  .bar { grid-template-columns: 120px 1fr 32px; }
+  .grid { grid-template-columns: 1fr; }
+  .count { margin-left: 0; width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+</head>
+<body>
+<div class="lane"></div>
+<div class="wrap" style="position:relative">
+  <button class="theme" id="theme" type="button">Theme</button>
+  <header class="hero">
+    <div class="sign" aria-hidden="true">P</div>
+    <div>
+      <div class="kicker">Field evidence · Kozhikode · Kochi · Kerala · India</div>
+      <h1>Nowhere<br><span>to park.</span></h1>
+      <p class="lede">What people actually say about parking: Reddit threads, forum posts and local news, collected from the open web and sorted by city and by the kind of pain. Every card links to the original.</p>
+    </div>
+  </header>
+
+  <section class="stats" id="stats"></section>
+
+  <section class="board">
+    <div class="panel">
+      <h2>What hurts <small>tap a bar to filter</small></h2>
+      <div class="bars" id="bars"></div>
+    </div>
+    <div class="panel">
+      <h2>Where <small>tap a city to filter</small></h2>
+      <div id="cities"></div>
+    </div>
+  </section>
+</div>
+
+<div class="toolbar">
+  <div class="wrap">
+    <input id="q" type="search" placeholder="Search titles, summaries, quotes…" aria-label="Search">
+    <div class="seg" id="kinds" role="group" aria-label="Source type"></div>
+    <select id="sort" aria-label="Sort">
+      <option value="city">Sort: Kerala first</option>
+      <option value="kind">Sort: Reddit first</option>
+    </select>
+    <button class="reset" id="reset" type="button">Clear filters</button>
+    <span class="count" id="count"></span>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid"></div>
+  <button class="more" id="more" type="button" hidden>Show more</button>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2>How this was made</h2>
+    <p>Search results were pulled with <a href="https://serpapi.com/search-api">SerpAPI</a> (Google web search restricted to reddit.com, open web search, and Google News) for queries about parking in Kozhikode, Kochi, the rest of Kerala and major Indian cities. Results were deduplicated by URL, filtered to items that describe a real parking problem, and tagged by city and problem type. The one-line summaries were written by an AI model from the search title and snippet only, so open the original before quoting it. Collected <span id="collected"></span>.</p>
+    <p>Reddit post bodies were not fetched: the cards show what the search engine showed. Counts reflect what the searches surfaced, not how common each problem is.</p>
+  </div>
+</footer>
+
+<script>
+const DATA = /*__DATA__*/null;
+const CATS = {
+  "no-space": "Can't find a spot",
+  "roadside-congestion": "Roadside parking, jams",
+  "fines-towing": "Fines and towing",
+  "fees": "Fees and overcharging",
+  "disputes": "Fights and disputes",
+  "residential": "Homes and apartments",
+  "hubs": "Metro, station, mall, hospital",
+  "ev-charging": "EV charging",
+  "policy-infra": "Policy and parking projects",
+};
+const KINDS = { all: "All", reddit: "Reddit", web: "Forums", news: "News" };
+const KERALA = new Set(["Kozhikode", "Kochi", "Thiruvananthapuram", "Thrissur", "Kerala (other)"]);
+const PAGE = 60;
+
+const posts = DATA.posts;
+const state = { city: null, cat: null, kind: "all", q: "", sort: "city", shown: PAGE };
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const countBy = (arr, key) => arr.reduce((m, p) => (m[p[key]] = (m[p[key]] || 0) + 1, m), {});
+const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
+
+// Theme toggle (per-viewer convenience, storage may be unavailable)
+try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch {}
+$("theme").onclick = () => {
+  const dark = document.documentElement.dataset.theme
+    ? document.documentElement.dataset.theme === "dark"
+    : matchMedia("(prefers-color-scheme: dark)").matches;
+  const next = dark ? "light" : "dark";
+  document.documentElement.dataset.theme = next;
+  try { localStorage.setItem("theme", next); } catch {}
+};
+
+function renderStats() {
+  const k = countBy(posts, "kind");
+  const kerala = posts.filter((p) => KERALA.has(p.city)).length;
+  const cells = [
+    [posts.length, "complaints and reports"],
+    [kerala, "from Kerala"],
+    [k.reddit || 0, "Reddit threads"],
+    [k.news || 0, "news reports"],
+    [new Set(posts.map((p) => p.city)).size, "places"],
+  ];
+  $("stats").innerHTML = cells.map(([n, l]) => `<div class="stat"><b>${n}</b><small>${l}</small></div>`).join("");
+  $("collected").textContent = DATA.meta.collected;
+}
+
+function renderBars(base) {
+  const c = countBy(base, "category");
+  const max = Math.max(1, ...Object.values(c));
+  $("bars").innerHTML = Object.entries(CATS).sort((a, b) => (c[b[0]] || 0) - (c[a[0]] || 0)).map(([k, l], i) =>
+    `<button class="bar" data-cat="${k}" aria-pressed="${state.cat === k}" type="button">
+      <span class="lbl">${l}</span>
+      <span class="track"><span class="fill" style="width:${((c[k] || 0) / max) * 100}%;animation-delay:${i * 50}ms"></span></span>
+      <span class="n">${c[k] || 0}</span></button>`).join("");
+}
+
+function renderCities(base) {
+  const c = countBy(base, "city");
+  const btn = (city) => `<button class="city${KERALA.has(city) ? " kerala" : ""}" data-city="${esc(city)}" aria-pressed="${state.city === city}" type="button">${esc(city)} <em>${c[city] || 0}</em></button>`;
+  const list = (pred) => DATA.meta.cities.filter((x) => pred(x) && posts.some((p) => p.city === x)).map(btn).join("");
+  $("cities").innerHTML = `<div class="group-label">Kerala</div><div class="cities">${list((x) => KERALA.has(x))}</div>
+    <div class="group-label">Elsewhere in India</div><div class="cities">${list((x) => !KERALA.has(x))}</div>`;
+}
+
+function renderKinds() {
+  $("kinds").innerHTML = Object.entries(KINDS).map(([k, l]) =>
+    `<button data-kind="${k}" aria-pressed="${state.kind === k}" type="button">${l}</button>`).join("");
+}
+
+function matches(p, skip) {
+  if (skip !== "city" && state.city && p.city !== state.city) return false;
+  if (skip !== "cat" && state.cat && p.category !== state.cat) return false;
+  if (state.kind !== "all" && p.kind !== state.kind) return false;
+  if (state.q) {
+    const hay = `${p.title} ${p.problem} ${p.quote} ${p.snippet} ${p.source} ${p.city}`.toLowerCase();
+    if (!state.q.split(/\s+/).every((w) => hay.includes(w))) return false;
+  }
+  return true;
+}
+
+function card(p, i) {
+  const showQuote = p.quote && !p.title.toLowerCase().includes(p.quote.toLowerCase().slice(0, 40));
+  const src = p.kind === "reddit" ? p.source : (p.source || host(p.url));
+  return `<article class="card ${p.kind}" style="animation-delay:${Math.min(i, 12) * 30}ms">
+    <div class="meta"><span class="tag src">${esc(src)}</span><span class="tag">${esc(p.city)}</span><span class="tag">${esc(CATS[p.category] || p.category)}</span></div>
+    <h3><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.title)}</a></h3>
+    ${p.problem ? `<p class="problem">${esc(p.problem)}</p>` : ""}
+    ${showQuote ? `<p class="quote">“${esc(p.quote)}”</p>` : ""}
+    <div class="foot"><span>${esc(p.engagement || p.date || KINDS[p.kind])}</span><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">Open original ↗</a></div>
+  </article>`;
+}
+
+function render() {
+  renderBars(posts.filter((p) => matches(p, "cat")));
+  renderCities(posts.filter((p) => matches(p, "city")));
+  renderKinds();
+  let list = posts.filter((p) => matches(p));
+  if (state.sort === "kind") {
+    const order = ["reddit", "web", "news"];
+    list = [...list].sort((a, b) => order.indexOf(a.kind) - order.indexOf(b.kind));
+  }
+  $("count").textContent = `${list.length} of ${posts.length}`;
+  $("grid").innerHTML = list.length ? list.slice(0, state.shown).map(card).join("") : `<div class="empty">Nothing matches. Try clearing filters.</div>`;
+  $("more").hidden = list.length <= state.shown;
+  $("more").textContent = `Show more (${list.length - state.shown} left)`;
+}
+
+const refilter = () => { state.shown = PAGE; render(); };
+document.addEventListener("click", (e) => {
+  const t = e.target.closest("[data-cat],[data-city],[data-kind]");
+  if (!t) return;
+  if (t.dataset.cat) state.cat = state.cat === t.dataset.cat ? null : t.dataset.cat;
+  if (t.dataset.city) state.city = state.city === t.dataset.city ? null : t.dataset.city;
+  if (t.dataset.kind) state.kind = t.dataset.kind;
+  refilter();
+});
+$("q").addEventListener("input", (e) => { state.q = e.target.value.trim().toLowerCase(); refilter(); });
+$("sort").addEventListener("change", (e) => { state.sort = e.target.value; refilter(); });
+$("reset").onclick = () => { Object.assign(state, { city: null, cat: null, kind: "all", q: "" }); $("q").value = ""; refilter(); };
+$("more").onclick = () => { state.shown += PAGE; render(); };
+
+renderStats();
+render();
+</script>
+</body>
+</html>
