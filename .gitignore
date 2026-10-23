@@ -15,3 +15,6 @@ Thumbs.db
 *.log
 .vscode/
 .idea/
+
+# Jev decision server runtime data
+ksum-3d/server/data/audit.jsonl
