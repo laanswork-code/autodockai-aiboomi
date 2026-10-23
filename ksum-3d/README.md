@@ -33,12 +33,12 @@ square metre, with about 92 m² of the strip freed.
 
 - `src/store/useSceneStore.ts`: zustand store (mode, camera view, tower spin, measured tower size)
 - `src/config/site.ts`: site geometry (facade arc, strip, bays, tower slots, camera presets)
-- `src/scene/`: `Context` (OSM board), `Site` (ground, road, trees), `KtizBuilding`, `Parking`, `RotaryTower`, `Car`
+- `src/scene/`: `Context` (OSM board), `Site` (ground, road, trees), `KtizBuilding`, `Parking`, `RotaryTower`, `Car`, `EnergyFlows` (roof solar, grid transformer and live power lines)
 - `src/ui/Hud.tsx`: overlay controls and stats
 - `scripts/build-site.mjs`: OSM to local metres
-- `src/control/`: decision contract (`types.ts`), rules policy (`baseline.ts`), control room, review queue, simulated comparison card
+- `src/control/`: decision contract (`types.ts`), rules policy (`baseline.ts`), event bus (`eventBus.ts`), pipeline wiring (`pipeline.ts`, `api.ts`, `orchestrator.ts`), control room, Jev cost counter (`CostCounter.tsx`), review queue, simulated comparison card
 - `src/phone/`: driver phone mockup
-- `server/`: Jev decision server (`jev.ts` builds the request and maps answers, `jevDecider.ts` adds timeout, fallback and cache, `audit.ts`, `http.ts`)
+- `server/`: Jev decision server (`jev.ts` builds the request and maps answers, `jevDecider.ts` adds timeout, fallback and cache, `jevUsage.ts` counts calls and cost, `audit.ts`, `http.ts`)
 - `sim/`: minute-by-minute simulator (`site.ts` assumptions, `arrivals.ts` seeded days, `engine.ts`, `run.ts`)
 
 ## Jev decision layer
@@ -71,6 +71,26 @@ flags the car: Jev rates pending payments about 20-40% likely to fail, a real
 risk of an unpaid stay. A petrol car's charge, or a site with one or no free
 pallet, is decided by rules, so a `RULES` badge can appear inside a Jev set.
 
+**Energy.** Each tower roof carries a solar array and a grid transformer
+stands west of the strip. Moving dashes run from both sources to a charging
+bus above each tower's door; their thickness and speed follow the live kW from
+`siteEnergy` in `useControlStore.ts` (the scenario's solar and grid conditions
+plus 7.4 kW per charging pallet). The control room's energy gauge shows the
+same numbers: solar, grid draw against the connection limit, and the tariff
+now. In the power cut scenario the grid lines turn red and sparse and the gauge
+shows the reduced limit. The scenarios' solar figures are site-wide; two tower
+roofs alone would hold only a few kWp, so read the roof arrays as a symbol.
+
+**Pipeline.** The control room runs the plan's pipeline over a typed event bus
+(`src/control/eventBus.ts`): the scenario player publishes `arrival`; the
+decision step (`api.ts`) calls `/api/decide` and publishes `decided`, plus a
+`review_requested` per decision held for an operator; the tower orchestrator
+(`orchestrator.ts`) is the only part that moves the towers, and turns
+`scenario_changed`, `decided` and the operator's `review_resolved` into store
+updates the 3D twin renders, announcing `pallet_to_door` and
+`charging_started`. The control room's event log shows the newest events in
+order.
+
 **Fallback.** `src/control/baseline.ts` is the rules policy: nearest free
 pallet, charge any EV below 80% on arrival, peak price
 when the queue or occupancy is high and standard otherwise, and flag any plate
@@ -82,6 +102,15 @@ unreachable, and says so in the control room.
 **Audit.** Every `/api/decide` call appends the arrival and the full decision
 set to `server/data/audit.jsonl` (git ignored). Read it with
 `GET /api/audit?limit=50`.
+
+**Cost per decision.** The control room shows "Jev: N decisions, $X total,
+Y ms avg" for the decision server since it started; `GET /api/health` returns
+the same totals under `jev`, and every `/api/decide` reply carries them. A
+decision is one question Jev answered (an arrival asks three to five in one
+call). The SDK reports tokens but not a bill, so cost is decisions times
+TypeSafe's published price of about $0.00008 per decision
+(`JEV_USD_PER_DECISION` in `server/jevUsage.ts`). Cache hits and rules
+fallbacks are not calls and cost nothing; failed calls are counted apart.
 
 **Driver phone.** The *Driver phone* button shows the newest car's journey
 (arrive, dock, charge, pay by UPI) from its decisions. Payment is a mock.

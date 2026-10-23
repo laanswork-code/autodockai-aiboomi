@@ -3,13 +3,16 @@ import { createServer } from 'node:http'
 import type { AddressInfo } from 'node:net'
 import { after, before, describe, test } from 'node:test'
 import { baselineDecider } from '../src/control/baseline.ts'
-import type { AuditEntry } from '../src/control/types.ts'
+import type { AuditEntry, JevUsage } from '../src/control/types.ts'
 import { createHandler, parseDecideRequest } from './http.ts'
+import { createUsageCounter } from './jevUsage.ts'
 import { quickStop, sampleState } from './fixtures/sample.ts'
 
 const audit: AuditEntry[] = []
+const usage = createUsageCounter()
 const server = createServer(createHandler({
   decider: baselineDecider,
+  usage: usage.snapshot,
   appendAudit: async (e) => { audit.push(e) },
   readAudit: async (n) => audit.slice(-n),
 }))
@@ -77,6 +80,17 @@ describe('GET routes', () => {
     const res = await fetch(`${base}/api/audit?limit=1`)
     const { entries } = await res.json() as { entries: AuditEntry[] }
     assert.equal(entries.length, 1)
+  })
+
+  test('health and every decide response carry the Jev usage totals', async () => {
+    usage.record({ decisions: 5, latencyMs: 120, usage: { input_tokens: 400, output_tokens: 30 } })
+    const health = await (await fetch(`${base}/api/health`)).json() as { jev: JevUsage }
+    assert.equal(health.jev.calls, 1)
+    assert.equal(health.jev.decisions, 5)
+    assert.equal(health.jev.avgLatencyMs, 120)
+    assert.equal(health.jev.costUsd, 0.0004)
+    const decided = await (await post(JSON.stringify(valid()))).json() as { usage: JevUsage }
+    assert.deepEqual(decided.usage, health.jev)
   })
 
   test('unknown path is 404', async () => {

@@ -144,6 +144,27 @@ export interface SimMetrics {
 
 /** POST /api/decide body and response. */
 export interface DecideRequest { arrival: Arrival; state: SiteState }
-export interface DecideResponse { decisions: DecisionSet }
+export interface DecideResponse { decisions: DecisionSet; usage?: JevUsage }
+
+/**
+ * Running totals of real Jev calls since the decision server started, for the
+ * control room's cost counter and GET /api/health. One decision is one
+ * question Jev answered; an arrival asks three to five in one call. Cache hits
+ * and rules fallbacks are not calls and cost nothing.
+ */
+export interface JevUsage {
+  /** systemOne calls that returned a usable answer. */
+  calls: number
+  /** Calls that errored, timed out or came back malformed (the rules decided instead). */
+  failures: number
+  decisions: number
+  /** Token totals as reported by the SDK; null until a response reports them. */
+  inputTokens: number | null
+  outputTokens: number | null
+  usdPerDecision: number
+  costUsd: number
+  /** Mean round trip of the successful calls; null before the first one. */
+  avgLatencyMs: number | null
+}
 /** One line of server/data/audit.jsonl. */
 export interface AuditEntry { at: string; arrival: Arrival; decisions: DecisionSet }

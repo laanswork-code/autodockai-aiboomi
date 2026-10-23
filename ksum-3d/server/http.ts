@@ -2,11 +2,11 @@
  * HTTP handler for the decision server, kept apart from index.ts so tests can
  * drive it without opening a port. Routes:
  *   POST /api/decide   DecideRequest -> DecideResponse (audited)
- *   GET  /api/health   model name and whether the key is set (never the key)
+ *   GET  /api/health   model name, whether the key is set (never the key), Jev usage totals
  *   GET  /api/audit    last N audit entries (?limit=50)
  */
 import type { IncomingMessage, ServerResponse } from 'node:http'
-import type { Arrival, AuditEntry, DecideRequest, DecideResponse, Decider, SiteState } from '../src/control/types.ts'
+import type { Arrival, AuditEntry, DecideRequest, DecideResponse, Decider, JevUsage, SiteState } from '../src/control/types.ts'
 import { appendAudit, readAudit } from './audit.ts'
 import { JEV_MODEL, lastJevModel } from './jevDecider.ts'
 
@@ -18,6 +18,8 @@ export interface HandlerDeps {
   decider: Decider
   appendAudit?: (entry: AuditEntry) => Promise<void>
   readAudit?: (limit: number) => Promise<AuditEntry[]>
+  /** Jev call and cost totals, sent with /api/health and every decision. */
+  usage?: () => JevUsage
 }
 
 type Check = (v: unknown) => boolean
@@ -111,6 +113,7 @@ export function createHandler(deps: HandlerDeps) {
           model: JEV_MODEL,
           lastModel: lastJevModel,
           keySet: Boolean(process.env.TYPESAFE_API_KEY?.trim()),
+          jev: deps.usage?.(),
         })
       }
       if (url.pathname === '/api/audit' && req.method === 'GET') {
@@ -132,7 +135,7 @@ export function createHandler(deps: HandlerDeps) {
         // The audit trail matters, but a full disk must not block a car at the gate.
         await append({ at: new Date().toISOString(), arrival: parsed.arrival, decisions })
           .catch((e: unknown) => console.error('[audit] append failed:', e))
-        const response: DecideResponse = { decisions }
+        const response: DecideResponse = { decisions, usage: deps.usage?.() }
         return send(res, 200, response)
       }
       return send(res, 404, { error: 'not found' })

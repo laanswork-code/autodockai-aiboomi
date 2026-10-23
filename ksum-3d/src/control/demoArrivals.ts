@@ -119,29 +119,35 @@ const robotaxiFleet: Arrival[] = [
   arrive('f10', hm(22, 45), 'KL 07 DR 0125', 'Tata Nexon EV', 26, 420, 'Fleet return, sensor wipe due', { robotaxi: true, pay: ['fastag', 'pending'] }),
 ]
 
+/*
+ * Grid and tariff numbers match the simulator's assumptions (sim/site.ts), so the
+ * gauge and the simulated comparison tell the same story: a 60 kW charging limit
+ * and an illustrative Kerala ToD tariff of INR 6.3 off-peak, 7.0 by day, 9.8 at
+ * the evening peak. The power cut runs on diesel backup, hence its price.
+ */
 export const SCENARIOS: Record<ScenarioName, Scenario> = {
   normal: {
     label: 'Normal',
     blurb: 'A weekday at KINFRA, solar up by mid-morning.',
-    env: { gridPriceInr: 7.5, offPeak: { priceInr: 5.2, from: hm(22, 0) }, solarKw: 18, gridLimitKw: 120, baseLoadKw: 20 },
+    env: { gridPriceInr: 7.0, offPeak: { priceInr: 6.3, from: hm(22, 0) }, solarKw: 18, gridLimitKw: 60, baseLoadKw: 20 },
     arrivals: normal,
   },
   rush_hour: {
     label: 'Rush hour',
-    blurb: '12 cars in 35 minutes before 9:30, peak tariff, little sun yet.',
-    env: { gridPriceInr: 9.1, offPeak: { priceInr: 5.2, from: hm(22, 0) }, solarKw: 6, gridLimitKw: 120, baseLoadKw: 35 },
+    blurb: '12 cars in 35 minutes before 9:30, chargers already busy, little sun yet.',
+    env: { gridPriceInr: 7.0, offPeak: { priceInr: 6.3, from: hm(22, 0) }, solarKw: 6, gridLimitKw: 60, baseLoadKw: 35 },
     arrivals: rushHour,
   },
   power_cut: {
     label: 'Power cut',
     blurb: 'KSEB outage: the site runs on rooftop solar and a small backup feed.',
-    env: { gridPriceInr: 14, offPeak: { priceInr: 5.2, from: hm(22, 0) }, solarKw: 22, gridLimitKw: 15, baseLoadKw: 8 },
+    env: { gridPriceInr: 14, offPeak: { priceInr: 6.3, from: hm(22, 0) }, solarKw: 22, gridLimitKw: 15, baseLoadKw: 8 },
     arrivals: powerCut,
   },
   robotaxi_fleet: {
     label: 'Robotaxi fleet',
     blurb: 'A robotaxi fleet returns overnight to charge before the morning dispatch.',
-    env: { gridPriceInr: 5.2, offPeak: { priceInr: 5.2, from: hm(22, 0) }, solarKw: 0, gridLimitKw: 120, baseLoadKw: 10 },
+    env: { gridPriceInr: 6.3, offPeak: { priceInr: 6.3, from: hm(22, 0) }, solarKw: 0, gridLimitKw: 60, baseLoadKw: 10 },
     arrivals: robotaxiFleet,
   },
 }

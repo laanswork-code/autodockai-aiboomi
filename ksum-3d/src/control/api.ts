@@ -6,9 +6,10 @@
  */
 import { baselineDecisions } from './baseline.ts'
 import { SCENARIOS } from './demoArrivals.ts'
-import type { Arrival, DecideRequest, DecideResponse, DecisionSet, SiteState } from './types.ts'
+import type { EventBus, JevEvent } from './eventBus.ts'
+import type { Arrival, DecideRequest, DecideResponse, DecisionKind, DecisionSet, JevUsage, SiteState } from './types.ts'
 import { CHARGER_KW } from './types.ts'
-import { useControlStore } from './useControlStore.ts'
+import { heldForReview, useControlStore } from './useControlStore.ts'
 
 /** Jev answers in well under a second; past this the demo moves on with the rules. */
 const TIMEOUT_MS = 4000
@@ -38,7 +39,7 @@ const isDecisionSet = (d: unknown): d is DecisionSet =>
   !!d && typeof d === 'object' && ['bay', 'charge', 'price', 'anomaly'].every((k) => k in d)
 
 /** Ask the decision server; on any failure, decide with the rules and report the server as unreachable. */
-export async function decide(arrival: Arrival, state: SiteState): Promise<{ decisions: DecisionSet; reachable: boolean }> {
+export async function decide(arrival: Arrival, state: SiteState): Promise<{ decisions: DecisionSet; reachable: boolean; usage?: JevUsage }> {
   try {
     const body: DecideRequest = { arrival, state }
     const res = await fetch('/api/decide', {
@@ -48,27 +49,36 @@ export async function decide(arrival: Arrival, state: SiteState): Promise<{ deci
       signal: AbortSignal.timeout(TIMEOUT_MS),
     })
     if (!res.ok) throw new Error(`decide: HTTP ${res.status}`)
-    const { decisions } = (await res.json()) as DecideResponse
+    const { decisions, usage } = (await res.json()) as DecideResponse
     if (!isDecisionSet(decisions)) throw new Error('decide: bad response')
-    return { decisions, reachable: true }
+    return { decisions, reachable: true, usage }
   } catch {
     return { decisions: baselineDecisions(arrival, state), reachable: false }
   }
 }
 
-/** Decide the next arrival of the running scenario and put it in the feed. */
-export async function playNext() {
-  const store = useControlStore.getState()
-  const { scenario, cursor, run, busy } = store
-  if (!scenario || busy) return
-  const arrival = SCENARIOS[scenario].arrivals[cursor]
-  if (!arrival) { store.setPlaying(false); return }
-  store.setBusy(true)
-  const state = siteState(arrival)
-  const rules = baselineDecisions(arrival, state)
-  const { decisions, reachable } = await decide(arrival, state)
-  const now = useControlStore.getState()
-  if (now.run !== run) return // the scenario was restarted or reset while we waited
-  now.setServer(reachable ? 'up' : 'down')
-  now.ingest({ arrival, decisions, rules })
+const KINDS: DecisionKind[] = ['bay', 'charge', 'price', 'anomaly']
+
+/**
+ * Decision step of the pipeline: for every arrival on the bus, ask Jev (or the
+ * rules) and publish the answer, plus one review request per decision held for
+ * an operator. Returns an unsubscribe function.
+ */
+export function connectDecisionStep(bus: EventBus<JevEvent>) {
+  return bus.on('arrival', async ({ arrival }) => {
+    const { run, setBusy } = useControlStore.getState()
+    setBusy(true)
+    const state = siteState(arrival)
+    const rules = baselineDecisions(arrival, state)
+    const { decisions, reachable, usage } = await decide(arrival, state)
+    const now = useControlStore.getState()
+    // server totals, so they count even when this run's answer is dropped below
+    if (usage) now.setJevUsage(usage)
+    if (now.run !== run) return // the scenario was restarted or reset while we waited
+    now.setServer(reachable ? 'up' : 'down')
+    bus.publish({ type: 'decided', arrival, decisions, rules, reachable })
+    for (const kind of KINDS) {
+      if (heldForReview(decisions, kind)) bus.publish({ type: 'review_requested', arrivalId: arrival.id, plate: arrival.bookedPlate, kind })
+    }
+  })
 }

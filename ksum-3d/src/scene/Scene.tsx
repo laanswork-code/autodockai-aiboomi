@@ -3,6 +3,7 @@ import { Suspense, useEffect, useRef } from 'react'
 import { VIEWS } from '../config/site'
 import { useSceneStore } from '../store/useSceneStore'
 import { Context } from './Context'
+import { EnergyFlows } from './EnergyFlows'
 import { KtizBuilding } from './KtizBuilding'
 import { Parking } from './Parking'
 import { Site } from './Site'
@@ -63,6 +64,7 @@ export function Scene() {
       <Suspense fallback={null}>
         <Parking />
       </Suspense>
+      <EnergyFlows />
     </>
   )
 }

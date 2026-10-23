@@ -16,6 +16,8 @@ import { baselineDecisions } from '../src/control/baseline.ts'
 import type { Arrival, Decider, DecisionSet, SiteState } from '../src/control/types.ts'
 import { buildRequest, mapAnswers } from './jev.ts'
 import type { JevClient } from './jev.ts'
+import { jevUsage } from './jevUsage.ts'
+import type { UsageCounter } from './jevUsage.ts'
 
 export const DEFAULT_TIMEOUT_MS = 4000
 export const DEFAULT_CACHE_PATH = join(import.meta.dirname, 'data', 'jev-cache.json')
@@ -31,6 +33,8 @@ export interface JevDeciderOptions {
   cachePath?: string
   /** Called when Jev fails and the rules policy answers instead. */
   onFallback?: (error: unknown, arrival: Arrival) => void
+  /** Counts real calls (not cache hits) and failures, for the cost counter. */
+  usage?: UsageCounter
 }
 
 interface CachedAnswer { model: string; answers: SystemOneResult<Questions>['answers']; latencyMs: number }
@@ -74,6 +78,7 @@ export function createJevDecider(options: JevDeciderOptions = {}): Decider {
     lastJevModel = result.model
     // Map before caching so a malformed response is never stored.
     const decisions = mapAnswers(arrival, state, candidates, result, latencyMs)
+    options.usage?.record({ decisions: Object.keys(result.answers).length, latencyMs, usage: result.usage })
     cache?.set(key, { model: result.model, answers: result.answers, latencyMs })
     return decisions
   }
@@ -84,6 +89,7 @@ export function createJevDecider(options: JevDeciderOptions = {}): Decider {
       try {
         return await ask(arrival, state)
       } catch (error) {
+        options.usage?.fail()
         options.onFallback?.(error, arrival)
         const reason = error instanceof Error ? error.name : 'error'
         const rules = baselineDecisions(arrival, state)
@@ -96,5 +102,6 @@ export function createJevDecider(options: JevDeciderOptions = {}): Decider {
 
 /** Live decider used by the server: no cache, so every decision is a fresh judgment. */
 export const jevDecider: Decider = createJevDecider({
+  usage: jevUsage,
   onFallback: (error, arrival) => console.warn(`[jev] fallback for ${arrival.id}:`, error instanceof Error ? error.message : error),
 })
