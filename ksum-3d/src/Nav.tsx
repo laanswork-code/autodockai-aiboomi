@@ -11,11 +11,12 @@ export function Link({ to, className, children }: { to: Route; className?: strin
   return <a href={to} className={className} onClick={onClick} aria-current={useRoute() === to ? 'page' : undefined}>{children}</a>
 }
 
-/** The three pages, shown on every one of them. */
+/** The pages, shown on every one of them. */
 export function NavLinks({ className = 'nav' }: { className?: string }) {
   return (
     <nav className={className} aria-label="Pages">
       <Link to="/">Digital twin</Link>
+      <Link to="/how">How it works</Link>
       <Link to="/dashboard">Dashboard</Link>
       <Link to="/problems">Problems</Link>
     </nav>

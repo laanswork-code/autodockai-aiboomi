@@ -1,0 +1,42 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; background:#f3efe6; overflow:hidden; font-family:Inter, sans-serif; color:#16181b; }
+  .stripe { position:absolute; left:0; right:0; top:0; height:12px; background:repeating-linear-gradient(90deg,#f0b91c 0 46px,transparent 46px 74px),#16181b; z-index:20; }
+  .title { line-height:1.06; letter-spacing:-0.02em; }
+  .title .w { display:inline-block; }
+  .title .acc { color:#1747a6; }
+  .col { position:absolute; display:flex; flex-direction:column; z-index:5; }
+  .card { position:absolute; border-radius:18px; overflow:hidden; background:#fbf9f4; border:1px solid #d4ccbb; box-shadow:0 30px 60px -30px rgba(22,24,27,.45); z-index:4; }
+  .card img { display:block; width:100%; }
+  .mark { position:absolute; border:4px solid #1747a6; border-radius:10px; background:rgba(23,71,166,.06); }
+  .shot { position:absolute; inset:0; overflow:hidden; z-index:1; }
+  .shot .cam { position:absolute; inset:0; transform-origin:50% 50%; }
+  .shot img { width:100%; height:100%; object-fit:cover; display:block; }
+  .plate { position:absolute; display:flex; flex-direction:column; gap:10px; padding:26px 32px; background:rgba(251,249,244,.97); border:1px solid #d4ccbb; border-radius:18px; box-shadow:0 30px 60px -30px rgba(22,24,27,.5); z-index:6; }
+  .num { position:absolute; font-weight:800; letter-spacing:-0.04em; line-height:1; font-variant-numeric:tabular-nums; z-index:5; }
+  .end { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; gap:56px; z-index:7; }
+  .sign { width:250px; height:250px; border-radius:40px; background:#1747a6; color:#fff; display:grid; place-items:center; font:800 200px/1 Inter, sans-serif; box-shadow:inset 0 0 0 10px #1747a6, inset 0 0 0 18px #fff; }
+  .end-words { display:flex; flex-direction:column; gap:14px; }
+  .end-name { font-size:110px; font-weight:800; letter-spacing:-0.03em; line-height:1; }
+  .end-name .x { color:#7b7f86; font-weight:600; }
+  .end-name .acc { color:#1747a6; }
+  .end-sub { font-size:38px; font-weight:600; color:#4a4e55; }
+  .end-url { font-size:30px; font-weight:500; color:#7b7f86; }
+  </style>
+  <div data-hf-id="hf-t4eg" id="root" data-composition-id="reveal" data-width="1920" data-height="1080" data-layout-allow-overlap>
+    <div data-hf-id="hf-wdzv" class="stripe"></div>
+    <div data-hf-id="hf-fgvu" id="s1" class="shot"><div data-hf-id="hf-12x1" class="cam"><img data-hf-id="hf-pwin" src="assets/shots/twin-today.png" alt=""></div></div>
+    <div data-hf-id="hf-h5ag" id="p2" class="plate" style="left:96px;top:770px;width:1000px"><div data-hf-id="hf-puq3" id="t3" class="title" style="font-size:50px;font-weight:800;color:#16181b;"><span data-hf-id="hf-iogc" class="w">One</span> <span data-hf-id="hf-tjk4" class="w">example:</span> <span data-hf-id="hf-3hx4" class="w">KSUM,</span> <span data-hf-id="hf-35cz" class="w">Kalamassery</span></div><div data-hf-id="hf-fghn" id="t4" class="title" style="font-size:40px;font-weight:600;color:#16181b;"><span data-hf-id="hf-b7a3" class="w">a</span> <span data-hf-id="hf-v62i" class="w">live</span> <span data-hf-id="hf-4cb5" class="w acc">digital</span> <span data-hf-id="hf-of6h" class="w acc">twin</span></div><div data-hf-id="hf-r106" id="t5" class="title" style="font-size:40px;font-weight:600;color:#16181b;"><span data-hf-id="hf-wwca" class="w">15</span> <span data-hf-id="hf-dskz" class="w">bays,</span> <span data-hf-id="hf-1dz5" class="w">nearly</span> <span data-hf-id="hf-bvaz" class="w">all</span> <span data-hf-id="hf-7ztb" class="w">taken</span></div></div>
+    <div data-hf-id="hf-ywrx" id="s6" class="shot"><div data-hf-id="hf-wcpl" class="cam"><img data-hf-id="hf-4fyw" src="assets/shots/twin-towers.png" alt=""></div></div>
+    <div data-hf-id="hf-g37n" id="p7" class="plate" style="left:96px;top:800px;width:980px"><div data-hf-id="hf-41x2" id="t8" class="title" style="font-size:56px;font-weight:800;color:#16181b;"><span data-hf-id="hf-5sv8" class="w">4</span> <span data-hf-id="hf-czyx" class="w">bays.</span> <span data-hf-id="hf-ju9b" class="w acc">40</span> <span data-hf-id="hf-9bsq" class="w acc">cars.</span></div><div data-hf-id="hf-c0wi" id="t9" class="title" style="font-size:40px;font-weight:600;color:#16181b;"><span data-hf-id="hf-ufi3" class="w">A</span> <span data-hf-id="hf-y4z6" class="w">charger</span> <span data-hf-id="hf-gpzr" class="w">in</span> <span data-hf-id="hf-l0wr" class="w">every</span> <span data-hf-id="hf-x50m" class="w">bay.</span></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#s1 .cam",{scale:1,x:0,y:0},0);tl.fromTo("#s1",{opacity:0},{opacity:1,duration:0.01},0);tl.to("#s1 .cam",{scale:1.32,x:-40,y:-60,duration:6.5,ease:"power2.inOut"},0.4);tl.to("#s1",{opacity:0,duration:0.01},11.266);
+    tl.fromTo("#p2",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.5,ease:"expo.out"},0.12);tl.fromTo("#t3 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},0.32);tl.fromTo("#t4 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},6.064);tl.fromTo("#t5 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},8.723);tl.to("#p2",{opacity:0,filter:"blur(6px)",duration:0.3,ease:"power3.in"},11.016);
+    tl.set("#s6 .cam",{scale:1.18,x:120,y:40},0);tl.fromTo("#s6",{opacity:0},{opacity:1,duration:0.01},11.266);tl.to("#s6 .cam",{scale:1,x:0,y:0,duration:4.5,ease:"power2.out"},11.316);
+    tl.fromTo("#p7",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.5,ease:"expo.out"},13.669);tl.fromTo("#t8 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},13.769);tl.fromTo("#t9 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},15.956);
+    tl.set({}, {}, 18.004);
+    window.__timelines["reveal"] = tl;
+  </script>
+</template>

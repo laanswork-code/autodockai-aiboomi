@@ -7,7 +7,7 @@
 
 ## The problem at your site
 
-The paver strip in front of the building holds about 15 cars, is full by mid-morning, and has no EV charging. Visitors circle, park on the roadside, or leave.
+Your site is the first example we have modelled of a problem found across Kerala and India: of 474 public parking complaints in our research, 154 come from Kerala. Here, the paver strip in front of the building holds about 15 cars, is full by mid-morning, and has no EV charging. Visitors circle, park on the roadside, or leave.
 
 ## What we propose
 

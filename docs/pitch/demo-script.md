@@ -4,13 +4,13 @@ Numbers come from the simulation run (`ksum-3d/sim/results.json`, seed 42). Say 
 
 ## 0:00 to 0:20 · Hook
 
-> It's 9:40 on a weekday at the Kerala Startup Mission in Kalamassery. A driver with 4% battery has circled this strip three times. Fifteen bays, all full, no chargers. She parks on the road and walks.
+> Across Kerala and India there is nowhere to park and nowhere to charge: we found 474 real complaints, 154 of them in Kerala. One example: the Kerala Startup Mission in Kalamassery, 9:40 on a weekday. A driver with 4% battery has circled this strip three times. Fifteen bays, all full, no chargers. She parks on the road and walks.
 
 *(Screen: 3D site, **Today** mode, Street view: the full paver strip.)*
 
 ## 0:20 to 0:50 · Problem, then the solution in one sentence
 
-> More EVs than sockets, no spare land, and parking and charging are two separate errands. Robotaxi fleets will need unattended depots on top of that.
+> From Kochi to Delhi NCR: more EVs than sockets, no spare land, and parking and charging are two separate errands. Robotaxi fleets will need unattended depots on top of that.
 >
 > AutoDock already builds rotary towers with a charger in every bay. **We built the brain: Jev decides what happens to every car, bay and kilowatt, with a confidence it can stand behind, and asks a human when it isn't sure.**
 

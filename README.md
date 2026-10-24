@@ -4,13 +4,16 @@
 > charging cars on 4 of 15 surface bays, with every call made by Jev or, when
 > Jev is unsure, by a person.
 
-**[▶ Demo video](docs/demo/demo.mp4)** · **[Pitch deck](docs/pitch/deck.pdf)** · **[AI Impact Statement](docs/AI_IMPACT.md)** · **[Quick start](#setup-and-run)** · **[Licence](#licence)**
+**[▶ Pitch film](docs/demo/pitch-film.mp4)** · **[Demo video](docs/demo/demo.mp4)** · **[Pitch deck](docs/pitch/deck.pdf)** · **[AI Impact Statement](docs/AI_IMPACT.md)** · **[Quick start](#setup-and-run)** · **[Licence](#licence)**
 
-**AIBoomi Startup Weekend, 23–24 Oct 2026.** A live 3D digital twin of the
+**AIBoomi Startup Weekend, 23–24 Oct 2026.** Kerala and India are running out
+of parking and chargers: we collected 474 real complaints, 154 from Kerala and
+the rest from Delhi NCR, Mumbai, Bengaluru and cities across India. AutoDock
+rotary towers stack cars and charge them, and TypeSafe's **Jev** decides what
+happens to every car, bay and kilowatt. Confident decisions act on their own;
+uncertain ones go to a person. Our example site is a live 3D digital twin of the
 Kerala Startup Mission building at KINFRA Hi-Tech Park, Kalamassery, where two
-AutoDock rotary parking and charging towers replace today's surface parking
-strip, and TypeSafe's **Jev** decides what happens to every car, bay and
-kilowatt. Confident decisions act on their own; uncertain ones go to a person.
+towers replace part of today's surface parking strip.
 
 > [!NOTE]
 > **Status: hackathon prototype.** Built in one weekend. The performance numbers
@@ -23,13 +26,15 @@ kilowatt. Confident decisions act on their own; uncertain ones go to a person.
 
 | | |
 |---|---|
-| **Site** | KSUM building, KINFRA Hi-Tech Park, Kalamassery |
+| **Problem** | 474 parking complaints: 154 in Kerala, 320 across the rest of India |
+| **Example site** | KSUM building, KINFRA Hi-Tech Park, Kalamassery (digital twin, pilot candidate) |
 | **Today** | 15 surface bays, full by mid-morning, no chargers |
 | **With AutoDock** | 2 towers × 20 pallets on 4 bays (57 m²): 40 cars, a 7.4 kW AC charger in every bay |
 | **Brain** | One Jev request per arriving car: bay, charge plan, price tier, plate and payment risk |
 | **Rush hour, simulated** | Grid peak 60 → 42.6 kW, energy cost ₹2,989 → ₹2,262 |
 | **Tests** | 52 unit tests, no live calls |
 
+- **Pitch film:** [`docs/demo/pitch-film.mp4`](docs/demo/pitch-film.mp4) (119 s, narrated: the parking problem across Kerala and India, KSUM as one example in a live digital twin, why Jev, how it decides, the results). Built from code in [`video/`](video) with HyperFrames and an ElevenLabs voice.
 - **Demo video:** [`docs/demo/demo.mp4`](docs/demo/demo.mp4) (104 s, screen recording of the running app: twin, control room, dashboard and problems)
 - **Pitch deck:** [`docs/pitch/deck.pdf`](docs/pitch/deck.pdf) (6 slides) · source [`docs/pitch/deck.html`](docs/pitch/deck.html)
 - **AI Impact Statement:** [`docs/AI_IMPACT.md`](docs/AI_IMPACT.md)
@@ -86,19 +91,37 @@ Full details: [`ksum-3d/README.md`](ksum-3d/README.md).
 
 ## Problem
 
-Kerala has more cars and EVs than parking or chargers, and no spare land in its
-cities. At KSUM / KINFRA, 15 surface bays fill by mid-morning with no chargers;
-drivers circle, park on the road, or leave. Parking and charging are two
+Kerala and the rest of India have more cars and EVs than parking or chargers,
+and no spare land in their cities to add either. Parking and charging are two
 separate errands, and robotaxi fleets will soon need unattended depots too.
 
 **Our evidence:** [474 real complaints from Reddit, forums and news](research/site/index.html),
 collected with SerpAPI during the event.
 
+| Where | Complaints |
+|---|---|
+| Kerala (Kochi 55, Thiruvananthapuram 38, Kozhikode 22, Thrissur 7, rest of the state 32) | 154 |
+| Delhi NCR · Mumbai · Bengaluru | 55 · 43 · 37 |
+| Hyderabad · Chennai · Pune | 14 · 13 · 7 |
+| Elsewhere in India | 151 |
+
+The biggest groups: fights and disputes (111), EV charging (84), homes and
+apartments (58), roadside parking and jams (57), fees (54) and drivers who
+cannot find a spot (49).
+
+**One example: KSUM, Kalamassery.** At the Kerala Startup Mission building, 15
+surface bays fill by mid-morning with no chargers; drivers circle, park on the
+road, or leave. It is the site we model as the digital twin and the pilot
+candidate, one car park among many with the same problem.
+
 ## Users and context
+
+The users are the same in any crowded car park in Kerala or the rest of India;
+the KSUM building is our first example site.
 
 | Who | What they get |
 |---|---|
-| **Site owners** (tech parks, malls, hospitals, apartment associations) | More cars and chargers on the same land. |
+| **Site owners** (tech parks, malls, hospitals, apartment associations), starting with KSUM as the example site | More cars and chargers on the same land. |
 | **Drivers** | One stop to park and charge, with a phone flow from arrival to UPI payment. |
 | **Operators** | A control room that only interrupts them when a decision really needs a person. |
 | **AutoDock AI** (Kozhikode), who already builds rotary towers with a charger in every bay | We are the software brain, not the hardware. |
@@ -215,15 +238,17 @@ The commit history shows the build order.
 ```
 .
 ├── ksum-3d/          the app, decision server (server/) and simulator (sim/)
+├── video/            narrated pitch film (HyperFrames + ElevenLabs), all code
 ├── research/         SerpAPI collector and the parking problems site; US robotaxi depot brief
 └── docs/
     ├── PLAN.md       hackathon plan
     ├── AI_IMPACT.md  AI Impact Statement
-    ├── demo/         demo video
+    ├── demo/         pitch film and demo video
     └── pitch/        deck, demo script, LOI templates
 ```
 
 - [`ksum-3d/`](ksum-3d): the app, decision server (`server/`) and simulator (`sim/`)
+- [`video/`](video): the narrated pitch film; `script.json` is the script, `node build.mjs` builds it, `npm run render` renders it
 - [`research/`](research): SerpAPI collector and the parking problems site; US robotaxi depot brief
 - [`docs/PLAN.md`](docs/PLAN.md): hackathon plan · [`docs/pitch/`](docs/pitch): deck, demo script, LOI templates · [`docs/AI_IMPACT.md`](docs/AI_IMPACT.md)
 

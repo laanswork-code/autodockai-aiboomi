@@ -1,11 +1,11 @@
 import { useSyncExternalStore } from 'react'
 
 /*
- * Three pages, so a tiny pushState router instead of a dependency. Vite's dev
+ * A few pages, so a tiny pushState router instead of a dependency. Vite's dev
  * server (and any SPA host) serves index.html for unknown paths.
  */
-export type Route = '/' | '/problems' | '/dashboard'
-const ROUTES: Route[] = ['/', '/problems', '/dashboard']
+export type Route = '/' | '/how' | '/problems' | '/dashboard'
+const ROUTES: Route[] = ['/', '/how', '/problems', '/dashboard']
 
 const listeners = new Set<() => void>()
 const notify = () => listeners.forEach((l) => l())

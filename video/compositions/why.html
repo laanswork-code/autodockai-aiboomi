@@ -1,0 +1,42 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; background:#f3efe6; overflow:hidden; font-family:Inter, sans-serif; color:#16181b; }
+  .stripe { position:absolute; left:0; right:0; top:0; height:12px; background:repeating-linear-gradient(90deg,#f0b91c 0 46px,transparent 46px 74px),#16181b; z-index:20; }
+  .title { line-height:1.06; letter-spacing:-0.02em; }
+  .title .w { display:inline-block; }
+  .title .acc { color:#1747a6; }
+  .col { position:absolute; display:flex; flex-direction:column; z-index:5; }
+  .card { position:absolute; border-radius:18px; overflow:hidden; background:#fbf9f4; border:1px solid #d4ccbb; box-shadow:0 30px 60px -30px rgba(22,24,27,.45); z-index:4; }
+  .card img { display:block; width:100%; }
+  .mark { position:absolute; border:4px solid #1747a6; border-radius:10px; background:rgba(23,71,166,.06); }
+  .shot { position:absolute; inset:0; overflow:hidden; z-index:1; }
+  .shot .cam { position:absolute; inset:0; transform-origin:50% 50%; }
+  .shot img { width:100%; height:100%; object-fit:cover; display:block; }
+  .plate { position:absolute; display:flex; flex-direction:column; gap:10px; padding:26px 32px; background:rgba(251,249,244,.97); border:1px solid #d4ccbb; border-radius:18px; box-shadow:0 30px 60px -30px rgba(22,24,27,.5); z-index:6; }
+  .num { position:absolute; font-weight:800; letter-spacing:-0.04em; line-height:1; font-variant-numeric:tabular-nums; z-index:5; }
+  .end { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; gap:56px; z-index:7; }
+  .sign { width:250px; height:250px; border-radius:40px; background:#1747a6; color:#fff; display:grid; place-items:center; font:800 200px/1 Inter, sans-serif; box-shadow:inset 0 0 0 10px #1747a6, inset 0 0 0 18px #fff; }
+  .end-words { display:flex; flex-direction:column; gap:14px; }
+  .end-name { font-size:110px; font-weight:800; letter-spacing:-0.03em; line-height:1; }
+  .end-name .x { color:#7b7f86; font-weight:600; }
+  .end-name .acc { color:#1747a6; }
+  .end-sub { font-size:38px; font-weight:600; color:#4a4e55; }
+  .end-url { font-size:30px; font-weight:500; color:#7b7f86; }
+  </style>
+  <div data-hf-id="hf-50pb" id="root" data-composition-id="why" data-width="1920" data-height="1080" data-layout-allow-overlap>
+    <div data-hf-id="hf-wdzv" class="stripe"></div>
+    <div data-hf-id="hf-fgvu" id="s1" class="shot"><div data-hf-id="hf-12x1" class="cam"><img data-hf-id="hf-1tn5" src="assets/shots/rush-full.png" alt=""></div></div>
+    <div data-hf-id="hf-a6f7" id="p2" class="plate" style="left:1010px;top:150px;width:810px"><div data-hf-id="hf-4mq8" id="t3" class="title" style="font-size:46px;font-weight:800;color:#16181b;"><span data-hf-id="hf-4q4b" class="w">Every</span> <span data-hf-id="hf-43bq" class="w">car</span> <span data-hf-id="hf-h17x" class="w">needs</span> <span data-hf-id="hf-lz3b" class="w">decisions</span></div><div data-hf-id="hf-7l3l" id="t4" class="title" style="font-size:62px;font-weight:800;color:#16181b;"><span data-hf-id="hf-ifpt" class="w">Which</span> <span data-hf-id="hf-rrbj" class="w">pallet?</span></div><div data-hf-id="hf-5h4c" id="t5" class="title" style="font-size:62px;font-weight:800;color:#16181b;"><span data-hf-id="hf-dcic" class="w">Charge</span> <span data-hf-id="hf-z4ck" class="w">now,</span> <span data-hf-id="hf-uvb9" class="w">or</span> <span data-hf-id="hf-i3e1" class="w">wait</span> <span data-hf-id="hf-eyfb" class="w">for</span> <span data-hf-id="hf-9o0j" class="w">the</span> <span data-hf-id="hf-i47v" class="w">sun?</span></div><div data-hf-id="hf-1eib" id="t6" class="title" style="font-size:62px;font-weight:800;color:#16181b;"><span data-hf-id="hf-0jp6" class="w">What</span> <span data-hf-id="hf-6bn2" class="w">price?</span></div><div data-hf-id="hf-l97y" id="t7" class="title" style="font-size:62px;font-weight:800;color:#16181b;"><span data-hf-id="hf-h9gw" class="w">Is</span> <span data-hf-id="hf-cqxh" class="w">it</span> <span data-hf-id="hf-cto3" class="w">the</span> <span data-hf-id="hf-n4dm" class="w">right</span> <span data-hf-id="hf-48nf" class="w">car?</span></div></div>
+    <div data-hf-id="hf-ndkl" id="p8" class="plate" style="left:1010px;top:110px;width:810px"><div data-hf-id="hf-4ijo" id="t9" class="title" style="font-size:84px;font-weight:800;color:#16181b;"><span data-hf-id="hf-xacj" class="w">That's</span> <span data-hf-id="hf-zft4" class="w">why:</span> <span data-hf-id="hf-uzvo" class="w acc">Jev</span></div><div data-hf-id="hf-esj0" id="t10" class="title" style="font-size:44px;font-weight:600;color:#16181b;"><span data-hf-id="hf-6zsb" class="w">1</span> <span data-hf-id="hf-6qg9" class="w">request</span> <span data-hf-id="hf-jh5p" class="w">·</span> <span data-hf-id="hf-5ek7" class="w">5</span> <span data-hf-id="hf-7d5f" class="w">answers</span></div><div data-hf-id="hf-xu71" id="t11" class="title" style="font-size:40px;font-weight:600;color:#16181b;"><span data-hf-id="hf-o2rx" class="w">about</span> <span data-hf-id="hf-slud" class="w">0.5</span> <span data-hf-id="hf-grkh" class="w">s</span> <span data-hf-id="hf-zyk1" class="w">·</span> <span data-hf-id="hf-4jdm" class="w">$0.00008</span> <span data-hf-id="hf-b7a3" class="w">a</span> <span data-hf-id="hf-dnla" class="w">decision</span></div></div>
+    <div data-hf-id="hf-sz20" id="c12" class="card" data-layout-allow-overflow style="left:1110px;top:470px;width:640px;"><img data-hf-id="hf-cefe" src="assets/shots/rush-card-top.png" alt=""></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#s1 .cam",{scale:1,x:0,y:0},0);tl.fromTo("#s1",{opacity:0},{opacity:1,duration:0.01},0);tl.to("#s1 .cam",{scale:1.55,x:600,y:120,duration:1.4,ease:"power2.inOut"},0.3);
+    tl.fromTo("#p2",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.5,ease:"expo.out"},0.12);tl.fromTo("#t3 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},0.457);tl.fromTo("#t4 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},3.29);tl.fromTo("#t5 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},4.242);tl.fromTo("#t6 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},6.424);tl.fromTo("#t7 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},7.55);tl.to("#p2",{opacity:0,filter:"blur(6px)",duration:0.3,ease:"power3.in"},9.448);
+    tl.fromTo("#p8",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.5,ease:"expo.out"},9.698);tl.fromTo("#t9 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},9.798);tl.fromTo("#t10 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},13.495);tl.fromTo("#t11 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},16.119);
+    tl.fromTo("#c12",{opacity:0,scale:0.92,filter:"blur(10px)"},{opacity:1,scale:1,filter:"blur(0px)",duration:0.6,ease:"expo.out"},11.73);tl.fromTo("#c12 img",{scale:1,y:0},{scale:1.035,y:0,duration:8.039,ease:"none"},11.73);
+    tl.set({}, {}, 19.769);
+    window.__timelines["why"] = tl;
+  </script>
+</template>

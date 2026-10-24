@@ -2,7 +2,8 @@
 
 A 3D replica of the Kerala Startup Mission building (Kerala Technology
 Innovation Zone) at KINFRA Hi-Tech Park, Kalamassery, with two AutoDock rotary
-towers placed on the paver parking strip in front of it. Toggle **Today** and
+towers placed on the paver parking strip in front of it. It is one example
+site for a parking problem found across Kerala and India. Toggle **Today** and
 **With AutoDock** to compare the ground each layout needs. Project overview,
 submission material and licences: see the [root README](../README.md).
 

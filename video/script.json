@@ -1,0 +1,38 @@
+{
+  "voice": {
+    "id": "Xb7hH8MSUJpSbSDYk0k2",
+    "name": "Alice - Clear, Engaging Educator",
+    "model": "eleven_multilingual_v2"
+  },
+  "gapSec": 0.45,
+  "lines": [
+    {
+      "id": "hook",
+      "text": "Every morning, in cities across Kerala and India, the same thing happens. The parking fills up, the road becomes the car park, and the few chargers have a queue."
+    },
+    {
+      "id": "problem",
+      "text": "We read the complaints. Four hundred and seventy four of them, from Kochi, Kozhikode and Trivandrum to Delhi, Mumbai and Bengaluru: fights over a spot, overcharging, and apartments with nowhere to plug in. Every one is on our problems page, linked to the original post."
+    },
+    {
+      "id": "reveal",
+      "text": "Take one example: the Kerala Startup Mission in Kalamassery, rebuilt here as a live digital twin. When we visited, its fifteen bays were nearly all taken. Two AutoDock rotary towers on just four of them hold forty cars, each with its own charger."
+    },
+    {
+      "id": "why",
+      "text": "But a tower is only as smart as its decisions. Which pallet? Charge now, or wait for the sun? What price? Is that even the right car? That's why we use Jev. For every car, it answers all five questions in a single request, in about half a second, for a fraction of a cent."
+    },
+    {
+      "id": "how",
+      "text": "Jev doesn't guess in sentences. It returns typed answers, each with a confidence. When it's sure, the tower simply acts. When it isn't, like this camera misread, it stops and asks a person. And if Jev is ever down, simple rules take over, and every decision is logged."
+    },
+    {
+      "id": "proof",
+      "text": "In a simulated rush hour, the grid peak drops twenty nine percent and energy costs fall by a quarter, while every real plate and payment problem is still caught. The operator watches it all, live, on one dashboard."
+    },
+    {
+      "id": "claim",
+      "text": "More cars, more chargers, on the same ground. Parking that thinks, for every city that has run out of room. AutoDock, powered by Jev."
+    }
+  ]
+}
