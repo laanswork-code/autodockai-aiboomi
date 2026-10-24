@@ -4,7 +4,7 @@ import { SimCard } from '../control/SimCard'
 import { spaceStats } from '../lib/stats'
 import { useSceneStore, type Mode } from '../store/useSceneStore'
 import { DriverPhone } from './DriverPhone'
-import { NavLinks } from '../Nav.tsx'
+import { Logo, NavLinks } from '../Nav.tsx'
 
 const MODES: { id: Mode; label: string }[] = [
   { id: 'today', label: 'Today' },
@@ -55,15 +55,16 @@ function Stats() {
     <div className="stats">
       <div className={`stat ${mode === 'today' ? 'is-on' : ''}`}>
         <span className="stat__k">Surface strip today</span>
-        <b>{st.today.cars} cars</b>
+        <b>{st.today.cars}<small>cars</small></b>
         <span>{fmt(st.today.area)} m² · {st.today.perCar.toFixed(1)} m² per car</span>
       </div>
       <div className={`stat ${mode === 'autodock' ? 'is-on' : ''}`}>
         <span className="stat__k">2 AutoDock towers</span>
-        <b>{st.autodock.cars + st.keptBays} cars</b>
+        <b>{st.autodock.cars + st.keptBays}<small>cars</small></b>
         <span>{st.autodock.cars} on {fmt(st.autodock.area)} m² · {st.autodock.perCar.toFixed(1)} m² per car, plus {st.keptBays} surface bays</span>
       </div>
       <div className="stat stat--big">
+        <span className="stat__k">Density gain</span>
         <b>{st.densityGain.toFixed(1)}×</b>
         <span>cars per m² of ground in the towers, with the other {st.keptBays} surface bays still in use</span>
       </div>
@@ -74,18 +75,19 @@ function Stats() {
 export function Hud() {
   const mode = useSceneStore((s) => s.mode)
   return (
-    <>
-      <header className="hud-top">
-        <div>
-          <p className="kicker">AutoDock · digital twin</p>
-          <h1>KINFRA Hi-Tech Park, Kalamassery</h1>
-          <p className="sub">The AI intelligence layer for smart parking, live at one example site: the Kerala Startup Mission building (KTIZ), with two rotary towers on today's parking strip.</p>
+    <div className="hud">
+      <header className="hud-title">
+        <div className="hud-title__bar">
+          <Logo />
+          <p className="ad-label ad-label--live">Digital twin</p>
         </div>
-        <div className="hud-top__right">
-          <NavLinks />
-          <ModeSwitch />
-        </div>
+        <h1>KINFRA Hi-Tech Park, Kalamassery</h1>
+        <p className="sub">The AI intelligence layer for smart parking, live at one example site: the Kerala Startup Mission building (KTIZ), with two rotary towers on today's parking strip.</p>
       </header>
+      <div className="hud-right">
+        <NavLinks className="nav hud-nav" />
+        <ModeSwitch />
+      </div>
       {mode === 'autodock' && <ControlRoom />}
       <aside className="hud-side">
         <Stats />
@@ -97,6 +99,6 @@ export function Hud() {
         {mode === 'autodock' && <DriverPhone />}
         <span className="credit">Map data © OpenStreetMap contributors · heights estimated · tower and cars from the AutoDock demo</span>
       </footer>
-    </>
+    </div>
   )
 }

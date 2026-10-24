@@ -1,5 +1,5 @@
 import { memo, useDeferredValue, useMemo, useState } from 'react'
-import { NavLinks } from '../Nav.tsx'
+import { SiteFooter, SiteHeader } from '../Nav.tsx'
 import { CATEGORY_LABEL, CITIES, KERALA, KIND_LABEL, PROBLEMS, countBy, type Problem } from './problems.ts'
 import './pages.css'
 import './problems.css'
@@ -30,17 +30,18 @@ export default function ProblemsPage() {
   }), [kind, city, q])
   const groups = useMemo(() => countBy(list, (p) => p.category), [list])
 
+  const top = groups[0]?.[1] ?? 1
+
   return (
     <div className="page">
-      <div className="page__bar" />
-      <div className="page__wrap">
+      <SiteHeader />
+      <main className="page__wrap">
         <header className="page__head">
           <div className="page__title">
-            <p className="kicker">AutoDock · research</p>
+            <p className="ad-label">Research</p>
             <h1>Parking problems people face</h1>
-            <p className="sub">{PROBLEMS.length} problems from Reddit, forums and news, {keralaCount} of them in Kerala. Biggest problem first, Kerala first within each. Every card links to the original.</p>
           </div>
-          <NavLinks />
+          <p className="ad-note page__note">{PROBLEMS.length} problems from Reddit, forums and news, {keralaCount} of them in Kerala. Biggest problem first, Kerala first within each. Every card links to the original.</p>
         </header>
 
         <div className="pbar">
@@ -54,13 +55,20 @@ export default function ProblemsPage() {
             <option value="">All places</option>
             {CITIES.filter((c) => cityCounts.has(c)).map((c) => <option key={c} value={c}>{c} ({cityCounts.get(c)})</option>)}
           </select>
-          <span className="pbar__count">{list.length} of {PROBLEMS.length}</span>
+          <span className="pbar__count"><b>{list.length}</b> of {PROBLEMS.length}</span>
         </div>
         <nav className="pjump" aria-label="Jump to problem">
-          {groups.map(([cat, n]) => <a key={cat} href={`#p-${cat}`}>{CATEGORY_LABEL[cat] ?? cat} <b>{n}</b></a>)}
+          {groups.map(([cat, n], g) => (
+            <a key={cat} href={`#p-${cat}`}>
+              <span className="pjump__n">{String(g + 1).padStart(2, '0')}</span>
+              <span className="pjump__l">{CATEGORY_LABEL[cat] ?? cat}</span>
+              <span className="pjump__v">{n}</span>
+              <span className="pjump__t"><span style={{ width: `${(n / top) * 100}%` }} /></span>
+            </a>
+          ))}
         </nav>
 
-        {groups.length === 0 ? <p className="pempty">Nothing matches. <button type="button" className="btn" onClick={() => { setQuery(''); setKind('all'); setCity('') }}>Clear filters</button></p> : groups.map(([cat, n], g) => (
+        {groups.length === 0 ? <p className="pempty">Nothing matches. <button type="button" className="ad-btn ad-btn--ghost ad-btn--plain" onClick={() => { setQuery(''); setKind('all'); setCity('') }}>Clear filters</button></p> : groups.map(([cat, n], g) => (
           <section key={cat} className="pgroup">
             <h2 id={`p-${cat}`}><span>{String(g + 1).padStart(2, '0')}</span> {CATEGORY_LABEL[cat] ?? cat} <small>{n} {n === 1 ? 'problem' : 'problems'}</small></h2>
             <div className="pgrid">
@@ -69,7 +77,8 @@ export default function ProblemsPage() {
           </section>
         ))}
         <p className="pfoot">Problem lines are AI summaries of each search result's title and snippet; open the original before quoting. Collected with SerpAPI on 23 Oct 2026. Posts belong to their authors.</p>
-      </div>
+      </main>
+      <SiteFooter />
     </div>
   )
 }
@@ -79,6 +88,7 @@ const ProblemCard = memo(function ProblemCard({ p }: { p: Problem }) {
   const who = [p.source || host(p.url), p.city, p.engagement || niceDate(p.date)].filter(Boolean).join(' · ')
   return (
     <article className={`pcard pcard--${p.kind}`}>
+      <p className="pcard__kind">{KIND_LABEL[p.kind]}</p>
       <p className="pcard__problem">{p.problem || p.title}</p>
       {showQuote && <p className="pcard__quote">“{p.quote}”</p>}
       <div className="pcard__src">

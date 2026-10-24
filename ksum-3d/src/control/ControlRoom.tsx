@@ -26,7 +26,7 @@ function usePlayback() {
 
 function ServerPill() {
   const server = useControlStore((s) => s.server)
-  if (server === 'unknown') return <span className="pill">Decision server: not called yet</span>
+  if (server === 'unknown') return <span className="pill pill--idle">Decision server: not called yet</span>
   return server === 'up'
     ? <span className="pill pill--up">Decision server live</span>
     : <span className="pill pill--down">Rules fallback: decision server unreachable</span>
@@ -83,7 +83,7 @@ function EnergyGauge() {
     <section className={`energy ${cut ? 'is-cut' : ''} ${over ? 'is-over' : ''}`} aria-label="Site power">
       <div className="energy__cell energy__cell--solar">
         <span>Solar</span>
-        <b>{kw(e.solarKw)} kW</b>
+        <b>{kw(e.solarKw)}<small>kW</small></b>
       </div>
       <div className="energy__cell energy__cell--grid">
         <span>Grid{cut ? ' (cut)' : ''}</span>
@@ -95,7 +95,7 @@ function EnergyGauge() {
       </div>
       <div className="energy__cell">
         <span>Tariff now</span>
-        <b>INR {e.gridPriceInr}<small>/kWh</small></b>
+        <b><small>INR</small>{e.gridPriceInr}<small>/kWh</small></b>
       </div>
       <p className="muted energy__note">
         {cut
@@ -149,7 +149,7 @@ export function ControlRoom() {
       <Playback />
       <header className="ctl__head">
         <div>
-          <p className="kicker">Agent decision layer, built on Jev</p>
+          <p className="ad-label">Agent decision layer, built on Jev</p>
           <h2>Control room</h2>
         </div>
         <button type="button" className="chip chip--small" aria-expanded={open} onClick={() => setOpen(!open)}>{open ? 'Hide' : 'Show'}</button>

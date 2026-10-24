@@ -270,7 +270,7 @@ export function Phone({ arrival, decisions, onClose, film }: PhoneProps) {
           {step === 'paid' && (
             <section className="ph-card ph-paid">
               <svg viewBox="0 0 48 48" width={64} height={64} aria-hidden="true">
-                <circle cx={24} cy={24} r={22} fill="var(--go, #2f9e5b)" />
+                <circle cx={24} cy={24} r={22} fill="var(--ph-go)" />
                 <path d="M14 25l7 7 13-15" fill="none" stroke="#fff" strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <h2>Paid {inr(b.total)}</h2>

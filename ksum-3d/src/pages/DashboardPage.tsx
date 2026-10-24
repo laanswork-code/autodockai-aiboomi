@@ -2,7 +2,7 @@ import { memo, useMemo, useState } from 'react'
 import results from '../../sim/results.json'
 import { KIND_LABEL as DECISION_LABEL, valueText } from '../control/format.ts'
 import { AUTO_THRESHOLD, ESCALATES, type AuditEntry, type Decision, type DecisionKind, type JevUsage, type ScenarioName, type SimMetrics } from '../control/types.ts'
-import { Link, NavLinks } from '../Nav.tsx'
+import { Link, SiteFooter, SiteHeader } from '../Nav.tsx'
 import { CATEGORY_LABEL, KERALA, PROBLEMS, countBy } from './problems.ts'
 import { usePoll } from './usePoll.ts'
 import './pages.css'
@@ -27,15 +27,14 @@ export default function DashboardPage() {
 
   return (
     <div className="page">
-      <div className="page__bar" />
-      <div className="page__wrap">
+      <SiteHeader />
+      <main className="page__wrap">
         <header className="page__head">
           <div className="page__title">
-            <p className="kicker">AutoDock · agent decision layer, built on Jev</p>
+            <p className="ad-label">Agent decision layer, built on Jev</p>
             <h1>Dashboard</h1>
-            <p className="sub">Live from the decision server every {POLL_MS / 1000} s: what our agent decided through Jev, how sure it was, what it cost, and when it asked a person.</p>
           </div>
-          <NavLinks />
+          <p className="ad-note page__note">Live from the decision server every {POLL_MS / 1000} s: what our agent decided through Jev, how sure it was, what it cost, and when it asked a person.</p>
         </header>
 
         <div className="dstatus">
@@ -52,11 +51,13 @@ export default function DashboardPage() {
 
           <div className="dgrid">
             <section className="panel">
+              <p className="ad-label dlabel">Modes</p>
               <h2>Who decided, and who needed a person</h2>
               <p className="hint">From the audit log ({entries.length} cars). Bay and price never wait for a person; a flagged plate or payment always does.</p>
               <ModeTable entries={entries} offline={offline} />
             </section>
             <section className="panel">
+              <p className="ad-label dlabel">Confidence</p>
               <h2>How sure Jev was</h2>
               <p className="hint">Confidence of Jev's decisions, in 10% bins. The red line is where charge and anomaly calls stop acting alone.</p>
               <Confidence entries={entries} offline={offline} />
@@ -64,8 +65,9 @@ export default function DashboardPage() {
           </div>
 
           <section className="panel dwide">
+            <p className="ad-label dlabel">Audit log</p>
             <h2>Latest decisions</h2>
-            <p className="hint">Newest first. Amber rows waited for an operator.</p>
+            <p className="hint">Newest first. Rows marked red waited for an operator.</p>
             <Recent entries={entries} offline={offline} />
           </section>
         </div>
@@ -74,13 +76,20 @@ export default function DashboardPage() {
           <section className="panel"><Simulation /></section>
           <section className="panel"><Research /></section>
         </div>
-      </div>
+      </main>
+      <SiteFooter />
     </div>
   )
 }
 
-function Tile({ k, v, note }: { k: string; v: string; note?: string }) {
-  return <div className="dtile"><span className="dtile__k">{k}</span><b>{v}</b>{note && <span className="dtile__n">{note}</span>}</div>
+function Tile({ k, v, unit, note }: { k: string; v: string; unit?: string; note?: string }) {
+  return (
+    <div className="dtile">
+      <span className="dtile__k">{k}</span>
+      <span className="dtile__v"><b>{v}</b>{unit && <span className="dtile__u">{unit}</span>}</span>
+      {note && <span className="dtile__n">{note}</span>}
+    </div>
+  )
 }
 
 const OFFLINE_TEXT = 'Decision server offline, no audit log to show.'
@@ -95,7 +104,7 @@ const Tiles = memo(function Tiles({ usage, live, entries }: { usage?: JevUsage; 
     <div className="dtiles">
       <Tile k="Jev decisions" v={usage ? usage.decisions.toLocaleString('en-IN') : '-'} note={usage ? `${usage.calls} calls since the server started` : 'server offline'} />
       <Tile k="Cost" v={usage ? usd(usage.costUsd) : '-'} note={usage ? `${usd(usage.usdPerDecision)} per decision` : undefined} />
-      <Tile k="Avg latency" v={usage?.avgLatencyMs != null ? `${Math.round(usage.avgLatencyMs)} ms` : '-'} note="per Jev call" />
+      <Tile k="Avg latency" v={usage?.avgLatencyMs != null ? String(Math.round(usage.avgLatencyMs)) : '-'} unit={usage?.avgLatencyMs != null ? 'ms' : undefined} note="per Jev call" />
       <Tile k="Fallbacks" v={usage ? String(usage.failures) : '-'} note="Jev errors handled by rules" />
       <Tile k="Cars audited" v={noData ? '-' : String(entries.length)} note={noData ? 'server offline' : `${carsHeld} held for an operator`} />
       <Tile k="Escalation rate" v={decisions.length ? pct(review / decisions.length) : '-'} note={noData ? undefined : `${review} of ${decisions.length} decisions · ${fallback} by rules`} />
@@ -146,14 +155,14 @@ const Confidence = memo(function Confidence({ entries, offline }: { entries: Aud
         const max = Math.max(1, ...bins)
         return (
           <figure key={k} className="dhist" aria-label={`${DECISION_LABEL[k]} confidence, ${n} Jev decisions`}>
-            <figcaption>{DECISION_LABEL[k]} <span>{n}</span></figcaption>
+            <figcaption>{DECISION_LABEL[k]} <span>{n} Jev</span></figcaption>
             <div className="dhist__plot">
               {bins.map((b, i) => (
                 <div key={i} className="dhist__col" title={`${i * 10}-${i * 10 + 10}%: ${b}`}>
                   <div className="dhist__bar" style={{ height: `${(b / max) * 100}%` }} />
                 </div>
               ))}
-              {ESCALATES[k] && <div className="dhist__line" style={{ left: `${AUTO_THRESHOLD[k] * 100}%` }} title={`Auto at ${pct(AUTO_THRESHOLD[k])}`} />}
+              {ESCALATES[k] && <div className="dhist__line" style={{ left: `${AUTO_THRESHOLD[k] * 100}%` }} title={`Auto at ${pct(AUTO_THRESHOLD[k])}`}><span>Auto {pct(AUTO_THRESHOLD[k])}</span></div>}
             </div>
             <div className="dhist__axis"><span>0%</span><span>100%</span></div>
           </figure>
@@ -189,7 +198,7 @@ function RecentTable({ entries }: { entries: AuditEntry[] }) {
                   const d = e.decisions[k] as Decision
                   return <td key={k} title={d.why}>{valueText(k, d.value as never, d.mode === 'review')}<span className="dconf">{d.source === 'jev' ? pct(d.confidence) : 'rules'}</span></td>
                 })}
-                <td>{held.length ? held.map((k) => DECISION_LABEL[k]).join(', ') : '-'}</td>
+                <td className={held.length ? 'dop' : undefined}>{held.length ? held.map((k) => DECISION_LABEL[k]).join(', ') : '-'}</td>
               </tr>
             )
           })}
@@ -214,7 +223,8 @@ function Simulation() {
   const jev = rows.find((r) => r.scenario === scenario && r.policy === 'jev')
   return (
     <>
-      <h2>Rules vs our agent on Jev <span className="tag-sim">SIMULATED</span></h2>
+      <p className="ad-label dlabel">Comparison <span className="tag-sim">SIMULATED</span></p>
+      <h2>Rules vs our agent on Jev</h2>
       <p className="hint">Same seeded day (seed {results.seed}), illustrative tariffs and behaviour. Not a measurement.</p>
       <div className="seg seg--small dseg" role="group" aria-label="Scenario">
         {(Object.keys(SCENARIO_LABEL) as ScenarioName[]).map((s) => (
@@ -222,7 +232,7 @@ function Simulation() {
         ))}
       </div>
       {base && jev && (
-        <table className="tbl">
+        <table className="tbl dsim">
           <thead><tr><th>{base.cars} cars</th><th className="num">Rules</th><th className="num">Jev</th><th className="num">Change</th></tr></thead>
           <tbody>
             {METRICS.map(([key, label]) => {
@@ -253,6 +263,7 @@ function Research() {
   const max = categories[0]?.[1] ?? 1
   return (
     <>
+      <p className="ad-label dlabel">Research</p>
       <h2>Parking problems people face</h2>
       <p className="hint">{PROBLEMS.length} real complaints from Reddit, forums and news, {kerala} in Kerala. <Link to="/problems">See them all</Link>.</p>
       <ul className="bars">

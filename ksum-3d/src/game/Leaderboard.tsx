@@ -17,16 +17,19 @@ const rank = (stats: Record<string, PlayerStats>): Entry[] => Object.entries(sta
 function Board({ entries, me }: { entries: Entry[]; me?: string }) {
   if (!entries.length) return <p className="gm-board-empty">No parks yet. Be the first on the board.</p>
   return (
-    <ol className="gm-board-list">
-      {entries.map((e, i) => (
-        <li key={e.plate} aria-current={e.plate === me ? 'true' : undefined}>
-          <span className="gm-rank">{i + 1}</span>
-          <span className="gm-who"><strong>{e.name}</strong><em>{e.plate}</em></span>
-          <span className="gm-num">{e.parks}<small>parks</small></span>
-          <span className="gm-num">{(e.bestMs / 1000).toFixed(1)}<small>s best</small></span>
-        </li>
-      ))}
-    </ol>
+    <div className="gm-board-table">
+      <p className="gm-board-head" aria-hidden="true"><span>#</span><span>Driver</span><span>Parks</span><span>Best</span></p>
+      <ol className="gm-board-list">
+        {entries.map((e, i) => (
+          <li key={e.plate} aria-current={e.plate === me ? 'true' : undefined}>
+            <span className="gm-rank">{String(i + 1).padStart(2, '0')}</span>
+            <span className="gm-who"><strong>{e.name}</strong><em>{e.plate}</em></span>
+            <span className="gm-num">{e.parks}<small> parks</small></span>
+            <span className="gm-num">{(e.bestMs / 1000).toFixed(1)}<small> s best</small></span>
+          </li>
+        ))}
+      </ol>
+    </div>
   )
 }
 
@@ -38,8 +41,9 @@ export function BoardOverlay() {
   if (!open) return null
   return (
     <div className="gm-board" role="dialog" aria-label="Leaderboard">
-      <h2>Leaderboard</h2>
-      <p className="gm-board-sub">Most parks, then the fastest hand-over: from booking to the car on its pallet.</p>
+      <p className="ad-label">Leaderboard</p>
+      <h2>Most parks, fastest hand-over</h2>
+      <p className="gm-board-sub">Ranked by completed parks, then the fastest hand-over: from booking to the car on its pallet.</p>
       <Board entries={rank(stats ?? {})} me={me} />
       <p className="gm-board-foot">L or Esc to close</p>
     </div>
@@ -59,7 +63,7 @@ export function BoardPreview() {
   if (!entries) return null
   return (
     <section className="gm-board-mini" aria-label="Leaderboard">
-      <h2>Leaderboard</h2>
+      <p className="ad-label">Leaderboard</p>
       <Board entries={entries.slice(0, 5)} />
     </section>
   )

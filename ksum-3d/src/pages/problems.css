@@ -1,36 +1,62 @@
-.pbar { position: sticky; top: 0; z-index: 2; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; padding: 10px 0; background: #f3efe6; border-bottom: 1px solid var(--line); }
-.pbar input, .pbar select { font: 500 15px system-ui, sans-serif; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: var(--r-md); height: 40px; padding: 0 var(--s3); min-width: 0; }
-.pbar input { flex: 1 1 240px; }
-.pbar__count { margin-left: auto; font: 700 13px system-ui, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
-.pjump { display: flex; gap: 6px; flex-wrap: wrap; margin: 12px 0 4px; }
-.pjump a { font: 600 13px system-ui, sans-serif; text-decoration: none; color: var(--sub); background: #e9e3d6; padding: 6px 9px; border-radius: 6px; }
-.pjump a b { color: var(--bad); margin-left: 3px; }
-@media (hover: hover) and (pointer: fine) { .pjump a:hover { background: var(--ink); color: #fff; } }
-.pgroup { padding-top: 22px; content-visibility: auto; contain-intrinsic-size: auto 900px; }
-.pgroup h2 { font-size: 22px; margin: 0 0 12px; display: flex; align-items: baseline; gap: 8px; scroll-margin-top: 70px; }
-.pgroup h2 span { color: var(--bad); font-variant-numeric: tabular-nums; }
-.pgroup h2 small { font-size: 13px; font-weight: 500; color: var(--muted); }
-.pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
-.pcard { background: var(--card); border: 1px solid var(--line); border-left: 4px solid #9aa0a6; border-radius: var(--r-lg); padding: var(--s3) var(--s4); display: flex; flex-direction: column; gap: 8px; min-width: 0; }
-.pcard--reddit { border-left-color: #ff5a1f; }
-.pcard--news { border-left-color: var(--sign); }
-.pcard--web { border-left-color: var(--mark); }
-.pcard__problem { margin: 0; font-weight: 600; font-size: 15.5px; line-height: 1.4; }
-.pcard__quote { margin: 0; font: italic 15px/1.4 Georgia, serif; color: var(--sub); padding-left: 10px; border-left: 2px solid var(--mark); }
-.pcard__src { margin-top: auto; padding-top: 6px; border-top: 1px dashed var(--line); font-size: 12.5px; color: var(--muted); display: grid; gap: 3px; }
-.pcard__src a { color: var(--sign); font-weight: 600; text-decoration: none; overflow-wrap: anywhere; }
-.pcard__src a:hover { text-decoration: underline; }
-.pcard__rel a { font-weight: 500; color: var(--sub); }
-.pempty { text-align: center; padding: 60px 0; color: var(--muted); font-weight: 600; }
-.pempty .btn { margin-left: var(--s2); }
-.pfoot { margin-top: 28px; font-size: 12.5px; color: var(--muted); }
+/* /problems: filters, the category overview and the card grid. Builds on the .page shell in pages.css. */
+
+/* filter bar: square controls, sticks under the site header */
+.pbar { position: sticky; top: 65px; z-index: 5; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; padding: 12px 0; background: var(--ad-paper); border-top: 1px solid var(--ad-ink); border-bottom: 1px solid var(--line); }
+.pbar input, .pbar select { height: 40px; min-width: 0; padding: 0 14px; border: 1px solid var(--line); border-radius: var(--ad-r-0); background: var(--card); color: var(--ad-ink); font: 400 15px var(--ad-sans); }
+.pbar input::placeholder { color: var(--ad-quiet); }
+.pbar input::-webkit-search-cancel-button { filter: grayscale(1) brightness(.4); cursor: pointer; }
+.pbar input { flex: 1 1 260px; }
+.pbar select { appearance: none; padding-right: 34px; background: var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%231a1a1a' stroke-width='1.2'/%3E%3C/svg%3E") no-repeat right 13px center; cursor: pointer; }
+.pbar .seg button { height: 38px; padding: 0 14px; }
+@media (hover: hover) and (pointer: fine) { .pbar input:hover, .pbar select:hover { border-color: var(--ad-quiet); } }
+.pbar__count { margin-left: auto; font: 400 10.5px/1 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ad-quiet); white-space: nowrap; }
+.pbar__count b { font: 500 20px/1 var(--ad-sans); letter-spacing: -0.01em; color: var(--ad-ink); font-variant-numeric: tabular-nums; margin-right: 4px; }
+
+/* category overview: each row is a jump link with a single-hue bar */
+.pjump { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 var(--s6); margin: var(--s5) 0 var(--s4); }
+.pjump a { display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; grid-template-rows: auto 4px; align-items: baseline; gap: 6px 10px; padding: 12px 0; border-bottom: 1px solid var(--line); color: var(--ad-ink); text-decoration: none; }
+.pjump__n { font: 400 10.5px/1 var(--ad-mono); letter-spacing: .06em; color: var(--ad-quiet); }
+.pjump__l { font: 400 14.5px/1.3 var(--ad-sans); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pjump__v { font: 500 16px/1 var(--ad-sans); font-variant-numeric: tabular-nums; }
+.pjump__t { grid-column: 2 / -1; height: 4px; background: var(--track); }
+.pjump__t span { display: block; height: 100%; background: var(--chart); transition: width 400ms var(--ease-out), background-color 120ms ease; }
+@media (hover: hover) and (pointer: fine) { .pjump a:hover .pjump__t span { background: var(--chart-hi); } .pjump a:hover .pjump__l { text-decoration: underline; text-underline-offset: 3px; } }
+
+/* groups */
+.pgroup { padding-top: var(--s7); content-visibility: auto; contain-intrinsic-size: auto 900px; }
+.pgroup h2 { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 14px; margin: 0 0 var(--s5); padding-top: var(--s4); border-top: 1px solid var(--ad-ink); font: 500 clamp(24px, 2.4vw, 34px)/1.1 var(--ad-sans); letter-spacing: -0.02em; scroll-margin-top: 140px; }
+.pgroup h2 span { font: 400 11px/1 var(--ad-mono); letter-spacing: .08em; color: var(--ad-quiet); align-self: center; }
+.pgroup h2 small { margin-left: auto; font: 400 10.5px/1 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ad-quiet); }
+.pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: var(--s4); }
+
+/* cards: hairline panel, source kind in mono, the problem in Archivo, source and link at the foot */
+.pcard { display: flex; flex-direction: column; gap: 12px; min-width: 0; padding: 20px 22px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-lg); }
+.pcard__kind { display: inline-flex; align-items: center; gap: 8px; margin: 0; font: 500 10px/1 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ad-quiet); }
+.pcard__kind::before { content: ""; width: 6px; height: 6px; background: var(--ad-quiet); }
+.pcard--reddit .pcard__kind::before { background: var(--ad-ink); }
+.pcard--news .pcard__kind::before { background: var(--chart); }
+.pcard__problem { margin: 0; font: 500 17px/1.35 var(--ad-sans); letter-spacing: -0.01em; color: var(--ad-ink); }
+.pcard__quote { margin: 0; padding-left: 14px; border-left: 1px solid var(--ad-ink); font: italic 400 14.5px/1.5 var(--ad-sans); color: var(--ad-muted); }
+.pcard__src { display: grid; gap: 8px; margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line); font: 400 10.5px/1.5 var(--ad-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ad-quiet); }
+.pcard__src a { color: var(--ad-ink); font: 400 13.5px/1.4 var(--ad-sans); letter-spacing: 0; text-transform: none; text-decoration: underline; text-decoration-color: var(--line); text-decoration-thickness: 1px; text-underline-offset: 3px; overflow-wrap: anywhere; }
+@media (hover: hover) and (pointer: fine) { .pcard__src a:hover { text-decoration-color: currentColor; } }
+.pcard__rel { text-transform: none; letter-spacing: .02em; }
+.pcard__rel a { font: 400 12px/1.4 var(--ad-mono); color: var(--ad-muted); }
+
+.pempty { display: flex; flex-direction: column; align-items: center; gap: var(--s4); padding: var(--s7) 0; font: 400 10.5px/1 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ad-quiet); }
+.pfoot { margin: var(--s7) 0 0; padding-top: var(--s4); border-top: 1px solid var(--line); font: 400 10.5px/1.6 var(--ad-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ad-quiet); max-width: 110ch; }
+
+@media (max-width: 1000px) { .pjump { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .pbar { top: 103px; } }
 @media (max-width: 700px) {
   .pgrid { grid-template-columns: 1fr; }
   .pbar { position: static; }
   .pbar__count { margin-left: 0; width: 100%; }
   .pbar select { flex: 1 1 180px; }
-  /* one swipeable row of jump links that bleeds to the screen edges */
-  .pjump { flex-wrap: nowrap; overflow-x: auto; margin: var(--s3) -16px var(--s1); padding: 0 16px var(--s1); scrollbar-width: none; }
-  .pjump::-webkit-scrollbar { display: none; }
-  .pjump a { flex: none; }
+  .pbar .seg { flex: 1 1 100%; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .pjump { grid-template-columns: 1fr; }
+  .pjump a { padding: 9px 0; }
+  .pgroup { padding-top: var(--s6); }
+  .pcard { padding: 18px; }
 }
+@media (prefers-reduced-motion: reduce) { .pjump__t span { transition: none; } }

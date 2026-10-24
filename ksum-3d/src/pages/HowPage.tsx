@@ -1,9 +1,9 @@
-import { useEffect, useRef, type ReactNode } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
 import filmUrl from '../../../docs/demo/driver-journey.mp4'
 import filmPoster from '../../../docs/demo/driver-journey-poster.jpg'
 import results from '../../sim/results.json'
 import { AUTO_THRESHOLD, type SimMetrics } from '../control/types.ts'
-import { Link, NavLinks } from '../Nav.tsx'
+import { Link, SiteFooter, SiteHeader } from '../Nav.tsx'
 import { CATEGORY_LABEL, KERALA, PROBLEMS, countBy } from './problems.ts'
 import './pages.css'
 import './how.css'
@@ -45,7 +45,7 @@ const topRegion = Math.max(...regions.map(([, n]) => n))
 
 /** Sections fade up once as they scroll into view (CSS turns this off for reduced motion). */
 function useReveal() {
-  const ref = useRef<HTMLDivElement>(null)
+  const ref = useRef<HTMLElement>(null)
   useEffect(() => {
     const wrap = ref.current
     if (!wrap || !('IntersectionObserver' in window)) return
@@ -59,14 +59,41 @@ function useReveal() {
   return ref
 }
 
-function Section({ n, title, lead, children }: { n: string; title: string; lead?: ReactNode; children: ReactNode }) {
+function Section({ n, label, title, lead, dark, wash, children }: {
+  n: string; label: string; title: string; lead?: ReactNode; dark?: boolean; wash?: boolean; children: ReactNode
+}) {
+  const band = dark ? 'how-band ad-dark' : wash ? 'how-band how-band--wash' : 'how-band'
   return (
-    <section className="how-sec" aria-labelledby={`how-${n}`}>
-      <p className="how-num">{n}</p>
-      <h2 id={`how-${n}`}>{title}</h2>
-      {lead && <p className="how-lead">{lead}</p>}
-      {children}
+    <section className={band} aria-labelledby={`how-${n}`}>
+      <div className="how-wrap how-sec">
+        <div className="how-sec__head">
+          <div>
+            <p className="ad-label">{n} · {label}</p>
+            <h2 id={`how-${n}`} className="ad-h2">{title}</h2>
+          </div>
+          {lead && <p className="ad-lede">{lead}</p>}
+        </div>
+        {children}
+      </div>
     </section>
+  )
+}
+
+/** The driver journey film in a rounded frame, with a frosted caption that steps aside while it plays. */
+function Film() {
+  const [playing, setPlaying] = useState(false)
+  return (
+    <figure className={playing ? 'how-film ad-frame is-playing' : 'how-film ad-frame'}>
+      <video
+        src={filmUrl} poster={filmPoster} controls playsInline preload="none"
+        onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => setPlaying(false)}
+      />
+      <figcaption className="how-film__cap ad-caption">
+        <span className="how-film__meta"><span>Film</span><span>1 min 17 s</span></span>
+        <b>The driver journey</b>
+        <span>In the digital twin, from booking in the car to a charged pallet.</span>
+      </figcaption>
+    </figure>
   )
 }
 
@@ -74,47 +101,57 @@ function Section({ n, title, lead, children }: { n: string; title: string; lead?
 export default function HowPage() {
   const ref = useReveal()
   return (
-    <div className="page">
-      <div className="page__bar" />
-      <div className="page__wrap how" ref={ref}>
-        <header className="page__head">
-          <div className="page__title">
-            <p className="kicker">AutoDock · how it works</p>
-            <h1>How it works</h1>
-            <p className="sub">Rotary towers that park and charge, and a decision layer that knows when to ask a person.</p>
+    <div className="page how-page">
+      <SiteHeader />
+      <main className="how" ref={ref}>
+        <section className="how-wrap how-hero" aria-labelledby="how-title">
+          <div className="how-hero__main">
+            <p className="ad-label">AutoDock · how it works</p>
+            <h1 id="how-title" className="ad-display">Kerala and India are running out of parking.</h1>
+            <div className="how-cta">
+              <Link to="/" className="ad-btn">Open the digital twin</Link>
+              <Link to="/play" className="ad-btn ad-btn--ghost">Play the game</Link>
+            </div>
           </div>
-          <NavLinks />
-        </header>
-
-        <section className="how-film" aria-label="Driver journey film">
-          <video src={filmUrl} poster={filmPoster} controls playsInline preload="none" />
-          <p className="how-film__cap">The driver journey in the digital twin: 1 min 17 s.</p>
+          <p className="ad-note how-hero__note">Rotary towers that park and charge, and a decision layer that knows when to ask a person.</p>
         </section>
 
-        <section className="how-hero" aria-label="The problem and the answer">
-          <h2 className="how-hero__h">Kerala and India are running out of parking.</h2>
-          <p className="how-hero__pos">
+        <section className="how-wrap how-intro" aria-label="The problem and the answer">
+          <p className="how-intro__pos">
             We are building the AI intelligence layer for smart parking, and for the autonomous parking infrastructure
             that comes next.
           </p>
-          <p className="how-hero__p">
-            We found {PROBLEMS.length} real parking complaints: {keralaCount} in Kerala, the rest from Delhi NCR, Mumbai,
-            Bengaluru and cities across India. AutoDock rotary towers hold 20 cars each, with a 7.4 kW charger on every
-            pallet, and our proprietary agent framework, built on top of TypeSafe's Jev, decides where each car goes, when
-            it charges and what it pays. One example site: two towers
-            on 4 of the 15 bays at KSUM, Kalamassery park 40 cars where 4 park today.
-          </p>
-          <div className="how-cta">
-            <Link to="/" className="how-btn how-btn--primary">See it live</Link>
-            <Link to="/problems" className="how-btn">See the problems</Link>
+          <div className="how-intro__body">
+            <p className="ad-lede">
+              We found {PROBLEMS.length} real parking complaints: {keralaCount} in Kerala, the rest from Delhi NCR, Mumbai,
+              Bengaluru and cities across India. AutoDock rotary towers hold 20 cars each, with a 7.4 kW charger on every
+              pallet, and our proprietary agent framework, built on top of TypeSafe's Jev, decides where each car goes, when
+              it charges and what it pays. One example site: two towers
+              on 4 of the 15 bays at KSUM, Kalamassery park 40 cars where 4 park today.
+            </p>
+            <Link to="/problems" className="ad-pill">See the problems</Link>
           </div>
         </section>
 
-        <Section n="01" title="The problem" lead="Kerala and the rest of India have more cars and EVs than parking or chargers, and no spare land in their cities to add either.">
+        <section className="how-wrap how-journey" aria-labelledby="how-film">
+          <div className="how-journey__head">
+            <p className="ad-label">Driver journey</p>
+            <h2 id="how-film" className="ad-h2">Book. Drive. Dock. Charge. Pay.</h2>
+            <p className="ad-lede">No taps on arrival. No pallet promised twice. Charging on solar when the sun is up.</p>
+          </div>
+          <Film />
+        </section>
+
+        <Section n="01" label="Problem" title="The problem" dark lead="Kerala and the rest of India have more cars and EVs than parking or chargers, and no spare land in their cities to add either.">
+          <ul className="how-stats">
+            <li><b>{PROBLEMS.length}</b><span>real parking complaints from Reddit, forums and news</span></li>
+            <li><b>{keralaCount}</b><span>of them in Kerala</span></li>
+            <li><b>{PROBLEMS.length - keralaCount}</b><span>from Delhi NCR, Mumbai, Bengaluru and the rest of India</span></li>
+          </ul>
           <div className="how-two how-two--even">
-            <div className="panel">
-              <h3>Where people complain</h3>
-              <p className="hint">
+            <div className="how-dcard">
+              <h3 className="ad-h3">Where people complain</h3>
+              <p className="how-hint">
                 {PROBLEMS.length} real complaints from Reddit, forums and news. Kerala:{' '}
                 {keralaCities.map(([c, n]) => `${c} ${n}`).join(', ')}, and {cityCount('Kerala (other)')} more across the state.
               </p>
@@ -128,9 +165,9 @@ export default function HowPage() {
                 ))}
               </ul>
             </div>
-            <div className="panel">
-              <h3>What they complain about</h3>
-              <p className="hint">The biggest groups, Kerala and India together:</p>
+            <div className="how-dcard">
+              <h3 className="ad-h3">What they complain about</h3>
+              <p className="how-hint">The biggest groups, Kerala and India together:</p>
               <ul className="bars">
                 {topCategories.map(([cat, n]) => (
                   <li key={cat}>
@@ -140,36 +177,46 @@ export default function HowPage() {
                   </li>
                 ))}
               </ul>
-              <p className="how-more"><Link to="/problems">Read all {PROBLEMS.length} problems</Link></p>
-            </div>
-          </div>
-          <h3 className="how-eg">One example: KSUM, Kalamassery</h3>
-          <div className="how-two">
-            <div className="panel how-site">
-              <h3>At KSUM / KINFRA today</h3>
-              <ul className="how-facts">
-                <li><b>15</b><span>surface bays, full by mid-morning</span></li>
-                <li><b>0</b><span>chargers</span></li>
-                <li><b>2</b><span>errands: park here, charge somewhere else</span></li>
-              </ul>
-              <p className="how-note">Drivers circle, park on the road, or leave.</p>
-            </div>
-            <div className="panel">
-              <h3>Why this site</h3>
-              <p>
-                The Kerala Startup Mission building (KTIZ) at KINFRA Hi-Tech Park is the site we modelled as the digital
-                twin and the pilot candidate. It is one car park, not the whole problem: the same towers are meant for
-                crowded car parks in every city above.
-              </p>
-              <ul className="how-facts how-facts--light">
-                <li><b>4</b><span>of the 15 bays given to two towers</span></li>
-                <li><b>40</b><span>cars on those bays, each on a 7.4 kW charger</span></li>
-              </ul>
+              <p className="how-more"><Link to="/problems" className="ad-btn ad-btn--light">Read all {PROBLEMS.length} problems</Link></p>
             </div>
           </div>
         </Section>
 
-        <Section n="02" title="A day at one site: KSUM" lead="What happens to the cars at the example site, taken from the scenarios you can play in the digital twin.">
+        <section className="how-band" aria-labelledby="how-eg">
+          <div className="how-wrap how-sec">
+            <div className="how-sec__head">
+              <div>
+                <p className="ad-label">Example site</p>
+                <h2 id="how-eg" className="ad-h2">One example: KSUM, Kalamassery</h2>
+              </div>
+            </div>
+            <div className="how-two">
+              <div className="how-site ad-dark">
+                <h3 className="ad-h3">At KSUM / KINFRA today</h3>
+                <ul className="how-facts">
+                  <li><b>15</b><span>surface bays, full by mid-morning</span></li>
+                  <li><b>0</b><span>chargers</span></li>
+                  <li><b>2</b><span>errands: park here, charge somewhere else</span></li>
+                </ul>
+                <p className="how-note">Drivers circle, park on the road, or leave.</p>
+              </div>
+              <div className="how-card ad-card">
+                <h3 className="ad-h3">Why this site</h3>
+                <p>
+                  The Kerala Startup Mission building (KTIZ) at KINFRA Hi-Tech Park is the site we modelled as the digital
+                  twin and the pilot candidate. It is one car park, not the whole problem: the same towers are meant for
+                  crowded car parks in every city above.
+                </p>
+                <ul className="how-facts how-facts--light">
+                  <li><b>4</b><span>of the 15 bays given to two towers</span></li>
+                  <li><b>40</b><span>cars on those bays, each on a 7.4 kW charger</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <Section n="02" label="A day on site" title="A day at one site: KSUM" lead="What happens to the cars at the example site, taken from the scenarios you can play in the digital twin.">
           <ol className="how-day">
             <Moment t="08:45" title="Rush hour starts">
               12 cars in 35 minutes, chargers already busy, little sun yet. A Tata Nexon EV at 31% arrives: "Back by 6,
@@ -203,14 +250,14 @@ export default function HowPage() {
           <p className="how-foot">Arrivals in the demo are scripted. Payment is a mock.</p>
         </Section>
 
-        <Section n="03" title="Our agent framework, built on Jev" lead="Parking needs a decision for every car, fast and cheap, with an honest sense of how sure it is. Our agent framework owns the bookings, the guardrails, the operator queue and the audit; underneath, Jev gives it fast, typed, calibrated answers.">
+        <Section n="03" label="Agent framework" title="Our agent framework, built on Jev" lead="Parking needs a decision for every car, fast and cheap, with an honest sense of how sure it is. Our agent framework owns the bookings, the guardrails, the operator queue and the audit; underneath, Jev gives it fast, typed, calibrated answers.">
           <div className="how-why">
-            <div className="panel">
-              <h3>Answers, not essays</h3>
+            <div className="how-card ad-card">
+              <h3 className="ad-h3">Answers, not essays</h3>
               <p>The model under our agent, Jev, does not write text. It picks from the options the agent gives it, or returns a probability, and the agent turns that into an action. There is nothing free-form to go wrong on screen.</p>
             </div>
-            <div className="panel">
-              <h3>Five questions, one request</h3>
+            <div className="how-card ad-card">
+              <h3 className="ad-h3">Five questions, one request</h3>
               <ul className="how-q">
                 <li><span>Which pallet</span><code>Choice</code></li>
                 <li><span>When to charge</span><code>Choice</code></li>
@@ -219,36 +266,41 @@ export default function HowPage() {
                 <li><span>Is the payment at risk</span><code>Noul</code></li>
               </ul>
             </div>
-            <div className="panel">
-              <h3>Cheap enough for every car</h3>
+            <div className="how-card ad-card">
+              <h3 className="ad-h3">Cheap enough for every car</h3>
               <p className="how-big"><b>${USD_PER_DECISION.toFixed(5)}</b> a decision, in about half a second.</p>
               <p>The simulated rush-hour day makes {jev.decisions} decisions. At that price, about ${(jev.decisions * USD_PER_DECISION).toFixed(2)}.</p>
             </div>
-            <div className="panel">
-              <h3>It can say "I'm not sure"</h3>
+            <div className="how-card ad-card">
+              <h3 className="ad-h3">It can say "I'm not sure"</h3>
               <p>Every answer comes with a calibrated confidence. When it is low, the decision goes to a person instead of guessing.</p>
             </div>
           </div>
         </Section>
 
-        <Section n="04" title="Why we built on Jev, not a chat model" lead="Chat models write an answer one token at a time. Jev is TypeSafe's first System One model: unstructured state in, typed probabilistic decisions out. It gives up free text to do that.">
+        <Section n="04" label="Comparison" title="Why we built on Jev, not a chat model" lead="Chat models write an answer one token at a time. Jev is TypeSafe's first System One model: unstructured state in, typed probabilistic decisions out. It gives up free text to do that.">
           <Versus />
         </Section>
 
-        <Section n="05" title="How it works" lead="Every arrival travels the same path. The API key never leaves the server.">
+        <Section n="05" label="Pipeline" title="How it works" lead="Every arrival travels the same path. The API key never leaves the server.">
           <Pipeline />
         </Section>
 
-        <Section n="06" title="When it asks a person" lead="Only where a wrong call costs the driver or the site. Seconds and rupees never wait.">
-          <div className="panel how-rules">
+        <Section n="06" label="Guardrails" title="When it asks a person" lead="Only where a wrong call costs the driver or the site. Seconds and rupees never wait.">
+          <div className="how-rules">
             <Rule name="Bay" when="Never waits, unless both towers are full" note="A pallet that is not ideal costs a few seconds of rotation." />
             <Rule name="Price" when="Never waits" note="A tier that is a step off costs a few rupees." />
             <Rule name="Charge" at={AUTO_THRESHOLD.charge} when={`Waits below ${pct(AUTO_THRESHOLD.charge)} confidence`} note="A car left uncharged costs the driver their trip." />
             <Rule name="Plate and payment" at={AUTO_THRESHOLD.anomaly} when={`Waits below ${pct(AUTO_THRESHOLD.anomaly)} confidence, and always when flagged`} note="A wrong car or an unpaid stay always reaches a person. Pending payments are flagged." />
           </div>
+          <p className="how-legend">
+            <span><i className="is-ask" />A person decides</span>
+            <span><i className="is-auto" />Jev acts</span>
+            <span><i className="is-tick" />The confidence threshold</span>
+          </p>
         </Section>
 
-        <Section n="07" title="What it solves" lead={<>The same seeded rush hour, {base.cars} cars, with the rules policy and with our agent on Jev. <span className="tag-sim">SIMULATED</span></>}>
+        <Section n="07" label="Outcome" title="What it solves" wash lead={<>The same seeded rush hour, {base.cars} cars, with the rules policy and with our agent on Jev. <span className="how-sim">Simulated</span></>}>
           <div className="how-out">
             <Outcome k="Grid peak" from={`${base.gridPeakKw} kW`} to={`${jev.gridPeakKw} kW`} delta={change(base.gridPeakKw, jev.gridPeakKw)} />
             <Outcome k="Energy cost" from={inr(base.energyCostInr)} to={inr(jev.energyCostInr)} delta={change(base.energyCostInr, jev.energyCostInr)} />
@@ -260,7 +312,7 @@ export default function HowPage() {
             </div>
           </div>
           <div className="how-trade">
-            <h3>The honest trade-off</h3>
+            <h3 className="ad-h3">The honest trade-off</h3>
             <p>
               The agent waits for cheaper power, so it sells fewer kWh ({Math.round(base.kwhDelivered)} to {Math.round(jev.kwhDelivered)})
               and earns less ({inr(base.revenueInr)} to {inr(jev.revenueInr)}). More calls go to a person, so the average
@@ -270,24 +322,26 @@ export default function HowPage() {
           </div>
         </Section>
 
-        <Section n="08" title="Why you can trust it">
+        <Section n="08" label="Trust" title="Why you can trust it">
           <ul className="how-trust">
-            <li><b>Rules fallback.</b> If Jev errors, times out or answers in a shape we cannot read, a rules policy decides instead, through the same interface, and the screen says so.</li>
-            <li><b>Audit log.</b> Every decision is written down with its inputs, its confidence and who made it.</li>
-            <li><b>Typed answers.</b> Choices and probabilities only. Code owns the numbers, the thresholds and the actions.</li>
-            <li><b>No surprise charges.</b> No real money moves: payment in the demo is a mock, and any payment that looks wrong waits for a person.</li>
+            <li><b>Rules fallback</b>If Jev errors, times out or answers in a shape we cannot read, a rules policy decides instead, through the same interface, and the screen says so.</li>
+            <li><b>Audit log</b>Every decision is written down with its inputs, its confidence and who made it.</li>
+            <li><b>Typed answers</b>Choices and probabilities only. Code owns the numbers, the thresholds and the actions.</li>
+            <li><b>No surprise charges</b>No real money moves: payment in the demo is a mock, and any payment that looks wrong waits for a person.</li>
           </ul>
         </Section>
 
-        <section className="how-close" aria-label="Summary">
+        <section className="how-wrap how-close" aria-label="Summary">
           <p className="how-close__line">Ten times the cars on the same ground, and a brain that asks when it is not sure.</p>
           <nav className="how-cta" aria-label="Next">
-            <Link to="/" className="how-btn how-btn--primary">Digital twin</Link>
-            <Link to="/dashboard" className="how-btn">Dashboard</Link>
-            <Link to="/problems" className="how-btn">Problems</Link>
+            <Link to="/" className="ad-btn">Digital twin</Link>
+            <Link to="/dashboard" className="ad-btn ad-btn--ghost">Dashboard</Link>
+            <Link to="/problems" className="ad-btn ad-btn--ghost">Problems</Link>
+            <Link to="/play" className="ad-btn ad-btn--ghost">Play</Link>
           </nav>
         </section>
-      </div>
+      </main>
+      <SiteFooter />
     </div>
   )
 }
@@ -347,7 +401,7 @@ const VERSUS: [string, string, string][] = [
 function Versus() {
   return (
     <>
-      <div className="panel how-vs">
+      <div className="how-vs">
         <table>
           <thead>
             <tr>
@@ -389,7 +443,7 @@ const STEPS = [
 
 function Pipeline() {
   return (
-    <div className="panel how-pipe">
+    <div className="how-pipe">
       <ol className="how-flow">
         {STEPS.map((s, i) => (
           <li key={s.k} className={s.jev ? 'how-node is-jev' : 'how-node'}>

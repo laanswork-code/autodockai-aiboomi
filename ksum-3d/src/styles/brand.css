@@ -95,7 +95,8 @@
 .ad-header .ad-btn { margin-left: auto; flex: none; }
 @media (max-width: 760px) {
   .ad-header { gap: 14px; flex-wrap: wrap; }
-  .ad-header .nav { order: 3; width: 100%; gap: 18px; }
+  /* every page link visible on a phone: wrap to a second row instead of scrolling */
+  .ad-header .nav { order: 3; width: 100%; flex-wrap: wrap; gap: 6px 18px; overflow: visible; }
 }
 
 /* footer: dark, a giant faded wordmark */
@@ -112,3 +113,7 @@
 @media (max-width: 760px) { .ad-footer__grid { grid-template-columns: 1fr 1fr; } .ad-footer__grid > :first-child { grid-column: 1 / -1; } }
 
 @media (prefers-reduced-motion: reduce) { .ad-btn, .nav a { transition: none; } .ad-btn:active { transform: none; } }
+
+/* Root's lazy-route fallback: shown before any page stylesheet loads, so it lives here. Only after 300 ms, so warm navigations never flash it. */
+.page-loading { position: fixed; inset: 0; display: grid; place-items: center; background: var(--ad-paper); color: var(--ad-muted); font: 400 11px/1 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; animation: ad-fade-in 200ms ease-out 300ms both; }
+@keyframes ad-fade-in { from { opacity: 0; } }

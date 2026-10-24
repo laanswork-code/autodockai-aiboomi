@@ -10,6 +10,13 @@ import { routeLength, routeTo } from './layout'
 import { Radar } from './MapView'
 import { live, myBooking, useGame } from './store'
 
+/** Toasts that only tell you something; anything else (a block, a server error) shows in red. */
+const INFO = /joined$|left$|^Parked|^Hand-over|^Your car is out/
+const HELP: [string, string][] = [
+  ['Esc', 'menu'], ['WASD', 'move'], ['E', 'in/out'], ['P', 'phone'], ['M', 'map'],
+  ['L', 'leaderboard'], ['V', 'camera'], ['Space', 'handbrake'], ['R', 'reset car'],
+]
+
 /** Values that change every frame, sampled a few times a second. */
 function useLive() {
   const [v, setV] = useState({ kmh: 0, near: false, metres: 0 })
@@ -51,22 +58,28 @@ export function GameHud() {
   return (
     <div className="gm-hud">
       <div className="gm-top">
-        <p className="gm-goal">{goal}</p>
-        {toastText && <p className="gm-toast" role="status">{toastText}</p>}
+        <div className="gm-objective ad-caption">
+          <span className="gm-meta">Objective</span>
+          <p className="gm-goal">{goal}</p>
+        </div>
+        {toastText && <p className={INFO.test(toastText) ? 'gm-toast' : 'gm-toast gm-toast--alert'} role="status">{toastText}</p>}
       </div>
-      <div className="gm-me">
+      <div className="gm-me ad-caption">
+        <span className="gm-meta">Driver</span>
         <strong>{me?.name}</strong>
         <span className="gm-plate-tag">{me?.plate}</span>
-        <span className="gm-online">{count} online{status === 'offline' ? ' · disconnected' : ''}</span>
+        <span className="gm-online" data-offline={status === 'offline' || undefined}>{count} online{status === 'offline' ? ' · disconnected' : ''}</span>
       </div>
       <Radar />
       {mode === 'car' && (
-        <div className="gm-speed" aria-label="Speed">
+        <div className="gm-speed ad-caption" aria-label="Speed">
           <strong>{kmh}</strong><span>km/h</span>
         </div>
       )}
-      {near && <p className="gm-prompt">Press <kbd>E</kbd> to get in</p>}
-      <p className="gm-help">Esc menu · WASD move · E in/out · P phone · M map · L leaderboard · V camera · Space handbrake · R reset car</p>
+      {near && <p className="gm-prompt ad-caption">Press <kbd>E</kbd> to get in</p>}
+      <p className="gm-help">
+        {HELP.map(([k, what]) => <span key={k}><kbd>{k}</kbd>{what}</span>)}
+      </p>
     </div>
   )
 }

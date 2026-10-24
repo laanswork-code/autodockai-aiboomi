@@ -11,6 +11,7 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Suspense, useEffect } from 'react'
 import * as THREE from 'three'
 import type { Arrival, DecisionSet } from '../control/types'
+import { LogoMark } from '../Nav'
 import { Phone } from '../phone'
 import { clock } from '../phone/plan'
 import { SAMPLE_ARRIVAL } from '../phone/sample'
@@ -74,9 +75,8 @@ function Overlay() {
   const ui = Math.min(1 - title, 1 - end)
   return (
     <div className="film-ui">
-      <div className="film-stripe" />
       <header className="film-top" style={{ opacity: ui }}>
-        <div className="film-brand"><b>AutoDock</b><span>Driver journey</span></div>
+        <div className="film-brand"><LogoMark /><b>AutoDock<sup>AI</sup></b><span>Driver journey</span></div>
         <div className="film-clock">{t >= T.drive ? clock(clockAt(t)) : '08:22'}<span>{t >= T.lapse && t < T.pay ? 'time lapse' : 'Kalamassery'}</span></div>
       </header>
 
@@ -86,11 +86,16 @@ function Overlay() {
       </aside>
 
       <footer className="film-bottom" style={{ opacity: ui }}>
-        {caption && <p key={caption} className="film-caption">{caption}</p>}
+        {caption && (
+          <div key={caption} className="film-caption">
+            {chapter >= 0 && <span className="film-caption__meta"><span>{String(chapter + 1).padStart(2, '0')}</span><span>{CHAPTERS[chapter].label}</span></span>}
+            <p>{caption}</p>
+          </div>
+        )}
         <ol className="film-rail">
           {CHAPTERS.map((c, i) => (
             <li key={c.label} className={i === chapter ? 'is-on' : i < chapter ? 'is-done' : undefined}>
-              <span>{i + 1}</span>{c.label}
+              <span>{String(i + 1).padStart(2, '0')}</span>{c.label}
             </li>
           ))}
         </ol>

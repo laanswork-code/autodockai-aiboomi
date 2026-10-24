@@ -11,12 +11,12 @@ export function PauseMenu() {
   return (
     <div className="gm-menu" role="dialog" aria-label="Paused">
       <div className="gm-menu-card">
-        <p className="gm-kicker">Paused</p>
+        <p className="ad-label">Paused</p>
         <h2>{me.name}</h2>
         <p className="gm-menu-sub"><span className="gm-plate-tag">{me.plate}</span> {me.kind === 'seal' ? 'BYD Seal' : 'BYD Atto 3'}</p>
-        <button type="button" className="gm-primary" autoFocus onClick={() => set({ menu: false })}>Resume</button>
-        <button type="button" className="gm-secondary" onClick={logout}>Change name or car</button>
-        <button type="button" className="gm-secondary" onClick={() => { logout(); navigate('/') }}>Leave game</button>
+        <button type="button" className="gm-primary ad-btn ad-btn--plain" autoFocus onClick={() => set({ menu: false })}>Resume</button>
+        <button type="button" className="gm-secondary ad-btn ad-btn--ghost ad-btn--plain" onClick={logout}>Change name or car</button>
+        <button type="button" className="gm-secondary ad-btn ad-btn--ghost" onClick={() => { logout(); navigate('/') }}>Leave game</button>
         <p className="gm-menu-note">A car you have parked stays in its tower under your plate. Come back with the same plate to collect it.</p>
         <p className="gm-board-foot">Esc to resume</p>
       </div>

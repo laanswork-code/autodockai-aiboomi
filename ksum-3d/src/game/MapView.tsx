@@ -15,6 +15,8 @@ const RADAR = 190
 const RADAR_RANGE = 140 // metres from centre to edge
 /** The area the full map fits to the screen: the site and the roads around it (the model board runs further). */
 const AREA = { x0: -190, x1: 170, z0: -130, z1: 150 }
+/** Map palette after the brand: paper ground, grey blocks, white roads, ink marks. Route and target keep the 3D guide's colours. */
+const C = { ground: '#e3e3e0', building: '#c4c4c0', ktiz: '#b3b3ae', road: '#fafaf9', tower: '#1a1a1a', me: '#ffffff', others: '#2b6fd6', ink: '#1a1a1a' }
 
 interface Layers { roads: { pts: readonly XZ[]; w: number }[]; buildings: (readonly XZ[])[]; ktiz: readonly XZ[] }
 
@@ -36,24 +38,24 @@ function paint(g: CanvasRenderingContext2D, L: Layers, px: number, labels: boole
   const driving = s.mode === 'car'
   const at = driving ? live.car : live.foot
   const poly = (pts: readonly XZ[]) => { g.beginPath(); pts.forEach(([x, z], i) => (i ? g.lineTo(x, z) : g.moveTo(x, z))); g.closePath() }
-  const dot = (x: number, z: number, r: number, fill: string) => { g.fillStyle = fill; g.beginPath(); g.arc(x, z, r * px, 0, Math.PI * 2); g.fill() }
+  const dot = (x: number, z: number, r: number, fill: string) => { g.fillStyle = fill; g.beginPath(); g.arc(x, z, r * px, 0, Math.PI * 2); g.fill(); g.lineWidth = 1.5 * px; g.strokeStyle = C.ink; g.stroke() }
   const text = (t: string, x: number, z: number, dy = 0) => {
     g.save(); g.translate(x, z); g.scale(px, px)
-    g.font = '600 12px Inter, system-ui, sans-serif'; g.textAlign = 'center'
-    g.lineWidth = 3; g.strokeStyle = 'rgba(22,24,27,.85)'; g.strokeText(t, 0, dy); g.fillStyle = '#fff'; g.fillText(t, 0, dy)
+    g.font = '500 11px "Geist Mono", ui-monospace, Menlo, monospace'; g.textAlign = 'center'
+    g.lineWidth = 3.5; g.strokeStyle = 'rgba(250,250,249,.92)'; g.strokeText(t.toUpperCase(), 0, dy); g.fillStyle = C.ink; g.fillText(t.toUpperCase(), 0, dy)
     g.restore()
   }
 
   g.lineCap = 'round'; g.lineJoin = 'round'
-  g.fillStyle = '#56645a'
+  g.fillStyle = C.building
   for (const pts of L.buildings) { poly(pts); g.fill() }
-  g.fillStyle = '#7d8a80'; poly(L.ktiz); g.fill()
-  g.strokeStyle = '#9aa39c'
+  g.fillStyle = C.ktiz; poly(L.ktiz); g.fill()
+  g.strokeStyle = C.road
   for (const r of L.roads) { g.lineWidth = Math.max(2.5 * px, r.w); g.beginPath(); r.pts.forEach(([x, z], i) => (i ? g.lineTo(x, z) : g.moveTo(x, z))); g.stroke() }
 
   // the two towers stand 5 m apart, so one label covers both
   const towers = towerPlaces(null)
-  for (const t of towers) { g.fillStyle = '#1747a6'; g.fillRect(t.x - 3, t.z - 3, 6, 6) }
+  for (const t of towers) { g.fillStyle = C.tower; g.fillRect(t.x - 3, t.z - 3, 6, 6) }
   if (labels) text('AutoDock towers', (towers[0].x + towers[1].x) / 2, (towers[0].z + towers[1].z) / 2, -12)
   const o = objective()
   if (o && o.kind !== 'car') {
@@ -62,12 +64,12 @@ function paint(g: CanvasRenderingContext2D, L: Layers, px: number, labels: boole
     g.beginPath(); route.forEach((p, i) => (i ? g.lineTo(p.x, p.z) : g.moveTo(p.x, p.z))); g.stroke()
   }
   if (o) dot(o.x, o.z, 5.5, PINK)
-  if (s.car === 'world' && s.mode === 'foot') { dot(live.car.x, live.car.z, 4.5, '#ffffff'); if (labels) text('Your car', live.car.x, live.car.z, -9) }
+  if (s.car === 'world' && s.mode === 'foot') { dot(live.car.x, live.car.z, 4.5, C.me); if (labels) text('Your car', live.car.x, live.car.z, -9) }
   for (const [id, p] of remote) {
     const inCar = p.mode === 'car' && p.car
     const x = inCar ? p.car!.x : p.x
     const z = inCar ? p.car!.z : p.z
-    dot(x, z, 4.2, '#5ec8ff')
+    dot(x, z, 4.2, C.others)
     if (labels) text(s.players[id]?.name ?? '', x, z, -9)
   }
 }
@@ -75,7 +77,7 @@ function paint(g: CanvasRenderingContext2D, L: Layers, px: number, labels: boole
 /** A white arrow for me, pointing along `rot` (canvas radians). */
 function arrow(g: CanvasRenderingContext2D, x: number, y: number, rot: number) {
   g.save(); g.translate(x, y); g.rotate(rot)
-  g.fillStyle = '#ffffff'; g.strokeStyle = '#16181b'; g.lineWidth = 1.5
+  g.fillStyle = C.me; g.strokeStyle = C.ink; g.lineWidth = 1.5
   g.beginPath(); g.moveTo(0, -9); g.lineTo(6.5, 7); g.lineTo(0, 3); g.lineTo(-6.5, 7); g.closePath(); g.fill(); g.stroke()
   g.restore()
 }
@@ -113,14 +115,19 @@ export function Radar() {
     const k = (w / 2) / RADAR_RANGE
     g.save()
     g.beginPath(); g.arc(w / 2, w / 2, w / 2 - 2, 0, Math.PI * 2); g.clip()
-    g.fillStyle = '#2b3a2c'; g.fillRect(0, 0, w, w)
+    g.fillStyle = C.ground; g.fillRect(0, 0, w, w)
     g.translate(w / 2, w / 2); g.rotate(Math.PI + heading); g.scale(k, k); g.translate(-at.x, -at.z)
     paint(g, L, 1 / k, false)
     g.restore()
     arrow(g, w / 2, w / 2, 0)
   }, [L])
   useCanvasLoop(ref, draw)
-  return <canvas ref={ref} className="gm-radar" style={{ width: RADAR, height: RADAR }} aria-label="Radar. Press M for the full map" />
+  return (
+    <div className="gm-radar-frame ad-caption">
+      <canvas ref={ref} className="gm-radar" style={{ width: RADAR, height: RADAR }} aria-label="Radar. Press M for the full map" />
+      <span className="gm-meta"><span>Radar</span><span><kbd>M</kbd> map</span></span>
+    </div>
+  )
 }
 
 /** Full map (M): the whole site, north up, fitted to the screen. */
@@ -137,7 +144,7 @@ export function FullMap() {
     const cx = AREA.x0 + bw / 2
     const cz = AREA.z0 + bh / 2
     const k = Math.min(w / bw, h / bh)
-    g.fillStyle = '#2b3a2c'; g.fillRect(0, 0, w, h)
+    g.fillStyle = C.ground; g.fillRect(0, 0, w, h)
     g.save()
     g.translate(w / 2, h / 2); g.scale(k, k); g.translate(-cx, -cz)
     paint(g, L, 1 / k, true)
@@ -152,14 +159,15 @@ export function FullMap() {
   return (
     <div className="gm-map" role="dialog" aria-label="Map">
       <canvas ref={ref} />
-      <div className="gm-map-legend">
-        <strong>Map</strong>
-        <span><i style={{ background: '#fff' }} /> You and your car</span>
-        <span><i style={{ background: '#5ec8ff' }} /> Other players</span>
-        <span><i style={{ background: '#1747a6' }} /> AutoDock towers</span>
+      <div className="gm-map-legend ad-caption">
+        <p className="ad-label">Map</p>
+        <strong>KSUM site, north up</strong>
+        <span><i style={{ background: C.me }} /> You and your car</span>
+        <span><i style={{ background: C.others }} /> Other players</span>
+        <span><i className="gm-sq" style={{ background: C.tower }} /> AutoDock towers</span>
         <span><i style={{ background: PINK }} /> Where to go</span>
-        <span><i style={{ background: ROUTE }} /> Your route</span>
-        <em>M or Esc to close</em>
+        <span><i className="gm-line" style={{ background: ROUTE }} /> Your route</span>
+        <em><kbd>M</kbd> or <kbd>Esc</kbd> to close</em>
       </div>
     </div>
   )

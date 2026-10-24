@@ -8,7 +8,12 @@
   /* motion: strong ease-out for UI, the iOS drawer curve for the phone */
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
-  font-family: "Barlow", system-ui, -apple-system, sans-serif;
+  /* twin HUD: frosted paper over the 3D scene (the .ad-caption look), hairlines, square-ish corners */
+  --tw-glass: rgba(241, 241, 240, .9);
+  --tw-glass-line: rgba(26, 26, 26, .1);
+  --tw-blur: blur(14px) saturate(1.1);
+  --tw-r: 4px;
+  font-family: var(--ad-sans);
   color: var(--ink);
 }
 * { box-sizing: border-box; }
@@ -17,220 +22,330 @@ body { background: #dfe6ea; overflow: hidden; }
 
 .app { position: fixed; inset: 0; }
 
-.hud-top {
-  position: absolute; top: 16px; left: 16px; right: 16px; display: flex; justify-content: space-between;
-  align-items: flex-start; gap: 16px; pointer-events: none;
-}
-.hud-top > * { pointer-events: auto; }
-.hud-top__right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
-.hud-top > div:first-child { background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 16px; max-width: 520px; }
+/* Shared base for the older markup on other pages; each page restyles these under its own root. */
 .kicker { margin: 0; font: 700 11px/1 system-ui, sans-serif; letter-spacing: .16em; text-transform: uppercase; color: #c8322b; }
 h1 { margin: 6px 0 2px; font-size: 22px; line-height: 1.1; }
 .sub { margin: 0; font-size: 13px; color: #4a4e55; }
-
 .seg { display: inline-flex; background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; padding: 4px; gap: 4px; }
 .seg button { font: 600 14px system-ui, sans-serif; border: 0; border-radius: 7px; padding: 9px 14px; background: transparent; color: #4a4e55; cursor: pointer; }
 .seg button[aria-pressed="true"] { background: var(--ink); color: #fff; }
 .seg--small button { padding: 7px 11px; font-size: 13px; }
-button:focus-visible { outline: 3px solid var(--mark); outline-offset: 2px; }
-
-/* below the header (title card, page links, mode switch) and above the bottom bar */
-.hud-side { position: absolute; right: 16px; top: 132px; width: 288px; }
-.stats { display: grid; gap: 8px; }
-.stat { background: var(--paper); border: 1px solid var(--rule); border-left: 4px solid #9aa0a6; border-radius: 10px; padding: 10px 12px; display: grid; gap: 2px; font-size: 12.5px; color: #4a4e55; transition: border-color 200ms ease, background-color 200ms ease; }
-.stat b { font-size: 22px; color: var(--ink); }
-.stat__k { font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: 11px; }
-.stat.is-on { border-left-color: var(--sign); background: #fff; }
-.stat--big { border-left-color: var(--go); }
-.stat--big b { font-size: 32px; color: var(--go); }
-
-.hud-bottom { position: absolute; left: 16px; right: 16px; bottom: 16px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; pointer-events: none; }
-.hud-bottom > * { pointer-events: auto; }
-.chip { font: 600 13px system-ui, sans-serif; background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; padding: 11px 12px; cursor: pointer; }
-.credit { margin-left: auto; font-size: 11px; color: #4a4e55; background: var(--paper); padding: 4px 8px; border-radius: 6px; }
-
-.tag { font: 600 13px system-ui, sans-serif; white-space: nowrap; background: rgba(22, 24, 27, .82); color: #fff; padding: 6px 10px; border-radius: 6px; pointer-events: none; }
-.tag--tower { background: rgba(23, 71, 166, .92); }
-
-/* Jev control room: left column, below the title, above the camera controls. */
-.ctl {
-  position: absolute; left: 16px; top: 132px; max-height: calc(100vh - 132px - 72px); width: 384px; display: flex; flex-direction: column; gap: 8px;
-  background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; padding: 12px;
-  font-size: 12.5px; color: #4a4e55; z-index: 11; /* above drei's in-scene labels */
-  animation: panel-in-left 260ms var(--ease-out) both;
-}
-.ctl h2 { margin: 2px 0 0; font-size: 17px; color: var(--ink); }
-.ctl h3 { margin: 4px 0; font: 700 11px/1.4 system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--ink); }
-.ctl__head { display: flex; justify-content: space-between; align-items: flex-start; }
-.ctl__bar { display: grid; gap: 6px; }
-.ctl__run { display: flex; align-items: center; gap: 6px; }
-.ctl__blurb { margin: 0; }
-.ctl__body { overflow-y: auto; min-height: 0; display: grid; gap: 8px; align-content: start; padding-right: 2px; animation: body-in 200ms ease-out both; }
-/* 16px above each section heading, so sections read as blocks */
-.ctl__body h3 { margin: 8px 0 4px; }
-.ctl__body > h3, .evlog h3 { margin-bottom: 0; }
 .seg--wrap { flex-wrap: wrap; }
-/* four scenarios in the 288px side column: two by two, not three and an orphan */
-.simcard .seg--wrap { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.ctl .seg button { padding: 6px 9px; }
+.chip { font: 600 13px system-ui, sans-serif; background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; padding: 11px 12px; cursor: pointer; }
 .chip:disabled { opacity: .5; cursor: default; }
-.chip--small, .ctl__run .chip { padding: 5px 10px; font-size: 13px; }
 .muted { color: #6b6f76; margin: 0; }
 .pill { justify-self: start; font: 600 11.5px system-ui, sans-serif; padding: 4px 8px; border-radius: 999px; background: #e7e9ec; color: #4a4e55; }
-.pill--up { background: #dff3e6; color: #1d6b3d; }
-.pill--down { background: #fdeccf; color: #8a5300; }
-.cost { display: grid; gap: 2px; }
-.cost__line { margin: 0; font: 600 12.5px system-ui, sans-serif; font-variant-numeric: tabular-nums; }
-.cost__note { margin: 0; font-size: 11.5px; }
-.plate { font: 700 12px ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--ink); background: #fff; border: 1px solid var(--rule); border-radius: 4px; padding: 1px 5px; white-space: nowrap; }
-.count { display: inline-block; animation: count-bump 200ms var(--ease-out); min-width: 18px; text-align: center; padding: 0 5px; border-radius: 9px; background: #c8322b; color: #fff; letter-spacing: 0; }
-
-.queue ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
-.qitem { border: 1px solid #f0b91c; border-left-width: 4px; background: #fffaf0; border-radius: 8px; padding: 8px; display: grid; gap: 4px;
-  transform-origin: top center; animation: q-in 220ms var(--ease-out) both; transition: opacity 160ms ease-out, transform 160ms ease-out; }
-.qitem[data-leaving] { opacity: 0; transform: scale(0.98); }
-.qitem__top { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; color: var(--ink); font-weight: 600; }
-.qitem__why { margin: 0; }
-.qitem__act { display: flex; gap: 6px; }
 .btn { font: 600 12.5px system-ui, sans-serif; border: 1px solid var(--rule); background: #fff; color: var(--ink); border-radius: 7px; padding: 6px 12px; cursor: pointer; }
-.btn--go { background: var(--go); border-color: var(--go); color: #fff; }
 .btn:disabled { opacity: .45; cursor: default; }
-
-.feed { display: grid; gap: 8px; }
-
-.evlog { display: grid; gap: 4px; }
-.evlog__flow { font-size: 11.5px; }
-.evlog__list { list-style: none; margin: 0; padding: 6px 8px; display: grid; gap: 2px; background: #fff; border: 1px solid var(--rule); border-radius: 8px; }
-.evlog__row { display: grid; grid-template-columns: 22px 112px 1fr; gap: 6px; align-items: baseline; font-size: 11.5px; min-width: 0; border-radius: 4px;
-  animation: log-in 260ms var(--ease-out) both; }
-/* the newest event lights up for a moment so the eye finds it */
-.evlog__row:last-child { animation: log-in 260ms var(--ease-out) both, log-flash 1000ms ease-out; }
-.evlog__seq { color: #8a8e94; font-variant-numeric: tabular-nums; text-align: right; }
-.evlog__type { font: 600 10.5px ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.evlog__text { min-width: 0; overflow-wrap: anywhere; }
-.evlog__row--review_requested .evlog__type { color: #8a5300; }
-.evlog__row--decided .evlog__type, .evlog__row--pallet_to_door .evlog__type { color: var(--go); }
-.energy { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; background: #fff; border: 1px solid var(--rule); border-left: 4px solid #2f7fd6; border-radius: 8px; padding: 6px 8px; transition: border-left-color 200ms ease; }
-.energy.is-cut, .energy.is-over { border-left-color: #d6402f; }
-.energy__cell { display: grid; gap: 1px; min-width: 0; font-size: 11px; color: #4a4e55; }
-.energy__cell b { font-size: 15px; color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.energy__cell small { font-size: 11px; font-weight: 600; color: #4a4e55; }
-.energy__cell--solar b { color: #9a6c00; }
-.energy__bar { height: 5px; border-radius: 3px; background: #e7e9ec; overflow: hidden; }
-.energy__bar > div { height: 100%; width: 100%; transform-origin: left center; background: #2f7fd6; transition: transform 280ms var(--ease-out), background-color 200ms ease; }
-.energy.is-cut .energy__bar > div, .energy.is-over .energy__bar > div { background: #d6402f; }
-.energy.is-cut .energy__cell--grid span { color: #b0321f; font-weight: 700; }
-.energy__note { grid-column: 1 / -1; margin: 0; font-size: 11.5px; }
-.dcard { background: #fff; border: 1px solid var(--rule); border-radius: 8px; padding: 8px; display: grid; gap: 4px; animation: card-in 240ms var(--ease-out) both; }
-/* the car that just landed gets a brief ring */
-.feed > .dcard:first-child { animation: card-in 240ms var(--ease-out) both, card-flash 1200ms ease-out; }
-.dcard__head { display: flex; align-items: center; gap: 8px; color: var(--ink); }
-.dcard__head span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.dcard__note { margin: 0; font-style: italic; }
-.drows { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; }
-.drow { display: grid; grid-template-columns: 68px 1fr auto auto; grid-template-areas: "k v src st" "bar bar bar pct" "why why why why"; gap: 2px 6px; align-items: center; padding: 4px 0 0; border-top: 1px solid var(--rule); }
-.drow.is-review { background: #fffaf0; }
-.drow__k { grid-area: k; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
-.drow__v { grid-area: v; color: var(--ink); font-weight: 600; min-width: 0; }
-.drow__was { margin-left: 6px; color: #8a8e94; font-weight: 400; }
-.drow__why { grid-area: why; font-size: 11.5px; }
-.drow__conf { grid-area: pct; font-variant-numeric: tabular-nums; font-size: 11.5px; text-align: right; min-width: 32px; }
-.drow .conf { grid-area: bar; }
-.badge { grid-area: src; font: 700 10px/1 system-ui, sans-serif; text-transform: uppercase; letter-spacing: .06em; padding: 3px 5px; border-radius: 4px; }
-.badge--jev { background: var(--sign); color: #fff; }
-.badge--rules { background: #e7e9ec; color: #4a4e55; }
-.state { grid-area: st; font: 600 11px system-ui, sans-serif; padding: 2px 6px; border-radius: 4px; background: #eef6f1; color: #1d6b3d; }
-.state--review { background: #fdeccf; color: #8a5300; }
-.state--overridden, .state--cleared { background: #e8eefb; color: var(--sign); }
-.conf { position: relative; height: 6px; border-radius: 3px; background: #e7e9ec; }
-.conf__bar { position: absolute; inset: 0 auto 0 0; border-radius: 3px; background: var(--go); transform-origin: left center;
-  animation: conf-grow 500ms var(--ease-out) 120ms both; transition: background-color 200ms ease; }
-.drow:nth-child(2) .conf__bar { animation-delay: 160ms; }
-.drow:nth-child(3) .conf__bar { animation-delay: 200ms; }
-.drow:nth-child(4) .conf__bar { animation-delay: 240ms; }
-.conf__bar.is-low { background: #e0962a; }
-.conf__tick { position: absolute; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; background: var(--ink); }
-
-.sim { display: grid; gap: 8px; }
 .tag-sim { margin-left: 8px; display: inline-block; vertical-align: 1px; padding: 2px 6px; border-radius: 4px; background: #fdeccf; color: #8a5300; letter-spacing: .04em; }
-.sim__table { width: 100%; border-collapse: collapse; font-size: 12px; }
-.sim__table caption { text-align: left; font-weight: 600; color: var(--ink); padding-bottom: 4px; }
-.sim__table th, .sim__table td { padding: 4px 4px; border-top: 1px solid var(--rule); text-align: right; font-variant-numeric: tabular-nums; }
-.sim__table th[scope="row"], .sim__table thead th:first-child { text-align: left; font-weight: 500; }
-.sim__table th[scope="row"] .muted { display: block; font-size: 11px; }
-.sim__table .is-good { color: var(--go); font-weight: 700; }
-.sim__table .is-bad { color: #c8322b; font-weight: 700; }
 
-@media (max-width: 760px) {
-  .hud-top { flex-direction: column; gap: 8px; }
-  /* compact header so the mode switch stays clear of the control room */
-  .hud-top .sub { display: none; }
-  .hud-top h1 { font-size: 18px; }
-  .hud-top > div:first-child { padding: 10px 14px; }
-  .hud-top__right { flex-direction: row; flex-wrap: wrap; align-items: center; }
-  .hud-side { top: auto; bottom: 166px; left: 16px; right: 16px; width: auto; }
-  .stats { grid-template-columns: repeat(3, 1fr); }
-  .stat b { font-size: 16px; }
-  .stat--big b { font-size: 20px; }
-  /* phone: headline numbers only; the detail lines do not fit three across */
-  .stat > span:not(.stat__k) { display: none; }
-  .credit { margin-left: 0; flex-basis: 100%; }
-  .ctl { top: 197px; left: 16px; right: 16px; width: auto; max-height: calc(100vh - 197px - 166px); }
-  .ctl .seg--wrap { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  /* on a phone the open control room takes the stats' place; hiding it brings them back */
-  .app:has(.ctl.is-open) .hud-side { display: none; }
-}
-
-/* Simulated comparison under the stats; the side column scrolls if the window is short. */
-.hud-side { max-height: calc(100vh - 132px - 72px); overflow-y: auto; display: grid; gap: 8px; align-content: start; }
-.simcard { background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; padding: 10px 12px; display: grid; gap: 6px; font-size: 12px; color: #4a4e55; animation: panel-in-right 260ms var(--ease-out) 40ms both; }
-.simcard .sim h3 { margin: 0; font: 700 11px/1.4 system-ui, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
-.simcard__more summary { cursor: pointer; font-weight: 600; color: var(--ink); }
-.simcard__more p { margin: 4px 0; }
-.simcard__more ul { margin: 4px 0 0; padding-left: 16px; display: grid; gap: 3px; }
-
-/* Driver phone: bottom right, above the camera controls, over the side column. */
-.phone-dock { position: fixed; right: 16px; bottom: 72px; z-index: 12; }
-.phone-dock .ph-device { transform-origin: bottom right; animation: ph-open 280ms var(--ease-drawer) both; }
-.app:has(.phone-dock) .hud-side { visibility: hidden; }
-/* full size text on desktop: the device shrinks to the column height and its body scrolls */
-@media (min-width: 761px) {
-  .phone-dock .ph-device { width: 340px; height: min(700px, calc(100vh - 132px - 72px)); }
-}
-@media (max-width: 760px) {
-  .phone-dock { left: 16px; right: 16px; bottom: 120px; display: flex; justify-content: center; transform: scale(.8); transform-origin: bottom center; }
-  .phone-dock .ph-device { transform-origin: bottom center; }
-}
-/* phones: the comparison would cover the scene; the README and sim/results.json carry it there */
-@media (max-width: 760px) { .simcard { display: none; } }
-
-/* Page link styles live in styles/brand.css. */
-@media (max-width: 480px) {
-  /* five camera views fit a 390px phone */
-  .hud-bottom .seg--small button { padding: 7px 8px; }
-}
+/* in-scene labels (drei Html) */
+.tag { font: 500 12.5px/1 var(--ad-sans); white-space: nowrap; background: rgba(26, 26, 26, .86); color: #fff; padding: 7px 10px; border-radius: 2px; pointer-events: none; }
+.tag--tower { background: rgba(23, 71, 166, .92); }
 
 /* Press feedback and state changes on every pressable control. */
 .seg button, .chip, .btn {
   transition: transform 120ms ease-out, background-color 150ms ease, color 150ms ease, border-color 150ms ease;
 }
 .seg button:active, .chip:active:not(:disabled), .btn:active:not(:disabled) { transform: scale(0.97); }
+
+/* ======================================================================
+ * Digital twin HUD. One grid over the scene, so the panels stack on
+ * each other instead of on measured offsets:
+ *   title        | page links + mode
+ *   title        | stats + simulated comparison
+ *   control room | stats + simulated comparison
+ *   camera views, tower toggle, driver phone, credit
+ * ==================================================================== */
+.hud {
+  position: absolute; inset: 16px; display: grid; gap: 8px 16px; pointer-events: none;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  grid-template-areas: "title right" "title side" "ctl side" "bottom bottom";
+  font: 400 12.5px/1.45 var(--ad-sans); color: var(--ad-muted);
+}
+.hud > * { pointer-events: auto; }
+.hud :where(p, h1, h2, h3, dl, dd) { margin: 0; }
+
+/* frosted paper panel */
+.hud-title, .hud-nav, .stat, .simcard, .ctl, .hud .seg:not(.ctl .seg):not(.simcard .seg), .hud-bottom .chip, .credit {
+  background: var(--tw-glass); -webkit-backdrop-filter: var(--tw-blur); backdrop-filter: var(--tw-blur);
+  border: 1px solid var(--tw-glass-line); border-radius: var(--tw-r);
+}
+
+/* title card: logo and a live label, then the site in Archivo */
+.hud-title { grid-area: title; justify-self: start; align-self: start; width: min(100%, 492px); padding: 14px 16px 16px; }
+.hud-title__bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 12px; margin-bottom: 12px; border-bottom: 1px solid var(--tw-glass-line); }
+.hud-title .ad-logo { font-size: 17px; }
+.hud-title .ad-logo svg { width: 16px; height: 18px; }
+.hud-title h1 { font: 500 24px/1.08 var(--ad-sans); letter-spacing: -0.02em; color: var(--ad-ink); text-wrap: balance; }
+.hud-title .sub { margin-top: 6px; font: 400 13px/1.5 var(--ad-sans); color: var(--ad-muted); max-width: 60ch; }
+
+/* page links and the Today / With AutoDock switch */
+.hud-right { grid-area: right; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; min-width: 0; max-width: 100%; }
+.hud-nav { max-width: 100%; height: 36px; padding: 0 14px; gap: 20px; }
+.hud-nav a { padding: 5px 0; }
+
+/* segmented controls: mono caps, square-ish, black when active */
+.hud .seg { padding: 3px; gap: 2px; border-radius: var(--tw-r); }
+.hud .seg button {
+  font: 400 11px/1 var(--ad-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ad-muted);
+  padding: 11px 14px; border-radius: 2px; white-space: nowrap;
+}
+.hud .seg--small button { padding: 9px 10px; font-size: 10.5px; }
+.hud .seg button[aria-pressed="true"] { background: var(--ad-ink); color: var(--ad-paper); }
+.hud-right .seg button { padding: 12px 16px; }
+
+/* buttons: mono caps rectangles */
+.hud .chip {
+  font: 400 11px/1 var(--ad-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ad-ink);
+  padding: 13px 14px; border-radius: var(--tw-r); white-space: nowrap;
+}
+
+/* side column: stats, then the simulated comparison; it scrolls if the window is short */
+.hud-side { grid-area: side; justify-self: end; align-self: start; width: 288px; max-height: 100%; overflow-y: auto; display: grid; gap: 8px; align-content: start; scrollbar-width: thin; }
+.stats { display: grid; gap: 8px; }
+.stat { padding: 12px 14px; display: grid; gap: 4px; font-size: 12px; line-height: 1.4; transition: background-color 200ms ease, box-shadow 200ms ease; }
+.stat__k { font: 500 10px/1.2 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ad-quiet); }
+.stat b { display: flex; align-items: baseline; gap: 6px; font: 500 28px/1 var(--ad-sans); letter-spacing: -0.02em; color: var(--ad-ink); font-variant-numeric: tabular-nums; }
+.stat b small { font: 400 10.5px/1 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ad-muted); }
+/* the scenario on screen: solid paper and a black rule */
+.stat.is-on { background: var(--ad-panel); box-shadow: inset 2px 0 0 var(--ad-ink); }
+.stat.is-on .stat__k { color: var(--ad-ink); }
+.stat--big b { font-size: 40px; letter-spacing: -0.03em; }
+
+/* bottom bar */
+.hud-bottom { grid-area: bottom; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; pointer-events: none; }
+.hud-bottom > * { pointer-events: auto; }
+.credit { margin-left: auto; font: 400 10px/1.4 var(--ad-mono); letter-spacing: .02em; color: var(--ad-muted); padding: 6px 10px; }
+
+/* ----------------------------------------------------------------------
+ * Jev control room: left column, under the title, above the camera bar.
+ * z-index keeps it above drei's in-scene labels.
+ * -------------------------------------------------------------------- */
+.ctl {
+  grid-area: ctl; justify-self: start; align-self: start; width: 384px; max-width: 100%; max-height: 100%;
+  display: flex; flex-direction: column; gap: 12px; padding: 14px 16px 16px; z-index: 11;
+  background: rgba(241, 241, 240, .94);
+  animation: panel-in-left 260ms var(--ease-out) both;
+}
+.ctl h2 { margin-top: 8px; font: 500 22px/1.05 var(--ad-sans); letter-spacing: -0.02em; color: var(--ad-ink); }
+/* section headings: the brand label, a square then mono caps */
+.ctl h3, .simcard h3 { font: 500 10.5px/1.2 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ad-ink); }
+.ctl h3::before, .simcard h3::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 8px; vertical-align: 1px; background: currentColor; }
+.ctl h3 .count, .simcard h3 .tag-sim { margin-left: 6px; vertical-align: 1px; }
+.ctl__head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.ctl__head .chip { padding: 9px 12px; }
+.ctl__bar { display: grid; gap: 8px; }
+.ctl__run { display: flex; align-items: center; gap: 6px; }
+.ctl__run .muted { margin-left: auto; font: 400 10.5px/1 var(--ad-mono); letter-spacing: .08em; text-transform: uppercase; font-variant-numeric: tabular-nums; }
+.ctl__blurb { font-size: 12.5px; }
+.ctl__body {
+  overflow-y: auto; min-height: 0; display: grid; gap: 12px; align-content: start; margin: 0 -16px -16px; padding: 12px 16px 16px;
+  border-top: 1px solid var(--tw-glass-line); scrollbar-width: thin; animation: body-in 200ms ease-out both;
+}
+.ctl__body > h3 { margin-top: 4px; }
+
+/* segmented controls inside a panel: on the panel, not frosted again; four scenarios two by two */
+.ctl .seg, .simcard .seg { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); background: rgba(26, 26, 26, .04); border: 1px solid var(--tw-glass-line); }
+.ctl .seg button, .simcard .seg button { padding: 9px 8px; }
+/* outlined buttons on a panel */
+.ctl .chip { background: transparent; border: 1px solid var(--ad-ink); border-radius: 2px; padding: 8px 11px; font-size: 10.5px; }
+.ctl .chip:disabled { opacity: .4; }
+.hud .muted { color: var(--ad-muted); }
+
+/* decision server status: a square, then mono caps; red only while live */
+.hud .pill { display: inline-flex; align-items: center; gap: 8px; justify-self: start; padding: 7px 10px; border: 1px solid var(--tw-glass-line); border-radius: 2px; background: var(--ad-panel); font: 500 10px/1.2 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ad-ink); }
+.hud .pill::before { content: ""; width: 6px; height: 6px; flex: none; background: var(--ad-quiet); }
+.hud .pill--up::before { background: var(--ad-red); animation: live-pulse 1.6s ease-in-out infinite; }
+.hud .pill--down { color: var(--ad-warn); }
+.hud .pill--down::before { background: var(--ad-warn); }
+.hud .pill--idle { color: var(--ad-muted); }
+
+/* site power: three figures in one hairline card */
+.energy { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); background: var(--ad-panel); border: 1px solid var(--ad-line); border-radius: 2px; transition: border-color 200ms ease; }
+.energy.is-cut, .energy.is-over { border-color: color-mix(in srgb, var(--ad-red) 55%, var(--ad-line)); }
+.energy__cell { display: grid; gap: 6px; align-content: start; min-width: 0; padding: 10px 12px; }
+.energy__cell + .energy__cell { border-left: 1px solid var(--ad-line); }
+.energy__cell > span { font: 500 9.5px/1.2 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ad-quiet); }
+.energy__cell b { display: flex; align-items: baseline; gap: 3px; font: 500 18px/1 var(--ad-sans); letter-spacing: -0.01em; color: var(--ad-ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.energy__cell small { font: 400 9.5px/1 var(--ad-mono); letter-spacing: .04em; color: var(--ad-muted); }
+.energy__bar { height: 3px; background: var(--ad-line); overflow: hidden; }
+.energy__bar > div { height: 100%; width: 100%; transform-origin: left center; background: var(--ad-ink); transition: transform 280ms var(--ease-out), background-color 200ms ease; }
+.energy.is-cut .energy__bar > div, .energy.is-over .energy__bar > div { background: var(--ad-red); }
+.energy.is-cut .energy__cell--grid > span { color: var(--ad-red); }
+.energy__note { grid-column: 1 / -1; padding: 8px 12px; border-top: 1px solid var(--ad-line); font-size: 11.5px; }
+
+/* Jev cost: three figures, then the fine print */
+.cost { display: grid; gap: 8px; }
+.cost__figs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.cost__figs dt { font: 500 9.5px/1.2 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ad-quiet); }
+.cost__figs dd { margin-top: 5px; font: 500 15px/1.1 var(--ad-sans); color: var(--ad-ink); font-variant-numeric: tabular-nums; }
+.cost__figs dd small { margin-left: 3px; font: 400 9.5px/1 var(--ad-mono); color: var(--ad-muted); }
+.cost__note { font-size: 11px; line-height: 1.45; }
+
+.plate { font: 500 11px/1.3 var(--ad-mono); letter-spacing: .04em; color: var(--ad-ink); background: var(--ad-white); border: 1px solid var(--ad-ink); border-radius: 2px; padding: 2px 6px; white-space: nowrap; }
+.count { display: inline-flex; align-items: center; justify-content: center; min-width: 18px; height: 16px; padding: 0 5px; border-radius: 2px; background: var(--ad-red); color: #fff; font: 500 10px/1 var(--ad-mono); letter-spacing: 0; animation: count-bump 200ms var(--ease-out); }
+
+/* operator review: the alert, so a red rule */
+.queue { display: grid; gap: 8px; }
+.queue ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.qitem { border: 1px solid var(--ad-line); box-shadow: inset 2px 0 0 var(--ad-red); background: var(--ad-panel); border-radius: 2px; padding: 10px 12px; display: grid; gap: 4px;
+  transform-origin: top center; animation: q-in 220ms var(--ease-out) both; transition: opacity 160ms ease-out, transform 160ms ease-out; }
+.qitem[data-leaving] { opacity: 0; transform: scale(0.98); }
+.qitem__top { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; color: var(--ad-ink); font-weight: 500; }
+.qitem__why { font-size: 12px; }
+.qitem__act { display: flex; gap: 6px; margin-top: 6px; }
+.hud .btn { font: 400 10.5px/1 var(--ad-mono); letter-spacing: .08em; text-transform: uppercase; border: 1px solid var(--ad-ink); background: transparent; color: var(--ad-ink); border-radius: 2px; padding: 9px 12px; }
+.hud .btn--go { background: var(--ad-ink); color: var(--ad-paper); }
+.hud .btn:disabled { opacity: .35; }
+
+.feed { display: grid; gap: 8px; }
+
+/* event log: the bus, in mono */
+.evlog { display: grid; gap: 8px; }
+.evlog__flow { font: 400 10.5px/1.5 var(--ad-mono); color: var(--ad-quiet); }
+.evlog__list { list-style: none; margin: 0; padding: 4px 0; display: grid; background: var(--ad-panel); border: 1px solid var(--ad-line); border-radius: 2px; }
+.evlog__row { display: grid; grid-template-columns: 26px 116px 1fr; gap: 8px; align-items: baseline; padding: 3px 10px 3px 0; font-size: 11.5px; line-height: 1.4; min-width: 0;
+  animation: log-in 260ms var(--ease-out) both; }
+/* the newest event lights up for a moment so the eye finds it */
+.evlog__row:last-child { animation: log-in 260ms var(--ease-out) both, log-flash 1000ms ease-out; }
+.evlog__seq { font: 400 10px/1.4 var(--ad-mono); color: var(--ad-quiet); font-variant-numeric: tabular-nums; text-align: right; }
+.evlog__type { font: 500 10px/1.4 var(--ad-mono); color: var(--ad-ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.evlog__text { min-width: 0; overflow-wrap: anywhere; }
+.evlog__row--review_requested .evlog__type { color: var(--ad-red); }
+.evlog__row--decided .evlog__type, .evlog__row--pallet_to_door .evlog__type { color: var(--ad-ok); }
+
+/* a card per car: plate, vehicle, time, then four decision rows */
+.dcard { background: var(--ad-panel); border: 1px solid var(--ad-line); border-radius: 2px; padding: 10px 12px; display: grid; gap: 6px; animation: card-in 240ms var(--ease-out) both; }
+/* the car that just landed gets a brief ring */
+.feed > .dcard:first-child { animation: card-in 240ms var(--ease-out) both, card-flash 1200ms ease-out; }
+.dcard__head { display: flex; align-items: center; gap: 8px; color: var(--ad-ink); font-weight: 500; }
+.dcard__head span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dcard__head time { font: 400 10.5px/1 var(--ad-mono); color: var(--ad-quiet); font-variant-numeric: tabular-nums; }
+.dcard__note { font-style: italic; font-size: 12px; }
+.drows { list-style: none; margin: 0; padding: 0; display: grid; }
+.drow { display: grid; grid-template-columns: 64px 1fr auto auto; grid-template-areas: "k v src st" "bar bar bar pct" "why why why why"; gap: 4px 8px; align-items: center; padding: 8px 0 6px; border-top: 1px solid var(--ad-line); }
+.drow.is-review { background: linear-gradient(90deg, rgba(236, 48, 19, .06), transparent 70%); box-shadow: inset 2px 0 0 var(--ad-red); margin: 0 -12px; padding-left: 12px; padding-right: 12px; }
+.drow__k { grid-area: k; font: 500 9.5px/1.2 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ad-quiet); }
+.drow__v { grid-area: v; color: var(--ad-ink); font-weight: 500; min-width: 0; }
+.drow__was { margin-left: 6px; color: var(--ad-quiet); font-weight: 400; }
+.drow__why { grid-area: why; font-size: 11.5px; }
+.drow__conf { grid-area: pct; font: 400 10.5px/1 var(--ad-mono); font-variant-numeric: tabular-nums; text-align: right; min-width: 32px; color: var(--ad-ink); }
+.drow .conf { grid-area: bar; }
+.badge { grid-area: src; font: 500 9px/1 var(--ad-mono); text-transform: uppercase; letter-spacing: .1em; padding: 3px 5px; border-radius: 2px; border: 1px solid transparent; }
+.badge--jev { background: var(--ad-ink); color: var(--ad-paper); }
+.badge--rules { border-color: var(--ad-line); color: var(--ad-muted); }
+.state { grid-area: st; font: 500 9px/1 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; padding: 3px 5px; border-radius: 2px; color: var(--ad-quiet); border: 1px solid var(--ad-line); }
+.state--review { color: var(--ad-red); border-color: color-mix(in srgb, var(--ad-red) 45%, transparent); }
+.state--overridden, .state--cleared, .state--approved { color: var(--ad-ink); border-color: var(--ad-ink); }
+/* confidence: a hairline track, black fill; red when it falls short of acting alone */
+.conf { position: relative; height: 4px; background: var(--ad-line); }
+.conf__bar { position: absolute; inset: 0 auto 0 0; background: var(--ad-ink); transform-origin: left center;
+  animation: conf-grow 500ms var(--ease-out) 120ms both; transition: background-color 200ms ease; }
+.drow:nth-child(2) .conf__bar { animation-delay: 160ms; }
+.drow:nth-child(3) .conf__bar { animation-delay: 200ms; }
+.drow:nth-child(4) .conf__bar { animation-delay: 240ms; }
+.conf__bar.is-low { background: var(--ad-red); }
+.conf__tick { position: absolute; top: -3px; bottom: -3px; width: 1px; background: var(--ad-ink); }
+
+/* simulated comparison, under the stats */
+.simcard { padding: 12px 14px 14px; display: grid; gap: 10px; font-size: 12px; animation: panel-in-right 260ms var(--ease-out) 40ms both; }
+.sim { display: grid; gap: 8px; }
+.hud .tag-sim { display: inline-block; padding: 3px 5px; border-radius: 2px; background: var(--ad-lime); color: var(--ad-ink); font: 500 9px/1 var(--ad-mono); letter-spacing: .1em; }
+.sim__table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.sim__table caption { text-align: left; font-weight: 500; color: var(--ad-ink); padding-bottom: 6px; }
+.sim__table th, .sim__table td { padding: 5px 4px; border-top: 1px solid var(--tw-glass-line); text-align: right; font-variant-numeric: tabular-nums; color: var(--ad-ink); }
+.sim__table thead th { font: 500 9px/1.2 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ad-quiet); border-top: 0; }
+.sim__table th[scope="row"], .sim__table thead th:first-child { text-align: left; font-weight: 400; padding-left: 0; }
+.sim__table td:last-child, .sim__table thead th:last-child { padding-right: 0; }
+.sim__table th[scope="row"] .muted { display: block; font: 400 9px/1.3 var(--ad-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ad-quiet); }
+.sim__table td:last-child { font: 500 10.5px/1 var(--ad-mono); }
+.sim__table .is-good { color: var(--ad-ok); }
+.sim__table .is-bad { color: var(--ad-red); }
+.simcard__more summary { cursor: pointer; font: 500 10px/1.2 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ad-ink); }
+.simcard__more p { margin: 6px 0; }
+.simcard__more ul { margin: 4px 0 0; padding-left: 16px; display: grid; gap: 3px; }
+.simcard__more b { color: var(--ad-ink); font-weight: 500; }
+
+/* Driver phone: bottom right, above the camera bar, over the side column. */
+.phone-dock { position: fixed; right: 16px; bottom: 76px; z-index: 12; }
+.phone-dock .ph-device { transform-origin: bottom right; animation: ph-open 280ms var(--ease-drawer) both; }
+.app:has(.phone-dock) .hud-side { visibility: hidden; }
+/* full size text on desktop: the device shrinks to the column height and its body scrolls */
+@media (min-width: 761px) {
+  .phone-dock .ph-device { width: 340px; height: min(700px, calc(100vh - 116px - 76px)); }
+}
+
+/* hover, only where there is a real pointer */
 @media (hover: hover) and (pointer: fine) {
   .seg button:not([aria-pressed="true"]):hover, .chip:not(:disabled):hover, .btn:not(.btn--go):not(:disabled):hover { background: rgba(22, 24, 27, .06); }
-  .btn--go:not(:disabled):hover { background: #288a4f; }
+  .hud .seg button:not([aria-pressed="true"]):hover { background: rgba(26, 26, 26, .06); color: var(--ad-ink); }
+  .hud-bottom .chip:not(:disabled):hover { background: var(--ad-panel); }
+  .ctl .chip:not(:disabled):hover, .hud .btn:not(.btn--go):not(:disabled):hover { background: var(--ad-ink); color: var(--ad-paper); }
+  .hud .btn--go:not(:disabled):hover { background: #333230; border-color: #333230; }
+}
+
+/* tablets: tighter links and narrower columns */
+@media (min-width: 761px) and (max-width: 1100px) {
+  .hud-nav { gap: 14px; padding: 0 12px; }
+  .hud-title { width: min(100%, 420px); }
+  .hud-title h1 { font-size: 21px; }
+  .ctl { width: min(100%, 360px); }
+  .hud-side { width: 264px; }
+  .credit { margin-left: 0; }
+}
+
+@media (max-width: 760px) {
+  .hud {
+    inset: 12px; gap: 8px;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto minmax(0, 1fr) auto auto;
+    grid-template-areas: "title" "right" "ctl" "side" "bottom";
+  }
+  /* compact header so the control room keeps its height */
+  .hud-title { width: 100%; padding: 10px 12px 12px; }
+  .hud-title__bar { padding-bottom: 8px; margin-bottom: 8px; }
+  .hud-title .sub { display: none; }
+  .hud-title h1 { font-size: 19px; }
+  .hud-right { flex-direction: column; align-items: stretch; }
+  .hud-nav { width: 100%; gap: 18px; -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 28px), transparent); }
+  .hud-right .seg { display: grid; grid-template-columns: 1fr 1fr; }
+  .hud-right .seg button { padding: 11px 8px; }
+  .ctl { width: 100%; }
+  .hud-side { width: 100%; align-self: end; justify-self: stretch; }
+  .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .stat { padding: 8px 10px; }
+  .stat__k { font-size: 9px; }
+  .stat b { font-size: 18px; gap: 4px; }
+  .stat b small { font-size: 9px; }
+  .stat--big b { font-size: 22px; }
+  /* phone: headline numbers only; the detail lines do not fit three across */
+  .stat > span:not(.stat__k) { display: none; }
+  /* on a phone the open control room takes the stats' place; hiding it brings them back */
+  .app:has(.ctl.is-open) .hud-side { display: none; }
+  /* phones: the comparison would cover the scene; the README and sim/results.json carry it there */
+  .simcard { display: none; }
+  .hud-bottom .seg--small { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); width: 100%; }
+  .hud-bottom .seg--small button { padding: 10px 2px; font-size: 9.5px; letter-spacing: .04em; }
+  .hud-bottom .chip { padding: 11px 12px; }
+  .credit { margin-left: 0; flex-basis: 100%; font-size: 9px; }
+  .phone-dock { left: 12px; right: 12px; bottom: 148px; display: flex; justify-content: center; transform: scale(.8); transform-origin: bottom center; }
+  .phone-dock .ph-device { transform-origin: bottom center; }
 }
 
 @keyframes panel-in-left { from { opacity: 0; transform: translateX(-12px); } }
 @keyframes panel-in-right { from { opacity: 0; transform: translateX(12px); } }
 @keyframes body-in { from { opacity: 0; transform: translateY(-4px); } }
 @keyframes card-in { from { opacity: 0; transform: translateY(-6px); } }
-@keyframes card-flash { from { box-shadow: 0 0 0 2px var(--sign); } to { box-shadow: 0 0 0 2px transparent; } }
+@keyframes card-flash { from { box-shadow: 0 0 0 2px var(--ad-ink); } to { box-shadow: 0 0 0 2px transparent; } }
 @keyframes q-in { from { opacity: 0; transform: translateY(6px) scale(0.98); } }
 @keyframes count-bump { from { transform: scale(1.25); } }
 @keyframes log-in { from { opacity: 0; transform: translateY(4px); } }
-@keyframes log-flash { from { background: rgba(240, 185, 28, .25); } to { background: transparent; } }
+@keyframes log-flash { from { background: var(--ad-lime); } to { background: transparent; } }
 @keyframes conf-grow { from { transform: scaleX(0.02); } }
 @keyframes ph-open { from { opacity: 0; transform: translateY(24px) scale(0.96); } }
+@keyframes live-pulse { 50% { opacity: .35; } }
 @keyframes fade-only { from { opacity: 0; } }
 
 /* Reduced motion: keep the opacity cues, drop the movement. */
@@ -238,7 +353,7 @@ button:focus-visible { outline: 3px solid var(--mark); outline-offset: 2px; }
   .dcard, .feed > .dcard:first-child, .qitem, .evlog__row, .evlog__row:last-child, .ctl, .ctl__body, .simcard, .phone-dock .ph-device {
     animation: fade-only 150ms ease-out both;
   }
-  .conf__bar, .count { animation: none; }
+  .conf__bar, .count, .hud .pill--up::before { animation: none; }
   .qitem, .qitem[data-leaving] { transform: none; transition: opacity 150ms ease-out; }
   .energy__bar > div { transition: none; }
   .seg button:active, .chip:active, .btn:active { transform: none; }

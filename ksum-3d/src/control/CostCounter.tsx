@@ -28,10 +28,13 @@ export function CostCounter() {
   }, [setJevUsage])
 
   if (!usage) return null
-  const avg = usage.avgLatencyMs === null ? 'no calls yet' : `${usage.avgLatencyMs} ms avg`
   return (
     <div className="cost" aria-label="Jev cost per decision">
-      <p className="cost__line">Jev: {n(usage.decisions)} decisions, {usd(usage.costUsd)} total, {avg}</p>
+      <dl className="cost__figs">
+        <div><dt>Jev decisions</dt><dd>{n(usage.decisions)}</dd></div>
+        <div><dt>Total</dt><dd>{usd(usage.costUsd)}</dd></div>
+        <div><dt>Avg latency</dt><dd>{usage.avgLatencyMs === null ? 'No calls yet' : <>{usage.avgLatencyMs}<small>ms</small></>}</dd></div>
+      </dl>
       <p className="muted cost__note">
         {n(usage.calls)} call{usage.calls === 1 ? '' : 's'}
         {usage.failures > 0 && `, ${n(usage.failures)} fell back to rules`}
