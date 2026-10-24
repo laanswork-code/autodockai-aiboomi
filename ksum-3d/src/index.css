@@ -204,26 +204,19 @@ button:focus-visible { outline: 3px solid var(--mark); outline-offset: 2px; }
 /* phones: the comparison would cover the scene; the README and sim/results.json carry it there */
 @media (max-width: 760px) { .simcard { display: none; } }
 
-/* Page links (twin, dashboard, problems); shared by every page. */
-.nav { display: inline-flex; gap: 4px; max-width: 100%; overflow-x: auto; scrollbar-width: none; background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; padding: 4px; }
-.nav::-webkit-scrollbar { display: none; }
-.nav a { flex: none; white-space: nowrap; font: 600 14px system-ui, sans-serif; color: #4a4e55; text-decoration: none; padding: 8px 12px; border-radius: 7px; }
+/* Page link styles live in styles/brand.css. */
 @media (max-width: 480px) {
-  .nav { gap: 2px; padding: 3px; } .nav a { font-size: 13px; padding: 7px 8px; }
   /* five camera views fit a 390px phone */
   .hud-bottom .seg--small button { padding: 7px 8px; }
 }
-.nav a[aria-current="page"] { background: var(--ink); color: #fff; }
-.nav a:focus-visible { outline: 3px solid var(--mark); outline-offset: 2px; }
 
 /* Press feedback and state changes on every pressable control. */
-.seg button, .chip, .btn, .nav a {
+.seg button, .chip, .btn {
   transition: transform 120ms ease-out, background-color 150ms ease, color 150ms ease, border-color 150ms ease;
 }
-.seg button:active, .chip:active:not(:disabled), .btn:active:not(:disabled), .nav a:active { transform: scale(0.97); }
+.seg button:active, .chip:active:not(:disabled), .btn:active:not(:disabled) { transform: scale(0.97); }
 @media (hover: hover) and (pointer: fine) {
-  .seg button:not([aria-pressed="true"]):hover, .chip:not(:disabled):hover, .btn:not(.btn--go):not(:disabled):hover,
-  .nav a:not([aria-current="page"]):hover { background: rgba(22, 24, 27, .06); }
+  .seg button:not([aria-pressed="true"]):hover, .chip:not(:disabled):hover, .btn:not(.btn--go):not(:disabled):hover { background: rgba(22, 24, 27, .06); }
   .btn--go:not(:disabled):hover { background: #288a4f; }
 }
 
@@ -248,5 +241,5 @@ button:focus-visible { outline: 3px solid var(--mark); outline-offset: 2px; }
   .conf__bar, .count { animation: none; }
   .qitem, .qitem[data-leaving] { transform: none; transition: opacity 150ms ease-out; }
   .energy__bar > div { transition: none; }
-  .seg button:active, .chip:active, .btn:active, .nav a:active { transform: none; }
+  .seg button:active, .chip:active, .btn:active { transform: none; }
 }

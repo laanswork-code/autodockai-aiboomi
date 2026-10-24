@@ -1,6 +1,6 @@
 import { useEffect, useRef, type ReactNode } from 'react'
-import filmUrl from '../../../docs/demo/pitch-film.mp4'
-import filmPoster from '../../../docs/demo/pitch-film-poster.jpg'
+import filmUrl from '../../../docs/demo/driver-journey.mp4'
+import filmPoster from '../../../docs/demo/driver-journey-poster.jpg'
 import results from '../../sim/results.json'
 import { AUTO_THRESHOLD, type SimMetrics } from '../control/types.ts'
 import { Link, NavLinks } from '../Nav.tsx'
@@ -86,9 +86,9 @@ export default function HowPage() {
           <NavLinks />
         </header>
 
-        <section className="how-film" aria-label="Pitch film">
+        <section className="how-film" aria-label="Driver journey film">
           <video src={filmUrl} poster={filmPoster} controls playsInline preload="none" />
-          <p className="how-film__cap">The pitch film: 3 min 16 s, narrated.</p>
+          <p className="how-film__cap">The driver journey in the digital twin: 1 min 17 s.</p>
         </section>
 
         <section className="how-hero" aria-label="The problem and the answer">

@@ -11,8 +11,8 @@ WORKDIR /app/ksum-3d
 COPY ksum-3d/package.json ksum-3d/package-lock.json ./
 RUN npm ci
 COPY ksum-3d/ ./
-# the How it works page imports the pitch film from docs/demo
-COPY docs/demo/pitch-film.mp4 docs/demo/pitch-film-poster.jpg /app/docs/demo/
+# the How it works page imports the driver journey film from docs/demo
+COPY docs/demo/driver-journey.mp4 docs/demo/driver-journey-poster.jpg /app/docs/demo/
 RUN npm run build
 ENV NODE_ENV=production
 CMD ["node", "server/prod.ts"]

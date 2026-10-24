@@ -1,0 +1,114 @@
+/*
+ * AutoDock AI brand layer, after autodockai.com: warm grey paper, near-black
+ * ink, Archivo for words, Geist Mono for labels, navigation and buttons.
+ * Square-cornered black buttons, hairline cards, dark full-bleed sections.
+ * Every page builds on these tokens and primitives (docs/design/brand.md).
+ */
+:root {
+  --ad-paper: #f1f1f0;      /* page ground */
+  --ad-panel: #fafaf9;      /* cards and panels */
+  --ad-white: #ffffff;
+  --ad-ink: #1a1a1a;        /* text, buttons */
+  --ad-black: #0a0a0c;      /* dark sections, footer */
+  --ad-graphite: #201e1d;   /* raised surfaces on dark */
+  --ad-muted: #6e6e6e;      /* body copy, secondary */
+  --ad-quiet: #8b8b88;      /* meta, captions */
+  --ad-line: #dcdcda;       /* hairlines */
+  --ad-line-dark: rgba(255, 255, 255, .14);
+  --ad-sky: #e8f1f6;        /* pale section wash */
+  --ad-red: #ec3013;        /* rare: live status, alerts, the one thing to look at */
+  --ad-lime: #f3feab;       /* rare: highlight, selection */
+  --ad-ok: #1f8a4c;
+  --ad-warn: #b7791f;
+
+  --ad-sans: "Archivo", system-ui, -apple-system, sans-serif;
+  --ad-mono: "Geist Mono", ui-monospace, "JetBrains Mono", Menlo, monospace;
+
+  --ad-r-0: 2px;            /* buttons, inputs, tags */
+  --ad-r-1: 6px;            /* small cards */
+  --ad-r-2: 12px;           /* media frames, panels */
+  --ad-shadow: 0 1px 0 rgba(10, 10, 12, .04), 0 12px 32px -16px rgba(10, 10, 12, .22);
+  --ad-ease: cubic-bezier(0.23, 1, 0.32, 1);
+
+  --ad-gutter: clamp(16px, 3vw, 40px);
+  --ad-max: 1320px;
+}
+
+::selection { background: var(--ad-lime); color: var(--ad-ink); }
+
+/* type */
+.ad-display { font: 400 clamp(40px, 5.2vw, 72px)/0.92 var(--ad-sans); letter-spacing: -0.022em; margin: 0; color: var(--ad-ink); text-wrap: balance; }
+.ad-h2 { font: 500 clamp(30px, 3.4vw, 46px)/1.06 var(--ad-sans); letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
+.ad-h3 { font: 500 clamp(20px, 1.7vw, 24px)/1.15 var(--ad-sans); letter-spacing: -0.015em; margin: 0; }
+.ad-lede { font: 400 15px/1.55 var(--ad-sans); color: var(--ad-muted); margin: 0; max-width: 60ch; }
+.ad-note { padding-left: 20px; border-left: 1px solid var(--ad-line); font: 400 15px/1.55 var(--ad-sans); color: var(--ad-muted); margin: 0; max-width: 34ch; }
+.ad-mono { font: 400 11px/1.4 var(--ad-mono); letter-spacing: .08em; text-transform: uppercase; }
+
+/* section label: a small square, then mono caps ("■ WORKFLOW") */
+.ad-label { display: inline-flex; align-items: center; gap: 8px; margin: 0; font: 500 10.5px/1 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ad-ink); }
+.ad-label::before { content: ""; width: 6px; height: 6px; background: currentColor; }
+.ad-label--live::before { background: var(--ad-red); }
+
+/* buttons: square black rectangle, mono caps, a small arrow */
+.ad-btn {
+  display: inline-flex; align-items: center; gap: 14px; padding: 12px 14px; border: 1px solid var(--ad-ink); border-radius: var(--ad-r-0);
+  background: var(--ad-ink); color: var(--ad-paper); font: 400 11px/1 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase;
+  text-decoration: none; cursor: pointer; transition: background-color 160ms ease, color 160ms ease, transform 120ms ease-out;
+}
+.ad-btn::after { content: "↗"; font-size: 12px; letter-spacing: 0; }
+.ad-btn--plain::after { content: none; }
+.ad-btn--ghost { background: transparent; color: var(--ad-ink); }
+.ad-btn--light { background: var(--ad-paper); color: var(--ad-ink); border-color: var(--ad-paper); }
+.ad-btn:active:not(:disabled) { transform: scale(0.97); }
+.ad-btn:disabled { opacity: .45; cursor: not-allowed; }
+@media (hover: hover) and (pointer: fine) {
+  .ad-btn:not(:disabled):hover { background: #333230; border-color: #333230; }
+  .ad-btn--ghost:not(:disabled):hover { background: var(--ad-ink); color: var(--ad-paper); border-color: var(--ad-ink); }
+  .ad-btn--light:not(:disabled):hover { background: var(--ad-white); border-color: var(--ad-white); }
+}
+/* rounded secondary link ("Our products →") */
+.ad-pill { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1px solid var(--ad-ink); border-radius: 999px; font: 500 13px/1 var(--ad-sans); color: var(--ad-ink); text-decoration: none; background: transparent; cursor: pointer; }
+.ad-pill::after { content: "→"; }
+
+/* surfaces */
+.ad-card { background: var(--ad-panel); border: 1px solid var(--ad-line); border-radius: var(--ad-r-1); }
+.ad-frame { border-radius: var(--ad-r-2); overflow: hidden; background: #d9dcdc; }
+.ad-dark { background: var(--ad-black); color: #f4f4f2; }
+.ad-dark .ad-lede, .ad-dark .ad-note { color: rgba(244, 244, 242, .72); }
+.ad-dark .ad-label { color: #f4f4f2; }
+/* frosted caption panel laid over 3D or video (Arrive / Dock / Charge) */
+.ad-caption { background: rgba(241, 241, 240, .86); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: var(--ad-r-0); padding: 12px 14px; }
+
+:where(a, button, input, select, textarea, [tabindex]):focus-visible { outline: 2px solid var(--ad-ink); outline-offset: 3px; }
+.ad-dark :where(a, button):focus-visible { outline-color: var(--ad-paper); }
+
+/* site header, shared by the content pages */
+.ad-header { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 28px; padding: 14px var(--ad-gutter); background: color-mix(in srgb, var(--ad-paper) 88%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+.ad-logo { display: inline-flex; align-items: flex-start; gap: 8px; color: var(--ad-ink); text-decoration: none; font: 500 19px/1 var(--ad-sans); letter-spacing: -0.02em; flex: none; }
+.ad-logo svg { width: 18px; height: 20px; margin-top: 1px; }
+.ad-logo sup { font: 500 8px/1 var(--ad-mono); margin-left: -4px; }
+.nav { display: flex; align-items: center; gap: 22px; overflow-x: auto; scrollbar-width: none; min-width: 0; }
+.nav::-webkit-scrollbar { display: none; }
+.nav a { flex: none; white-space: nowrap; font: 400 11px/1 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ad-ink); text-decoration: none; padding: 6px 0; border-bottom: 1px solid transparent; transition: border-color 160ms ease, color 160ms ease; }
+.nav a[aria-current="page"] { border-bottom-color: var(--ad-ink); }
+@media (hover: hover) and (pointer: fine) { .nav a:not([aria-current="page"]):hover { color: var(--ad-muted); } }
+.ad-header .ad-btn { margin-left: auto; flex: none; }
+@media (max-width: 760px) {
+  .ad-header { gap: 14px; flex-wrap: wrap; }
+  .ad-header .nav { order: 3; width: 100%; gap: 18px; }
+}
+
+/* footer: dark, a giant faded wordmark */
+.ad-footer { position: relative; overflow: hidden; padding: 56px var(--ad-gutter) 24px; background: var(--ad-black); color: #f4f4f2; }
+.ad-footer__grid { display: grid; grid-template-columns: minmax(220px, 1.4fr) repeat(3, minmax(120px, 1fr)); gap: 32px; max-width: var(--ad-max); margin: 0 auto; position: relative; z-index: 1; }
+.ad-footer p { margin: 12px 0 0; font: 400 13.5px/1.55 var(--ad-sans); color: rgba(244, 244, 242, .6); max-width: 32ch; }
+.ad-footer h4 { margin: 0 0 14px; font: 500 10.5px/1 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: rgba(244, 244, 242, .5); }
+.ad-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.ad-footer a { color: rgba(244, 244, 242, .85); text-decoration: none; font: 400 13.5px/1.2 var(--ad-sans); }
+@media (hover: hover) and (pointer: fine) { .ad-footer a:hover { color: #fff; } }
+.ad-footer .ad-logo { color: #f4f4f2; }
+.ad-footer__mark { display: block; margin: 64px auto 0; max-width: var(--ad-max); font: 500 clamp(80px, 19vw, 290px)/0.8 var(--ad-sans); letter-spacing: -0.05em; color: rgba(244, 244, 242, .06); white-space: nowrap; user-select: none; }
+.ad-footer__base { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; max-width: var(--ad-max); margin: 0 auto; padding-top: 18px; border-top: 1px solid var(--ad-line-dark); font: 400 10.5px/1.4 var(--ad-mono); letter-spacing: .1em; text-transform: uppercase; color: rgba(244, 244, 242, .45); }
+@media (max-width: 760px) { .ad-footer__grid { grid-template-columns: 1fr 1fr; } .ad-footer__grid > :first-child { grid-column: 1 / -1; } }
+
+@media (prefers-reduced-motion: reduce) { .ad-btn, .nav a { transition: none; } .ad-btn:active { transform: none; } }
