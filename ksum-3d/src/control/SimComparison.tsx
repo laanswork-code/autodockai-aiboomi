@@ -21,7 +21,7 @@ export function SimComparison({ metrics }: { metrics: SimMetrics[] }) {
   const scenarios = [...new Set(metrics.map((m) => m.scenario))] as ScenarioName[]
   return (
     <section className="sim" aria-label="Simulated comparison">
-      <h3>Rules baseline vs Jev <span className="tag-sim">Simulated</span></h3>
+      <h3>Rules baseline vs our agent on Jev <span className="tag-sim">Simulated</span></h3>
       {scenarios.map((sc) => {
         const base = metrics.find((m) => m.scenario === sc && m.policy === 'baseline')
         const jev = metrics.find((m) => m.scenario === sc && m.policy === 'jev')
@@ -29,7 +29,7 @@ export function SimComparison({ metrics }: { metrics: SimMetrics[] }) {
         return (
           <table key={sc} className="sim__table">
             <caption>{SCENARIOS[sc].label} · {jev.cars} cars, simulated day</caption>
-            <thead><tr><th scope="col">Metric</th><th scope="col">Rules</th><th scope="col">Jev</th><th scope="col">Change</th></tr></thead>
+            <thead><tr><th scope="col">Metric</th><th scope="col">Rules</th><th scope="col">Agent</th><th scope="col">Change</th></tr></thead>
             <tbody>
               {METRICS.map(({ key, label, unit, better }) => {
                 const b = base[key]

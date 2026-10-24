@@ -294,11 +294,11 @@ const scenes = {
     const end = win.jev.to - win.jev.from
     return [
       column({ x: 120, y: 80, w: 1680, items: [
-        { text: 'Why *Jev*, not a chat model', t: L(s, at(s, 'To')) + 0.1, size: 72 },
+        { text: 'Built on *Jev*, not a chat model', t: L(s, at(s, 'To')) + 0.1, size: 72 },
       ] }),
       panel({ id: 'pn-llm', x: 120, y: 230, w: 800, t: L(s, at(s, 'latest')), dimAt: jevAt,
         label: 'Chat model (autoregressive)', note: 'e.g. the latest OpenAI or Anthropic models',
-        stream: { text: '{"bay": "Tower 1, pallet 18", "charge": "wait for solar", "price": "standa', t: L(s, at(s, 'one')), until: jevAt } }),
+        stream: { text: '{"bay": "Tower 1, pallet 18", "charge": "now", "price": "standard", "pl', t: L(s, at(s, 'one')), until: jevAt } }),
       column({ x: 160, y: 640, w: 740, gap: 14, items: [
         { text: 'One token at a time', t: L(s, at(s, 'one')), size: 44, weight: 700 },
         { text: 'Text to parse, and hope it is valid', t: L(s, at(s, 'parse')), size: 44, weight: 700 },
@@ -383,8 +383,8 @@ function endCard(t) {
   const html = `<div id="end" class="end">
     <div id="end-mark" class="sign"><span>P</span></div>
     <div class="end-words">
-      <div id="end-name" class="end-name">AutoDock <span class="x">×</span> <span class="acc">Jev</span></div>
-      <div id="end-sub" class="end-sub">The AI intelligence layer for smart parking</div>
+      <div id="end-name" class="end-name">AutoDock</div>
+      <div id="end-sub" class="end-sub">The AI intelligence layer for smart parking, run by our agent framework on Jev</div>
       <div id="end-url" class="end-url">github.com/laanswork-code/autodockai-aiboomi</div>
     </div>
   </div>`
@@ -473,7 +473,7 @@ const index = `<!doctype html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1920, height=1080" />
-    <title>AutoDock × Jev</title>
+    <title>AutoDock</title>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }

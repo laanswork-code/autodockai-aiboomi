@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AutoDock × Jev Deck</title>
+<title>AutoDock Deck</title>
 <style>
 @font-face { font-family: "Barlow"; src: url("../../ksum-3d/public/fonts/Barlow-SemiBold.ttf") format("truetype"); font-weight: 600 800; }
 :root { --paper: #f3efe6; --card: #fbf9f4; --ink: #16181b; --ink-2: #4a4e55; --ink-3: #7b7f86; --rule: #d4ccbb; --sign: #1747a6; --stop: #c8322b; --mark: #f0b91c; --go: #2f7d4f; }
@@ -86,7 +86,7 @@ td.lose { color: var(--stop); font-weight: 700; }
       <div class="card"><h2>Every car is a set of decisions</h2><p>Which pallet, charge now (on solar, cheaper by day) or wait for off-peak, what price, is this the right car and is it paid for. Rules get these wrong at the edges; people can't watch every car.</p></div>
     </div>
     <div class="stack">
-      <div class="card"><h2>Why now: typed, calibrated AI</h2><p>TypeSafe's Jev returns typed answers with a calibrated confidence in about half a second, for about <b>$0.00008 a decision</b>. Cheap enough to decide on every event, and honest enough to ask a person when it isn't sure.</p></div>
+      <div class="card"><h2>Why now: typed, calibrated AI</h2><p>Our proprietary agent framework is built on top of TypeSafe's Jev, which returns typed answers with a calibrated confidence in about half a second, for about <b>$0.00008 a decision</b>. Cheap enough to decide on every event, and honest enough to ask a person when it isn't sure.</p></div>
       <div class="card"><h2>Why now: the grid</h2><p>More EVs than sockets, and the site's grid connection is the bottleneck. Robotaxi fleets are scaling in the US, and need depots that run unattended.</p></div>
     </div>
   </div>
@@ -97,13 +97,13 @@ td.lose { color: var(--stop); font-weight: 700; }
 <section class="slide">
   <p class="kicker">Solution · live demo</p>
   <div class="grid g73">
-    <img class="shot contain" src="img/control-room.jpg" alt="Control room during rush hour with Jev decisions and an operator review">
+    <img class="shot contain" src="img/control-room.jpg" alt="Control room during rush hour with agent decisions and an operator review">
     <div class="stack">
-      <h1 style="font-size:64px">Jev decides.<br><em>It asks when unsure.</em></h1>
+      <h1 style="font-size:64px">Our agent decides.<br><em>It asks when unsure.</em></h1>
       <ul>
         <li>3D twin of one real example site, KSUM Kalamassery: two towers on 4 of 15 bays, <b>40 cars on 57 m²</b>.</li>
-        <li>Per car: bay, charge plan, price, plate and payment checks, each with Jev's confidence.</li>
-        <li>Unsure charge or anomaly calls go to the <b>operator queue</b>. Here: a camera misread Jev wouldn't guess on.</li>
+        <li>Per car: bay, charge plan, price, plate and payment checks, each with the agent's confidence (from Jev).</li>
+        <li>Unsure charge or anomaly calls go to the <b>operator queue</b>. Here: a camera misread the agent wouldn't guess on.</li>
         <li>Solar and grid flows, live kW gauge, Jev cost counter, event log.</li>
         <li>Driver phone: arrive, dock, charge, pay by UPI (mock).</li>
       </ul>
@@ -116,9 +116,9 @@ td.lose { color: var(--stop); font-weight: 700; }
 <!-- 4. Tech architecture -->
 <section class="slide">
   <p class="kicker">Tech architecture</p>
-  <h1>One Jev request per car.<br><em>Code owns the rest.</em></h1>
+  <h1>Our agent framework, built on Jev.<br><em>One Jev call per car. The agent owns the rest.</em></h1>
   <div class="pipe">
-    <div>Scenario player</div><span>→</span><div>Event bus</div><span>→</span><div class="jev">Jev decision step<br>(server, key stays here)</div><span>→</span><div>Tower orchestrator</div><span>→</span><div>3D twin + control room</div>
+    <div>Scenario player</div><span>→</span><div>Event bus</div><span>→</span><div class="jev">Agent decision step on Jev<br>(server, key stays here)</div><span>→</span><div>Tower orchestrator</div><span>→</span><div>3D twin + control room</div>
   </div>
   <div class="grid g2 top">
     <div class="card">
@@ -137,7 +137,7 @@ td.lose { color: var(--stop); font-weight: 700; }
         <li>Rules fallback on any error or timeout, same interface</li>
         <li>Flagged plate or payment always reaches a person</li>
         <li>Audit log of every decision and its confidence</li>
-        <li>63 tests; seeded simulator for rules vs Jev</li>
+        <li>63 tests; seeded simulator for rules vs our agent</li>
       </ul>
       <p class="muted">React 19 · React Three Fiber · zustand · Vite · Node 25 · @typesafe-ai/sdk (jev-latest) · OpenStreetMap · SerpAPI</p>
     </div>
@@ -150,16 +150,16 @@ td.lose { color: var(--stop); font-weight: 700; }
   <p class="kicker">Value · go to market</p>
   <div class="grid g2">
     <div class="stack">
-      <h1 style="font-size:66px">Same rush hour,<br><em>rules vs Jev</em> <span class="tag">Simulated</span></h1>
+      <h1 style="font-size:66px">Same rush hour,<br><em>rules vs our agent</em> <span class="tag">Simulated</span></h1>
       <table>
-        <tr><th>Rush hour, seed 42</th><th>Rules</th><th>Jev</th></tr>
+        <tr><th>Rush hour, seed 42</th><th>Rules</th><th>Agent on Jev</th></tr>
         <tr><td>Grid peak</td><td>60 kW</td><td class="win">42.6 kW (-29%)</td></tr>
         <tr><td>Energy cost</td><td>₹2,989</td><td class="win">₹2,278 (-24%)</td></tr>
         <tr><td>Missed anomalies</td><td>0</td><td class="win">0</td></tr>
         <tr><td>Sent to an operator</td><td>22</td><td>21</td></tr>
         <tr><td>kWh delivered</td><td>590</td><td class="lose">495</td></tr>
       </table>
-      <p class="muted">Synthetic day, illustrative tariffs and behaviour; not a measurement. Jev wins on grid and energy cost, and sells less energy. Full table in the repo.</p>
+      <p class="muted">Synthetic day, illustrative tariffs and behaviour; not a measurement. The agent wins on grid and energy cost, and sells less energy. Full table in the repo.</p>
     </div>
     <div class="stack">
       <div class="card"><h2>Who pays</h2><p>Site owners and operators: a per-session fee, a per-bay software subscription, a margin on energy, and a revenue share with the landowner.</p></div>
@@ -179,7 +179,7 @@ td.lose { color: var(--stop); font-weight: 700; }
       <h2>Next</h2>
       <ul>
         <li><b>4 weeks:</b> integrate with AutoDock's tower controller on recorded events.</li>
-        <li><b>8 weeks:</b> shadow pilot at one Kerala site: Jev logs what it would decide, controls nothing.</li>
+        <li><b>8 weeks:</b> shadow pilot at one Kerala site: the agent logs what it would decide, controls nothing.</li>
         <li>Calibrate thresholds on real outcomes; tune for each site's grid and tariffs.</li>
         <li>Live pilot under a separate agreement if the shadow results hold.</li>
       </ul>

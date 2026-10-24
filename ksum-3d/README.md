@@ -46,11 +46,13 @@ square metre, with about 92 m² of the strip freed.
 - `server/`: Jev decision server (`jev.ts` builds the request and maps answers, `jevDecider.ts` adds timeout, fallback and cache, `jevUsage.ts` counts calls and cost, `audit.ts`, `http.ts`)
 - `sim/`: minute-by-minute simulator (`site.ts` assumptions, `arrivals.ts` seeded days, `engine.ts`, `run.ts`)
 
-## Jev decision layer
+## Agent decision layer, built on Jev
 
-In **With AutoDock** mode a control room plays a scenario's arrivals through a
-decision layer. For every car, TypeSafe's Jev (System One) returns typed
-judgments with a calibrated confidence:
+In **With AutoDock** mode a control room plays a scenario's arrivals through
+our proprietary agent framework, built on top of TypeSafe's Jev. The framework
+owns the candidate pallets, the booking ledger, the confidence gates, the
+operator queue, the rules fallback and the audit log. For every car it asks Jev
+(System One) for typed judgments with a calibrated confidence:
 
 | Decision | What Jev answers | Can go to an operator |
 |---|---|---|

@@ -76,7 +76,7 @@ function Overlay() {
     <div className="film-ui">
       <div className="film-stripe" />
       <header className="film-top" style={{ opacity: ui }}>
-        <div className="film-brand"><b>AutoDock</b> × Jev<span>Driver journey</span></div>
+        <div className="film-brand"><b>AutoDock</b><span>Driver journey</span></div>
         <div className="film-clock">{t >= T.drive ? clock(clockAt(t)) : '08:22'}<span>{t >= T.lapse && t < T.pay ? 'time lapse' : 'Kalamassery'}</span></div>
       </header>
 
@@ -97,12 +97,12 @@ function Overlay() {
       </footer>
 
       <section className="film-card" style={{ opacity: title }} aria-hidden={title === 0}>
-        <p className="film-card__kicker">AutoDock × Jev</p>
+        <p className="film-card__kicker">AutoDock</p>
         <h1>A driver's morning</h1>
         <p>Book from the car. Drive in. The tower does the rest.</p>
       </section>
       <section className="film-card film-card--end" style={{ opacity: end }} aria-hidden={end === 0}>
-        <p className="film-card__kicker">AutoDock × Jev</p>
+        <p className="film-card__kicker">AutoDock · our agent framework, built on Jev</p>
         <h1>Book. Drive. Dock. Charge. Pay.</h1>
         <p>No taps on arrival. No pallet promised twice. Charging on solar when the sun is up.</p>
         <small>Simulated demo: the car, traffic, bookings and payment are sample data.</small>

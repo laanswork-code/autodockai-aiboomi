@@ -31,9 +31,9 @@ export default function DashboardPage() {
       <div className="page__wrap">
         <header className="page__head">
           <div className="page__title">
-            <p className="kicker">AutoDock · Jev decision layer</p>
+            <p className="kicker">AutoDock · agent decision layer, built on Jev</p>
             <h1>Dashboard</h1>
-            <p className="sub">Live from the decision server every {POLL_MS / 1000} s: what Jev decided, how sure it was, what it cost, and when it asked a person.</p>
+            <p className="sub">Live from the decision server every {POLL_MS / 1000} s: what our agent decided through Jev, how sure it was, what it cost, and when it asked a person.</p>
           </div>
           <NavLinks />
         </header>
@@ -214,7 +214,7 @@ function Simulation() {
   const jev = rows.find((r) => r.scenario === scenario && r.policy === 'jev')
   return (
     <>
-      <h2>Rules vs Jev <span className="tag-sim">SIMULATED</span></h2>
+      <h2>Rules vs our agent on Jev <span className="tag-sim">SIMULATED</span></h2>
       <p className="hint">Same seeded day (seed {results.seed}), illustrative tariffs and behaviour. Not a measurement.</p>
       <div className="seg seg--small dseg" role="group" aria-label="Scenario">
         {(Object.keys(SCENARIO_LABEL) as ScenarioName[]).map((s) => (

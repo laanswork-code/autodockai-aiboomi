@@ -1,18 +1,20 @@
-# AutoDock × Jev: a decision layer for rotary EV parking towers
+# AutoDock: an agent-run decision layer for rotary EV parking towers
 
 > We are building the AI intelligence layer for smart parking, and for the
 > autonomous parking infrastructure that comes next. It starts as the software
 > brain for AutoDock's rotary parking and charging towers: 40 charging cars on 4
-> of 15 surface bays, with every call made by Jev or, when Jev is unsure, by a
-> person.
+> of 15 surface bays, with every call made by our proprietary agent framework,
+> built on top of TypeSafe's Jev, or, when the agent is unsure, by a person.
 
 **[▶ Driver journey](docs/demo/driver-journey.mp4)** · **[Pitch film](docs/demo/pitch-film.mp4)** · **[Demo video](docs/demo/demo.mp4)** · **[Pitch deck](docs/pitch/deck.pdf)** · **[AI Impact Statement](docs/AI_IMPACT.md)** · **[Quick start](#setup-and-run)** · **[Licence](#licence)**
 
 **AIBoomi Startup Weekend, 23–24 Oct 2026.** Kerala and India are running out
 of parking and chargers: we collected 474 real complaints, 154 from Kerala and
 the rest from Delhi NCR, Mumbai, Bengaluru and cities across India. AutoDock
-rotary towers stack cars and charge them, and TypeSafe's **Jev** decides what
-happens to every car, bay and kilowatt. Confident decisions act on their own;
+rotary towers stack cars and charge them, and **our proprietary agent framework,
+built on top of TypeSafe's Jev,** decides what happens to every car, bay and
+kilowatt: it coordinates every booking in real time, never promises a pallet
+twice, and turns Jev's typed, calibrated answers into actions. Confident decisions act on their own;
 uncertain ones go to a person. Our example site is a live 3D digital twin of the
 Kerala Startup Mission building at KINFRA Hi-Tech Park, Kalamassery, where two
 towers replace part of today's surface parking strip.
@@ -38,7 +40,7 @@ Rendered frame by frame from the app's [`/film`](ksum-3d/src/film) page with
 
 [▶ Play the driver journey](docs/demo/driver-journey.mp4)
 
-| Pitch film (3 min 16 s, narrated) | Demo video (2 min, screen recording) |
+| Pitch film (3 min 20 s, narrated) | Demo video (2 min, screen recording) |
 |---|---|
 | [![Pitch film preview](docs/demo/pitch-film-preview.gif)](docs/demo/pitch-film.mp4) | [![Demo video preview](docs/demo/demo-preview.gif)](docs/demo/demo.mp4) |
 | [▶ Play the pitch film](docs/demo/pitch-film.mp4) | [▶ Play the demo video](docs/demo/demo.mp4) |
@@ -51,11 +53,11 @@ Rendered frame by frame from the app's [`/film`](ksum-3d/src/film) page with
 | **Example site** | KSUM building, KINFRA Hi-Tech Park, Kalamassery (digital twin, pilot candidate) |
 | **Today** | 15 surface bays, full by mid-morning, no chargers |
 | **With AutoDock** | 2 towers × 20 pallets on 4 bays (57 m²): 40 cars, a 7.4 kW AC charger in every bay |
-| **Brain** | One Jev request per arriving car: bay, charge plan, price tier, plate and payment risk |
+| **Brain** | Our agent framework on top of Jev: one Jev request per arriving car (bay, charge plan, price tier, plate and payment risk), plus bookings, guardrails, fallback and audit |
 | **Rush hour, simulated** | Grid peak 60 → 42.6 kW, energy cost ₹2,989 → ₹2,278 |
 | **Tests** | 63 unit tests, no live calls |
 
-- **Pitch film:** [`docs/demo/pitch-film.mp4`](docs/demo/pitch-film.mp4) (3 min 16 s, narrated: the parking problem across Kerala and India from 474 complaints collected with SerpAPI, our solution (space and intelligence), KSUM as one example in a live digital twin, a driver's morning on the phone app, why Jev and not a chat model, how it decides, the results). Built from code in [`video/`](video) with HyperFrames and an ElevenLabs voice.
+- **Pitch film:** [`docs/demo/pitch-film.mp4`](docs/demo/pitch-film.mp4) (3 min 20 s, narrated: the parking problem across Kerala and India from 474 complaints collected with SerpAPI, our solution (space and intelligence), KSUM as one example in a live digital twin, a driver's morning on the phone app, why Jev and not a chat model, how it decides, the results). Built from code in [`video/`](video) with HyperFrames and an ElevenLabs voice.
 - **Demo video:** [`docs/demo/demo.mp4`](docs/demo/demo.mp4) (2 min, screen recording of the current app, no narration: the digital twin before and after the towers, a rush hour with live Jev decisions and an operator approving a flagged plate, the driver phone from arrival to charging, How it works including why Jev and not a chat model, the dashboard and the problems page). Recorded with [`video/scripts/record-demo.mjs`](video/scripts/record-demo.mjs).
 - **Pitch deck:** [`docs/pitch/deck.pdf`](docs/pitch/deck.pdf) (6 slides) · source [`docs/pitch/deck.html`](docs/pitch/deck.html)
 - **AI Impact Statement:** [`docs/AI_IMPACT.md`](docs/AI_IMPACT.md)
@@ -151,8 +153,11 @@ the KSUM building is our first example site.
 ## Solution
 
 Two 20-pallet towers stand on 4 of the 15 bays (57 m²) and hold 40 cars, every
-bay with a 7.4 kW AC charger. For each arriving car, **one Jev request** answers
-five questions at once and code turns the answers into decisions:
+bay with a 7.4 kW AC charger. Our **agent framework** runs the site. It is
+ours: the booking ledger, the candidate pallets it offers, the confidence gates,
+the operator queue, the rules fallback and the audit log. Underneath, it is
+built on TypeSafe's Jev: for each arriving car **one Jev request** answers five
+questions at once, and the framework turns the answers into decisions:
 
 | Decision | Jev primitive | Goes to a person when |
 |---|---|---|
@@ -164,7 +169,7 @@ five questions at once and code turns the answers into decisions:
 ### Pipeline
 
 ```
-scenario player → event bus → Jev decision step (server, key stays here) → tower orchestrator → 3D twin
+scenario player → event bus → agent framework: Jev decision step (server, key stays here) → tower orchestrator → 3D twin
                                      ↓ on error or timeout
                                rules fallback, same interface
 ```
@@ -175,9 +180,9 @@ scenario player → event bus → Jev decision step (server, key stays here) →
   stops acting alone, an operator queue (Approve or Override with the rules
   answer), an event log of the pipeline, live solar and grid flows with a kW
   gauge, and a Jev cost counter.
-- **Driver phone:** the driver connects the car instead of typing a booking. Jev uses its battery, range and
+- **Driver phone:** the driver connects the car instead of typing a booking. Our agent uses its battery, range and
   location, plus traffic and charger availability, to pick the best pallet. A booking ledger holds it for the
-  whole stay and never promises a pallet twice: if Jev's pick is taken it moves to the nearest free pallet, and a
+  whole stay and never promises a pallet twice: if the agent's pick is taken it moves to the nearest free pallet, and a
   full site offers the earliest free time instead of overbooking. On arrival the gate camera recognises the car
   and its plate and the pallet comes down with no tap; a doubtful plate waits for an operator. Then dock, charge
   and a mock UPI payment. Car, traffic, other drivers' bookings and the drive are simulated.
@@ -194,11 +199,11 @@ scenario player → event bus → Jev decision step (server, key stays here) →
 - **Fallback.** Any Jev error, timeout or unparseable answer falls back to the rules policy, and the UI says so.
 - **Audit.** Every decision with its inputs and confidence is written to `server/data/audit.jsonl`.
 - **Tested.** 63 unit tests cover answer mapping, the booking ledger, thresholds, fallback, HTTP validation, the event bus, cost counting and simulator invariants (determinism, no double-booked pallets, grid limit never exceeded).
-- **Simulated comparison, labelled as such.** Same seeded day, rules vs Jev, four scenarios. Rush hour: grid peak 60 → 42.6 kW, energy cost ₹2,989 → ₹2,278, zero missed anomalies for both; Jev delivers fewer kWh (590 → 495) and less revenue. Full table and assumptions in [`ksum-3d/README.md`](ksum-3d/README.md).
+- **Simulated comparison, labelled as such.** Same seeded day, rules vs our agent on Jev, four scenarios. Rush hour: grid peak 60 → 42.6 kW, energy cost ₹2,989 → ₹2,278, zero missed anomalies for both; the agent delivers fewer kWh (590 → 495) and less revenue. Full table and assumptions in [`ksum-3d/README.md`](ksum-3d/README.md).
 
-**Rush hour, rules vs Jev (simulated):**
+**Rush hour, rules vs our agent on Jev (simulated):**
 
-| Metric | Rules | Jev |
+| Metric | Rules | Agent on Jev |
 |---|---:|---:|
 | Grid peak | 60 kW | 42.6 kW |
 | Energy cost | ₹2,989 | ₹2,278 |
@@ -233,7 +238,7 @@ scenario player → event bus → Jev decision step (server, key stays here) →
 - **Building heights** are estimated (OpenStreetMap has almost none); the KSUM block is moved 8 m north because OSM draws the road on its facade.
 - **Tower scale** is calibrated so a pallet is 6.2 m overall; the model's loop is stretched from 12 to 20 pallets and its footprint fitted to two bays. Cars on pallets are drawn at 85% of life size for clarity.
 - **Tariffs, prices, driver balking and the 60 kW charging limit** are illustrative, not measured. The simulated day runs to 06:00 so overnight charging counts.
-- **Jev's advantage** in our simulation is grid peak and energy cost, not revenue. We report that trade-off rather than tuning the numbers until Jev wins.
+- **The agent's advantage** in our simulation is grid peak and energy cost, not revenue. We report that trade-off rather than tuning the numbers until the agent wins.
 - **Bay and price never wait for a person:** a wrong call there costs seconds or rupees.
 
 ## Known limitations and risks
@@ -250,7 +255,7 @@ scenario player → event bus → Jev decision step (server, key stays here) →
 ## Prior work and what was built here
 
 **Built during the event (23–24 Oct 2026):** the 3D site model, the decision
-server and Jev integration, the simulator, the control room, the driver phone,
+server, our agent framework on top of Jev (booking ledger, guardrails, fallback, audit), the simulator, the control room, the driver phone,
 the research sites and all documents.
 
 **Pre-existing and attributed:** the AutoDock Kozhikode Beach demo file (tower

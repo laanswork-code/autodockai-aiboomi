@@ -34,7 +34,7 @@
   </style>
   <div id="root" data-composition-id="jev" data-width="1920" data-height="1080" data-layout-allow-overlap>
     <div class="stripe"></div>
-    <div class="col" style="left:120px;top:80px;width:1680px;gap:16px"><div id="t1" class="title" style="font-size:72px;font-weight:800;color:#16181b;"><span class="w">Why</span> <span class="w acc">Jev,</span> <span class="w acc">not</span> <span class="w acc">a</span> <span class="w acc">chat</span> <span class="w acc">model</span></div></div>
+    <div class="col" style="left:120px;top:80px;width:1680px;gap:16px"><div id="t1" class="title" style="font-size:72px;font-weight:800;color:#16181b;"><span class="w">Built</span> <span class="w">on</span> <span class="w acc">Jev,</span> <span class="w acc">not</span> <span class="w acc">a</span> <span class="w acc">chat</span> <span class="w acc">model</span></div></div>
     <div id="pn-llm" class="panel" style="left:120px;top:230px;width:800px">
       <div class="panel-label">Chat model (autoregressive)</div><div class="panel-note">e.g. the latest OpenAI or Anthropic models</div>
       <div id="pn-llm-stream" class="stream"><span></span><i class="caret"></i></div>
@@ -50,12 +50,12 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#t1 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},0.22);
-    tl.fromTo("#pn-llm",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.5,ease:"expo.out"},4.207);(function(){const o={v:0};const el=document.querySelector("#pn-llm-stream span");const s="{\"bay\": \"Tower 1, pallet 18\", \"charge\": \"wait for solar\", \"price\": \"standa";tl.fromTo(o,{v:0},{v:74,duration:2.220,ease:"none",onUpdate(){el.textContent=s.slice(0,Math.floor(o.v/4)*4)}},7.388);})();tl.to("#pn-llm",{opacity:0.45,duration:0.4,ease:"power2.out"},12.937);
-    tl.fromTo("#t2 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},7.388);tl.fromTo("#t3 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},9.896);
-    tl.fromTo("#pn-jev",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.5,ease:"expo.out"},12.937);
-    tl.fromTo("#c4",{opacity:0,scale:0.92,filter:"blur(10px)"},{opacity:1,scale:1,filter:"blur(0px)",duration:0.6,ease:"expo.out"},15.504);tl.fromTo("#c4 .inner",{scale:1,y:0},{scale:1.02,y:0,duration:10.906,ease:"none"},15.504);
-    tl.fromTo("#t5 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},15.504);tl.fromTo("#t6 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},18.232);tl.fromTo("#t7 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},22.005);
-    tl.set({}, {}, 26.41);
+    tl.fromTo("#pn-llm",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.5,ease:"expo.out"},6.18);(function(){const o={v:0};const el=document.querySelector("#pn-llm-stream span");const s="{\"bay\": \"Tower 1, pallet 18\", \"charge\": \"now\", \"price\": \"standard\", \"pl";tl.fromTo(o,{v:0},{v:71,duration:2.130,ease:"none",onUpdate(){el.textContent=s.slice(0,Math.floor(o.v/4)*4)}},9.396);})();tl.to("#pn-llm",{opacity:0.45,duration:0.4,ease:"power2.out"},15.085);
+    tl.fromTo("#t2 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},9.396);tl.fromTo("#t3 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},12.09);
+    tl.fromTo("#pn-jev",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.5,ease:"expo.out"},15.085);
+    tl.fromTo("#c4",{opacity:0,scale:0.92,filter:"blur(10px)"},{opacity:1,scale:1,filter:"blur(0px)",duration:0.6,ease:"expo.out"},17.338);tl.fromTo("#c4 .inner",{scale:1,y:0},{scale:1.02,y:0,duration:10.651,ease:"none"},17.338);
+    tl.fromTo("#t5 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},17.338);tl.fromTo("#t6 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},19.671);tl.fromTo("#t7 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},23.526);
+    tl.set({}, {}, 27.989);
     window.__timelines["jev"] = tl;
   </script>
 </template>

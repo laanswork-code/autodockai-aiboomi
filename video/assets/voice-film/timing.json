@@ -1,7 +1,7 @@
 {
   "lines": {
     "intro": {
-      "duration": 2.879,
+      "duration": 3.901,
       "words": [
         {
           "text": "A",
@@ -10,193 +10,218 @@
         },
         {
           "text": "driver's",
-          "start": 0.139,
-          "end": 0.499
+          "start": 0.151,
+          "end": 0.511
         },
         {
-          "text": "morning,",
-          "start": 0.546,
-          "end": 0.929
+          "text": "morning",
+          "start": 0.557,
+          "end": 0.813
         },
         {
           "text": "with",
-          "start": 0.964,
-          "end": 1.149
+          "start": 0.848,
+          "end": 0.964
         },
         {
-          "text": "AutoDock",
-          "start": 1.219,
-          "end": 1.8
+          "text": "AutoDock,",
+          "start": 1.045,
+          "end": 1.823
         },
         {
-          "text": "and",
-          "start": 1.881,
-          "end": 2.02
+          "text": "run",
+          "start": 1.904,
+          "end": 2.078
         },
         {
-          "text": "Jev.",
-          "start": 2.113,
-          "end": 2.879
+          "text": "by",
+          "start": 2.136,
+          "end": 2.276
+        },
+        {
+          "text": "our",
+          "start": 2.345,
+          "end": 2.473
+        },
+        {
+          "text": "own",
+          "start": 2.531,
+          "end": 2.67
+        },
+        {
+          "text": "agent",
+          "start": 2.728,
+          "end": 3.053
+        },
+        {
+          "text": "framework.",
+          "start": 3.111,
+          "end": 3.901
         }
       ]
     },
     "book": {
-      "duration": 10.17,
+      "duration": 10.495,
       "words": [
         {
           "text": "The",
           "start": 0,
-          "end": 0.128
+          "end": 0.116
         },
         {
           "text": "driver",
-          "start": 0.174,
-          "end": 0.511
+          "start": 0.163,
+          "end": 0.488
         },
         {
           "text": "connects",
-          "start": 0.569,
-          "end": 0.917
+          "start": 0.546,
+          "end": 0.871
         },
         {
           "text": "the",
-          "start": 0.964,
-          "end": 1.033
+          "start": 0.917,
+          "end": 0.987
         },
         {
           "text": "car",
-          "start": 1.091,
-          "end": 1.347
+          "start": 1.033,
+          "end": 1.254
         },
         {
           "text": "in",
-          "start": 1.405,
+          "start": 1.312,
+          "end": 1.37
+        },
+        {
+          "text": "the",
+          "start": 1.416,
           "end": 1.486
         },
         {
-          "text": "the",
-          "start": 1.533,
-          "end": 1.614
-        },
-        {
           "text": "app.",
-          "start": 1.73,
-          "end": 2.229
+          "start": 1.556,
+          "end": 1.881
         },
         {
-          "text": "Jev",
-          "start": 2.554,
-          "end": 2.821
+          "text": "Our",
+          "start": 2.206,
+          "end": 2.368
+        },
+        {
+          "text": "agent",
+          "start": 2.426,
+          "end": 2.763
         },
         {
           "text": "reads",
-          "start": 2.914,
-          "end": 3.158
+          "start": 2.821,
+          "end": 3.053
         },
         {
           "text": "the",
-          "start": 3.204,
-          "end": 3.274
+          "start": 3.1,
+          "end": 3.17
         },
         {
           "text": "battery,",
-          "start": 3.32,
-          "end": 3.855
+          "start": 3.216,
+          "end": 3.715
         },
         {
           "text": "the",
-          "start": 3.936,
-          "end": 4.04
+          "start": 3.785,
+          "end": 3.889
         },
         {
           "text": "range,",
-          "start": 4.11,
-          "end": 4.516
+          "start": 3.971,
+          "end": 4.365
         },
         {
           "text": "the",
-          "start": 4.586,
-          "end": 4.702
+          "start": 4.435,
+          "end": 4.54
         },
         {
           "text": "traffic",
-          "start": 4.748,
-          "end": 5.143
+          "start": 4.586,
+          "end": 4.992
         },
         {
           "text": "and",
-          "start": 5.213,
-          "end": 5.329
+          "start": 5.271,
+          "end": 5.526
         },
         {
           "text": "the",
-          "start": 5.375,
-          "end": 5.445
+          "start": 5.584,
+          "end": 5.654
         },
         {
           "text": "free",
-          "start": 5.492,
-          "end": 5.7
+          "start": 5.7,
+          "end": 5.898
         },
         {
           "text": "chargers,",
-          "start": 5.747,
-          "end": 6.362
+          "start": 5.933,
+          "end": 6.525
         },
         {
           "text": "and",
-          "start": 6.536,
-          "end": 6.664
+          "start": 6.734,
+          "end": 6.885
         },
         {
           "text": "holds",
-          "start": 6.722,
-          "end": 6.943
+          "start": 6.954,
+          "end": 7.198
         },
         {
           "text": "pallet",
-          "start": 7.024,
-          "end": 7.326
+          "start": 7.256,
+          "end": 7.546
         },
         {
           "text": "nine",
-          "start": 7.407,
-          "end": 7.697
+          "start": 7.628,
+          "end": 7.941
         },
         {
           "text": "in",
-          "start": 7.732,
-          "end": 7.802
+          "start": 7.999,
+          "end": 8.162
         },
         {
           "text": "Tower",
-          "start": 7.883,
-          "end": 8.185
+          "start": 8.243,
+          "end": 8.557
         },
         {
           "text": "2",
-          "start": 8.255,
-          "end": 8.464
+          "start": 8.626,
+          "end": 8.835
         },
         {
           "text": "for",
-          "start": 8.557,
-          "end": 8.661
+          "start": 8.916,
+          "end": 9.021
         },
         {
           "text": "the",
-          "start": 8.696,
-          "end": 8.766
+          "start": 9.056,
+          "end": 9.125
         },
         {
           "text": "arrival",
-          "start": 8.812,
-          "end": 9.23
+          "start": 9.172,
+          "end": 9.59
         },
         {
           "text": "time.",
-          "start": 9.288,
-          "end": 10.17
+          "start": 9.648,
+          "end": 10.495
         }
       ]
     },
@@ -531,67 +556,72 @@
       ]
     },
     "leave": {
-      "duration": 5.248,
+      "duration": 5.062,
       "words": [
         {
           "text": "Then",
           "start": 0,
-          "end": 0.372
+          "end": 0.232
         },
         {
           "text": "walk",
-          "start": 0.522,
-          "end": 0.789
+          "start": 0.313,
+          "end": 0.546
         },
         {
           "text": "away.",
-          "start": 0.848,
-          "end": 1.474
+          "start": 0.615,
+          "end": 1.196
         },
         {
-          "text": "Jev",
-          "start": 1.985,
-          "end": 2.276
+          "text": "Our",
+          "start": 1.637,
+          "end": 1.811
+        },
+        {
+          "text": "agent",
+          "start": 1.858,
+          "end": 2.136
         },
         {
           "text": "watches",
-          "start": 2.345,
-          "end": 2.705
+          "start": 2.194,
+          "end": 2.554
         },
         {
           "text": "the",
-          "start": 2.752,
-          "end": 2.821
+          "start": 2.612,
+          "end": 2.682
         },
         {
           "text": "battery,",
-          "start": 2.868,
-          "end": 3.379
+          "start": 2.74,
+          "end": 3.274
         },
         {
           "text": "the",
-          "start": 3.46,
-          "end": 3.564
+          "start": 3.344,
+          "end": 3.448
         },
         {
           "text": "grid",
-          "start": 3.634,
-          "end": 3.936
+          "start": 3.518,
+          "end": 3.808
         },
         {
           "text": "and",
-          "start": 4.005,
-          "end": 4.203
+          "start": 3.878,
+          "end": 4.017
         },
         {
           "text": "the",
-          "start": 4.272,
-          "end": 4.354
+          "start": 4.075,
+          "end": 4.145
         },
         {
           "text": "sun.",
-          "start": 4.412,
-          "end": 5.248
+          "start": 4.191,
+          "end": 5.062
         }
       ]
     },
@@ -801,57 +831,62 @@
       ]
     },
     "end": {
-      "duration": 3.947,
+      "duration": 4.598,
       "words": [
         {
-          "text": "Book.",
+          "text": "Book,",
           "start": 0,
           "end": 0.395
         },
         {
-          "text": "Drive.",
-          "start": 0.464,
-          "end": 0.917
+          "text": "drive,",
+          "start": 0.43,
+          "end": 0.836
         },
         {
-          "text": "Dock.",
-          "start": 0.964,
-          "end": 1.289
+          "text": "dock,",
+          "start": 0.871,
+          "end": 1.207
         },
         {
-          "text": "Charge.",
-          "start": 1.324,
-          "end": 1.765
+          "text": "charge,",
+          "start": 1.242,
+          "end": 1.707
         },
         {
-          "text": "Pay.",
-          "start": 1.811,
-          "end": 2.229
+          "text": "pay.",
+          "start": 1.741,
+          "end": 2.183
         },
         {
-          "text": "Nothing",
-          "start": 2.299,
-          "end": 2.612
+          "text": "Run",
+          "start": 2.461,
+          "end": 2.647
         },
         {
-          "text": "to",
-          "start": 2.647,
-          "end": 2.705
+          "text": "by",
+          "start": 2.705,
+          "end": 2.833
         },
         {
-          "text": "tap",
-          "start": 2.763,
-          "end": 2.961
+          "text": "our",
+          "start": 2.891,
+          "end": 2.995
+        },
+        {
+          "text": "agent,",
+          "start": 3.065,
+          "end": 3.529
         },
         {
           "text": "on",
-          "start": 3.019,
-          "end": 3.088
+          "start": 3.564,
+          "end": 3.762
         },
         {
-          "text": "arrival.",
-          "start": 3.123,
-          "end": 3.947
+          "text": "Jev.",
+          "start": 3.878,
+          "end": 4.598
         }
       ]
     }
@@ -903,8 +938,8 @@
     },
     {
       "id": "end",
-      "start": 72.4
+      "start": 72.2
     }
   ],
-  "total": 76.647
+  "total": 77.098
 }

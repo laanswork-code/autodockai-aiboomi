@@ -24,7 +24,7 @@
     },
     {
       "id": "you",
-      "text": "Now see it from your side. You arrive in the morning, battery at thirty two percent, with meetings till five and a drive to Kochi after. You just type that into the app, in plain words. Jev reads it, picks your pallet, and the door opens. Your car charges on the sun, full by three, for four hundred and ninety rupees. No circling, no queue, no argument over a spot."
+      "text": "Now see it from your side. You arrive in the morning, battery at thirty two percent, with meetings till five and a drive to Kochi after. You just type that into the app, in plain words. Our agent reads it, picks your pallet, and the door opens. Your car charges on the sun, full by three, for four hundred and ninety rupees. No circling, no queue, no argument over a spot."
     },
     {
       "id": "why",
@@ -32,11 +32,11 @@
     },
     {
       "id": "jev",
-      "text": "To run it, we chose Jev, not a chat model. The latest models from OpenAI and Anthropic write one token at a time, and you still have to parse their text and hope it's valid. Jev is a System One model. All five answers come back at once, as typed values, each with a calibrated confidence. About half a second, and a fraction of a cent, per car."
+      "text": "To run it, we built our own agent framework on top of Jev, not on a chat model. The latest models from OpenAI and Anthropic write one token at a time, and you still have to parse their text and hope it's valid. Jev is a System One model. All five answers come back at once, as typed values, each with a calibrated confidence. About half a second, and a fraction of a cent, per car."
     },
     {
       "id": "how",
-      "text": "When Jev is sure, the tower simply acts. When it isn't, like this camera misread, it stops and asks a person. And if Jev is ever down, simple rules take over, and every decision is logged."
+      "text": "When our agent is sure, the tower simply acts. When it isn't, like this camera misread, it stops and asks a person. And if Jev is ever down, simple rules take over, and every decision is logged."
     },
     {
       "id": "proof",
@@ -44,7 +44,7 @@
     },
     {
       "id": "claim",
-      "text": "More cars, more chargers, on the same ground. The intelligence layer for smart parking, and for the autonomous parking that comes next. AutoDock, powered by Jev."
+      "text": "More cars, more chargers, on the same ground. The intelligence layer for smart parking, and for the autonomous parking that comes next. AutoDock, run by our own agent framework, built on Jev."
     }
   ]
 }

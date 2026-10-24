@@ -1,5 +1,5 @@
 /*
- * Booking ledger: which pallet is promised to which car, and when. Jev picks
+ * Booking ledger: which pallet is promised to which car, and when. The agent picks
  * the pallet; the ledger makes sure no pallet is ever promised twice for
  * overlapping stays, so the site cannot be overbooked. Pure, runs in the
  * browser and in Node.

@@ -117,7 +117,7 @@ function EventLog() {
   return (
     <section className="evlog" aria-label="Event log">
       <h3>Event log</h3>
-      <p className="muted evlog__flow">Scenario player → bus → Jev decision step → tower orchestrator → 3D twin</p>
+      <p className="muted evlog__flow">Scenario player → bus → agent decision step (Jev) → tower orchestrator → 3D twin</p>
       {shown.length === 0
         ? <p className="muted">No events yet.</p>
         : (
@@ -145,11 +145,11 @@ function Playback() {
 export function ControlRoom() {
   const [open, setOpen] = useState(() => !window.matchMedia('(max-width: 760px)').matches)
   return (
-    <section className={`ctl ${open ? 'is-open' : ''}`} aria-label="Jev control room">
+    <section className={`ctl ${open ? 'is-open' : ''}`} aria-label="Agent control room">
       <Playback />
       <header className="ctl__head">
         <div>
-          <p className="kicker">Jev decision layer</p>
+          <p className="kicker">Agent decision layer, built on Jev</p>
           <h2>Control room</h2>
         </div>
         <button type="button" className="chip chip--small" aria-expanded={open} onClick={() => setOpen(!open)}>{open ? 'Hide' : 'Show'}</button>

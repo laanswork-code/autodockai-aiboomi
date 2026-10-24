@@ -70,7 +70,7 @@ function Section({ n, title, lead, children }: { n: string; title: string; lead?
   )
 }
 
-/** The story of AutoDock and Jev: problem, a day on site, why Jev, the pipeline, the guardrails and the outcome. */
+/** The story of AutoDock and its agent: problem, a day on site, the agent framework on Jev, the pipeline, the guardrails and the outcome. */
 export default function HowPage() {
   const ref = useReveal()
   return (
@@ -100,7 +100,8 @@ export default function HowPage() {
           <p className="how-hero__p">
             We found {PROBLEMS.length} real parking complaints: {keralaCount} in Kerala, the rest from Delhi NCR, Mumbai,
             Bengaluru and cities across India. AutoDock rotary towers hold 20 cars each, with a 7.4 kW charger on every
-            pallet, and Jev decides where each car goes, when it charges and what it pays. One example site: two towers
+            pallet, and our proprietary agent framework, built on top of TypeSafe's Jev, decides where each car goes, when
+            it charges and what it pays. One example site: two towers
             on 4 of the 15 bays at KSUM, Kalamassery park 40 cars where 4 park today.
           </p>
           <div className="how-cta">
@@ -183,7 +184,7 @@ export default function HowPage() {
               Jev's call or overrides it with the rules answer.
             </Moment>
             <Moment t="09:04" title="A nearly empty battery">
-              A Tata Tiago EV at 12%: "Nearly empty, charge first please." Jev reads the note together with the battery,
+              A Tata Tiago EV at 12%: "Nearly empty, charge first please." Our agent has Jev read the note together with the battery,
               the stay and the grid headroom when it plans the charge.
             </Moment>
             <Moment t="09:08" title="A payment does not match" tone="warn">
@@ -202,11 +203,11 @@ export default function HowPage() {
           <p className="how-foot">Arrivals in the demo are scripted. Payment is a mock.</p>
         </Section>
 
-        <Section n="03" title="Why Jev" lead="Parking needs a decision for every car, fast and cheap, with an honest sense of how sure it is. That is what Jev is for.">
+        <Section n="03" title="Our agent framework, built on Jev" lead="Parking needs a decision for every car, fast and cheap, with an honest sense of how sure it is. Our agent framework owns the bookings, the guardrails, the operator queue and the audit; underneath, Jev gives it fast, typed, calibrated answers.">
           <div className="how-why">
             <div className="panel">
               <h3>Answers, not essays</h3>
-              <p>Jev does not write text. It picks from the options we give it, or returns a probability, and code turns that into an action. There is nothing free-form to go wrong on screen.</p>
+              <p>The model under our agent, Jev, does not write text. It picks from the options the agent gives it, or returns a probability, and the agent turns that into an action. There is nothing free-form to go wrong on screen.</p>
             </div>
             <div className="panel">
               <h3>Five questions, one request</h3>
@@ -230,7 +231,7 @@ export default function HowPage() {
           </div>
         </Section>
 
-        <Section n="04" title="Why Jev, not a chat model" lead="Chat models write an answer one token at a time. Jev is TypeSafe's first System One model: unstructured state in, typed probabilistic decisions out. It gives up free text to do that.">
+        <Section n="04" title="Why we built on Jev, not a chat model" lead="Chat models write an answer one token at a time. Jev is TypeSafe's first System One model: unstructured state in, typed probabilistic decisions out. It gives up free text to do that.">
           <Versus />
         </Section>
 
@@ -247,7 +248,7 @@ export default function HowPage() {
           </div>
         </Section>
 
-        <Section n="07" title="What it solves" lead={<>The same seeded rush hour, {base.cars} cars, with the rules policy and with Jev. <span className="tag-sim">SIMULATED</span></>}>
+        <Section n="07" title="What it solves" lead={<>The same seeded rush hour, {base.cars} cars, with the rules policy and with our agent on Jev. <span className="tag-sim">SIMULATED</span></>}>
           <div className="how-out">
             <Outcome k="Grid peak" from={`${base.gridPeakKw} kW`} to={`${jev.gridPeakKw} kW`} delta={change(base.gridPeakKw, jev.gridPeakKw)} />
             <Outcome k="Energy cost" from={inr(base.energyCostInr)} to={inr(jev.energyCostInr)} delta={change(base.energyCostInr, jev.energyCostInr)} />
@@ -261,7 +262,7 @@ export default function HowPage() {
           <div className="how-trade">
             <h3>The honest trade-off</h3>
             <p>
-              Jev waits for cheaper power, so it sells fewer kWh ({Math.round(base.kwhDelivered)} to {Math.round(jev.kwhDelivered)})
+              The agent waits for cheaper power, so it sells fewer kWh ({Math.round(base.kwhDelivered)} to {Math.round(jev.kwhDelivered)})
               and earns less ({inr(base.revenueInr)} to {inr(jev.revenueInr)}). More calls go to a person, so the average
               wait rises from {base.avgWaitMin} to {jev.avgWaitMin} min. Tariffs and behaviour are illustrative: this is a
               simulation, not a measurement. <Link to="/dashboard">All four scenarios</Link>
@@ -381,7 +382,7 @@ function Versus() {
 const STEPS = [
   { k: 'Arrival', d: 'The connected car sends battery, range and location; the app adds traffic, stay and payment; the booking ledger holds a pallet without overbooking; the gate camera recognises the plate.' },
   { k: 'Event bus', d: 'Each step publishes events and listens for the ones it needs.' },
-  { k: 'Jev decision step', d: 'On the server, where the key stays. One request, five answers.', jev: true },
+  { k: 'Agent decision step', d: 'Our agent framework on the server, where the key stays. One Jev request, five answers.', jev: true },
   { k: 'Tower orchestrator', d: 'The only part that moves the towers: rotate, dock, charge.' },
   { k: 'Digital twin', d: 'The 3D towers, the control room and the driver phone.' },
 ]

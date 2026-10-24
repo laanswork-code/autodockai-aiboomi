@@ -12,7 +12,7 @@ Numbers come from the simulation run (`ksum-3d/sim/results.json`, seed 42). Say 
 
 > From Kochi to Delhi NCR: more EVs than sockets, no spare land, and parking and charging are two separate errands. Robotaxi fleets will need unattended depots on top of that.
 >
-> **We are building the AI intelligence layer for smart parking, and for the autonomous parking infrastructure that comes next.** AutoDock already builds rotary towers with a charger in every bay. **We built the brain: Jev decides what happens to every car, bay and kilowatt, with a confidence it can stand behind, and asks a human when it isn't sure.**
+> **We are building the AI intelligence layer for smart parking, and for the autonomous parking infrastructure that comes next.** AutoDock already builds rotary towers with a charger in every bay. **We built the brain: our proprietary agent framework, built on top of Jev, decides what happens to every car, bay and kilowatt, with a confidence it can stand behind, and asks a human when it isn't sure.**
 
 *(Switch to **With AutoDock**: two towers on four bays, 40 cars.)*
 
@@ -20,16 +20,16 @@ Numbers come from the simulation run (`ksum-3d/sim/results.json`, seed 42). Say 
 
 1. Click **Rush hour**. Cars arrive one by one.
 2. Point at a decision card:
-   > Read the card aloud: the driver's note, the pallet Jev picked and why (near the door for a short stay, deep in the loop for a long one), and the charge plan with its battery level. Each answer has a confidence bar; charge and anomaly checks act on their own above the tick, bay and price always act on Jev's best answer.
+   > Read the card aloud: the driver's note, the pallet our agent picked and why (near the door for a short stay, deep in the loop for a long one), and the charge plan with its battery level. Each answer has a confidence bar; charge and anomaly checks act on their own above the tick, bay and price always act on Jev's best answer.
 3. Wait for the escalation (camera misread or pending payment):
-   > Here the camera read the plate differently from the booking. Jev isn't sure, so it doesn't guess: it goes to the operator queue. Approve.
+   > Here the camera read the plate differently from the booking. The agent isn't sure, so it doesn't guess: it goes to the operator queue. Approve.
 4. Show the tower rotating that pallet to the door, then the driver phone: dock, charging plan, pay by UPI.
 
 ## 1:50 to 2:20 · Evidence
 
-> Same simulated rush hour, same 108 cars, rules versus Jev:
+> Same simulated rush hour, same 108 cars, rules versus our agent on Jev:
 
-| Simulated, rush hour, seed 42 | Rules | Jev |
+| Simulated, rush hour, seed 42 | Rules | Agent on Jev |
 |---|---|---|
 | Grid peak | 60 kW (at the limit) | **42.6 kW (29% lower)** |
 | Energy cost | ₹2,989 | **₹2,278 (24% lower)** |
@@ -38,11 +38,11 @@ Numbers come from the simulation run (`ksum-3d/sim/results.json`, seed 42). Say 
 | Average wait | 8.4 min | 9.0 min |
 | kWh delivered | 590 | 495 |
 
-> Jev keeps the site under its grid connection by moving charging to solar and off-peak, catches every real plate and payment problem, and only calls a person about as often as the rules do. The trade-off: it sells less energy during the day. On a site where the grid connection is the bottleneck, that is the trade you want.
+> Our agent keeps the site under its grid connection by moving charging to off-peak and onto rooftop solar, catches every real plate and payment problem, and only calls a person about as often as the rules do. The trade-off: it sells less energy during the day. On a site where the grid connection is the bottleneck, that is the trade you want.
 >
 > Each decision costs about $0.00008, so we can afford to decide on every single event. If Jev is down, rules take over and every decision is in the audit log.
 
-*(If asked: the rules flag every camera misread as an anomaly; Jev tells a misread O-for-0 from a different car, and still catches wrong cars at 98%.)*
+*(If asked: the rules flag every camera misread as an anomaly; our agent, through Jev, tells a misread O-for-0 from a different car, and still catches wrong cars at 98%.)*
 
 ## 2:20 to 3:00 · Business and the ask
 

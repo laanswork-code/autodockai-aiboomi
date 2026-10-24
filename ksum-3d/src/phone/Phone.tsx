@@ -2,7 +2,7 @@
  * Driver phone mockup: connect the car, book, arrive, dock, charge, pay by UPI.
  * It shows what the decision layer means for one driver. The driver types and
  * taps nothing on the way in: the connected car shares battery, range and
- * location, Jev books a pallet for the arrival time without overbooking, and
+ * location, the AutoDock agent (built on Jev) books a pallet for the arrival time without overbooking, and
  * the gate camera recognises the car so its pallet turns to the door. With no
  * props it runs on sample data and says so. Car, traffic, other bookings and
  * the drive are simulated, and payment is a mock: nothing leaves the page.
@@ -94,7 +94,7 @@ export function Phone({ arrival, decisions, onClose, film }: PhoneProps) {
   const booking = useMemo(() => book(holds, { carId: a.id, from: a.t, to: until, prefer: d.bay.value }), [holds, a, until, d.bay.value])
   const { tower, pallet } = booking.ok ? booking.hold : d.bay.value
   const bayWhy = booking.ok && booking.moved
-    ? `Jev's first choice, tower ${d.bay.value.tower + 1} pallet ${d.bay.value.pallet + 1}, is promised to another driver then: this is the nearest free pallet`
+    ? `The agent's first choice, tower ${d.bay.value.tower + 1} pallet ${d.bay.value.pallet + 1}, is promised to another driver then: this is the nearest free pallet`
     : d.bay.why
   const plateMatches = squash(a.plateRead.text) === squash(plate)
   const rotatePct = Math.min(100, (ticks / ROTATE_TICKS) * 100)
@@ -104,7 +104,7 @@ export function Phone({ arrival, decisions, onClose, film }: PhoneProps) {
   const plan = chargeWords(a.vehicle.ev ? d.charge.value : 'no_charge', a.t)
   const b = bill(a, d.charge.value, d.price.value, note, stay)
   const upiUri = `upi://pay?pa=${PAYEE}&pn=AutoDock&am=${b.total}&cu=INR&tn=${encodeURIComponent(plate)}`
-  const source = d.bay.source === 'jev' ? 'Jev' : 'rules (fallback)'
+  const source = d.bay.source === 'jev' ? 'the AutoDock agent, on Jev' : 'rules (fallback)'
   const drive = trip(a)
   const onTheWay = step === 'connect' || step === 'plan' || step === 'booked'
 
@@ -128,7 +128,7 @@ export function Phone({ arrival, decisions, onClose, film }: PhoneProps) {
           {step === 'connect' && (
             <section className="ph-card">
               <h2>Connect your car</h2>
-              <p>Share battery, range and location with AutoDock. Jev plans your bay and charge from them, so there is nothing to type.</p>
+              <p>Share battery, range and location with AutoDock. Our agent plans your bay and charge from them, so there is nothing to type.</p>
               <p className="ph-meta">{a.vehicle.model}, {plate}</p>
               <button type="button" className="ph-primary" onClick={() => go('plan')}>Connect {a.vehicle.model}</button>
             </section>
@@ -148,7 +148,7 @@ export function Phone({ arrival, decisions, onClose, film }: PhoneProps) {
               {booking.ok ? (
                 <>
                   <div className="ph-pick">
-                    <span>Jev's pick</span>
+                    <span>Agent's pick</span>
                     <b>Tower {tower + 1}, pallet {pallet + 1}</b>
                     <span>Held {clock(a.t)} to {clock(until)}{a.vehicle.ev ? `, ${plan.title.toLowerCase()}` : ''}</span>
                   </div>

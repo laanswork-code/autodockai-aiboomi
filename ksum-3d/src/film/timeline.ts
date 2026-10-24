@@ -50,13 +50,13 @@ export function phoneAt(t: number): { step: PhoneStep; elapsedMs: number } {
 }
 
 const CAPTIONS: [number, string][] = [
-  [T.book, 'Connect the car. Jev reads battery, range, traffic and free chargers, and holds a pallet for the arrival time.'],
+  [T.book, 'Connect the car. Our agent, built on Jev, reads battery, range, traffic and free chargers, and holds a pallet for the arrival time.'],
   [T.drive, 'Just drive. The booking follows the car: nothing to type, nothing to tap.'],
   [T.gate, 'At the gate a vision model recognises the car and its plate, and checks it against the booking.'],
   [T.pallet, 'Tower 2 turns the held pallet down to the door.'],
   [T.driveIn, 'Drive onto the pallet. Engine off.'],
   [T.exit, 'Plug in. Charging starts at once; in solar hours it runs on rooftop solar at a lower rate.'],
-  [T.leave, 'Walk away. Jev watches the battery, the grid and the sun for the rest of the stay.'],
+  [T.leave, 'Walk away. Our agent watches the battery, the grid and the sun for the rest of the stay.'],
   [T.lapse, 'The pallet lifts the car into the tower and frees the door for the next driver. It keeps charging up there.'],
   [T.lift + 4, 'Full by about 14:10 for the drive to Kochi, mostly on solar.'],
   [T.pay, 'Back at 16:40: the pallet brings the car down to the door, and the bill is paid by UPI.'],

@@ -7,17 +7,17 @@
   "dir": "assets/voice-film/",
   "gapSec": 0.3,
   "lines": [
-    { "id": "intro", "at": 0.7, "text": "A driver's morning, with AutoDock and Jev." },
-    { "id": "book", "at": 5.6, "text": "The driver connects the car in the app. Jev reads the battery, the range, the traffic and the free chargers, and holds pallet nine in Tower 2 for the arrival time." },
+    { "id": "intro", "at": 0.7, "text": "A driver's morning with AutoDock, run by our own agent framework." },
+    { "id": "book", "at": 5.6, "text": "The driver connects the car in the app. Our agent reads the battery, the range, the traffic and the free chargers, and holds pallet nine in Tower 2 for the arrival time." },
     { "id": "drive", "at": 16.5, "text": "Then just drive. Nothing to type, nothing to tap. The booking follows the car." },
     { "id": "gate", "at": 29.3, "text": "At the gate, a vision model reads the plate and matches it to the booking." },
     { "id": "pallet", "at": 34.4, "text": "Tower 2 brings the held pallet down to the door." },
     { "id": "drivein", "at": 40.4, "text": "Drive onto the pallet, and switch off." },
     { "id": "plug", "at": 46.7, "text": "Plug in. Charging starts at once, on cheaper rooftop solar while the sun is up." },
-    { "id": "leave", "at": 52.2, "text": "Then walk away. Jev watches the battery, the grid and the sun." },
+    { "id": "leave", "at": 52.2, "text": "Then walk away. Our agent watches the battery, the grid and the sun." },
     { "id": "lift", "at": 58.3, "text": "The pallet lifts the car into the tower, and frees the door for the next driver." },
     { "id": "full", "at": 62.95, "text": "Full by ten past two, mostly on solar." },
     { "id": "pay", "at": 66.3, "text": "At pickup the car comes back down, and the bill is paid by UPI." },
-    { "id": "end", "at": 72.4, "text": "Book. Drive. Dock. Charge. Pay. Nothing to tap on arrival." }
+    { "id": "end", "at": 72.2, "text": "Book, drive, dock, charge, pay. Run by our agent, on Jev." }
   ]
 }
