@@ -1,4 +1,6 @@
 import { useEffect, useRef, type ReactNode } from 'react'
+import filmUrl from '../../../docs/demo/pitch-film.mp4'
+import filmPoster from '../../../docs/demo/pitch-film-poster.jpg'
 import results from '../../sim/results.json'
 import { AUTO_THRESHOLD, type SimMetrics } from '../control/types.ts'
 import { Link, NavLinks } from '../Nav.tsx'
@@ -83,6 +85,11 @@ export default function HowPage() {
           </div>
           <NavLinks />
         </header>
+
+        <section className="how-film" aria-label="Pitch film">
+          <video src={filmUrl} poster={filmPoster} controls playsInline preload="none" />
+          <p className="how-film__cap">The pitch film: 3 min 16 s, narrated.</p>
+        </section>
 
         <section className="how-hero" aria-label="The problem and the answer">
           <h2 className="how-hero__h">Kerala and India are running out of parking.</h2>
