@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { Link } from '../Nav'
+import { BoardPreview } from './Leaderboard'
 import { connect } from './net'
 import { isPlate, randomPlate } from './plates'
 import type { CarKind } from './protocol'
@@ -10,10 +11,12 @@ const PAINTS = ['#c0392b', '#1747a6', '#f2f2f0', '#1b1c1f', '#2e8b57', '#f0b91c'
 export function Login() {
   const status = useGame((s) => s.status)
   const error = useGame((s) => s.error)
-  const [name, setName] = useState('')
-  const [plate, setPlate] = useState('')
-  const [kind, setKind] = useState<CarKind>('seal')
-  const [color, setColor] = useState(PAINTS[0])
+  // after logging out, the card comes back filled in, ready to change a name or a car
+  const last = useGame((s) => s.last)
+  const [name, setName] = useState(last?.name ?? '')
+  const [plate, setPlate] = useState(last?.plate ?? '')
+  const [kind, setKind] = useState<CarKind>(last?.kind ?? 'seal')
+  const [color, setColor] = useState(last?.color ?? PAINTS[0])
   const clean = plate.toUpperCase().replace(/\s+/g, ' ').trim()
   const ok = isPlate(clean)
 
@@ -62,7 +65,8 @@ export function Login() {
         <button className="gm-primary" type="submit" disabled={!ok || status === 'connecting'}>
           {status === 'connecting' ? 'Joining…' : 'Play'}
         </button>
-        <p className="gm-keys">W A S D or arrows to move · E get in or out · P phone · M map · V camera · Shift run · Space handbrake</p>
+        <p className="gm-keys">W A S D or arrows to move · E get in or out · P phone · M map · L leaderboard · V camera · Shift run · Space handbrake</p>
+        <BoardPreview />
         <Link to="/" className="gm-back">Back to the digital twin</Link>
       </form>
     </div>

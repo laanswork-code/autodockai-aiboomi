@@ -7,7 +7,7 @@
  * the same plate and your parked car is still yours to retrieve.
  */
 
-import type { Booking, CarKind, TowerState as Tower, WorldState as World } from '../../src/game/protocol.ts'
+import type { Booking, CarKind, PlayerStats, TowerState as Tower, WorldState as World } from '../../src/game/protocol.ts'
 export type { World }
 
 export const PALLETS = 20
@@ -29,7 +29,7 @@ export function createWorld(seed: [number, number] = [6, 5]): World {
       : null)
     return { pallets, door: Math.min(n, PALLETS - 1) }
   }
-  return { towers: [tower(0, seed[0]), tower(1, seed[1])], bookings: {} }
+  return { towers: [tower(0, seed[0]), tower(1, seed[1])], bookings: {}, stats: {} }
 }
 
 const reserved = (w: World, k: number) => new Set(Object.values(w.bookings).filter((b) => b.tower === k).map((b) => b.pallet))
@@ -41,7 +41,7 @@ const freePallets = (w: World, k: 0 | 1) => {
 const chainGap = (a: number, b: number) => { const d = Math.abs(a - b) % PALLETS; return Math.min(d, PALLETS - d) }
 
 /** Reserve a pallet in the emptier tower, the one nearest its door, and turn the tower to it. */
-export function book(w: World, plate: string): Result<Booking> {
+export function book(w: World, plate: string, now = Date.now()): Result<Booking> {
   const had = w.bookings[plate]
   if (had) return had
   const free = ([0, 1] as const).map((k) => freePallets(w, k))
@@ -49,19 +49,22 @@ export function book(w: World, plate: string): Result<Booking> {
   if (!free[k].length) return { error: 'Both towers are full' }
   const door = w.towers[k].door
   const pallet = free[k].reduce((best, i) => (chainGap(i, door) < chainGap(best, door) ? i : best))
-  const b: Booking = { plate, tower: k, pallet, status: 'booked' }
+  const b: Booking = { plate, tower: k, pallet, status: 'booked', at: now }
   w.bookings[plate] = b
   w.towers[k].door = pallet
   return b
 }
 
-/** The car is on its pallet: load it, then bring the next empty pallet down for whoever comes next. */
-export function park(w: World, plate: string, car: { kind: CarKind; color: string }): Result<Booking> {
+/** The car is on its pallet: load it, score the hand-over, then bring the next empty pallet down for whoever comes next. */
+export function park(w: World, plate: string, car: { kind: CarKind; color: string }, now = Date.now(), name = plate): Result<Booking> {
   const b = w.bookings[plate]
   if (!b || b.status !== 'booked') return { error: 'No booking waiting for this car' }
   const t = w.towers[b.tower]
   t.pallets[b.pallet] = { plate, kind: car.kind, color: car.color }
   b.status = 'parked'
+  const ms = Math.max(0, now - b.at)
+  const had = w.stats[plate]
+  w.stats[plate] = { name, parks: (had?.parks ?? 0) + 1, bestMs: had ? Math.min(had.bestMs, ms) : ms }
   const next = freePallets(w, b.tower)
   if (next.length) t.door = next.reduce((best, i) => (chainGap(i, b.pallet) < chainGap(best, b.pallet) ? i : best))
   return b
@@ -95,4 +98,14 @@ export function collected(w: World, plate: string): Result<{ kind: CarKind; colo
 /** A booking that never parked is released when its driver leaves. */
 export function release(w: World, plate: string) {
   if (w.bookings[plate]?.status === 'booked') delete w.bookings[plate]
+}
+
+export interface BoardEntry extends PlayerStats { plate: string }
+
+/** Top `n` drivers: most parks first, then the fastest hand-over. */
+export function leaderboard(w: World, n = 10): BoardEntry[] {
+  return Object.entries(w.stats)
+    .map(([plate, st]) => ({ plate, ...st }))
+    .sort((a, b) => b.parks - a.parks || a.bestMs - b.bestMs)
+    .slice(0, n)
 }

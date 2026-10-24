@@ -4,7 +4,7 @@
  * you can bump into them. The body stays mounted for as long as the player
  * is here; while their car is inside a tower it waits below the ground.
  */
-import { useGLTF } from '@react-three/drei'
+import { Html, useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import { CuboidCollider, RigidBody, type RapierRigidBody } from '@react-three/rapier'
 import { useMemo, useRef, useState } from 'react'
@@ -17,6 +17,9 @@ import { remote, useGame } from './store'
 
 const SMOOTH = 12
 const AWAY = { x: 0, y: -50, z: 0 }
+/** Name tags float this high over a head, or over a car roof. */
+const TAG_FOOT = 2.15
+const TAG_CAR = 2.3
 const angleLerp = (a: number, b: number, k: number) => a + Math.atan2(Math.sin(b - a), Math.cos(b - a)) * k
 
 function Other({ info }: { info: PlayerInfo }) {
@@ -29,6 +32,7 @@ function Other({ info }: { info: PlayerInfo }) {
   const s = useRef({ x: 0, y: 0, z: 0, yaw: 0, walked: 0, moving: 0, seen: false })
   const car = useRef({ p: new THREE.Vector3(), q: new THREE.Quaternion(), seen: false })
   const target = useMemo(() => ({ p: new THREE.Vector3(), q: new THREE.Quaternion() }), [])
+  const tag = useRef<THREE.Group>(null)
 
   useFrame((_, dt) => {
     const pose = remote.get(info.id)
@@ -62,11 +66,22 @@ function Other({ info }: { info: PlayerInfo }) {
       car.current.seen = false
       body.current?.setNextKinematicTranslation(AWAY)
     }
+    // the tag rides over whatever they are: their car while driving, their head on foot
+    const driving = pose.mode === 'car' && car.current.seen
+    if (tag.current) tag.current.position.set(driving ? car.current.p.x : f.x, (driving ? car.current.p.y + TAG_CAR : f.y + TAG_FOOT), driving ? car.current.p.z : f.z)
   })
 
   return (
     <>
       <primitive object={figure.root} visible={onFoot} />
+      <group ref={tag} position={[AWAY.x, AWAY.y, AWAY.z]}>
+        <Html center distanceFactor={14} zIndexRange={[20, 0]} style={{ pointerEvents: 'none' }}>
+          <div className="gm-tag" style={{ borderColor: info.color }}>
+            <strong>{info.name}</strong>
+            <span>{info.plate}</span>
+          </div>
+        </Html>
+      </group>
       <RigidBody ref={body} type="kinematicPosition" colliders={false} position={[AWAY.x, AWAY.y, AWAY.z]}>
         <CuboidCollider args={[hero.width / 2 - 0.06, 0.4, hero.length / 2 - 0.12]} position={[0, 0.92, 0]} />
         <primitive object={hero.root} visible={hasCar} />

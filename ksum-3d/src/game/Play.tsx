@@ -4,7 +4,8 @@
  * chase camera that follows behind so no mouse is needed.
  *
  * Keys: W/S or arrows to move, A/D to turn, Shift to run, Space handbrake,
- * E to get in or out, P for the phone, M for the map, V to change the camera, R to right the car.
+ * E to get in or out, P for the phone, M for the map, L for the leaderboard, V to change the camera,
+ * R to right the car. The car will not drive until you have booked a slot.
  */
 import { useFrame, useThree } from '@react-three/fiber'
 import type { RapierRigidBody } from '@react-three/rapier'
@@ -15,7 +16,7 @@ import { Foot } from './Foot'
 import { DockingCar, GameTowers, UndockingCar } from './GameTowers'
 import { Guidance } from './Guidance'
 import { onKey } from './input'
-import { DROP_RADIUS, dropSpot, spawnSpot } from './layout'
+import { DROP_RADIUS, dropSpot, randomSpawn } from './layout'
 import { send } from './net'
 import { Others } from './Others'
 import { StaticWorld } from './StaticWorld'
@@ -63,9 +64,11 @@ export function Play() {
   const carState = useGame((s) => s.car)
   const booking = useGame(myBooking)
   const set = useGame((s) => s.set)
-  const slot = Object.keys(useGame.getState().players).length
-  const [footSpawn, setFootSpawn] = useState<Spot>(() => spawnSpot(slot).foot)
-  const [carSpawn, setCarSpawn] = useState<Spot>(() => spawnSpot(slot).car)
+  const hasBooked = useGame((s) => s.hasBooked)
+  // a different start for every login, so players do not pile up in one spot
+  const [start] = useState(() => randomSpawn())
+  const [footSpawn, setFootSpawn] = useState<Spot>(start.foot)
+  const [carSpawn, setCarSpawn] = useState<Spot>(start.car)
   const [footKey, setFootKey] = useState(0)
   const [carKey, setCarKey] = useState(0)
   const [dockFrom, setDockFrom] = useState<Spot | null>(null)
@@ -85,6 +88,8 @@ export function Play() {
       const s = useGame.getState()
       if (s.mode === 'foot' && s.car === 'world') {
         if (live.foot.distanceTo(live.car) > ENTER_RANGE) return toast('Walk up to your car to get in')
+        // no driving off until there is somewhere to park
+        if (!s.hasBooked) { s.set({ mode: 'car', phone: true }); return toast('Book a slot to start driving', 4000) }
         s.set({ mode: 'car' })
       } else if (s.mode === 'car') {
         if (Math.abs(live.speed) > 2) return toast('Slow down to get out')
@@ -97,7 +102,13 @@ export function Play() {
     })
     const offP = onKey('p', () => { const s = useGame.getState(); s.set({ phone: !s.phone }) })
     const offM = onKey('m', () => { const s = useGame.getState(); s.set({ map: !s.map }) })
-    const offEsc = onKey('escape', () => useGame.getState().set({ phone: false, map: false }))
+    const offL = onKey('l', () => { const s = useGame.getState(); s.set({ board: !s.board }) })
+    // Esc closes whatever is open first; with nothing open it brings up the pause menu
+    const offEsc = onKey('escape', () => {
+      const s = useGame.getState()
+      if (s.phone || s.map || s.board) s.set({ phone: false, map: false, board: false })
+      else s.set({ menu: !s.menu })
+    })
     const offV = onKey('v', () => { camIndex.current = (camIndex.current + 1) % CAMS.length })
     const offR = onKey('r', () => {
       const b = carBody.current
@@ -108,7 +119,7 @@ export function Play() {
       b.setLinvel({ x: 0, y: 0, z: 0 }, true)
       b.setAngvel({ x: 0, y: 0, z: 0 }, true)
     })
-    return () => { offE(); offP(); offM(); offEsc(); offV(); offR() }
+    return () => { offE(); offP(); offM(); offL(); offEsc(); offV(); offR() }
   }, [])
 
   useFrame((_, dt) => {
@@ -157,7 +168,7 @@ export function Play() {
       <Guidance />
       {mode === 'foot' && <Foot key={`f${footKey}`} color={me.color} spawn={footSpawn} />}
       {carState === 'world' && (
-        <Vehicle key={`c${carKey}`} kind={me.kind} color={me.color} plate={me.plate} spawn={carSpawn} driving={mode === 'car'} onBody={onBody} />
+        <Vehicle key={`c${carKey}`} kind={me.kind} color={me.color} plate={me.plate} spawn={carSpawn} driving={mode === 'car' && hasBooked} onBody={onBody} />
       )}
       {carState === 'docking' && booking && dockFrom && (
         <DockingCar kind={me.kind} color={me.color} plate={me.plate} tower={booking.tower} from={dockFrom} onDone={parked} />

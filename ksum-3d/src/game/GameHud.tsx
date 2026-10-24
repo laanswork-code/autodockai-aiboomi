@@ -40,7 +40,9 @@ export function GameHud() {
   const status = useGame((s) => s.status)
   const { kmh, near, metres } = useLive()
 
+  const hasBooked = useGame((s) => s.hasBooked)
   let goal = 'Press P to book a parking slot'
+  if (!b && !hasBooked && mode === 'car') goal = 'Book a slot to start driving: press P'
   if (b?.status === 'booked' && car === 'world') goal = mode === 'car' ? `Drive to Tower ${b.tower + 1} · ${metres} m` : `Get in your car · ${metres} m`
   else if (car === 'docking') goal = `Tower ${b ? b.tower + 1 : ''} is parking your car`
   else if (b?.status === 'parked') goal = `Parked on Tower ${b.tower + 1}, pallet ${b.pallet + 1} · P to retrieve`
@@ -64,7 +66,7 @@ export function GameHud() {
         </div>
       )}
       {near && <p className="gm-prompt">Press <kbd>E</kbd> to get in</p>}
-      <p className="gm-help">WASD move · E in/out · P phone · M map · V camera · Space handbrake · R reset car</p>
+      <p className="gm-help">Esc menu · WASD move · E in/out · P phone · M map · L leaderboard · V camera · Space handbrake · R reset car</p>
     </div>
   )
 }

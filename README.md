@@ -200,16 +200,20 @@ scenario player → event bus → agent framework: Jev decision step (server, ke
 `/play` turns the digital twin into a small GTA-style game where everyone online shares one world.
 
 1. **Join** with your name and vehicle number (or press **Random** for a Kerala plate), and pick a BYD Seal or Atto 3 and a paint.
+   Every login starts at a random spot on the roads around the site.
 2. **Walk** to your car and press **E** to get in. It is a real physics car (Rapier's raycast vehicle): sprung suspension,
    rear-wheel drive, brakes, handbrake, and front tyres that steer and spin with the road.
-3. **Press P** for the phone and book a slot: the server reserves a free pallet in the emptier tower and turns that tower to it.
+3. **Press P** for the phone and book a slot (the car will not drive until you have one): the server reserves a free pallet in the emptier tower and turns that tower to it.
 4. **Follow the purple route** to the **pink circle** at your tower's door. Stop inside it: you step out, the car turns
    to face the road, the shutter rolls up and it reverses onto its pallet. The tower then stacks it up and brings the next empty pallet down.
 5. **To leave,** press P and **Retrieve my car**. The pallet rides down, the car drives out to the circle, and you press E to drive off.
 
 Keyboard only, no mouse: **W A S D** or arrows move, **Shift** runs, **Space** is the handbrake, **E** gets in or out,
-**P** opens the phone, **M** shows the full map, **V** changes the camera and **R** rights a flipped car. Other players
-show as figures and solid cars you can bump into, on the road and on the radar. Bookings are kept by number plate, so a
+**P** opens the phone, **M** shows the full map, **L** the leaderboard, **V** changes the camera, **R** rights a flipped car,
+and **Esc** opens the menu to resume, log out and come back under another name or car, or leave. Other players
+show as figures and solid cars you can bump into, with a name tag over their head (or their car roof), and on the radar.
+The **leaderboard** ranks drivers by parks completed, then the fastest hand-over (booking to car on its pallet); it
+is saved on the game server and shown on the login card too. Bookings are kept by number plate, so a
 car parked under your plate is still yours when you come back.
 
 Run it with `npm run game` (the game server) next to `npm run dev`; Vite proxies `/game` to it. The server uses

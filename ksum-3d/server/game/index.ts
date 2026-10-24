@@ -8,9 +8,10 @@
  * tower doors live in ./state.ts and are pushed whenever they change.
  */
 import { createRequire } from 'node:module'
+import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { randomUUID } from 'node:crypto'
 import type { ClientMsg, PlayerInfo, Pose, ServerMsg } from '../../src/game/protocol.ts'
-import { book, collected, createWorld, normalisePlate, park, release, retrieve } from './state.ts'
+import { book, collected, createWorld, leaderboard, normalisePlate, park, release, retrieve } from './state.ts'
 
 // uWS.js 20.71's ESM wrapper points at a missing index.js; its CommonJS entry is fine.
 const uWS = createRequire(import.meta.url)('uWebSockets.js') as typeof import('uWebSockets.js')
@@ -21,6 +22,10 @@ const WORLD = 'world'
 
 interface Conn { id: string; info: PlayerInfo | null }
 const world = createWorld()
+// the leaderboard outlives restarts; bookings and parked cars do not
+const STATS = new URL('../data/game-stats.json', import.meta.url)
+if (existsSync(STATS)) { try { world.stats = JSON.parse(readFileSync(STATS, 'utf8')) } catch { /* start a fresh board */ } }
+const saveStats = () => writeFileSync(STATS, JSON.stringify(world.stats, null, 1))
 const players = new Map<string, PlayerInfo>()
 const poses = new Map<string, Pose>()
 const plates = new Set<string>()
@@ -66,12 +71,16 @@ app.ws<Conn>('/game', {
     if (!info) return
     if (msg.t === 'pose') { poses.set(me.id, msg.pose); posesDirty = true; return }
     const r = msg.t === 'book' ? book(world, info.plate)
-      : msg.t === 'park' ? park(world, info.plate, { kind: info.kind, color: info.color })
+      : msg.t === 'park' ? park(world, info.plate, { kind: info.kind, color: info.color }, Date.now(), info.name)
         : msg.t === 'retrieve' ? retrieve(world, info.plate)
           : msg.t === 'collected' ? collected(world, info.plate)
             : null
     if (r && 'error' in r) return fail(r.error)
-    if (r) { console.log(`[game] ${info.plate} ${msg.t}`); pushWorld() }
+    if (r) {
+      console.log(`[game] ${info.plate} ${msg.t}`)
+      if (msg.t === 'park') saveStats()
+      pushWorld()
+    }
   },
   close: (ws) => {
     const me = ws.getUserData()
@@ -84,6 +93,11 @@ app.ws<Conn>('/game', {
     pushWorld()
     console.log(`[game] ${me.info.name} left, ${players.size} playing`)
   },
+})
+
+// the leaderboard for the login screen, before a socket is open (Vite proxies /game here)
+app.get('/game/board', (res) => {
+  res.writeHeader('content-type', 'application/json').end(JSON.stringify(leaderboard(world)))
 })
 
 app.get('/health', (res) => {

@@ -3,7 +3,7 @@
  * VITE_GAME_URL points somewhere else when the page is hosted apart from it.
  */
 import type { ClientMsg, ServerMsg } from './protocol'
-import { live, remote, toast, useGame } from './store'
+import { live, remote, shutterTarget, toast, useGame } from './store'
 
 const POSE_MS = 66
 let ws: WebSocket | null = null
@@ -16,7 +16,7 @@ export const send = (m: ClientMsg) => { if (ws?.readyState === WebSocket.OPEN) w
 
 export function connect(hello: Extract<ClientMsg, { t: 'hello' }>) {
   const g = useGame.getState()
-  g.set({ status: 'connecting', error: null })
+  g.set({ status: 'connecting', error: null, last: { name: hello.name, plate: hello.plate, kind: hello.kind, color: hello.color } })
   ws?.close()
   const sock = new WebSocket(url())
   ws = sock
@@ -29,11 +29,24 @@ export function connect(hello: Extract<ClientMsg, { t: 'hello' }>) {
         s.set({
           status: 'playing', world: m.world,
           me: { id: m.id, name: hello.name, plate: m.plate, kind: hello.kind, color: hello.color },
+          hasBooked: !!m.world.bookings[m.plate],
           players: Object.fromEntries(m.players.map((p) => [p.id, p])),
         })
         startPoses()
         break
-      case 'world': s.set({ world: m.world }); break
+      case 'world': {
+        const plate = s.me?.plate ?? ''
+        const was = s.world?.bookings[plate]
+        const now = m.world.bookings[plate]
+        s.set({ world: m.world, hasBooked: s.hasBooked || !!now })
+        // just parked: say how long the hand-over took, and whether it is a personal best
+        if (was?.status === 'booked' && now?.status === 'parked') {
+          const secs = (Date.now() - now.at) / 1000
+          const best = m.world.stats[plate]
+          toast(best && Math.abs(best.bestMs / 1000 - secs) < 1.5 ? `Parked in ${secs.toFixed(1)} s · personal best` : `Parked in ${secs.toFixed(1)} s`, 4500)
+        }
+        break
+      }
       case 'join':
         if (m.player.id !== s.me?.id) { s.set({ players: { ...s.players, [m.player.id]: m.player } }); toast(`${m.player.name} joined`) }
         break
@@ -86,6 +99,23 @@ function startPoses() {
 
 export function disconnect() {
   window.clearInterval(poseTimer)
-  ws?.close()
+  const sock = ws
   ws = null
+  sock?.close()
+}
+
+/**
+ * Back to the login card, to come back under another name or car. The server
+ * frees a booking that was never used; a parked car stays under its plate.
+ */
+export function logout() {
+  disconnect()
+  remote.clear()
+  live.carVisible = true
+  shutterTarget[0] = 0
+  shutterTarget[1] = 0
+  useGame.getState().set({
+    status: 'login', error: null, me: null, world: null, players: {}, mode: 'foot', car: 'world',
+    phone: false, map: false, board: false, menu: false, hasBooked: false, toast: null,
+  })
 }

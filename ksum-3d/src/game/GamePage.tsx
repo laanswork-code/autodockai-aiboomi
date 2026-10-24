@@ -15,7 +15,9 @@ import { useSceneStore } from '../store/useSceneStore'
 import { GameHud } from './GameHud'
 import { GamePhone } from './GamePhone'
 import { bindInput } from './input'
+import { BoardOverlay } from './Leaderboard'
 import { Login } from './Login'
+import { PauseMenu } from './PauseMenu'
 import { FullMap } from './MapView'
 import { disconnect } from './net'
 import { Play } from './Play'
@@ -63,7 +65,9 @@ export default function GamePage() {
         <>
           <GameHud />
           <FullMap />
+          <BoardOverlay />
           <GamePhone />
+          <PauseMenu />
         </>
       )}
       {status === 'offline' && (

@@ -1,13 +1,12 @@
 import { useMemo } from 'react'
 import * as THREE from 'three'
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js'
-import { BOARD, FACADE, ROAD } from '../config/site'
-import { site } from '../data/site'
 import { blockParts, gableRoof, orientedBox } from '../lib/buildingGeo'
-import { inRect, type XZ } from '../lib/geo'
+import type { XZ } from '../lib/geo'
 import {
   corrugatedTexture, houseWallTexture, officeGlassTexture, punchedTexture, ribbonOfficeTexture, roofTexture, tileRoofTexture,
 } from '../lib/textures'
+import { drawnBuildings } from './drawnBuildings'
 
 type Style = 'glass' | 'office' | 'plaster' | 'house' | 'shed'
 
@@ -25,10 +24,6 @@ const area = (pts: readonly XZ[]) => Math.abs(pts.reduce((a, [x, z], i) => {
   const [x2, z2] = pts[(i + 1) % pts.length]
   return a + x * z2 - x2 * z
 }, 0)) / 2
-const centroid = (pts: readonly XZ[]): XZ => [
-  pts.reduce((a, p) => a + p[0], 0) / pts.length,
-  pts.reduce((a, p) => a + p[1], 0) / pts.length,
-]
 
 function styleOf(id: number, name: string | null, a: number): Style {
   if (GLASS[id]) return 'glass'
@@ -63,11 +58,7 @@ export function CityBuildings() {
       buckets.set(key, b)
     }
     const roofMat = () => new THREE.MeshStandardMaterial({ map: roofTexture(), roughness: 0.95 })
-    for (const b of site.buildings) {
-      const [cx, cz] = centroid(b.pts)
-      if (!inRect(BOARD, [cx, cz])) continue
-      // the KSUM building moved north to fit the front road; drop anything now standing on that road
-      if (Math.hypot(cx - FACADE.cx, cz - FACADE.cz) < FACADE.r + ROAD.offset + ROAD.width / 2 + 4) continue
+    for (const b of drawnBuildings()) {
       const a = area(b.pts)
       const style = styleOf(b.id, b.name, a)
       const color = PLASTER[b.id % PLASTER.length]

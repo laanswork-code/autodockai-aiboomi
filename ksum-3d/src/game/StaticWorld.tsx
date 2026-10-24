@@ -6,11 +6,11 @@
 import { CuboidCollider, RigidBody, TrimeshCollider } from '@react-three/rapier'
 import { useMemo } from 'react'
 import {
-  BOARD, FACADE, KEPT_BAYS, LEDGE_HEIGHT, MAIN_HEIGHT, MIDDLE_BLOCK, STRIP, TOWER_FALLBACK, WEST_BLOCK, bayTheta, ledgeFootprint, mainFootprint,
+  FACADE, KEPT_BAYS, LEDGE_HEIGHT, MAIN_HEIGHT, MIDDLE_BLOCK, STRIP, TOWER_FALLBACK, WEST_BLOCK, bayTheta, ledgeFootprint, mainFootprint,
 } from '../config/site'
-import { site } from '../data/site'
-import { arcPoint, inRect, yawInward, type XZ } from '../lib/geo'
+import { arcPoint, yawInward, type XZ } from '../lib/geo'
 import { Car } from '../scene/Car'
+import { drawnBuildings } from '../scene/drawnBuildings'
 import type { CarKind } from '../scene/carModels'
 import { useSceneStore } from '../store/useSceneStore'
 import { towerPlaces } from './layout'
@@ -42,9 +42,8 @@ export function StaticWorld() {
     { pts: MIDDLE_BLOCK.bottom, h: MIDDLE_BLOCK.height },
     { pts: WEST_BLOCK.bottom, h: WEST_BLOCK.height },
     { pts: ledgeFootprint(), h: LEDGE_HEIGHT },
-    ...site.buildings
-      .filter((b) => b.pts.every((p) => inRect(BOARD, p)))
-      .map((b) => ({ pts: b.pts, h: Math.max(4, b.h) })),
+    // exactly the buildings the scene draws, so nothing invisible stops you
+    ...drawnBuildings().map((b) => ({ pts: b.pts, h: Math.max(4, b.h) })),
   ]), [])
   const towers = towerPlaces(size)
   const parked = useMemo(() => KEPT_BAYS.map((bay, i) => {

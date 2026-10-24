@@ -73,7 +73,6 @@ export function KtizBuilding() {
       </mesh>
       <Entrance />
       <RoofLetters />
-      <RoofKit />
     </group>
   )
 }
@@ -396,23 +395,6 @@ function RoofLetters() {
         <boxGeometry args={[3.6, 0.12, 0.12]} />
         <meshStandardMaterial color="#8d8a84" />
       </mesh>
-    </group>
-  )
-}
-
-/** Rooftop plant boxes. */
-function RoofKit() {
-  const items: [number, number, number, number][] = [
-    [-5, -30, 6, 3], [15, -28, 8, 4], [35, -22, 5, 3],
-  ]
-  return (
-    <group>
-      {items.map(([x, z, w, d]) => (
-        <mesh key={`${x},${z}`} position={[x, MAIN_HEIGHT + 1, z]} castShadow>
-          <boxGeometry args={[w, 2, d]} />
-          <meshStandardMaterial color="#8d8a84" roughness={0.8} />
-        </mesh>
-      ))}
     </group>
   )
 }

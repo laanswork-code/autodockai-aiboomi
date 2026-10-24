@@ -25,6 +25,14 @@ interface GameState {
   phone: boolean
   /** Full-screen map (M). */
   map: boolean
+  /** Leaderboard overlay (L). */
+  board: boolean
+  /** Pause menu (Esc). */
+  menu: boolean
+  /** What the player last joined with, to fill the login card again after logging out. */
+  last: { name: string; plate: string; kind: CarKind; color: string } | null
+  /** Booked at least once this visit: until then the car will not drive. */
+  hasBooked: boolean
   /** Short line at the top of the screen, GTA style. */
   toast: string | null
   set: (patch: Partial<GameState>) => void
@@ -40,6 +48,10 @@ export const useGame = create<GameState>()((set) => ({
   car: 'world',
   phone: false,
   map: false,
+  board: false,
+  menu: false,
+  last: null,
+  hasBooked: false,
   toast: null,
   set: (patch) => set(patch),
 }))

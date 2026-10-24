@@ -1,11 +1,12 @@
 /*
  * Where things are in the game, in world metres, from the same site layout
  * the twin uses: the two towers, the pink drop circle in front of each door,
- * spawn points on the road, and a GPS route that follows the curved road.
+ * random spawn points on the roads, and a GPS route that follows the curved road.
  */
 import * as THREE from 'three'
-import { FACADE, ROAD, STRIP, STRIP_T_EAST, TOWER_FALLBACK, towerTheta } from '../config/site'
-import { arcPoint, yawOutward } from '../lib/geo'
+import { BOARD, FACADE, ROAD, STRIP, STRIP_T_EAST, TOWER_FALLBACK, towerTheta } from '../config/site'
+import { site } from '../data/site'
+import { arcPoint, clipPolyline, yawOutward, type XZ } from '../lib/geo'
 import type { TowerSize } from '../store/useSceneStore'
 
 /** Radial offset of the drop circle: on the road, just clear of the door. */
@@ -31,14 +32,34 @@ export function dropSpot(k: 0 | 1) {
   return { x, z, yaw: yawOutward(theta) }
 }
 
-/** Spawn on the road east of the towers, one slot per player so cars do not stack. */
-export function spawnSpot(slot: number) {
-  const theta = STRIP_T_EAST - (14 + (slot % 8) * 7) / (FACADE.r + ROAD_MID)
-  const [x, z] = arcPoint(FACADE, theta, ROAD_MID + 1.8)
-  const [px, pz] = arcPoint(FACADE, theta, ROAD_MID + 4.3)
-  // cars face west, toward the towers: along the road's tangent, the way the angle grows
-  const yaw = Math.atan2(-Math.sin(theta), Math.cos(theta))
-  return { car: { x, z, yaw }, foot: { x: px, z: pz, yaw } }
+/** Roads a player can start on: OSM road pieces within reach of the towers, plus the curved front road. */
+const SPAWN_REACH = 170
+const spawnRoads: XZ[][] = (() => {
+  const [tx, tz] = arcPoint(FACADE, towerTheta(0), STRIP[1])
+  const near = (p: XZ) => Math.hypot(p[0] - tx, p[1] - tz) < SPAWN_REACH
+  const osm = site.roads.filter((r) => r.w >= 5).flatMap((r) => clipPolyline(r.pts, BOARD)).filter((pts) => pts.length > 1 && pts.every(near))
+  const front = Array.from({ length: 12 }, (_, i) => arcPoint(FACADE, STRIP_T_EAST - (12 + i * 6) / (FACADE.r + ROAD_MID), ROAD_MID))
+  return [...osm, front]
+})()
+
+/**
+ * A random start on one of those roads, so players do not all appear in one
+ * spot: the car on the road facing along it, you on the verge beside it.
+ */
+export function randomSpawn(rand: () => number = Math.random) {
+  const pts = spawnRoads[Math.floor(rand() * spawnRoads.length)]
+  const i = Math.floor(rand() * (pts.length - 1))
+  const [ax, az] = pts[i]
+  const [bx, bz] = pts[i + 1]
+  const k = 0.2 + rand() * 0.6
+  const x = ax + (bx - ax) * k
+  const z = az + (bz - az) * k
+  const len = Math.hypot(bx - ax, bz - az) || 1
+  const [dx, dz] = [(bx - ax) / len, (bz - az) / len]
+  const yaw = Math.atan2(dx, dz) + (rand() < 0.5 ? Math.PI : 0)
+  // the driver's door is on the right; stand just outside it
+  const side = 2.6
+  return { car: { x, z, yaw }, foot: { x: x - Math.cos(yaw) * side, z: z + Math.sin(yaw) * side, yaw } }
 }
 
 const thetaOf = (x: number, z: number) => Math.atan2(z - FACADE.cz, x - FACADE.cx)

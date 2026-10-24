@@ -1,6 +1,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { book, collected, createWorld, normalisePlate, park, PALLETS, readyToCollect, retrieve, type World } from './state.ts'
+import { book, collected, createWorld, leaderboard, normalisePlate, park, PALLETS, readyToCollect, retrieve, type World } from './state.ts'
 
 const empty = (): World => createWorld([0, 0])
 
@@ -79,4 +79,31 @@ test('seeded cars fill the lowest pallets and the door starts on the first empty
   const w = createWorld([3, 0])
   assert.ok(w.towers[0].pallets.slice(0, 3).every((p) => p !== null))
   assert.equal(w.towers[0].door, 3)
+})
+
+test('parking records the time from booking to parked, and the leaderboard ranks by parks then best time', () => {
+  const w = createWorld([0, 0])
+  book(w, 'KL 01 A 1', 1000)
+  park(w, 'KL 01 A 1', { kind: 'seal', color: '#fff' }, 31000, 'Asha')
+  book(w, 'KL 01 A 2', 0)
+  park(w, 'KL 01 A 2', { kind: 'seal', color: '#fff' }, 20000, 'Ben')
+  assert.deepEqual(w.stats['KL 01 A 1'], { name: 'Asha', parks: 1, bestMs: 30000 })
+  // Asha parks again, faster: two parks puts her first, best time improves
+  retrieve(w, 'KL 01 A 1'); collected(w, 'KL 01 A 1')
+  book(w, 'KL 01 A 1', 50000)
+  park(w, 'KL 01 A 1', { kind: 'seal', color: '#fff' }, 62000, 'Asha')
+  assert.deepEqual(leaderboard(w).map((e) => [e.name, e.parks, e.bestMs]), [['Asha', 2, 12000], ['Ben', 1, 20000]])
+})
+
+test('the leaderboard keeps the top ten, fastest first among equal parks', () => {
+  const w = createWorld([0, 0])
+  for (let i = 0; i < 12; i++) {
+    const p = `KL 01 B ${i + 10}`
+    book(w, p, 0)
+    park(w, p, { kind: 'atto', color: '#000' }, (12 - i) * 1000, `P${i}`)
+  }
+  const top = leaderboard(w)
+  assert.equal(top.length, 10)
+  assert.equal(top[0].name, 'P11')
+  assert.ok(top.every((e, i) => i === 0 || e.bestMs >= top[i - 1].bestMs))
 })
