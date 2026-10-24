@@ -288,6 +288,8 @@ export interface TowerLoad { kind: CarKind; color: string }
 
 /** How far each tower's roller shutter is open, 0 to 1. Written by the film every frame; read here without re-rendering. */
 export const SHUTTERS: [number, number] = [0, 0]
+/** Whether each tower's `doorPallet` has reached the door. Written every frame; the game reads it to start a car's exit. */
+export const DOCKED: [boolean, boolean] = [false, false]
 
 type RotaryTowerProps = {
   /** One entry per pallet, starting from the ground pallet; null = empty pallet. */
@@ -297,12 +299,14 @@ type RotaryTowerProps = {
   controlled?: boolean
   /** Pallet to bring to the door; its car stays hidden until the pallet gets there. */
   doorPallet?: number | null
-  /** Which entry of SHUTTERS opens this tower's door. */
+  /** Which entry of SHUTTERS opens this tower's door (and of DOCKED it reports to). */
   shutterOf?: 0 | 1
+  /** Hide the door pallet's car until the pallet arrives (it is about to be driven on). Off in the game, where it rides down to be collected. */
+  hideUntilDocked?: boolean
 } & Omit<React.ComponentProps<'group'>, 'children'>
 
 /** An AutoDock rotary tower with its pallets moving on the chain loop. */
-export function RotaryTower({ load, reportSize, controlled = false, doorPallet = null, shutterOf, ...props }: RotaryTowerProps) {
+export function RotaryTower({ load, reportSize, controlled = false, doorPallet = null, shutterOf, hideUntilDocked = true, ...props }: RotaryTowerProps) {
   const { scene, materials } = useGLTF(TOWER_URL)
   const [atlas, board] = useTexture(TEX)
   const seal = useGLTF(CARS.seal.url).scene
@@ -341,11 +345,12 @@ export function RotaryTower({ load, reportSize, controlled = false, doorPallet =
       if (Math.abs(d) <= move) offset.current += d
       else { offset.current += Math.sign(d) * move; docked = false }
     } else if (!controlled && spinning) offset.current += step * SPEED
+    if (shutterOf !== undefined) DOCKED[shutterOf] = controlled && doorPallet !== null && docked
     pallets.current.forEach((g, i) => { if (g) g.position.copy(tower.pointAt(i * tower.pitch + offset.current, tmp)) })
     // The new car drives on once its pallet is at the door; one cut short by a newer target shows at once.
     const arriving = doorPallet === null ? null : carObjs.current[doorPallet] ?? null
     if (waiting.current && waiting.current !== arriving) waiting.current.visible = true
-    if (arriving) arriving.visible = docked
+    if (arriving) arriving.visible = docked || !hideUntilDocked
     waiting.current = arriving
   })
 

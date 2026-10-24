@@ -19,6 +19,7 @@ export function NavLinks({ className = 'nav' }: { className?: string }) {
       <Link to="/how">How it works</Link>
       <Link to="/dashboard">Dashboard</Link>
       <Link to="/problems">Problems</Link>
+      <Link to="/play">Play</Link>
     </nav>
   )
 }

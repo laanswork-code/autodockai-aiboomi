@@ -53,8 +53,8 @@ function CameraRig() {
   return <CameraControls ref={ref} maxPolarAngle={Math.PI * 0.49} minDistance={4} maxDistance={600} />
 }
 
-/** The site. The film drives its own camera, so it leaves out the orbit controls. */
-export function Scene({ film = false }: { film?: boolean }) {
+/** The site. The film drives its own camera, so it leaves out the orbit controls; the game draws its own towers and cars. */
+export function Scene({ film = false, parking = true }: { film?: boolean; parking?: boolean }) {
   return (
     <>
       <Lighting />
@@ -62,9 +62,11 @@ export function Scene({ film = false }: { film?: boolean }) {
       <Context />
       <Site />
       <KtizBuilding />
-      <Suspense fallback={null}>
-        <Parking />
-      </Suspense>
+      {parking && (
+        <Suspense fallback={null}>
+          <Parking />
+        </Suspense>
+      )}
       {/* the film keeps the frame clear of the power-flow overlay */}
       {!film && <EnergyFlows />}
     </>

@@ -16,5 +16,5 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true
   },
-  "include": ["server", "sim", "src/control/types.ts", "src/control/eventBus.ts", "src/control/eventBus.test.ts"]
+  "include": ["server", "sim", "src/control/types.ts", "src/control/eventBus.ts", "src/control/eventBus.test.ts", "src/game/protocol.ts"]
 }

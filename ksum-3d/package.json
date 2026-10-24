@@ -11,16 +11,20 @@
     "site": "node scripts/build-site.mjs",
     "server": "node --env-file=../.env server/index.ts",
     "sim": "node --env-file=../.env sim/run.ts",
-    "test": "node --test \"server/**/*.test.ts\" \"sim/**/*.test.ts\" \"src/control/eventBus.test.ts\" \"src/phone/plan.test.ts\" \"src/control/bookings.test.ts\" \"src/film/timeline.test.ts\"",
-    "problems": "node scripts/sync-problems.mjs"
+    "test": "node --test \"server/**/*.test.ts\" \"sim/**/*.test.ts\" \"src/control/eventBus.test.ts\" \"src/phone/plan.test.ts\" \"src/control/bookings.test.ts\" \"src/film/timeline.test.ts\" \"src/game/plates.test.ts\"",
+    "problems": "node scripts/sync-problems.mjs",
+    "game": "npx -y node@24 server/game/index.ts"
   },
   "dependencies": {
+    "@dimforge/rapier3d-compat": "^0.19.2",
     "@react-three/drei": "^10.7.9",
     "@react-three/fiber": "^9.8.2",
+    "@react-three/rapier": "^2.2.0",
     "@typesafe-ai/sdk": "^0.7.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "three": "^0.186.1",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.71.0",
     "zustand": "^5.0.16"
   },
   "devDependencies": {

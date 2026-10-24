@@ -97,6 +97,7 @@ Two more pages: **`/dashboard`** monitors the decision layer live (Jev decisions
 confidence, escalations, the simulated comparison) and **`/problems`** lists the 474 parking
 problems from the research, linked to the originals.
 **`/film`** plays the driver journey live in the browser (add `?record` for the frame-stepped mode the recorder uses).
+**`/play`** is a multiplayer parking game in the same digital twin (see [Play](#play-the-multiplayer-game) below; it needs `npm run game` too).
 
 > [!TIP]
 > No TypeSafe key? The app still runs: every decision falls back to the rules
@@ -107,9 +108,12 @@ Other commands, run from `ksum-3d/`:
 
 | Command | What it does |
 |---|---|
-| `npm test` | 63 tests, no live calls |
+| `npm test` | 74 tests, no live calls |
 | `npm run sim -- --policy both --scenario all --seed 42` | Simulated comparison; replays cached Jev answers |
 | `npm run build` | Production build |
+| `npm run game` | Multiplayer game server (uWebSockets.js on :8790, runs on Node 24) |
+| `node server/game/smoke.ts` | Two scripted players against the running game server |
+| `node scripts/play-test.mjs` | Plays `/play` end to end in Chrome and saves screenshots |
 
 Full details: [`ksum-3d/README.md`](ksum-3d/README.md).
 
@@ -191,6 +195,27 @@ scenario player → event bus → agent framework: Jev decision step (server, ke
 |---|---|
 | ![Two AutoDock towers on the KSUM parking strip](docs/pitch/img/towers.jpg) | ![Driver phone flow from arrival to payment](docs/pitch/img/driver-phone.jpg) |
 
+### Play the multiplayer game
+
+`/play` turns the digital twin into a small GTA-style game where everyone online shares one world.
+
+1. **Join** with your name and vehicle number (or press **Random** for a Kerala plate), and pick a BYD Seal or Atto 3 and a paint.
+2. **Walk** to your car and press **E** to get in. It is a real physics car (Rapier's raycast vehicle): sprung suspension,
+   rear-wheel drive, brakes, handbrake, and front tyres that steer and spin with the road.
+3. **Press P** for the phone and book a slot: the server reserves a free pallet in the emptier tower and turns that tower to it.
+4. **Follow the purple route** to the **pink circle** at your tower's door. Stop inside it: you step out, the car turns
+   to face the road, the shutter rolls up and it reverses onto its pallet. The tower then stacks it up and brings the next empty pallet down.
+5. **To leave,** press P and **Retrieve my car**. The pallet rides down, the car drives out to the circle, and you press E to drive off.
+
+Keyboard only, no mouse: **W A S D** or arrows move, **Shift** runs, **Space** is the handbrake, **E** gets in or out,
+**P** opens the phone, **M** shows the full map, **V** changes the camera and **R** rights a flipped car. Other players
+show as figures and solid cars you can bump into, on the road and on the radar. Bookings are kept by number plate, so a
+car parked under your plate is still yours when you come back.
+
+Run it with `npm run game` (the game server) next to `npm run dev`; Vite proxies `/game` to it. The server uses
+[uWebSockets.js](https://github.com/uNetworking/uWebSockets.js), whose binaries ship for even Node versions only, so the
+script runs it on Node 24 through `npx`.
+
 ## Evaluation and guardrails
 
 - **Typed answers, no generated text.** Jev returns choices and probabilities; code maps them to actions. There is nothing free-form to hallucinate into the UI.
@@ -219,6 +244,7 @@ scenario player → event bus → agent framework: Jev decision step (server, ke
 | **Decision server** | Node 25 (`node:http`, native TypeScript), `@typesafe-ai/sdk` 0.7.0, model `jev-latest` (answers came from jev-1.14.0) |
 | **Simulator** (`ksum-3d/sim/`) | Minute-by-minute engine, seeded, in TypeScript |
 | **Site model** | OpenStreetMap via the Overpass API, converted to local metres |
+| **Game** (`/play`) | `@react-three/rapier` 2 (Rapier 0.19 raycast vehicle and character controller), uWebSockets.js 20.71 on Node 24 |
 | **Research** | SerpAPI (Google web, Google News) over Reddit, forums and news |
 
 ## Models and data
