@@ -12,8 +12,8 @@ The AI never acts alone when it is unsure. If it is not confident, or something 
 
 In our simulation, this cuts the peak load on the power grid by 29% and energy costs by 24%. It also fits 40 cars, each with a charger, in the space where 4 cars park today.
 
-The data is safe to use: test bookings, public maps (OpenStreetMap) and public online posts about parking problems. We store no personal data.
+The data is safe to use: test bookings, public maps (OpenStreetMap) and public online posts about parking problems. We store no personal data, only demo number plates.
 
 ## One line
 
-Our AI decides where each car parks, when it charges and what it pays in half a second; a person checks anything it is unsure about, and in testing it cut grid peak by 29% and energy cost by 24%.
+Our AI decides where each car parks, when it charges and what it pays in half a second; a person checks anything it is unsure about, and in simulation it cut grid peak by 29% and energy cost by 24%.
