@@ -71,6 +71,8 @@
 .ph-toggle { font: 600 13px system-ui, sans-serif; background: var(--paper, rgba(250, 248, 243, .92)); color: var(--ink, #16181b); border: 1px solid var(--rule, rgba(22, 24, 27, .14)); border-radius: 10px; padding: 10px 12px; cursor: pointer; }
 .ph-toggle[aria-pressed="true"] { background: #1747a6; color: #fff; }
 .ph-device button:focus-visible { outline: 3px solid var(--ph-mark); outline-offset: 2px; }
+/* film: motion comes from the film clock through inline transforms, not from wall-time CSS animations */
+.ph-device--film .ph-card, .ph-device--film .ph-rotor__ring, .ph-device--film .ph-progress span, .ph-device--film .ph-paid svg, .ph-device--film .ph-cam__box { animation: none; transition: none; }
 @keyframes ph-step { from { opacity: 0; transform: translateX(12px); } }
 @keyframes ph-pop { from { opacity: 0; transform: scale(0.6); } }
 @keyframes ph-fade { from { opacity: 0; } }

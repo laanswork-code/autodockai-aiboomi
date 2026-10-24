@@ -24,7 +24,7 @@ const TUNE: Record<string, [number, number]> = {
 const HIDDEN = new Set(['typeMesh1', 'a10xianshiping_3'])
 const SPEED = 0.55 // m/s along the chain
 /** Chain speed when the control room sends a pallet to the door: demo-quick, so a tower answers within a few seconds. */
-const SEEK_SPEED = 5
+export const SEEK_SPEED = 5
 
 /** Pallets per tower. The model has 12; the chain loop is stretched to fit 20. */
 export const PALLETS = 20
@@ -43,6 +43,8 @@ const CAR_ON_PALLET = 0.85
 interface Part { geo: THREE.BufferGeometry; mat: THREE.Material }
 interface Prepared {
   frame: Part[]
+  /** The roller shutter at the door, kept apart so it can roll up; `top` is its upper edge. */
+  shutter: { parts: Part[]; top: number }
   pallet: Part[]
   /** Deck height relative to a pallet's centre. */
   deck: number
@@ -53,7 +55,7 @@ interface Prepared {
 const prepared = new WeakMap<THREE.Object3D, Prepared>()
 
 /** Plain float attributes (the model uses quantized ones), so geometry can be baked and stretched. */
-function toFloat(src: THREE.BufferGeometry) {
+export function toFloat(src: THREE.BufferGeometry) {
   const g = new THREE.BufferGeometry()
   for (const name of ['position', 'normal', 'uv']) {
     const a = src.getAttribute(name) as THREE.BufferAttribute | undefined
@@ -86,6 +88,9 @@ function mergeByMaterial(list: { geo: THREE.BufferGeometry; mat: THREE.Material 
 }
 
 const visibleChain = (o: THREE.Object3D) => { for (let p: THREE.Object3D | null = o; p; p = p.parent) if (!p.visible) return false; return true }
+/** Door nodes in the model ("men" is door). */
+const SHUTTER = /^(men|menzi|men2521)$/
+const inShutter = (o: THREE.Object3D) => { for (let p: THREE.Object3D | null = o; p; p = p.parent) if (SHUTTER.test(p.name)) return true; return false }
 const underPallet = (o: THREE.Object3D) => { for (let p: THREE.Object3D | null = o; p; p = p.parent) if (PALLET.test(p.name)) return p; return null }
 
 /**
@@ -208,6 +213,7 @@ function prepare(scene: THREE.Object3D, materials: Record<string, THREE.Material
 
   // Frame: bake into tower space; long members stretch, small parts and signage ride rigidly.
   const frameList: { geo: THREE.BufferGeometry; mat: THREE.Material }[] = []
+  const shutterList: { geo: THREE.BufferGeometry; mat: THREE.Material }[] = []
   root.traverse((o) => {
     const mesh = o as THREE.Mesh
     if (!mesh.isMesh || Array.isArray(mesh.material) || !visibleChain(mesh) || underPallet(mesh)) return
@@ -227,7 +233,7 @@ function prepare(scene: THREE.Object3D, materials: Record<string, THREE.Material
         if (N && y > yBot && y < yTop) { n.set(N.getX(i), N.getY(i) / kS, N.getZ(i)).normalize(); N.setXYZ(i, n.x, n.y, n.z) }
       }
     }
-    frameList.push({ geo: fitGeometry(g, cx, z, false), mat: mesh.material })
+    ;(inShutter(mesh) ? shutterList : frameList).push({ geo: fitGeometry(g, cx, z, false), mat: mesh.material })
   })
 
   // Pallet template: the ground pallet, centred on its own origin.
@@ -240,6 +246,9 @@ function prepare(scene: THREE.Object3D, materials: Record<string, THREE.Material
     palletList.push({ geo: fitGeometry(g, 0, 0, true), mat: mesh.material })
   })
   const frame = mergeByMaterial(frameList)
+  const shutterParts = mergeByMaterial(shutterList)
+  const sb = new THREE.Box3()
+  for (const p of shutterParts) { p.geo.computeBoundingBox(); sb.union(p.geo.boundingBox!) }
   const pallet = mergeByMaterial(palletList)
 
   // Deck: lowest up-facing pallet surface under the wheel lines.
@@ -259,6 +268,7 @@ function prepare(scene: THREE.Object3D, materials: Record<string, THREE.Material
   const sz = fb.getSize(new THREE.Vector3())
   const result: Prepared = {
     frame, pallet, pitch, pointAt: fittedPointAt,
+    shutter: { parts: shutterParts, top: shutterParts.length ? sb.max.y : 0 },
     deck: Number.isFinite(deck) ? deck : -0.6,
     size: { w: sz.x, d: sz.z, h: fb.max.y, front: fb.max.z },
   }
@@ -266,7 +276,18 @@ function prepare(scene: THREE.Object3D, materials: Record<string, THREE.Material
   return result
 }
 
+/** The chain loop in tower space, for scenes that drive a car onto a pallet and ride it. */
+export function useTowerLayout() {
+  const { scene, materials } = useGLTF(TOWER_URL)
+  const [atlas, board] = useTexture(TEX)
+  const t = prepare(scene, materials, atlas, board)
+  return useMemo(() => ({ pointAt: t.pointAt, deck: t.deck, pitch: t.pitch, carScale: CAR_ON_PALLET, size: t.size }), [t])
+}
+
 export interface TowerLoad { kind: CarKind; color: string }
+
+/** How far each tower's roller shutter is open, 0 to 1. Written by the film every frame; read here without re-rendering. */
+export const SHUTTERS: [number, number] = [0, 0]
 
 type RotaryTowerProps = {
   /** One entry per pallet, starting from the ground pallet; null = empty pallet. */
@@ -276,10 +297,12 @@ type RotaryTowerProps = {
   controlled?: boolean
   /** Pallet to bring to the door; its car stays hidden until the pallet gets there. */
   doorPallet?: number | null
+  /** Which entry of SHUTTERS opens this tower's door. */
+  shutterOf?: 0 | 1
 } & Omit<React.ComponentProps<'group'>, 'children'>
 
 /** An AutoDock rotary tower with its pallets moving on the chain loop. */
-export function RotaryTower({ load, reportSize, controlled = false, doorPallet = null, ...props }: RotaryTowerProps) {
+export function RotaryTower({ load, reportSize, controlled = false, doorPallet = null, shutterOf, ...props }: RotaryTowerProps) {
   const { scene, materials } = useGLTF(TOWER_URL)
   const [atlas, board] = useTexture(TEX)
   const seal = useGLTF(CARS.seal.url).scene
@@ -302,8 +325,11 @@ export function RotaryTower({ load, reportSize, controlled = false, doorPallet =
   const tmp = useMemo(() => new THREE.Vector3(), [])
   const waiting = useRef<THREE.Object3D | null>(null)
   const carObjs = useRef<(THREE.Object3D | null)[]>([])
+  const shutter = useRef<THREE.Group>(null)
   useFrame((_, dt) => {
     if (mode !== 'autodock') return // towers are hidden in Today mode
+    // the shutter rolls up into its box: squash it toward its top edge
+    if (shutter.current) shutter.current.scale.y = 1 - 0.97 * (shutterOf === undefined ? 0 : SHUTTERS[shutterOf])
     const step = Math.min(dt, 0.05)
     let docked = true
     if (controlled && doorPallet !== null) {
@@ -328,6 +354,11 @@ export function RotaryTower({ load, reportSize, controlled = false, doorPallet =
       {tower.frame.map((p) => (
         <mesh key={p.geo.uuid} geometry={p.geo} material={p.mat} castShadow receiveShadow />
       ))}
+      <group ref={shutter} position={[0, tower.shutter.top, 0]}>
+        {tower.shutter.parts.map((p) => (
+          <mesh key={p.geo.uuid} geometry={p.geo} material={p.mat} position={[0, -tower.shutter.top, 0]} castShadow receiveShadow />
+        ))}
+      </group>
       {Array.from({ length: PALLETS }, (_, i) => (
         <group key={i} ref={(g) => { pallets.current[i] = g }} position={tower.pointAt(i * tower.pitch, new THREE.Vector3()).toArray()}>
           {tower.pallet.map((p) => (

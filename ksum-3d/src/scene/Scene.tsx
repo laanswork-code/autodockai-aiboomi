@@ -53,18 +53,20 @@ function CameraRig() {
   return <CameraControls ref={ref} maxPolarAngle={Math.PI * 0.49} minDistance={4} maxDistance={600} />
 }
 
-export function Scene() {
+/** The site. The film drives its own camera, so it leaves out the orbit controls. */
+export function Scene({ film = false }: { film?: boolean }) {
   return (
     <>
       <Lighting />
-      <CameraRig />
+      {!film && <CameraRig />}
       <Context />
       <Site />
       <KtizBuilding />
       <Suspense fallback={null}>
         <Parking />
       </Suspense>
-      <EnergyFlows />
+      {/* the film keeps the frame clear of the power-flow overlay */}
+      {!film && <EnergyFlows />}
     </>
   )
 }

@@ -79,7 +79,7 @@ function Towers({ mode }: { mode: Mode }) {
   return (
     <group>
       {placed.map(({ k, t, x, z }) => (
-        <RotaryTower key={k} load={loads[k]} reportSize={k === 0} controlled={controlled} doorPallet={door[k]}
+        <RotaryTower key={k} load={loads[k]} reportSize={k === 0} controlled={controlled} doorPallet={door[k]} shutterOf={k}
           position={[x, 0.08, z]} rotation={[0, yawOutward(t), 0]} />
       ))}
       <SurfaceCars cars={keptFleet} />

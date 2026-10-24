@@ -6,12 +6,13 @@ const App = lazy(() => import('./App.tsx'))
 const ProblemsPage = lazy(() => import('./pages/ProblemsPage.tsx'))
 const DashboardPage = lazy(() => import('./pages/DashboardPage.tsx'))
 const HowPage = lazy(() => import('./pages/HowPage.tsx'))
+const FilmPage = lazy(() => import('./film/FilmPage.tsx'))
 
 export default function Root() {
   const route = useRoute()
   return (
     <Suspense fallback={<div className="page-loading">Loading…</div>}>
-      {route === '/problems' ? <ProblemsPage /> : route === '/dashboard' ? <DashboardPage /> : route === '/how' ? <HowPage /> : <App />}
+      {route === '/problems' ? <ProblemsPage /> : route === '/dashboard' ? <DashboardPage /> : route === '/how' ? <HowPage /> : route === '/film' ? <FilmPage /> : <App />}
     </Suspense>
   )
 }

@@ -4,8 +4,8 @@ import { useSyncExternalStore } from 'react'
  * A few pages, so a tiny pushState router instead of a dependency. Vite's dev
  * server (and any SPA host) serves index.html for unknown paths.
  */
-export type Route = '/' | '/how' | '/problems' | '/dashboard'
-const ROUTES: Route[] = ['/', '/how', '/problems', '/dashboard']
+export type Route = '/' | '/how' | '/problems' | '/dashboard' | '/film'
+const ROUTES: Route[] = ['/', '/how', '/problems', '/dashboard', '/film']
 
 const listeners = new Set<() => void>()
 const notify = () => listeners.forEach((l) => l())

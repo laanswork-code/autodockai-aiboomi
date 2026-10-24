@@ -19,9 +19,12 @@ export interface PhoneProps {
   arrival?: Arrival
   decisions?: DecisionSet
   onClose?: () => void
+  /** Driven from outside (the film): the step and the time spent in it. No timers run and CSS motion becomes inline transforms. */
+  film?: { step: PhoneStep; elapsedMs: number }
 }
 
-type Step = 'connect' | 'plan' | 'booked' | 'gate' | 'dock' | 'charge' | 'pay' | 'upi' | 'paid'
+export type PhoneStep = 'connect' | 'plan' | 'booked' | 'gate' | 'dock' | 'charge' | 'pay' | 'upi' | 'paid'
+type Step = PhoneStep
 const TABS: { id: Step; label: string }[] = [
   { id: 'plan', label: 'Book' },
   { id: 'dock', label: 'Dock' },
@@ -53,16 +56,18 @@ function Review({ d }: { d: Decision }) {
   return <p className="ph-review">An operator is confirming this ({Math.round(d.confidence * 100)}% sure)</p>
 }
 
-export function Phone({ arrival, decisions, onClose }: PhoneProps) {
+export function Phone({ arrival, decisions, onClose, film }: PhoneProps) {
   const demo = !arrival || !decisions
   const a = arrival ?? SAMPLE_ARRIVAL
   const d = decisions ?? SAMPLE_DECISIONS
   // a doubtful plate or payment holds the car at the gate until an operator approves
   const operatorCheck = d.anomaly.mode === 'review'
 
-  const [step, setStep] = useState<Step>('connect')
+  const [ownStep, setStep] = useState<Step>('connect')
+  const step = film?.step ?? ownStep
   const { bookedPlate: plate, plannedStayMin: stay, note } = a
-  const [elapsedMs, setElapsedMs] = useState(0)
+  const [ownElapsedMs, setElapsedMs] = useState(0)
+  const elapsedMs = film?.elapsedMs ?? ownElapsedMs
   const ticks = Math.floor(elapsedMs / TICK_MS)
 
   const go = (s: Step) => { setStep(s); setElapsedMs(0) }
@@ -70,17 +75,18 @@ export function Phone({ arrival, decisions, onClose }: PhoneProps) {
   // drives the rotation and charge animations; values are derived from ticks
   const animating = step === 'dock' || (step === 'charge' && d.charge.value === 'now')
   useEffect(() => {
-    if (!animating) return
+    if (!animating || film) return
     const t0 = performance.now()
     const id = window.setInterval(() => setElapsedMs(performance.now() - t0), TICK_MS)
     return () => window.clearInterval(id)
-  }, [animating, step])
+  }, [animating, step, film])
 
   // no taps on arrival: the drive passes, then the gate recognises the car and brings its pallet down
   useEffect(() => {
+    if (film) return
     if (step === 'booked') { const id = window.setTimeout(() => go('gate'), DRIVE_MS); return () => window.clearTimeout(id) }
     if (step === 'gate' && !operatorCheck) { const id = window.setTimeout(() => go('dock'), GATE_MS); return () => window.clearTimeout(id) }
-  }, [step, operatorCheck])
+  }, [step, operatorCheck, film])
 
   // the ledger holds a pallet for the whole stay; sample data adds other drivers' bookings
   const until = a.t + (stay ?? DEFAULT_STAY_MIN)
@@ -103,7 +109,7 @@ export function Phone({ arrival, decisions, onClose }: PhoneProps) {
   const onTheWay = step === 'connect' || step === 'plan' || step === 'booked'
 
   return (
-    <div className="ph-device" role="dialog" aria-label="Driver phone">
+    <div className={film ? 'ph-device ph-device--film' : 'ph-device'} role="dialog" aria-label="Driver phone">
       <div className="ph-notch" aria-hidden="true" />
       <div className="ph-screen">
         <header className="ph-bar">
@@ -194,13 +200,13 @@ export function Phone({ arrival, decisions, onClose }: PhoneProps) {
               <p className="ph-why">{bayWhy}</p>
               <Review d={d.bay} />
               <div className="ph-rotor" aria-hidden="true">
-                <div className="ph-rotor__ring">
+                <div className="ph-rotor__ring" style={{ transform: `rotate(${rotatePct * 3.6}deg)` }}>
                   <span className="ph-rotor__pallet" />
                 </div>
                 <b>{Math.round(rotatePct)}%</b>
               </div>
               <div className="ph-progress ph-progress--dock" role="progressbar" aria-label="Pallet rotation" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(rotatePct)}>
-                <span />
+                <span style={{ transform: `scaleX(${rotatePct / 100})` }} />
               </div>
               {rotatePct < 100
                 ? <p className="ph-instr">Pallet {pallet + 1} is turning to the door. Wait at the line.</p>

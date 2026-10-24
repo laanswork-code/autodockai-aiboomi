@@ -11,7 +11,7 @@
     "site": "node scripts/build-site.mjs",
     "server": "node --env-file=../.env server/index.ts",
     "sim": "node --env-file=../.env sim/run.ts",
-    "test": "node --test \"server/**/*.test.ts\" \"sim/**/*.test.ts\" \"src/control/eventBus.test.ts\" \"src/phone/plan.test.ts\" \"src/control/bookings.test.ts\"",
+    "test": "node --test \"server/**/*.test.ts\" \"sim/**/*.test.ts\" \"src/control/eventBus.test.ts\" \"src/phone/plan.test.ts\" \"src/control/bookings.test.ts\" \"src/film/timeline.test.ts\"",
     "problems": "node scripts/sync-problems.mjs"
   },
   "dependencies": {

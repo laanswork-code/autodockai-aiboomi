@@ -1,0 +1,64 @@
+/* /film: a dark, cinematic frame around the 3D site, in the brand's ink, sign blue and hazard yellow. */
+.film {
+  --f-ink: #0e1013; --f-glass: rgba(14, 16, 19, .82); --f-line: rgba(255, 255, 255, .14);
+  --f-text: #f4f2ec; --f-dim: #a7abb2; --f-mark: #f0b91c; --f-sign: #6f9bff;
+  position: fixed; inset: 0; background: var(--f-ink); color: var(--f-text);
+}
+.film canvas { display: block; }
+/* the site's own labels are for the explorer, not the film */
+.film .tag { display: none; }
+
+.film-ui { position: absolute; inset: 0; pointer-events: none; }
+.film-stripe { position: absolute; top: 0; left: 0; right: 0; height: 8px; background: repeating-linear-gradient(90deg, var(--f-mark) 0 56px, var(--f-ink) 56px 88px); }
+
+.film-top { position: absolute; top: 28px; left: 40px; right: 40px; display: flex; justify-content: space-between; align-items: center; }
+.film-brand, .film-clock { background: var(--f-glass); border: 1px solid var(--f-line); border-radius: 12px; padding: 10px 16px; }
+.film-brand { font-size: 20px; font-weight: 500; }
+.film-brand b { font-weight: 800; }
+.film-brand span { margin-left: 14px; padding-left: 14px; border-left: 1px solid var(--f-line); font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--f-dim); }
+.film-clock { font: 700 26px/1 ui-monospace, SFMono-Regular, Menlo, monospace; font-variant-numeric: tabular-nums; display: flex; align-items: baseline; gap: 10px; }
+.film-clock span { font: 600 12px system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--f-mark); }
+
+.film-phone { position: absolute; right: 56px; top: 50%; margin-top: -380px; display: grid; justify-items: center; gap: 12px; }
+.film-phone .ph-device { box-shadow: 0 0 0 2px #2c3036, 0 30px 80px rgba(0, 0, 0, .55); }
+.film-phone > p { margin: 0; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--f-dim); background: var(--f-glass); padding: 6px 12px; border-radius: 999px; }
+
+.film-bottom { position: absolute; left: 40px; right: 480px; bottom: 36px; display: grid; gap: 18px; }
+.film-caption {
+  margin: 0; max-width: 980px; font-size: 30px; line-height: 1.25; font-weight: 600; text-wrap: balance;
+  background: var(--f-glass); border: 1px solid var(--f-line); border-left: 4px solid var(--f-mark); border-radius: 12px;
+  padding: 16px 22px;
+}
+.film-rail { list-style: none; margin: 0; padding: 0; display: flex; gap: 8px; }
+.film-rail li {
+  display: flex; align-items: center; gap: 10px; padding: 9px 16px 9px 10px; border-radius: 999px;
+  background: var(--f-glass); border: 1px solid var(--f-line); font-size: 17px; font-weight: 600; color: var(--f-dim);
+}
+.film-rail li span { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--f-line); font-size: 13px; }
+.film-rail li.is-done { color: var(--f-text); }
+.film-rail li.is-done span { background: #2f9e5b; border-color: #2f9e5b; color: #fff; }
+.film-rail li.is-on { color: var(--f-ink); background: var(--f-mark); border-color: var(--f-mark); }
+.film-rail li.is-on span { border-color: var(--f-ink); }
+
+.film-card {
+  position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; text-align: center; gap: 18px;
+  background: radial-gradient(120% 90% at 50% 40%, rgba(14, 16, 19, .78), rgba(14, 16, 19, .96));
+}
+.film-card h1 { margin: 0; font-size: 92px; line-height: 1; letter-spacing: -0.02em; font-weight: 800; }
+.film-card p { margin: 0; font-size: 28px; color: var(--f-dim); }
+.film-card__kicker { font-size: 18px !important; font-weight: 700; letter-spacing: .3em; text-transform: uppercase; color: var(--f-mark) !important; }
+.film-card small { margin-top: 18px; font-size: 16px; color: var(--f-dim); }
+.film-card--end h1 { font-size: 76px; }
+
+.film-marker { display: grid; gap: 2px; white-space: nowrap; padding: 10px 14px; border-radius: 10px; background: var(--f-mark); color: var(--f-ink); font-size: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, .35); transform: translateY(-50%); }
+.film-marker b { font-size: 18px; }
+
+.film-vision { position: relative; width: 250px; height: 72px; transform: translate(0, 8px) rotate(6deg); }
+.film-vision__box {
+  position: absolute; inset: 0; border: 3px solid #43d17a; border-radius: 4px;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0), 0 0 22px rgba(67, 209, 122, .6);
+}
+.film-vision__label {
+  position: absolute; left: 50%; top: -42px; transform: translateX(-50%); white-space: nowrap;
+  font: 700 15px ui-monospace, SFMono-Regular, Menlo, monospace; color: #0e1013; background: #43d17a; padding: 6px 10px; border-radius: 6px;
+}
