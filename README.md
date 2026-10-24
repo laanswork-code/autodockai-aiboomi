@@ -44,7 +44,7 @@ Click a preview to open the full video with sound in GitHub's player.
 | **Tests** | 52 unit tests, no live calls |
 
 - **Pitch film:** [`docs/demo/pitch-film.mp4`](docs/demo/pitch-film.mp4) (3 min 16 s, narrated: the parking problem across Kerala and India from 474 complaints collected with SerpAPI, our solution (space and intelligence), KSUM as one example in a live digital twin, a driver's morning on the phone app, why Jev and not a chat model, how it decides, the results). Built from code in [`video/`](video) with HyperFrames and an ElevenLabs voice.
-- **Demo video:** [`docs/demo/demo.mp4`](docs/demo/demo.mp4) (2 min, screen recording of the running app: twin, control room, dashboard and problems)
+- **Demo video:** [`docs/demo/demo.mp4`](docs/demo/demo.mp4) (2 min, screen recording of the current app, no narration: the digital twin before and after the towers, a rush hour with live Jev decisions and an operator approving a flagged plate, the driver phone from arrival to charging, How it works including why Jev and not a chat model, the dashboard and the problems page). Recorded with [`video/scripts/record-demo.mjs`](video/scripts/record-demo.mjs).
 - **Pitch deck:** [`docs/pitch/deck.pdf`](docs/pitch/deck.pdf) (6 slides) · source [`docs/pitch/deck.html`](docs/pitch/deck.html)
 - **AI Impact Statement:** [`docs/AI_IMPACT.md`](docs/AI_IMPACT.md)
 - **Live demo:** run it locally in two commands (below). It needs a TypeSafe API key for live Jev decisions and falls back to rules without one.
