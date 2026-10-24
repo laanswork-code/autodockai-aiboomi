@@ -1,15 +1,18 @@
 /*
- * Driver phone mockup: connect the car, book, dock, charge, pay by UPI. It shows
- * what the decision layer means for one driver. The driver types nothing: the
- * connected car shares battery, range and location, and Jev books the bay for
- * the arrival time. With no props it runs on sample data and says so. Car and
- * traffic data are simulated and payment is a mock: nothing leaves the page.
+ * Driver phone mockup: connect the car, book, arrive, dock, charge, pay by UPI.
+ * It shows what the decision layer means for one driver. The driver types and
+ * taps nothing on the way in: the connected car shares battery, range and
+ * location, Jev books a pallet for the arrival time without overbooking, and
+ * the gate camera recognises the car so its pallet turns to the door. With no
+ * props it runs on sample data and says so. Car, traffic, other bookings and
+ * the drive are simulated, and payment is a mock: nothing leaves the page.
  */
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { book, heldAt } from '../control/bookings'
 import type { Arrival, Decision, DecisionSet } from '../control/types'
 import { QrPlaceholder } from './Qr'
 import { SAMPLE_ARRIVAL, SAMPLE_DECISIONS } from './sample'
-import { bill, CHARGER_KW, chargeWords, clock, inr, rangeKm, targetSoc, TIER_LABEL, trip } from './plan'
+import { bill, CHARGER_KW, chargeWords, clock, DEFAULT_STAY_MIN, inr, rangeKm, siteHolds, targetSoc, TIER_LABEL, trip } from './plan'
 import './phone.css'
 
 export interface PhoneProps {
@@ -18,14 +21,14 @@ export interface PhoneProps {
   onClose?: () => void
 }
 
-type Step = 'connect' | 'plan' | 'booked' | 'dock' | 'charge' | 'pay' | 'upi' | 'paid'
+type Step = 'connect' | 'plan' | 'booked' | 'gate' | 'dock' | 'charge' | 'pay' | 'upi' | 'paid'
 const TABS: { id: Step; label: string }[] = [
   { id: 'plan', label: 'Book' },
   { id: 'dock', label: 'Dock' },
   { id: 'charge', label: 'Charge' },
   { id: 'pay', label: 'Pay' },
 ]
-const TAB_OF: Record<Step, Step> = { connect: 'plan', plan: 'plan', booked: 'plan', dock: 'dock', charge: 'charge', pay: 'pay', upi: 'pay', paid: 'pay' }
+const TAB_OF: Record<Step, Step> = { connect: 'plan', plan: 'plan', booked: 'plan', gate: 'dock', dock: 'dock', charge: 'charge', pay: 'pay', upi: 'pay', paid: 'pay' }
 const PAYEE = 'autodock@upi'
 /**
  * Demo clock: one tick per 100 ms of wall time. Rotation takes 50 ticks (5 s,
@@ -36,6 +39,11 @@ const PAYEE = 'autodock@upi'
  */
 const TICK_MS = 100
 const ROTATE_TICKS = 50
+/** Demo pacing: the drive is skipped after a moment, then the gate camera recognises the car. */
+const DRIVE_MS = 3000
+const GATE_MS = 2800
+const PALLETS = 40
+const squash = (plate: string) => plate.replace(/\s/g, '').toUpperCase()
 
 const stayLabel = (m: number | null) => (m === null ? 'about 2 h (not set)' : m < 60 ? `${m} min` : `${m / 60} h`)
 
@@ -49,6 +57,8 @@ export function Phone({ arrival, decisions, onClose }: PhoneProps) {
   const demo = !arrival || !decisions
   const a = arrival ?? SAMPLE_ARRIVAL
   const d = decisions ?? SAMPLE_DECISIONS
+  // a doubtful plate or payment holds the car at the gate until an operator approves
+  const operatorCheck = d.anomaly.mode === 'review'
 
   const [step, setStep] = useState<Step>('connect')
   const { bookedPlate: plate, plannedStayMin: stay, note } = a
@@ -66,7 +76,21 @@ export function Phone({ arrival, decisions, onClose }: PhoneProps) {
     return () => window.clearInterval(id)
   }, [animating, step])
 
-  const { tower, pallet } = d.bay.value
+  // no taps on arrival: the drive passes, then the gate recognises the car and brings its pallet down
+  useEffect(() => {
+    if (step === 'booked') { const id = window.setTimeout(() => go('gate'), DRIVE_MS); return () => window.clearTimeout(id) }
+    if (step === 'gate' && !operatorCheck) { const id = window.setTimeout(() => go('dock'), GATE_MS); return () => window.clearTimeout(id) }
+  }, [step, operatorCheck])
+
+  // the ledger holds a pallet for the whole stay; sample data adds other drivers' bookings
+  const until = a.t + (stay ?? DEFAULT_STAY_MIN)
+  const holds = useMemo(() => (demo ? siteHolds(a) : []), [demo, a])
+  const booking = useMemo(() => book(holds, { carId: a.id, from: a.t, to: until, prefer: d.bay.value }), [holds, a, until, d.bay.value])
+  const { tower, pallet } = booking.ok ? booking.hold : d.bay.value
+  const bayWhy = booking.ok && booking.moved
+    ? `Jev's first choice, tower ${d.bay.value.tower + 1} pallet ${d.bay.value.pallet + 1}, is promised to another driver then: this is the nearest free pallet`
+    : d.bay.why
+  const plateMatches = squash(a.plateRead.text) === squash(plate)
   const rotatePct = Math.min(100, (ticks / ROTATE_TICKS) * 100)
   const target = targetSoc(note)
   const startSoc = a.vehicle.socPct
@@ -115,35 +139,59 @@ export function Phone({ arrival, decisions, onClose }: PhoneProps) {
                 <div><dt>Stay</dt><dd>{stayLabel(stay)}</dd></div>
                 {a.vehicle.ev && <div><dt>Charger</dt><dd>{CHARGER_KW} kW on your pallet</dd></div>}
               </dl>
-              <div className="ph-pick">
-                <span>Jev's pick</span>
-                <b>Tower {tower + 1}, pallet {pallet + 1}</b>
-                {a.vehicle.ev && <span>{plan.title}</span>}
-              </div>
-              <p className="ph-why">{d.bay.why}</p>
+              {booking.ok ? (
+                <>
+                  <div className="ph-pick">
+                    <span>Jev's pick</span>
+                    <b>Tower {tower + 1}, pallet {pallet + 1}</b>
+                    <span>Held {clock(a.t)} to {clock(until)}{a.vehicle.ev ? `, ${plan.title.toLowerCase()}` : ''}</span>
+                  </div>
+                  <p className="ph-why">{bayWhy}</p>
+                  {demo && <p className="ph-small">{heldAt(holds, a.t)} of {PALLETS} pallets already booked for {clock(a.t)}; no pallet is ever promised twice</p>}
+                </>
+              ) : (
+                <p className="ph-review">Full at {clock(a.t)}: every pallet is promised for your stay. The next one frees up at {clock(booking.nextFrom)}.</p>
+              )}
               <Review d={d.bay} />
               {d.anomaly.value.flag && <p className="ph-review">Plate or payment check: an operator will confirm at the gate</p>}
-              <p className="ph-small">Car and traffic data simulated</p>
-              <button type="button" className="ph-primary" onClick={() => go('booked')}>Book for {clock(a.t)}</button>
+              <p className="ph-small">Car, traffic and other bookings simulated</p>
+              {booking.ok && <button type="button" className="ph-primary" onClick={() => go('booked')}>Book for {clock(a.t)}</button>}
             </section>
           )}
 
           {step === 'booked' && (
             <section className="ph-card">
               <h2>Booked for {clock(a.t)}</h2>
-              <p>Tower {tower + 1}, pallet {pallet + 1} is held for you. Leave now and it will be turning to the door as you reach the gate.</p>
+              <p>Tower {tower + 1}, pallet {pallet + 1} is held for you. Just drive: there is nothing to tap when you arrive.</p>
               <dl className="ph-lines">
                 <div><dt>Drive</dt><dd>{drive.etaMin} min, {drive.km.toFixed(1)} km</dd></div>
                 <div><dt>Estimate</dt><dd>{inr(b.total)}</dd></div>
               </dl>
-              <button type="button" className="ph-primary" onClick={() => go('dock')}>I have arrived</button>
+              <p className="ph-small" role="status">On the way (demo skips the drive)</p>
+            </section>
+          )}
+
+          {step === 'gate' && (
+            <section className="ph-card">
+              <h2>At the gate</h2>
+              <div className="ph-cam" aria-hidden="true">
+                <span className="ph-cam__box">{a.plateRead.text}</span>
+                <span className="ph-cam__label">Gate camera, {Math.round(a.plateRead.ocrConfidence * 100)}% sure</span>
+              </div>
+              <dl className="ph-lines">
+                <div><dt>Location</dt><dd>At the KSUM gate</dd></div>
+                <div><dt>Plate</dt><dd>{plateMatches ? 'Matches your booking' : 'Differs from your booking'}</dd></div>
+              </dl>
+              {operatorCheck
+                ? <p className="ph-review">An operator is confirming your car ({Math.round(d.anomaly.confidence * 100)}% sure). Your pallet comes down once they approve.</p>
+                : <p className="ph-instr" role="status">Recognised. Pallet {pallet + 1} is coming down.</p>}
             </section>
           )}
 
           {step === 'dock' && (
             <section className="ph-card">
               <h2>Tower {tower + 1}, pallet {pallet + 1}</h2>
-              <p className="ph-why">{d.bay.why}</p>
+              <p className="ph-why">{bayWhy}</p>
               <Review d={d.bay} />
               <div className="ph-rotor" aria-hidden="true">
                 <div className="ph-rotor__ring">

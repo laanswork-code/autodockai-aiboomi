@@ -173,8 +173,9 @@ export default function HowPage() {
             <Moment t="08:45" title="Rush hour starts">
               12 cars in 35 minutes, chargers already busy, little sun yet. A Tata Nexon EV at 31% arrives: "Back by 6,
               need full charge." Before the drive, the driver connects the car in the app: it shares battery, range and
-              location, and with the traffic one Jev request picks the pallet, the charge plan and the price, booked for
-              the arrival time. At the gate the camera reads the plate and the tower turns that pallet to the door.
+              location, and with the traffic one Jev request picks the pallet, the charge plan and the price. The booking
+              ledger holds that pallet for the whole stay and never promises it twice. At the gate the camera recognises
+              the car and its plate, and the tower turns the pallet to the door with nothing for the driver to tap.
             </Moment>
             <Moment t="08:49" title="A camera misreads a plate" tone="warn">
               The booking says KL 07 DE 5501, the camera reads KL 07 DF 5501 and is only 55% sure. Jev weighs a misread
@@ -378,7 +379,7 @@ function Versus() {
 }
 
 const STEPS = [
-  { k: 'Arrival', d: 'The connected car sends battery, range and location; the app adds traffic, stay and payment; the gate camera reads the plate.' },
+  { k: 'Arrival', d: 'The connected car sends battery, range and location; the app adds traffic, stay and payment; the booking ledger holds a pallet without overbooking; the gate camera recognises the plate.' },
   { k: 'Event bus', d: 'Each step publishes events and listens for the ones it needs.' },
   { k: 'Jev decision step', d: 'On the server, where the key stays. One request, five answers.', jev: true },
   { k: 'Tower orchestrator', d: 'The only part that moves the towers: rotate, dock, charge.' },

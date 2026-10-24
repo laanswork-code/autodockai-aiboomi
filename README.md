@@ -41,7 +41,7 @@ Click a preview to open the full video with sound in GitHub's player.
 | **With AutoDock** | 2 towers × 20 pallets on 4 bays (57 m²): 40 cars, a 7.4 kW AC charger in every bay |
 | **Brain** | One Jev request per arriving car: bay, charge plan, price tier, plate and payment risk |
 | **Rush hour, simulated** | Grid peak 60 → 42.6 kW, energy cost ₹2,989 → ₹2,278 |
-| **Tests** | 56 unit tests, no live calls |
+| **Tests** | 60 unit tests, no live calls |
 
 - **Pitch film:** [`docs/demo/pitch-film.mp4`](docs/demo/pitch-film.mp4) (3 min 16 s, narrated: the parking problem across Kerala and India from 474 complaints collected with SerpAPI, our solution (space and intelligence), KSUM as one example in a live digital twin, a driver's morning on the phone app, why Jev and not a chat model, how it decides, the results). Built from code in [`video/`](video) with HyperFrames and an ElevenLabs voice.
 - **Demo video:** [`docs/demo/demo.mp4`](docs/demo/demo.mp4) (2 min, screen recording of the current app, no narration: the digital twin before and after the towers, a rush hour with live Jev decisions and an operator approving a flagged plate, the driver phone from arrival to charging, How it works including why Jev and not a chat model, the dashboard and the problems page). Recorded with [`video/scripts/record-demo.mjs`](video/scripts/record-demo.mjs).
@@ -92,7 +92,7 @@ Other commands, run from `ksum-3d/`:
 
 | Command | What it does |
 |---|---|
-| `npm test` | 56 tests, no live calls |
+| `npm test` | 60 tests, no live calls |
 | `npm run sim -- --policy both --scenario all --seed 42` | Simulated comparison; replays cached Jev answers |
 | `npm run build` | Production build |
 
@@ -163,8 +163,11 @@ scenario player → event bus → Jev decision step (server, key stays here) →
   answer), an event log of the pipeline, live solar and grid flows with a kW
   gauge, and a Jev cost counter.
 - **Driver phone:** the driver connects the car instead of typing a booking. Jev uses its battery, range and
-  location, plus traffic and charger availability, to pick the best pallet and book it for the arrival time; then
-  dock, charge and a mock UPI payment. Car and traffic data are simulated.
+  location, plus traffic and charger availability, to pick the best pallet. A booking ledger holds it for the
+  whole stay and never promises a pallet twice: if Jev's pick is taken it moves to the nearest free pallet, and a
+  full site offers the earliest free time instead of overbooking. On arrival the gate camera recognises the car
+  and its plate and the pallet comes down with no tap; a doubtful plate waits for an operator. Then dock, charge
+  and a mock UPI payment. Car, traffic, other drivers' bookings and the drive are simulated.
 
 | Towers on site | Driver phone |
 |---|---|
@@ -177,7 +180,7 @@ scenario player → event bus → Jev decision step (server, key stays here) →
 - **A problem always reaches a person.** A flagged plate or payment goes to review however sure Jev is. Pending payments (rated 20-40% risky by Jev) are flagged.
 - **Fallback.** Any Jev error, timeout or unparseable answer falls back to the rules policy, and the UI says so.
 - **Audit.** Every decision with its inputs and confidence is written to `server/data/audit.jsonl`.
-- **Tested.** 56 unit tests cover answer mapping, thresholds, fallback, HTTP validation, the event bus, cost counting and simulator invariants (determinism, no double-booked pallets, grid limit never exceeded).
+- **Tested.** 60 unit tests cover answer mapping, the booking ledger, thresholds, fallback, HTTP validation, the event bus, cost counting and simulator invariants (determinism, no double-booked pallets, grid limit never exceeded).
 - **Simulated comparison, labelled as such.** Same seeded day, rules vs Jev, four scenarios. Rush hour: grid peak 60 → 42.6 kW, energy cost ₹2,989 → ₹2,278, zero missed anomalies for both; Jev delivers fewer kWh (590 → 495) and less revenue. Full table and assumptions in [`ksum-3d/README.md`](ksum-3d/README.md).
 
 **Rush hour, rules vs Jev (simulated):**

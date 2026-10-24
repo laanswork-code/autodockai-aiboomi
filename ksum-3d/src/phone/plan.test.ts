@@ -2,7 +2,9 @@ import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import type { Arrival } from '../control/types.ts'
 import { SAMPLE_ARRIVAL } from './sample.ts'
-import { bill, ENERGY_INR_PER_KWH, rangeKm, SOLAR_INR_PER_KWH, trip } from './plan.ts'
+import { heldAt } from '../control/bookings.ts'
+import { PALLETS_PER_TOWER } from '../control/types.ts'
+import { bill, ENERGY_INR_PER_KWH, rangeKm, siteHolds, SOLAR_INR_PER_KWH, trip } from './plan.ts'
 
 const car = (patch: Partial<Arrival['vehicle']>, t = SAMPLE_ARRIVAL.t, id = 'a1'): Arrival =>
   ({ ...SAMPLE_ARRIVAL, id, t, vehicle: { ...SAMPLE_ARRIVAL.vehicle, ...patch } })
@@ -43,4 +45,12 @@ test('charging in solar hours bills those kWh at the lower solar rate', () => {
   const evening = bill(car({}, 18 * 60), 'now', 'standard', note, 480)
   assert.equal(evening.solarKwh, 0)
   assert.equal(bill(car({}, 11 * 60), 'wait_offpeak', 'standard', note, 720).solarKwh, 0)
+})
+
+test('simulated bookings are stable and never fill the site', () => {
+  for (const id of ['demo-1', 'a1', 'rush-7', 'x']) {
+    const a = car({}, 9 * 60, id)
+    assert.deepEqual(siteHolds(a), siteHolds(a))
+    assert.ok(heldAt(siteHolds(a), a.t) < 2 * PALLETS_PER_TOWER)
+  }
 })

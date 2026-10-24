@@ -3,7 +3,9 @@
  * phone: the charge plan in plain words, the energy estimate and the bill.
  * All prices here are demo rates, not a real tariff.
  */
+import type { Hold } from '../control/bookings'
 import type { Arrival, ChargePlan, Minute, PriceTier } from '../control/types'
+import { PALLETS_PER_TOWER } from '../control/types.ts'
 
 /** Parking rate per hour for each tier (INR, demo). */
 export const RATE_PER_HOUR: Record<PriceTier, number> = { discount: 30, standard: 40, peak: 60, surge: 90 }
@@ -73,14 +75,37 @@ export interface Trip { km: number; etaMin: number; leaveAt: Minute; traffic: 'h
  * Simulated drive to the site: distance seeded by the arrival id, speed by the
  * time of day, so the driver leaves exactly etaMin before arriving.
  */
-export function trip(a: Arrival): Trip {
+const seed = (id: string) => {
   let h = 0
-  for (const c of a.id) h = (h * 31 + c.charCodeAt(0)) >>> 0
+  for (const c of id) h = (h * 31 + c.charCodeAt(0)) >>> 0
+  return h
+}
+
+export function trip(a: Arrival): Trip {
+  const h = seed(a.id)
   const km = 3 + (h % 221) / 10
   const day = a.t % 1440
   const heavy = (day >= 8 * 60 && day < 10 * 60) || (day >= 17 * 60 && day < 19 * 60)
   const etaMin = Math.max(5, Math.round((km / (heavy ? 18 : 32)) * 60))
   return { km, etaMin, leaveAt: a.t - etaMin, traffic: heavy ? 'heavy' : 'light' }
+}
+
+/**
+ * Simulated bookings from other drivers around this arrival, seeded by its id:
+ * roughly 80% of the 40 pallets are promised to someone, never all of them.
+ */
+export function siteHolds(a: Arrival): Hold[] {
+  let h = seed(a.id) || 1
+  const rand = () => ((h = (h * 1103515245 + 12345) >>> 0) % 1000) / 1000
+  const holds: Hold[] = []
+  for (const tower of [0, 1] as const) {
+    for (let pallet = 0; pallet < PALLETS_PER_TOWER; pallet++) {
+      if (rand() > 0.8 || holds.length >= 2 * PALLETS_PER_TOWER - 4) continue
+      const from = a.t - Math.round(rand() * 180)
+      holds.push({ tower, pallet, from, to: a.t + 30 + Math.round(rand() * 450), carId: `other-${tower}-${pallet}` })
+    }
+  }
+  return holds
 }
 
 export interface Bill { hours: number; parking: number; kwh: number; solarKwh: number; energy: number; total: number }

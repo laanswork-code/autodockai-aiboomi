@@ -71,7 +71,7 @@ await click('Approve'); await wait(3500)
 await click('Driver phone'); await wait(2500)
 await p.evaluate(() => document.querySelector('.ph-device .ph-primary')?.click()); await wait(4000)
 await p.evaluate(() => document.querySelector('.ph-device .ph-primary')?.click()); await wait(2500)
-await click('I have arrived'); await wait(7000)
+await wait(12000) // drive skipped, gate recognises the car, pallet turns
 await click('I have parked'); await wait(4500)
 await click('Collect car and pay'); await wait(4000)
 await click('Close'); await wait(1500)

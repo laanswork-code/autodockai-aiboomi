@@ -30,6 +30,9 @@
 .ph-pick { display: grid; gap: 2px; background: rgba(23, 71, 166, .08); border-radius: 12px; padding: 10px 12px; font-size: 13px; color: var(--ph-muted); }
 .ph-pick b { font-size: 20px; color: var(--ph-sign); }
 .ph-small { color: var(--ph-muted); font-size: 11.5px !important; }
+.ph-cam { position: relative; height: 120px; border-radius: 12px; background: linear-gradient(180deg, #2a2e35, #15171b); display: grid; place-items: center; overflow: hidden; }
+.ph-cam__box { font: 700 15px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .06em; color: var(--ph-ink); background: #f4f1e8; padding: 6px 10px; border-radius: 4px; outline: 2px solid var(--ph-go); outline-offset: 5px; animation: ph-fade 400ms ease both; }
+.ph-cam__label { position: absolute; left: 8px; bottom: 6px; font-size: 11px; font-weight: 600; color: #c9ccd1; }
 .ph-why { color: var(--ph-muted); font-size: 12.5px !important; font-style: italic; }
 .ph-review { background: rgba(240, 185, 28, .2); border-left: 3px solid var(--ph-mark); border-radius: 6px; padding: 6px 8px; font-size: 12.5px !important; font-weight: 600; }
 .ph-primary, .ph-ghost { font: 700 15px system-ui, sans-serif; border-radius: 12px; padding: 13px; cursor: pointer; border: 0; }

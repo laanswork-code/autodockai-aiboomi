@@ -80,7 +80,8 @@ const SHOTS = {
     await p.evaluate(() => document.querySelector('.ph-device .ph-primary')?.click()); await wait(1500)
     await crop(p, 'phone-arrive', '.ph-device', 0)
     await p.evaluate(() => document.querySelector('.ph-device .ph-primary')?.click()); await wait(1500)
-    await click(p, 'I have arrived'); await wait(9000)
+    // the gate recognises the car on its own, then the pallet turns
+    await wait(15000)
     await crop(p, 'phone-dock', '.ph-device', 0)
     await click(p, 'I have parked'); await wait(6000)
     await crop(p, 'phone-charge', '.ph-device', 0)
