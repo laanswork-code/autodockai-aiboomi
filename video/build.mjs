@@ -257,11 +257,11 @@ const scenes = {
       column({ x: 120, y: 112, w: 1680, items: [
         { text: 'No circling. No queue. *No* *argument.*', t: no, size: 66 },
       ] }),
-      card({ src: S + 'phone-arrive.png', t: L(s, at(s, 'arrive')), end, x: 250, y: 240, w: 380, drift: { s: 1.02, y: 0 },
-        highlight: [{ left: 7, top: 48, width: 86, height: 12, t: L(s, at(s, 'plain')) }] }),
-      card({ src: S + 'phone-dock.png', t: L(s, at(s, 'door')) - 0.6, end, x: 770, y: 240, w: 380, drift: { s: 1.02, y: 0 } }),
-      card({ src: S + 'phone-charge.png', t: L(s, at(s, 'Your')), end, x: 1290, y: 240, w: 380, drift: { s: 1.02, y: 0 },
-        highlight: [{ left: 7, top: 33, width: 86, height: 26, t: L(s, at(s, 'full')) }] }),
+      card({ src: S + 'phone-arrive.png', t: L(s, at(s, 'arrive')), end, x: 250, y: 240, w: 380, style: 'border:none;background:transparent;border-radius:52px;', drift: { s: 1.02, y: 0 },
+        highlight: [{ left: 12, top: 47.3, width: 76, height: 12, t: L(s, at(s, 'plain')) }] }),
+      card({ src: S + 'phone-dock.png', t: L(s, at(s, 'door')) - 0.6, end, x: 770, y: 240, w: 380, style: 'border:none;background:transparent;border-radius:52px;', drift: { s: 1.02, y: 0 } }),
+      card({ src: S + 'phone-charge.png', t: L(s, at(s, 'Your')), end, x: 1290, y: 240, w: 380, style: 'border:none;background:transparent;border-radius:52px;', drift: { s: 1.02, y: 0 },
+        highlight: [{ left: 10.4, top: 32.8, width: 79.2, height: 22.6, t: L(s, at(s, 'full')) }] }),
     ]
   },
   why: () => {
@@ -279,11 +279,11 @@ const scenes = {
         { text: 'What price?', t: L(s, at(s, 'What')), size: 62 },
         { text: 'Is it the right car?', t: L(s, at(s, 'Is')), size: 62 },
       ] }),
-      plate({ x: 1010, y: 150, w: 810, t: layer, items: [
-        { text: 'What we are building', t: layer + 0.1, size: 36, weight: 600, color: '#7b7f86' },
+      plate({ x: 1000, y: 96, w: 840, t: layer, items: [
+        { text: 'What we are building', t: layer + 0.1, size: 32, weight: 600, color: '#7b7f86' },
         { text: 'The AI *intelligence* *layer*', t: L(s, at(s, 'AI')), size: 60 },
-        { text: 'for smart parking today', t: L(s, at(s, 'smart')), size: 40, weight: 600 },
-        { text: 'and the autonomous parking that comes next', t: L(s, at(s, 'autonomous')), size: 40, weight: 600 },
+        { text: 'Smart parking, today.', t: L(s, at(s, 'smart')), size: 44, weight: 700 },
+        { text: 'Autonomous parking, next.', t: L(s, at(s, 'autonomous')), size: 44, weight: 700, color: '#1747a6' },
       ] }),
     ]
   },
@@ -319,7 +319,7 @@ const scenes = {
     const fallback = L(s, at(s, 'And'))
     return [
       card({ src: S + 'how-pipe.png', t: 0.1, until: review - 0.3, x: 140, y: 200, w: 1640,
-        highlight: [{ left: 40.4, top: 5, width: 20.2, height: 39, t: 0.5 }] }),
+        highlight: [{ left: 41.1, top: 11.2, width: 17.7, height: 44.6, t: 0.5 }] }),
       column({ x: 140, y: 760, w: 1640, items: [
         { text: 'Sure? The tower simply acts.', t: L(s, at(s, 'sure')), until: review - 0.3, size: 60 },
       ] }),
@@ -328,9 +328,9 @@ const scenes = {
       column({ x: 380, y: 780, w: 1160, items: [
         { text: 'Not sure? It *asks* *a* *person.*', t: review + 0.5, until: fallback - 0.3, size: 64 },
       ] }),
-      card({ src: S + 'how-fallback.png', t: fallback, end: win.how.to - win.how.from, x: 140, y: 300, w: 1640,
-        highlight: [{ left: 2.6, top: 3, width: 47.4, height: 90, t: fallback + 0.4 }] }),
-      column({ x: 140, y: 760, w: 1640, gap: 8, items: [
+      card({ src: S + 'how-fallback.png', t: fallback, end: win.how.to - win.how.from, x: 140, y: 400, w: 1640,
+        highlight: [{ left: 0.2, top: 1, width: 48.4, height: 93, t: fallback + 0.4 }] }),
+      column({ x: 140, y: 660, w: 1640, gap: 8, items: [
         { text: 'Jev down? *Rules* take over.', t: L(s, at(s, 'rules')), size: 60 },
         { text: 'Every decision is logged.', t: L(s, at(s, 'every')), size: 44, weight: 600 },
       ] }),
@@ -345,11 +345,11 @@ const scenes = {
           { left: 2.5, top: 76.4, width: 95.5, height: 8.4, t: L(s, at(s, 'twenty')) },
           { left: 2.5, top: 59.4, width: 95.5, height: 8.4, t: L(s, at(s, 'energy')) },
         ] }),
-      column({ x: 1270, y: 200, w: 560, gap: 22, items: [
+      column({ x: 1260, y: 200, w: 620, gap: 22, items: [
         { text: 'Simulated rush hour', t: L(s, at(s, 'simulated')), until: dash - 0.3, size: 36, weight: 600, color: '#7b7f86' },
         { text: '*-29%* grid peak', t: L(s, at(s, 'twenty')), until: dash - 0.3, size: 60 },
         { text: '*-24%* energy cost', t: L(s, at(s, 'quarter')) - 0.3, until: dash - 0.3, size: 60 },
-        { text: '0 real problems missed', t: L(s, at(s, 'every')), until: dash - 0.3, size: 52 },
+        { text: '0 real problems missed', t: L(s, at(s, 'every')), until: dash - 0.3, size: 46 },
       ] }),
       shot({ src: S + 'dashboard-top.png', t: dash, cam: [
         { s: 1.0, x: 0, y: 0 },
