@@ -30,7 +30,7 @@ kilowatt. Confident decisions act on their own; uncertain ones go to a person.
 | **Rush hour, simulated** | Grid peak 60 → 42.6 kW, energy cost ₹2,989 → ₹2,262 |
 | **Tests** | 52 unit tests, no live calls |
 
-- **Demo video:** [`docs/demo/demo.mp4`](docs/demo/demo.mp4) (90 s, screen recording of the running app)
+- **Demo video:** [`docs/demo/demo.mp4`](docs/demo/demo.mp4) (104 s, screen recording of the running app: twin, control room, dashboard and problems)
 - **Pitch deck:** [`docs/pitch/deck.pdf`](docs/pitch/deck.pdf) (6 slides) · source [`docs/pitch/deck.html`](docs/pitch/deck.html)
 - **AI Impact Statement:** [`docs/AI_IMPACT.md`](docs/AI_IMPACT.md)
 - **Live demo:** run it locally in two commands (below). It needs a TypeSafe API key for live Jev decisions and falls back to rules without one.
