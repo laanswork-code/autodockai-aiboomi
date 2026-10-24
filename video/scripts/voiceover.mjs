@@ -1,20 +1,24 @@
 // Generates the narration with ElevenLabs, one file per script line, and the word timings the
 // scenes are timed against.
-//   node --env-file=../.env scripts/voiceover.mjs [lineId ...]   (no ids: every line)
-// Writes assets/voice/<id>.mp3 and assets/voice/timing.json. Lines already on disk are kept
-// unless named, so a retake costs only that line.
+//   node --env-file=../.env scripts/voiceover.mjs [--script film-script.json] [lineId ...]   (no ids: every line)
+// Writes <dir>/<id>.mp3 and <dir>/timing.json (dir from the script, assets/voice/ by default). Lines
+// already on disk are kept unless named, so a retake costs only that line. A line with `at` starts at
+// that second of the film, or after the line before it if that one runs long.
 import { mkdir, readFile, writeFile, access } from 'node:fs/promises'
 
 const key = process.env.ELEVENLABS_API_KEY
 if (!key) throw new Error('ELEVENLABS_API_KEY missing: add it to ../.env')
 
-const script = JSON.parse(await readFile(new URL('../script.json', import.meta.url), 'utf8'))
-const dir = new URL('../assets/voice/', import.meta.url)
+const args = process.argv.slice(2)
+const scriptAt = args.indexOf('--script')
+const scriptFile = scriptAt >= 0 ? args.splice(scriptAt, 2)[1] : 'script.json'
+const script = JSON.parse(await readFile(new URL(`../${scriptFile}`, import.meta.url), 'utf8'))
+const dir = new URL(`../${script.dir ?? 'assets/voice/'}`, import.meta.url)
 await mkdir(dir, { recursive: true })
 const timingFile = new URL('timing.json', dir)
 const exists = (u) => access(u).then(() => true, () => false)
 const timing = (await exists(timingFile)) ? JSON.parse(await readFile(timingFile, 'utf8')) : { lines: {} }
-const only = process.argv.slice(2)
+const only = args
 
 /** Characters with start/end times -> words with start/end times. */
 function words(alignment) {
@@ -58,7 +62,8 @@ for (const [i, line] of lines.entries()) {
 // Lay the lines end to end with a gap: absolute start of each line in the film.
 let t = script.leadInSec ?? 0.8
 timing.order = lines.map((l) => {
-  const start = +t.toFixed(3)
+  const start = +Math.max(t, l.at ?? 0).toFixed(3)
+  t = start
   t += (timing.lines[l.id]?.duration ?? 0) + script.gapSec
   return { id: l.id, start }
 })

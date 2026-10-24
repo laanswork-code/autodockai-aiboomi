@@ -26,12 +26,13 @@ towers replace part of today's surface parking strip.
 
 Click a preview to open the full video with sound in GitHub's player.
 
-**Driver journey (77 s, 3D, music):** a car books from the app, drives in with its
+**Driver journey (77 s, 3D, narrated):** a car books from the app, drives in with its
 tyres rolling, the gate camera reads its plate, Tower 2 brings the held pallet down,
 the driver plugs in and walks away, the pallet lifts the car while it charges, and it
 comes back down at pickup. The real driver app runs alongside on the same clock.
 Rendered frame by frame from the app's [`/film`](ksum-3d/src/film) page with
-[`video/scripts/record-film.mjs`](video/scripts/record-film.mjs).
+[`video/scripts/record-film.mjs`](video/scripts/record-film.mjs); ElevenLabs narration from
+[`video/film-script.json`](video/film-script.json), the same voice as the pitch film.
 
 [![Driver journey preview](docs/demo/driver-journey-preview.gif)](docs/demo/driver-journey.mp4)
 

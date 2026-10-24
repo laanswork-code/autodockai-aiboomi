@@ -1,0 +1,910 @@
+{
+  "lines": {
+    "intro": {
+      "duration": 2.879,
+      "words": [
+        {
+          "text": "A",
+          "start": 0,
+          "end": 0.093
+        },
+        {
+          "text": "driver's",
+          "start": 0.139,
+          "end": 0.499
+        },
+        {
+          "text": "morning,",
+          "start": 0.546,
+          "end": 0.929
+        },
+        {
+          "text": "with",
+          "start": 0.964,
+          "end": 1.149
+        },
+        {
+          "text": "AutoDock",
+          "start": 1.219,
+          "end": 1.8
+        },
+        {
+          "text": "and",
+          "start": 1.881,
+          "end": 2.02
+        },
+        {
+          "text": "Jev.",
+          "start": 2.113,
+          "end": 2.879
+        }
+      ]
+    },
+    "book": {
+      "duration": 10.17,
+      "words": [
+        {
+          "text": "The",
+          "start": 0,
+          "end": 0.128
+        },
+        {
+          "text": "driver",
+          "start": 0.174,
+          "end": 0.511
+        },
+        {
+          "text": "connects",
+          "start": 0.569,
+          "end": 0.917
+        },
+        {
+          "text": "the",
+          "start": 0.964,
+          "end": 1.033
+        },
+        {
+          "text": "car",
+          "start": 1.091,
+          "end": 1.347
+        },
+        {
+          "text": "in",
+          "start": 1.405,
+          "end": 1.486
+        },
+        {
+          "text": "the",
+          "start": 1.533,
+          "end": 1.614
+        },
+        {
+          "text": "app.",
+          "start": 1.73,
+          "end": 2.229
+        },
+        {
+          "text": "Jev",
+          "start": 2.554,
+          "end": 2.821
+        },
+        {
+          "text": "reads",
+          "start": 2.914,
+          "end": 3.158
+        },
+        {
+          "text": "the",
+          "start": 3.204,
+          "end": 3.274
+        },
+        {
+          "text": "battery,",
+          "start": 3.32,
+          "end": 3.855
+        },
+        {
+          "text": "the",
+          "start": 3.936,
+          "end": 4.04
+        },
+        {
+          "text": "range,",
+          "start": 4.11,
+          "end": 4.516
+        },
+        {
+          "text": "the",
+          "start": 4.586,
+          "end": 4.702
+        },
+        {
+          "text": "traffic",
+          "start": 4.748,
+          "end": 5.143
+        },
+        {
+          "text": "and",
+          "start": 5.213,
+          "end": 5.329
+        },
+        {
+          "text": "the",
+          "start": 5.375,
+          "end": 5.445
+        },
+        {
+          "text": "free",
+          "start": 5.492,
+          "end": 5.7
+        },
+        {
+          "text": "chargers,",
+          "start": 5.747,
+          "end": 6.362
+        },
+        {
+          "text": "and",
+          "start": 6.536,
+          "end": 6.664
+        },
+        {
+          "text": "holds",
+          "start": 6.722,
+          "end": 6.943
+        },
+        {
+          "text": "pallet",
+          "start": 7.024,
+          "end": 7.326
+        },
+        {
+          "text": "nine",
+          "start": 7.407,
+          "end": 7.697
+        },
+        {
+          "text": "in",
+          "start": 7.732,
+          "end": 7.802
+        },
+        {
+          "text": "Tower",
+          "start": 7.883,
+          "end": 8.185
+        },
+        {
+          "text": "2",
+          "start": 8.255,
+          "end": 8.464
+        },
+        {
+          "text": "for",
+          "start": 8.557,
+          "end": 8.661
+        },
+        {
+          "text": "the",
+          "start": 8.696,
+          "end": 8.766
+        },
+        {
+          "text": "arrival",
+          "start": 8.812,
+          "end": 9.23
+        },
+        {
+          "text": "time.",
+          "start": 9.288,
+          "end": 10.17
+        }
+      ]
+    },
+    "drive": {
+      "duration": 5.666,
+      "words": [
+        {
+          "text": "Then",
+          "start": 0,
+          "end": 0.232
+        },
+        {
+          "text": "just",
+          "start": 0.313,
+          "end": 0.557
+        },
+        {
+          "text": "drive.",
+          "start": 0.615,
+          "end": 1.161
+        },
+        {
+          "text": "Nothing",
+          "start": 1.231,
+          "end": 1.521
+        },
+        {
+          "text": "to",
+          "start": 1.567,
+          "end": 1.614
+        },
+        {
+          "text": "type,",
+          "start": 1.683,
+          "end": 2.148
+        },
+        {
+          "text": "nothing",
+          "start": 2.229,
+          "end": 2.519
+        },
+        {
+          "text": "to",
+          "start": 2.577,
+          "end": 2.635
+        },
+        {
+          "text": "tap.",
+          "start": 2.717,
+          "end": 3.251
+        },
+        {
+          "text": "The",
+          "start": 3.692,
+          "end": 3.808
+        },
+        {
+          "text": "booking",
+          "start": 3.855,
+          "end": 4.203
+        },
+        {
+          "text": "follows",
+          "start": 4.319,
+          "end": 4.679
+        },
+        {
+          "text": "the",
+          "start": 4.737,
+          "end": 4.807
+        },
+        {
+          "text": "car.",
+          "start": 4.876,
+          "end": 5.666
+        }
+      ]
+    },
+    "gate": {
+      "duration": 4.83,
+      "words": [
+        {
+          "text": "At",
+          "start": 0,
+          "end": 0.209
+        },
+        {
+          "text": "the",
+          "start": 0.255,
+          "end": 0.325
+        },
+        {
+          "text": "gate,",
+          "start": 0.383,
+          "end": 0.813
+        },
+        {
+          "text": "a",
+          "start": 0.859,
+          "end": 0.94
+        },
+        {
+          "text": "vision",
+          "start": 1.057,
+          "end": 1.37
+        },
+        {
+          "text": "model",
+          "start": 1.428,
+          "end": 1.718
+        },
+        {
+          "text": "reads",
+          "start": 1.834,
+          "end": 2.125
+        },
+        {
+          "text": "the",
+          "start": 2.194,
+          "end": 2.264
+        },
+        {
+          "text": "plate",
+          "start": 2.322,
+          "end": 2.694
+        },
+        {
+          "text": "and",
+          "start": 2.821,
+          "end": 3.019
+        },
+        {
+          "text": "matches",
+          "start": 3.077,
+          "end": 3.402
+        },
+        {
+          "text": "it",
+          "start": 3.46,
+          "end": 3.553
+        },
+        {
+          "text": "to",
+          "start": 3.599,
+          "end": 3.657
+        },
+        {
+          "text": "the",
+          "start": 3.727,
+          "end": 3.796
+        },
+        {
+          "text": "booking.",
+          "start": 3.843,
+          "end": 4.83
+        }
+      ]
+    },
+    "pallet": {
+      "duration": 3.019,
+      "words": [
+        {
+          "text": "Tower",
+          "start": 0,
+          "end": 0.383
+        },
+        {
+          "text": "2",
+          "start": 0.453,
+          "end": 0.627
+        },
+        {
+          "text": "brings",
+          "start": 0.72,
+          "end": 1.01
+        },
+        {
+          "text": "the",
+          "start": 1.068,
+          "end": 1.138
+        },
+        {
+          "text": "held",
+          "start": 1.196,
+          "end": 1.428
+        },
+        {
+          "text": "pallet",
+          "start": 1.498,
+          "end": 1.811
+        },
+        {
+          "text": "down",
+          "start": 1.869,
+          "end": 2.09
+        },
+        {
+          "text": "to",
+          "start": 2.125,
+          "end": 2.194
+        },
+        {
+          "text": "the",
+          "start": 2.252,
+          "end": 2.322
+        },
+        {
+          "text": "door.",
+          "start": 2.38,
+          "end": 3.019
+        }
+      ]
+    },
+    "drivein": {
+      "duration": 2.368,
+      "words": [
+        {
+          "text": "Drive",
+          "start": 0,
+          "end": 0.348
+        },
+        {
+          "text": "onto",
+          "start": 0.395,
+          "end": 0.557
+        },
+        {
+          "text": "the",
+          "start": 0.615,
+          "end": 0.685
+        },
+        {
+          "text": "pallet,",
+          "start": 0.731,
+          "end": 1.184
+        },
+        {
+          "text": "and",
+          "start": 1.254,
+          "end": 1.428
+        },
+        {
+          "text": "switch",
+          "start": 1.498,
+          "end": 1.823
+        },
+        {
+          "text": "off.",
+          "start": 1.892,
+          "end": 2.368
+        }
+      ]
+    },
+    "plug": {
+      "duration": 5.712,
+      "words": [
+        {
+          "text": "Plug",
+          "start": 0,
+          "end": 0.302
+        },
+        {
+          "text": "in.",
+          "start": 0.395,
+          "end": 0.673
+        },
+        {
+          "text": "Charging",
+          "start": 0.998,
+          "end": 1.428
+        },
+        {
+          "text": "starts",
+          "start": 1.498,
+          "end": 1.823
+        },
+        {
+          "text": "at",
+          "start": 1.869,
+          "end": 1.95
+        },
+        {
+          "text": "once,",
+          "start": 2.032,
+          "end": 2.45
+        },
+        {
+          "text": "on",
+          "start": 2.519,
+          "end": 2.682
+        },
+        {
+          "text": "cheaper",
+          "start": 2.752,
+          "end": 3.077
+        },
+        {
+          "text": "rooftop",
+          "start": 3.135,
+          "end": 3.587
+        },
+        {
+          "text": "solar",
+          "start": 3.669,
+          "end": 4.063
+        },
+        {
+          "text": "while",
+          "start": 4.18,
+          "end": 4.4
+        },
+        {
+          "text": "the",
+          "start": 4.435,
+          "end": 4.505
+        },
+        {
+          "text": "sun",
+          "start": 4.563,
+          "end": 4.772
+        },
+        {
+          "text": "is",
+          "start": 4.83,
+          "end": 4.934
+        },
+        {
+          "text": "up.",
+          "start": 5.016,
+          "end": 5.712
+        }
+      ]
+    },
+    "leave": {
+      "duration": 5.248,
+      "words": [
+        {
+          "text": "Then",
+          "start": 0,
+          "end": 0.372
+        },
+        {
+          "text": "walk",
+          "start": 0.522,
+          "end": 0.789
+        },
+        {
+          "text": "away.",
+          "start": 0.848,
+          "end": 1.474
+        },
+        {
+          "text": "Jev",
+          "start": 1.985,
+          "end": 2.276
+        },
+        {
+          "text": "watches",
+          "start": 2.345,
+          "end": 2.705
+        },
+        {
+          "text": "the",
+          "start": 2.752,
+          "end": 2.821
+        },
+        {
+          "text": "battery,",
+          "start": 2.868,
+          "end": 3.379
+        },
+        {
+          "text": "the",
+          "start": 3.46,
+          "end": 3.564
+        },
+        {
+          "text": "grid",
+          "start": 3.634,
+          "end": 3.936
+        },
+        {
+          "text": "and",
+          "start": 4.005,
+          "end": 4.203
+        },
+        {
+          "text": "the",
+          "start": 4.272,
+          "end": 4.354
+        },
+        {
+          "text": "sun.",
+          "start": 4.412,
+          "end": 5.248
+        }
+      ]
+    },
+    "lift": {
+      "duration": 4.505,
+      "words": [
+        {
+          "text": "The",
+          "start": 0,
+          "end": 0.151
+        },
+        {
+          "text": "pallet",
+          "start": 0.197,
+          "end": 0.476
+        },
+        {
+          "text": "lifts",
+          "start": 0.546,
+          "end": 0.836
+        },
+        {
+          "text": "the",
+          "start": 0.894,
+          "end": 0.964
+        },
+        {
+          "text": "car",
+          "start": 1.01,
+          "end": 1.231
+        },
+        {
+          "text": "into",
+          "start": 1.289,
+          "end": 1.44
+        },
+        {
+          "text": "the",
+          "start": 1.498,
+          "end": 1.567
+        },
+        {
+          "text": "tower,",
+          "start": 1.625,
+          "end": 2.067
+        },
+        {
+          "text": "and",
+          "start": 2.113,
+          "end": 2.299
+        },
+        {
+          "text": "frees",
+          "start": 2.368,
+          "end": 2.624
+        },
+        {
+          "text": "the",
+          "start": 2.67,
+          "end": 2.74
+        },
+        {
+          "text": "door",
+          "start": 2.786,
+          "end": 2.972
+        },
+        {
+          "text": "for",
+          "start": 3.019,
+          "end": 3.111
+        },
+        {
+          "text": "the",
+          "start": 3.158,
+          "end": 3.228
+        },
+        {
+          "text": "next",
+          "start": 3.309,
+          "end": 3.622
+        },
+        {
+          "text": "driver.",
+          "start": 3.669,
+          "end": 4.505
+        }
+      ]
+    },
+    "full": {
+      "duration": 3.158,
+      "words": [
+        {
+          "text": "Full",
+          "start": 0,
+          "end": 0.244
+        },
+        {
+          "text": "by",
+          "start": 0.302,
+          "end": 0.43
+        },
+        {
+          "text": "ten",
+          "start": 0.488,
+          "end": 0.697
+        },
+        {
+          "text": "past",
+          "start": 0.778,
+          "end": 1.045
+        },
+        {
+          "text": "two,",
+          "start": 1.08,
+          "end": 1.393
+        },
+        {
+          "text": "mostly",
+          "start": 1.451,
+          "end": 1.834
+        },
+        {
+          "text": "on",
+          "start": 1.904,
+          "end": 1.997
+        },
+        {
+          "text": "solar.",
+          "start": 2.09,
+          "end": 3.158
+        }
+      ]
+    },
+    "pay": {
+      "duration": 4.458,
+      "words": [
+        {
+          "text": "At",
+          "start": 0,
+          "end": 0.209
+        },
+        {
+          "text": "pickup",
+          "start": 0.267,
+          "end": 0.673
+        },
+        {
+          "text": "the",
+          "start": 0.743,
+          "end": 0.824
+        },
+        {
+          "text": "car",
+          "start": 0.871,
+          "end": 1.045
+        },
+        {
+          "text": "comes",
+          "start": 1.115,
+          "end": 1.347
+        },
+        {
+          "text": "back",
+          "start": 1.416,
+          "end": 1.614
+        },
+        {
+          "text": "down,",
+          "start": 1.683,
+          "end": 2.125
+        },
+        {
+          "text": "and",
+          "start": 2.276,
+          "end": 2.403
+        },
+        {
+          "text": "the",
+          "start": 2.45,
+          "end": 2.519
+        },
+        {
+          "text": "bill",
+          "start": 2.554,
+          "end": 2.694
+        },
+        {
+          "text": "is",
+          "start": 2.752,
+          "end": 2.821
+        },
+        {
+          "text": "paid",
+          "start": 2.891,
+          "end": 3.123
+        },
+        {
+          "text": "by",
+          "start": 3.193,
+          "end": 3.332
+        },
+        {
+          "text": "UPI.",
+          "start": 3.448,
+          "end": 4.458
+        }
+      ]
+    },
+    "end": {
+      "duration": 3.947,
+      "words": [
+        {
+          "text": "Book.",
+          "start": 0,
+          "end": 0.395
+        },
+        {
+          "text": "Drive.",
+          "start": 0.464,
+          "end": 0.917
+        },
+        {
+          "text": "Dock.",
+          "start": 0.964,
+          "end": 1.289
+        },
+        {
+          "text": "Charge.",
+          "start": 1.324,
+          "end": 1.765
+        },
+        {
+          "text": "Pay.",
+          "start": 1.811,
+          "end": 2.229
+        },
+        {
+          "text": "Nothing",
+          "start": 2.299,
+          "end": 2.612
+        },
+        {
+          "text": "to",
+          "start": 2.647,
+          "end": 2.705
+        },
+        {
+          "text": "tap",
+          "start": 2.763,
+          "end": 2.961
+        },
+        {
+          "text": "on",
+          "start": 3.019,
+          "end": 3.088
+        },
+        {
+          "text": "arrival.",
+          "start": 3.123,
+          "end": 3.947
+        }
+      ]
+    }
+  },
+  "order": [
+    {
+      "id": "intro",
+      "start": 0.8
+    },
+    {
+      "id": "book",
+      "start": 5.6
+    },
+    {
+      "id": "drive",
+      "start": 16.5
+    },
+    {
+      "id": "gate",
+      "start": 29.3
+    },
+    {
+      "id": "pallet",
+      "start": 34.43
+    },
+    {
+      "id": "drivein",
+      "start": 40.4
+    },
+    {
+      "id": "plug",
+      "start": 46.7
+    },
+    {
+      "id": "leave",
+      "start": 52.712
+    },
+    {
+      "id": "lift",
+      "start": 58.3
+    },
+    {
+      "id": "full",
+      "start": 63.105
+    },
+    {
+      "id": "pay",
+      "start": 66.563
+    },
+    {
+      "id": "end",
+      "start": 72.4
+    }
+  ],
+  "total": 76.647
+}
