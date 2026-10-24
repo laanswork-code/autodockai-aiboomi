@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react'
 import type { Arrival, Decision, DecisionSet } from '../control/types'
 import { QrPlaceholder } from './Qr'
 import { SAMPLE_ARRIVAL, SAMPLE_DECISIONS } from './sample'
-import { bill, chargeWords, clock, inr, rangeKm, targetSoc, TIER_LABEL, trip } from './plan'
+import { bill, CHARGER_KW, chargeWords, clock, inr, rangeKm, targetSoc, TIER_LABEL, trip } from './plan'
 import './phone.css'
 
 export interface PhoneProps {
@@ -26,8 +26,6 @@ const TABS: { id: Step; label: string }[] = [
   { id: 'pay', label: 'Pay' },
 ]
 const TAB_OF: Record<Step, Step> = { connect: 'plan', plan: 'plan', booked: 'plan', dock: 'dock', charge: 'charge', pay: 'pay', upi: 'pay', paid: 'pay' }
-/** The 7.4 kW AC charger every pallet has. */
-const CHARGER_KW = 7.4
 const PAYEE = 'autodock@upi'
 /**
  * Demo clock: one tick per 100 ms of wall time. Rotation takes 50 ticks (5 s,
@@ -182,6 +180,7 @@ export function Phone({ arrival, decisions, onClose }: PhoneProps) {
               <dl className="ph-lines">
                 <div><dt>Energy</dt><dd>{b.kwh.toFixed(1)} kWh</dd></div>
                 <div><dt>Charging estimate</dt><dd>{inr(b.energy)}</dd></div>
+                {b.solarKwh > 0 && <div><dt>At the solar rate</dt><dd>{b.solarKwh.toFixed(1)} kWh</dd></div>}
               </dl>
               <p className="ph-why">{d.charge.why}</p>
               <button type="button" className="ph-primary" onClick={() => go('pay')}>Collect car and pay</button>

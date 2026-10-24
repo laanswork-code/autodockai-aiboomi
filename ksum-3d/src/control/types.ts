@@ -71,7 +71,7 @@ export interface SiteState {
 
 export type ScenarioName = 'normal' | 'rush_hour' | 'power_cut' | 'robotaxi_fleet'
 
-export type ChargePlan = 'now' | 'wait_solar' | 'wait_offpeak' | 'no_charge'
+export type ChargePlan = 'now' | 'wait_offpeak' | 'no_charge'
 export type PriceTier = 'discount' | 'standard' | 'peak' | 'surge'
 
 export interface DecisionValues {

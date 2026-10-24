@@ -4,7 +4,7 @@ import type { DecisionKind, DecisionValues, Minute } from './types.ts'
 export const KIND_LABEL: Record<DecisionKind, string> = { bay: 'Bay', charge: 'Charge', price: 'Price', anomaly: 'Anomaly' }
 
 const CHARGE: Record<DecisionValues['charge'], string> = {
-  now: 'Charge now', wait_solar: 'Wait for solar', wait_offpeak: 'Wait for off-peak', no_charge: 'No charge',
+  now: 'Charge now', wait_offpeak: 'Wait for off-peak', no_charge: 'No charge',
 }
 const PRICE: Record<DecisionValues['price'], string> = { discount: 'Discount', standard: 'Standard', peak: 'Peak', surge: 'Surge' }
 const pct = (p: number) => `${Math.round(p * 100)}%`

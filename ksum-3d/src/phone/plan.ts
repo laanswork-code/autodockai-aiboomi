@@ -9,7 +9,11 @@ import type { Arrival, ChargePlan, Minute, PriceTier } from '../control/types'
 export const RATE_PER_HOUR: Record<PriceTier, number> = { discount: 30, standard: 40, peak: 60, surge: 90 }
 /** Energy rate charged to the driver (INR per kWh, demo). */
 export const ENERGY_INR_PER_KWH = 18
-/** When the phone tells the driver a deferred charge starts. Demo site constants. */
+/** Lower rate for energy delivered in solar hours, when the rooftop panels carry the chargers (demo). */
+export const SOLAR_INR_PER_KWH = 12
+/** One pallet charger (kW). */
+export const CHARGER_KW = 7.4
+/** Solar hours and the off-peak start the phone tells the driver about. Demo site constants. */
 export const SOLAR_FROM: Minute = 10 * 60
 export const SOLAR_UNTIL: Minute = 16 * 60
 export const OFF_PEAK_FROM: Minute = 22 * 60
@@ -35,19 +39,22 @@ export function kwhNeeded(arrival: Arrival, plan: ChargePlan, note: string) {
   return (gap / 100) * arrival.vehicle.batteryKwh
 }
 
+const inSolar = (day: Minute) => day >= SOLAR_FROM && day < SOLAR_UNTIL
+
 /** Next time of day at or after t that the clock reads `at`. */
 const nextAt = (t: Minute, at: Minute) => (t % 1440 <= at ? t - (t % 1440) + at : t - (t % 1440) + 1440 + at)
 
 /** The charge decision as one sentence the driver understands. */
 export function chargeWords(plan: ChargePlan, t: Minute): { title: string; detail: string } {
   switch (plan) {
-    case 'now': return { title: 'Charging now', detail: 'Your car started charging as soon as it was parked.' }
-    case 'wait_solar': {
+    case 'now': {
       const day = t % 1440
-      const detail = day >= SOLAR_FROM && day < SOLAR_UNTIL
-        ? 'Charging starts as soon as the roof panels have spare output, usually within the hour.'
-        : `Charging starts around ${clock(nextAt(t, SOLAR_FROM))} when the roof panels pick up.`
-      return { title: 'Waiting for solar', detail }
+      const detail = inSolar(day)
+        ? 'Your car started charging as soon as it was parked, on rooftop solar at the lower solar rate.'
+        : day < SOLAR_FROM
+          ? `Your car started charging as soon as it was parked. From ${clock(SOLAR_FROM)} it runs on rooftop solar at the lower rate.`
+          : 'Your car started charging as soon as it was parked.'
+      return { title: 'Charging now', detail }
     }
     case 'wait_offpeak': return { title: 'Waiting for off-peak', detail: `Charging starts at ${clock(nextAt(t, OFF_PEAK_FROM))} on the cheaper night tariff.` }
     case 'no_charge': return { title: 'Not charging', detail: 'No charge planned for this stay.' }
@@ -76,12 +83,25 @@ export function trip(a: Arrival): Trip {
   return { km, etaMin, leaveAt: a.t - etaMin, traffic: heavy ? 'heavy' : 'light' }
 }
 
-export interface Bill { hours: number; parking: number; kwh: number; energy: number; total: number }
+export interface Bill { hours: number; parking: number; kwh: number; solarKwh: number; energy: number; total: number }
+
+/** kWh of a charge started now that land in solar hours, at the full charger rate. */
+function solarShare(t: Minute, kwh: number) {
+  let left = kwh
+  let solar = 0
+  for (let m = t; left > 1e-9; m++) {
+    const e = Math.min(left, CHARGER_KW / 60)
+    if (inSolar(m % 1440)) solar += e
+    left -= e
+  }
+  return solar
+}
 
 export function bill(arrival: Arrival, plan: ChargePlan, tier: PriceTier, note: string, stayMin: number | null): Bill {
   const hours = Math.max(1, Math.ceil((stayMin ?? DEFAULT_STAY_MIN) / 60))
   const parking = hours * RATE_PER_HOUR[tier]
   const kwh = kwhNeeded(arrival, plan, note)
-  const energy = kwh * ENERGY_INR_PER_KWH
-  return { hours, parking, kwh, energy, total: Math.round(parking + energy) }
+  const solarKwh = plan === 'now' ? solarShare(arrival.t, kwh) : 0
+  const energy = solarKwh * SOLAR_INR_PER_KWH + (kwh - solarKwh) * ENERGY_INR_PER_KWH
+  return { hours, parking, kwh, solarKwh, energy, total: Math.round(parking + energy) }
 }

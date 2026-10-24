@@ -159,10 +159,9 @@ export function jevState(arrival: Arrival, state: SiteState) {
 }
 
 export const CHARGE_CRITERIA = {
-  now: 'Start charging as soon as the car is parked: the battery is low or the driver leaves before solar or off-peak power would give enough charge, and `energy.grid_headroom_kw` can carry another bay charger.',
-  wait_solar: 'Hold charging until solar covers it: the car stays through hours when the sun is up, `energy.solar_kw_now` is or will be meaningful during the stay, and the battery is not urgent.',
+  now: 'Start charging as soon as the car is parked: the driver leaves before off-peak power would give enough charge, or the battery is low, and `energy.grid_headroom_kw` can carry another bay charger. While the sun is up the charger draws rooftop solar first, at a lower cost.',
   wait_offpeak: 'Hold charging until the cheaper off-peak tariff: the car is still parked after `energy.off_peak_starts` with enough time left to charge, and nothing in the note needs charge sooner.',
-  no_charge: 'Do not charge: the battery is already nearly full or the driver asked not to. A temporary power cut or little grid headroom right now is a reason to wait for solar or off-peak, not to skip charging.',
+  no_charge: 'Do not charge: the battery is already nearly full or the driver asked not to. A temporary power cut or little grid headroom right now is a reason to wait for off-peak, not to skip charging.',
 } as const
 
 /** Ordered from cheapest to dearest; index = Score level. */
@@ -245,14 +244,7 @@ export function chargeOutcome(plan: ChargePlan, arrival: Arrival, state: SiteSta
   const leave = state.t + arrival.plannedStayMin
   let hours: number
   if (plan === 'now') hours = (leave - state.t) / 60
-  else if (plan === 'wait_offpeak') hours = (leave - state.offPeak.from) / 60
-  else {
-    // daylight (06:00 to 18:00) inside the stay; solar rarely gives one charger its
-    // full rate, so count half
-    let sun = 0
-    for (let m = state.t; m < leave; m++) { const h = (m % 1440) / 60; if (h >= 6 && h < 18) sun++ }
-    hours = sun / 60 / 2
-  }
+  else hours = (leave - state.offPeak.from) / 60
   return Math.max(0, hours) * CHARGER_KW >= needKwh ? 'ready' : 'short'
 }
 const sure = (c: number) => `Jev ${pct(c)} sure`
@@ -289,7 +281,7 @@ function mapBay(arrival: Arrival, state: SiteState, candidates: BayCandidate[], 
 }
 
 const CHARGE_WORDS: Record<ChargePlan, string> = {
-  now: 'charge now', wait_solar: 'wait for solar', wait_offpeak: 'wait for off-peak', no_charge: 'do not charge',
+  now: 'charge now', wait_offpeak: 'wait for off-peak', no_charge: 'do not charge',
 }
 
 function mapCharge(arrival: Arrival, state: SiteState, a: ChoiceResponse | undefined, latencyMs: number): Decision<'charge'> {

@@ -166,11 +166,10 @@ export async function simulate(decider: Decider, scenario: ScenarioName, seed: n
   }
 
   /** Can this car draw power this minute under its plan? */
-  const wantsPower = (p: Parked, m: Minute, solar: number) => {
+  const wantsPower = (p: Parked, m: Minute) => {
     if (p.leaving || p.needKwh <= 1e-9 || p.log.dockedAt === null || p.log.dockedAt > m) return false
     if (p.plan === 'now') return true
-    if (p.plan === 'wait_offpeak') return isOffPeak(m)
-    return p.plan === 'wait_solar' && solar > 0
+    return p.plan === 'wait_offpeak' && isOffPeak(m)
   }
 
   for (let m = 0; m < RUN_END_MIN; m++) {
@@ -209,11 +208,11 @@ export async function simulate(decider: Decider, scenario: ScenarioName, seed: n
     // 4. decide and park while pallets are free
     while (gate.length && slots.some((t) => t.some((p) => !p))) await admit(gate.shift()!, m)
 
-    // 5. chargers: cars that waited for solar take it first, the rest share solar and grid
+    // 5. chargers share rooftop solar first, then the grid
     const solar = solarKwAt(m)
     const limit = gridLimitAt(m, scenario)
     const ready = parkedCars()
-      .filter((p) => wantsPower(p, m, solar))
+      .filter((p) => wantsPower(p, m))
       .sort((a, b) => a.log.dockedAt! - b.log.dockedAt! || (a.car.arrival.id < b.car.arrival.id ? -1 : 1))
     let solarLeft = solar
     let gridLeft = limit
@@ -226,12 +225,7 @@ export async function simulate(decider: Decider, scenario: ScenarioName, seed: n
       kwh += e
       nowCharging.add(p.car.arrival.id)
     }
-    for (const p of ready.filter((x) => x.plan === 'wait_solar')) {
-      const kw = Math.min(CHARGER_KW, p.needKwh * 60, solarLeft)
-      solarLeft -= kw
-      give(p, kw)
-    }
-    for (const p of ready.filter((x) => x.plan !== 'wait_solar')) {
+    for (const p of ready) {
       const kw = Math.min(CHARGER_KW, p.needKwh * 60, solarLeft + gridLeft)
       const fromSolar = Math.min(kw, solarLeft)
       solarLeft -= fromSolar

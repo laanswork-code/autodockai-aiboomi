@@ -55,7 +55,7 @@ judgments with a calibrated confidence:
 | Decision | What Jev answers | Can go to an operator |
 |---|---|---|
 | Bay | Which free pallet, from up to 6 candidates described in words | Only when both towers are full |
-| Charge | Charge now, wait for solar, or wait for off-peak (EVs only) | Below 0.60 |
+| Charge | Charge now (on rooftop solar first, at a lower rate in solar hours), or wait for off-peak (EVs only) | Below 0.60 |
 | Price | Demand score 0-3, rounded to a tier: discount, standard, peak, surge | Never |
 | Anomaly | Two yes/no checks: plate mismatch and payment risk | Below 0.50, or flagged |
 
@@ -146,18 +146,19 @@ Jev answers (jev-1.14.0):
 | Scenario | Policy | Avg wait min | P90 wait min | kWh | Energy INR | Revenue INR | INR/bay | Grid peak kW | Escalations | Missed anomalies |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Normal | Rules | 3.30 | 4.58 | 502.9 | 2253 | 23292 | 582 | 44.1 | 14 | 0 |
-| Normal | Jev | 3.74 | 5.00 | 487.9 | 2097 | 20823 | 521 | 39.6 | 14 | 0 |
+| Normal | Jev | 3.74 | 5.17 | 496.9 | 2187 | 20984 | 525 | 39.6 | 11 | 0 |
 | Rush hour | Rules | 8.38 | 20.00 | 590.3 | 2989 | 30266 | 757 | 60.0 | 22 | 0 |
-| Rush hour | Jev | 8.98 | 20.00 | 490.4 | 2262 | 26397 | 660 | 42.6 | 26 | 0 |
+| Rush hour | Jev | 8.91 | 20.00 | 495.1 | 2278 | 26621 | 666 | 42.6 | 21 | 0 |
 | Power cut | Rules | 3.30 | 4.58 | 431.3 | 1752 | 22003 | 550 | 39.4 | 14 | 0 |
-| Power cut | Jev | 3.22 | 5.17 | 430.9 | 1765 | 21236 | 531 | 29.6 | 13 | 0 |
+| Power cut | Jev | 3.36 | 5.00 | 390.0 | 1442 | 19820 | 495 | 30.3 | 14 | 0 |
 | Robotaxi fleet | Rules | 3.33 | 4.75 | 559.1 | 2646 | 25164 | 629 | 60.0 | 18 | 0 |
-| Robotaxi fleet | Jev | 3.49 | 5.67 | 473.2 | 2054 | 24478 | 612 | 60.0 | 22 | 0 |
+| Robotaxi fleet | Jev | 3.26 | 4.92 | 469.9 | 1991 | 24179 | 604 | 60.0 | 19 | 0 |
 
 What this shows, honestly: Jev keeps the site well under its grid limit (rush
 hour peak 42.6 kW against 60 kW) and spends less on energy, with no missed
 anomalies and about as many escalations as the rules. It does that by moving
-charging to solar and off-peak hours, so under these assumptions it delivers
+some charging to off-peak hours and letting cars that charge by day draw
+rooftop solar first, so under these assumptions it delivers
 fewer kWh within the stay and earns less revenue. Which side of that trade a
 site wants is a business choice: grid peak and energy cost matter most where
 the connection is the bottleneck.

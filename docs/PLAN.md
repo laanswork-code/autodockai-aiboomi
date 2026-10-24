@@ -13,7 +13,7 @@ A Jev-driven operating layer for a rotary parking and EV charging tower, shown t
 
 ## Jev decisions to showcase
 - Bay and level assignment (based on departure time and charge needed)
-- Charge now, or wait for solar or off-peak power
+- Charge now (rooftop solar first, cheaper in solar hours), or wait for off-peak power
 - Dynamic price for the slot
 - Anomaly check on plate reads and payments, with escalation to an operator when confidence is low
 

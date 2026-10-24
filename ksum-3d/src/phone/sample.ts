@@ -17,7 +17,7 @@ export const SAMPLE_ARRIVAL: Arrival = {
 
 export const SAMPLE_DECISIONS: DecisionSet = {
   bay: { kind: 'bay', arrivalId: 'demo-1', value: { tower: 1, pallet: 6 }, confidence: 0.88, source: 'jev', mode: 'auto', why: 'Long stay: a pallet away from the door keeps short stays fast', latencyMs: 0 },
-  charge: { kind: 'charge', arrivalId: 'demo-1', value: 'wait_solar', confidence: 0.81, source: 'jev', mode: 'auto', why: 'Eight hour stay, solar covers a full charge by 15:00', latencyMs: 0 },
-  price: { kind: 'price', arrivalId: 'demo-1', value: 'discount', confidence: 0.72, source: 'jev', mode: 'auto', why: 'Flexible charge on solar earns the discount tier', latencyMs: 0 },
+  charge: { kind: 'charge', arrivalId: 'demo-1', value: 'now', confidence: 0.81, source: 'jev', mode: 'auto', why: 'Eight hour stay and a drive to Kochi: full by about 12:20, mostly on solar', latencyMs: 0 },
+  price: { kind: 'price', arrivalId: 'demo-1', value: 'discount', confidence: 0.72, source: 'jev', mode: 'auto', why: 'Quiet morning with pallets to spare earns the discount tier', latencyMs: 0 },
   anomaly: { kind: 'anomaly', arrivalId: 'demo-1', value: { plateMismatch: 0.02, paymentRisk: 0.03, flag: false }, confidence: 0.95, source: 'jev', mode: 'auto', why: 'Plate and payment match the booking', latencyMs: 0 },
 }

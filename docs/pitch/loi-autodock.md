@@ -7,7 +7,7 @@
 
 ## Purpose
 
-We have built a decision layer for AutoDock rotary parking and EV charging towers. For every car it decides which tower and pallet to use, whether to charge now or wait for solar or off-peak power, the price for the slot, and whether a plate read or payment needs a human check. Each decision comes with a calibrated confidence. Confident decisions act on their own; uncertain ones go to an operator. If the decision service is unavailable, simple rules take over.
+We have built a decision layer for AutoDock rotary parking and EV charging towers. For every car it decides which tower and pallet to use, whether to charge now (drawing rooftop solar first) or wait for off-peak power, the price for the slot, and whether a plate read or payment needs a human check. Each decision comes with a calibrated confidence. Confident decisions act on their own; uncertain ones go to an operator. If the decision service is unavailable, simple rules take over.
 
 This letter records our shared interest in testing that layer with AutoDock towers.
 

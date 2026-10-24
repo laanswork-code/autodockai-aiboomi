@@ -17,7 +17,7 @@ function answersFor(arrival = quickStop, s: SiteState = state, over: Record<stri
     [Q.payment]: noulAnswer(0.05),
   }
   if (request.questions[Q.bay]) answers[Q.bay] = choiceAnswer(Object.fromEntries(candidates.map((c, i) => [c.label, i === 0 ? 0.9 : 0.1 / (candidates.length - 1)])))
-  if (request.questions[Q.charge]) answers[Q.charge] = choiceAnswer({ now: 0.9, wait_solar: 0.04, wait_offpeak: 0.03, no_charge: 0.03 })
+  if (request.questions[Q.charge]) answers[Q.charge] = choiceAnswer({ now: 0.9, wait_offpeak: 0.06, no_charge: 0.04 })
   return { candidates, result: { answers: { ...answers, ...over } as never } }
 }
 
@@ -37,7 +37,7 @@ describe('buildRequest', () => {
     )
     const charge = request.questions[Q.charge]
     assert.ok(charge?.type === 'choice')
-    assert.deepEqual(Object.keys(charge.criteria), ['now', 'wait_solar', 'wait_offpeak', 'no_charge'])
+    assert.deepEqual(Object.keys(charge.criteria), ['now', 'wait_offpeak', 'no_charge'])
     const price = request.questions[Q.price]
     assert.ok(price?.type === 'score')
     assert.equal(price.criteria.length, 4)
@@ -132,17 +132,15 @@ describe('mapping and modes', () => {
   })
 
   test('charge: split between plans that both have the car ready acts; ready vs short escalates', () => {
-    // overnight: charging now or at off-peak both finish before 08:05; waiting for
-    // the morning sun does not
+    // overnight: charging now or at off-peak both finish before 08:05
     for (const plan of ['now', 'wait_offpeak'] as const) assert.equal(chargeOutcome(plan, overnight, state), 'ready')
-    assert.equal(chargeOutcome('wait_solar', overnight, state), 'short')
-    const calm = mapAnswers(overnight, state, ...ans(overnight, { now: 0.45, wait_solar: 0.05, wait_offpeak: 0.5, no_charge: 0 }))
+    const calm = mapAnswers(overnight, state, ...ans(overnight, { now: 0.45, wait_offpeak: 0.5, no_charge: 0.05 }))
     assert.equal(calm.charge.mode, 'auto')
     // a short stop leaves before off-peak: waiting means leaving uncharged
     const short = { ...quickStop, plannedStayMin: 45, vehicle: { ...quickStop.vehicle, ev: true, socPct: 70 } }
     assert.equal(chargeOutcome('now', short, state), 'ready')
     assert.equal(chargeOutcome('wait_offpeak', short, state), 'short')
-    const torn = mapAnswers(short, state, ...ans(short, { now: 0.5, wait_solar: 0, wait_offpeak: 0.5, no_charge: 0 }))
+    const torn = mapAnswers(short, state, ...ans(short, { now: 0.5, wait_offpeak: 0.5, no_charge: 0 }))
     assert.equal(torn.charge.mode, 'review')
   })
 

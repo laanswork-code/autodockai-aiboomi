@@ -32,11 +32,11 @@ Numbers come from the simulation run (`ksum-3d/sim/results.json`, seed 42). Say 
 | Simulated, rush hour, seed 42 | Rules | Jev |
 |---|---|---|
 | Grid peak | 60 kW (at the limit) | **42.6 kW (29% lower)** |
-| Energy cost | ₹2,989 | **₹2,262 (24% lower)** |
+| Energy cost | ₹2,989 | **₹2,278 (24% lower)** |
 | Real anomalies missed | 0 | **0** |
-| Cars sent to an operator | 22 | 26 |
+| Cars sent to an operator | 22 | 21 |
 | Average wait | 8.4 min | 9.0 min |
-| kWh delivered | 590 | 490 |
+| kWh delivered | 590 | 495 |
 
 > Jev keeps the site under its grid connection by moving charging to solar and off-peak, catches every real plate and payment problem, and only calls a person about as often as the rules do. The trade-off: it sells less energy during the day. On a site where the grid connection is the bottleneck, that is the trade you want.
 >
