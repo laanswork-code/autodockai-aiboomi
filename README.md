@@ -162,7 +162,9 @@ scenario player → event bus → Jev decision step (server, key stays here) →
   stops acting alone, an operator queue (Approve or Override with the rules
   answer), an event log of the pipeline, live solar and grid flows with a kW
   gauge, and a Jev cost counter.
-- **Driver phone:** walks through arrive, dock, charge and a mock UPI payment.
+- **Driver phone:** the driver connects the car instead of typing a booking. Jev uses its battery, range and
+  location, plus traffic and charger availability, to pick the best pallet and book it for the arrival time; then
+  dock, charge and a mock UPI payment. Car and traffic data are simulated.
 
 | Towers on site | Driver phone |
 |---|---|

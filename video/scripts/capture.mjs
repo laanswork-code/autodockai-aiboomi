@@ -76,7 +76,10 @@ const SHOTS = {
     await wait(10000)
     await click(p, 'With AutoDock'); await wait(1500)
     await click(p, 'Driver phone'); await wait(4000)
+    // connect the car, then crop Jev's pick before booking
+    await p.evaluate(() => document.querySelector('.ph-device .ph-primary')?.click()); await wait(1500)
     await crop(p, 'phone-arrive', '.ph-device', 0)
+    await p.evaluate(() => document.querySelector('.ph-device .ph-primary')?.click()); await wait(1500)
     await click(p, 'I have arrived'); await wait(9000)
     await crop(p, 'phone-dock', '.ph-device', 0)
     await click(p, 'I have parked'); await wait(6000)

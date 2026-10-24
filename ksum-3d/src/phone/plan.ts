@@ -54,6 +54,28 @@ export function chargeWords(plan: ChargePlan, t: Minute): { title: string; detai
   }
 }
 
+/** Typical real-world efficiency of a compact Indian EV (km per kWh). */
+export const KM_PER_KWH = 7.5
+
+/** Range left on the battery, as the connected car would report it. */
+export const rangeKm = (a: Arrival) => (a.vehicle.ev ? Math.round((a.vehicle.socPct / 100) * a.vehicle.batteryKwh * KM_PER_KWH) : 0)
+
+export interface Trip { km: number; etaMin: number; leaveAt: Minute; traffic: 'heavy' | 'light' }
+
+/**
+ * Simulated drive to the site: distance seeded by the arrival id, speed by the
+ * time of day, so the driver leaves exactly etaMin before arriving.
+ */
+export function trip(a: Arrival): Trip {
+  let h = 0
+  for (const c of a.id) h = (h * 31 + c.charCodeAt(0)) >>> 0
+  const km = 3 + (h % 221) / 10
+  const day = a.t % 1440
+  const heavy = (day >= 8 * 60 && day < 10 * 60) || (day >= 17 * 60 && day < 19 * 60)
+  const etaMin = Math.max(5, Math.round((km / (heavy ? 18 : 32)) * 60))
+  return { km, etaMin, leaveAt: a.t - etaMin, traffic: heavy ? 'heavy' : 'light' }
+}
+
 export interface Bill { hours: number; parking: number; kwh: number; energy: number; total: number }
 
 export function bill(arrival: Arrival, plan: ChargePlan, tier: PriceTier, note: string, stayMin: number | null): Bill {

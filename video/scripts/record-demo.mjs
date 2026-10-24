@@ -67,8 +67,10 @@ for (let i = 0; i < 20; i++) {
 await wait(3000)
 await click('Approve'); await wait(3500)
 
-// 3. The driver's phone: arrive, dock, charge, pay.
-await click('Driver phone'); await wait(3500)
+// 3. The driver's phone: connect the car, book, arrive, dock, charge, pay.
+await click('Driver phone'); await wait(2500)
+await p.evaluate(() => document.querySelector('.ph-device .ph-primary')?.click()); await wait(4000)
+await p.evaluate(() => document.querySelector('.ph-device .ph-primary')?.click()); await wait(2500)
 await click('I have arrived'); await wait(7000)
 await click('I have parked'); await wait(4500)
 await click('Collect car and pay'); await wait(4000)

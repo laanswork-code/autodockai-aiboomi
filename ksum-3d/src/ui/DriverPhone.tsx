@@ -31,8 +31,8 @@ export function DriverPhone() {
 
   useEffect(() => {
     if (!open) return
-    // focus moves into the dialog: the plate field, or the close button on later steps
-    const el = dock.current?.querySelector<HTMLElement>('input') ?? dock.current?.querySelector<HTMLElement>('button')
+    // focus moves into the dialog, onto the step's main button
+    const el = dock.current?.querySelector<HTMLElement>('.ph-primary')
     el?.focus({ preventScroll: true })
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false) }
     window.addEventListener('keydown', onKey)

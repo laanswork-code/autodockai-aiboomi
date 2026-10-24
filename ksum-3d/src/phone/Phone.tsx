@@ -1,13 +1,15 @@
 /*
- * Driver phone mockup: arrive, dock, charge, pay by UPI. It shows what the
- * decision layer means for one driver. With no props it runs on sample data
- * and says so. Payment is a mock: nothing leaves the page.
+ * Driver phone mockup: connect the car, book, dock, charge, pay by UPI. It shows
+ * what the decision layer means for one driver. The driver types nothing: the
+ * connected car shares battery, range and location, and Jev books the bay for
+ * the arrival time. With no props it runs on sample data and says so. Car and
+ * traffic data are simulated and payment is a mock: nothing leaves the page.
  */
 import { useEffect, useState } from 'react'
 import type { Arrival, Decision, DecisionSet } from '../control/types'
 import { QrPlaceholder } from './Qr'
 import { SAMPLE_ARRIVAL, SAMPLE_DECISIONS } from './sample'
-import { bill, chargeWords, clock, inr, targetSoc, TIER_LABEL } from './plan'
+import { bill, chargeWords, clock, inr, rangeKm, targetSoc, TIER_LABEL, trip } from './plan'
 import './phone.css'
 
 export interface PhoneProps {
@@ -16,15 +18,16 @@ export interface PhoneProps {
   onClose?: () => void
 }
 
-type Step = 'arrive' | 'dock' | 'charge' | 'pay' | 'upi' | 'paid'
+type Step = 'connect' | 'plan' | 'booked' | 'dock' | 'charge' | 'pay' | 'upi' | 'paid'
 const TABS: { id: Step; label: string }[] = [
-  { id: 'arrive', label: 'Arrive' },
+  { id: 'plan', label: 'Book' },
   { id: 'dock', label: 'Dock' },
   { id: 'charge', label: 'Charge' },
   { id: 'pay', label: 'Pay' },
 ]
-const TAB_OF: Record<Step, Step> = { arrive: 'arrive', dock: 'dock', charge: 'charge', pay: 'pay', upi: 'pay', paid: 'pay' }
-const STAYS = [60, 120, 240, 480, 720]
+const TAB_OF: Record<Step, Step> = { connect: 'plan', plan: 'plan', booked: 'plan', dock: 'dock', charge: 'charge', pay: 'pay', upi: 'pay', paid: 'pay' }
+/** The 7.4 kW AC charger every pallet has. */
+const CHARGER_KW = 7.4
 const PAYEE = 'autodock@upi'
 /**
  * Demo clock: one tick per 100 ms of wall time. Rotation takes 50 ticks (5 s,
@@ -36,7 +39,7 @@ const PAYEE = 'autodock@upi'
 const TICK_MS = 100
 const ROTATE_TICKS = 50
 
-const stayLabel = (m: number) => (m < 60 ? `${m} min` : `${m / 60} h`)
+const stayLabel = (m: number | null) => (m === null ? 'about 2 h (not set)' : m < 60 ? `${m} min` : `${m / 60} h`)
 
 /** Small pill when a decision is waiting for an operator instead of acting on its own. */
 function Review({ d }: { d: Decision }) {
@@ -49,10 +52,8 @@ export function Phone({ arrival, decisions, onClose }: PhoneProps) {
   const a = arrival ?? SAMPLE_ARRIVAL
   const d = decisions ?? SAMPLE_DECISIONS
 
-  const [step, setStep] = useState<Step>('arrive')
-  const [plate, setPlate] = useState(a.bookedPlate)
-  const [stay, setStay] = useState<number | null>(a.plannedStayMin)
-  const [note, setNote] = useState(a.note)
+  const [step, setStep] = useState<Step>('connect')
+  const { bookedPlate: plate, plannedStayMin: stay, note } = a
   const [elapsedMs, setElapsedMs] = useState(0)
   const ticks = Math.floor(elapsedMs / TICK_MS)
 
@@ -76,13 +77,15 @@ export function Phone({ arrival, decisions, onClose }: PhoneProps) {
   const b = bill(a, d.charge.value, d.price.value, note, stay)
   const upiUri = `upi://pay?pa=${PAYEE}&pn=AutoDock&am=${b.total}&cu=INR&tn=${encodeURIComponent(plate)}`
   const source = d.bay.source === 'jev' ? 'Jev' : 'rules (fallback)'
+  const drive = trip(a)
+  const onTheWay = step === 'connect' || step === 'plan' || step === 'booked'
 
   return (
     <div className="ph-device" role="dialog" aria-label="Driver phone">
       <div className="ph-notch" aria-hidden="true" />
       <div className="ph-screen">
         <header className="ph-bar">
-          <span>{clock(a.t)}</span>
+          <span>{clock(onTheWay ? drive.leaveAt : a.t)}</span>
           {onClose ? <button type="button" className="ph-close" onClick={onClose} aria-label="Close phone">Close</button> : <span />}
         </header>
         {demo && <p className="ph-demo">Sample data, simulated</p>}
@@ -94,29 +97,49 @@ export function Phone({ arrival, decisions, onClose }: PhoneProps) {
         </nav>
 
         <main className="ph-body">
-          {step === 'arrive' && (
-            <form className="ph-card" onSubmit={(e) => { e.preventDefault(); go('dock') }}>
-              <h2>Your booking</h2>
-              <label className="ph-field">
-                <span>Plate</span>
-                <input value={plate} onChange={(e) => setPlate(e.target.value.toUpperCase())} autoComplete="off" />
-              </label>
-              <label className="ph-field">
-                <span>Planned stay</span>
-                <select value={stay ?? ''} onChange={(e) => setStay(e.target.value ? Number(e.target.value) : null)}>
-                  <option value="">Not sure</option>
-                  {STAYS.map((m) => <option key={m} value={m}>{stayLabel(m)}</option>)}
-                </select>
-              </label>
-              <label className="ph-field">
-                <span>Note</span>
-                <textarea rows={3} value={note} onChange={(e) => setNote(e.target.value)} placeholder="e.g. back by 6, need full charge" />
-                <small>Jev reads this note to plan your bay and charge.</small>
-              </label>
-              <p className="ph-meta">{a.vehicle.model}{a.vehicle.ev ? `, battery at ${startSoc}%` : ''}</p>
+          {step === 'connect' && (
+            <section className="ph-card">
+              <h2>Connect your car</h2>
+              <p>Share battery, range and location with AutoDock. Jev plans your bay and charge from them, so there is nothing to type.</p>
+              <p className="ph-meta">{a.vehicle.model}, {plate}</p>
+              <button type="button" className="ph-primary" onClick={() => go('plan')}>Connect {a.vehicle.model}</button>
+            </section>
+          )}
+
+          {step === 'plan' && (
+            <section className="ph-card">
+              <p className="ph-connected">Connected: {a.vehicle.model}</p>
+              <dl className="ph-lines">
+                <div><dt>Plate</dt><dd>{plate}</dd></div>
+                {a.vehicle.ev && <div><dt>Battery</dt><dd>{startSoc}%, {rangeKm(a)} km range</dd></div>}
+                <div><dt>Drive</dt><dd>{drive.km.toFixed(1)} km, {drive.etaMin} min</dd></div>
+                <div><dt>Traffic</dt><dd>{drive.traffic === 'heavy' ? 'Heavy' : 'Light'}, arrive {clock(a.t)}</dd></div>
+                <div><dt>Stay</dt><dd>{stayLabel(stay)}</dd></div>
+                {a.vehicle.ev && <div><dt>Charger</dt><dd>{CHARGER_KW} kW on your pallet</dd></div>}
+              </dl>
+              <div className="ph-pick">
+                <span>Jev's pick</span>
+                <b>Tower {tower + 1}, pallet {pallet + 1}</b>
+                {a.vehicle.ev && <span>{plan.title}</span>}
+              </div>
+              <p className="ph-why">{d.bay.why}</p>
+              <Review d={d.bay} />
               {d.anomaly.value.flag && <p className="ph-review">Plate or payment check: an operator will confirm at the gate</p>}
-              <button type="submit" className="ph-primary">I have arrived</button>
-            </form>
+              <p className="ph-small">Car and traffic data simulated</p>
+              <button type="button" className="ph-primary" onClick={() => go('booked')}>Book for {clock(a.t)}</button>
+            </section>
+          )}
+
+          {step === 'booked' && (
+            <section className="ph-card">
+              <h2>Booked for {clock(a.t)}</h2>
+              <p>Tower {tower + 1}, pallet {pallet + 1} is held for you. Leave now and it will be turning to the door as you reach the gate.</p>
+              <dl className="ph-lines">
+                <div><dt>Drive</dt><dd>{drive.etaMin} min, {drive.km.toFixed(1)} km</dd></div>
+                <div><dt>Estimate</dt><dd>{inr(b.total)}</dd></div>
+              </dl>
+              <button type="button" className="ph-primary" onClick={() => go('dock')}>I have arrived</button>
+            </section>
           )}
 
           {step === 'dock' && (
@@ -200,7 +223,7 @@ export function Phone({ arrival, decisions, onClose }: PhoneProps) {
               <h2>Paid {inr(b.total)}</h2>
               <p>Your car is on its way to the door of tower {tower + 1}.</p>
               <p className="ph-demo">Simulated payment, no money moved</p>
-              <button type="button" className="ph-ghost" onClick={() => go('arrive')}>Start again</button>
+              <button type="button" className="ph-ghost" onClick={() => go('connect')}>Start again</button>
             </section>
           )}
         </main>
