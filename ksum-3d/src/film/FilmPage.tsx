@@ -74,7 +74,7 @@ function Overlay() {
   const end = fadeIn(t, T.end, 0.8)
   const ui = Math.min(1 - title, 1 - end)
   return (
-    <div className="film-ui">
+    <div className={RECORD ? 'film-ui film-ui--record' : 'film-ui'}>
       <header className="film-top" style={{ opacity: ui }}>
         <div className="film-brand"><LogoMark /><b>AutoDock<sup>AI</sup></b><span>Driver journey</span></div>
         <div className="film-clock">{t >= T.drive ? clock(clockAt(t)) : '08:22'}<span>{t >= T.lapse && t < T.pay ? 'time lapse' : 'Kalamassery'}</span></div>
