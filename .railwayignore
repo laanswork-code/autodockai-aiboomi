@@ -1,0 +1,15 @@
+# Only ksum-3d and the pitch film are needed to build the app
+**/node_modules
+.env
+.env.*
+!.env.example
+.git
+video
+research
+docs/pitch
+docs/demo/demo.mp4
+docs/demo/*.gif
+ksum-3d/dist
+ksum-3d/server/data/audit.jsonl
+ksum-3d/server/data/game-stats.json
+docs/demo/driver-journey.mp4

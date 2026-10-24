@@ -13,7 +13,8 @@
     "sim": "node --env-file=../.env sim/run.ts",
     "test": "node --test \"server/**/*.test.ts\" \"sim/**/*.test.ts\" \"src/control/eventBus.test.ts\" \"src/phone/plan.test.ts\" \"src/control/bookings.test.ts\" \"src/film/timeline.test.ts\" \"src/game/plates.test.ts\"",
     "problems": "node scripts/sync-problems.mjs",
-    "game": "npx -y node@24 server/game/index.ts"
+    "game": "npx -y node@24 server/game/index.ts",
+    "start": "node server/prod.ts"
   },
   "dependencies": {
     "@dimforge/rapier3d-compat": "^0.19.2",

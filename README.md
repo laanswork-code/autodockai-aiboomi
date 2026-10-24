@@ -117,6 +117,23 @@ Other commands, run from `ksum-3d/`:
 
 Full details: [`ksum-3d/README.md`](ksum-3d/README.md).
 
+### Live on Railway
+
+**https://autodock-app-production.up.railway.app** runs the whole thing from one service: the app and every page,
+the Jev decision API (`/api`, with the TypeSafe key as a Railway variable) and the multiplayer game (`/play`, socket on `/game`).
+
+It is built from the root [`Dockerfile`](Dockerfile): Node 24 on Debian trixie (uWebSockets.js needs an even Node
+version and glibc 2.38+), `npm run build`, then [`server/prod.ts`](ksum-3d/server/prod.ts) serves `dist/`, handles
+`/api` and forwards `/game` to the game server in the same process. To redeploy, put a Railway project token in
+`.env` as `RAILWAY_TOKEN` and run, from the repository root:
+
+```sh
+RAILWAY_TOKEN=$(grep '^RAILWAY_TOKEN=' .env | cut -d= -f2) railway up --service autodock-app
+```
+
+Bookings and parked cars live in memory and the leaderboard in a file inside the container, so a redeploy starts
+the game afresh (attach a Railway volume at `ksum-3d/server/data` to keep the leaderboard).
+
 ## Problem
 
 Kerala and the rest of India have more cars and EVs than parking or chargers,
