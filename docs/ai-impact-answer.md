@@ -1,12 +1,19 @@
 # AI Impact Statement: form answer
 
-Paste-ready answer for the submission form's "AI Impact Statement" field. The full statement is in
-[AI_IMPACT.md](AI_IMPACT.md).
+Paste-ready answer for the submission form. The full statement is in [AI_IMPACT.md](AI_IMPACT.md).
 
-## Full answer
+## Answer
 
-Our agent framework, built on TypeSafe's Jev, runs each AutoDock rotary parking tower. For every arriving car it asks Jev four judgments in one request: which pallet to use, when to charge (now or off-peak), how busy the site is (for price), and whether the plate read or payment looks wrong. Jev returns typed answers with calibrated confidence in about half a second, for about $0.00008 a decision, and never writes free text. Guardrails: low-confidence charge and anomaly decisions, and every flagged plate or payment, wait for a human operator; any error or timeout falls back to a rules policy; every decision is audited, and 76 automated tests cover the mapping and the fallback. Data: arrivals and tariffs are synthetic, map data is OpenStreetMap, and the 474 parking complaints are public posts found with SerpAPI. No personal data is stored beyond demo number plates. Expected impact, in simulation and not yet measured: rush-hour grid peak down 29% and energy cost down 24%, with no missed anomalies. That fits 40 cars with chargers on 4 parking bays, where 4 cars park today.
+We use AI to run smart parking towers that also charge electric cars.
 
-## Short answer
+When a car arrives, our AI (built on TypeSafe's Jev) decides four things in about half a second: which spot to put the car in, when to charge it, what price to charge, and whether the number plate or payment looks wrong. Each decision costs less than a hundredth of a cent.
 
-Our agent, built on TypeSafe's Jev, decides pallet, charging, pricing and plate or payment checks for each car in about half a second; low-confidence or flagged calls go to a human, errors fall back to rules, every decision is logged, and in simulation it cuts rush-hour grid peak 29% and energy cost 24%.
+The AI never acts alone when it is unsure. If it is not confident, or something looks wrong, a person checks it first. If the AI fails, simple backup rules take over, and every decision is recorded.
+
+In our simulation, this cuts the peak load on the power grid by 29% and energy costs by 24%. It also fits 40 cars, each with a charger, in the space where 4 cars park today.
+
+The data is safe to use: test bookings, public maps (OpenStreetMap) and public online posts about parking problems. We store no personal data.
+
+## One line
+
+Our AI decides where each car parks, when it charges and what it pays in half a second; a person checks anything it is unsure about, and in testing it cut grid peak by 29% and energy cost by 24%.
