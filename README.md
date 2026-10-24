@@ -1,8 +1,10 @@
 # AutoDock × Jev: a decision layer for rotary EV parking towers
 
-> The software brain for AutoDock's rotary parking and charging towers: 40
-> charging cars on 4 of 15 surface bays, with every call made by Jev or, when
-> Jev is unsure, by a person.
+> We are building the AI intelligence layer for smart parking, and for the
+> autonomous parking infrastructure that comes next. It starts as the software
+> brain for AutoDock's rotary parking and charging towers: 40 charging cars on 4
+> of 15 surface bays, with every call made by Jev or, when Jev is unsure, by a
+> person.
 
 **[▶ Pitch film](docs/demo/pitch-film.mp4)** · **[Demo video](docs/demo/demo.mp4)** · **[Pitch deck](docs/pitch/deck.pdf)** · **[AI Impact Statement](docs/AI_IMPACT.md)** · **[Quick start](#setup-and-run)** · **[Licence](#licence)**
 
@@ -34,7 +36,7 @@ towers replace part of today's surface parking strip.
 | **Rush hour, simulated** | Grid peak 60 → 42.6 kW, energy cost ₹2,989 → ₹2,262 |
 | **Tests** | 52 unit tests, no live calls |
 
-- **Pitch film:** [`docs/demo/pitch-film.mp4`](docs/demo/pitch-film.mp4) (119 s, narrated: the parking problem across Kerala and India, KSUM as one example in a live digital twin, why Jev, how it decides, the results). Built from code in [`video/`](video) with HyperFrames and an ElevenLabs voice.
+- **Pitch film:** [`docs/demo/pitch-film.mp4`](docs/demo/pitch-film.mp4) (3 min 16 s, narrated: the parking problem across Kerala and India from 474 complaints collected with SerpAPI, our solution (space and intelligence), KSUM as one example in a live digital twin, a driver's morning on the phone app, why Jev and not a chat model, how it decides, the results). Built from code in [`video/`](video) with HyperFrames and an ElevenLabs voice.
 - **Demo video:** [`docs/demo/demo.mp4`](docs/demo/demo.mp4) (104 s, screen recording of the running app: twin, control room, dashboard and problems)
 - **Pitch deck:** [`docs/pitch/deck.pdf`](docs/pitch/deck.pdf) (6 slides) · source [`docs/pitch/deck.html`](docs/pitch/deck.html)
 - **AI Impact Statement:** [`docs/AI_IMPACT.md`](docs/AI_IMPACT.md)

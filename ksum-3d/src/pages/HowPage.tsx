@@ -14,6 +14,10 @@ const USD_PER_DECISION = 0.00008
  * imported: that module pulls in three.js.
  */
 const DENSITY_GAIN = 11.5
+/** Mean Jev latency and call count from our decision server (/api/health, jev.avgLatencyMs), at the time of writing. */
+const MEASURED_MS = 563
+const MEASURED_CALLS = 211
+const TYPESAFE_POST = 'https://typesafe.ai/blog/introducing-system-one-models-and-jev'
 
 const pct = (x: number) => `${Math.round(x * 100)}%`
 const inr = (x: number) => `₹${x.toLocaleString('en-IN')}`
@@ -82,6 +86,10 @@ export default function HowPage() {
 
         <section className="how-hero" aria-label="The problem and the answer">
           <h2 className="how-hero__h">Kerala and India are running out of parking.</h2>
+          <p className="how-hero__pos">
+            We are building the AI intelligence layer for smart parking, and for the autonomous parking infrastructure
+            that comes next.
+          </p>
           <p className="how-hero__p">
             We found {PROBLEMS.length} real parking complaints: {keralaCount} in Kerala, the rest from Delhi NCR, Mumbai,
             Bengaluru and cities across India. AutoDock rotary towers hold 20 cars each, with a 7.4 kW charger on every
@@ -213,11 +221,15 @@ export default function HowPage() {
           </div>
         </Section>
 
-        <Section n="04" title="How it works" lead="Every arrival travels the same path. The API key never leaves the server.">
+        <Section n="04" title="Why Jev, not a chat model" lead="Chat models write an answer one token at a time. Jev is TypeSafe's first System One model: unstructured state in, typed probabilistic decisions out. It gives up free text to do that.">
+          <Versus />
+        </Section>
+
+        <Section n="05" title="How it works" lead="Every arrival travels the same path. The API key never leaves the server.">
           <Pipeline />
         </Section>
 
-        <Section n="05" title="When it asks a person" lead="Only where a wrong call costs the driver or the site. Seconds and rupees never wait.">
+        <Section n="06" title="When it asks a person" lead="Only where a wrong call costs the driver or the site. Seconds and rupees never wait.">
           <div className="panel how-rules">
             <Rule name="Bay" when="Never waits, unless both towers are full" note="A pallet that is not ideal costs a few seconds of rotation." />
             <Rule name="Price" when="Never waits" note="A tier that is a step off costs a few rupees." />
@@ -226,7 +238,7 @@ export default function HowPage() {
           </div>
         </Section>
 
-        <Section n="06" title="What it solves" lead={<>The same seeded rush hour, {base.cars} cars, with the rules policy and with Jev. <span className="tag-sim">SIMULATED</span></>}>
+        <Section n="07" title="What it solves" lead={<>The same seeded rush hour, {base.cars} cars, with the rules policy and with Jev. <span className="tag-sim">SIMULATED</span></>}>
           <div className="how-out">
             <Outcome k="Grid peak" from={`${base.gridPeakKw} kW`} to={`${jev.gridPeakKw} kW`} delta={change(base.gridPeakKw, jev.gridPeakKw)} />
             <Outcome k="Energy cost" from={inr(base.energyCostInr)} to={inr(jev.energyCostInr)} delta={change(base.energyCostInr, jev.energyCostInr)} />
@@ -248,7 +260,7 @@ export default function HowPage() {
           </div>
         </Section>
 
-        <Section n="07" title="Why you can trust it">
+        <Section n="08" title="Why you can trust it">
           <ul className="how-trust">
             <li><b>Rules fallback.</b> If Jev errors, times out or answers in a shape we cannot read, a rules policy decides instead, through the same interface, and the screen says so.</li>
             <li><b>Audit log.</b> Every decision is written down with its inputs, its confidence and who made it.</li>
@@ -309,6 +321,51 @@ function Outcome({ k, from, to, delta }: { k: string; from: string; to: string; 
       <b>{to}</b>
       <span className="how-tile__n">rules {from}{delta && <em> · {delta}</em>}</span>
     </div>
+  )
+}
+
+/** Chat model vs Jev. Both columns are TypeSafe's figures from TYPESAFE_POST. */
+const VERSUS: [string, string, string][] = [
+  ['How it answers', 'In sequence, one token at a time', 'In parallel: every output in one query'],
+  ['What comes back', 'A string you have to parse and validate', 'Typed values, picked from options defined in advance (up to 255)'],
+  ['Type errors', 'Possible: the text can miss your schema', 'Cannot happen: the output always matches the schema'],
+  ['Confidence', 'Not part of the answer', 'Calibrated on every output: higher confidence, higher accuracy'],
+  ['Response time', '3 to 329 s', '70 to 500 ms'],
+  ['Price per million tokens', 'Input $0.20 to $10, output about 5× more', 'Input $0.042, output free'],
+]
+
+function Versus() {
+  return (
+    <>
+      <div className="panel how-vs">
+        <table>
+          <thead>
+            <tr>
+              <td />
+              <th scope="col">Chat model<span>Autoregressive LLMs, e.g. the latest OpenAI and Anthropic models</span></th>
+              <th scope="col" className="is-jev">Jev<span>TypeSafe's System One model, trained with RLCD</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            {VERSUS.map(([k, llm, jev]) => (
+              <tr key={k}>
+                <th scope="row">{k}</th>
+                <td>{llm}</td>
+                <td className="is-jev">{jev}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="how-vs__ours">
+        <b>Measured here:</b> {MEASURED_MS} ms on average per request across {MEASURED_CALLS} live calls, five answers
+        per request, about ${USD_PER_DECISION.toFixed(5)} a decision.
+      </p>
+      <p className="how-foot how-vs__src">
+        Comparison figures are TypeSafe's. TypeSafe reports Jev 193.6× faster and 444.6× cheaper on its workflow evals.
+        RLCD is Reinforcement Learning for Calibrated Decisions. Source: <a href={TYPESAFE_POST}>Introducing System One models and Jev</a>.
+      </p>
+    </>
   )
 }
 

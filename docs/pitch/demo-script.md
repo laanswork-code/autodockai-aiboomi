@@ -12,7 +12,7 @@ Numbers come from the simulation run (`ksum-3d/sim/results.json`, seed 42). Say 
 
 > From Kochi to Delhi NCR: more EVs than sockets, no spare land, and parking and charging are two separate errands. Robotaxi fleets will need unattended depots on top of that.
 >
-> AutoDock already builds rotary towers with a charger in every bay. **We built the brain: Jev decides what happens to every car, bay and kilowatt, with a confidence it can stand behind, and asks a human when it isn't sure.**
+> **We are building the AI intelligence layer for smart parking, and for the autonomous parking infrastructure that comes next.** AutoDock already builds rotary towers with a charger in every bay. **We built the brain: Jev decides what happens to every car, bay and kilowatt, with a confidence it can stand behind, and asks a human when it isn't sure.**
 
 *(Switch to **With AutoDock**: two towers on four bays, 40 cars.)*
 

@@ -93,7 +93,7 @@ const Tiles = memo(function Tiles({ usage, live, entries }: { usage?: JevUsage; 
   const fallback = decisions.filter((d) => d.source === 'rules').length
   return (
     <div className="dtiles">
-      <Tile k="Jev decisions" v={usage ? String(usage.decisions) : '-'} note={usage ? `${usage.calls} calls since the server started` : 'server offline'} />
+      <Tile k="Jev decisions" v={usage ? usage.decisions.toLocaleString('en-IN') : '-'} note={usage ? `${usage.calls} calls since the server started` : 'server offline'} />
       <Tile k="Cost" v={usage ? usd(usage.costUsd) : '-'} note={usage ? `${usd(usage.usdPerDecision)} per decision` : undefined} />
       <Tile k="Avg latency" v={usage?.avgLatencyMs != null ? `${Math.round(usage.avgLatencyMs)} ms` : '-'} note="per Jev call" />
       <Tile k="Fallbacks" v={usage ? String(usage.failures) : '-'} note="Jev errors handled by rules" />

@@ -79,7 +79,7 @@ export function Hud() {
         <div>
           <p className="kicker">AutoDock · digital twin</p>
           <h1>KINFRA Hi-Tech Park, Kalamassery</h1>
-          <p className="sub">Example site: the Kerala Startup Mission building (KTIZ), Kalamassery, with two rotary towers on today's parking strip.</p>
+          <p className="sub">The AI intelligence layer for smart parking, live at one example site: the Kerala Startup Mission building (KTIZ), with two rotary towers on today's parking strip.</p>
         </div>
         <div className="hud-top__right">
           <NavLinks />

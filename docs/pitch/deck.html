@@ -18,6 +18,7 @@ h1 { font: 800 84px/1 "Barlow", sans-serif; margin: 0 0 28px; letter-spacing: -.
 h1 em { font-style: normal; color: var(--sign); }
 h2 { font: 800 40px/1.1 "Barlow", sans-serif; margin: 0 0 14px; }
 p { margin: 0 0 16px; }
+.pos { font: 700 30px/1.25 "Barlow", sans-serif; color: var(--sign); margin: 0 0 28px; }
 .lede { font-size: 32px; color: var(--ink-2); max-width: 30ch; }
 .grid { display: grid; gap: 40px; flex: 1; min-height: 0; grid-template-rows: minmax(0, 1fr); }
 .grid.top { align-items: start; }
@@ -58,10 +59,11 @@ td.lose { color: var(--stop); font-weight: 700; }
 <!-- 1. Problem and who cares -->
 <section class="slide">
   <p class="kicker">AIBoomi Startup Weekend · Problem</p>
+  <p class="pos">We are building the AI intelligence layer for smart parking, and for the autonomous parking infrastructure that comes next.</p>
   <div class="grid g37">
     <div class="stack">
       <h1>Nowhere to park.<br><em>Nowhere to charge.</em></h1>
-      <p class="lede">Across Kerala and India, cars and EVs outgrow parking and chargers, and cities have no spare land.</p>
+      <p class="lede" style="max-width: 40ch">Across Kerala and India, cars and EVs outgrow parking and chargers, and cities have no spare land.</p>
       <div class="card">
         <div class="stat">474 <small>real complaints</small></div>
         <p class="muted"><b>154 in Kerala</b> (Kochi 55, Thiruvananthapuram 38, Kozhikode 22), <b>320 in the rest of India</b> (Delhi NCR 55, Mumbai 43, Bengaluru 37). From Reddit, forums and news: fights over spots, EV charging, apartments, fees.</p>
