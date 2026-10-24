@@ -3,17 +3,26 @@
   #root { position:absolute; inset:0; background:#f3efe6; overflow:hidden; font-family:Inter, sans-serif; color:#16181b; }
   .stripe { position:absolute; left:0; right:0; top:0; height:12px; background:repeating-linear-gradient(90deg,#f0b91c 0 46px,transparent 46px 74px),#16181b; z-index:20; }
   .title { line-height:1.06; letter-spacing:-0.02em; }
+  .plate .title + .title { margin-top:10px; }
   .title .w { display:inline-block; }
   .title .acc { color:#1747a6; }
   .col { position:absolute; display:flex; flex-direction:column; z-index:5; }
   .card { position:absolute; border-radius:18px; overflow:hidden; background:#fbf9f4; border:1px solid #d4ccbb; box-shadow:0 30px 60px -30px rgba(22,24,27,.45); z-index:4; }
+  .card .inner { position:relative; transform-origin:50% 50%; }
   .card img { display:block; width:100%; }
   .mark { position:absolute; border:4px solid #1747a6; border-radius:10px; background:rgba(23,71,166,.06); }
   .shot { position:absolute; inset:0; overflow:hidden; z-index:1; }
   .shot .cam { position:absolute; inset:0; transform-origin:50% 50%; }
   .shot img { width:100%; height:100%; object-fit:cover; display:block; }
-  .plate { position:absolute; display:flex; flex-direction:column; gap:10px; padding:26px 32px; background:rgba(251,249,244,.97); border:1px solid #d4ccbb; border-radius:18px; box-shadow:0 30px 60px -30px rgba(22,24,27,.5); z-index:6; }
-  .num { position:absolute; font-weight:800; letter-spacing:-0.04em; line-height:1; font-variant-numeric:tabular-nums; z-index:5; }
+  .plate { position:absolute; display:flex; flex-direction:column; gap:0; row-gap:0; padding:26px 32px; background:rgba(251,249,244,.97); border:1px solid #d4ccbb; border-radius:18px; box-shadow:0 30px 60px -30px rgba(22,24,27,.5); z-index:6; }
+  .num { position:absolute; padding-right:0.06em; font-weight:800; letter-spacing:-0.04em; line-height:1; font-variant-numeric:tabular-nums; z-index:5; }
+  .panel { position:absolute; height:760px; padding:30px 36px; background:#fbf9f4; border:1px solid #d4ccbb; border-radius:18px; box-shadow:0 30px 60px -30px rgba(22,24,27,.45); z-index:3; }
+  .panel-acc { border:2px solid #1747a6; }
+  .panel-label { font-size:40px; font-weight:800; letter-spacing:-0.02em; }
+  .panel-acc .panel-label { color:#1747a6; }
+  .panel-note { font-size:26px; font-weight:500; color:#7b7f86; margin-top:6px; }
+  .stream { margin-top:34px; min-height:250px; padding:24px 26px; border-radius:12px; background:#16181b; color:#e9e4d8; font:500 30px/1.45 'JetBrains Mono', ui-monospace, Menlo, monospace; word-break:break-all; }
+  .caret { display:inline-block; width:14px; height:30px; margin-left:2px; vertical-align:-4px; background:#f0b91c; }
   .end { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; gap:56px; z-index:7; }
   .sign { width:250px; height:250px; border-radius:40px; background:#1747a6; color:#fff; display:grid; place-items:center; font:800 200px/1 Inter, sans-serif; box-shadow:inset 0 0 0 10px #1747a6, inset 0 0 0 18px #fff; }
   .end-words { display:flex; flex-direction:column; gap:14px; }
@@ -23,15 +32,15 @@
   .end-sub { font-size:38px; font-weight:600; color:#4a4e55; }
   .end-url { font-size:30px; font-weight:500; color:#7b7f86; }
   </style>
-  <div data-hf-id="hf-pbli" id="root" data-composition-id="hook" data-width="1920" data-height="1080" data-layout-allow-overlap>
-    <div data-hf-id="hf-wdzv" class="stripe"></div>
-    <div data-hf-id="hf-rz02" id="c1" class="card" data-layout-allow-overflow style="left:960px;top:120px;width:860px;height:830px"><img data-hf-id="hf-ys96" src="assets/shots/problem-cards.png" alt=""></div>
-    <div data-hf-id="hf-1ty4" class="col" style="left:120px;top:190px;width:760px;gap:10px"><div data-hf-id="hf-mkvg" id="t2" class="title" style="font-size:92px;font-weight:800;color:#16181b;"><span data-hf-id="hf-4q4b" class="w">Every</span> <span data-hf-id="hf-6rxg" class="w">morning,</span></div><div data-hf-id="hf-reup" id="t3" class="title" style="font-size:92px;font-weight:800;color:#16181b;"><span data-hf-id="hf-pzft" class="w">across</span> <span data-hf-id="hf-97kp" class="w acc">Kerala</span> <span data-hf-id="hf-v6ck" class="w acc">and</span> <span data-hf-id="hf-w9x6" class="w acc">India</span></div></div>
-    <div data-hf-id="hf-pn3b" class="col" style="left:120px;top:560px;width:760px;gap:14px"><div data-hf-id="hf-genq" id="t4" class="title" style="font-size:54px;font-weight:600;color:#16181b;"><span data-hf-id="hf-mdcm" class="w">Parking:</span> <span data-hf-id="hf-il6x" class="w">full.</span></div><div data-hf-id="hf-lyzf" id="t5" class="title" style="font-size:54px;font-weight:600;color:#16181b;"><span data-hf-id="hf-ys6r" class="w">The</span> <span data-hf-id="hf-b2km" class="w">road</span> <span data-hf-id="hf-rxia" class="w">becomes</span> <span data-hf-id="hf-9o0j" class="w">the</span> <span data-hf-id="hf-43bq" class="w">car</span> <span data-hf-id="hf-gyqy" class="w">park.</span></div><div data-hf-id="hf-nwvg" id="t6" class="title" style="font-size:54px;font-weight:600;color:#16181b;"><span data-hf-id="hf-2k6j" class="w">Chargers:</span> <span data-hf-id="hf-b7a3" class="w">a</span> <span data-hf-id="hf-rdp7" class="w">queue.</span></div></div>
+  <div id="root" data-composition-id="hook" data-width="1920" data-height="1080" data-layout-allow-overlap>
+    <div class="stripe"></div>
+    <div id="c1" class="card" data-layout-allow-overflow style="left:960px;top:200px;width:860px;height:640px"><div class="inner"><img src="assets/shots/problem-cards.png" alt=""></div></div>
+    <div class="col" style="left:120px;top:190px;width:760px;gap:10px"><div id="t2" class="title" style="font-size:92px;font-weight:800;color:#16181b;"><span class="w">Every</span> <span class="w">morning,</span></div><div id="t3" class="title" style="font-size:92px;font-weight:800;color:#16181b;"><span class="w">across</span> <span class="w acc">Kerala</span> <span class="w acc">and</span> <span class="w acc">India</span></div></div>
+    <div class="col" style="left:120px;top:560px;width:760px;gap:14px"><div id="t4" class="title" style="font-size:54px;font-weight:600;color:#16181b;"><span class="w">Parking:</span> <span class="w">full.</span></div><div id="t5" class="title" style="font-size:54px;font-weight:600;color:#16181b;"><span class="w">The</span> <span class="w">road</span> <span class="w">becomes</span> <span class="w">the</span> <span class="w">car</span> <span class="w">park.</span></div><div id="t6" class="title" style="font-size:54px;font-weight:600;color:#16181b;"><span class="w">Chargers:</span> <span class="w">a</span> <span class="w">queue.</span></div></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.set("#c1",{opacity:1},0);tl.fromTo("#c1 img",{scale:1,y:0},{scale:1.06,y:-150,duration:12.090,ease:"none"},0);
+    tl.set("#c1",{opacity:1},0);tl.fromTo("#c1 .inner",{scale:1,y:0},{scale:1.06,y:-50,duration:12.090,ease:"none"},0);
     tl.fromTo("#t2 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},0.8);tl.fromTo("#t3 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},2.321);
     tl.fromTo("#t4 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},6.268);tl.fromTo("#t5 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},7.592);tl.fromTo("#t6 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},9.821);
     tl.set({}, {}, 12.09);

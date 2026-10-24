@@ -1,0 +1,55 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; background:#f3efe6; overflow:hidden; font-family:Inter, sans-serif; color:#16181b; }
+  .stripe { position:absolute; left:0; right:0; top:0; height:12px; background:repeating-linear-gradient(90deg,#f0b91c 0 46px,transparent 46px 74px),#16181b; z-index:20; }
+  .title { line-height:1.06; letter-spacing:-0.02em; }
+  .plate .title + .title { margin-top:10px; }
+  .title .w { display:inline-block; }
+  .title .acc { color:#1747a6; }
+  .col { position:absolute; display:flex; flex-direction:column; z-index:5; }
+  .card { position:absolute; border-radius:18px; overflow:hidden; background:#fbf9f4; border:1px solid #d4ccbb; box-shadow:0 30px 60px -30px rgba(22,24,27,.45); z-index:4; }
+  .card .inner { position:relative; transform-origin:50% 50%; }
+  .card img { display:block; width:100%; }
+  .mark { position:absolute; border:4px solid #1747a6; border-radius:10px; background:rgba(23,71,166,.06); }
+  .shot { position:absolute; inset:0; overflow:hidden; z-index:1; }
+  .shot .cam { position:absolute; inset:0; transform-origin:50% 50%; }
+  .shot img { width:100%; height:100%; object-fit:cover; display:block; }
+  .plate { position:absolute; display:flex; flex-direction:column; gap:0; row-gap:0; padding:26px 32px; background:rgba(251,249,244,.97); border:1px solid #d4ccbb; border-radius:18px; box-shadow:0 30px 60px -30px rgba(22,24,27,.5); z-index:6; }
+  .num { position:absolute; padding-right:0.06em; font-weight:800; letter-spacing:-0.04em; line-height:1; font-variant-numeric:tabular-nums; z-index:5; }
+  .panel { position:absolute; height:760px; padding:30px 36px; background:#fbf9f4; border:1px solid #d4ccbb; border-radius:18px; box-shadow:0 30px 60px -30px rgba(22,24,27,.45); z-index:3; }
+  .panel-acc { border:2px solid #1747a6; }
+  .panel-label { font-size:40px; font-weight:800; letter-spacing:-0.02em; }
+  .panel-acc .panel-label { color:#1747a6; }
+  .panel-note { font-size:26px; font-weight:500; color:#7b7f86; margin-top:6px; }
+  .stream { margin-top:34px; min-height:250px; padding:24px 26px; border-radius:12px; background:#16181b; color:#e9e4d8; font:500 30px/1.45 'JetBrains Mono', ui-monospace, Menlo, monospace; word-break:break-all; }
+  .caret { display:inline-block; width:14px; height:30px; margin-left:2px; vertical-align:-4px; background:#f0b91c; }
+  .end { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; gap:56px; z-index:7; }
+  .sign { width:250px; height:250px; border-radius:40px; background:#1747a6; color:#fff; display:grid; place-items:center; font:800 200px/1 Inter, sans-serif; box-shadow:inset 0 0 0 10px #1747a6, inset 0 0 0 18px #fff; }
+  .end-words { display:flex; flex-direction:column; gap:14px; }
+  .end-name { font-size:110px; font-weight:800; letter-spacing:-0.03em; line-height:1; }
+  .end-name .x { color:#7b7f86; font-weight:600; }
+  .end-name .acc { color:#1747a6; }
+  .end-sub { font-size:38px; font-weight:600; color:#4a4e55; }
+  .end-url { font-size:30px; font-weight:500; color:#7b7f86; }
+  </style>
+  <div id="root" data-composition-id="you" data-width="1920" data-height="1080" data-layout-allow-overlap>
+    <div class="stripe"></div>
+    <div class="col" style="left:120px;top:60px;width:1680px;gap:4px"><div id="t1" class="title" style="font-size:34px;font-weight:600;color:#7b7f86;"><span class="w">From</span> <span class="w">your</span> <span class="w">side</span></div></div>
+    <div class="col" style="left:120px;top:112px;width:1680px;gap:16px"><div id="t2" class="title" style="font-size:66px;font-weight:800;color:#16181b;"><span class="w">Tell</span> <span class="w">it</span> <span class="w">your</span> <span class="w">day,</span> <span class="w">in</span> <span class="w acc">plain</span> <span class="w acc">words</span></div></div>
+    <div class="col" style="left:120px;top:112px;width:1680px;gap:16px"><div id="t3" class="title" style="font-size:66px;font-weight:800;color:#16181b;"><span class="w">No</span> <span class="w">circling.</span> <span class="w">No</span> <span class="w">queue.</span> <span class="w acc">No</span> <span class="w acc">argument.</span></div></div>
+    <div id="c4" class="card" data-layout-allow-overflow style="left:250px;top:240px;width:380px;"><div class="inner"><img src="assets/shots/phone-arrive.png" alt=""><div id="c4h0" class="mark" style="left:7%;top:48%;width:86%;height:12%"></div></div></div>
+    <div id="c5" class="card" data-layout-allow-overflow style="left:770px;top:240px;width:380px;"><div class="inner"><img src="assets/shots/phone-dock.png" alt=""></div></div>
+    <div id="c6" class="card" data-layout-allow-overflow style="left:1290px;top:240px;width:380px;"><div class="inner"><img src="assets/shots/phone-charge.png" alt=""><div id="c6h0" class="mark" style="left:7%;top:33%;width:86%;height:26%"></div></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#t1 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},0.1);
+    tl.fromTo("#t2 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},8.932);tl.to("#t2",{opacity:0,filter:"blur(6px)",duration:0.25,ease:"power3.in"},21.113);
+    tl.fromTo("#t3 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},21.413);
+    tl.fromTo("#c4",{opacity:0,scale:0.92,filter:"blur(10px)"},{opacity:1,scale:1,filter:"blur(0px)",duration:0.6,ease:"expo.out"},2.024);tl.fromTo("#c4 .inner",{scale:1,y:0},{scale:1.02,y:0,duration:24.061,ease:"none"},2.024);tl.fromTo("#c4h0",{opacity:0,scale:1.06},{opacity:1,scale:1,duration:0.35,ease:"expo.out"},10.592);
+    tl.fromTo("#c5",{opacity:0,scale:0.92,filter:"blur(10px)"},{opacity:1,scale:1,filter:"blur(0px)",duration:0.6,ease:"expo.out"},13.777000000000001);tl.fromTo("#c5 .inner",{scale:1,y:0},{scale:1.02,y:0,duration:12.308,ease:"none"},13.777000000000001);
+    tl.fromTo("#c6",{opacity:0,scale:0.92,filter:"blur(10px)"},{opacity:1,scale:1,filter:"blur(0px)",duration:0.6,ease:"expo.out"},15.747);tl.fromTo("#c6 .inner",{scale:1,y:0},{scale:1.02,y:0,duration:10.338,ease:"none"},15.747);tl.fromTo("#c6h0",{opacity:0,scale:1.06},{opacity:1,scale:1,duration:0.35,ease:"expo.out"},17.791);
+    tl.set({}, {}, 26.085);
+    window.__timelines["you"] = tl;
+  </script>
+</template>

@@ -12,19 +12,31 @@
     },
     {
       "id": "problem",
-      "text": "We read the complaints. Four hundred and seventy four of them, from Kochi, Kozhikode and Trivandrum to Delhi, Mumbai and Bengaluru: fights over a spot, overcharging, and apartments with nowhere to plug in. Every one is on our problems page, linked to the original post."
+      "text": "Using SerpAPI, we pulled the complaints from Google, Google News and Reddit. Four hundred and seventy four of them, from Kochi, Kozhikode and Trivandrum to Delhi, Mumbai and Bengaluru: fights over a spot, overcharging, and apartments with nowhere to plug in. Every one is on our problems page, linked to the original post."
+    },
+    {
+      "id": "solution",
+      "text": "So here is what we bring: space, and intelligence. AutoDock rotary towers stack twenty cars on the footprint of two, each with its own charger. And our AI layer runs them, making every decision a parking attendant makes today, in under a second, and asking a person when it isn't sure."
     },
     {
       "id": "reveal",
-      "text": "Take one example: the Kerala Startup Mission in Kalamassery, rebuilt here as a live digital twin. When we visited, its fifteen bays were nearly all taken. Two AutoDock rotary towers on just four of them hold forty cars, each with its own charger."
+      "text": "Take one example: the Kerala Startup Mission in Kalamassery, rebuilt here as a live digital twin. Its fifteen surface bays are full by mid-morning, with no charging at all. Two AutoDock rotary towers on just four of those bays hold forty cars, each with its own charger."
+    },
+    {
+      "id": "you",
+      "text": "Now see it from your side. You arrive in the morning, battery at thirty two percent, with meetings till five and a drive to Kochi after. You just type that into the app, in plain words. Jev reads it, picks your pallet, and the door opens. Your car charges on the sun, full by three, for four hundred and ninety rupees. No circling, no queue, no argument over a spot."
     },
     {
       "id": "why",
-      "text": "But a tower is only as smart as its decisions. Which pallet? Charge now, or wait for the sun? What price? Is that even the right car? That's why we use Jev. For every car, it answers all five questions in a single request, in about half a second, for a fraction of a cent."
+      "text": "But a tower is only as smart as its decisions. Which pallet? Charge now, or wait for the sun? What price? Is that even the right car? That's what we're building: the AI intelligence layer for smart parking today, and for the autonomous parking infrastructure that comes next."
+    },
+    {
+      "id": "jev",
+      "text": "To run it, we chose Jev, not a chat model. The latest models from OpenAI and Anthropic write one token at a time, and you still have to parse their text and hope it's valid. Jev is a System One model. All five answers come back at once, as typed values, each with a calibrated confidence. About half a second, and a fraction of a cent, per car."
     },
     {
       "id": "how",
-      "text": "Jev doesn't guess in sentences. It returns typed answers, each with a confidence. When it's sure, the tower simply acts. When it isn't, like this camera misread, it stops and asks a person. And if Jev is ever down, simple rules take over, and every decision is logged."
+      "text": "When Jev is sure, the tower simply acts. When it isn't, like this camera misread, it stops and asks a person. And if Jev is ever down, simple rules take over, and every decision is logged."
     },
     {
       "id": "proof",
@@ -32,7 +44,7 @@
     },
     {
       "id": "claim",
-      "text": "More cars, more chargers, on the same ground. Parking that thinks, for every city that has run out of room. AutoDock, powered by Jev."
+      "text": "More cars, more chargers, on the same ground. The intelligence layer for smart parking, and for the autonomous parking that comes next. AutoDock, powered by Jev."
     }
   ]
 }

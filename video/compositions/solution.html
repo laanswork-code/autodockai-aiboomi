@@ -1,0 +1,53 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; background:#f3efe6; overflow:hidden; font-family:Inter, sans-serif; color:#16181b; }
+  .stripe { position:absolute; left:0; right:0; top:0; height:12px; background:repeating-linear-gradient(90deg,#f0b91c 0 46px,transparent 46px 74px),#16181b; z-index:20; }
+  .title { line-height:1.06; letter-spacing:-0.02em; }
+  .plate .title + .title { margin-top:10px; }
+  .title .w { display:inline-block; }
+  .title .acc { color:#1747a6; }
+  .col { position:absolute; display:flex; flex-direction:column; z-index:5; }
+  .card { position:absolute; border-radius:18px; overflow:hidden; background:#fbf9f4; border:1px solid #d4ccbb; box-shadow:0 30px 60px -30px rgba(22,24,27,.45); z-index:4; }
+  .card .inner { position:relative; transform-origin:50% 50%; }
+  .card img { display:block; width:100%; }
+  .mark { position:absolute; border:4px solid #1747a6; border-radius:10px; background:rgba(23,71,166,.06); }
+  .shot { position:absolute; inset:0; overflow:hidden; z-index:1; }
+  .shot .cam { position:absolute; inset:0; transform-origin:50% 50%; }
+  .shot img { width:100%; height:100%; object-fit:cover; display:block; }
+  .plate { position:absolute; display:flex; flex-direction:column; gap:0; row-gap:0; padding:26px 32px; background:rgba(251,249,244,.97); border:1px solid #d4ccbb; border-radius:18px; box-shadow:0 30px 60px -30px rgba(22,24,27,.5); z-index:6; }
+  .num { position:absolute; padding-right:0.06em; font-weight:800; letter-spacing:-0.04em; line-height:1; font-variant-numeric:tabular-nums; z-index:5; }
+  .panel { position:absolute; height:760px; padding:30px 36px; background:#fbf9f4; border:1px solid #d4ccbb; border-radius:18px; box-shadow:0 30px 60px -30px rgba(22,24,27,.45); z-index:3; }
+  .panel-acc { border:2px solid #1747a6; }
+  .panel-label { font-size:40px; font-weight:800; letter-spacing:-0.02em; }
+  .panel-acc .panel-label { color:#1747a6; }
+  .panel-note { font-size:26px; font-weight:500; color:#7b7f86; margin-top:6px; }
+  .stream { margin-top:34px; min-height:250px; padding:24px 26px; border-radius:12px; background:#16181b; color:#e9e4d8; font:500 30px/1.45 'JetBrains Mono', ui-monospace, Menlo, monospace; word-break:break-all; }
+  .caret { display:inline-block; width:14px; height:30px; margin-left:2px; vertical-align:-4px; background:#f0b91c; }
+  .end { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; gap:56px; z-index:7; }
+  .sign { width:250px; height:250px; border-radius:40px; background:#1747a6; color:#fff; display:grid; place-items:center; font:800 200px/1 Inter, sans-serif; box-shadow:inset 0 0 0 10px #1747a6, inset 0 0 0 18px #fff; }
+  .end-words { display:flex; flex-direction:column; gap:14px; }
+  .end-name { font-size:110px; font-weight:800; letter-spacing:-0.03em; line-height:1; }
+  .end-name .x { color:#7b7f86; font-weight:600; }
+  .end-name .acc { color:#1747a6; }
+  .end-sub { font-size:38px; font-weight:600; color:#4a4e55; }
+  .end-url { font-size:30px; font-weight:500; color:#7b7f86; }
+  </style>
+  <div id="root" data-composition-id="solution" data-width="1920" data-height="1080" data-layout-allow-overlap>
+    <div class="stripe"></div>
+    <div class="col" style="left:120px;top:70px;width:1680px;gap:4px"><div id="t1" class="title" style="font-size:34px;font-weight:600;color:#7b7f86;"><span class="w">Our</span> <span class="w">solution</span></div><div id="t2" class="title" style="font-size:84px;font-weight:800;color:#16181b;"><span class="w acc">Space,</span> <span class="w acc">and</span> <span class="w acc">intelligence</span></div></div>
+    <div id="c3" class="card" data-layout-allow-overflow style="left:120px;top:290px;width:820px;"><div class="inner"><img src="assets/shots/twin-towers.png" alt=""></div></div>
+    <div class="col" style="left:120px;top:790px;width:820px;gap:10px"><div id="t4" class="title" style="font-size:52px;font-weight:800;color:#16181b;"><span class="w">Rotary</span> <span class="w">towers</span></div><div id="t5" class="title" style="font-size:36px;font-weight:600;color:#16181b;"><span class="w">20</span> <span class="w">cars</span> <span class="w">on</span> <span class="w">the</span> <span class="w">footprint</span> <span class="w">of</span> <span class="w">2,</span> <span class="w">a</span> <span class="w">charger</span> <span class="w">in</span> <span class="w">each</span></div></div>
+    <div id="c6" class="card" data-layout-allow-overflow style="left:980px;top:290px;width:820px;"><div class="inner"><img src="assets/shots/rush-full.png" alt=""></div></div>
+    <div class="col" style="left:980px;top:790px;width:820px;gap:10px"><div id="t7" class="title" style="font-size:52px;font-weight:800;color:#16181b;"><span class="w">Our</span> <span class="w acc">AI</span> <span class="w acc">layer</span> <span class="w">runs</span> <span class="w">them</span></div><div id="t8" class="title" style="font-size:36px;font-weight:600;color:#16181b;"><span class="w">Every</span> <span class="w">decision,</span> <span class="w">in</span> <span class="w">under</span> <span class="w">a</span> <span class="w">second</span></div><div id="t9" class="title" style="font-size:36px;font-weight:600;color:#16181b;"><span class="w">Unsure?</span> <span class="w">It</span> <span class="w">asks</span> <span class="w">a</span> <span class="w">person.</span></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#t1 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},0.1);tl.fromTo("#t2 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},1.931);
+    tl.fromTo("#c3",{opacity:0,scale:0.92,filter:"blur(10px)"},{opacity:1,scale:1,filter:"blur(0px)",duration:0.6,ease:"expo.out"},3.754);tl.fromTo("#c3 .inner",{scale:1,y:0},{scale:1.035,y:0,duration:17.362,ease:"none"},3.754);
+    tl.fromTo("#t4 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},3.754);tl.fromTo("#t5 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},5.809);
+    tl.fromTo("#c6",{opacity:0,scale:0.92,filter:"blur(10px)"},{opacity:1,scale:1,filter:"blur(0px)",duration:0.6,ease:"expo.out"},10.615);tl.fromTo("#c6 .inner",{scale:1,y:0},{scale:1.035,y:0,duration:10.501,ease:"none"},10.615);
+    tl.fromTo("#t7 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},10.615);tl.fromTo("#t8 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},13.228);tl.fromTo("#t9 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},18.011);
+    tl.set({}, {}, 21.116);
+    window.__timelines["solution"] = tl;
+  </script>
+</template>

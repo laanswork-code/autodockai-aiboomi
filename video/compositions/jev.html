@@ -1,0 +1,61 @@
+<template>
+  <style>
+  #root { position:absolute; inset:0; background:#f3efe6; overflow:hidden; font-family:Inter, sans-serif; color:#16181b; }
+  .stripe { position:absolute; left:0; right:0; top:0; height:12px; background:repeating-linear-gradient(90deg,#f0b91c 0 46px,transparent 46px 74px),#16181b; z-index:20; }
+  .title { line-height:1.06; letter-spacing:-0.02em; }
+  .plate .title + .title { margin-top:10px; }
+  .title .w { display:inline-block; }
+  .title .acc { color:#1747a6; }
+  .col { position:absolute; display:flex; flex-direction:column; z-index:5; }
+  .card { position:absolute; border-radius:18px; overflow:hidden; background:#fbf9f4; border:1px solid #d4ccbb; box-shadow:0 30px 60px -30px rgba(22,24,27,.45); z-index:4; }
+  .card .inner { position:relative; transform-origin:50% 50%; }
+  .card img { display:block; width:100%; }
+  .mark { position:absolute; border:4px solid #1747a6; border-radius:10px; background:rgba(23,71,166,.06); }
+  .shot { position:absolute; inset:0; overflow:hidden; z-index:1; }
+  .shot .cam { position:absolute; inset:0; transform-origin:50% 50%; }
+  .shot img { width:100%; height:100%; object-fit:cover; display:block; }
+  .plate { position:absolute; display:flex; flex-direction:column; gap:0; row-gap:0; padding:26px 32px; background:rgba(251,249,244,.97); border:1px solid #d4ccbb; border-radius:18px; box-shadow:0 30px 60px -30px rgba(22,24,27,.5); z-index:6; }
+  .num { position:absolute; padding-right:0.06em; font-weight:800; letter-spacing:-0.04em; line-height:1; font-variant-numeric:tabular-nums; z-index:5; }
+  .panel { position:absolute; height:760px; padding:30px 36px; background:#fbf9f4; border:1px solid #d4ccbb; border-radius:18px; box-shadow:0 30px 60px -30px rgba(22,24,27,.45); z-index:3; }
+  .panel-acc { border:2px solid #1747a6; }
+  .panel-label { font-size:40px; font-weight:800; letter-spacing:-0.02em; }
+  .panel-acc .panel-label { color:#1747a6; }
+  .panel-note { font-size:26px; font-weight:500; color:#7b7f86; margin-top:6px; }
+  .stream { margin-top:34px; min-height:250px; padding:24px 26px; border-radius:12px; background:#16181b; color:#e9e4d8; font:500 30px/1.45 'JetBrains Mono', ui-monospace, Menlo, monospace; word-break:break-all; }
+  .caret { display:inline-block; width:14px; height:30px; margin-left:2px; vertical-align:-4px; background:#f0b91c; }
+  .end { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; gap:56px; z-index:7; }
+  .sign { width:250px; height:250px; border-radius:40px; background:#1747a6; color:#fff; display:grid; place-items:center; font:800 200px/1 Inter, sans-serif; box-shadow:inset 0 0 0 10px #1747a6, inset 0 0 0 18px #fff; }
+  .end-words { display:flex; flex-direction:column; gap:14px; }
+  .end-name { font-size:110px; font-weight:800; letter-spacing:-0.03em; line-height:1; }
+  .end-name .x { color:#7b7f86; font-weight:600; }
+  .end-name .acc { color:#1747a6; }
+  .end-sub { font-size:38px; font-weight:600; color:#4a4e55; }
+  .end-url { font-size:30px; font-weight:500; color:#7b7f86; }
+  </style>
+  <div id="root" data-composition-id="jev" data-width="1920" data-height="1080" data-layout-allow-overlap>
+    <div class="stripe"></div>
+    <div class="col" style="left:120px;top:80px;width:1680px;gap:16px"><div id="t1" class="title" style="font-size:72px;font-weight:800;color:#16181b;"><span class="w">Why</span> <span class="w acc">Jev,</span> <span class="w acc">not</span> <span class="w acc">a</span> <span class="w acc">chat</span> <span class="w acc">model</span></div></div>
+    <div id="pn-llm" class="panel" style="left:120px;top:230px;width:800px">
+      <div class="panel-label">Chat model (autoregressive)</div><div class="panel-note">e.g. the latest OpenAI or Anthropic models</div>
+      <div id="pn-llm-stream" class="stream"><span></span><i class="caret"></i></div>
+    </div>
+    <div class="col" style="left:160px;top:640px;width:740px;gap:14px"><div id="t2" class="title" style="font-size:44px;font-weight:700;color:#16181b;"><span class="w">One</span> <span class="w">token</span> <span class="w">at</span> <span class="w">a</span> <span class="w">time</span></div><div id="t3" class="title" style="font-size:44px;font-weight:700;color:#16181b;"><span class="w">Text</span> <span class="w">to</span> <span class="w">parse,</span> <span class="w">and</span> <span class="w">hope</span> <span class="w">it</span> <span class="w">is</span> <span class="w">valid</span></div></div>
+    <div id="pn-jev" class="panel panel-acc" style="left:1000px;top:230px;width:800px">
+      <div class="panel-label">Jev (System One model)</div><div class="panel-note">TypeSafe</div>
+      
+    </div>
+    <div id="c4" class="card" data-layout-allow-overflow style="left:1040px;top:350px;width:720px;"><div class="inner"><img src="assets/shots/rush-card-top.png" alt=""></div></div>
+    <div class="col" style="left:1040px;top:710px;width:740px;gap:14px"><div id="t5" class="title" style="font-size:44px;font-weight:700;color:#16181b;"><span class="w acc">All</span> <span class="w acc">five</span> <span class="w acc">answers</span> <span class="w">at</span> <span class="w">once</span></div><div id="t6" class="title" style="font-size:40px;font-weight:700;color:#16181b;"><span class="w">Typed</span> <span class="w">values,</span> <span class="w">calibrated</span> <span class="w">confidence</span></div><div id="t7" class="title" style="font-size:44px;font-weight:700;color:#16181b;"><span class="w">About</span> <span class="w">0.5</span> <span class="w">s</span> <span class="w">and</span> <span class="w">$0.00008</span> <span class="w">a</span> <span class="w">car</span></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#t1 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},0.22);
+    tl.fromTo("#pn-llm",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.5,ease:"expo.out"},4.207);(function(){const o={v:0};const el=document.querySelector("#pn-llm-stream span");const s="{\"bay\": \"Tower 1, pallet 18\", \"charge\": \"wait for solar\", \"price\": \"standa";tl.fromTo(o,{v:0},{v:74,duration:2.220,ease:"none",onUpdate(){el.textContent=s.slice(0,Math.floor(o.v/4)*4)}},7.388);})();tl.to("#pn-llm",{opacity:0.45,duration:0.4,ease:"power2.out"},12.937);
+    tl.fromTo("#t2 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},7.388);tl.fromTo("#t3 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},9.896);
+    tl.fromTo("#pn-jev",{opacity:0,y:16,filter:"blur(8px)"},{opacity:1,y:0,filter:"blur(0px)",duration:0.5,ease:"expo.out"},12.937);
+    tl.fromTo("#c4",{opacity:0,scale:0.92,filter:"blur(10px)"},{opacity:1,scale:1,filter:"blur(0px)",duration:0.6,ease:"expo.out"},15.504);tl.fromTo("#c4 .inner",{scale:1,y:0},{scale:1.02,y:0,duration:10.906,ease:"none"},15.504);
+    tl.fromTo("#t5 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},15.504);tl.fromTo("#t6 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},18.232);tl.fromTo("#t7 .w",{opacity:0,filter:"blur(8px)"},{opacity:1,filter:"blur(0px)",duration:0.16,ease:"power2.out",stagger:0.07},22.005);
+    tl.set({}, {}, 26.41);
+    window.__timelines["jev"] = tl;
+  </script>
+</template>

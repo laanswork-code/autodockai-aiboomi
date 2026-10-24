@@ -70,6 +70,19 @@ const SHOTS = {
     await crop(p, 'rush-log', '.evlog')
     await p.close()
   },
+  // The driver's side: the phone a visitor uses, at arrival, docking and charging.
+  async phone() {
+    const p = await page('/?lite')
+    await wait(10000)
+    await click(p, 'With AutoDock'); await wait(1500)
+    await click(p, 'Driver phone'); await wait(4000)
+    await crop(p, 'phone-arrive', '.ph-device', 8)
+    await click(p, 'I have arrived'); await wait(9000)
+    await crop(p, 'phone-dock', '.ph-device', 8)
+    await click(p, 'I have parked'); await wait(6000)
+    await crop(p, 'phone-charge', '.ph-device', 8)
+    await p.close()
+  },
   async problems() {
     const p = await page('/problems')
     await wait(3000)
